@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2e737dd-3df8-4299-8f7e-5061f4db405c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.md" afterPath="$PROJECT_DIR$/about.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
     </list>
     <ignored path="caleydo.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,19 +68,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projects.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6666666" vertical-offset="0" max-vertical-offset="420">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="stratomex.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_projects/stratomex.md">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,16 +94,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="presentations.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="presentations.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/presentations.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50512445" vertical-offset="0" max-vertical-offset="683">
+            <state vertical-scroll-proportion="-12.777778" vertical-offset="0" max-vertical-offset="435">
               <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
               <folding />
             </state>
           </provider>
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48591548" vertical-offset="0" max-vertical-offset="710">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -163,6 +160,7 @@
         <option value="$PROJECT_DIR$/projects.md" />
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/publications.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -691,13 +689,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/presentations.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50512445" vertical-offset="0" max-vertical-offset="683">
+        <state vertical-scroll-proportion="-12.777778" vertical-offset="0" max-vertical-offset="435">
           <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48591548" vertical-offset="0" max-vertical-offset="710">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

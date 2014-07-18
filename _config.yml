@@ -7,6 +7,17 @@ url: "http://caleydo.org"
 twitter_username: jekyllrb
 github_username:  caleydo
 
+# Plugins
+#gems: ['jekyll/scholar']
+
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 permalink: pretty
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
