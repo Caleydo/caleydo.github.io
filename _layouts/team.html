@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="team">
+
+  <header class="team-header">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.standfirst }}</h2>
+  </header>
+
+  <article class="team-content">
+  {{ content }}
+  </article>
+
+  <article class="team-meta">
+    <h1>Website</h1>
+    <p>
+    <a href={{ page.website }}>{{ page.website }}</a><br>
+    </p>
+
+
+    <h1>Projects</h1>
+    <p>
+    {% for project in page.projects %}
+    {{ project.name }}, <i>{{ project.url }}</i><br>
+    {% endfor %}
+    </p>
+  </article>
+
+</div>

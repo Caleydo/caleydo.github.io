@@ -21,3 +21,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  team:
+    output: true
+    permalink: /team/:path/
