@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="project">
+
+  <header class="project-header">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.standfirst }}</h2>
+  </header>
+
+  <article class="project-content">
+  {{ content }}
+  </article>
+
+  <article class="project-meta">
+    <h1>Website</h1>
+    <p>
+    <a href={{ page.website }}>{{ page.website }}</a><br>
+    </p>
+
+
+    <h1>Key Collaborators</h1>
+    <p>
+    {% for collaborator in page.collaborators %}
+    {{ collaborator.name }}, <i>{{ collaborator.affiliation }}</i><br>
+    {% endfor %}
+    </p>
+
+    <h1>Status</h1>
+    <p>
+    {{ page.status }}
+    </p>
+  </article>
+
+</div>

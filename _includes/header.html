@@ -1,5 +1,15 @@
 <header class="site-header">
 
+<div class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 centered">
+        <!--<img src="http://gehlenborg.com/wp-content/uploads/2011/03/nils_gehlenborg_march2011.png" alt="Nils Gehlenborg" width="150" height="150" class="img-circle">-->
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="wrap">
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
@@ -17,12 +27,13 @@
         </svg>
       </a>
       <div class="trigger">
-        {% assign sorted_pages = site.pages | sort:"weight" %}
-        {% for page in sorted_pages %}
+        {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
         {% endfor %}
       </div>
     </nav>
+
+
 
   </div>
 

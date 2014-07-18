@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Contact
-weight: 2
 permalink: /contact/
 ---
 
-TEST
+### Email
+
+[contact@caleydo.org ](mailto:contact@caleydo.org)
