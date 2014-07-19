@@ -7,6 +7,6 @@ permalink: /team/
 
 ### Team Members
 
-{% for team in site.team %}
-[{{ team.title }}]({{ team.url }})
+{% for person in site.person %}
+[{{ person.title }}]({{ person.url }})
 {% endfor %}

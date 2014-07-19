@@ -1,7 +1,7 @@
 ---
-layout: team
+layout: person
 title: Nils Gehlenborg
-permalink: /team/gehlenborg/
+permalink: /person/gehlenborg/
 status: ongoing
 standfirst: TODO
 website: http://gehlenborg.org
