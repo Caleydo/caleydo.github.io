@@ -1,6 +1,6 @@
 ### Caleydo Website
 
-The new Caleydo website built with [Jekyll], [SASS](http://www.sass-lang.com), [Bourbon](http://bourbon.io), [Neat](http://neat.bourbon.io), and [Bitters](http://bitters.bourbon.io).
+The new Caleydo website built with [Jekyll](jekyllrb.com), [SASS](http://www.sass-lang.com), [Bourbon](http://bourbon.io), [Neat](http://neat.bourbon.io), and [Bitters](http://bitters.bourbon.io).
 
 #### Setup
 
@@ -16,10 +16,6 @@ $ gem install neat
 $ gem install bitters
 ```
 Depending on your system your might have to run those as superuser using ```sudo```.
-
-
-Depending on your system your might have to run those as superuser using ```sudo```.
-
 
 #### Generate and/or Serve Site
 
