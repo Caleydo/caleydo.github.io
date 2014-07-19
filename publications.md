@@ -4,9 +4,11 @@ title: Publications
 permalink: /publications/
 ---
 
-View my [StratomX paper website](http://stratomex.caleydo.org).
-
 ### Peer-Reviewed Journal and Conference Papers
+
+{% for publication in site.publications %}
+[{{ publication.title }}]({{ publication.url }})
+{% endfor %}
 
 ### Commentaries, Editorials, Book Chapters & Published Abstracts
 

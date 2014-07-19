@@ -24,3 +24,6 @@ collections:
   person:
     output: true
     permalink: /person/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
