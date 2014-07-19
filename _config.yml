@@ -18,12 +18,12 @@ permalink: pretty
 
 # Collections
 collections:
-  projects:
+  components:
     output: true
-    permalink: /projects/:path/
-  person:
+    permalink: /components/:path/
+  persons:
     output: true
-    permalink: /person/:path/
+    permalink: /persons/:path/
   publications:
     output: true
     permalink: /publications/:path/
