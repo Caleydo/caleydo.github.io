@@ -20,11 +20,7 @@ Depending on your system your might have to run those as superuser using ```sudo
 #### Generate and/or Serve Site
 
 ```ShellSession
-# terminal 1
 $ jekyll serve --watch
-
-# terminal 2
-$ sass _sass:css --watch
 ```
 
 #### View Site
