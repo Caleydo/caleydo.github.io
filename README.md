@@ -4,11 +4,11 @@ The new Caleydo website built with [Jekyll](jekyllrb.com), [SASS](http://www.sas
 
 #### Setup
 
+Requires Jekyll 2.1.0 or later.
+
 ```ShellSession
 $ gem install jekyll
 ```
-
-Requires Jekyll 2.1.0 or later.
 
 #### Generate and/or Serve Site
 
