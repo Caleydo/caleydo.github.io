@@ -3,19 +3,20 @@ layout: default
 ---
 <div class="person">
 
-  <header class="person-header">
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.standfirst }}</h2>
+  <header class="person-title">
+    <h1>{{ page.first_name }} {{ page.last_name }}</h1>
   </header>
 
   <article class="person-content">
+    <h2>{{ page.standfirst }}</h2>
+
   {{ content }}
   </article>
 
   <article class="person-meta">
 
     <p>
-      <img src={{ page.image }}><br>
+      <img class="person-image" src={{ page.image }}><br>
     </p>
 
     <h1>Website</h1>
