@@ -1,3 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Patua+One|Vollkorn:400italic,700italic,400,700);
+
+$page-title-font-family: Lato, Helvetica, sans-serif;
+$page-title-font-weight: 900;
+$page-title-font-style: normal;
+
+$content-title-font-family: Patua One, Helvetica, sans-serif;
+$content-title-font-weight: 700;
+$content-title-font-style: normal;
+
+$body-font-family: Vollkorn, Times, serif;
+$body-font-weight: 400;
+$body-font-style: normal;
+
 body {
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
@@ -8,18 +22,24 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
-  line-height: $header-line-height;
   margin: 0;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
+h1, h2, h3, h4, h5, h5 {
+  font-family: $content-title-font-family;
+  font-weight: $content-title-font-weight;
+  font-style: $content-title-font-style;  
+}
+
 h1 {
   font-size: $base-font-size * 2.25; // 16 * 2.25 = 36px
+  border-bottom: 2px $light-gray solid;
 }
 
 h2 {
   font-size: $base-font-size * 2; // 16 * 2 = 32px
+  border-bottom: 2px $light-gray solid;
 }
 
 h3 {
@@ -84,4 +104,11 @@ cite {
   &:before {
     content: '\2014 \00A0';
   }
+}
+
+.page-header h1 {
+  font-family: $page-title-font-family;
+  font-weight: $page-title-font-weight;
+  font-style: $page-title-font-style;  
+  font-size: $base-font-size * 3; // 16 * 3 = 48px
 }

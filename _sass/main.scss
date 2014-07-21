@@ -2,28 +2,23 @@
 @import 'base/base';
 @import 'neat/neat';
 
-@import 'colors';
-@import 'fonts';
-
-
-.project {
+/*
+.component {
   @include outer-container;
-  .project-header {
+  .component-header {
     @include span-columns(12);
     @include omega();
     color: $project-color;
-    background-color: tint($project-color,80%);
-    font-family: $title-font-family;
-    font-weight: $title-font-weight;
-    font-style: $title-font-style;
-    font-size: $title-font-size;
-    padding: 4px;
+    background-color: tint($project-color,85%);
+    padding: 30px 5px 0px 5px;
     border-bottom: 4px $project-color solid;
     margin-bottom: 20px;
   }
 
-  .project-content { @include span-columns(9); }
-  .project-meta { @include span-columns(3); @include omega(); }
+  .component-content { 
+    @include span-columns(9); 
+  }
+  .component-meta { @include span-columns(3); @include omega(); }
 }
 
 
@@ -33,3 +28,4 @@
   .project-content { @include span-columns(9); @include omega(); }
   .project-meta { @include span-columns(12); }
 }
+*/

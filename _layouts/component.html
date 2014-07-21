@@ -3,16 +3,17 @@ layout: default
 ---
 <div class="component">
 
-  <header class="component-header">
+  <header class="component-header page-title">
     <h1>{{ page.title }}</h1>
-    <h2>{{ page.standfirst }}</h2>
   </header>
 
   <article class="component-content">
+    <h2>{{ page.standfirst }}</h2>  
   {{ content }}
   </article>
 
   <article class="component-meta">
+
     <h1>Website</h1>
     <p>
     <a href={{ page.website }}>{{ page.website }}</a><br>
