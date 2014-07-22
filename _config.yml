@@ -19,9 +19,9 @@ sass:
 
 # Collections
 collections:
-  components:
+  projects:
     output: true
-    permalink: /components/:path/
+    permalink: /projects/:path/
   persons:
     output: true
     permalink: /persons/:path/

@@ -1,5 +1,5 @@
 ---
-layout: components
+layout: projects
 title: Projects
 weight: 1
 permalink: /projects/
@@ -11,12 +11,12 @@ Not everything you can read about here is already in the stable branch and there
 
 For a list of funded research projects please look at our sponsors
 
-# Components
+# Projects
 
 <div class="cards">
 
-{% for component in site.components %}
-{% if component.status == "ongoing" %}
+{% for project in site.projects %}
+{% if project.status == "ongoing" %}
 
   <div class="card">
     <div class="ribbon-wrapper"><div class="ribbon">NEW</div></div>
@@ -24,13 +24,12 @@ For a list of funded research projects please look at our sponsors
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
     </div>
     <div class="card-header">
-      <a href="{{ component.url }}">{{ component.title }}</a>
+      <a href="{{ project.url }}">{{ project.title }}</a>
     </div>
     <div class="card-copy">
-      <p>{{ component.standfirst }}</p>
+      <p>{{ project.standfirst }}</p>
     </div>
   </div>
-
 {% endif %}
 {% endfor %}
 
