@@ -18,11 +18,16 @@ layout: default
   
   <h1>News <span class="right-icon"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a></span></h1>
 
-  <ul class="posts">
+  <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <li class="post-list-item">
+        <span class="post-list-title">
+          {{ post.date | date: "%-d %b %Y" }} | {{ post.title }}
+        </span>
+        <span class="post-list-excerpt">
+          {{ post.excerpt }}
+          <a class="post-list-link" href="{{ post.url | prepend: site.baseurl }}">More...</a>
+        </span>              
       </li>
     {% endfor %}
   </ul>
@@ -38,7 +43,7 @@ layout: default
 
     <h1>Latest Release</h1>
     <ul>
-      <li><a href="{{ site.releases.last.url }}">{{ site.releases.last.version }}</a></li>
+      <li><a href="{{ site.releases.last.url }}">Caleydo {{ site.releases.last.version }}</a></li>
     </ul>
 
     <h1>Recent Publications</h1>

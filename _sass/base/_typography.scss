@@ -1,6 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Patua+One|Vollkorn:400italic,700italic,400,700);
 
-$page-title-font-family: Lato, Helvetica, sans-serif;
+$sans-serif-font-family: Lato, Helvetica, sans-serif;
+$serif-font-family: Vollkorn, Times, serif;
+
+$page-title-font-family: $sans-serif-font-family;
 $page-title-font-weight: 900;
 $page-title-font-style: normal;
 $page-title-font-size: $base-font-size * 3;
@@ -9,7 +12,7 @@ $content-title-font-family: Patua One, Helvetica, sans-serif;
 $content-title-font-weight: 700;
 $content-title-font-style: normal;
 
-$page-content-font-family: Vollkorn, Times, serif;
+$page-content-font-family: $serif-font-family;
 $page-content-font-weight: 400;
 $page-content-font-style: normal;
 $page-content-font-size: 1em;
