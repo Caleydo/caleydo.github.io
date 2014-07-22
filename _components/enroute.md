@@ -1,7 +1,7 @@
 ---
 layout: component
 title: enRoute
-permalink: /components/{{ key }}
+permalink: /components/enroute/
 status: ongoing
 standfirst: Visualizing experimental data in the context of pathways.
 website: http://enroute.caleydo.org
