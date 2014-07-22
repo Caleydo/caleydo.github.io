@@ -2,7 +2,8 @@
 layout: person
 first_name: Nils
 last_name: Gehlenborg
-permalink: /persons/gehlenborg/
+key: gehlenborg
+permalink: /persons/{{ key }}
 status: active
 standfirst: TODO
 email: nils@gehlenborg.com
