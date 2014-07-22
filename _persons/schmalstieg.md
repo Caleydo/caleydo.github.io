@@ -9,11 +9,6 @@ email: schmalstieg@icg.tugraz.at
 image: /assets/images/team/schmalstieg.jpg
 organization: Graz University of Technology
 position: Professor
-projects: 
- - contour
- - stratomex
- - enroute
- - entourage
 website: http://www.icg.tu-graz.ac.at/Members/schmalstieg/
 ---
 

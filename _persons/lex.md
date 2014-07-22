@@ -9,10 +9,6 @@ email: alex@seas.harvard.edu
 image: /assets/images/team/lex.png
 organization: Harvard University
 position: Postdoctoral Research Associate
-projects: 
- - stratomex
- - lineup
- - enroute
 website: http://alexander-lex.com
 ---
 

@@ -27,7 +27,7 @@ collections:
     output: true
     permalink: /projects/:path/
   persons:
-    output: true
+    output: false
     permalink: /persons/:path/
   publications:
     output: true
@@ -39,6 +39,6 @@ collections:
     output: false
     permalink: /videos/:path/
   datasets:
-    output: true
+    output: false
     permalink: /datasets/:path/
 

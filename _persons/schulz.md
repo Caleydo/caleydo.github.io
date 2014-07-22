@@ -9,8 +9,6 @@ email: samuel.gratzl@jku.at
 image: /assets/images/team/schulz.png
 organization: University of Rostock
 position: Postdoctoral Associate
-projects: 
-- stratomex
 website: http://www.informatik.uni-rostock.de/~hs162/
 ---
 
