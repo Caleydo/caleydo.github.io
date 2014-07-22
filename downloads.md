@@ -5,18 +5,20 @@ tag: downloads
 permalink: /downloads/
 ---
 
-# Downloads
- 
-## Releases
+# Releases
  
 {% for release in site.releases %}
 [{{ release.version }}]({{ release.url }})
 {% endfor %}
  
-## Datasets
+# Datasets
 
-TODO
+{% for dataset in site.datasets %}
+[{{ dataset.name }}]({{ dataset.url }})
+{% endfor %}
 
-## Videos
+# Videos
 
-TODO
+{% for video in site.videos %}
+[{{ video.name }}]({{ video.url }})
+{% endfor %}
