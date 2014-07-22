@@ -9,5 +9,5 @@ permalink: /team/
 
 {% for person in site.persons %}
 [{{ person.first_name }} {{ person.last_name }}]({{ person.url }}), {{ person.organization }}
-![{{ person.first_name }} {{ person.last_name }}]({{ person.image }})
+<img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image" src="{{ person.image }}">
 {% endfor %}
