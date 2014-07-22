@@ -7,8 +7,31 @@ layout: default
     <h1>{{ page.title }}</h1>
   </header>
 
-  <article class="home-content">
+  <article class="home-content-main">
     {{ content }}
   </article>
+
+  <article class="home-content-aside">
+    <h1>Projects</h1>
+    <ul>
+    {% for project in site.projects %}
+      <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h1>Latest Release</h1>
+    <ul>
+      <li><a href="{{ site.releases.last.url }}">{{ site.releases.last.version }}</a></li>
+    </ul>
+
+    <h1>Recent Publications</h1>
+    <ul>
+    {% for publication in site.publications %}
+      <li><a href="{{ publication.url }}">{{ publication.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+  </article>
+
 
 </div>

@@ -221,12 +221,20 @@ body {
   @include page-meta();
 }
 
-.home-content {
+.home-content-main {
   @include page-content();
+  @include span-columns(9);
+}
+
+.home-content-aside {
+  @include page-content();
+  @include span-columns(3);
+  @include omega();
 }
 
 .home-meta {
   @include page-meta();
+  @include span-columns(12);
 }
 
 .news-content {
@@ -280,89 +288,6 @@ body {
     height: 50px;
 }
 
-/*
-.footer {
-  $footer-background: $base-background-color;
-  $footer-color: #999;
-  $footer-link-color: transparentize($footer-color, .2);
-  $footer-disclaimer-color: transparentize($footer-color, .2);
-
-  background: $footer-background;
-  padding: $base-line-height*2 $gutter;
-  width: 100%;
-  border-top: 3px $footer-color solid;
-  margin-top: 40px;
-
-  .footer-logo {
-    text-align: center;
-    margin-bottom: 2em;
-
-    img {
-      height: 3em;
-    }
-  } 
-
-  .footer-links {
-    @include clearfix;
-    margin-bottom: $base-line-height;
-
-    @include media($medium-screen) {
-      @include shift(3);
-    }
-  }
-
-  ul {
-    margin-bottom: $base-line-height*2;
-
-    @include media($medium-screen) {
-      @include span-columns(3);
-      @include omega(3n);
-      @include clearfix;
-    }
-  }
-
-  li {
-    text-align: center;
-
-    @include media($medium-screen) {
-      text-align: left;
-    }
-
-    float: left;
-    margin: 5px;
-  }
-
-  li a {
-    color: $footer-link-color;
-
-    &:hover {
-      color: transparentize($footer-color, 0);
-    }
-  }
-
-  li h3 {
-    color: $footer-color;
-    font-size: 1em;
-    font-weight: 800;
-    margin-bottom: .4em;
-  }  
-
-  hr {
-    border: 1px solid transparentize($footer-disclaimer-color, .3);
-    margin: 0 auto $base-line-height;
-    width: 12em;
-  }
-
-  p {
-    color: $footer-disclaimer-color;
-    font-size: .9em;
-    line-height: 1.5em;
-    margin: auto;
-    max-width: 35em;
-    text-align: center;
-  }
-}
-*/
 
 // Uncomment this for a sticky footer.
 //
