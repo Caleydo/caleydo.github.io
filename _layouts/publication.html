@@ -3,21 +3,40 @@ layout: default
 ---
 <div class="publication">
 
-  <header class="publication-title">
-    <h1>{{ page.title }}</h1>
-  </header>
+    <header class="publication-title">
+        <h1>{{ page.title }}</h1>
+    </header>
 
-  <article class="publication-content">
-    <h2>{{ page.standfirst }}</h2>
+    <article class="publication-content">
+        <h2>{{ page.authors }}</h2>
 
-  {{ content }}
-  </article>
+        <p>{{ page.journal }},  {% if page.doi %} <a href=http://dx.doi.{{ page.doi }}>doi:{{ page.doi }}</a> {% endif %},  {{ page.year }}</p>
+        {{ content }}
+    </article>
 
-  <article class="publication-meta">
-    <h1>Website</h1>
-    <p>
-    <a href={{ page.website }}>{{ page.website }}</a><br>
-    </p>
-  </article>
+    <article class="publication-meta">
+        <h2>Resources</h2>
+
+            {% if page.website %}
+            <li>
+                <a href={{ page.website }}>Project Website</a><br/>
+            </li>
+            {% endif %}
+
+            {%if page.bibtex %}
+            <li>
+                <a href={{ page.bibtex }}>Download BibTeX</a><br/>
+            </li>
+            {% endif %}
+            {% if page.doi %}
+            <li>
+                <a href=http://dx.doi.{{ page.doi }}>Publisher</a><br/>
+            </li>
+            {% elsif page.publisher %}
+            <li>
+                <a href="{{page.publisher}}">Publisher</a>
+            </li>
+            {% endif %}
+    </article>
 
 </div>
