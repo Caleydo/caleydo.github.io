@@ -9,7 +9,10 @@ email: marc.streit@jku.at
 image: /assets/images/team/streit.jpg
 organization: Johannes Kepler University Linz
 position: Postdoctoral Research Associate
-components: components.stratomex
+components: 
+ - stratomex
+ - lineup
+ - enroute
 website: http://marc-streit.com
 ---
 

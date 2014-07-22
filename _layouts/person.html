@@ -27,7 +27,7 @@ layout: default
     {% for key in page.components %}
       {% for component in site.components %}
         {% if key == component.key %}
-          <li><a href="{{ component.url | prepend: site.baseurl }}">{{ component.title }}</a></li>
+          <li><a href="{{ component.url }}">{{ component.title }}</a></li>
         {% endif %}
       {% endfor %}
     {% endfor %}

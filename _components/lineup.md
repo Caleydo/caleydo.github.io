@@ -6,7 +6,10 @@ permalink: /components/lineup/
 status: ongoing
 standfirst: LineUp is an interactive technique designed to create, visualize and explore rankings of items based on a set of heterogeneous attributes.
 website: http://lineup.caleydo.org
-collaborators: [{ name: 'Alexander Lex', affiliation: 'Harvard University' }, { name: 'Marc Streit', affiliation: 'Johannes Kepler University Linz' }]
+collaborators:
+ - gehlenborg
+ - streit 
+ - lex
 ---
 
 # About

@@ -15,7 +15,6 @@ layout: default
     <article class="component-meta">
 
         <h1>Website</h1>
-
         <p>
             <a href={{ page.website }}>{{ page.website }}</a><br>
         </p>
@@ -24,13 +23,13 @@ layout: default
 
         <p>
         <ul class="default">
-        {% for key in page.collaborators %}
-        {% for person in site.persons %}
-        {% if key == person.key %}
-        <li><a href="{{ person.url | prepend: site.baseurl }}">{{ person.first_name }} {{ person.last_name }}</a></li>
-        {% endif %}
-        {% endfor %}
-        {% endfor %}
+            {% for key in page.collaborators %}
+            {% for person in site.persons %}
+            {% if key == person.key %}
+            <li><a href="{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
         </ul>
         </p>
 
@@ -47,11 +46,12 @@ layout: default
             {% for key in page.publications %}
             {% for pub in site.publications %}
             {% if key == pub.key %}
-            <li><a href="{{ pub.url | prepend: site.baseurl }}">{{ pub.title }}</a></li>
+            <li><a href="{{ pub.url }}">{{ pub.title }}</a></li>
             {% endif %}
             {% endfor %}
             {% endfor %}
-        </ul>        </p>
+        </ul>
+        </p>
 
     </article>
 </div>
