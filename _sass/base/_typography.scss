@@ -48,25 +48,25 @@ h1, h2, h3, h4, h5, h5 {
 }
 
 h1 {
-  font-size: $base-font-size * 2.25; // 16 * 2.25 = 36px
+  font-size: $base-font-size * 1.75; // 16 * 2.25 = 36px
   border-bottom: 2px $light-gray solid;
 }
 
 h2 {
-  font-size: $base-font-size * 2; // 16 * 2 = 32px
+  font-size: $base-font-size * 1.5; // 16 * 2 = 32px
   border-bottom: 2px $light-gray solid;
 }
 
 h3 {
-  font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
+  font-size: $base-font-size * 1.25; // 16 * 1.75 = 28px
 }
 
 h4 {
-  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
+  font-size: $base-font-size * 1.12; // 16 * 1.5 = 24px
 }
 
 h5 {
-  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
+  font-size: $base-font-size * 1.06; // 16 * 1.25 = 20px
 }
 
 h6 {
