@@ -124,8 +124,8 @@ body {
   @include navigation-button($publication-color);
 }
 
-.presentation-button {
-  @include navigation-button($presentation-color);
+.download-button {
+  @include navigation-button($download-color);
 }
 
 .help-button {
