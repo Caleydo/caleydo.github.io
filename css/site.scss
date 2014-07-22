@@ -36,7 +36,11 @@
   @include page-title($team-color);
 }
 
-.post-title {
+.news-title {
+  @include page-title($home-color);
+}
+
+.home-title {
   @include page-title($home-color);
 }
 
@@ -90,6 +94,22 @@
 }
 
 .team-meta {
+  @include page-meta();
+}
+
+.home-content {
+  @include page-content();
+}
+
+.home-meta {
+  @include page-meta();
+}
+
+.news-content {
+  @include page-content();
+}
+
+.news-meta {
   @include page-meta();
 }
 
