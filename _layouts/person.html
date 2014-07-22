@@ -8,16 +8,12 @@ layout: default
   </header>
 
   <article class="person-content">
-    <h2>{{ page.standfirst }}</h2>
+    <img class="person-image" src={{ page.image }}><br>
 
-  {{ content }}
+    {{ content }}
   </article>
 
   <article class="person-meta">
-
-    <p>
-      <img class="person-image" src={{ page.image }}><br>
-    </p>
 
     <h1>Website</h1>
     <p>
@@ -27,8 +23,14 @@ layout: default
 
     <h1>Projects</h1>
     <p>
-    {% for project in page.projects %}
-    {{ project.name }}, <i>{{ project.url }}</i><br>
+    {% for component in site.components %}
+      {{ component.title }}, <i>{{ component.url }}</i><br>
+    {% endfor %}
+
+    {% for component_ref in page.components %}
+      {% for component in site.components %}
+      {{ component }} {{ component.title }}, <i>{{ component.url }}</i><br>
+      {% endfor %}
     {% endfor %}
     </p>
 
