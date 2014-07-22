@@ -316,7 +316,6 @@ ul.post-list {
   @include page-meta();
 }
 
-
 @mixin desaturation($percentage) {
   -webkit-filter: grayscale($percentage);
   -moz-filter: grayscale($percentage);
