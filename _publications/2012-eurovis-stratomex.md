@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: "StratomeX: Visual Analysis of Large-Scale Heterogeneous Genomics Data for Cancer Subtype Characterization"
-permalink: /publications/2012-eurovis-stratomex/
+key: 2012-eurovis-stratomex
+permalink: /publications/{{ key }}
 standfirst: TODO
 website: http://stratomex.caleydo.org
 ---
