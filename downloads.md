@@ -5,9 +5,11 @@ tag: downloads
 permalink: /downloads/
 ---
 
-{{ site.releases.last.content }}
+# Current Stable Release
 
-# Older releases
+[{{ site.releases.last.version }}]({{ site.releases.last.url }})
+
+# Older Releases
 
 {% for release in site.releases %}
 {% if release != site.releases.last %}
