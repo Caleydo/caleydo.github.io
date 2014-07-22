@@ -2,7 +2,7 @@
 layout: publication
 title: "Entourage: Visualizing Relationships between Biological Pathways using Contextual Subsets"
 key: 2013-infovis-entourage
-permalink: /publications/2012-eurovis-stratomex/
+permalink: /publications/2012-infovis-entourage/
 
 authors: Alexander Lex, Christian Partl, Denis Kalkofen, Marc Streit, Anne Mai Wasserman, Samuel Gratzl, Dieter Schmalstieg and Hanspeter Pfister
 journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '13), vol. 19, no. 12, pp. 2536–2545
