@@ -5,7 +5,6 @@ last_name: Gehlenborg
 key: gehlenborg
 permalink: /persons/{{ key }}
 status: active
-standfirst: TODO
 email: nils@gehlenborg.com
 image: /assets/images/team/gehlenborg.png
 organization: Harvard Medical School
@@ -13,7 +12,7 @@ position: Research Associate
 components: 
 - stratomex
 - lineup
-website: http://gehlenborg.org
+website: http://www.gehlenborg.com
 ---
 
 # About
