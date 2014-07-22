@@ -13,8 +13,25 @@ For a list of funded research projects please look at our sponsors
 
 # Components
 
+<div class="cards">
+
 {% for component in site.components %}
 {% if component.status == "ongoing" %}
-[{{ component.title }}]({{ component.url }})
+
+  <div class="card">
+    <div class="ribbon-wrapper"><div class="ribbon">NEW</div></div>
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    </div>
+    <div class="card-header">
+      <a href="{{ component.url }}">{{ component.title }}</a>
+    </div>
+    <div class="card-copy">
+      <p>{{ component.standfirst }}</p>
+    </div>
+  </div>
+
 {% endif %}
 {% endfor %}
+
+</div>
