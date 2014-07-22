@@ -4,7 +4,7 @@ first_name: Hans-Jörg
 last_name: Schulz
 key: schulz
 permalink: /persons/schulz/
-status: inactive
+role: alumni
 email: samuel.gratzl@jku.at
 image: /assets/images/team/schulz.png
 organization: University of Rostock

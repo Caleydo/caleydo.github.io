@@ -7,14 +7,14 @@ layout: default
     <h1>{{ page.name }}</h1>
   </header>
 
-  <article class="video-content">
-    {{ content }}
-  </article>
 
   <article class="video-meta">
+    <p></p><a href={{ page.link }}>Download video</a><p />
+  </article>
 
-    <h2>Downloads</h2>
-      <a href={{ page.link }}>{{ page.filename }}</a>
+
+  <article class="video-content">
+    {{ content }}
   </article>
 
 </div>

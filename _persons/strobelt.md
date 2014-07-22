@@ -4,7 +4,7 @@ first_name: Hendrik
 last_name: Strobelt
 key: strobelt
 permalink: /persons/strobelt/
-status: active
+role: core
 email: hendrik@strobelt.com
 image: /assets/images/team/strobelt.jpg
 organization: Harvard University

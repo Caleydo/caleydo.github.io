@@ -4,7 +4,7 @@ first_name: Peter J.
 last_name: Park
 key: park
 permalink: /persons/park/
-status: active
+role: advisor
 email: peter_park@harvard.edu
 image: /assets/images/team/park.png
 organization: Harvard Medical School
