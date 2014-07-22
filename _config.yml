@@ -33,7 +33,7 @@ collections:
     output: true
     permalink: /releases/:path/
   videos:
-    output: true
+    output: false
     permalink: /videos/:path/
   datasets:
     output: true
