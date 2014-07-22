@@ -3,13 +3,30 @@ layout: default
 ---
 <div class="publication">
 
-  <header class="publication-title">
-    <h1>{{ page.title }}</h1>
-  </header>
+    <header class="publication-title">
+        <h1>{{ page.title }}</h1>
+    </header>
 
-  <article class="publication-content">
+    <article class="publication-content">
 
-    {{ content }}
-  </article>
+        <h1> Peer-Reviewed Journal and Conference Papers </h1>
+        {% for publication in site.publications %}
+        <div class="paper-list-block">
+
+            <img alt="{{ publication.shortname }} screenshot" class="paper-image-small" src="{{ publication.image }}">
+
+            <div style="padding-">
+                {{publication.authors }} <br/>
+                <a href="{{ publication.url }}">{{ publication.title }}</a><br/>
+                {{ publication.journal }}
+            </div>
+
+        </div>
+        {% endfor %}
+
+        <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>
+
+        <h1>Thesis </h1>
+    </article>
 
 </div>

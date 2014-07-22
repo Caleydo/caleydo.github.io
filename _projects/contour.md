@@ -6,6 +6,9 @@ permalink: /projects/contour/
 status: ongoing
 standfirst: Data-Driven Exploration of Multi-Relational Datasets for Drug Discovery
 website: http://contour.caleydo.org
+teaser: 
+    lowres: 2014_vast_contour.png
+#     highres: StratomeX_highRes.png
 publications:
 - 2014-vast-contour
 collaborators:

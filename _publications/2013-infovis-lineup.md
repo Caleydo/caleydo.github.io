@@ -4,24 +4,28 @@ title: "LineUp: Visual Analysis of Multi-Attribute Rankings"
 key: 2013-infovis-lineup
 permalink: /publications/2013-infovis-lineup/
 
+shortname: LineUp
+image: /assets/images/papers/2013_infovis_lineup.png
+
 authors: Samuel Gratzl, Alexander Lex, Nils Gehlenborg, Hanspeter Pfister, and Marc Streit
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '13), vol. 19, no. 12, pp. 2277–2286
+journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '13), 19(12), pp. 2277–2286
 year: 2013
 award: Best paper award
+
 
 doi: 10.1109/TVCG.2013.173
 # use publisher only if no doi is available
 publisher: 
 
 
-website: http://lineup.caleydo.org
+project: lineup
 
 video: 2013-infovis-lineup-video
 preview-video: 2013-infovis-lineup-video-preview
 
 
 pdf: http://people.seas.harvard.edu/~alex/papers/2014_infovis_lineup.pdf
-supplement:
+supplement: http://people.seas.harvard.edu/~alex/papers/2014_infovis_lineup_supplement.zip
 bibtex: http://people.seas.harvard.edu/~alex/papers/2014_infovis_lineup.bib
 
 ---
