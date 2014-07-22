@@ -300,6 +300,22 @@ ul.post-list {
   padding: 0;
   list-style-type: none;
 
+  a.post-list-link {
+      font-style: italic;
+      color: #444;
+      position: relative;
+      text-decoration: none;    
+    }
+    a.post-list-link:after{
+       position: absolute;
+       left: 0px;
+       bottom: 0.2em;
+       content: '';
+       width: 100%;
+       border-bottom-width: 1px;
+       border-bottom-style: solid;
+    }    
+
   .post-list-item {
     margin-bottom: 10px;
     p {

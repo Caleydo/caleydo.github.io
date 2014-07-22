@@ -1,7 +1,7 @@
 ---
 layout: institution
-key: harvard_seas
+key: harvard_medical_school
 name: Harvard Medical School
 country: USA
-website: http://vcg.seas.harvard.edu
+website: http://compbio.med.harvard.edu
 ---
