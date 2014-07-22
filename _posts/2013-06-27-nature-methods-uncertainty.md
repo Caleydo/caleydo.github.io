@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Caleydo featured in Nature Methods article"
-date:   2014-06-27 20:00:00
+date:   2013-06-27 20:00:00
 categories: event
 ---
 
