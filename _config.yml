@@ -12,6 +12,8 @@ license_url: https://raw.githubusercontent.com/Caleydo/caleydo/develop/LICENSE
 safe: false
 lsi: false
 plugins: ./_plugins
+google_analytics: "'UA-45998043-1'"
+use_analytics: false
 
 # Build settings
 markdown: kramdown
@@ -27,7 +29,7 @@ collections:
     output: true
     permalink: /projects/:path/
   persons:
-    output: true
+    output: false
     permalink: /persons/:path/
   publications:
     output: true
@@ -36,9 +38,9 @@ collections:
     output: true
     permalink: /releases/:path/
   videos:
-    output: true
+    output: false
     permalink: /videos/:path/
   datasets:
-    output: true
+    output: false
     permalink: /datasets/:path/
 

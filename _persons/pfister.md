@@ -9,9 +9,6 @@ email: pfister@seas.harvard.edu
 image: /assets/images/team/pfister.jpg
 organization: Harvard University
 position: Professor
-projects: 
-- stratomex
-- lineup
 website: http://http://vcg.seas.harvard.edu/people/hanspeter-pfister
 ---
 

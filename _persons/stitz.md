@@ -9,7 +9,6 @@ email: holger.stitz@jku.at
 image: /assets/images/team/stitz.jpg
 organization: Johannes Kepler University Linz
 position: PhD Student
-projects: 
 website: http://holgerstitz.de
 ---
 
