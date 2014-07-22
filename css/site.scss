@@ -6,3 +6,73 @@
 @import 'base/base';
 
 /* site specific changes that do not fit into base */
+
+@mixin page-title($color) {
+    color: $color;
+    background-color: tint($color,80%);
+    padding: 30px 10px 0px 10px;
+    border-bottom: 4px $color solid;
+    margin-bottom: 20px;
+
+    h1 {
+      font-family: $page-title-font-family;
+      font-weight: $page-title-font-weight;
+      font-style: $page-title-font-style;
+      font-size: $page-title-font-size;      
+      border-bottom: none;
+    }
+}
+
+.component-title {
+  @include page-title($component-color);
+}
+
+.person-title {
+  @include page-title($team-color);
+}
+
+.post-title {
+  @include page-title($home-color);
+}
+
+.publication-title {
+  @include page-title($publication-color);
+}
+
+
+@mixin page-title($color) {
+    color: $color;
+    background-color: tint($color,80%);
+    padding: 30px 10px 0px 10px;
+    border-bottom: 4px $color solid;
+    margin-bottom: 20px;
+
+    h1 {
+      font-family: $page-title-font-family;
+      font-weight: $page-title-font-weight;
+      font-style: $page-title-font-style;
+      font-size: $page-title-font-size;      
+      border-bottom: none;
+    }
+}
+
+
+@mixin desaturation($percentage) {
+  -webkit-filter: grayscale($percentage);
+  -moz-filter: grayscale($percentage);
+  filter: grayscale($percentage);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.person-image {
+    width: 100px;
+    height: 100px;
+    @include border-radius( 50px );
+    @include desaturation(100%);
+}

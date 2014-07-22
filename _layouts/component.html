@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="component">
 
-    <header class="component-header page-title">
+    <header class="component-header">
         <h1>{{ page.title }}</h1>
     </header>
 
@@ -15,37 +15,40 @@ layout: default
     <article class="component-meta">
 
         <h1>Website</h1>
+
         <p>
             <a href={{ page.website }}>{{ page.website }}</a><br>
         </p>
 
         <h1>Key Collaborators</h1>
+
         <p>
             {% for person in site.persons %}
             {% for collaborator in page.collaborators %}
             {% if person.url == collaborator %}
-            <a href="{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br />
+            <a href="{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br/>
             {% endif %}
             {% endfor %}
             {% endfor %}
         </p>
 
         <h1>Status</h1>
+
         <p>
             {{ page.status }}
         </p>
 
         <h1>Publications</h1>
+
         <p>
             {% for collection_pub in site.publications %}
             {% for pub in page.publications %}
             {% if collection_pub.url == pub %}
-            <a href="{{ collection_pub.url }}">{{ collection_pub.title }}</a><br />
+            <a href="{{ collection_pub.url }}">{{ collection_pub.title }}</a><br/>
             {% endif %}
             {% endfor %}
             {% endfor %}
         </p>
 
     </article>
-
 </div>
