@@ -77,6 +77,11 @@
 
 }
 
+.logo-gray {
+  fill: #ddd;
+}
+
+
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
     to { -ms-transform: rotate(360deg); }
@@ -136,7 +141,7 @@ body {
 @mixin page-title($color) {
     color: $color;
     background-color: tint($color,95%);
-    padding: 30px 10px 0px 10px;
+    padding: 30px 0px 0px 0px;
     border-bottom: 4px $color solid;
     margin-bottom: 20px;
 
