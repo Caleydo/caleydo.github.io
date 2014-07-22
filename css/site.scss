@@ -47,8 +47,54 @@
   float: right;
 }
 
+@mixin spin($time) {
+  -webkit-animation-name: spin;
+    -webkit-animation-duration: $time;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: $time;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: $time;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: $time;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+}
+
 .logo {
   float: left;
+// Animation shorthand works the same as the CSS3 animation shorthand
+  &:hover {
+      @include spin(200ms);  
+  }
+
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 .wrap {
@@ -140,6 +186,7 @@ body {
   font-weight: $page-content-font-weight;
   font-style: $page-content-font-style;
   font-size: $page-content-font-size; 
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
 @mixin page-meta() {
