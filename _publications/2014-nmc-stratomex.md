@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: Guided Visual Exploration of Genomic Stratifications in Cancer
-permalink: /publications/2014-nmc-stratomex/
+key: 2014-nmc-stratomex
+permalink: /publications/{{ key }}
 standfirst: TODO
 website: http://stratomex.caleydo.org
 ---

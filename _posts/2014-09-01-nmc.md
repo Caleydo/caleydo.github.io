@@ -6,6 +6,3 @@ categories: event
 ---
 
 Details about news item.
-
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com

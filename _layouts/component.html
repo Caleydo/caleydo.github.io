@@ -23,13 +23,15 @@ layout: default
         <h1>Key Collaborators</h1>
 
         <p>
-            {% for person in site.persons %}
-            {% for collaborator in page.collaborators %}
-            {% if person.url == collaborator %}
-            <a href="{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br/>
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
+        <ul class="default">
+        {% for key in page.collaborators %}
+        {% for person in site.persons %}
+        {% if key == person.key %}
+        <li><a href="{{ person.url | prepend: site.baseurl }}">{{ person.first_name }} {{ person.last_name }}</a></li>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+        </ul>
         </p>
 
         <h1>Status</h1>
@@ -41,14 +43,15 @@ layout: default
         <h1>Publications</h1>
 
         <p>
-            {% for collection_pub in site.publications %}
-            {% for pub in page.publications %}
-            {% if collection_pub.url == pub %}
-            <a href="{{ collection_pub.url }}">{{ collection_pub.title }}</a><br/>
+        <ul class="default">
+            {% for key in page.publications %}
+            {% for pub in site.publications %}
+            {% if key == pub.key %}
+            <li><a href="{{ pub.url | prepend: site.baseurl }}">{{ pub.title }}</a></li>
             {% endif %}
             {% endfor %}
             {% endfor %}
-        </p>
+        </ul>        </p>
 
     </article>
 </div>

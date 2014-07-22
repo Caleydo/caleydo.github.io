@@ -2,7 +2,7 @@
 layout: component
 title: LineUp
 key: lineup
-permalink: /components/lineup/
+permalink: /components/{{ key }}
 status: ongoing
 standfirst: LineUp is an interactive technique designed to create, visualize and explore rankings of items based on a set of heterogeneous attributes.
 website: http://lineup.caleydo.org
