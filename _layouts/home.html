@@ -13,8 +13,6 @@ layout: default
  <p>Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of Caleydo is the visualization of interdependencies between multiple datasets. Caleydo can load tabular data and groupings/clusterings. You can explore relationships between multiple groupings, between different datasets and see how your data maps onto pathways.
    Caleydo has been successfully used to analyze mRNA, miRNA, methylation, copy number variation, mutation status and clinical data as well as other datset types.</p>
 
-    <p>Caleydo is a joint project between the <a href="http://www.icg.tugraz.at">Graz University of Technology</a>, <a href="http://www.cg.jku.at">Johannes Kepler University Linz</a> and <a href="http://www.harvard.edu">Harvard University</a>.</p>
-  
   <h1>News <span class="right-icon"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a></span></h1>
 
   <ul class="post-list">
@@ -30,7 +28,7 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-  <p><a href="news">Read earlier posts...</a></p>
+  <p><a href="news">Earlier news...</a></p>
 
   <h1>Recent Publications</h1>
   <ul class="publication-icon-list">
@@ -47,6 +45,13 @@ layout: default
     {% for project in site.projects  | sort %}
       <li><a href="{{ project.url }}">{{ project.title }}</a></li>
     {% endfor %}
+    </ul>
+
+    <h1>Partners</h1>
+    <ul class="institution-list">
+      {% for institution in site.institutions  | sort %}
+      <li><a href="{{ institution.url }}">{{ institution.name }}, {{ institution.country }}</a></li>
+      {% endfor %}
     </ul>
 
     <h1>Latest Release</h1>
