@@ -3,6 +3,8 @@ layout: publication
 title: "StratomeX: Visual Analysis of Large-Scale Heterogeneous Genomics Data for Cancer Subtype Characterization"
 key: 2012-eurovis-stratomex
 permalink: /publications/2012-eurovis-stratomex/
+type: paper
+
 
 shortname: StratomeX
 image: /assets/images/papers/2012_eurovis_stratomex.png
@@ -16,6 +18,8 @@ doi: 10.1111/j.1467-8659.2012.03110.x
 # use publisher only if no doi is available
 publisher: 
 
+
+project: stratomex
 
 website: http://stratomex.caleydo.org
 

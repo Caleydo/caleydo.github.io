@@ -3,6 +3,8 @@ layout: publication
 title: "Entourage: Visualizing Relationships between Biological Pathways using Contextual Subsets"
 key: 2013-infovis-entourage
 permalink: /publications/2012-infovis-entourage/
+type: paper
+
 
 shortname: Entourage
 image: /assets/images/papers/2013_infovis_entourage.png
@@ -11,7 +13,6 @@ authors: Alexander Lex, Christian Partl, Denis Kalkofen, Marc Streit, Anne Mai W
 journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '13), 19(12), pp. 2536–2545
 year: 2013
 award:
-
 
 doi: 10.1109/TVCG.2013.154
 # use publisher only if no doi is available

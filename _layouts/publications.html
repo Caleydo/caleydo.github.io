@@ -10,7 +10,8 @@ layout: default
     <article class="publication-content">
 
         <h1> Peer-Reviewed Journal and Conference Papers </h1>
-        {% for publication in site.publications %}
+        {% for publication in site.publications reversed %}
+
         <div class="paper-list-block">
 
             <img alt="{{ publication.shortname }} screenshot" class="paper-image-small" src="{{ publication.image }}">
@@ -18,15 +19,35 @@ layout: default
             <div style="padding-">
                 {{publication.authors }} <br/>
                <b> <a href="{{ publication.url }}">{{ publication.title }}</a></b><br/>
-                {{ publication.journal }}
+                {{ publication.journal }}, {{publication.year}}
             </div>
 
         </div>
+
+        {% endfor %}
+
+        <h1>Thesis </h1>
+
+
+        {% for thesis in site.thesis reversed %}
+
+        <div class="paper-list-block">
+
+            <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ thesis.image }}">
+
+            <div style="padding-">
+                {{thesis.authors }} <br/>
+                <b> <a href="{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+                {{ thesis.institution }}, {{thesis.year}}
+            </div>
+
+        </div>
+
         {% endfor %}
 
         <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>
 
-        <h1>Thesis </h1>
+
     </article>
 
 </div>
