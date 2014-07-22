@@ -4,7 +4,7 @@ first_name: Alexander
 last_name: Lex
 key: lex
 permalink: /persons/lex/
-status: active
+role: core
 email: alex@seas.harvard.edu
 image: /assets/images/team/lex.png
 organization: Harvard University

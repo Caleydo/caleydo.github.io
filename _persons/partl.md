@@ -4,9 +4,9 @@ first_name: Christian
 last_name: Partl
 key: partl
 permalink: /persons/partl/
-status: active
+role: core
 email: partl@icg.tugray.at
-image: /assets/images/team/gehlenborg.png
+image: /assets/images/team/partl.jpg
 organization: Graz University of Technology
 position: PhD Student
 projects: 
