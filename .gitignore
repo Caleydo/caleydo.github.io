@@ -1,4 +1,5 @@
 _site/
 .sass-cache/
+.idea/
 caleydo.github.io.sublime-project
 caleydo.github.io.sublime-workspace

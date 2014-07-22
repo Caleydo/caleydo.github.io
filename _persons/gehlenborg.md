@@ -2,7 +2,7 @@
 layout: person
 first_name: Nils
 last_name: Gehlenborg
-permalink: /person/gehlenborg/
+permalink: /persons/gehlenborg/
 status: active
 standfirst: TODO
 email: nils@gehlenborg.com

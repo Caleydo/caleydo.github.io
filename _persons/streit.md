@@ -2,7 +2,7 @@
 layout: person
 first_name: Marc
 last_name: Streit
-permalink: /person/streit/
+permalink: /persons/streit/
 status: active
 standfirst: TODO
 email: marc.streit@jku.at
