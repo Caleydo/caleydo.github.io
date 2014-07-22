@@ -52,27 +52,15 @@
   @include page-title($presentation-color);
 }
 
-
-@mixin page-title($color) {
-    color: $color;
-    background-color: tint($color,80%);
-    padding: 30px 10px 0px 10px;
-    border-bottom: 4px $color solid;
-    margin-bottom: 20px;
-
-    h1 {
-      font-family: $page-title-font-family;
-      font-weight: $page-title-font-weight;
-      font-style: $page-title-font-style;
-      font-size: $page-title-font-size;      
-      border-bottom: none;
-    }
-}
-
 @mixin page-content() {
   ul {
     @extend %default-ul;    
   }
+
+  font-family: $page-content-font-family;
+  font-weight: $page-content-font-weight;
+  font-style: $page-content-font-style;
+  font-size: $page-content-font-size; 
 }
 
 @mixin page-meta() {
