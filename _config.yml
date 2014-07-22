@@ -8,6 +8,7 @@ twitter_username: caleydo_org
 github_username:  caleydo
 youtube_username: caleydotugraz
 facebook_page: Caleydo/110550618994500
+license_url: https://raw.githubusercontent.com/Caleydo/caleydo/develop/LICENSE
 safe: false
 lsi: false
 plugins: ./_plugins
