@@ -33,7 +33,7 @@ layout: default
   <p><a href="news">Read earlier posts...</a></p>
 
   <h1>Recent Publications</h1>
-  <ul>
+  <ul class="publication-icon-list">
   {% for publication in site.publications %}
     <li><a href="{{ publication.url }}">{{ publication.title }}</a></li>
   {% endfor %}
@@ -43,14 +43,14 @@ layout: default
 
   <article class="home-content-aside">
     <h1>Projects</h1>
-    <ul class="project-list">
+    <ul class="project-icon-list">
     {% for project in site.projects  | sort %}
       <li><a href="{{ project.url }}">{{ project.title }}</a></li>
     {% endfor %}
     </ul>
 
     <h1>Latest Release</h1>
-    <ul>
+    <ul class="release-icon-list">
       <li><a href="{{ site.releases.last.url }}">Caleydo {{ site.releases.last.version }}</a></li>
     </ul>
   </article>
