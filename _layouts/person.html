@@ -23,15 +23,15 @@ layout: default
 
     <h1>Projects</h1>
     <p>
-    {% for component in site.components %}
-      {{ component.title }}, <i>{{ component.url }}</i><br>
-    {% endfor %}
-
-    {% for component_ref in page.components %}
+    <ul class="default">
+    {% for key in page.components %}
       {% for component in site.components %}
-      {{ component }} {{ component.title }}, <i>{{ component.url }}</i><br>
+        {% if key == component.key %}
+          <li><a href="{{ component.url | prepend: site.baseurl }}">{{ component.title }}</a></li>
+        {% endif %}
       {% endfor %}
     {% endfor %}
+    </ul>
     </p>
 
   </article>

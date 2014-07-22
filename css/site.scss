@@ -62,8 +62,22 @@
   }
 }
 
+@mixin page-meta() {
+  ul {
+    @extend %default-ul;    
+  }
+}
+
 .component-content {
   @include page-content();
+}
+
+.person-content {
+  @include page-content();
+}
+
+.person-meta {
+  @include page-meta();
 }
 
 
