@@ -20,6 +20,7 @@
       font-style: $page-title-font-style;
       font-size: $page-title-font-size;      
       border-bottom: none;
+      margin-bottom: 0px;
     }
 }
 
@@ -28,6 +29,10 @@
 }
 
 .person-title {
+  @include page-title($team-color);
+}
+
+.team-title {
   @include page-title($team-color);
 }
 
@@ -77,6 +82,14 @@
 }
 
 .person-meta {
+  @include page-meta();
+}
+
+.team-content {
+  @include page-content();
+}
+
+.team-meta {
   @include page-meta();
 }
 
