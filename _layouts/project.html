@@ -10,6 +10,10 @@ layout: default
     <article class="project-content">
         <h2>{{ page.standfirst }}</h2>
         {{ content }}
+
+        {% if page.teaser.highres %}
+        <img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">
+        {% endif %}
     </article>
 
     <article class="project-meta">

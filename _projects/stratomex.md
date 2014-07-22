@@ -6,6 +6,10 @@ permalink: /projects/stratomex/
 status: ongoing
 standfirst: A tool for integrative visualization of cancer genomics data from The Cancer Genome Atlas project to identify and characterize tumor subtypes.
 website: http://stratomex.caleydo.org
+teaser: 
+    lowres: 2012_eurovis_stratomex.png
+    highres: StratomeX_highRes.png
+
 publications:
  - 2014-nmc-stratomex
  - 2012-eurovis-stratomex 
