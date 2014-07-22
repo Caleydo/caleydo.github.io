@@ -4,21 +4,30 @@ title: "ConTour: Data-Driven Exploration of Multi-Relational Datasets for Drug D
 key: 2014-vast-contour
 permalink: /publications/2014-vast-contour/
 
-authors: Christian Partl, Alexander Lex, Marc Streit, Hendrik Strobelt, Anne-Mai Wassermann, Hanspeter Pfister and Dieter Schmalstieg
-journal: IEEE Transactions on Visualization and Computer Graphics (VAST '14) - to appear -
-year: 2014
+shortname: Contour
+image: /assets/images/papers/2014_vast_contour.png
 
-website: http://contour.caleydo.org
+authors: Christian Partl, Alexander Lex, Marc Streit, Hendrik Strobelt, Anne-Mai Wassermann, Hanspeter Pfister and Dieter Schmalstieg
+journal: IEEE Transactions on Visualization and Computer Graphics (VAST '14), to appear
+year: 2014
+award:
+
+doi:
+# use publisher only if no doi is available
+publisher:
+
+
+project: contour
+
+video: 2014-vast-contour-video
+preview-video: 2014-vast-contour-video-preview
+
 youtube: 0tFayr3prDY
 youtube-teaser:
-# doi:
-# use publisher only if no doi is available
-# publisher:
 
-#pdf: soon
-#supplement: soon
-#bibtex: soon
-video: http://data.icg.tugraz.at/caleydo/download/contour/ConTour.mp4
-teaser:
+pdf: http://people.seas.harvard.edu/~alex/papers/2014_vast_contour.pdf
+supplement:
+bibtex: http://people.seas.harvard.edu/~alex/papers/2014_vast_contour.bib
+
 ---
 

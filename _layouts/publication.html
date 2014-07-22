@@ -50,11 +50,24 @@ layout: default
     <article class="publication-resources">
         <h2>Resources</h2>
 
-        {% if page.website %}
+        {% if page.project %}
+        {% for project in site.projects %}
+        {% if project.key == page.project) %}
+        <li><a href="{{project.url}}">Project Site</a></li>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+
+        {% if page.doi %}
         <li>
-            <a href={{ page.website }}>Project Website</a><br/>
+            <a href="http://dx.doi.org/{{ page.doi }}">Publisher</a><br/>
+        </li>
+        {% elsif page.publisher %}
+        <li>
+            <a href="{{page.publisher}}">Publisher</a>
         </li>
         {% endif %}
+
         {% if page.pdf %}
         <li>
             <a href={{ page.pdf }}>Download Paper (PDF)</a><br/>
@@ -67,15 +80,7 @@ layout: default
         {% endif %}
 
 
-        {% if page.doi %}
-        <li>
-            <a href="http://dx.doi.org/{{ page.doi }}">Go to Publisher</a><br/>
-        </li>
-        {% elsif page.publisher %}
-        <li>
-            <a href="{{page.publisher}}">Go to Publisher</a>
-        </li>
-        {% endif %}
+
     </article>
 
     <h2>Authors</h2>

@@ -32,7 +32,7 @@
     }
 
     a:hover {
-      color: white;      
+      color: white;
     }
 }
 
@@ -60,11 +60,11 @@
     -ms-animation-duration: $time;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
-    
+
     animation-name: spin;
     animation-duration: $time;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;  
+    animation-timing-function: linear;
 }
 
 .logo {
@@ -72,7 +72,7 @@
   margin-left: -34px;
 // Animation shorthand works the same as the CSS3 animation shorthand
   &:hover {
-      @include spin(200ms);  
+      @include spin(200ms);
   }
 
 }
@@ -110,7 +110,7 @@
 body {
   margin-top: 30px;
   margin-left: 80px;
-  margin-right: 80px;  
+  margin-right: 80px;
 }
 
 .home-button {
@@ -149,7 +149,7 @@ body {
       font-family: $page-title-font-family;
       font-weight: $page-title-font-weight;
       font-style: $page-title-font-style;
-      font-size: $page-title-font-size;      
+      font-size: $page-title-font-size;
       border-bottom: none;
       margin-bottom: 0px;
     }
@@ -160,7 +160,7 @@ body {
 
   h1 {
     font-size: $page-title-font-size * 0.5;
-  }    
+  }
 }
 
 .project-title {
@@ -198,13 +198,13 @@ body {
 
 @mixin page-content() {
   ul {
-    @extend %default-ul;    
+    @extend %default-ul;
   }
 
   font-family: $page-content-font-family;
   font-weight: $page-content-font-weight;
   font-style: $page-content-font-style;
-  font-size: $page-content-font-size; 
+  font-size: $page-content-font-size;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 
   .right-icon {
@@ -218,7 +218,7 @@ body {
 
 @mixin page-meta() {
   ul {
-    @extend %default-ul;    
+    @extend %default-ul;
   }
 }
 
@@ -297,7 +297,7 @@ ul.post-list {
       display: block;
       margin-bottom: 5px;
     }
-  }  
+  }
 }
 
 .publication-content {
@@ -333,13 +333,28 @@ ul.post-list {
     width: 100px;
     height: 100px;
     @include border-radius( 50% );
-    @include desaturation(100%);    
+    @include desaturation(100%);
 }
 
 .person-image-small {
     @extend .person-image;
     width: 50px;
     height: 50px;
+
+}
+
+
+.paper-image-small {
+  width: 200px;
+  height: 100px;
+  float: left;
+  padding-right: 10px;
+}
+
+.paper-list-block{
+  height: 120px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 
@@ -370,7 +385,7 @@ html, body {
   $footer-background: $base-background-color;
   $footer-color: #999;
   $footer-link-color: transparentize($footer-color, .6);
-  $footer-disclaimer-color: transparentize($footer-color, .6);  
+  $footer-disclaimer-color: transparentize($footer-color, .6);
 
   background: $footer-background;
   padding: $base-line-height;
@@ -391,7 +406,7 @@ html, body {
 
   .footer-logo img {
     height: 1.6em;
-  } 
+  }
 
   ul {
     margin-bottom: 1em;
@@ -424,7 +439,7 @@ html, body {
     display: block;
     text-align: center;
 
-    @include clearfix();    
+    @include clearfix();
   }
 
   .footer-secondary-links {
