@@ -8,7 +8,24 @@ layout: default
   </header>
 
   <article class="home-content-main">
-    {{ content }}
+  <h1>About</h1>
+
+  Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of Caleydo is the visualization of interdependencies between multiple datasets. Caleydo can load tabular data and groupings/clusterings. You can explore relationships between multiple groupings, between different datasets and see how your data maps onto pathways.
+
+  Caleydo Source Code Caleydo has been successfully used to analyze mRNA, miRNA, methylation, copy number variation, mutation status and clinical data as well as other datset types.
+
+  Caleydo is a joint project between the Graz University of Technology, Johannes Kepler University Linz and Harvard University.
+  
+  <h1>News <span class="right-icon"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a></span></h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
   </article>
 
   <article class="home-content-aside">

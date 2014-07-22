@@ -193,6 +193,14 @@ body {
   font-style: $page-content-font-style;
   font-size: $page-content-font-size; 
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
+
+  .right-icon {
+    a {
+      color: inherit;
+      font-size: $base-font-size * 0.75;
+    }
+    float: right;
+  }
 }
 
 @mixin page-meta() {
