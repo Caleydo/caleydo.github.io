@@ -77,6 +77,11 @@
 
 }
 
+.logo-gray {
+  fill: #ddd;
+}
+
+
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
     to { -ms-transform: rotate(360deg); }
@@ -136,7 +141,7 @@ body {
 @mixin page-title($color) {
     color: $color;
     background-color: tint($color,95%);
-    padding: 30px 10px 0px 10px;
+    padding: 30px 0px 0px 0px;
     border-bottom: 4px $color solid;
     margin-bottom: 20px;
 
@@ -188,6 +193,14 @@ body {
   font-style: $page-content-font-style;
   font-size: $page-content-font-size; 
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
+
+  .right-icon {
+    a {
+      color: inherit;
+      font-size: $base-font-size * 0.75;
+    }
+    float: right;
+  }
 }
 
 @mixin page-meta() {
@@ -216,12 +229,20 @@ body {
   @include page-meta();
 }
 
-.home-content {
+.home-content-main {
   @include page-content();
+  @include span-columns(9);
+}
+
+.home-content-aside {
+  @include page-content();
+  @include span-columns(3);
+  @include omega();
 }
 
 .home-meta {
   @include page-meta();
+  @include span-columns(12);
 }
 
 .news-content {
@@ -275,55 +296,77 @@ body {
     height: 50px;
 }
 
+
+// Uncomment this for a sticky footer.
+//
+/*
+.wrapper-for-content-outside-of-footer {
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+   margin: 0 auto -4em;
+}
+
+html, body {
+  height: 100%;
+}
+
+.footer-2, .push {
+   height: 17em;
+
+   @include media($large-screen) {
+     height: 4em;
+   }
+}
+*/
+
 .footer {
-  $footer-background: $base-background-color; /*desaturate(darken($base-accent-color, 20), 30);*/
+  $footer-background: $base-background-color;
   $footer-color: #999;
-  $footer-link-color: transparentize($footer-color, .2);
-  $footer-disclaimer-color: transparentize($footer-color, .2);
+  $footer-link-color: transparentize($footer-color, .6);
+  $footer-disclaimer-color: transparentize($footer-color, .6);  
 
   background: $footer-background;
-  padding: $base-line-height*2 $gutter;
+  padding: $base-line-height;
   width: 100%;
+
   border-top: 3px $footer-color solid;
   margin-top: 40px;
 
   .footer-logo {
-    text-align: center;
-    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
 
-    img {
-      height: 3em;
+    @include media($large-screen) {
+      float: left;
+      margin-bottom: 0;
     }
+  }
+
+  .footer-logo img {
+    height: 1.6em;
   } 
 
-  .footer-links {
-    @include clearfix;
-    margin-bottom: $base-line-height;
-
-    @include media($medium-screen) {
-      @include shift(3);
-    }
-  }
-
   ul {
-    margin-bottom: $base-line-height*2;
-
-    @include media($medium-screen) {
-      @include span-columns(3);
-      @include omega(3n);
-      @include clearfix;
+    margin-bottom: 1em;
+    @include media($large-screen) {
+      float: left;
+      margin-left: 1em;
+      margin-bottom: 0;
     }
   }
 
-  li {
-    text-align: center;
+  ul li {
+    padding-right: 1em;
+    font-weight: 800;
 
-    @include media($medium-screen) {
+    @include media($large-screen) {
+      display: inline;
       text-align: left;
     }
   }
 
-  li a {
+  ul li a {
     color: $footer-link-color;
 
     &:hover {
@@ -331,26 +374,53 @@ body {
     }
   }
 
-  li h3 {
-    color: $footer-color;
-    font-size: 1em;
-    font-weight: 800;
-    margin-bottom: .4em;
-  }  
+  .footer-disclaimer {
+    display: block;
+    text-align: center;
 
-  hr {
-    border: 1px solid transparentize($footer-disclaimer-color, .3);
-    margin: 0 auto $base-line-height;
-    width: 12em;
+    @include clearfix();    
   }
 
-  p {
-    color: $footer-disclaimer-color;
-    font-size: .9em;
-    line-height: 1.5em;
-    margin: auto;
-    max-width: 35em;
-    text-align: center;
+  .footer-secondary-links {
+    @include media($large-screen) {
+      float: right;
+    }
+
+    li {
+      font-size: .8em;
+      font-weight: 400;
+    }
+
+    ul.footer-social {
+      margin-top: 1em;
+      display: block;
+
+      @include media($large-screen) {
+        float: right;
+        margin-top: 0;
+      }
+
+      li {
+        float: left;
+        font-size: 1em;
+        padding-right: .7em;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      img {
+        opacity: .7;
+        height: 1.6em;
+        padding: 1px;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
+
 

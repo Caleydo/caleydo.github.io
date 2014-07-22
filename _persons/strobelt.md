@@ -9,8 +9,6 @@ email: hendrik@strobelt.com
 image: /assets/images/team/strobelt.jpg
 organization: Harvard University
 position: Postdoctoral Research Associate
-projects: 
- - contour
 website: http://hendrik.strobelt.com
 ---
 

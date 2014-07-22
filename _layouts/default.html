@@ -18,5 +18,8 @@
       {% include footer.html %}
     </div>
 
+    {% if site.use_analytics == true %}
+    {% include google_analytics.html %}
+    {% endif %}
     </body>
 </html>

@@ -9,9 +9,6 @@ email: partl@icg.tugray.at
 image: /assets/images/team/partl.jpg
 organization: Graz University of Technology
 position: PhD Student
-projects: 
-- stratomex
-- enroute
 website: http://www.icg.tugraz.at/Members/partl/christian-partl
 ---
 

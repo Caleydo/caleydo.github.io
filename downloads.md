@@ -16,9 +16,3 @@ permalink: /downloads/
 {% for dataset in site.datasets %}
 [{{ dataset.name }}]({{ dataset.url }})
 {% endfor %}
-
-# Videos
-
-{% for video in site.videos %}
-[{{ video.name }}]({{ video.url }})
-{% endfor %}

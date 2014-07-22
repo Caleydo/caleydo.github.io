@@ -9,8 +9,6 @@ email: peter_park@harvard.edu
 image: /assets/images/team/park.png
 organization: Harvard Medical School
 position: Professor
-projects: 
-- stratomex
 website: http://compbio.med.harvard.edu/principal_investigator.html
 ---
 
