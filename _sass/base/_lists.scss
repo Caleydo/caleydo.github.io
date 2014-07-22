@@ -16,6 +16,41 @@ ul, ol {
   }
 }
 
+ ul.project-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding-left: 2.5em ;
+      line-height: $base-font-size * 2.5;
+      vertical-align: middle;
+      color: $project-color;
+      font-family: $slab-font-family;
+      font-weight: 700;
+      font-size: $base-font-size;
+      font-style: normal;
+
+      a {        
+        color: $project-color;
+      }
+    }
+    li:before {
+      content: "\f013";
+      color: $project-color;      
+      font-family: FontAwesome; /* or whatever */
+      display: inline-block;
+      margin-left: -2em;
+      padding-left: 0.35em;
+      margin-right: 0.5em;
+      width: 1.25em;
+      height: 1.5em;
+      background: #ddd;
+      border-radius: 1.5em;
+    }  
+  }
+
+
 dl {
   margin-bottom: $base-line-height / 2;
 
@@ -28,3 +63,4 @@ dl {
     margin: 0;
   }
 }
+

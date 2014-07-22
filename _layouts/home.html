@@ -19,7 +19,7 @@ layout: default
   <h1>News <span class="right-icon"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a></span></h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:4 %}
       <li class="post-list-item">
         <span class="post-list-title">
           {{ post.date | date: "%-d %b %Y" }} | {{ post.title }}
@@ -43,8 +43,8 @@ layout: default
 
   <article class="home-content-aside">
     <h1>Projects</h1>
-    <ul>
-    {% for project in site.projects %}
+    <ul class="project-list">
+    {% for project in site.projects  | sort %}
       <li><a href="{{ project.url }}">{{ project.title }}</a></li>
     {% endfor %}
     </ul>
