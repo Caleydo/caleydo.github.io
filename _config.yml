@@ -6,8 +6,9 @@ description: "TODO: Short description of Caleydo Project."
 url: "http://caleydo.org"
 twitter_username: caleydo_org
 github_username:  caleydo
-safe: true
+safe: false
 lsi: false
+plugins: ./_plugins
 
 # Build settings
 markdown: kramdown
