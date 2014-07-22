@@ -28,3 +28,13 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
+  releases:
+    output: true
+    permalink: /releases/:path/
+  videos:
+    output: true
+    permalink: /videos/:path/
+  datasets:
+    output: true
+    permalink: /datasets/:path/
+
