@@ -18,14 +18,14 @@ doi: 10.1109/TVCG.2013.173
 publisher: 
 
 
-website: http://lineup.caleydo.org
+project: lineup
 
 video: 2013-infovis-lineup-video
 preview-video: 2013-infovis-lineup-video-preview
 
 
 pdf: http://people.seas.harvard.edu/~alex/papers/2014_infovis_lineup.pdf
-supplement:
+supplement: http://people.seas.harvard.edu/~alex/papers/2014_infovis_lineup_supplement.zip
 bibtex: http://people.seas.harvard.edu/~alex/papers/2014_infovis_lineup.bib
 
 ---

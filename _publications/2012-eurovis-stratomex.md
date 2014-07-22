@@ -4,6 +4,9 @@ title: "StratomeX: Visual Analysis of Large-Scale Heterogeneous Genomics Data fo
 key: 2012-eurovis-stratomex
 permalink: /publications/2012-eurovis-stratomex/
 
+shortname: StratomeX
+image: /assets/images/papers/2012_eurovis_stratomex.png
+
 authors: Alexander Lex, Marc Streit, Hans-Jörg Schulz, Christian Partl, Dieter Schmalstieg, Peter J. Park and Nils Gehlenborg
 journal: Computer Graphics Forum (EuroVis '12), pp. 1175-1184, 31(3)
 year: 2012
