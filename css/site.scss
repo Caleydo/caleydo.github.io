@@ -69,6 +69,7 @@
 
 .logo {
   float: left;
+  margin-left: -34px;
 // Animation shorthand works the same as the CSS3 animation shorthand
   &:hover {
       @include spin(200ms);  
@@ -98,7 +99,7 @@
 }
 
 .wrap {
-  margin-left: 34px;
+  @include outer-container;
 }
 
 body {
@@ -283,6 +284,8 @@ body {
   background: $footer-background;
   padding: $base-line-height*2 $gutter;
   width: 100%;
+  border-top: 3px $footer-color solid;
+  margin-top: 40px;
 
   .footer-logo {
     text-align: center;
