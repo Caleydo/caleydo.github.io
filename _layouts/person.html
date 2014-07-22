@@ -24,10 +24,10 @@ layout: default
     <h1>Projects</h1>
     <p>
     <ul class="default">
-    {% for key in page.components %}
-      {% for component in site.components %}
-        {% if key == component.key %}
-          <li><a href="{{ component.url }}">{{ component.title }}</a></li>
+    {% for key in page.projects %}
+      {% for project in site.projects %}
+        {% if key == project.key %}
+          <li><a href="{{ project.url }}">{{ project.title }}</a></li>
         {% endif %}
       {% endfor %}
     {% endfor %}
