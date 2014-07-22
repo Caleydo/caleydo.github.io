@@ -188,8 +188,13 @@ body {
 }
 
 .download-title {
-  @include page-title($presentation-color);
+  @include page-title($download-color);
 }
+
+.release-title {
+  @include subpage-title($download-color);
+}
+
 
 @mixin page-content() {
   ul {
@@ -303,11 +308,11 @@ ul.post-list {
   @include page-meta();
 }
 
-.presentation-content {
+.release-content {
   @include page-content();
 }
 
-.presentation-meta {
+.release-meta {
   @include page-meta();
 }
 
