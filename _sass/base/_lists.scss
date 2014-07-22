@@ -18,6 +18,61 @@ ul, ol {
 
  
 
+
+@mixin icon-list($color, $icon) {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding-left: 2.5em ;
+      line-height: $base-font-size * 2;
+      vertical-align: middle;
+      color: #444;
+      font-family: $sans-serif-font-family;
+      font-weight: 700;
+      font-size: $base-font-size;
+      font-style: normal;
+
+      a {        
+        color: #444;
+      }
+    }
+    li:before {
+      content: $icon;
+      color: $color;      
+      font-family: FontAwesome; /* or whatever */
+      display: inline-block;
+      margin-left: -2em;
+      padding-left: 0.35em;
+      margin-right: 0.5em;
+      width: 1.25em;
+      height: 1.5em;
+      /*
+      background: #ddd;
+      border-radius: 1.5em;
+      */
+    }  
+  }
+
+ul.project-icon-list {
+  @include icon-list($project-color,"\f013");
+}
+
+ul.release-icon-list {
+  @include icon-list($download-color,"\f085");
+}
+
+ul.publication-icon-list {
+  @include icon-list($publication-color,"\f02d");
+}
+
+ul.institution-icon-list {
+  @include icon-list($team-color,"\f1ad");
+}
+
+
+/*
  ul.project-list {
     margin: 0;
     padding: 0;
@@ -40,18 +95,16 @@ ul, ol {
     li:before {
       content: "\f013";
       color: $project-color;      
-      font-family: FontAwesome; /* or whatever */
+      font-family: FontAwesome;
       display: inline-block;
       margin-left: -2em;
       padding-left: 0.35em;
       margin-right: 0.5em;
       width: 1.25em;
       height: 1.5em;
-      background: #ddd;
-      border-radius: 1.5em;
     }  
   }
-
+*/
 
 dl {
   margin-bottom: $base-line-height / 2;
