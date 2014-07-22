@@ -201,6 +201,23 @@ body {
     @extend %default-ul;
   }
 
+  p {
+    a {
+      color: #444;
+      position: relative;
+      text-decoration: none;    
+    }
+    a:after{
+       position: absolute;
+       left: 0px;
+       bottom: 0.2em;
+       content: '';
+       width: 100%;
+       border-bottom-width: 1px;
+       border-bottom-style: dotted;
+    }    
+  }  
+
   font-family: $page-content-font-family;
   font-weight: $page-content-font-weight;
   font-style: $page-content-font-style;
@@ -283,6 +300,22 @@ ul.post-list {
   padding: 0;
   list-style-type: none;
 
+  a.post-list-link {
+      font-style: italic;
+      color: #444;
+      position: relative;
+      text-decoration: none;    
+    }
+    a.post-list-link:after{
+       position: absolute;
+       left: 0px;
+       bottom: 0.2em;
+       content: '';
+       width: 100%;
+       border-bottom-width: 1px;
+       border-bottom-style: solid;
+    }    
+
   .post-list-item {
     margin-bottom: 10px;
     p {
@@ -315,7 +348,6 @@ ul.post-list {
 .release-meta {
   @include page-meta();
 }
-
 
 @mixin desaturation($percentage) {
   -webkit-filter: grayscale($percentage);

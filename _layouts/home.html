@@ -10,16 +10,13 @@ layout: default
   <article class="home-content-main">
   <h1>About</h1>
 
-  Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of Caleydo is the visualization of interdependencies between multiple datasets. Caleydo can load tabular data and groupings/clusterings. You can explore relationships between multiple groupings, between different datasets and see how your data maps onto pathways.
+ <p>Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of Caleydo is the visualization of interdependencies between multiple datasets. Caleydo can load tabular data and groupings/clusterings. You can explore relationships between multiple groupings, between different datasets and see how your data maps onto pathways.
+   Caleydo has been successfully used to analyze mRNA, miRNA, methylation, copy number variation, mutation status and clinical data as well as other datset types.</p>
 
-  Caleydo has been successfully used to analyze mRNA, miRNA, methylation, copy number variation, mutation status and clinical data as well as other datset types.
-
-  Caleydo is a joint project between the Graz University of Technology, Johannes Kepler University Linz and Harvard University.
-  
   <h1>News <span class="right-icon"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a></span></h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:4 %}
       <li class="post-list-item">
         <span class="post-list-title">
           {{ post.date | date: "%-d %b %Y" }} | {{ post.title }}
@@ -31,9 +28,10 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  <p><a href="news">Earlier news...</a></p>
 
   <h1>Recent Publications</h1>
-  <ul>
+  <ul class="publication-icon-list">
   {% for publication in site.publications %}
     <li><a href="{{ publication.url }}">{{ publication.title }}</a></li>
   {% endfor %}
@@ -42,15 +40,22 @@ layout: default
   </article>
 
   <article class="home-content-aside">
+    <h1>Partners</h1>
+    <ul class="institution-icon-list">
+      {% for institution in site.institutions reversed %}
+      <li><a href="{{ institution.website }}">{{ institution.name }}</a></li>
+      {% endfor %}
+    </ul>
+
     <h1>Projects</h1>
-    <ul>
-    {% for project in site.projects %}
+    <ul class="project-icon-list">
+    {% for project in site.projects  | sort %}
       <li><a href="{{ project.url }}">{{ project.title }}</a></li>
     {% endfor %}
     </ul>
 
     <h1>Latest Release</h1>
-    <ul>
+    <ul class="release-icon-list">
       <li><a href="{{ site.releases.last.url }}">Caleydo {{ site.releases.last.version }}</a></li>
     </ul>
   </article>

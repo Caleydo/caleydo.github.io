@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Press article about LineUp"
-date:   2014-05-14 20:00:00
+date:   2014-01-31 20:00:00
 categories: release
 ---
 

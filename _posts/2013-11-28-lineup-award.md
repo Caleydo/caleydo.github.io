@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Press article about LineUp"
-date:   2014-05-14 20:00:00
+title:  "LineUp receives award!"
+date:   2013-11-28 20:00:00
 categories: event
 ---
 

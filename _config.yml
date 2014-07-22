@@ -46,4 +46,6 @@ collections:
   datasets:
     output: false
     permalink: /datasets/:path/
-
+  institutions:
+    output: false
+    permalink: /institutions/:path/
