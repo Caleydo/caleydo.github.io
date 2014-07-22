@@ -7,9 +7,88 @@
 
 /* site specific changes that do not fit into base */
 
+@mixin navigation-button($color) {
+    color: white;
+    background-color: #444;
+    padding: 5px;
+    padding-top: 3px;
+    border-bottom: 4px $color solid;
+    font-family: $navigation-button-font-family;
+    font-weight: $navigation-button-font-weight;
+    font-style: $navigation-button-font-style;
+    font-size: $navigation-button-font-size;
+    width: 100px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: white;      
+    }
+}
+
+.navigation {
+  display: block;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.navigation-buttons {
+  display: block;
+  float: right;
+}
+
+.logo {
+  float: left;
+}
+
+.wrap {
+  margin-left: 34px;
+}
+
+body {
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;  
+}
+
+.home-button {
+  @include navigation-button($home-color);
+}
+
+.team-button {
+  @include navigation-button($team-color);
+}
+
+.component-button {
+  @include navigation-button($component-color);
+}
+
+.publication-button {
+  @include navigation-button($publication-color);
+}
+
+.presentation-button {
+  @include navigation-button($presentation-color);
+}
+
+.help-button {
+  @include navigation-button($help-color);
+}
+
+
 @mixin page-title($color) {
     color: $color;
-    background-color: tint($color,80%);
+    background-color: tint($color,95%);
     padding: 30px 10px 0px 10px;
     border-bottom: 4px $color solid;
     margin-bottom: 20px;

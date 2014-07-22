@@ -1,6 +1,7 @@
 ---
 layout: presentations
 title: Presentations
+tag: presentations
 permalink: /presentations/
 ---
 

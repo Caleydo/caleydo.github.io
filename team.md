@@ -1,7 +1,8 @@
 ---
 layout: team
 title: Team
-weight: 5
+weight: 2
+tag: team
 permalink: /team/
 ---
 
