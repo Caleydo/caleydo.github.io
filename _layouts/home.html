@@ -49,6 +49,13 @@ layout: default
     {% endfor %}
     </ul>
 
+    <h1>Partners</h1>
+    <ul class="institution-list">
+      {% for institution in site.institutions  | sort %}
+      <li><a href="{{ institution.url }}">{{ institution.name }}, {{ institution.country }}</a></li>
+      {% endfor %}
+    </ul>
+
     <h1>Latest Release</h1>
     <ul>
       <li><a href="{{ site.releases.last.url }}">Caleydo {{ site.releases.last.version }}</a></li>
