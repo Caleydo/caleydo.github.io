@@ -1,5 +1,5 @@
 ---
-layout: components
+layout: projects
 title: Projects
 weight: 1
 permalink: /projects/
@@ -11,10 +11,10 @@ Not everything you can read about here is already in the stable branch and there
 
 For a list of funded research projects please look at our sponsors
 
-# Components
+# Projects
 
-{% for component in site.components %}
-{% if component.status == "ongoing" %}
-[{{ component.title }}]({{ component.url }})
+{% for project in site.projects %}
+{% if project.status == "ongoing" %}
+[{{ project.title }}]({{ project.url }})
 {% endif %}
 {% endfor %}
