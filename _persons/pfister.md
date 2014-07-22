@@ -1,22 +1,20 @@
 ---
 layout: person
-first_name: Nils
-last_name: Gehlenborg
-key: gehlenborg
-permalink: /persons/gehlenborg/
+first_name: Hanspeter
+last_name: Pfister
+key: pfister
+permalink: /persons/pfister/
 status: active
-email: nils@gehlenborg.com
-image: /assets/images/team/gehlenborg.png
-organization: Harvard Medical School
-position: Research Associate
-components: 
+email: pfister@seas.harvard.edu
+image: /assets/images/team/pfister.jpg
+organization: Harvard University
+position: Professor
+projects: 
 - stratomex
 - lineup
-website: http://www.gehlenborg.com
+website: http://http://vcg.seas.harvard.edu/people/hanspeter-pfister
 ---
 
 # About
 
-Nils Gehlenborg is a Research Associate in the Park Lab at the Center for Biomedical Informatics at Harvard Medical School and an Associated Researcher in the Cancer Program at the Broad Institute of MIT and Harvard. He received his PhD from the University of Cambridge and was a predoctoral fellow at the European Bioinformatics Institute (EMBL-EBI).
-
-Nils’ long-term goal is to develop computational tools that enable data-driven biomedical research, with a focus on visualization and exploration of genomics and epigenomics data. Currently, he is researching and developing novel tools to visualize heterogeneous data from large-scale cancer genomics studies, integration of visual and computational approaches to support sense-making in biology, and software to support reproducible research in epigenomics and genomics. Nils’ research is funded by an NIH Pathway to Independence Award.
+Hanspeter Pfister is An Wang Professor of Computer Science in the School of Engineering and Applied Sciences at Harvard University. He is director of the Institute for Applied Computational Science. Before joining Harvard he worked for over a decade at Mitsubishi Electric Research Laboratories where he was Associate Director and Senior Research Scientist. He was the chief architect of VolumePro, Mitsubishi Electric's award-winning real-time volume rendering hardware for PCs. Dr. Pfister has a Ph.D. in Computer Science from the State University of New York at Stony Brook and an M.S. in Electrical Engineering from ETH Zurich, Switzerland. He is the recipient of the 2010 IEEE Visualization Technical Achievement award and the Petra T. Shattuck Excellence in Teaching Award in 2009. He is co-editor of the first textbook on Point-Based Computer Graphics, published by Elsevier in 2007, and was Technical Papers Chair for SIGGRAPH 2012.

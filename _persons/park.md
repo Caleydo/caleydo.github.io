@@ -1,22 +1,26 @@
 ---
 layout: person
-first_name: Nils
-last_name: Gehlenborg
-key: gehlenborg
-permalink: /persons/gehlenborg/
+first_name: Peter J. 
+last_name: Park
+key: park
+permalink: /persons/park/
 status: active
-email: nils@gehlenborg.com
-image: /assets/images/team/gehlenborg.png
+email: peter_park@harvard.edu
+image: /assets/images/team/park.png
 organization: Harvard Medical School
-position: Research Associate
-components: 
+position: Professor
+projects: 
 - stratomex
-- lineup
-website: http://www.gehlenborg.com
+website: http://compbio.med.harvard.edu/principal_investigator.html
 ---
 
 # About
 
-Nils Gehlenborg is a Research Associate in the Park Lab at the Center for Biomedical Informatics at Harvard Medical School and an Associated Researcher in the Cancer Program at the Broad Institute of MIT and Harvard. He received his PhD from the University of Cambridge and was a predoctoral fellow at the European Bioinformatics Institute (EMBL-EBI).
+Dr. Park is a computational biologist at Harvard Medical School specializing in epigenomics and cancer genomics. He was originally trained in applied mathematics at Harvard and Caltech, writing his doctoral thesis on numerical analysis of partial differential equations. He became interested in molecular biology and genomics while doing a postdoctoral fellowship in the Biostatistics Department at the Harvard School of Public Health. He moved to Children's Hospital Boston in 2001 as an instructor at Harvard Medical School and has been there since, becoming an assistant professor in 2006 and an associate professor in 2010.
 
-Nils’ long-term goal is to develop computational tools that enable data-driven biomedical research, with a focus on visualization and exploration of genomics and epigenomics data. Currently, he is researching and developing novel tools to visualize heterogeneous data from large-scale cancer genomics studies, integration of visual and computational approaches to support sense-making in biology, and software to support reproducible research in epigenomics and genomics. Nils’ research is funded by an NIH Pathway to Independence Award.
+He is a member of the HMS Center for Biomedical Informatics, Informatics Program at Children’s Hospital Boston, and Division of Genetics at Brigham and Women’s Hospital. He is a co-director of the doctoral program in Bioinformatics and Integrative Genomics (BIG) at HMS. He is also a member of of the Biological and Biomedical Sciences (BBS) program faculty at HMS and Dana-Farber/Harvard Cancer Center, an affiliate member of the Harvard Stem Cell Institute, Children's Hospital Stem Cell Program, and Harvard-MIT Division of Health Sciences and Technology. He is also an adjunct professor in the Bioinformatics Program at Boston University.
+
+He is an editorial board member of Bioinformatics, an associate editor of BMC Bioinformatics, and a member of Faculty of 1000. He was a recipient of the Sloan Research Fellowship in 2010. In the past two or three years, he has given talks at many universities and conferences including Advances in Genome Biology and Technology conference, Beyond the Genome conference, Bioconductor workshop at Fred Hutchinson Cancer Research Center, BioIT conference, Boston University Medical Center, Biopharma Research Council conference, Broad Institute, Brown University, Cambridge Research Institute (UK), CHI Next-generation sequencing conference, Carnegie Mellon/University of Pittsburgh, Duke University, Harvard School of Public Health, Harvard Stem Cell Institute Blood symposium, HMS Clinical Bioinformatics Summit, Inserm workshop on epigenomics (France), Indiana University, International Conference on Bioinformatics (Atlanta, Georgia), Isaac Newton Institute for Mathematical Sciences at the University of Cambridge (UK), Korea Advanced Institute of Science and Technology, Massachusetts General Hospital Cancer Center, Sanofi-Aventis, University of Massachusetts Medical Center, University of Michigan, University of Oxford (UK), Wellcome Trust course at the Sanger Center (UK).
+
+He lives in Cambridge, Massachusetts with his wife (on the piano faculty at the New England Conservatory Preparatory School) and two beautiful children with whom he spends all his non-work hours!
+

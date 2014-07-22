@@ -7,9 +7,9 @@ permalink: /persons/lex/
 status: active
 email: alex@seas.harvard.edu
 image: /assets/images/team/lex.png
-organization: Harvard School of Engineering and Applied Sciences
+organization: Harvard University
 position: Postdoctoral Research Associate
-components: 
+projects: 
  - stratomex
  - lineup
  - enroute
