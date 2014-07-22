@@ -40,18 +40,18 @@ layout: default
   </article>
 
   <article class="home-content-aside">
+    <h1>Partners</h1>
+    <ul class="institution-icon-list">
+      {% for institution in site.institutions  | sort %}
+      <li><a href="{{ institution.url }}">{{ institution.name }}, {{ institution.country }}</a></li>
+      {% endfor %}
+    </ul>
+
     <h1>Projects</h1>
     <ul class="project-icon-list">
     {% for project in site.projects  | sort %}
       <li><a href="{{ project.url }}">{{ project.title }}</a></li>
     {% endfor %}
-    </ul>
-
-    <h1>Partners</h1>
-    <ul class="institution-list">
-      {% for institution in site.institutions  | sort %}
-      <li><a href="{{ institution.url }}">{{ institution.name }}, {{ institution.country }}</a></li>
-      {% endfor %}
     </ul>
 
     <h1>Latest Release</h1>

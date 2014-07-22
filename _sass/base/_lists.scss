@@ -31,7 +31,7 @@ ul, ol {
       color: #444;
       font-family: $sans-serif-font-family;
       font-weight: 700;
-      font-size: $base-font-size;
+      font-size: $base-font-size * 0.9;
       font-style: normal;
 
       a {        
@@ -42,10 +42,11 @@ ul, ol {
       content: $icon;
       color: $color;      
       font-family: FontAwesome; /* or whatever */
+      font-size: $base-font-size * 1.5;      
       display: inline-block;
       margin-left: -2em;
-      padding-left: 0.35em;
-      margin-right: 0.5em;
+      padding-left: 0.5em;
+      margin-right: 0.2em;
       width: 1.25em;
       height: 1.5em;
       /*
