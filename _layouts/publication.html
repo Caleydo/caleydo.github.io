@@ -10,33 +10,46 @@ layout: default
     <article class="publication-content">
         <h2>{{ page.authors }}</h2>
 
-        <p>{{ page.journal }},  {% if page.doi %} <a href=http://dx.doi.{{ page.doi }}>doi:{{ page.doi }}</a> {% endif %},  {{ page.year }}</p>
+        <p>{{ page.journal }}, {% if page.doi %} <a href=http://dx.doi.{{ page.doi }}>doi:{{ page.doi }}</a> {% endif%},
+            {{ page.year }}</p>
         {{ content }}
+    </article>
+
+    <article class="publication-meta">
+        <h2>Videos</h2>
+
+        {% for video in site.videos %}
+        {% if video.key == page.video %}
+        <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0" allowfullscreen></iframe>
+        <p><a href={{ video.file}}>Download video</a><p/>
+        {% endif %}
+        {% endfor %}
+
     </article>
 
     <article class="publication-meta">
         <h2>Resources</h2>
 
-            {% if page.website %}
-            <li>
-                <a href={{ page.website }}>Project Website</a><br/>
-            </li>
-            {% endif %}
+        {% if page.website %}
+        <li>
+            <a href={{ page.website }}>Project Website</a><br/>
+        </li>
+        {% endif %}
 
-            {%if page.bibtex %}
-            <li>
-                <a href={{ page.bibtex }}>Download BibTeX</a><br/>
-            </li>
-            {% endif %}
-            {% if page.doi %}
-            <li>
-                <a href=http://dx.doi.{{ page.doi }}>Publisher</a><br/>
-            </li>
-            {% elsif page.publisher %}
-            <li>
-                <a href="{{page.publisher}}">Publisher</a>
-            </li>
-            {% endif %}
+        {%if page.bibtex %}
+        <li>
+            <a href={{ page.bibtex }}>Download BibTeX</a><br/>
+        </li>
+        {% endif %}
+        {% if page.doi %}
+        <li>
+            <a href=http://dx.doi.{{ page.doi }}>Publisher</a><br/>
+        </li>
+        {% elsif page.publisher %}
+        <li>
+            <a href="{{page.publisher}}">Publisher</a>
+        </li>
+        {% endif %}
     </article>
 
 </div>

@@ -9,8 +9,8 @@ journal: Computer Graphics Forum (EuroVis '12), pp. 1175-1184, 31(3)
 year: 2012
 
 website: http://stratomex.caleydo.org
-youtube: _5J80uDTxD8
-youtube-teaser:
+video: 2012-eurovis-stratomex-video
+teaser: 2012-eurovis-stratomex-teaser
 doi: 10.1111/j.1467-8659.2012.03110.x
 # use publisher only if no doi is available
 publisher: 
@@ -18,7 +18,7 @@ publisher:
 pdf: 
 supplement:
 bibtex: http://people.seas.harvard.edu/~alex/papers/2012_eurovis_stratomex.bib
-video: http://people.seas.harvard.edu/~alex/papers/2012_eurovis_stratomex.avi
+video: 2012-eurovis-stratomex-video
 teaser:
 ---
 

@@ -6,4 +6,4 @@ youtube_link: oHg5SJYRHA0
 file_link: http://todo.org
 ---
 
-{% youtube {{ youtube_link }} %}
+{% youtube oHg5SJYRHA0 %}
