@@ -21,7 +21,13 @@ For a list of funded research projects please look at our sponsors
   <div class="card">
     <div class="ribbon-wrapper"><div class="ribbon">NEW</div></div>
     <div class="card-image">
+    <a href="{{ project.url }}">
+    {% if project.teaser.lowres %}
+        <img src="../assets/images/projects/{{ project.teaser.lowres }}" alt="">
+    {% else %}
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    {% endif %}
+    </a>
     </div>
     <div class="card-header">
       <a href="{{ project.url }}">{{ project.title }}</a>
