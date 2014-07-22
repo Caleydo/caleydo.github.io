@@ -48,6 +48,10 @@
   @include page-title($publication-color);
 }
 
+.presentation-title {
+  @include page-title($presentation-color);
+}
+
 
 @mixin page-title($color) {
     color: $color;
@@ -110,6 +114,22 @@
 }
 
 .news-meta {
+  @include page-meta();
+}
+
+.publication-content {
+  @include page-content();
+}
+
+.publication-meta {
+  @include page-meta();
+}
+
+.presentation-content {
+  @include page-content();
+}
+
+.presentation-meta {
   @include page-meta();
 }
 

@@ -1,13 +1,13 @@
 ---
-layout: page
+layout: presentations
 title: Presentations
 permalink: /presentations/
 ---
 
-### Selected Talks
+# Selected Talks
 
 TODO
 
-### Selected Workshops and Courses
+# Selected Workshops and Courses
 
 TODO
