@@ -28,19 +28,19 @@ ul, ol {
       padding-left: 2.5em ;
       line-height: $base-font-size * 2;
       vertical-align: middle;
-      color: #444;
+      color: $color;
       font-family: $sans-serif-font-family;
       font-weight: 700;
       font-size: $base-font-size * 0.9;
       font-style: normal;
 
       a {        
-        color: #444;
+        color: darken( $color, 20% );
       }
     }
     li:before {
       content: $icon;
-      color: $color;      
+      color: $color; //#444;      
       font-family: FontAwesome; /* or whatever */
       font-size: $base-font-size * 1.5;      
       display: inline-block;
