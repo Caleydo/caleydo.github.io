@@ -34,6 +34,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
+  thesis:
+    output: true
+    permalink: /thesis/:path/
   releases:
     output: true
     permalink: /releases/:path/

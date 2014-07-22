@@ -3,6 +3,8 @@ layout: publication
 title: "LineUp: Visual Analysis of Multi-Attribute Rankings"
 key: 2013-infovis-lineup
 permalink: /publications/2013-infovis-lineup/
+type: paper
+
 
 shortname: LineUp
 image: /assets/images/papers/2013_infovis_lineup.png
