@@ -43,7 +43,7 @@ layout: default
     <h1>Partners</h1>
     <ul class="institution-icon-list">
       {% for institution in site.institutions  | sort %}
-      <li><a href="{{ institution.url }}">{{ institution.name }}, {{ institution.country }}</a></li>
+      <li><a href="{{ institution.website }}">{{ institution.name }}, {{ institution.country }}</a></li>
       {% endfor %}
     </ul>
 
