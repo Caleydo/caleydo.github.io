@@ -52,7 +52,7 @@ layout: default
 
         {% if page.project %}
         {% for project in site.projects %}
-        {% if project.key == "lineup") %}
+        {% if project.key == page.project) %}
         <li><a href="{{project.url}}">Project Site</a></li>
         {% endif %}
         {% endfor %}
