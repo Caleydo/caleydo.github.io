@@ -5,8 +5,6 @@ version: 3.1.1
 date: 2013-11-28
 ---
 
-## Release Notes
-
 Caleydo 3.1.1 is released, the first stable release of the 3.1 series, and with it comes a completely revamped pathway analysis module - Caleydo Entourage. Here is a little preview:
 
 Caleydo Entourage
@@ -24,23 +22,5 @@ Box plots are now available in StratomeX and in enRoute making analysis of distr
 Improved data export - cluster assignments are now included.
 Integration of StratomeX and Entourage - pathways viewed in StratomeX can now easily be explored in Entourage.
 Significantly extended and improved documentation.
-For a complete list of changes relative to 3.1.0 Beta please refer to our tracking system
 
-## Windows Downloads
-[Caleydo 3.1.1, Windows - 64-bit (Installer)](https://github.com/Caleydo/caleydo/releases/download/v3.1.1/caleydo-win32.win32.x86_64.exe)
-
-[Caleydo 3.1.1, Windows - 32-bit (zip-compressed)](https://github.com/Caleydo/caleydo/releases/download/v3.1.1/caleydo-win32.win32.x86.zip)
-
-[Caleydo 3.1.1, Linux - 64-bit (tar.gz-compressed)](https://github.com/Caleydo/caleydo/releases/download/v3.1.1/caleydo-linux.gtk.x86_64.tar.gz)
-
-[Caleydo 3.1.1, Windows - 64-bit (zip-compressed)](https://github.com/Caleydo/caleydo/releases/download/v3.1.1/caleydo-win32.win32.x86_64.zip)
-
-## Mac OS X Download
-[Caleydo 3.1.1, MacOSX - 64-bit (zip-compressed)](https://github.com/Caleydo/caleydo/releases/download/v3.1.1/caleydo-macosx.cocoa.x86_64.zip)
-
-## Linux Downloads
-[Caleydo 3.1.1, Linux - 64-bit (deb Package)](https://github.com/Caleydo/caleydo/releases/download/v3.1.1/caleydo-linux.gtk.x86_64.deb)
-
-[Caleydo 3.1.1, Linux - 32-bit (tar.gz-compressed)](https://github.com/Caleydo/caleydo/releases/download/v3.1.1/caleydo-linux.gtk.x86.tar.gz)
-
-[Caleydo 3.1.1, Linux - 64-bit (tar.gz-compressed](https://github.com/Caleydo/caleydo/releases/download/v3.1.1/caleydo-linux.gtk.x86_64.tar.gz)
+For a complete list of changes please refer to the [issue tracking system](https://github.com/Caleydo/caleydo/issues?milestone=43page=1&state=closed).
