@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: components
 title: Projects
 weight: 1
 permalink: /projects/
@@ -11,7 +11,7 @@ Not everything you can read about here is already in the stable branch and there
 
 For a list of funded research projects please look at our sponsors
 
-### Components
+# Components
 
 {% for component in site.components %}
 {% if component.status == "ongoing" %}
