@@ -39,4 +39,7 @@ $ gem install bitters
 ```
 Depending on your system your might have to run those as superuser using ```sudo```.
 
+### Jekyll Plugins
+- YouTube: https://gist.github.com/joelverhagen/1805814
+
 
