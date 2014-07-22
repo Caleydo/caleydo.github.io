@@ -155,6 +155,14 @@ body {
     }
 }
 
+@mixin subpage-title($color) {
+  @include page-title($color);
+
+  h1 {
+    font-size: $page-title-font-size * 0.5;
+  }    
+}
+
 .project-title {
   @include page-title($project-color);
 }
@@ -167,8 +175,8 @@ body {
   @include page-title($team-color);
 }
 
-.news-title {
-  @include page-title($home-color);
+.post-title {
+  @include subpage-title($home-color);
 }
 
 .home-title {
@@ -245,12 +253,46 @@ body {
   @include span-columns(12);
 }
 
-.news-content {
+.post-content {
   @include page-content();
 }
 
-.news-meta {
+.post-content-main {
+  @include page-content();
+  @include span-columns(9);
+}
+
+.post-content-aside {
+  @include page-content();
+  @include span-columns(3);
+  @include omega();
+}
+
+.post-meta {
   @include page-meta();
+}
+
+ul.post-list {
+  @extend ul;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  .post-list-item {
+    margin-bottom: 10px;
+    p {
+      margin-bottom: 0px;
+      display: inline;
+    }
+    .post-list-title {
+      color: $home-color;
+      font-family: $sans-serif-font-family;
+      font-weight: 700;
+      font-style: normal;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }  
 }
 
 .publication-content {

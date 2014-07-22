@@ -1,15 +1,22 @@
 ---
 layout: default
 ---
-<div class="news">
+<div class="post">
 
-  <header class="news-title">
+  <header class="post-title">
     <h1>{{ page.title }}</h1>
   </header>
 
-  <article class="news-content">
+  <article class="post-content-main">
   {{ content }}
-  <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>  
+  </article>
+  
+  <article class="post-content-aside">
+    <p>
+      <i>Published {{ page.date | date: "%b %-d, %Y" }}</i>
+    </p>
+
+      {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>  
   </article>
 
 </div>
