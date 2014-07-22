@@ -2,10 +2,11 @@
 layout: person
 first_name: Marc
 last_name: Streit
+key: streit
 permalink: /persons/streit/
 status: active
 email: marc.streit@jku.at
-image: /assets/images/team/streit.jpg
+image: /assets/images/team/streit.png
 organization: Johannes Kepler University Linz
 position: Postdoctoral Research Associate
 components: 

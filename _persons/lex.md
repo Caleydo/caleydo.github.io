@@ -2,10 +2,11 @@
 layout: person
 first_name: Alexander
 last_name: Lex
+key: lex
 permalink: /persons/lex/
 status: active
 email: alex@seas.harvard.edu
-image: /assets/images/team/lex.jpg
+image: /assets/images/team/lex.png
 organization: Harvard School of Engineering and Applied Sciences
 position: Postdoctoral Research Associate
 components: 
