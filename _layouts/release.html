@@ -4,7 +4,7 @@ layout: default
 <div class="release">
 
   <header class="release-title">
-    <h1>{{ page.first_name }} {{ page.last_name }}</h1>
+    <h1>{{ page.version }}</h1>
   </header>
 
   <article class="release-content">
@@ -12,21 +12,6 @@ layout: default
   </article>
 
   <article class="release-meta">
-
-    <h1>Projects</h1>
-    <p>
-    <ul class="default">
-    {% for key in page.projects %}
-      {% for project in site.projects %}
-        {% if key == project.key %}
-          <li><a href="{{ project.url }}">{{ project.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-    </ul>
-    </p>
-
-    {% include installation.html %}
 
   </article>
 
