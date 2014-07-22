@@ -5,14 +5,12 @@ tag: downloads
 permalink: /downloads/
 ---
 
-# Releases
- 
-{% for release in site.releases %}
-[{{ release.version }}]({{ release.url }})
-{% endfor %}
- 
-# Datasets
+{{ site.releases.last.content }}
 
-{% for dataset in site.datasets %}
-[{{ dataset.name }}]({{ dataset.url }})
+# Older releases
+
+{% for release in site.releases %}
+{% if release != site.releases.last %}
+[{{ release.version }}]({{ release.url }})
+{% endif %}
 {% endfor %}
