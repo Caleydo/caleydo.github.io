@@ -9,7 +9,7 @@ email: nils@gehlenborg.com
 image: /assets/images/team/gehlenborg.png
 organization: Harvard Medical School
 position: Research Associate
-components: 
+projects: 
 - stratomex
 - lineup
 website: http://www.gehlenborg.com

@@ -1,22 +1,20 @@
-gehlenborg.md---
+---
 layout: person
-first_name: Nils
-last_name: Gehlenborg
-key: gehlenborg
-permalink: /persons/gehlenborg/
+first_name: Christian
+last_name: Partl
+key: partl
+permalink: /persons/partl/
 status: active
-email: nils@gehlenborg.com
+email: partl@icg.tugray.at
 image: /assets/images/team/gehlenborg.png
-organization: Harvard Medical School
-position: Research Associate
-components: 
+organization: Graz University of Technology
+position: PhD Student
+projects: 
 - stratomex
-- lineup
-website: http://www.gehlenborg.com
+- enroute
+website: http://www.icg.tugraz.at/Members/partl/christian-partl
 ---
 
 # About
 
-Nils Gehlenborg is a Research Associate in the Park Lab at the Center for Biomedical Informatics at Harvard Medical School and an Associated Researcher in the Cancer Program at the Broad Institute of MIT and Harvard. He received his PhD from the University of Cambridge and was a predoctoral fellow at the European Bioinformatics Institute (EMBL-EBI).
-
-Nils’ long-term goal is to develop computational tools that enable data-driven biomedical research, with a focus on visualization and exploration of genomics and epigenomics data. Currently, he is researching and developing novel tools to visualize heterogeneous data from large-scale cancer genomics studies, integration of visual and computational approaches to support sense-making in biology, and software to support reproducible research in epigenomics and genomics. Nils’ research is funded by an NIH Pathway to Independence Award.
+I am a PHD student at the Institute for Computer Graphics and Vision at the Graz University of Technology. My research interests include Information Visualization, Visual Analytics, and Human Computer Interaction. Currently I am working on the visual representation of data in the field of molecular biology, in particular, the visualization of pathways and heterogeneous genomic data.
