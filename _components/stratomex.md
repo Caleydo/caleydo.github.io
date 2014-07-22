@@ -10,8 +10,8 @@ publications:
  - 2014-nmc-stratomex
  - 2012-eurovis-stratomex 
 collaborators:
- - gehlenborg
  - streit 
+ - gehlenborg
  - lex
 ---
 

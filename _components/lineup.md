@@ -7,8 +7,8 @@ status: ongoing
 standfirst: LineUp is an interactive technique designed to create, visualize and explore rankings of items based on a set of heterogeneous attributes.
 website: http://lineup.caleydo.org
 collaborators:
- - gehlenborg
  - streit 
+ - gehlenborg
  - lex
 ---
 
