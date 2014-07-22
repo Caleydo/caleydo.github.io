@@ -30,7 +30,7 @@ layout: default
             {% for key in page.collaborators %}
             {% for person in site.persons %}
             {% if key == person.key %}
-            <li><a href="{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a></li>
+            <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a></li>
             {% endif %}
             {% endfor %}
             {% endfor %}
