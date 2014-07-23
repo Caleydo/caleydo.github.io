@@ -3,59 +3,99 @@ layout: default
 ---
 <div class="project">
 
-    <header class="project-title">
-        <h1>{{ page.title }}</h1>
-    </header>
+  <header class="project-title">
+    <h1>{{ page.title }}</h1>
+  </header>
 
-    <article class="project-content">
-        <h2>{{ page.standfirst }}</h2>
-        {{ content }}
+  <article class="project-content">
+    <h2>{{ page.standfirst }}</h2>
+    {{ content }}
 
-        {% if page.teaser.highres %}
-        <img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">
-        {% endif %}
-    </article>
+    {% if page.teaser.highres %}
+    <img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">
+    {% endif %}
+  </article>
 
-    <article class="project-meta">
+  <article class="project-meta">
 
-        <h1>Website</h1>
-        <p>
-            <a href={{ page.website }}>{{ page.website }}</a><br>
-        </p>
+    {% if videos.size > 0 %}
+    <h1>Video</h1>
 
-        <h1>Key Collaborators</h1>
+    <p>
+      {% for video in site.videos %}
+      {% if video.key == page.video or video.key == page.preview-video %}
 
-        <p>
-        <ul class="default">
-            {% for key in page.collaborators %}
-            {% for person in site.persons %}
-            {% if key == person.key %}
-            <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a></li>
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-        </ul>
-        </p>
+    <h3>{{video.name}}</h3>
+    <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
+            allowfullscreen></iframe>
+    <p><a href={{ video.file}}>Download video</a>
 
-        <h1>Status</h1>
+    <p/>
+    {% endif %}
+    {% endfor %}
+    </p>
+    {% endif %}
 
-        <p>
-            {{ page.status }}
-        </p>
+    <h1>Team Members</h1>
 
-        <h1>Publications</h1>
+    <p>
+    <ul class="default">
+      {% for key in page.team %}
+      {% for person in site.persons %}
+      {% if key == person.key %}
+      <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a></li>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </ul>
+    </p>
 
-        <p>
-        <ul class="default">
-            {% for key in page.publications %}
-            {% for pub in site.publications %}
-            {% if key == pub.key %}
-            <li><a href="{{ pub.url }}">{{ pub.title }}</a></li>
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-        </ul>
-        </p>
 
-    </article>
+    {% if collaborators.size > 0 %}
+    <h1>Collaborators</h1>
+
+    <p>
+    <ul class="default">
+      {% for collaborator in page.collaborators %}
+
+      {% assign known = false %}
+      {% for person in site.persons %}
+      {% if collaborator == person.key %}
+      <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a></li>
+      {% assign known = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if known == false %}
+      <li>{{ collaborator }}</a></li>
+      {% endif %}
+
+      {% endfor %}
+    </ul>
+    </p>
+    {% endif %}
+
+    <h1>Status</h1>
+
+    <p>
+      {{ page.status }}
+    </p>
+
+    {% if publications.size > 0 %}
+    <h1>Publications</h1>
+
+    <p>
+    <ul class="default">
+      {% for key in page.publications %}
+      {% for pub in site.publications %}
+      {% if key == pub.key %}
+      <li><a href="{{ pub.url }}">{{ pub.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </ul>
+    </p>
+    {% endif %}
+
+  </article>
 </div>

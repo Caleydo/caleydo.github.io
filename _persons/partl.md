@@ -11,7 +11,3 @@ organization: Graz University of Technology
 position: PhD Student
 website: http://www.icg.tugraz.at/Members/partl/christian-partl
 ---
-
-# About
-
-I am a PHD student at the Institute for Computer Graphics and Vision at the Graz University of Technology. My research interests include Information Visualization, Visual Analytics, and Human Computer Interaction. Currently I am working on the visual representation of data in the field of molecular biology, in particular, the visualization of pathways and heterogeneous genomic data.

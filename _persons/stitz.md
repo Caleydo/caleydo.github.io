@@ -11,7 +11,3 @@ organization: Johannes Kepler University Linz
 position: PhD Student
 website: http://holgerstitz.de
 ---
-
-# About
-
-TODO

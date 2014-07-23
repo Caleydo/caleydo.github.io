@@ -5,17 +5,27 @@ key: pathways
 permalink: /projects/pathways/
 status: ongoing
 standfirst: Visualizing relationships between biological pathways using contextual subsets (EnTourage) and embedding experimental data in the context of pathways (enRoute).
-website: http://entourage.caleydo.org
+
 teaser: 
     lowres: 2013_infovis_entourage.png
 #     highres: StratomeX_highRes.png
+
 publications:
  - 2013-infovis-entourage
-collaborators:
- - streit
- - lex
+ 
+video: 2013-infovis-entourage-video
+     
+team:
  - partl
+ - lex
+ - streit
  - gratzl
+ - pfister
+ - schmalstieg
+ 
+collaborators:
+ - wassermann 
+
 ---
 
 
