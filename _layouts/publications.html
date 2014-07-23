@@ -17,7 +17,23 @@ layout: default
             <img alt="{{ publication.shortname }} screenshot" class="paper-image-small" src="{{ publication.image }}">
 
             <div style="padding-">
-                {{publication.authors }} <br/>
+              {% for author in publication.authors %}
+
+              {% assign known = false %}
+              {% for person in site.persons %}
+              {% if author == person.key %}
+              <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+
+              {% assign known = true %}
+              {% endif %}
+              {% endfor %}
+
+              {% if known == false %}
+              {{ author }}
+              {% endif %}
+
+              {% endfor %}
+              <br />
                <b> <a href="{{ publication.url }}">{{ publication.title }}</a></b><br/>
                 {{ publication.journal }}, {{publication.year}}
             </div>
@@ -36,7 +52,18 @@ layout: default
             <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ thesis.image }}">
 
             <div style="padding-">
-                {{thesis.authors }} <br/>
+              {% assign known = false %}
+              {% for person in site.persons %}
+              {% if person.key == thesis.author %}
+              <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>
+
+              {% assign known = true %}
+
+              {% if known == false %}
+              {{ author }}
+              {% endif %}
+              {% endif %}
+              {% endfor %} <br/>
                 <b> <a href="{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
                 {{ thesis.institution }}, {{thesis.year}}
             </div>

@@ -11,7 +11,3 @@ organization: University of Rostock
 position: Postdoctoral Associate
 website: http://www.informatik.uni-rostock.de/~hs162/
 ---
-
-# About
-
-TODO

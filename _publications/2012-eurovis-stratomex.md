@@ -9,7 +9,15 @@ type: paper
 shortname: StratomeX
 image: /assets/images/papers/2012_eurovis_stratomex.png
 
-authors: Alexander Lex, Marc Streit, Hans-Jörg Schulz, Christian Partl, Dieter Schmalstieg, Peter J. Park and Nils Gehlenborg
+authors: 
+- lex
+- streit
+- schulz
+- partl
+- schmalstieg
+- park
+- gehlenborg
+
 journal: Computer Graphics Forum (EuroVis '12), pp. 1175-1184, 31(3)
 year: 2012
 award: 3rd best paper award

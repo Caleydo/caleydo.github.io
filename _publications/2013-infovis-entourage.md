@@ -9,7 +9,16 @@ type: paper
 shortname: Entourage
 image: /assets/images/papers/2013_infovis_entourage.png
 
-authors: Alexander Lex, Christian Partl, Denis Kalkofen, Marc Streit, Anne Mai Wasserman, Samuel Gratzl, Dieter Schmalstieg and Hanspeter Pfister
+authors:
+- lex
+- partl
+- kalkofen
+- streit
+- wassermann
+- gratzl
+- schmalstieg
+- pfister
+
 journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '13), 19(12), pp. 2536–2545
 year: 2013
 award:

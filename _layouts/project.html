@@ -18,17 +18,29 @@ layout: default
 
   <article class="project-meta">
 
-    <h1>Website</h1>
+    {% if videos.size > 0 %}
+    <h1>Video</h1>
 
     <p>
-      <a href={{ page.website }}>{{ page.website }}</a><br>
-    </p>
+      {% for video in site.videos %}
+      {% if video.key == page.video or video.key == page.preview-video %}
 
-    <h1>Key Collaborators</h1>
+    <h3>{{video.name}}</h3>
+    <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
+            allowfullscreen></iframe>
+    <p><a href={{ video.file}}>Download video</a>
+
+    <p/>
+    {% endif %}
+    {% endfor %}
+    </p>
+    {% endif %}
+
+    <h1>Team Members</h1>
 
     <p>
     <ul class="default">
-      {% for key in page.collaborators %}
+      {% for key in page.team %}
       {% for person in site.persons %}
       {% if key == person.key %}
       <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a></li>
@@ -38,12 +50,38 @@ layout: default
     </ul>
     </p>
 
+
+    {% if collaborators.size > 0 %}
+    <h1>Collaborators</h1>
+
+    <p>
+    <ul class="default">
+      {% for collaborator in page.collaborators %}
+
+      {% assign known = false %}
+      {% for person in site.persons %}
+      {% if collaborator == person.key %}
+      <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a></li>
+      {% assign known = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if known == false %}
+      <li>{{ collaborator }}</a></li>
+      {% endif %}
+
+      {% endfor %}
+    </ul>
+    </p>
+    {% endif %}
+
     <h1>Status</h1>
 
     <p>
       {{ page.status }}
     </p>
 
+    {% if publications.size > 0 %}
     <h1>Publications</h1>
 
     <p>
@@ -57,6 +95,7 @@ layout: default
       {% endfor %}
     </ul>
     </p>
+    {% endif %}
 
   </article>
 </div>

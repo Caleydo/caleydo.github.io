@@ -16,6 +16,7 @@ For a list of funded research projects please look at our sponsors
 <div class="cards">
 
 {% for project in site.projects %}
+{% if project.title != "Web" %}
 {% if project.status == "ongoing" %}
 
   <div class="card">
@@ -36,6 +37,7 @@ For a list of funded research projects please look at our sponsors
       <p>{{ project.standfirst }}</p>
     </div>
   </div>
+{% endif %}
 {% endif %}
 {% endfor %}
 
