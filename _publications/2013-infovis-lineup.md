@@ -9,7 +9,13 @@ type: paper
 shortname: LineUp
 image: /assets/images/papers/2013_infovis_lineup.png
 
-authors: Samuel Gratzl, Alexander Lex, Nils Gehlenborg, Hanspeter Pfister, and Marc Streit
+authors:
+- gratzl
+- lex
+- gehlenborg
+- pfister
+- streit
+
 journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '13), 19(12), pp. 2277–2286
 year: 2013
 award: Best paper award

@@ -8,7 +8,15 @@ type: paper
 shortname: Contour
 image: /assets/images/papers/2014_vast_contour.png
 
-authors: Christian Partl, Alexander Lex, Marc Streit, Hendrik Strobelt, Anne-Mai Wassermann, Hanspeter Pfister and Dieter Schmalstieg
+authors:
+- partl
+- lex
+- streit
+- strobelt
+- wassermann
+- pfister
+- schmalstieg
+
 journal: IEEE Transactions on Visualization and Computer Graphics (VAST '14), to appear
 year: 2014
 award:

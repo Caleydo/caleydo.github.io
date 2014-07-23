@@ -3,89 +3,103 @@ layout: default
 ---
 <div class="publication">
 
-    <header class="publication-title">
-        <h1>{{ page.title }}</h1>
-    </header>
+  <header class="publication-title">
+    <h1>{{ page.title }}</h1>
+  </header>
 
-    <article class="publication-content">
+  <article class="publication-content">
 
-        {{ content }}
-    </article>
+    {{ content }}
+  </article>
 
-    <h2>Citation</h2>
-    <article class="citation">
-        <p>{{page.authors}} <br/>
-            <b>{{page.title}}</b><br/>
-            {{ page.journal }}, {% if page.doi %} <a href=http://dx.doi.{{ page.doi }}>doi:{{ page.doi }}</a>, {%endif%}
-            {{ page.year }}</p>
+  <h2>Citation</h2>
+  <article class="citation">
+    <p>
 
-        {%if page.award %}
-        <p class="award">
-            {{page.award}}
-        </p>
-        {% endif %}
+      {% for author in page.authors %}
 
-        {%if page.bibtex %}
-        <p>
-            <a href={{ page.bibtex }}>BibTeX</a>
-        </p>
-        {% endif %}
-    </article>
+      {% assign known = false %}
+      {% for person in site.persons %}
+      {% if author == person.key %}
+    <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != page.authors.last %}, {% endif %}
 
+    {% assign known = true %}
+    {% endif %}
+    {% endfor %}
 
-    <article class="publication-meta">
-        <h2>Videos</h2>
+    {% if known == false %}
+    <li>{{ author }}</a></li>
+    {% endif %}
 
-        {% for video in site.videos %}
-        {% if video.key == page.video or video.key == page.preview-video %}
-        <h3>{{video.name}}</h3>
-        <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
-                allowfullscreen></iframe>
-        <p><a href={{ video.file}}>Download video</a> <p/>
-        {% endif %}
-        {% endfor %}
-
-    </article>
-
-    <article class="publication-resources">
-        <h2>Resources</h2>
-
-        {% if page.project %}
-        {% for project in site.projects %}
-        {% if project.key == page.project) %}
-        <li><a href="{{project.url}}">Project Site</a></li>
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-
-        {% if page.doi %}
-        <li>
-            <a href="http://dx.doi.org/{{ page.doi }}">Publisher</a><br/>
-        </li>
-        {% elsif page.publisher %}
-        <li>
-            <a href="{{page.publisher}}">Publisher</a>
-        </li>
-        {% endif %}
-
-        {% if page.pdf %}
-        <li>
-            <a href={{ page.pdf }}>Download Paper (PDF)</a><br/>
-        </li>
-        {% endif %}
-        {% if page.supplement %}
-        <li>
-            <a href={{ page.supplement }}>Download Supplementary Material</a><br/>
-        </li>
-        {% endif %}
+    {% endfor %}
 
 
+    <br/>
+    <b>{{page.title}}</b><br/>
+    {{ page.journal }}, {% if page.doi %} <a href=http://dx.doi.{{ page.doi }}>doi:{{ page.doi }}</a>, {%endif%}
+    {{ page.year }}.</p>
 
-    </article>
+    {%if page.award %}
+    <p class="award" style="font-style:italic;">
+      {{page.award}}
+    </p>
+    {% endif %}
 
-    <h2>Authors</h2>
-    <article class="publication-authors">
-        {{page.authors}}
-    </article>
+    {%if page.bibtex %}
+    <p>
+      <a href={{ page.bibtex }}>BibTeX</a>
+    </p>
+    {% endif %}
+  </article>
 
+
+  <article class="publication-meta">
+    <h2>Videos</h2>
+
+    {% for video in site.videos %}
+    {% if video.key == page.video or video.key == page.preview-video %}
+    <h3>{{video.name}}</h3>
+    <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
+            allowfullscreen></iframe>
+    <p><a href={{ video.file}}>Download video</a>
+
+    <p/>
+    {% endif %}
+    {% endfor %}
+
+  </article>
+
+  <article class="publication-resources">
+    <h2>Resources</h2>
+
+    {% if page.project %}
+    {% for project in site.projects %}
+    {% if project.key == page.project) %}
+    <li><a href="{{project.url}}">Project Site</a></li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% if page.doi %}
+    <li>
+      <a href="http://dx.doi.org/{{ page.doi }}">Publisher</a><br/>
+    </li>
+    {% elsif page.publisher %}
+    <li>
+      <a href="{{page.publisher}}">Publisher</a>
+    </li>
+    {% endif %}
+
+    {% if page.pdf %}
+    <li>
+      <a href={{ page.pdf }}>Download Paper (PDF)</a><br/>
+    </li>
+    {% endif %}
+    {% if page.supplement %}
+    <li>
+      <a href={{ page.supplement }}>Download Supplementary Material</a><br/>
+    </li>
+    {% endif %}
+
+  </article>
 </div>

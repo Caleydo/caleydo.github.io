@@ -49,3 +49,6 @@ collections:
   institutions:
     output: false
     permalink: /institutions/:path/
+  grants:
+    output: false
+    permalink: /grants/:path/
