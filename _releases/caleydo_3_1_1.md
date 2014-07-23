@@ -1,8 +1,9 @@
 ---
-layout: release
+layout: releaseCaleydo
 key: release_3_1_1
 version: 3.1.1
 date: 2013-11-28
+software: Caleydo
 ---
 
 Caleydo 3.1.1 is released, the first stable release of the 3.1 series, and with it comes a completely revamped pathway analysis module - Caleydo Entourage. Here is a little preview:
