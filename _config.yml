@@ -15,6 +15,9 @@ plugins: ./_plugins
 google_analytics: "'UA-45998043-1'"
 use_analytics: false
 
+# exclude from build
+exclude: ["README.md", "Rakefile", "changelog.md", ".idea/"]
+
 # Build settings
 markdown: kramdown
 kramdown:
