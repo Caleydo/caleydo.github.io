@@ -7,7 +7,7 @@ permalink: /persons/streit/
 role: core
 email: marc.streit@jku.at
 image: /assets/images/team/streit.jpg
-organization: jku
+institution: jku
 position: Postdoctoral Research Associate
 website: http://marc-streit.com
 ---

@@ -7,7 +7,7 @@ permalink: /persons/strobelt/
 role: core
 email: hendrik@strobelt.com
 image: /assets/images/team/strobelt.jpg
-organization: harvard_seas
+institution: harvard_seas
 position: Postdoctoral Research Associate
 website: http://hendrik.strobelt.com
 ---

@@ -7,7 +7,7 @@ permalink: /persons/lex/
 role: core
 email: alex@seas.harvard.edu
 image: /assets/images/team/lex.png
-organization: harvard_seas
+institution: harvard_seas
 position: Postdoctoral Research Associate
 website: http://alexander-lex.com
 ---

@@ -7,7 +7,7 @@ permalink: /persons/pfister/
 role: advisor
 email: pfister@seas.harvard.edu
 image: /assets/images/team/pfister.jpg
-organization: harvard_seas
+institution: harvard_seas
 position: Professor
 website: http://http://vcg.seas.harvard.edu/people/hanspeter-pfister
 ---
