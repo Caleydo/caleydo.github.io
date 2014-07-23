@@ -9,7 +9,7 @@ type: thesis
 shortname: Thesis-Streit
 image: /assets/images/papers/2012_tvcg_model-driven.png
 
-authors: Marc Streit
+author: streit
 advisors: Dieter Schmalstieg, Heidrun Schumann
 year: March 2011
 award: 

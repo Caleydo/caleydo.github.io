@@ -9,7 +9,7 @@ type: thesis
 shortname: Thesis-Lex
 image: /assets/images/papers/2012_eurovis_stratomex.png
 
-authors: Alexander Lex
+author: lex
 advisors: Dieter Schmalstieg, Nils Gehlenborg, Robert Kosara
 year: March 2012
 award: Best Dissertation Award 
