@@ -1,8 +1,10 @@
 ---
-layout: release
+layout: releaseCaleydo
 key: release_3_1_0
 version: 3.1.0
 date: 2013-10-10
+software: Caleydo
+description: releaseCaleydo.html
 ---
 
 Caleydo 3.1.0 beta is the first release to include the Entourage visualization technique, which makes exploring multiple pathways easy and efficient!
