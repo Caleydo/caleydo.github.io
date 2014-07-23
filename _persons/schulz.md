@@ -5,7 +5,7 @@ last_name: Schulz
 key: schulz
 permalink: /persons/schulz/
 role: alumni
-email: samuel.gratzl@jku.at
+email: contact@hjschulz.net
 image: /assets/images/team/schulz.png
 organization: University of Rostock
 position: Postdoctoral Associate
