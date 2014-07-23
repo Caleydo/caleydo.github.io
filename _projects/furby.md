@@ -7,7 +7,7 @@ status: ongoing
 standfirst: "Fuzzy Force-Directed Bicluster Visualization"
 
 teaser: 
-    lowres: 2014_bmc_furby.png
+    lowres: furby_lowRes.png
 
 publications:
 - 2014-bmc-furby

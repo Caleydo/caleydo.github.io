@@ -7,7 +7,7 @@ status: ongoing
 standfirst: "Extracting, Comparing, and Manipulating Subsets across Multiple Tabular Datasets"
 
 teaser: 
-    lowres: 2014_infovis_domino.png
+    lowres: domino_lowRes.png
 
 publications:
 - 2014-infovis-domino
