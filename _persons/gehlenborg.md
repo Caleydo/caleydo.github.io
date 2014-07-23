@@ -7,7 +7,7 @@ permalink: /persons/gehlenborg/
 role: core
 email: nils@gehlenborg.com
 image: /assets/images/team/gehlenborg.png
-institution: harvard_medical_school
+organization: Harvard Medical School
 position: Research Associate
 website: http://www.gehlenborg.com
 ---

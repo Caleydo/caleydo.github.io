@@ -7,7 +7,7 @@ permalink: /persons/schmalstieg/
 role: advisor
 email: schmalstieg@icg.tugraz.at
 image: /assets/images/team/schmalstieg.jpg
-institution: tug
+organization: Graz University of Technology
 position: Professor
 website: http://www.icg.tu-graz.ac.at/Members/schmalstieg/
 ---

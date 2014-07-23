@@ -7,7 +7,7 @@ permalink: /persons/schulz/
 role: alumni
 email: contact@hjschulz.net
 image: /assets/images/team/schulz.png
-institution: University of Rostock
+organization: University of Rostock
 position: Postdoctoral Associate
 website: http://www.informatik.uni-rostock.de/~hs162/
 ---

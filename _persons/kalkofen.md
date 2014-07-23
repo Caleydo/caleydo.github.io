@@ -7,7 +7,7 @@ permalink: /persons/kalkofen/
 role: contributor
 email: kalkofen@icg.tugraz.at
 image: /assets/images/team/kalkofen.jpg
-institution: tug
-position: Postdoctoral Research Associate
+organization: Graz University of Technology
+position: PhD Student
 website: http://holgerstitz.de
 ---

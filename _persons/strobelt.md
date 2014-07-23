@@ -7,7 +7,7 @@ permalink: /persons/strobelt/
 role: core
 email: hendrik@strobelt.com
 image: /assets/images/team/strobelt.jpg
-institution: harvard_seas
+organization: Harvard School of Engineering and Applied Sciences
 position: Postdoctoral Research Associate
 website: http://hendrik.strobelt.com
 ---

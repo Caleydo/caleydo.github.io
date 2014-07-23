@@ -7,7 +7,7 @@ permalink: /persons/park/
 role: advisor
 email: peter_park@harvard.edu
 image: /assets/images/team/park.png
-institution: harvard_medical_school
+organization: Harvard Medical School
 position: Professor
 website: http://compbio.med.harvard.edu/principal_investigator.html
 ---

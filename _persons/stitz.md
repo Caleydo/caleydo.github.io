@@ -7,7 +7,7 @@ permalink: /persons/stitz/
 role: contributor
 email: holger.stitz@jku.at
 image: /assets/images/team/stitz.jpg
-institution: jku
+organization: Johannes Kepler University Linz
 position: PhD Student
 website: http://holgerstitz.de
 ---

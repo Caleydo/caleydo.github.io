@@ -7,7 +7,7 @@ permalink: /persons/partl/
 role: core
 email: partl@icg.tugray.at
 image: /assets/images/team/partl.jpg
-institution: tug
+organization: Graz University of Technology
 position: PhD Student
 website: http://www.icg.tugraz.at/Members/partl/christian-partl
 ---
