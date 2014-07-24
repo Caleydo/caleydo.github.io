@@ -14,7 +14,7 @@ layout: default
 
         <div class="paper-list-block">
 
-            <img alt="{{ publication.shortname }} screenshot" class="paper-image-small" src="{{ publication.image }}">
+            <a href="{{ site.baseurl }}{{ publication.url }}"><img alt="{{ publication.shortname }} screenshot" class="paper-image-small" src="{{ publication.image }}"></a>
 
             <div style="padding-">
               {% for author in publication.authors %}
