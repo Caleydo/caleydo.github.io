@@ -29,7 +29,7 @@ publisher:
 project: pathways
 
 video: 2012_biovis_enroute_video
-preview-video: 2012_biovis_enroute_video_preview
+preview-video:
 
 
 pdf: 2013_bmc_enroute.pdf
