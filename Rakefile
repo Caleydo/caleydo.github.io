@@ -172,9 +172,9 @@ end
 
 def selectRepo(master, develop) 
   localbranch = `git rev-parse --abbrev-ref HEAD`.strip
-  #jenkins doesn't have a local branch, so use the GIT_BRANCH env variable provided by the jenkins build
+  #jenkins doesn't have a local branch, so use the GIT_BRANCH env variable provided by the jenkins build	
   if localbranch == 'HEAD'
-    localbranch = (ENV.GIT_BRANCH == 'origin/master') ? "master" else "develop"
+    localbranch = (ENV.GIT_BRANCH == 'origin/master') ? "master" : "develop"
   end
   puts "current branch: '#{localbranch}'"
   (localbranch == 'master') ? master : develop
