@@ -37,6 +37,18 @@ task :watch do
   [jekyllPid].each { |pid| Process.wait(pid) }
 end
 
+desc "Serve the site and regenerate when it changes"
+task :serve do
+  puts "Starting to watch source with Jekyll"
+  jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll serve --watch")
+  trap("INT") {
+    [jekyllPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
+    exit 0
+  }
+
+  [jekyllPid].each { |pid| Process.wait(pid) }
+end
+
 desc "Clean out caches: .pygments-cache, .gist-cache, .sass-cache"
 task :clean do
   rm_rf [".pygments-cache/**", ".gist-cache/**", ".sass-cache/**"]
