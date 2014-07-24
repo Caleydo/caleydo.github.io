@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Characterizing Cancer Subtypes using the Dual Analysis Approach in Caleydo "
+title: "Characterizing Cancer Subtypes using the Dual Analysis Approach in Caleydo StratomeX"
 key: 2014-cga-characterizing
 permalink: /publications/2014_cga_characterizing/
 type: paper
