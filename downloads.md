@@ -1,6 +1,6 @@
 ---
 layout: downloads
-title: Downloads
+title: Downloads | Caleydo
 tag: downloads
 permalink: /downloads/
 softwares:

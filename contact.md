@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Contact | Caleydo
 permalink: /contact/
 ---
 

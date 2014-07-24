@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: Projects
+title: Projects | Caleydo
 weight: 1
 permalink: /projects/
 ---

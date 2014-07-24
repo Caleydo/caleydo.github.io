@@ -1,6 +1,6 @@
 ---
 layout: grants
-title: Grants
+title: Grants | Caleydo
 tag: grants
 permalink: /grants/
 ---
