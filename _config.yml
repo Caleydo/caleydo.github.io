@@ -2,8 +2,8 @@
 title: Caleydo
 email: contact@caleydo.org
 description: "TODO: Short description of Caleydo Project."
-#baseurl: "http://caleydo.github.io"
-url: "http://caleydo.org"
+baseurl: ""
+url: "http://caleydo.github.io/website-master"
 twitter_username: caleydo_org
 github_username:  caleydo
 youtube_username: caleydotugraz
