@@ -47,4 +47,6 @@ Depending on your system your might have to run those as superuser using ```sudo
 
 https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 
+### Windows Installation Instructions
 
+http://jekyll-windows.juthilo.com/1-ruby-and-devkit/
