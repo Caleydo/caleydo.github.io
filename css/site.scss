@@ -175,6 +175,11 @@ body {
   @include page-title($team-color);
 }
 
+.funding-title {
+  @include page-title($home-color);
+}
+
+
 .post-title {
   @include subpage-title($home-color);
 }
@@ -256,6 +261,14 @@ body {
 }
 
 .team-meta {
+  @include page-meta();
+}
+
+.funding-content {
+  @include page-content();
+}
+
+.funding-meta {
   @include page-meta();
 }
 
