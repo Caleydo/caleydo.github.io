@@ -25,7 +25,7 @@ permalink: pretty
 sass:
   sass_dir: _sass
 # exclude from build
-exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock"]
+exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock", "rvm.env"]
 
 # Collections
 collections:

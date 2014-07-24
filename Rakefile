@@ -47,10 +47,10 @@ end
 desc "Check all external links"
 task :check_links do
   require 'link_checker'
-  LinkChecker.new(
+  raise "## Link Checker errors" unless LinkChecker.new(
     :target => '_site',
 #    :options => { :no_warnings => true }
-  ).check_uris
+  ).check_uris == 0
 end
 
 ##############
