@@ -34,19 +34,19 @@ layout: default
 
     <br/>
     <b>{{page.title}}</b><br/>
-    {{ page.institution }}, {% if page.doi %} <a href=http://dx.doi.{{ page.doi }}>doi:{{ page.doi }}</a>,
+    {{ page.institution }}, {% if page.doi %} <a href=http://dx.doi.org/{{ page.doi }}>doi:{{ page.doi }}</a>,
     {%endif%}
     {{ page.year }}</p>
 
     {%if page.award %}
-    <p class="award" style="font-style:italic;>
+    <p class="award" style="font-style:italic;">
       {{page.award}}
     </p>
     {% endif %}
 
     {%if page.bibtex %}
     <p>
-      <a href={{ page.bibtex }}>BibTeX</a>
+      <a href="{{ page.bibtex }}">BibTeX</a>
     </p>
     {% endif %}
   </article>

@@ -25,7 +25,7 @@ Caleydo requires Java 7. Further installation details can be found when followin
 {% for x in site.releases %}
 {% if x.software == sw.name %}
 {% if x.version == sw.latest %}
-[{{ x.software }} {{ x.version }}]({{ x.url }}) {{sw.description}}
+[{{ x.software }} {{ x.version }}]({{ site.baseurl }}{{ x.url }}) {{sw.description}}
 {% endif %}    
 {% endif %}
 {% endfor %}
@@ -41,7 +41,7 @@ Caleydo requires Java 7. Further installation details can be found when followin
 {% for x in site.releases %}
 {% if x.software == sw.name %}
 {% if x.version != sw.latest %}
-[{{ x.software }} {{ x.version }}]({{ x.url }}) {{sw.description}}
+[{{ x.software }} {{ x.version }}]({{ site.baseurl }}{{ x.url }}) {{sw.description}}
 {% endif %}    
 {% endif %}
 {% endfor %}

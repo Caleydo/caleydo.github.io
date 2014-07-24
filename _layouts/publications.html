@@ -34,7 +34,7 @@ layout: default
 
               {% endfor %}
               <br />
-               <b> <a href="{{ publication.url }}">{{ publication.title }}</a></b><br/>
+               <b> <a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b><br/>
                 {{ publication.journal }}, {{publication.year}}
             </div>
 
@@ -64,7 +64,7 @@ layout: default
               {% endif %}
               {% endif %}
               {% endfor %} <br/>
-                <b> <a href="{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+                <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
                 {{ thesis.institution }}, {{thesis.year}}
             </div>
 

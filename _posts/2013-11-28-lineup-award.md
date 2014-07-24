@@ -8,6 +8,6 @@ categories: event
 Our paper _LineUp: Visual Analysis of Multi-Attribute Rankings_ has won the best paper award at IEEE InfoVis. 
 {% for project in site.projects %}
 {% if project.key == "lineup") %}
-[Learn more about LineUp here.]({{ project.url }})
+[Learn more about LineUp here.]({{ site.baseurl }}{{ project.url }})
 {% endif %}
 {% endfor %}

@@ -18,7 +18,7 @@ Within Caleydo, we have several projects and objectives we want to achieve. On t
   <div class="card">
     <div class="ribbon-wrapper"><div class="ribbon">NEW</div></div>
     <div class="card-image">
-    <a href="{{ project.url }}">
+    <a href="{{ site.baseurl }}{{ project.url }}">
     {% if project.teaser.lowres %}
         <img src="../assets/images/projects/{{ project.teaser.lowres }}" alt="">
     {% else %}
@@ -27,7 +27,7 @@ Within Caleydo, we have several projects and objectives we want to achieve. On t
     </a>
     </div>
     <div class="card-header">
-      <a href="{{ project.url }}">{{ project.title }}</a>
+      <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
     </div>
     <div class="card-copy">
       <p>{{ project.standfirst }}</p>

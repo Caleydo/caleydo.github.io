@@ -89,7 +89,7 @@ layout: default
       {% for key in page.publications %}
       {% for pub in site.publications %}
       {% if key == pub.key %}
-      <li><a href="{{ pub.url }}">{{ pub.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ pub.url }}">{{ pub.title }}</a></li>
       {% endif %}
       {% endfor %}
       {% endfor %}
