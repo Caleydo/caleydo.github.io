@@ -2,7 +2,7 @@
 layout: supporter
 agency: State of Styria
 key: 2007-styria-genview
-permalink: /grants/2007-styria-genview/
+permalink: /funding/2007-styria-genview/
 website: http://www.zukunftsfonds.steiermark.at/
 logo: steiermark.gif
 title: Analyse von genetischen und klinischen Daten mit Methoden der Informationsvisualisierung und multimodaler Benutzerschnittstellen

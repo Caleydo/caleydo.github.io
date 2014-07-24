@@ -2,7 +2,7 @@
 layout: supporter
 agency: Austrian Research Promotion Agency (FFG)
 key: 2007-ffg-genoptikum
-permalink: /grants/2007-ffg-genoptikum/
+permalink: /funding/2007-ffg-genoptikum/
 website: https://www.ffg.at/en
 logo: ffg.png
 title: Genoptikum - Visual Data Mining for Genetic Data

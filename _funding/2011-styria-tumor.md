@@ -2,7 +2,7 @@
 layout: supporter
 agency: State of Styria
 key: 2011-styria-tumor
-permalink: /grants/2007-styria-tumor/
+permalink: /funding/2007-styria-tumor/
 website: http://www.steiermark.at/
 logo: steiermark.gif
 title: Diagnostik der Tumorheterogenität – ein neuer Steuerfaktor für die Therapie des Dickdarmkarzinoms?

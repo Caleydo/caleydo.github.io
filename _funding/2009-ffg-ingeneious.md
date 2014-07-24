@@ -2,7 +2,7 @@
 layout: supporter
 agency: Austrian Research Promotion Agency (FFG)
 key: 2009-ffg-ingeneious
-permalink: /grants/2009-ffg-ingeneious/
+permalink: /funding/2009-ffg-ingeneious/
 website: https://www.ffg.at/en
 logo: ffg.png
 title: inGeneious - Holistic Visualization of Biomolecular and Clinical Data
