@@ -7,8 +7,8 @@ require "stringex"
 public_dir      = "_site"    # compiled site directory
 deploy_dir      = "_deploy"
 server_port     = "4000"      # port for preview server eg. localhost:4000
-target_repo     = "git@github.com:Caleydo/caleydo.github.io.git"
-target_dev_repo = "git@github.com:Caleydo/caleydo-website-preview.git"
+target_repo     = "git@github.com:Caleydo/website-master.git"
+target_dev_repo = "git@github.com:Caleydo/website-develop.git"
 
 if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
   puts '## Set the codepage to 65001 for Windows machines'
@@ -114,11 +114,8 @@ task :deployImpl do
   
   puts "delete existing deployment dir"
   FileUtils.remove_dir("#{deploy_dir}",true)
-  Dir.mkdir("#{deploy_dir}")
-  
-  #cd "#{deploy_dir}" do 
-  #  system "git clone #{repo_url}"
-  #end
+
+  system "git clone #{repo_url} #{deploy_dir}"
   (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
   
   puts "\n## Copying #{public_dir} to #{deploy_dir}"
@@ -126,12 +123,12 @@ task :deployImpl do
   cp_r "#{public_dir}/.", deploy_dir
   
   cd "#{deploy_dir}" do
-    #system "git add -A"
+    system "git add -A"
     message = "Site updated at #{Time.now.utc}"
     puts "\n## Committing: #{message}"
-    #system "git commit -m \"#{message}\""
+    system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    #system "git push origin #{branch}"
+    system "git push origin #{branch}"
     puts "\n## Github Pages deploy complete"
   end
 end
@@ -141,7 +138,7 @@ end
 # Publish Chain #
 ##############
 desc "Generate website and deploy"
-task :publish => [:patch_config, :generate, :check_links, :unpatch_config] do #, :deploy
+task :publish => [:patch_config, :generate, :unpatch_config, :check_links, :deploy] do #
 end
 
 ########################################################
@@ -175,12 +172,15 @@ def selectRepo(master, develop)
 end
 
 def blog_url(project)
-  url = if File.exists?('CNAME')
-    "http://#{IO.read('CNAME').strip}"
+  if (project == '')
+    url = if File.exists?('CNAME')
+      "http://#{IO.read('CNAME').strip}"
+    else
+      "http://caleydo.github.io"
+    end
   else
-    "http://caleydo.github.io"
+    url = "http://caleydo.github.io/#{project}"
   end
-  url += "/#{project}" unless project == ''
   url
 end
 
