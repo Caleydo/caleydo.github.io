@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "LineUp: Visual Analysis of Multi-Attribute Rankings"
-key: 2013-infovis-lineup
-permalink: /publications/2013-infovis-lineup/
+key: 2013_infovis_lineup
+permalink: /publications/2013_infovis_lineup/
 type: paper
 
 
@@ -28,13 +28,13 @@ publisher:
 
 project: lineup
 
-video: 2013-infovis-lineup-video
-preview-video: 2013-infovis-lineup-video-preview
+video: 2013_infovis_lineup_video
+preview-video: 2013_infovis_lineup_video_preview
 
 
-pdf: http://people.seas.harvard.edu/~alex/papers/2014_infovis_lineup.pdf
-supplement: http://people.seas.harvard.edu/~alex/papers/2014_infovis_lineup_supplement.zip
-bibtex: http://people.seas.harvard.edu/~alex/papers/2014_infovis_lineup.bib
+pdf: 2013_infovis_lineup.pdf
+supplement: 2013_infovis_lineup_supplement.zip
+bibtex: 2013_infovis_lineup.bib
 
 ---
 

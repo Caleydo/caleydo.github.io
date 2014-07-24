@@ -21,47 +21,52 @@ layout: default
       {% assign known = false %}
       {% for person in site.persons %}
       {% if author == person.key %}
-    <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != page.authors.last %}, {% endif %}
+      <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
 
-    {% assign known = true %}
-    {% endif %}
-    {% endfor %}
+      {% assign known = true %}
+      {% endif %}
+      {% endfor %}
 
-    {% if known == false %}
-    <li>{{ author }}</a></li>
-    {% endif %}
+      {% if known == false %}
+      {{ author }}{% if author != page.authors.last%}, {% endif %}
+      {% endif %}
 
-    {% endfor %}
+      {% endfor %}
 
 
-    <br/>
-    <b>{{page.title}}</b><br/>
-    {{ page.journal }}, {% if page.doi %} <a href=http://dx.doi.{{ page.doi }}>doi:{{ page.doi }}</a>, {%endif%}
-    {{ page.year }}.</p>
+      <br/>
+      <b>{{page.title}}</b><br/>
+      {{ page.journal }}, {% if page.doi %} <a href=http://dx.doi.{{ page.doi }}>doi:{{ page.doi }}</a>, {%endif%}
+      {{ page.year }}.</p>
 
     {%if page.award %}
     <p class="award" style="font-style:italic;">
       {{page.award}}
     </p>
     {% endif %}
+    {%if page.note %}
+    <p class="note" style="font-style:italic;">
+      <b>Note:</b> {{page.note}}
+    </p>
+    {% endif %}
 
     {%if page.bibtex %}
     <p>
-      <a href={{ page.bibtex }}>BibTeX</a>
+      <a href={{site.paper_content_url}}{{ page.bibtex }}>BibTeX</a>
     </p>
     {% endif %}
   </article>
 
 
   <article class="publication-meta">
-    <h2>Videos</h2>
+
 
     {% for video in site.videos %}
     {% if video.key == page.video or video.key == page.preview-video %}
-    <h3>{{video.name}}</h3>
+    <h2>{{video.name}}</h2>
     <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
             allowfullscreen></iframe>
-    <p><a href={{ video.file}}>Download video</a>
+    <p><a href={{site.paper_content_url}}{{video.file}}>Download video</a>
 
     <p/>
     {% endif %}
@@ -92,12 +97,12 @@ layout: default
 
     {% if page.pdf %}
     <li>
-      <a href={{ page.pdf }}>Download Paper (PDF)</a><br/>
+      <a href="{{site.paper_content_url}}{{ page.pdf }}">Download Paper (PDF)</a><br/>
     </li>
     {% endif %}
     {% if page.supplement %}
     <li>
-      <a href={{ page.supplement }}>Download Supplementary Material</a><br/>
+      <a href="{{site.paper_content_url}}{{ page.supplement }}">Download Supplementary Material</a><br/>
     </li>
     {% endif %}
 

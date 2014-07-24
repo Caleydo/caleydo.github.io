@@ -1,41 +1,40 @@
 ---
 layout: publication
-title: "Entourage: Visualizing Relationships between Biological Pathways using Contextual Subsets"
-key: 2013-infovis-entourage
-permalink: /publications/2012-infovis-entourage/
+title: "enRoute: Dynamic Path Extraction from Biological Pathway Maps for Exploring Heterogeneous Experimental Datasets"
+key: 2013_bmc_enroute
+permalink: /publications/2013_bmc_enroute/
 type: paper
 
 
-shortname: Entourage
-image: /assets/images/papers/2013_infovis_entourage.png
+shortname: enRoute
+image: /assets/images/papers/2013_bmc_enroute.png
 
 authors:
-- lex
 - partl
-- kalkofen
+- lex
 - streit
-- wassermann
-- gratzl
+- kalkofen
+- Karl Kashofer
 - schmalstieg
-- pfister
 
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '13), 19(12), pp. 2536–2545
+journal: BMC Bioinformatics, 14(Suppl 19), p. S3
 year: 2013
 award:
+note: extended journal version of 2012 BioVis article
 
-doi: 10.1109/TVCG.2013.154
+doi: 10.1186/1471-2105-14-S19-S3
 # use publisher only if no doi is available
 publisher: 
 
 project: pathways
 
-video: 2013-infovis-entourage-video
-preview-video: 2013-infovis-entourage-video-preview
+video: 2012_biovis_enroute_video
+preview-video: 2012_biovis_enroute_video_preview
 
 
-pdf: http://people.seas.harvard.edu/~alex/papers/2014_infovis_entourage.pdf
+pdf: 2013_bmc_enroute.pdf
 supplement:
-bibtex: http://people.seas.harvard.edu/~alex/papers/2013_infovis_entourage.bib
+bibtex: 2013_bmc_enroute.bib
 
 
 ---

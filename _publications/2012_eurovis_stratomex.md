@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "StratomeX: Visual Analysis of Large-Scale Heterogeneous Genomics Data for Cancer Subtype Characterization"
-key: 2012-eurovis-stratomex
-permalink: /publications/2012-eurovis-stratomex/
+key: 2012_eurovis_stratomex
+permalink: /publications/2012_eurovis_stratomex/
 type: paper
 
 
@@ -35,9 +35,9 @@ video: 2012-eurovis-stratomex-video
 teaser-video: 
 
 
-pdf: http://people.seas.harvard.edu/~alex/papers/2012_eurovis_stratomex.pdf
+pdf: 2012_eurovis_stratomex.pdf
 supplement:
-bibtex: http://people.seas.harvard.edu/~alex/papers/2012_eurovis_stratomex.bib
+bibtex: 2012_eurovis_stratomex.bib
 
 ---
 

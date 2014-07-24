@@ -15,6 +15,8 @@ plugins: ./_plugins
 google_analytics: "'UA-45998043-1'"
 use_analytics: false
 
+paper_content_url: http://people.seas.harvard.edu/~alex/papers/
+
 # Build settings
 markdown: kramdown
 kramdown:
