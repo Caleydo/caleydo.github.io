@@ -1,10 +1,10 @@
 ---
 layout: project
-title: EnTourage/enRoute
+title: Entourage/enRoute
 key: pathways
 permalink: /projects/pathways/
 status: ongoing
-standfirst: Visualizing relationships between biological pathways using contextual subsets (EnTourage) and embedding experimental data in the context of pathways (enRoute).
+standfirst: Visualizing relationships between biological pathways using contextual subsets (Entourage) and embedding experimental data in the context of pathways (enRoute).
 
 teaser: 
     lowres: 2013_infovis_entourage.png
@@ -29,7 +29,7 @@ collaborators:
 ---
 
 
-#### EnTourage
+#### Entourage
 
 Entourage is a visualization technique to efficiently perform multi-pathway analysis. It can help researchers to understand biological processes within cells. All the biochemical reactions that make everything in our bodies work interact in a highly complex network of biochemical reactions. Biologists are trying to capture this network and pharmacologists are interested in how we can influence this network, to, for example, stop a process from going wrong. In cancer, for example, a mutated gene might stop a cell from dying as "planned", leading to uncontrolled growth and thus to a tumor. A pharmacologists now wants to understand if a drug can stop that from happening. To get an idea whether this might work early on, he or she might use pathways. Pathways are subsets of the large network that only contain the parts that are really relevant for, e.g., a disease. Excluding the majority of the network is important so that we can understand what the important components are and that we can focus on them. However, sometimes its critical to see all the relationships, even those that are not included in the pathway. One of those situations is when you would like to check for side-effects of a drug, to see if, for example, a cancer drug you are working on has effects on the skin, e.g. producing rashes. Another question you might ask is: given a drug that I know targets a specific gene and that is used in one disease, can it be used in another disease that involves the same gene?
 
