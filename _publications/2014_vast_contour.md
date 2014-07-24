@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "ConTour: Data-Driven Exploration of Multi-Relational Datasets for Drug Discovery"
-key: 2014-vast-contour
+key: 2014_vast_contour
 permalink: /publications/2014_vast_contour/
 type: paper
 
