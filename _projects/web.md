@@ -3,7 +3,7 @@ layout: project
 title: Web
 key: web
 permalink: /projects/web/
-status: ongoing
+status: new
 standfirst: TODO
 teaser: 
     lowres: caleydo_web_lowRes.png
