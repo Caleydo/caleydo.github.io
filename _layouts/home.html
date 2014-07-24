@@ -4,7 +4,7 @@ layout: default
 <div class="home">
 
   <header class="home-title">
-    <h1>{{ page.title }}</h1>
+    <h1>{{ page.title | remove: "| Caleydo" }}</h1>
   </header>
 
   <article class="home-content-main">
@@ -57,6 +57,12 @@ layout: default
     <h1>Latest Release</h1>
     <ul class="release-icon-list">
       <li><a href="{{ site.releases.last.url }}">Caleydo {{ site.releases.last.version }}</a></li>
+    </ul>
+
+
+    <h1>Funding</h1>
+    <ul class="grant-icon-list">
+      <li><a href="/grants/"> Grants</a></li>
     </ul>
   </article>
 

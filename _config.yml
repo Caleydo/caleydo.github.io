@@ -15,9 +15,9 @@ plugins: ./_plugins
 google_analytics: "'UA-45998043-1'"
 use_analytics: false
 
+paper_content_url: http://people.seas.harvard.edu/~alex/papers/
 # exclude from build
 exclude: ["README.md", "Rakefile", "changelog.md", ".idea/"]
-
 # Build settings
 markdown: kramdown
 kramdown:
@@ -52,3 +52,6 @@ collections:
   institutions:
     output: false
     permalink: /institutions/:path/
+  grants:
+    output: false
+    permalink: /grants/:path/

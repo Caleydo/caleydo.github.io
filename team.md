@@ -1,6 +1,6 @@
 ---
 layout: team
-title: Team
+title: Team | Caleydo
 weight: 2
 tag: team
 permalink: /team/

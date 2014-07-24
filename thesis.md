@@ -1,6 +1,6 @@
 ---
 layout: thesis
-title: Thesis
+title: Thesis | Caleydo
 tag: thesis
 permalink: /thesis/
 ---
