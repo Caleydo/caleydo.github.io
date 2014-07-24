@@ -7,8 +7,8 @@ require "stringex"
 public_dir      = "_site"    # compiled site directory
 deploy_dir      = "_deploy"
 server_port     = "4000"      # port for preview server eg. localhost:4000
-target_repo     = "git@github.com:Caleydo/website-master.git"
-target_dev_repo = "git@github.com:Caleydo/website-develop.git"
+target_repo     = "git@github.com:Caleydo/caleydo.github.io.git"
+target_dev_repo = "git@github.com:Caleydo/website-dev.git"
 
 if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
   puts '## Set the codepage to 65001 for Windows machines'
