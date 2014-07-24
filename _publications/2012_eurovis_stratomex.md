@@ -31,8 +31,8 @@ project: stratomex
 
 website: http://stratomex.caleydo.org
 
-video: 2012-eurovis-stratomex-video
-teaser-video: 
+video: 2012_eurovis_stratomex_video
+preview-video: 
 
 
 pdf: 2012_eurovis_stratomex.pdf

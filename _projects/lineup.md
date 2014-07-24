@@ -10,7 +10,10 @@ teaser:
     lowres: 2013_infovis_lineup.png
 #     highres: StratomeX_highRes.png
 
-video: 2013-infovis-lineup-video
+publications:
+- 2013_infovis_lineup
+
+video: 2013_infovis_lineup_video
     
 team:
  - gratzl 
