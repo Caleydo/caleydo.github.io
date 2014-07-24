@@ -123,7 +123,7 @@ task :deployImpl do
   cp_r "#{public_dir}/.", deploy_dir
   
   #remove CNAME entry for project specific repos
-  if branch == 'gh-pages'
+  if branch == 'gh-pages' and File.exist?("#{deploy_dir}/CNAME")
     FileUtils.rm("#{deploy_dir}/CNAME")
   end
   
