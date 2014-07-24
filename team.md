@@ -25,7 +25,7 @@ permalink: /team/
 {% endfor %}
 
 
-# Contributor
+# Contributors
 
 {% for person in site.persons %}
 {% if person.role == "contributor") %}
