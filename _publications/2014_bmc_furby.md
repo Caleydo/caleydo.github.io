@@ -1,31 +1,43 @@
 ---
-layout: project
-title: Furby
-key: furby
-permalink: /projects/furby/
-status: ongoing
-standfirst: "Fuzzy Force-Directed Bicluster Visualization"
+layout: publication
+title: "Furby: Fuzzy Force-Directed Bicluster Visualization"
+key: 2014_bmc_furby
+permalink: /publications/2014_bmc_furby/
+type: paper
 
-teaser: 
-    lowres: furby_lowRes.png
 
-publications:
-- 2014_bmc_furby
+shortname: furby
+image: /assets/images/papers/2014_bmc_furby.png
+
+authors:
+- streit
+- gratzl
+- Michael Gillhofer
+- Andreas Mayr
+- Andreas Mitterecker
+- Sepp Hochreiter
+
+journal: BMC Bioinformatics, 15(Suppl 6), p. S4
+year: 2014
+award:
+note: 
+
+doi: 10.1186/1471-2105-15-S6-S4
+# use publisher only if no doi is available
+publisher: 
+
+project: furby
 
 video: 2014_bmc_furby_video
-    
-team:
- - streit 
- - gratzl
- 
-collaborators:
- - Michael Gillhofer
- - Andreas Mitterecker
- - Andreas Mayr
- - Sepp Hochreiter
- 
----
+preview-video:
 
+
+pdf: 2014_bmc_furby.pdf
+supplement:
+bibtex: 2014_bmc_furby.bib
+
+
+---
 Cluster analysis is widely used to discover patterns in multi-dimensional data. Clustered heatmaps are the standard technique for visualizing one-way and two-way clustering results. In clustered heatmaps, rows and/or columns are reordered, resulting in a representation that shows the clusters as contiguous blocks. However, for biclustering results, where clusters can overlap, it is not possible to reorder the matrix in this way without duplicating rows and/or columns.
 
 We present Furby, an interactive visualization technique for analyzing biclustering results. Our contribution is twofold. First, the technique provides an overview of a biclustering result, showing the actual data that forms the individual clusters together with the information which rows and columns they share. Second, for fuzzy clustering results, the proposed technique additionally enables analysts to interactively set the thresholds that transform the fuzzy (soft) clustering into hard clusters that can then be investigated using heatmaps or bar charts. Changes in the membership value thresholds are immediately reflected in the visualization. We demonstrate the value of Furby by loading biclustering results applied to a multi-tissue dataset into the visualization.

@@ -10,9 +10,9 @@ teaser:
 #     highres: StratomeX_highRes.png
 
 publications:
-- 2014-vast-contour
+- 2014_vast_contour
 
-video: 2014-vast-contour-video
+video: 2014_vast_contour_video
 
 team:
  - partl
