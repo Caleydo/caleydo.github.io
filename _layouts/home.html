@@ -32,9 +32,9 @@ layout: default
 
   <h1>Recent Publications</h1>
   <ul class="publication-icon-list">
-  {% for publication in site.publications %}
+  {% sorted_for publication in site.publications reversed sort_by:year %}
     <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></li>
-  {% endfor %}
+  {% endsorted_for %}
   </ul>
 
   </article>
@@ -49,7 +49,7 @@ layout: default
 
     <h1>Projects</h1>
     <ul class="project-icon-list">
-    {% for project in site.projects  | sort %}
+    {% for project in site.projects %}
       <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.title }}</a></li>
     {% endfor %}
     </ul>
