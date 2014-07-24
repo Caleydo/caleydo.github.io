@@ -76,7 +76,7 @@ layout: default
 
   <article class="publication-resources">
     <h2>Resources</h2>
-
+    <ul>
     {% if page.project %}
     {% for project in site.projects %}
     {% if project.key == page.project) %}
@@ -105,6 +105,6 @@ layout: default
       <a href="{{site.paper_content_url}}{{ page.supplement }}"><i class="fa fa-download"></i> &nbsp; Download Supplementary Material</a><br/>
     </li>
     {% endif %}
-
+    </ul>
   </article>
 </div>
