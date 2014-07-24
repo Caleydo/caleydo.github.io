@@ -2,7 +2,7 @@
 layout: publication
 title: "ConTour: Data-Driven Exploration of Multi-Relational Datasets for Drug Discovery"
 key: 2014-vast-contour
-permalink: /publications/2014-vast-contour/
+permalink: /publications/2014_vast_contour/
 type: paper
 
 shortname: Contour
@@ -28,13 +28,13 @@ publisher:
 
 project: contour
 
-video: 2014-vast-contour-video
-preview-video: 2014-vast-contour-video-preview
+video: 2014_vast_contour_video
+preview-video: 2014_vast_contour_video_preview
 
 
-pdf: http://people.seas.harvard.edu/~alex/papers/2014_vast_contour.pdf
+pdf: 2014_vast_contour.pdf
 supplement:
-bibtex: http://people.seas.harvard.edu/~alex/papers/2014_vast_contour.bib
+bibtex: 2014_vast_contour.bib
 
 ---
 

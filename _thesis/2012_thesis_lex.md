@@ -2,7 +2,7 @@
 layout: thesis
 title: "Visualization of Multidimensional Data with Applications in Molecular Biology"
 key: 2012-thesis-lex
-permalink: /thesis/2012-thesis-lex/
+permalink: /thesis/2012_thesis_lex/
 type: thesis
 
 

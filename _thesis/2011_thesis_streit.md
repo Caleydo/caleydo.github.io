@@ -2,7 +2,7 @@
 layout: thesis
 title: "Guided Visual Analysis of Heterogeneous Data "
 key: 2011-thesis-streit
-permalink: /thesis/2011-thesis-streit/
+permalink: /thesis/2011_thesis_streit/
 type: thesis
 
 
