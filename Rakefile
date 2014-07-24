@@ -122,8 +122,8 @@ task :deployImpl do
   Rake::Task[:copydot].invoke(public_dir, deploy_dir)
   cp_r "#{public_dir}/.", deploy_dir
   
-  #remove CNAME entry for the main repo
-  if repo_url == target_dev_repo
+  #remove CNAME entry for project specific repos
+  if branch == 'gh-pages'
     FileUtils.rm("#{deploy_dir}/CNAME")
   end
   
@@ -174,7 +174,8 @@ def selectRepo(master, develop)
   localbranch = `git rev-parse --abbrev-ref HEAD`.strip
   #jenkins doesn't have a local branch, so use the GIT_BRANCH env variable provided by the jenkins build	
   if localbranch == 'HEAD'
-    localbranch = (ENV.GIT_BRANCH == 'origin/master') ? "master" : "develop"
+    puts "using env variable #{ENV['GIT_BRANCH']}"
+    localbranch = (ENV['GIT_BRANCH'] == 'origin/master') ? "master" : "develop"
   end
   puts "current branch: '#{localbranch}'"
   (localbranch == 'master') ? master : develop
