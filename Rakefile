@@ -70,6 +70,9 @@ task :patch_config do
   target_url = blog_url(project)
   puts "patch config file to use url: #{target_url}"
   jekyll_config.sub!(/^url:.*$/, "url: \"#{target_url}\"")
+  if project != ''
+    jekyll_config.sub!(/^baseurl:.*$/, "baseurl: \"/#{project}\"")
+  end
   File.open('_config.yml', 'w') do |f|
     f.write jekyll_config
   end
