@@ -61,9 +61,6 @@ end
 ##############
 desc "patch the config file with the right url setting"
 task :patch_config do
-  ENV.to_hash.each do |key, value|
-    puts("#{key}\t#{value}")
-  end
   repo_url = selectRepo(target_repo, target_dev_repo)
   branch = (repo_url.match(/\/[\w-]+\.github\.(?:io|com)/).nil?) ? 'gh-pages' : 'master'
   project = (branch == 'gh-pages') ? repo_url.match(/\/([^\.]+)/)[1] : ''
@@ -175,6 +172,10 @@ end
 
 def selectRepo(master, develop) 
   localbranch = `git rev-parse --abbrev-ref HEAD`.strip
+  #jenkins doesn't have a local branch, so use the GIT_BRANCH env variable provided by the jenkins build
+  if localbranch == 'HEAD'
+    localbranch = (ENV.GIT_BRANCH == 'origin/master') ? "master" else "develop"
+  end
   puts "current branch: '#{localbranch}'"
   (localbranch == 'master') ? master : develop
 end
