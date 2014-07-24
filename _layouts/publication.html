@@ -52,7 +52,7 @@ layout: default
 
     {%if page.bibtex %}
     <p>
-      <a href={{site.paper_content_url}}{{ page.bibtex }}>BibTeX</a>
+      <a href="{{site.paper_content_url}}{{ page.bibtex }}"><i class="fa fa-download"></i> &nbsp; BibTeX</a>
     </p>
     {% endif %}
   </article>
@@ -66,7 +66,7 @@ layout: default
     <h2>{{video.name}}</h2>
     <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
             allowfullscreen></iframe>
-    <p><a href={{site.paper_content_url}}{{video.file}}>Download video</a>
+    <p><a href="{{site.paper_content_url}}{{video.file}}"><i class="fa fa-download"></i> &nbsp; Download video</a>
 
     <p/>
     {% endif %}
@@ -80,29 +80,29 @@ layout: default
     {% if page.project %}
     {% for project in site.projects %}
     {% if project.key == page.project) %}
-    <li><a href="{{ site.baseurl }}{{project.url}}">Project Site</a></li>
+    <li><a href="{{ site.baseurl }}{{project.url}}"><i class="fa fa-external-link"></i> &nbsp; Project Site</a></li>
     {% endif %}
     {% endfor %}
     {% endif %}
 
     {% if page.doi %}
     <li>
-      <a href="http://dx.doi.org/{{ page.doi }}">Publisher</a><br/>
+      <a href="http://dx.doi.org/{{ page.doi }}"><i class="fa fa-external-link"></i> &nbsp; Publisher</a><br/>
     </li>
     {% elsif page.publisher %}
     <li>
-      <a href="{{page.publisher}}">Publisher</a>
+      <a href="{{page.publisher}}"><i class="fa fa-external-link"></i> &nbsp; Publisher</a>
     </li>
     {% endif %}
 
     {% if page.pdf %}
     <li>
-      <a href="{{site.paper_content_url}}{{ page.pdf }}">Download Paper (PDF)</a><br/>
+      <a href="{{site.paper_content_url}}{{ page.pdf }}"><i class="fa fa-download"></i> &nbsp; Download Paper (PDF)</a><br/>
     </li>
     {% endif %}
     {% if page.supplement %}
     <li>
-      <a href="{{site.paper_content_url}}{{ page.supplement }}">Download Supplementary Material</a><br/>
+      <a href="{{site.paper_content_url}}{{ page.supplement }}"><i class="fa fa-download"></i> &nbsp; Download Supplementary Material</a><br/>
     </li>
     {% endif %}
 
