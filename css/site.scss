@@ -188,8 +188,12 @@ body {
   @include page-title($home-color);
 }
 
-.publication-title {
+.publications-title {
   @include page-title($publication-color);
+}
+
+.publication-title {
+  @include subpage-title($publication-color);
 }
 
 .download-title {
@@ -349,6 +353,11 @@ ul.post-list {
 .publication-content {
   @include page-content();
 }
+
+.publications-content {
+  @include page-content();
+}
+
 
 .publication-meta {
   @include page-meta();
