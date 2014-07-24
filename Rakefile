@@ -61,6 +61,9 @@ end
 ##############
 desc "patch the config file with the right url setting"
 task :patch_config do
+  ENV.to_hash.each do |key, value|
+    puts("#{key}\t#{value}")
+  end
   repo_url = selectRepo(target_repo, target_dev_repo)
   branch = (repo_url.match(/\/[\w-]+\.github\.(?:io|com)/).nil?) ? 'gh-pages' : 'master'
   project = (branch == 'gh-pages') ? repo_url.match(/\/([^\.]+)/)[1] : ''
@@ -122,7 +125,12 @@ task :deployImpl do
   Rake::Task[:copydot].invoke(public_dir, deploy_dir)
   cp_r "#{public_dir}/.", deploy_dir
   
-  cd "#{deploy_dir}" do
+  #remove CNAME entry for the main repo
+  if repo_url == target_dev_repo
+    FileUtils.rm("#{deploy_dir}/CNAME")
+  end
+  
+  cd "#{deploy_dir}" do    
     system "git add -A"
     message = "Site updated at #{Time.now.utc}"
     puts "\n## Committing: #{message}"
