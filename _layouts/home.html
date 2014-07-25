@@ -32,8 +32,10 @@ layout: default
 
   <h1>Recent Publications</h1>
   <ul class="publication-icon-list">
-  {% sorted_for publication in site.publications reversed sort_by:year %}
-    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></li>
+  {% sorted_for publication in site.publications reversed sort_by:year  %}
+    {% if publication.year > 2013 %}
+    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }} {{publication.year}}</a></li>
+    {% endif %}
   {% endsorted_for %}
   </ul>
 
