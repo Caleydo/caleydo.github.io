@@ -5,7 +5,7 @@ tag: downloads
 permalink: /downloads/
 softwares:
 -   name: Caleydo
-    description: (includes EnTourage, enRoute, StratomeX, LineUp) 
+    description: (includes Entourage, enRoute, StratomeX, LineUp) 
     latest: 3.1.3
 -   name: LineUp
     description: (standalone version)
