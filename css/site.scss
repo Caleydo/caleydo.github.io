@@ -265,7 +265,8 @@ body {
 
 .project-meta {
   @include page-meta();
-  @include span-columns(12);
+  @include span-columns(9);
+  @include omega();
 }
 
 .person-content {
@@ -374,7 +375,6 @@ ul.post-list {
   @include page-content();
 }
 
-
 .publication-meta {
   @include page-meta();
 }
@@ -386,6 +386,15 @@ ul.post-list {
 .release-meta {
   @include page-meta();
 }
+
+.download-content {
+  @include page-content();
+}
+
+.download-meta {
+  @include page-meta();
+}
+
 
 @mixin desaturation($percentage) {
   -webkit-filter: grayscale($percentage);
