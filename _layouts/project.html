@@ -7,7 +7,7 @@ layout: default
     <h1>{{page.name}}: {{ page.title | remove: "| Caleydo" }}</h1>
   </header>
 
-  <article class="project-content">
+  <article class="project-content-main">
     <h2>{{ page.standfirst }}</h2>
     {{ content }}
 
@@ -16,30 +16,8 @@ layout: default
     <!--{% endif %}-->
   </article>
 
-  <article class="project-meta">
-
-    {% if video != empty %}
-    <h1>Video</h1>
-
-    <p>
-      {% for video in site.videos %}
-      {% for video_key in page.videos %}
-      {% if video_key == video.key %}
-
-    <h3>{{video.name}}</h3>
-    <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
-            allowfullscreen></iframe>
-    <p><a href={{ video.file}}>Download video</a>
-
-    <p/>
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
-    </p>
-    {% endif %}
-
-    <h1>Team Members</h1>
-
+  <article class="project-content-aside">
+      <h1>Team Members</h1>
     <p>
     <ul class="default">
       {% for key in page.team %}
@@ -52,9 +30,8 @@ layout: default
     </ul>
     </p>
 
-    {% if collaborators.size > 0 %}
+    {% if page.collaborators.size > 0 %}
     <h1>Collaborators</h1>
-
     <p>
     <ul class="default">
       {% for collaborator in page.collaborators %}
@@ -71,30 +48,6 @@ layout: default
       <li>{{ collaborator }}</a></li>
       {% endif %}
 
-      {% endfor %}
-    </ul>
-    </p>
-    {% endif %}
-
-    {% if page.help %}
-    <h1>Help</h1>
-
-     <p>
-       Go to <a href="{{ page.help}}">{{page.name}} Help Pages</a>
-     </p>
-    {%endif%}
-
-    {% if page.publications.size > 0 %}
-    <h1>Publications</h1>
-
-    <p>
-    <ul class="publication-icon-list">
-      {% for key in page.publications %}
-      {% for pub in site.publications %}
-      {% if key == pub.key %}
-      <li><a href="{{ site.baseurl }}{{ pub.url }}">{{ pub.title }}</a></li>
-      {% endif %}
-      {% endfor %}
       {% endfor %}
     </ul>
     </p>
@@ -120,6 +73,54 @@ layout: default
       <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a> ({{ site.releases.last.description }})</li>
     </ul>
     {% endif %}
+    </p>
+    {% endif %}
+
+    {% if page.help %}
+    <h1>Help</h1>
+     <p>
+       Go to <a href="{{ page.help}}">{{page.name}} Help Pages</a>
+     </p>
+    {%endif%}
+
+  </article>
+
+
+  <article class="project-meta">
+
+    {% if video != empty %}
+    <h1>Video</h1>
+
+    <p>
+      {% for video in site.videos %}
+      {% for video_key in page.videos %}
+      {% if video_key == video.key %}
+
+    <h3>{{video.name}}</h3>
+    <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
+            allowfullscreen></iframe>
+    <p><a href="{{ site.paper_content_url }}{{ video.file}}">Download video</a>
+    <p/>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    </p>
+    {% endif %}
+
+
+    {% if page.publications.size > 0 %}
+    <h1>Publications</h1>
+
+    <p>
+    <ul class="publication-icon-list">
+      {% for key in page.publications %}
+      {% for pub in site.publications %}
+      {% if key == pub.key %}
+      <li><a href="{{ site.baseurl }}{{ pub.url }}">{{ pub.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </ul>
     </p>
     {% endif %}
 

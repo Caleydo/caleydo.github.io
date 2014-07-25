@@ -1,6 +1,24 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include head_default.html %}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css"/>
+    <style type="text/css">
+        /*.Caleydosel-image{*/
+            /*height: 180px;*/
+        /*}*/
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+    {% include header.html %}
+</div>
+
+<div class="page-content">
+    <div class="wrap">
+
 <div class="home">
 
   <header class="home-title">
@@ -8,11 +26,21 @@ layout: default
   </header>
 
   <article class="home-content-main">
+
   <h1>About</h1>
 
  <p>Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of Caleydo is the visualization of interdependencies between multiple datasets. Caleydo can load tabular data and groupings/clusterings. You can explore relationships between multiple groupings, between different datasets and see how your data maps onto pathways.
    Caleydo has been successfully used to analyze mRNA, miRNA, methylation, copy number variation, mutation status and clinical data as well as other datset types.</p>
 
+
+      <div class="Caleydosel">
+          <!--position: relative; top:-25px;-->
+          <div><center><a href="projects/stratomex/"><img class="Caleydosel-image" data-lazy="assets/images/projects/StratomeX_lowRes.png" /><div style="font-weight: bold">StratomeX</div></a></center></div>
+          <div><center><a href="projects/pathways/"><img class="Caleydosel-image" data-lazy="assets/images/projects/pathways_lowRes.png" /><div style="font-weight: bold">EnTourage / enRoute</div></a></center></div>
+          <div><center><a href="projects/contour/"><img class="Caleydosel-image" data-lazy="assets/images/projects/2014_vast_contour.png"/><div style="font-weight: bold">ConTour</div></a></center></div>
+          <div><center><a href="projects/lineup/"><img class="Caleydosel-image" data-lazy="assets/images/projects/lineup_lowRes.png"/><div style="font-weight: bold">LineUp</div></a></center></div>
+          <div><center><a href="projects/domino/"><img class="Caleydosel-image" data-lazy="assets/images/projects/domino_lowRes.png"/><div style="font-weight: bold">Domino</div></a></center></div>
+      </div>
   <h1>News <span class="right-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
 
   <ul class="post-list">
@@ -88,3 +116,47 @@ layout: default
 
 
 </div>
+    </div>
+</div>
+
+<div class="wrap">
+    {% include footer.html %}
+</div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js"></script>
+
+{% if site.use_analytics == true %}
+{% include google_analytics.html %}
+{% endif %}
+
+<script language="JavaScript">
+    $(document).ready(function(){
+        $('.Caleydosel').slick({
+//            lazyLoad: 'progressive',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 4000,
+//            centerMode:true,
+//            centerPadding:'0%',
+            arrows:false,
+            dots:true,
+            speed:1000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true
+                    }
+                }
+            ]
+    });
+    });
+</script>
+
+</body>
+</html>
