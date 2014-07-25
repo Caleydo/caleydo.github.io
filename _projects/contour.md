@@ -3,8 +3,9 @@ layout: project
 title: ConTour
 key: contour
 permalink: /projects/contour/
-status: ongoing
+status: prototype
 standfirst: Data-Driven Exploration of Multi-Relational Datasets for Drug Discovery
+badge: New
 teaser: 
     lowres: 2014_vast_contour.png
 #     highres: StratomeX_highRes.png

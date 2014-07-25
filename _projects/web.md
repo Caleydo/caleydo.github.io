@@ -13,7 +13,7 @@ publications:
 
 video:    
 
-tem:
+team:
  - streit 
  - gehlenborg
  - lex
