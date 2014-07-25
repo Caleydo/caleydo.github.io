@@ -4,15 +4,9 @@ title: Downloads | Caleydo
 tag: downloads
 permalink: /downloads/
 softwares:
--   name: Caleydo
-    description: (includes Entourage, enRoute, StratomeX, LineUp) 
-    latest: 3.1.3
--   name: LineUp
-    description: (standalone version)
-    latest: 3.1.1
--   name: Furby
-    description: (standalone version)
-    latest: 3.1.3beta1
+-  caleydo_3_1_3
+-  lineup_3_1_1
+-  furby_3_1_3beta1
 
 ---
 
@@ -21,28 +15,23 @@ Caleydo requires Java 7. Further installation details can be found when followin
 
 # Current Stable Release
 
+<ul class="release-icon-list">
 {% for sw in page.softwares %}
-{% for x in site.releases %}
-{% if x.software == sw.name %}
-{% if x.version == sw.latest %}
-[{{ x.software }} {{ x.version }}]({{ site.baseurl }}{{ x.url }}) {{sw.description}}
+{% for release in site.releases %}
+{% if release.key == sw %}
+<li><a href="{{ site.baseurl }}{{ release.url }}">{{ release.software }} {{ release.version }}</a> ({{release.description}})</li>
 {% endif %}    
-{% endif %}
 {% endfor %}
 {% endfor %}
-
-
-
-        
+</ul>
 
 # Older Releases
 
-{% for sw in page.softwares %}
-{% for x in site.releases %}
-{% if x.software == sw.name %}
-{% if x.version != sw.latest %}
-[{{ x.software }} {{ x.version }}]({{ site.baseurl }}{{ x.url }}) {{sw.description}}
-{% endif %}    
+<ul class="release-icon-list">
+{% for release in site.releases %}
+{% if page.softwares contains release.key  %}
+{% else %}
+<li><a href="{{ site.baseurl }}{{ release.url }}">{{ release.software }} {{ release.version }}</a> ({{release.description}})</li>
 {% endif %}
 {% endfor %}
-{% endfor %}
+</ul>
