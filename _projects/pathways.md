@@ -9,7 +9,7 @@ standfirst: Visualizing relationships between biological pathways using contextu
 
 teaser: 
     lowres: 2013_infovis_entourage.png
-    highres: Entourage_highRes.png
+    highres: entourage_hires.png
 
 publications:
  - 2013_infovis_entourage
