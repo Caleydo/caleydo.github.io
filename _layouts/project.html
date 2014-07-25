@@ -17,13 +17,13 @@ layout: default
   </article>
 
   <article class="project-content-aside">
-      <h1>Team Members</h1>
+    <h1>Team Members</h1>
     <p>
-    <ul class="default">
+    <ul class="person-icon-list">
       {% for key in page.team %}
       {% for person in site.persons %}
       {% if key == person.key %}
-      <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a></li>
+      <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}</li>
       {% endif %}
       {% endfor %}
       {% endfor %}
@@ -33,13 +33,13 @@ layout: default
     {% if page.collaborators.size > 0 %}
     <h1>Collaborators</h1>
     <p>
-    <ul class="default">
+    <ul class="person-icon-list">
       {% for collaborator in page.collaborators %}
 
       {% assign known = false %}
       {% for person in site.persons %}
       {% if collaborator == person.key %}
-      <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a></li>
+      <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}</li>
       {% assign known = true %}
       {% endif %}
       {% endfor %}
@@ -54,14 +54,13 @@ layout: default
     {% endif %}
 
     {% if page.publications.size > 0 %}
-    <h1>Download Software</h1>
-
+    <h1>Software</h1>
     <p>
       {% assign is_core_caleydo = true %}
       {% for release in site.releases %}
       {% if release.key contains page.key %}
     <ul class="release-icon-list">
-      <li><a class="release-icon-list" href="{{ site.baseurl }}{{ release.url }}">{{ release.software }} {{ release.version }}</a> ({{ release.description }})
+      <li><a class="release-icon-list" href="{{ site.baseurl }}{{ release.url }}">{{ release.software }} {{ release.version }}</a> ({{ release.date }})
       </li>
     </ul>
     {% assign is_core_caleydo = false %}
@@ -70,7 +69,7 @@ layout: default
 
     {% if is_core_caleydo %}
     <ul class="release-icon-list">
-      <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a> ({{ site.releases.last.description }})</li>
+      <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a><br>{{ site.releases.last.date }}</li>
     </ul>
     {% endif %}
     </p>
