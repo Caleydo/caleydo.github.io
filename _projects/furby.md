@@ -12,7 +12,8 @@ teaser:
 publications:
 - 2014_bmc_furby
 
-video: 2014_bmc_furby_video
+videos: 
+ - 2014_bmc_furby_video
     
 team:
  - streit 

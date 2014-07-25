@@ -13,7 +13,8 @@ teaser:
 publications:
 - 2014_vast_contour
 
-video: 2014_vast_contour_video
+videos:
+ - 2014_vast_contour_video
 
 team:
  - partl
