@@ -29,7 +29,7 @@ layout: default
               {% endfor %}
 
               {% if known == false %}
-              {{ author }}
+              {{ author }}{% if author != publication.authors.last %}, {% endif %}
               {% endif %}
 
               {% endfor %}
