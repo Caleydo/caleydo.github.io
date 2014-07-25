@@ -60,7 +60,7 @@ layout: default
       {% for release in site.releases %}
       {% if release.key contains page.key %}
     <ul class="release-icon-list">
-      <li><a class="release-icon-list" href="{{ site.baseurl }}{{ release.url }}">{{ release.software }} {{ release.version }}</a> ({{ release.date }})
+      <li><a class="release-icon-list" href="{{ site.baseurl }}{{ release.url }}">{{ release.software }} {{ release.version }}</a><br>{{ release.date | date: "%-d %b %Y" }}
       </li>
     </ul>
     {% assign is_core_caleydo = false %}
@@ -69,7 +69,7 @@ layout: default
 
     {% if is_core_caleydo %}
     <ul class="release-icon-list">
-      <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a><br>{{ site.releases.last.date }}</li>
+      <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a><br>{{ site.releases.last.date | date: "%-d %b %Y" }}</li>
     </ul>
     {% endif %}
     </p>

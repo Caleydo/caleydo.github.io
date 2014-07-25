@@ -56,13 +56,13 @@
       </li>
     {% endfor %}
   </ul>
-  <p><a href="news">Earlier news...</a></p>
+  <p><a href="news">Earlier news ...</a></p>
 
   <h1>Recent Publications</h1>
   <ul class="publication-icon-list">
   {% sorted_for publication in site.publications reversed sort_by:year  %}
     {% if publication.year > 2013 %}
-    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }} {{publication.year}}</a></li>
+    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.year}}</li>
     {% endif %}
   {% endsorted_for %}
   </ul>
@@ -73,31 +73,29 @@
     <h1>Partners</h1>
     <ul class="institution-icon-list">
       {% for institution in site.institutions reversed %}
-      <li><a href="{{ institution.website }}">{{ institution.name }}</a></li>
+      <li><a href="{{ institution.website }}">{{ institution.name }}</a><br>{{ institution.location }}</li>
       {% endfor %}
     </ul>
 
-    <h1>Core Projects</h1>
+    <h1>Projects</h1>
     <ul class="project-icon-list">
       {% sorted_for project in site.projects sort_by:order %}
       {% if project.status == 'core' %}
-      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
       {% endif %}
       {% endsorted_for %}
     </ul>
-
-    <h1>Prototypes</h1>
     <ul class="project-icon-list">
       {% sorted_for project in site.projects sort_by:order %}
       {% if project.status == 'prototype' %}
-      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
       {% endif %}
       {% endsorted_for %}
     </ul>
 
     <h1>Latest Release</h1>
     <ul class="release-icon-list">
-      <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a><br>{{ site.releases.last.date | date: "%-d %b %Y" }}</li>
     </ul>
 
 
