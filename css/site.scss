@@ -221,10 +221,37 @@ body {
   ul {
     @extend %default-ul;
   }
+
+  p {
+    a {
+      color: #444;
+      position: relative;
+      text-decoration: none;    
+    }
+    a:after{
+       position: absolute;
+       left: 0px;
+       bottom: 0.2em;
+       content: '';
+       width: 100%;
+       border-bottom-width: 1px;
+       border-bottom-style: dotted;
+    }    
+  }  
+
+  font-family: $page-content-font-family;
+  font-weight: $page-content-font-weight;
+  font-style: $page-content-font-style;
+  font-size: $page-content-font-size;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings    
 }
 
 .project-content {
   @include page-content();
+}
+
+.project-meta {
+  @include page-meta();
 }
 
 .person-content {
