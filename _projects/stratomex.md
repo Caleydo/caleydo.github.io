@@ -33,9 +33,9 @@ team:
  - schmalstieg
  - park
 
- - turkay
-
 collaborators:
+- schulz
+- turkay
 ---
 
 <img align="right" src="{{site.baseurl}}/assets/images/projects/stratomex_basic.png" alt="Basic StratomeX">
