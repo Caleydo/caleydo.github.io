@@ -10,10 +10,9 @@ layout: default
   <article class="project-content">
 
 
-    <p> Within Caleydo, we have several projects and objectives we want to achieve. On these pages we present those
-      components that together make up the Caleydo research project but also the software. Not everything you can read
-      about here is already in the stable branch and therefore publicly available. Some ideas might actually never reach
-      that stage, others are more mature already. For a list of funded research projects please look at our sponsors.
+    <p> Caleydo consists of several projects that often correspond to <i>views</i> that implement <i>visualization
+      techniques</i>. The projects are typically targeted at specific problems or datasets. For a list of funded
+      research projects please look at our <a href="{{ site.baseurl }}/funding">sponsors</a>.
     </p>
 
     <h1> Core Projects</h1>
@@ -23,7 +22,7 @@ layout: default
 
     <div>
 
-      {% for project in site.projects %}
+      {% sorted_for project in site.projects sort_by:order %}
       {% if project.status == "core" %}
 
       <div class="card">
@@ -50,7 +49,7 @@ layout: default
       </div>
 
       {% endif %}
-      {% endfor %}
+      {% endsorted_for %}
 
     </div>
 
@@ -89,9 +88,6 @@ layout: default
 
     {% endif %}
     {% endfor %}
-
-
-
 
 
   </article>

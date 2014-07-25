@@ -4,6 +4,7 @@ title: StratomeX
 key: stratomex
 permalink: /projects/stratomex/
 status: core
+order: 1
 standfirst: A tool for integrative visualization of cancer genomics data from The Cancer Genome Atlas project to identify and characterize tumor subtypes.
 teaser: 
     lowres: 2012_eurovis_stratomex.png
