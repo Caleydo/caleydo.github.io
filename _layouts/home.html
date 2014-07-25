@@ -47,11 +47,22 @@ layout: default
       {% endfor %}
     </ul>
 
-    <h1>Projects</h1>
+    <h1>Core Projects</h1>
     <ul class="project-icon-list">
-    {% for project in site.projects %}
+      {% sorted_for project in site.projects sort_by:order %}
+      {% if project.status == 'core' %}
       <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.title }}</a></li>
-    {% endfor %}
+      {% endif %}
+      {% endsorted_for %}
+    </ul>
+
+    <h1>Prototypes</h1>
+    <ul class="project-icon-list">
+      {% sorted_for project in site.projects sort_by:order %}
+      {% if project.status == 'prototype' %}
+      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.title }}</a></li>
+      {% endif %}
+      {% endsorted_for %}
     </ul>
 
     <h1>Latest Release</h1>
