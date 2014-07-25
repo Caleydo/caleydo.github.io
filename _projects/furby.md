@@ -3,7 +3,7 @@ layout: project
 title: Furby
 key: furby
 permalink: /projects/furby/
-status: ongoing
+status: prototype
 standfirst: "Fuzzy Force-Directed Bicluster Visualization"
 
 teaser: 

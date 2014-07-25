@@ -3,7 +3,8 @@ layout: project
 title: LineUp
 key: lineup
 permalink: /projects/lineup/
-status: ongoing
+status: core
+order: 3
 standfirst: LineUp is an interactive technique designed to create, visualize and explore rankings of items based on a set of heterogeneous attributes.
 
 teaser: 

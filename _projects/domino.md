@@ -3,7 +3,8 @@ layout: project
 title: Domino
 key: domino
 permalink: /projects/domino/
-status: ongoing
+status: prototype
+badge: New
 standfirst: "Extracting, Comparing, and Manipulating Subsets across Multiple Tabular Datasets"
 
 teaser: 
