@@ -16,7 +16,7 @@ award: Best Dissertation Award
 institution: Graz University of Technology
 
 
-pdf: http://people.seas.harvard.edu/~alex/thesis/2012_phd_thesis_lex.pdf
+pdf: 2012_phd_thesis_lex.pdf
 bibtex:
 
 ---

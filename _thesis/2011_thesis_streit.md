@@ -16,7 +16,7 @@ award:
 institution: Graz University of Technology
 
 
-pdf: http://www.icg.tugraz.at/Members/streit/website/downloads/phd_thesis_streit_03-2011.pdf
+pdf: 2012_phd_thesis_lex.pdf
 bibtex: 
 
 ---
