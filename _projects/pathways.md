@@ -11,9 +11,9 @@ teaser:
 #     highres: StratomeX_highRes.png
 
 publications:
- - 2013-infovis-entourage
+ - 2013_infovis_entourage
  
-video: 2013-infovis-entourage-video
+video: 2013_infovis_entourage_video
      
 team:
  - partl

@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Characterizing Cancer Subtypes using the Dual Analysis Approach in Caleydo "
+title: "Characterizing Cancer Subtypes using the Dual Analysis Approach in Caleydo StratomeX"
 key: 2014-cga-characterizing
 permalink: /publications/2014_cga_characterizing/
 type: paper
@@ -9,13 +9,11 @@ shortname: DualMeetsCaleydo
 image: /assets/images/papers/2014_cga_characterizing.png
 
 authors:
-- partl
+- turkay
 - lex
 - streit
-- strobelt
-- wassermann
 - pfister
-- schmalstieg
+- Helwig Hauser
 
 journal: IEEE Computer Graphics and Applications, 34(2), pp. 38–47, 2014.
 year: 2014

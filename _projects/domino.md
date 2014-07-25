@@ -10,9 +10,9 @@ teaser:
     lowres: domino_lowRes.png
 
 publications:
-- 2014-infovis-domino
+ - 2014_infovis_domino
 
-video: 2014-infovis-domino-video
+video: 2014_infovis_domino_video
     
 team:
  - gratzl

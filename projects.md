@@ -12,7 +12,6 @@ Within Caleydo, we have several projects and objectives we want to achieve. On t
 <div class="cards">
 
 {% for project in site.projects %}
-{% if project.title != "Web" %}
 {% if project.status == "ongoing" %}
 
   <div class="card">
@@ -33,7 +32,7 @@ Within Caleydo, we have several projects and objectives we want to achieve. On t
       <p>{{ project.standfirst }}</p>
     </div>
   </div>
-{% endif %}
+
 {% endif %}
 {% endfor %}
 

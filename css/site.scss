@@ -47,35 +47,10 @@
   float: right;
 }
 
-@mixin spin($time) {
-  -webkit-animation-name: spin;
-    -webkit-animation-duration: $time;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spin;
-    -moz-animation-duration: $time;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spin;
-    -ms-animation-duration: $time;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-
-    animation-name: spin;
-    animation-duration: $time;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
 .logo {
   float: left;
   margin-left: -34px;
-// Animation shorthand works the same as the CSS3 animation shorthand
-  &:hover {
-      @include spin(200ms);
   }
-
-}
 
 .logo-gray {
   fill: #ddd;
@@ -175,6 +150,11 @@ body {
   @include page-title($team-color);
 }
 
+.funding-title {
+  @include page-title($home-color);
+}
+
+
 .post-title {
   @include subpage-title($home-color);
 }
@@ -183,8 +163,12 @@ body {
   @include page-title($home-color);
 }
 
-.publication-title {
+.publications-title {
   @include page-title($publication-color);
+}
+
+.publication-title {
+  @include subpage-title($publication-color);
 }
 
 .download-title {
@@ -256,6 +240,14 @@ body {
 }
 
 .team-meta {
+  @include page-meta();
+}
+
+.funding-content {
+  @include page-content();
+}
+
+.funding-meta {
   @include page-meta();
 }
 
@@ -336,6 +328,11 @@ ul.post-list {
 .publication-content {
   @include page-content();
 }
+
+.publications-content {
+  @include page-content();
+}
+
 
 .publication-meta {
   @include page-meta();

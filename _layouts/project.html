@@ -18,7 +18,7 @@ layout: default
 
   <article class="project-meta">
 
-    {% if videos.size > 0 %}
+    {% if video != empty %}
     <h1>Video</h1>
 
     <p>
@@ -50,7 +50,6 @@ layout: default
     </ul>
     </p>
 
-
     {% if collaborators.size > 0 %}
     <h1>Collaborators</h1>
 
@@ -81,7 +80,7 @@ layout: default
       {{ page.status }}
     </p>
 
-    {% if publications.size > 0 %}
+    {% if page.publications.size > 0 %}
     <h1>Publications</h1>
 
     <p>

@@ -10,10 +10,10 @@ teaser:
     highres: StratomeX_highRes.png
 
 publications:
- - 2014-nmc-stratomex
- - 2012-eurovis-stratomex 
+ - 2014_nmc_stratomex
+ - 2012_eurovis_stratomex 
  
-video: 2012-eurovis-stratomex-video
+video: 2012_eurovis_stratomex_video
      
 team:
  - streit 

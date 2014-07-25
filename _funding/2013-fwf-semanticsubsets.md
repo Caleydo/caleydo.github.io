@@ -2,7 +2,7 @@
 layout: supporter
 agency: Austrian Science Fund (FWF)
 key: 2013-fwf-semanticsubsets
-permalink: /grants/2013-fwf-semanticsubsets/
+permalink: /funding/2013-fwf-semanticsubsets/
 website: http://www.fwf.ac.at/
 logo: fwf.png
 title: Visual Analysis of Heterogeneous Data using Semantic Subsets

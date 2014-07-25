@@ -1,21 +1,21 @@
 ---
 layout: default
 ---
-<div class="supporters">
+<div class="funding">
 
-  <header class="supporters-title">
+  <header class="funding-title">
     <h1>{{ page.title | remove: "| Caleydo" }}</h1>
   </header>
 
-  <article class="supporters-content">
+  <article class="funding-content">
 
 
-    <p> Caleydo is supported by numerous funding agencies.</p>
+    <p> Caleydo is supported by several funding agencies.</p>
 
 
     <div class="cards">
 
-      {% for grant in site.grants reversed %}
+      {% for grant in site.funding reversed %}
       <div class="card">
         {% if grant.active %}
         <div class="ribbon-wrapper">
