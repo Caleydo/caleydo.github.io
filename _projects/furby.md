@@ -1,6 +1,7 @@
 ---
 layout: project
-title: Furby
+title: Bicluster Visualization
+name: Furby
 key: furby
 permalink: /projects/furby/
 status: prototype

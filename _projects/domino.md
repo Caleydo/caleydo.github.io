@@ -1,6 +1,7 @@
 ---
 layout: project
-title: Domino
+title: Subset Visualization
+name: Domino
 key: domino
 permalink: /projects/domino/
 status: prototype

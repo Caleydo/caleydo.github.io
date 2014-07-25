@@ -1,6 +1,7 @@
 ---
 layout: project
-title: ConTour
+title: Relational Data Visualization
+name: ConTour
 key: contour
 permalink: /projects/contour/
 status: prototype

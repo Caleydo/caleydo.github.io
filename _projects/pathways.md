@@ -1,11 +1,13 @@
 ---
 layout: project
-title: Entourage/enRoute
+title: Pathway Visualization
+name: Entourage & enRoute
 key: pathways
 permalink: /projects/pathways/
 status: core
 order: 2
-standfirst: Visualizing relationships between biological pathways using contextual subsets (Entourage) and embedding experimental data in the context of pathways (enRoute).
+standfirst: Visualizing large & heterogeneous experimental data with <b>enRoute</b> and pathway interdependencies with <b>Entourage</b>.
+help: http://help.caleydo.org/3.1/index.html#!views/pathway/pathway.md
 
 teaser: 
     lowres: 2013_infovis_entourage.png
