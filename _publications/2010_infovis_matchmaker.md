@@ -6,7 +6,7 @@ permalink: /publications/2010_infovis_matchmaker/
 type: paper
 
 
-shortname: VisBricks
+shortname: Matchmaker
 image: /assets/images/papers/2010_infovis_matchmaker.png
 
 authors:
