@@ -11,9 +11,9 @@ layout: default
     <h2>{{ page.standfirst }}</h2>
     {{ content }}
 
-    {% if page.teaser.highres %}
-    <img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">
-    {% endif %}
+    <!--{% if page.teaser.highres %}-->
+    <!--<img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">-->
+    <!--{% endif %}-->
   </article>
 
   <article class="project-meta">
@@ -74,17 +74,17 @@ layout: default
     </p>
     {% endif %}
 
-    <h1>Status</h1>
+    <!-- <h1>Status</h1>
 
-    <p>
-      {{ page.status }}
-    </p>
-
+     <p>
+       {{ page.status }}
+     </p>
+ -->
     {% if page.publications.size > 0 %}
     <h1>Publications</h1>
 
     <p>
-    <ul class="default">
+    <ul class="publication-icon-list">
       {% for key in page.publications %}
       {% for pub in site.publications %}
       {% if key == pub.key %}
