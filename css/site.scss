@@ -248,10 +248,24 @@ body {
 
 .project-content {
   @include page-content();
+  @include span-columns(12);
+  @include omega();
+}
+
+.project-content-main {
+  @include page-content();
+  @include span-columns(9);
+}
+
+.project-content-aside {
+  @include page-content();
+  @include span-columns(3);
+  @include omega();
 }
 
 .project-meta {
   @include page-meta();
+  @include span-columns(12);
 }
 
 .person-content {
