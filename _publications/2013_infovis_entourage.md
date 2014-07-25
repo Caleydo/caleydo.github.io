@@ -29,7 +29,7 @@ publisher:
 
 project: pathways
 
-video: 2013_infovis_entourage-video
+video: 2013_infovis_entourage_video
 preview-video: 2013_infovis_entourage_video_preview
 
 

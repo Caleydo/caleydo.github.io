@@ -1,8 +1,8 @@
 ---
 layout: supporter
-agency: Austrian Science Fund (FWF)
+agency: Novartis Institutes for BioMedical Research
 key: 2014-nibr-integrative
-permalink: /grants/2014-nibr-integrative/
+permalink: /funding/2014-nibr-integrative/
 website: http://nibr.com/
 logo: nibr.jpg
 title: Integrative visualization of heterogeneous molecular data sources

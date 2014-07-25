@@ -3,7 +3,7 @@ layout: project
 title: Core
 key: core
 permalink: /projects/core/
-status: ongoing
+status: not-used
 standfirst: Open Source Visualization Framework for Molecular Biology
 teaser: 
     lowres: caleydo_core_lowRes.png

@@ -2,7 +2,7 @@
 layout: supporter
 agency: Austrian Science Fund (FWF)
 key: 2007-fwf-caleydoplex
-permalink: /grants/2007-fwf-caleydoplex/
+permalink: /funding/2007-fwf-caleydoplex/
 website: http://www.fwf.ac.at/
 logo: fwf.png
 title: VIPEM - Visual Analytics for Personalized Medicine

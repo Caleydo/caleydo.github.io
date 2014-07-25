@@ -3,15 +3,17 @@ layout: project
 title: Entourage/enRoute
 key: pathways
 permalink: /projects/pathways/
-status: ongoing
+status: core
+order: 2
 standfirst: Visualizing relationships between biological pathways using contextual subsets (Entourage) and embedding experimental data in the context of pathways (enRoute).
 
 teaser: 
     lowres: 2013_infovis_entourage.png
-#     highres: StratomeX_highRes.png
+    highres: Entourage_highRes.png
 
 publications:
  - 2013_infovis_entourage
+ - 2013_bmc_enroute
  
 video: 2013_infovis_entourage_video
      
