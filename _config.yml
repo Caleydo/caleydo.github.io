@@ -15,7 +15,7 @@ plugins: ./_plugins
 google_analytics: "'UA-45998043-1'"
 use_analytics: true
 
-paper_content_url: http://people.seas.harvard.edu/~alex/papers/
+paper_content_url: http://caleydo.gehlenborg.com/
 
 # Build settings
 markdown: kramdown
