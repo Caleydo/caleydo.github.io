@@ -17,7 +17,8 @@ publications:
  - 2011_infovis_visbricks
  - 2010_infovis_matchmaker
  
-video: 2012_eurovis_stratomex_video
+videos: 
+ - 2012_eurovis_stratomex_video
      
 team:
  - streit 

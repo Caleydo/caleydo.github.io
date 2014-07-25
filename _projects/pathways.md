@@ -14,8 +14,11 @@ teaser:
 publications:
  - 2013_infovis_entourage
  - 2013_bmc_enroute
+ - 2012_biovis_enroute
  
-video: 2013_infovis_entourage_video
+videos: 
+ - 2013_infovis_entourage_video
+ - 2012_biovis_enroute_video
      
 team:
  - partl

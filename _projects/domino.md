@@ -13,7 +13,8 @@ teaser:
 publications:
  - 2014_infovis_domino
 
-video: 2014_infovis_domino_video
+videos: 
+ - 2014_infovis_domino_video
     
 team:
  - gratzl

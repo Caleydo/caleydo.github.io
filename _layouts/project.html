@@ -23,7 +23,8 @@ layout: default
 
     <p>
       {% for video in site.videos %}
-      {% if video.key == page.video or video.key == page.preview-video %}
+      {% for video_key in page.videos %}
+      {% if video_key == video.key %}
 
     <h3>{{video.name}}</h3>
     <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
@@ -32,6 +33,7 @@ layout: default
 
     <p/>
     {% endif %}
+    {% endfor %}
     {% endfor %}
     </p>
     {% endif %}
