@@ -29,7 +29,7 @@ layout: default
     <h3>{{video.name}}</h3>
     <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
             allowfullscreen></iframe>
-    <p><a href={{ video.file}}>Download video</a>
+    <p><a href="{{ site.paper_content_url }}{{ video.file}}">Download video</a>
 
     <p/>
     {% endif %}
