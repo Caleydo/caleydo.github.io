@@ -7,8 +7,63 @@ layout: default
     <h1>{{ page.title | remove: "| Caleydo" }}</h1>
   </header>
 
-  <article class="team-content">
-    {{ content }}
+  <article class="team-content-left">
+      <h1>Core Team</h1>
+
+      {% for person in site.persons %}
+      {% if person.role == "core") %}
+      <p>
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{ person.image }}">
+      <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
+      </p>
+      {% endif %}
+      {% endfor %}
+
+      <h1>Contributors</h1>
+
+      {% for person in site.persons %}
+      {% if person.role == "contributor") %}
+      <p>
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{ person.image }}">
+      <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
+      </p>
+      {% endif %}
+      {% endfor %}
+  </article>
+
+  <article class="team-content-right">
+      <h1>Advisors</h1>
+
+      {% for person in site.persons %}
+      {% if person.role == "advisor") %}
+      <p>
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{ person.image }}">
+      <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
+      </p>
+      {% endif %}
+      {% endfor %}
+
+      <h1>Collaborators</h1>
+
+      {% for person in site.persons %}
+      {% if person.role == "collaborator") %}
+      <p>
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{ person.image }}">
+      <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
+      </p>
+      {% endif %}
+      {% endfor %}
+
+      <h1>Alumni</h1>
+
+      {% for person in site.persons %}
+      {% if person.role == "alumni") %}
+      <p>
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{ person.image }}">
+      <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
+      </p>
+      {% endif %}
+      {% endfor %}
   </article>
 
 </div>

@@ -281,6 +281,16 @@ body {
   @include page-content();
 }
 
+.team-content-left {
+  @include page-content();
+  @include span-columns(6);
+}
+.team-content-right {
+  @include page-content();
+  @include span-columns(6);
+  @include omega();
+}
+
 .team-meta {
   @include page-meta();
 }
@@ -387,6 +397,7 @@ ul.post-list {
   @include page-meta();
 }
 
+
 .download-content {
   @include page-content();
 }
@@ -420,7 +431,8 @@ ul.post-list {
     @extend .person-image;
     width: 50px;
     height: 50px;
-
+    margin-right: 10px;
+    float: left;
 }
 
 
