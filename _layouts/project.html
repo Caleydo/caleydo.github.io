@@ -4,7 +4,7 @@ layout: default
 <div class="project">
 
   <header class="project-title">
-    <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+    <h1>{{page.name}}: {{ page.title | remove: "| Caleydo" }}</h1>
   </header>
 
   <article class="project-content">
@@ -76,12 +76,14 @@ layout: default
     </p>
     {% endif %}
 
-    <!-- <h1>Status</h1>
+    {% if page.help %}
+    <h1>Help</h1>
 
      <p>
-       {{ page.status }}
+       Go to <a href="{{ page.help}}">{{page.name}} Help Pages</a>
      </p>
- -->
+    {%endif%}
+
     {% if page.publications.size > 0 %}
     <h1>Publications</h1>
 
