@@ -2,6 +2,6 @@
 layout: institution
 key: tug
 name: Graz University of Technology
-country: Austria
+location: Graz, Austria
 website: http://icg.tugraz.at
 ---
