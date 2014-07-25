@@ -75,7 +75,14 @@ layout: default
 
     <h1>Funding</h1>
     <ul class="funding-icon-list">
-      <li><a href="{{ site.baseurl }}/funding/"> Funding</a></li>
+      {% sorted_for grant in site.funding sort_by:agency %}
+      {% if grant.active != empty %}
+      {% if agency != grant.agency %}
+      <li><a href="{{ site.baseurl }}/funding">{{ grant.agency }}</a></li>
+      {% endif %}
+      {% endif %}
+      {% assign agency = grant.agency %}
+      {% endsorted_for %}
     </ul>
   </article>
 
