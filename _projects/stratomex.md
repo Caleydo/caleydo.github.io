@@ -1,11 +1,14 @@
 ---
 layout: project
-title: StratomeX
+title: Subytpe Visualization
+name: StratomeX
 key: stratomex
 permalink: /projects/stratomex/
 status: core
 order: 1
 standfirst: Integrative visualization of stratified heterogeneous data for subtype analysis.
+help: http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md
+
 teaser: 
     lowres: 2012_eurovis_stratomex.png
     highres: StratomeX_highRes.png
@@ -17,7 +20,8 @@ publications:
  - 2011_infovis_visbricks
  - 2010_infovis_matchmaker
  
-video: 2012_eurovis_stratomex_video
+videos: 
+ - 2012_eurovis_stratomex_video
      
 team:
  - streit 

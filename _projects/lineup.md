@@ -1,11 +1,13 @@
 ---
 layout: project
-title: LineUp
+title: Ranking Visualization
+name: LineUp
 key: lineup
 permalink: /projects/lineup/
 status: core
 order: 3
 standfirst: LineUp is an interactive technique designed to create, visualize and explore rankings of items based on a set of heterogeneous attributes.
+help: http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md#LineUp
 
 teaser: 
     lowres: 2013_infovis_lineup.png
@@ -14,7 +16,8 @@ teaser:
 publications:
 - 2013_infovis_lineup
 
-video: 2013_infovis_lineup_video
+videos: 
+ - 2013_infovis_lineup_video
     
 team:
  - gratzl 

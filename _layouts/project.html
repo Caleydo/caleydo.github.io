@@ -4,7 +4,7 @@ layout: default
 <div class="project">
 
   <header class="project-title">
-    <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+    <h1>{{page.name}}: {{ page.title | remove: "| Caleydo" }}</h1>
   </header>
 
   <article class="project-content">
@@ -23,7 +23,8 @@ layout: default
 
     <p>
       {% for video in site.videos %}
-      {% if video.key == page.video or video.key == page.preview-video %}
+      {% for video_key in page.videos %}
+      {% if video_key == video.key %}
 
     <h3>{{video.name}}</h3>
     <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
@@ -32,6 +33,7 @@ layout: default
 
     <p/>
     {% endif %}
+    {% endfor %}
     {% endfor %}
     </p>
     {% endif %}
@@ -74,12 +76,14 @@ layout: default
     </p>
     {% endif %}
 
-    <!-- <h1>Status</h1>
+    {% if page.help %}
+    <h1>Help</h1>
 
      <p>
-       {{ page.status }}
+       Go to <a href="{{ page.help}}">{{page.name}} Help Pages</a>
      </p>
- -->
+    {%endif%}
+
     {% if page.publications.size > 0 %}
     <h1>Publications</h1>
 
