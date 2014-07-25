@@ -27,7 +27,7 @@ publisher:
 project: domino
 
 video: 2014_infovis_domino_video
-preview-video: na-2014_infovis_domino_video_preview
+preview-video: 2014_infovis_domino_video_preview
 
 
 pdf: 2014_infovis_domino.pdf
