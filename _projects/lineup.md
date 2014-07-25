@@ -14,7 +14,8 @@ teaser:
 publications:
 - 2013_infovis_lineup
 
-video: 2013_infovis_lineup_video
+videos: 
+ - 2013_infovis_lineup_video
     
 team:
  - gratzl 

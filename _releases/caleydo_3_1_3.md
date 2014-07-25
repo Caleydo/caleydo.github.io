@@ -1,9 +1,10 @@
 ---
-layout: releaseCaleydo
-key: release_3_1_3
+layout: release_caleydo
+key: caleydo_3_1_3
 version: 3.1.3
 date: 2014-05-14
 software: Caleydo
+description: including StratomeX, enRoute, Entourage, LineUp
 ---
 
 This is a service release fixing several bugs and introducing minor new features.

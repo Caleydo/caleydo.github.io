@@ -11,9 +11,9 @@ layout: default
     <h2>{{ page.standfirst }}</h2>
     {{ content }}
 
-    {% if page.teaser.highres %}
-    <img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">
-    {% endif %}
+    <!--{% if page.teaser.highres %}-->
+    <!--<img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">-->
+    <!--{% endif %}-->
   </article>
 
   <article class="project-meta">
@@ -23,7 +23,8 @@ layout: default
 
     <p>
       {% for video in site.videos %}
-      {% if video.key == page.video or video.key == page.preview-video %}
+      {% for video_key in page.videos %}
+      {% if video_key == video.key %}
 
     <h3>{{video.name}}</h3>
     <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
@@ -32,6 +33,7 @@ layout: default
 
     <p/>
     {% endif %}
+    {% endfor %}
     {% endfor %}
     </p>
     {% endif %}
@@ -74,17 +76,17 @@ layout: default
     </p>
     {% endif %}
 
-    <h1>Status</h1>
+    <!-- <h1>Status</h1>
 
-    <p>
-      {{ page.status }}
-    </p>
-
+     <p>
+       {{ page.status }}
+     </p>
+ -->
     {% if page.publications.size > 0 %}
     <h1>Publications</h1>
 
     <p>
-    <ul class="default">
+    <ul class="publication-icon-list">
       {% for key in page.publications %}
       {% for pub in site.publications %}
       {% if key == pub.key %}
@@ -93,6 +95,29 @@ layout: default
       {% endfor %}
       {% endfor %}
     </ul>
+    </p>
+    {% endif %}
+
+    {% if page.publications.size > 0 %}
+    <h1>Download Software</h1>
+
+    <p>
+      {% assign is_core_caleydo = true %}
+      {% for release in site.releases %}
+      {% if release.key contains page.key %}
+    <ul class="release-icon-list">
+      <li><a class="release-icon-list" href="{{ site.baseurl }}{{ release.url }}">{{ release.software }} {{ release.version }}</a> ({{ release.description }})
+      </li>
+    </ul>
+    {% assign is_core_caleydo = false %}
+    {% endif %}
+    {% endfor %}
+
+    {% if is_core_caleydo %}
+    <ul class="release-icon-list">
+      <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a> ({{ site.releases.last.description }})</li>
+    </ul>
+    {% endif %}
     </p>
     {% endif %}
 

@@ -32,8 +32,10 @@ layout: default
 
   <h1>Recent Publications</h1>
   <ul class="publication-icon-list">
-  {% sorted_for publication in site.publications reversed sort_by:year %}
-    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></li>
+  {% sorted_for publication in site.publications reversed sort_by:year  %}
+    {% if publication.year > 2013 %}
+    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }} {{publication.year}}</a></li>
+    {% endif %}
   {% endsorted_for %}
   </ul>
 
@@ -47,11 +49,22 @@ layout: default
       {% endfor %}
     </ul>
 
-    <h1>Projects</h1>
+    <h1>Core Projects</h1>
     <ul class="project-icon-list">
-    {% for project in site.projects %}
+      {% sorted_for project in site.projects sort_by:order %}
+      {% if project.status == 'core' %}
       <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.title }}</a></li>
-    {% endfor %}
+      {% endif %}
+      {% endsorted_for %}
+    </ul>
+
+    <h1>Prototypes</h1>
+    <ul class="project-icon-list">
+      {% sorted_for project in site.projects sort_by:order %}
+      {% if project.status == 'prototype' %}
+      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.title }}</a></li>
+      {% endif %}
+      {% endsorted_for %}
     </ul>
 
     <h1>Latest Release</h1>
@@ -62,7 +75,14 @@ layout: default
 
     <h1>Funding</h1>
     <ul class="funding-icon-list">
-      <li><a href="{{ site.baseurl }}/funding/"> Funding</a></li>
+      {% sorted_for grant in site.funding sort_by:agency %}
+      {% if grant.active != empty %}
+      {% if agency != grant.agency %}
+      <li><a href="{{ site.baseurl }}/funding">{{ grant.agency }}</a></li>
+      {% endif %}
+      {% endif %}
+      {% assign agency = grant.agency %}
+      {% endsorted_for %}
     </ul>
   </article>
 
