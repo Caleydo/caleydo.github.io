@@ -12,9 +12,9 @@ image: /assets/images/papers/2012_eurovis_stratomex.png
 author: lex
 advisors: Dieter Schmalstieg, Nils Gehlenborg, Robert Kosara
 year: March 2012
-award: Best Dissertation Award 
+award: Best Dissertation Award, awarded by "Forum Technology and Society", Graz University of Technology,
 institution: Graz University of Technology
-
+thesis_type: PhD Thesis
 
 pdf: 2012_phd_thesis_lex.pdf
 bibtex:

@@ -36,7 +36,7 @@ layout: default
     <b>{{page.title}}</b><br/>
     {{ page.institution }}, {% if page.doi %} <a href=http://dx.doi.org/{{ page.doi }}>doi:{{ page.doi }}</a>,
     {%endif%}
-    {{ page.year }}</p>
+    {{page.thesis_type}}, {{ page.year }}</p>
 
     {%if page.award %}
     <p class="award" style="font-style:italic;">
