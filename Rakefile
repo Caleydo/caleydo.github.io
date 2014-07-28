@@ -131,11 +131,11 @@ task :deployImpl do
   FileUtils.remove_dir("#{deploy_dir}",true)
 
   system "git clone #{repo_url} #{deploy_dir}"
-  #(Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
+  (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
   
   puts "\n## Copying #{public_dir} to #{deploy_dir}"
-  #Rake::Task[:copydot].invoke(public_dir, deploy_dir)
-  #cp_r "#{public_dir}/.", deploy_dir
+  Rake::Task[:copydot].invoke(public_dir, deploy_dir)
+  cp_r "#{public_dir}/.", deploy_dir
   
   #remove CNAME entry for project specific repos
   if branch == 'gh-pages' and File.exist?("#{deploy_dir}/CNAME")
