@@ -233,12 +233,11 @@ body {
 }
 
 .funding-title {
-  @include page-title($neutral-color);
+  @include subpage-title($neutral-color);
 }
 
-
 .acknowledgements-title {
-  @include page-title($neutral-color);
+  @include subpage-title($neutral-color);
 }
 
 .post-title {
