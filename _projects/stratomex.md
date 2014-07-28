@@ -37,7 +37,6 @@ collaborators:
 - schulz
 - turkay
 
-
 github:
  - https://github.com/Caleydo/caleydo
 ---

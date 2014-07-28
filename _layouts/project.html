@@ -72,14 +72,11 @@ layout: default
     {% endif %}
     </p>
     {% endif %}
-
     {% if page.github.size > 0 %}
-    <h1>Source</h1>
-
     <p>
     <ul class="source-icon-list">
       {% for repo in page.github %}
-      <li><a href="{{ site.baseurl }}{{ repo }}">{{ repo | remove: "https://github.com/Caleydo/" }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ repo }}">{{ repo | remove: "https://github.com/Caleydo/" }}</a><br>GitHub Repository</li>
       {% endfor %}
     </ul>
     </p>

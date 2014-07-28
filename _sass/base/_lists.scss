@@ -77,6 +77,12 @@ ul.funding-icon-list {
   @include icon-list($neutral-color,"\f024");
 }
 
+ul.source-icon-list {
+  @include icon-list($neutral-color,"\f09b");
+}
+
+
+
 
 /*
  ul.project-list {
