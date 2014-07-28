@@ -153,9 +153,13 @@ body {
 }
 
 .funding-title {
-  @include page-title($home-color);
+  @include page-title($neutral-color);
 }
 
+
+.acknowledgements-title {
+  @include page-title($neutral-color);
+}
 
 .post-title {
   @include subpage-title($home-color);
@@ -302,6 +306,14 @@ body {
 }
 
 .funding-meta {
+  @include page-meta();
+}
+
+.acknowledgements-content {
+  @include page-content();
+}
+
+.acknowledgements-meta {
   @include page-meta();
 }
 
