@@ -10,8 +10,9 @@ softwares:
 
 ---
 
-Caleydo runs on **Windows**, **Mac OS X**, and **Linux**. We regularly test on Windows 7, Ubuntu/Kubuntu of the latest versions and Mac OS X.
-Caleydo requires Java 7. Further installation details can be found when following the link.
+Caleydo runs on **Windows**, **Mac OS X**, and **Linux**. We regularly test on Windows 7, Ubuntu/Kubuntu of the latest versions and Mac OS X. 
+
+Caleydo requires **Java 7**. Further installation details can be found when following the links below.
 
 # Current Stable Release
 
