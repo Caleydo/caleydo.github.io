@@ -2,9 +2,9 @@
 layout: person
 first_name: Mark
 last_name: Borowsky
-key: lex
+key: borowsky 
 permalink: /persons/borowsky/
-role: advisor
+role: collaborator
 email: 
 image: /assets/images/team/borowsky.jpg
 organization: Novartis Institutes for BioMedical Research
