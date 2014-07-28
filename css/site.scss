@@ -353,12 +353,12 @@ body {
 
 .project-content-main {
   @include page-content();
-  @include span-columns(9);
+  @include span-columns(8);
 }
 
 .project-content-aside {
   @include page-content();
-  @include span-columns(3);
+  @include span-columns(4);
   @include omega();
 }
 
@@ -415,12 +415,12 @@ body {
 
 .home-content-main {
   @include page-content();
-  @include span-columns(9);
+  @include span-columns(8);
 }
 
 .home-content-aside {
   @include page-content();
-  @include span-columns(3);
+  @include span-columns(4);
   @include omega();
 }
 
@@ -435,12 +435,12 @@ body {
 
 .post-content-main {
   @include page-content();
-  @include span-columns(9);
+  @include span-columns(8);
 }
 
 .post-content-aside {
   @include page-content();
-  @include span-columns(3);
+  @include span-columns(4);
   @include omega();
 }
 
