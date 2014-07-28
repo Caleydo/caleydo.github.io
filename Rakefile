@@ -157,7 +157,7 @@ task :deployImpl do
     puts "\n## Committing: #{message}"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    #system "git push origin #{branch}"
+    system "git push origin #{branch}"
     puts "\n## Github Pages deploy complete"
   end
 end
