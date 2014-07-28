@@ -131,24 +131,33 @@ task :deployImpl do
   FileUtils.remove_dir("#{deploy_dir}",true)
 
   system "git clone #{repo_url} #{deploy_dir}"
-  (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
+  #(Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
   
   puts "\n## Copying #{public_dir} to #{deploy_dir}"
-  Rake::Task[:copydot].invoke(public_dir, deploy_dir)
-  cp_r "#{public_dir}/.", deploy_dir
+  #Rake::Task[:copydot].invoke(public_dir, deploy_dir)
+  #cp_r "#{public_dir}/.", deploy_dir
   
   #remove CNAME entry for project specific repos
   if branch == 'gh-pages' and File.exist?("#{deploy_dir}/CNAME")
     FileUtils.rm("#{deploy_dir}/CNAME")
   end
   
-  cd "#{deploy_dir}" do    
+  #find out the last commit date
+  lastcommit = ''
+  cd "#{deploy_dir}" do
+    #when was the new clone commited last
+    lastcommit = `git log -1 --format=%cd`.strip
+  end
+  #find out what happens inbetween
+  commits = `git log --since "#{lastcommit}" --format=\"%h %cd %cn: %s"`
+  
+  cd "#{deploy_dir}" do
     system "git add -A"
-    message = "Site updated at #{Time.now.utc}"
+    message = "Site updated at #{Time.now.utc}:\n#{commits}"
     puts "\n## Committing: #{message}"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push origin #{branch}"
+    #system "git push origin #{branch}"
     puts "\n## Github Pages deploy complete"
   end
 end
