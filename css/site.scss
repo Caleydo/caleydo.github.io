@@ -32,8 +32,10 @@
       border-bottom: 4px $color solid;
     }
 
-    a:hover {
-      color: white;
+	a:focus,
+    a:hover,
+	a:active	{
+      color: #DEDEDE;
     }
 }
 
