@@ -9,5 +9,5 @@ email:
 image: /assets/images/team/borowsky.jpg
 organization: Novartis Institutes for BioMedical Research
 position: 
-website: 
+website: https://www.linkedin.com/in/borowsky
 ---

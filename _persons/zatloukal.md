@@ -9,5 +9,5 @@ email:
 image: /assets/images/team/zatloukal.jpg
 organization: Medical University of Graz
 position: 
-website: 
+website: https://forschung.medunigraz.at/fodok/suchen.person_uebersicht?sprache_in=en&menue_id_in=101&id_in=90075196 
 ---
