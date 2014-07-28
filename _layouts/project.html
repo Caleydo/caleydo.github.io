@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-<div class="project">
-
   <header class="project-title">
     <h1>{{page.name}}: {{ page.title | remove: "| Caleydo" }}</h1>
   </header>
@@ -81,29 +79,25 @@ layout: default
        Go to <a href="{{ page.help}}">{{page.name}} Help Pages</a>
      </p>
     {%endif%}
-
   </article>
-
 
   <article class="project-meta">
 
     {% if video != empty %}
     <h1>Video</h1>
-
-    <p>
-      {% for video in site.videos %}
-      {% for video_key in page.videos %}
-      {% if video_key == video.key %}
-
-    <h3>{{video.name}}</h3>
-    <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
-            allowfullscreen></iframe>
-    <p><a href="{{ site.paper_content_url }}{{ video.file}}">Download video</a>
-    <p/>
+    {% for video in site.videos %}
+    {% for video_key in page.videos %}
+    {% if video_key == video.key %}
+    <h3>{{video.name}}</h3>   
+    <div class="video">
+      <div class="video-wrapper">
+        <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p><a href="{{site.paper_content_url}}{{video.file}}"><i class="fa fa-download"></i> &nbsp; Download video</a><p/>
+    </div>    
     {% endif %}
     {% endfor %}
     {% endfor %}
-    </p>
     {% endif %}
 
 
@@ -124,4 +118,3 @@ layout: default
     {% endif %}
 
   </article>
-</div>

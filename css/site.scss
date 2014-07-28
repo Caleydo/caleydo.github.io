@@ -1,6 +1,5 @@
 ---
 ---
-
 @import 'bourbon/bourbon';
 @import 'base/base';
 @import 'neat/neat';
@@ -8,58 +7,119 @@
 @import 'base/cards';
 @import 'base/grid-items';
 
+$small-display-columns: 4;
+$medium-display-columns: 12;
+$large-display-columns: 12;
+
+$small-display: new-breakpoint(max-width 519px $small-display-columns);
+$medium-display: new-breakpoint(min-width 520px max-width 1023px $medium-display-columns);
+$large-display: new-breakpoint(min-width 1024px $large-display-columns);
+
 /* site specific changes that do not fit into base */
 
 @mixin navigation-button($color) {
+  color: white;
+  font-family: $navigation-button-font-family;
+  font-weight: $navigation-button-font-weight;
+  font-style: $navigation-button-font-style;
+  font-size: $navigation-button-font-size;
+  float: left;
+  text-align: center;
+  margin-right: 5px;
+  width: 110px;
+  
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  a {
+    display: block;
+    height: 30px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+
+    background-color: #444;
     color: white;
-    font-family: $navigation-button-font-family;
-    font-weight: $navigation-button-font-weight;
-    font-style: $navigation-button-font-style;
-    font-size: $navigation-button-font-size;
-    float: left;
-    text-align: center;
-    margin-right: 5px;
-
-    &:last-child {
-      margin-right: 0px;
-    }
-
-    a {
-	  display: block;
-      width: 100px;
-      height: 30px;
-      padding: 5px;
-      padding-top: 3px;
-	  background-color: #444;
-      color: white;
-      border-bottom: 4px $color solid;
-    }
-
-	a:focus,
-    a:hover,
-	a:active	{
+    border-bottom: 4px $color solid;
+    &:focus, &:hover, &:active {
       color: #DEDEDE;
     }
+  }
+
+  @include media($small-display) {
+    width: 25px;
+  }  
+
+  @include media($medium-display) {
+    width: 25px;
+  }  
+}
+
+.nav-icon {
+  margin-right: 0.2em;
+  display: inline-block;
+
+  @include media($medium-display) {
+    margin-right: 0em;
+  }  
+
+  @include media($small-display) {
+    margin-right: 0em;
+  }        
+}
+
+.nav-text {
+  display: inline-block;
+
+  @include media($medium-display) {
+    display: none;
+  }  
+
+  @include media($small-display) {
+    display: none;
+  }  
 }
 
 .navigation {
   display: block;
   height: 40px;
   margin-bottom: 20px;
+
+  @include media($small-display) {
+    margin-right: 0px;
+    height: 30px;
+  }    
 }
 
 .navigation-buttons {
   display: block;
   float: right;
   padding-top: 6px;
+
+  @include media($small-display) {
+    margin-right: 0px;
+    padding-top: 0px;
+  }  
 }
 
 .logo {
   float: left;
   margin-left: -34px;
-  }
 
-.logo-gray {
+  @include media($small-display) {
+    margin-left: 0px;    
+  }
+}
+
+.logo-header-svg {
+  height: 40px;
+  
+  @include media($small-display) {
+    height: 30px;
+  }
+}
+
+.logo-gray-svg {
   fill: #ddd;
 }
 
@@ -87,12 +147,21 @@
 
 .wrap {
   @include outer-container;
+  @include clearfix;
 }
+
+
 
 body {
   margin-top: 30px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+  @include media($small-display) {  
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .home-button {
@@ -122,7 +191,7 @@ body {
 
 @mixin page-title($color) {
     @include span-columns(12);
-    @include omega;
+    @include omega();
     color: $color;
     background-color: tint($color,95%);
     padding: 30px 0px 0px 0px;
@@ -147,8 +216,12 @@ body {
   }
 }
 
-.project-title {
+.projects-title {
   @include page-title($project-color);
+}
+
+.project-title {
+  @include subpage-title($project-color);
 }
 
 .person-title {
@@ -192,8 +265,17 @@ body {
   @include subpage-title($download-color);
 }
 
+@mixin single-column-content() {
+  @include media($small-display) {
+    @include span-columns($small-display-columns);
+    @include omega();
+  }    
+}
 
 @mixin page-content() {
+  // for small displays as single column
+  @include single-column-content();
+
   ul {
     @extend %default-ul;
   }
@@ -231,6 +313,9 @@ body {
 }
 
 @mixin page-meta() {
+  // for small displays as single column
+  @include single-column-content();
+
   ul {
     @extend %default-ul;
   }
@@ -258,6 +343,7 @@ body {
   font-size: $page-content-font-size;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings    
 }
+
 
 .project-content {
   @include page-content();
@@ -298,6 +384,7 @@ body {
   @include page-content();
   @include span-columns(6);
 }
+
 .team-content-right {
   @include page-content();
   @include span-columns(6);
@@ -306,6 +393,8 @@ body {
 
 .team-meta {
   @include page-meta();
+  @include span-columns(12);
+  @include omega();
 }
 
 .funding-content {
@@ -598,6 +687,28 @@ html, body {
       }
     }
   }
+}
+
+.video {
+  margin: auto;
+
+  @include media($large-display) {
+    width: 75%;
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+  height: 0;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 

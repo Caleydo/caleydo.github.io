@@ -64,11 +64,12 @@ layout: default
     {% for video in site.videos %}
     {% if video.key == page.video or video.key == page.preview-video %}
     <h2>{{video.name}}</h2>
-    <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0"
-            allowfullscreen></iframe>
-    <p><a href="{{site.paper_content_url}}{{video.file}}"><i class="fa fa-download"></i> &nbsp; Download video</a>
-
-    <p/>
+    <div class="video">
+      <div class="video-wrapper">
+        <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p><a href="{{site.paper_content_url}}{{video.file}}"><i class="fa fa-download"></i> &nbsp; Download video</a><p/>
+    </div>    
     {% endif %}
     {% endfor %}
 

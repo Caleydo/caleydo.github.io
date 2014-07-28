@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-<div class="publication">
-
   <header class="publications-title">
     <h1>{{ page.title | remove: "| Caleydo" }}</h1>
   </header>
@@ -10,6 +8,7 @@ layout: default
   <article class="publications-content">
 
     <h1>Peer-Reviewed Journal and Conference Papers </h1>
+    
     {% for publication in site.publications reversed %}
 
     <div class="paper-list-block">
@@ -78,5 +77,3 @@ layout: default
 
 
   </article>
-
-</div>

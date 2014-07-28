@@ -1,5 +1,4 @@
-<nav class="navigation">
-  <div class="trigger">
+<div class="navigation">
     <!--
     {% for page in site.pages %}
       {% if page.title %}<a class="" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
@@ -9,26 +8,26 @@
       <a class="site-title" href="{{ site.baseurl }}/">{% include logo.html %}</a>
     </div>
 
-    <nav class="navigation-buttons">
+    <div class="navigation-buttons">
 	  <ul>
         <li class="home-button">
-          <a href="{{ site.baseurl }}/">Home</a>
+          <a href="{{ site.baseurl }}/"><span class="nav-icon"><i class="fa fa-home"></i></span><span class="nav-text">Home</span></a>
         </li>
         <li class="team-button">
-          <a href="{{ site.baseurl }}/team/">Team</a>
+          <a href="{{ site.baseurl }}/team/"><span class="nav-icon"><i class="fa fa-user"></i></span><span class="nav-text">Team</a>
         </li>
         <li class="project-button">
-          <a href="{{ site.baseurl }}/projects/">Projects</a>
+          <a href="{{ site.baseurl }}/projects/"><span class="nav-icon"><i class="fa fa-cog"></i></span><span class="nav-text">Projects</a>
         </li>
         <li class="download-button">
-          <a href="{{ site.baseurl }}/downloads/">Downloads</a>
+          <a href="{{ site.baseurl }}/downloads/"><span class="nav-icon"><i class="fa fa-download"></i></span><span class="nav-text">Downloads</a>
         </li>
         <li class="publication-button">
-          <a href="{{ site.baseurl }}/publications/">Publications</a>
+          <a href="{{ site.baseurl }}/publications/"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Publications</a>
         </li>
         <li class="help-button">
-          <a href="http://help.caleydo.org">Help</a>
+          <a href="http://help.caleydo.org"><span class="nav-icon"><i class="fa fa-question-circle"></i></span><span class="nav-text">Help</a>
         </li>
 	  </ul>
-    </nav>
-</nav>
+    </div>
+</div>
