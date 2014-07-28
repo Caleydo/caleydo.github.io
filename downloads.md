@@ -38,6 +38,9 @@ Caleydo requires Java 7. Further installation details can be found when followin
 
 
 # License and Source Code
-Caledyo and the other listed projects are open source software under the new BSD license. You may download and redistribute the software. They come without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose.
+Caledyo and all Caleydo projects are open source software under the [new BSD license](https://github.com/Caleydo/caleydo/blob/develop/LICENSE). You may download and redistribute the software provided you acknowledge the copyright holders. They come without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose.
 
-Caleydo source code:  [https://github.com/Caleydo/caleydo](https://github.com/Caleydo/caleydo)
+The Caleydo source code is available on GitHub:  [https://github.com/Caleydo/](https://github.com/Caleydo/)
+
+Caleydo uses a variety of libraries which we [gratefully acknowledge here]({{site.baseurl}}/../acknowledgements/).
+
