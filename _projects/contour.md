@@ -1,6 +1,7 @@
 ---
 layout: project
-title: ConTour
+title: Relational Data Visualization
+name: ConTour
 key: contour
 permalink: /projects/contour/
 status: prototype
@@ -13,7 +14,8 @@ teaser:
 publications:
 - 2014_vast_contour
 
-video: 2014_vast_contour_video
+videos:
+ - 2014_vast_contour_video
 
 team:
  - partl

@@ -1,11 +1,13 @@
 ---
 layout: project
-title: Entourage/enRoute
+title: Pathway Visualization
+name: Entourage & enRoute
 key: pathways
 permalink: /projects/pathways/
 status: core
 order: 2
-standfirst: Visualizing relationships between biological pathways using contextual subsets (Entourage) and embedding experimental data in the context of pathways (enRoute).
+standfirst: Visualizing large & heterogeneous experimental data with <b>enRoute</b> and pathway interdependencies with <b>Entourage</b>.
+help: http://help.caleydo.org/3.1/index.html#!views/pathway/pathway.md
 
 teaser: 
     lowres: 2013_infovis_entourage.png
@@ -14,12 +16,15 @@ teaser:
 publications:
  - 2013_infovis_entourage
  - 2013_bmc_enroute
+ - 2012_biovis_enroute
  
-video: 2013_infovis_entourage_video
+videos: 
+ - 2013_infovis_entourage_video
+ - 2012_biovis_enroute_video
      
 team:
- - partl
  - lex
+ - partl
  - streit
  - gratzl
  - pfister
@@ -30,17 +35,28 @@ collaborators:
 
 ---
 
+Pathways are graphs that model diverse biological processes on a molecular level. They depict the interaction of genes, proteins and other entities on a semantic level, as a small subset out of the overall biological network. These subsets are curated for their functional relevance and are mostly generic for an organism or a specific disease state. While this subsetting approach is necessary to deal with the complexity of the networks, there are many situations where a broader view is desirable, for example when investigating side-effects of drugs. Furthermore, it is necessary to understand the peculiarites of individual patients, samples, or cohorts with respect to a pathway, as pathways can be modulated, for example, through a disease. The integrated pathway visualization techniques in Caleydo aim to address these challenges. **Entourage** provides contextual information for a focus pathway by visualizing relevant subsets in other pathways. **enRoute** visualizes large and heterogeneous experimental datasets for pathways. 
 
-#### Entourage
+### Entourage
 
-Entourage is a visualization technique to efficiently perform multi-pathway analysis. It can help researchers to understand biological processes within cells. All the biochemical reactions that make everything in our bodies work interact in a highly complex network of biochemical reactions. Biologists are trying to capture this network and pharmacologists are interested in how we can influence this network, to, for example, stop a process from going wrong. In cancer, for example, a mutated gene might stop a cell from dying as "planned", leading to uncontrolled growth and thus to a tumor. A pharmacologists now wants to understand if a drug can stop that from happening. To get an idea whether this might work early on, he or she might use pathways. Pathways are subsets of the large network that only contain the parts that are really relevant for, e.g., a disease. Excluding the majority of the network is important so that we can understand what the important components are and that we can focus on them. However, sometimes its critical to see all the relationships, even those that are not included in the pathway. One of those situations is when you would like to check for side-effects of a drug, to see if, for example, a cancer drug you are working on has effects on the skin, e.g. producing rashes. Another question you might ask is: given a drug that I know targets a specific gene and that is used in one disease, can it be used in another disease that involves the same gene?
+Entourage is a visualization technique to efficiently perform multi-pathway analysis as it is often important to see relationships that are not included in the pathway. One of those situations is when an analyst would like to check for side-effects of a drug, to see if, for example, it could have a side effect in another process.
 
-Entourage helps to find answers to this question by allowing to analyze multiple pathways at the same time. As display space is limited, it only shows one pathway that is currently in focus of the analysis (focus pathway) in full detail, while other pathways show contextually relevant information (context pathways). What is contextually relevant is determined by selecting a focus node. All context pathways that share this node adapt their displayed content to show only the surrounding of this node in the form of paths. Entourage also indicates all shared nodes between pathways by using the non-obstrusive, yet effective stubs of visual links, which can be expanded to full links that connect the shared nodes on demand.
+Entourage helps to find answers to this question by enabling analysts to analyze multiple pathways at the same time. To deal with the limited display space and the large number of nodes and edges, Entourage only shows one pathway focus pathway in full detail, while other pathways show contextually relevant information. What is contextually relevant is determined by a focus node selected by the analyst. All context pathways that share this node adapt their representations to only show the surroundings of this node as paths. Entourage also indicates all shared nodes between pathways by using the non-obstrusive, yet effective stubs of visual links, which are extended to full, traceable links that connect shared nodes on demand. The following figure shows the KEGG Glioma pathway in focus and contextual information derived from two other pathways. We can see that these three pathways share a similar path. 
 
-Additionally, Entourage can be used for detailed experimental data analysis in the context of multiple pathways. It makes use of an extended version of the enRoute visualization technique, which allows to explore experimental data associated with nodes along a selected path in detail. In contrast to enRoute, Entourage offers the possibility to perform this detailed analysis even across multiple pathways by allowing to select a path that uses shared nodes as portals to other pathways and therefore to jump from one pathway to another.
+![Pathway Visualizations Overview]({{site.baseurl}}/assets/images/projects/entourage_basic.png)
 
-#### enRoute
+In addition to the visualization of relationships between selected pathways, Entourage allows analysts to dynamically define their focus and supports them in finding relevant and related  pathways in the context of an analysis. Pathway exploration in Entourage can also be triggered out of the [StratomeX view]({{site.baseurl}}/projects/stratomex/)
 
-Biological pathways represent an important source of information when investigating experimental data in the context of cellular processes. Therefore different approaches try to visually combine pathways and experimental data. However, existing solutions are either limited in the way that only few experiments can be associated with pathway nodes, or that pathways and their structure are not represented appropriately.
+### enRoute
 
-This issue is addressed in our interactive visualization technique enRoute, which can be used to explore large amounts of experimental data along a selected path of nodes. Paths can dynamically be extracted from pathway maps to be shown side-by-side with experimental data. enRoute is capable of simultaneously visualizing hundrets of samples that can originate from several datasets and are grouped by different experimental conditions.
+Entourage is integrated with enRoute, the visualization technique for experimental data in pathways. Biological pathways are an important source of information when investigating experimental data in the context of cellular processes. Visualizing large and heterogeneous amounts of experimental data on top of pathways is, however, challenging. Most commonly, average expression values are shown color-coded  on top of a node, which allows to compare only very few experimental values at the same time and is perceptually inefficient.
+
+enRoute addresses this problem by enabling analysts to dynamically extract paths from pathways. For the extracted, linear paths enRoute shows rich and detailed visualizations of the experimental data. The following figure shows the selected path in the pathway, highlighted in orange, with the enRoute view on its right. The pathway nodes are color coded for copy number changes. The enRoute view shows copy number, mutation and expression data, as well as drug response data for 120 cell lines from two different tissues (lung and breast), using bar charts for numerical data and heat maps for categorical data. This representation of the extracted path allows analysts to reason about individual patients' particular genetic profile along the path of interest and supports a very efficient comparrison between patients and patient groups.
+
+![Pathway Visualizations Overview]({{site.baseurl}}/assets/images/projects/enroute_basic.png)
+
+### Integration
+
+enRoute and Entourage are integrated into one comprehensive visualization system that includes interfaces to select and rank pathways as well as to choose datasets and groupings to map onto the pathways or to display in enRoute, as shown in the following figure. 
+
+![Pathway Visualizations Overview]({{site.baseurl}}/assets/images/projects/pathway_overview.png)

@@ -1,6 +1,24 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include head_default.html %}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css"/>
+    <style type="text/css">
+        /*.Caleydosel-image{*/
+            /*height: 180px;*/
+        /*}*/
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+    {% include header.html %}
+</div>
+
+<div class="page-content">
+    <div class="wrap">
+
 <div class="home">
 
   <header class="home-title">
@@ -8,11 +26,21 @@ layout: default
   </header>
 
   <article class="home-content-main">
+
   <h1>About</h1>
 
  <p>Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of Caleydo is the visualization of interdependencies between multiple datasets. Caleydo can load tabular data and groupings/clusterings. You can explore relationships between multiple groupings, between different datasets and see how your data maps onto pathways.
    Caleydo has been successfully used to analyze mRNA, miRNA, methylation, copy number variation, mutation status and clinical data as well as other datset types.</p>
 
+
+      <div class="Caleydosel">
+          <!--position: relative; top:-25px;-->
+          <div><center><a href="projects/stratomex/"><img class="Caleydosel-image" data-lazy="assets/images/projects/StratomeX_lowRes.png" /><div style="font-weight: bold">StratomeX</div></a></center></div>
+          <div><center><a href="projects/pathways/"><img class="Caleydosel-image" data-lazy="assets/images/projects/pathways_lowRes.png" /><div style="font-weight: bold">EnTourage / enRoute</div></a></center></div>
+          <div><center><a href="projects/contour/"><img class="Caleydosel-image" data-lazy="assets/images/projects/2014_vast_contour.png"/><div style="font-weight: bold">ConTour</div></a></center></div>
+          <div><center><a href="projects/lineup/"><img class="Caleydosel-image" data-lazy="assets/images/projects/lineup_lowRes.png"/><div style="font-weight: bold">LineUp</div></a></center></div>
+          <div><center><a href="projects/domino/"><img class="Caleydosel-image" data-lazy="assets/images/projects/domino_lowRes.png"/><div style="font-weight: bold">Domino</div></a></center></div>
+      </div>
   <h1>News <span class="right-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
 
   <ul class="post-list">
@@ -28,13 +56,13 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-  <p><a href="news">Earlier news...</a></p>
+  <p><a href="news">Earlier news ...</a></p>
 
   <h1>Recent Publications</h1>
   <ul class="publication-icon-list">
   {% sorted_for publication in site.publications reversed sort_by:year  %}
     {% if publication.year > 2013 %}
-    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }} {{publication.year}}</a></li>
+    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.year}}</li>
     {% endif %}
   {% endsorted_for %}
   </ul>
@@ -45,39 +73,88 @@ layout: default
     <h1>Partners</h1>
     <ul class="institution-icon-list">
       {% for institution in site.institutions reversed %}
-      <li><a href="{{ institution.website }}">{{ institution.name }}</a></li>
+      <li><a href="{{ institution.website }}">{{ institution.name }}</a><br>{{ institution.location }}</li>
       {% endfor %}
     </ul>
 
-    <h1>Core Projects</h1>
+    <h1>Projects</h1>
     <ul class="project-icon-list">
       {% sorted_for project in site.projects sort_by:order %}
       {% if project.status == 'core' %}
-      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
       {% endif %}
       {% endsorted_for %}
     </ul>
-
-    <h1>Prototypes</h1>
     <ul class="project-icon-list">
       {% sorted_for project in site.projects sort_by:order %}
       {% if project.status == 'prototype' %}
-      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
       {% endif %}
       {% endsorted_for %}
     </ul>
 
     <h1>Latest Release</h1>
     <ul class="release-icon-list">
-      <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a><br>{{ site.releases.last.date | date: "%-d %b %Y" }}</li>
     </ul>
 
 
     <h1>Funding</h1>
     <ul class="funding-icon-list">
-      <li><a href="{{ site.baseurl }}/funding/"> Funding</a></li>
+      {% sorted_for grant in site.funding sort_by:agency %}
+      {% if grant.active != empty %}
+      {% if agency != grant.agency %}
+      <li><a href="{{ site.baseurl }}/funding">{{ grant.agency }}</a></li>
+      {% endif %}
+      {% endif %}
+      {% assign agency = grant.agency %}
+      {% endsorted_for %}
     </ul>
   </article>
 
 
 </div>
+    </div>
+</div>
+
+<div class="wrap">
+    {% include footer.html %}
+</div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.min.js"></script>
+
+{% if site.use_analytics == true %}
+{% include google_analytics.html %}
+{% endif %}
+
+<script language="JavaScript">
+    $(document).ready(function(){
+        $('.Caleydosel').slick({
+//            lazyLoad: 'progressive',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 4000,
+//            centerMode:true,
+//            centerPadding:'0%',
+            arrows:false,
+            dots:true,
+            speed:1000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true
+                    }
+                }
+            ]
+    });
+    });
+</script>
+
+</body>
+</html>

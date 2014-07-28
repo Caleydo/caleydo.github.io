@@ -45,6 +45,7 @@
 .navigation-buttons {
   display: block;
   float: right;
+  padding-top: 6px;
 }
 
 .logo {
@@ -221,10 +222,52 @@ body {
   ul {
     @extend %default-ul;
   }
+
+  p {
+    a {
+      color: #444;
+      position: relative;
+      text-decoration: none;    
+    }
+    a:after{
+       position: absolute;
+       left: 0px;
+       bottom: 0.2em;
+       content: '';
+       width: 100%;
+       border-bottom-width: 1px;
+       border-bottom-style: dotted;
+    }    
+  }  
+
+  font-family: $page-content-font-family;
+  font-weight: $page-content-font-weight;
+  font-style: $page-content-font-style;
+  font-size: $page-content-font-size;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings    
 }
 
 .project-content {
   @include page-content();
+  @include span-columns(12);
+  @include omega();
+}
+
+.project-content-main {
+  @include page-content();
+  @include span-columns(9);
+}
+
+.project-content-aside {
+  @include page-content();
+  @include span-columns(3);
+  @include omega();
+}
+
+.project-meta {
+  @include page-meta();
+  @include span-columns(9);
+  @include omega();
 }
 
 .person-content {
@@ -237,6 +280,16 @@ body {
 
 .team-content {
   @include page-content();
+}
+
+.team-content-left {
+  @include page-content();
+  @include span-columns(6);
+}
+.team-content-right {
+  @include page-content();
+  @include span-columns(6);
+  @include omega();
 }
 
 .team-meta {
@@ -333,7 +386,6 @@ ul.post-list {
   @include page-content();
 }
 
-
 .publication-meta {
   @include page-meta();
 }
@@ -345,6 +397,16 @@ ul.post-list {
 .release-meta {
   @include page-meta();
 }
+
+
+.download-content {
+  @include page-content();
+}
+
+.download-meta {
+  @include page-meta();
+}
+
 
 @mixin desaturation($percentage) {
   -webkit-filter: grayscale($percentage);
@@ -370,7 +432,8 @@ ul.post-list {
     @extend .person-image;
     width: 50px;
     height: 50px;
-
+    margin-right: 10px;
+    float: left;
 }
 
 

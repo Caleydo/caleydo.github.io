@@ -1,6 +1,7 @@
 ---
 layout: project
-title: Domino
+title: Subset Visualization
+name: Domino
 key: domino
 permalink: /projects/domino/
 status: prototype
@@ -13,7 +14,8 @@ teaser:
 publications:
  - 2014_infovis_domino
 
-video: 2014_infovis_domino_video
+videos: 
+ - 2014_infovis_domino_video
     
 team:
  - gratzl
