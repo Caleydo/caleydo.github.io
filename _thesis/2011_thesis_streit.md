@@ -14,7 +14,7 @@ advisors: Dieter Schmalstieg, Heidrun Schumann
 year: March 2011
 award: 
 institution: Graz University of Technology
-
+thesis_type: PhD Thesis
 
 pdf: 2012_phd_thesis_lex.pdf
 bibtex: 

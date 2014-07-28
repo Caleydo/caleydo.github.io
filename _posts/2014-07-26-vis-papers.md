@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Two new Caleydo papers at IEEE VIS 2013
+title: Two new Caleydo papers at IEEE VIS 2014
 date: 2014-07-26 20:00:00
 categories: event
 ---
