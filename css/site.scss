@@ -2,8 +2,11 @@
 ---
 
 @import 'bourbon/bourbon';
-@import 'neat/neat';
 @import 'base/base';
+@import 'neat/neat';
+
+@import 'base/cards';
+@import 'base/grid-items';
 
 /* site specific changes that do not fit into base */
 
@@ -115,6 +118,8 @@ body {
 
 
 @mixin page-title($color) {
+    @include span-columns(12);
+    @include omega;
     color: $color;
     background-color: tint($color,95%);
     padding: 30px 0px 0px 0px;
@@ -475,6 +480,9 @@ html, body {
 */
 
 .footer {
+  @include span-columns(12);
+  @include omega();
+
   $footer-background: $base-background-color;
   $footer-color: #999;
   $footer-link-color: transparentize($footer-color, .6);
