@@ -38,6 +38,9 @@ ul, ol {
         font-weight: 700;
         color: darken( $color, 20% );
       }
+      a:after{
+         border-bottom-width: 0;
+      }    
     }
     li:before {
       content: $icon;

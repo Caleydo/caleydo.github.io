@@ -5,7 +5,6 @@ tag: acknowledgements
 permalink: /acknowledgements/
 ---
 
-
 Caleydo makes use of a range of open source tools, bioinformatics resources and pre-packages several datasets, which we gratefully acknowledge here.
 
 # Software Libraries
