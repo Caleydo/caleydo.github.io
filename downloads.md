@@ -42,5 +42,5 @@ Caledyo and all Caleydo projects are open source software under the [new BSD lic
 
 The Caleydo source code is available on GitHub:  [https://github.com/Caleydo/](https://github.com/Caleydo/)
 
-Caleydo uses a variety of libraries which we [gratefully acknowledge here]({{site.baseurl}}/../acknowledgements/).
+Caleydo uses a variety of libraries and resources which we [gratefully acknowledge here]({{site.baseurl}}/acknowledgements/).
 
