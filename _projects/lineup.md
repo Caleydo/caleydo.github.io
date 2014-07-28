@@ -27,6 +27,10 @@ team:
  - streit 
 
 collaborators:
+
+github:
+ - https://github.com/Caleydo/org.caleydo.view.lineup
+ - https://github.com/Caleydo/lineup.js
 ---
 
 # About

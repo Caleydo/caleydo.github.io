@@ -32,6 +32,9 @@ team:
  
 collaborators:
  - wassermann 
+ 
+github:
+  - https://github.com/Caleydo/caleydo
 
 ---
 
