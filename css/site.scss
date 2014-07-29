@@ -491,6 +491,13 @@ ul.post-list {
   @include span-columns(4);
   @include omega();
 
+  ul {
+    @extend %default-ul;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }  
+
   .video {
     margin: auto;
     margin-left: 0;

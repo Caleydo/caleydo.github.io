@@ -20,7 +20,7 @@ layout: default
         {% assign known = false %}
         {% for person in site.persons %}
         {% if author == person.key %}
-        <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+        <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
 
         {% assign known = true %}
         {% endif %}
@@ -88,12 +88,12 @@ layout: default
 
     {% if page.pdf %}
     <li>
-      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ page.pdf }}">Download Paper (PDF)</a><br/>
+      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ page.pdf }}">Paper (PDF)</a><br/>
     </li>
     {% endif %}
     {% if page.supplement %}
     <li>
-      <i class="fa fa-download"></i>&nbsp;<a href="{{site.paper_content_url}}{{ page.supplement }}">Download Supplementary Material</a><br/>
+      <i class="fa fa-download"></i>&nbsp;<a href="{{site.paper_content_url}}{{ page.supplement }}">Supplementary Material</a><br/>
     </li>
     {% endif %}
     </ul>
