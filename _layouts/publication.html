@@ -38,6 +38,7 @@ layout: default
         {{ page.journal }}, {% if page.doi %} <a href="http://dx.doi.org/{{ page.doi }}">doi:{{ page.doi }}</a>, {%endif%}
         {{ page.year }}.</p>
 
+<<<<<<< HEAD
       {%if page.award %}
       <p class="award" style="font-style:italic;">
         <i class="fa fa-trophy"></i>&nbsp;{{page.award}}
@@ -48,6 +49,33 @@ layout: default
         <b>Note:</b> {{page.note}}
       </p>
       {% endif %}
+=======
+      <br/>
+      <b>{{page.title}}</b><br/>
+      {{ page.journal }}, {% if page.doi %} <a href="http://dx.doi.org/{{ page.doi }}">doi:{{ page.doi }}</a>, {%endif%}
+      {{ page.year }}.</p>
+
+    {%if page.award %}
+    <p class="award" style="font-style:italic;">
+      {{page.award}}
+    </p>
+    {% endif %}
+    {%if page.note %}
+    <p class="note" style="font-style:italic;">
+      <b>Note:</b> {{page.note}}
+    </p>
+    {% endif %}
+
+    {%if page.bibtex %}
+    <p>
+      <a href="{{site.paper_content_url}}{{ page.bibtex }}"><i class="fa fa-download"></i> &nbsp; BibTeX</a>
+    </p>
+    {% endif %}
+  </article>
+
+  <article class="publication-meta">
+
+>>>>>>> 0afbe8a5e2e4d38c1c6dc67ce3d054a668f8cb62
 
       {%if page.bibtex %}
       <p>
