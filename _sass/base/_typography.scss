@@ -18,7 +18,12 @@ $page-content-font-weight: 400;
 $page-content-font-style: normal;
 $page-content-font-size: 1em;
 
-$navigation-button-font-family: Lato, Helvetica, sans-serif;
+$footer-content-font-family: $sans-serif-font-family;
+$footer-content-font-weight: 400;
+$footer-content-font-style: normal;
+$footer-content-font-size: .7em;
+
+$navigation-button-font-family: $sans-serif-font-family;
 $navigation-button-font-weight: 700;
 $navigation-button-font-style: normal;
 $navigation-button-font-size: $base-font-size * 0.9;

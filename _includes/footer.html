@@ -1,56 +1,83 @@
-<footer class="footer">
-  <div class="footer-logo">
-    <span class="logo-gray-svg">
-      {% include logo_mono.html %}
+<footer>
+  <div class="footer-content">
+    <div class="footer-list-social">
+      <ul>
+          {% if site.email %}
+          <li>
+            <a href="mailto:{{ site.email }}">
+              <i class="fa fa-lg fa-envelope-o"></i>
+              <span class="footer-text">Email</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.facebook_page %}
+          <li>
+            <a href="https://facebook.com/pages/{{ site.facebook_page }}">
+              <i class="fa fa-lg fa-facebook"></i>
+              <span class="footer-text">Facebook</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i class="fa fa-lg fa-twitter"></i>
+              <span class="footer-text">Twitter</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.youtube_username %}
+          <li>
+            <a href="https://www.youtube.com/user/{{ site.youtube_username }}">
+              <i class="fa fa-lg fa-youtube"></i>
+              <span class="footer-text">YouTube</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fa fa-lg fa-github"></i>
+              <span class="footer-text">GitHub</span>
+            </a>
+          </li>
+          {% endif %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-disclaimer">
+      <p>
+        Caleydo is a joint project of
+      </p>
+    </div>
+    <div class="footer-list-institutions">
+      <ul>
+        {% for institution in site.institutions %}
+          <li>
+            <a href="{{ institution.website }}"><img class="institution-logo" src="{{ institution.logo }}"></a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+ </div>
+
+
+  <div class="footer-content">
+    <span class="footer-logo">
+      <embed class="logo-footer-svg" src="{{ site.baseurl }}/assets/images/logos/caleydo_c.svg" type="image/svg+xml"></embed>
     </span>
-  </div>
+    <div class="footer-disclaimer">
+      <p>
+        Copyright &copy; 2014 The Caleydo Team. All rights reserved.
+      </p>
+    </div>
 
-  <div>
-    <ul class="footer-social">
-        {% if site.email %}
-        <li>
-          <a href="mailto:{{ site.email }}">
-            <i class="fa fa-lg fa-envelope-o"></i>
-          </a>
-        </li>
-        {% endif %}
-
-        {% if site.facebook_page %}
-        <li>
-          <a href="https://facebook.com/pages/{{ site.facebook_page }}">
-            <i class="fa fa-lg fa-facebook"></i>
-          </a>
-        </li>
-        {% endif %}
-
-        {% if site.twitter_username %}
-        <li>
-          <a href="https://twitter.com/{{ site.twitter_username }}">
-            <i class="fa fa-lg fa-twitter"></i>
-          </a>
-        </li>
-        {% endif %}
-
-        {% if site.youtube_username %}
-        <li>
-          <a href="https://www.youtube.com/user/{{ site.youtube_username }}">
-            <i class="fa fa-lg fa-youtube"></i>
-          </a>
-        </li>
-        {% endif %}
-
-        {% if site.github_username %}
-        <li>
-          <a href="https://github.com/{{ site.github_username }}">
-            <i class="fa fa-lg fa-github"></i>
-          </a>
-        </li>
-        {% endif %}
-    </ul>
-  </div>
-
-  <div class="footer-disclaimer">
-    <p>Copyright &copy; 2014 The Caleydo Team. All rights reserved.</p>
   </div>
 
 </footer>
