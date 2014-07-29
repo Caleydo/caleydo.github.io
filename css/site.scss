@@ -124,14 +124,9 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
   height: 40px;
   
   @include media($small-display) {
-    height: 30px;
+    height: 25px;
   }
 }
-
-.logo-gray-svg {
-  fill: #ddd;
-}
-
 
 .wrap {
   @include outer-container;
@@ -598,6 +593,14 @@ footer {
   padding-top: 15px;
   border-top: 4px solid $footer-border-color;
 
+  .logo-footer-svg {
+    height: 30px;
+
+    @include media($small-display) {
+      height: 20px;
+    }
+  }
+
   .footer-logo {
     display: block;
     text-align: center;
@@ -607,7 +610,7 @@ footer {
     height: 30px;
 
     @include media($small-display) {
-      height: 25px;
+      height: 20px;
     }
   }
 
