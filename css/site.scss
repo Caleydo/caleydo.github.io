@@ -37,7 +37,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
     height: 30px;
     padding-bottom: 5px;
     padding-top: 3px;
-    color: #ddd;
+    color: #eee;
 
     border-bottom: 4px $color solid;
     background-color: #444;
@@ -575,114 +575,125 @@ html, body {
 }
 */
 
-.footer {
+$footer-border-color: $light-gray;
+
+footer {
   @include span-columns(12);
   @include omega();
 
+  .footer-content {
+    @include span-columns(12);
+    @include omega();
+    @include single-column-content();
+  }
+
   $footer-background: $base-background-color;
-  $footer-color: #999;
-  $footer-link-color: transparentize($footer-color, .6);
-  $footer-disclaimer-color: transparentize($footer-color, .6);
+  $footer-color: black;
+  $footer-link-color: $footer-color; //transparentize($footer-color, .6);
+  $footer-disclaimer-color: $footer-color; //transparentize($footer-color, .6);
 
   background: $footer-background;
-  padding: $base-line-height;
   width: 100%;
-
-  border-top: 3px $footer-color solid;
-  margin-top: 40px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 4px solid $footer-border-color;
 
   .footer-logo {
-    margin-right: 1em;
-    margin-bottom: 1em;
+    display: block;
+    text-align: center;
+  }
 
-    @include media($large-screen) {
-      float: left;
-      margin-bottom: 0;
+  .institution-logo {
+    height: 30px;
+
+    @include media($small-display) {
+      height: 25px;
     }
   }
 
-  .footer-logo img {
-    height: 1.6em;
+  .footer-text {
+    font-family: $footer-content-font-family;
+    font-size: $footer-content-font-size;
+
+    @include media($small-display) {
+      display: none;
+    }
+
   }
 
   ul {
-    margin-bottom: 1em;
-    @include media($large-screen) {
-      float: left;
-      margin-left: 1em;
-      margin-bottom: 0;
-    }
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.5em;
   }
 
-  ul li {
-    padding-right: 1em;
-    font-weight: 800;
+  @mixin footer-list($padding-default,$padding-small) {
+    float: right;
+    position: relative;
+    left: -50%;
 
-    @include media($large-screen) {
-      display: inline;
-      text-align: left;
-    }
-  }
-
-  ul li a {
-    color: $footer-link-color;
-
-    &:hover {
-      color: transparentize($footer-color, 0);
-    }
-  }
-
-  .footer-disclaimer {
-    display: block;
-    text-align: center;
-
-    @include clearfix();
-  }
-
-  .footer-secondary-links {
-    @include media($large-screen) {
-      float: right;
-    }
-
-    li {
-      font-size: .8em;
-      font-weight: 400;
-    }
-
-    ul.footer-social {
-      margin-top: 1em;
-      display: block;
-
-      @include media($large-screen) {
-        float: right;
-        margin-top: 0;
-      }
+    ul {
+      position: relative;
+      left: 50%;      
 
       li {
+        opacity: 0.33;
         float: left;
-        font-size: 1em;
-        padding-right: .7em;
+        padding-right: $padding-default;
+        padding-left: $padding-default;
+
+        @include media(small-display) {
+          padding-right: $padding-small;
+          padding-left: $padding-small;
+        }        
 
         &:last-child {
           padding-right: 0;
         }
-      }
 
-      img {
-        opacity: .7;
-        height: 1.6em;
-        padding: 1px;
+        &:first-child {
+          padding-left: 0;
+        }
 
         &:hover {
           opacity: 1;
         }
+
+        a {
+          color: $footer-link-color;
+        }      
       }
+    }
+  }
+
+  .footer-list-social {
+    @include footer-list(0.75em,0.5em);
+  }
+
+  .footer-list-institutions {
+    @include footer-list(0.5em,0);
+  }
+
+  .footer-disclaimer {
+    display: block;
+    margin-top: 0.25em;
+    opacity: 0.33;
+
+    p {
+      text-align: center;
+
+      font-family: $sans-serif-font-family;
+      font-size: $footer-content-font-size * 1.2;
+      font-weight: 700;
     }
   }
 }
 
+
 .video {
   margin: auto;
+  margin-left: 0;
 
   @include media($large-display) {
     width: 75%;
