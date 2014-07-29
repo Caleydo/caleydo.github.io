@@ -37,14 +37,23 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
     height: 30px;
     padding-bottom: 5px;
     padding-top: 3px;
+    color: #ddd;
 
-    background-color: #444;
-    color: white;
     border-bottom: 4px $color solid;
+    background-color: #444;
+
+    transition-property: background-color, color;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 25ms;
+
     &:focus, &:hover, &:active {
-      color: #DEDEDE;
+      background-color: darken( $color, 20% );
+      color: white;
     }
   }
+
+
 
   @include media($small-display) {
     width: 25px;
@@ -123,27 +132,6 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
   fill: #ddd;
 }
 
-
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
 
 .wrap {
   @include outer-container;
