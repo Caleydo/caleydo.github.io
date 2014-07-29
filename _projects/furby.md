@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Bicluster Visualization
+title: Bicluster Exploration
 name: Furby
 key: furby
 permalink: /projects/furby/

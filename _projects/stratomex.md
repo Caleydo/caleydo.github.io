@@ -1,12 +1,13 @@
 ---
 layout: project
-title: Subtype Visualization
+#title: Subtype Visualization
+title: Genomic Stratification of Diseases
 name: StratomeX
 key: stratomex
 permalink: /projects/stratomex/
 status: core
 order: 1
-standfirst: Integrative visualization of stratified heterogeneous data for subtype analysis.
+standfirst: Integrative visualization of stratified heterogeneous data for disease subtype analysis.
 help: http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md
 
 teaser: 

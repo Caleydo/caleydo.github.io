@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Relational Data Visualization
+title: Relational Data in Drug Discovery
 name: ConTour
 key: contour
 permalink: /projects/contour/
