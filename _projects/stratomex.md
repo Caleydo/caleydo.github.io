@@ -41,7 +41,7 @@ github:
  - https://github.com/Caleydo/caleydo
 ---
 
-<img align="right" src="{{site.baseurl}}/assets/images/projects/stratomex_basic.png" alt="Basic StratomeX">
+<img align="right" src="{{site.baseurl}}/assets/images/projects/stratomex_basic.png" alt="Basic StratomeX" width="300px">
 
 Identification and characterization of subtypes in diseases such as cancer can lead to refined therapeutic targeting, which is an important step towards improved patient outcomes. Integrated analysis of different molecular data types can be used to discover subtypes and suggest molecular differences relevant for therapeutic approaches.
 
