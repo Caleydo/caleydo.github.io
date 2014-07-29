@@ -775,4 +775,33 @@ iframe {
   height: 100%;
 }
 
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -163px;
+  margin-left: -100px;
+}
+
+.logo-404-svg {
+  width: 200px;
+}
+
+.message-404 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: $page-content-font-family;
+  font-size: $page-content-font-size * 2;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+
+  a {
+    color: black;
+
+    &:hover, &:active, &:visited {
+      color: black;
+    }
+  }
+}
 
