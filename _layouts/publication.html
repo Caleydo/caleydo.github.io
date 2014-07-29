@@ -36,7 +36,8 @@ layout: default
         <br/>
         <b>{{page.title}}</b><br/>
         {{ page.journal }}, {% if page.doi %} <a href="http://dx.doi.org/{{ page.doi }}">doi:{{ page.doi }}</a>, {%endif%}
-        {{ page.year }}.</p>
+        {{ page.year }}.
+      </p>
 
       {%if page.award %}
       <p class="award" style="font-style:italic;">
@@ -48,7 +49,7 @@ layout: default
         <b>Note:</b> {{page.note}}
       </p>
       {% endif %}
-      
+
       {%if page.bibtex %}
       <p>
         <i class="fa fa-download"></i>&nbsp; <a href="{{site.paper_content_url}}{{ page.bibtex }}">BibTeX</a>
