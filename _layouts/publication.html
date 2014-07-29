@@ -7,105 +7,116 @@ layout: default
     <h1>{{ page.title | remove: "| Caleydo" }}</h1>
   </header>
 
-  <article class="publication-content">
+  <article class="publication-content-main">
+    <h1>Abstract</h1> 
+    {{ page.abstract }}
 
+    <h1>Citation</h1>
+    <div class="citation">
+      <p>
+
+        {% for author in page.authors %}
+
+        {% assign known = false %}
+        {% for person in site.persons %}
+        {% if author == person.key %}
+        <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+
+        {% assign known = true %}
+        {% endif %}
+        {% endfor %}
+
+        {% if known == false %}
+        {{ author }}{% if author != page.authors.last%}, {% endif %}
+        {% endif %}
+
+        {% endfor %}
+
+
+        <br/>
+        <b>{{page.title}}</b><br/>
+        {{ page.journal }}, {% if page.doi %} <a href="http://dx.doi.org/{{ page.doi }}">doi:{{ page.doi }}</a>, {%endif%}
+        {{ page.year }}.</p>
+
+      {%if page.award %}
+      <p class="award" style="font-style:italic;">
+        <i class="fa fa-trophy"></i>&nbsp;{{page.award}}
+      </p>
+      {% endif %}
+      {%if page.note %}
+      <p class="note" style="font-style:italic;">
+        <b>Note:</b> {{page.note}}
+      </p>
+      {% endif %}
+
+      {%if page.bibtex %}
+      <p>
+        <i class="fa fa-download"></i>&nbsp; <a href="{{site.paper_content_url}}{{ page.bibtex }}">BibTeX</a>
+      </p>
+      {% endif %}
+    </div>
+
+    <!-- main markdown content -->
     {{ content }}
   </article>
 
-  <h2>Citation</h2>
-  <article class="citation">
-    <p>
-
-      {% for author in page.authors %}
-
-      {% assign known = false %}
-      {% for person in site.persons %}
-      {% if author == person.key %}
-      <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
-
-      {% assign known = true %}
-      {% endif %}
-      {% endfor %}
-
-      {% if known == false %}
-      {{ author }}{% if author != page.authors.last%}, {% endif %}
-      {% endif %}
-
-      {% endfor %}
-
-
-      <br/>
-      <b>{{page.title}}</b><br/>
-      {{ page.journal }}, {% if page.doi %} <a href="http://dx.doi.org/{{ page.doi }}">doi:{{ page.doi }}</a>, {%endif%}
-      {{ page.year }}.</p>
-
-    {%if page.award %}
-    <p class="award" style="font-style:italic;">
-      {{page.award}}
-    </p>
+  <article class="publication-content-aside">
+    {% if page.project %}
+    <h1>Projects</h1>
+    <ul class="project-icon-list">
+    {% for project in site.projects %}
+    {% if project.key == page.project) %}
+      <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
     {% endif %}
-    {%if page.note %}
-    <p class="note" style="font-style:italic;">
-      <b>Note:</b> {{page.note}}
-    </p>
+    {% endfor %}
+    </ul>
     {% endif %}
 
-    {%if page.bibtex %}
-    <p>
-      <a href="{{site.paper_content_url}}{{ page.bibtex }}"><i class="fa fa-download"></i> &nbsp; BibTeX</a>
-    </p>
+
+    <h1>Resources</h1>
+    <ul>
+    {% if page.doi %}
+    <li>
+      <i class="fa fa-external-link"></i>&nbsp;<a href="http://dx.doi.org/{{ page.doi }}">Publisher</a><br/>
+    </li>
+    {% elsif page.publisher %}
+    <li>
+      <i class="fa fa-external-link"></i> &nbsp;<a href="{{page.publisher}}">Publisher</a>
+    </li>
     {% endif %}
-  </article>
 
+    {% if page.pdf %}
+    <li>
+      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ page.pdf }}">Download Paper (PDF)</a><br/>
+    </li>
+    {% endif %}
+    {% if page.supplement %}
+    <li>
+      <i class="fa fa-download"></i>&nbsp;<a href="{{site.paper_content_url}}{{ page.supplement }}">Download Supplementary Material</a><br/>
+    </li>
+    {% endif %}
+    </ul>
 
-  <article class="publication-meta">
-
-
+    <h1>Videos</h1>
     {% for video in site.videos %}
     {% if video.key == page.video or video.key == page.preview-video %}
-    <h2>{{video.name}}</h2>
     <div class="video">
+      <p><b>{{video.name}}</b></p>
       <div class="video-wrapper">
-        <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0" allowfullscreen></iframe>
+        <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}?controls=2&showinfo=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
       </div>
-      <p><a href="{{site.paper_content_url}}{{video.file}}"><i class="fa fa-download"></i> &nbsp; Download video</a><p/>
+      <p><i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{video.file}}">Download Video</a><p/>
     </div>    
     {% endif %}
     {% endfor %}
 
   </article>
 
+
+  <article class="publication-meta">
+
+  </article>
+
   <article class="publication-resources">
-    <h2>Resources</h2>
-    <ul>
-    {% if page.project %}
-    {% for project in site.projects %}
-    {% if project.key == page.project) %}
-    <li><a href="{{ site.baseurl }}{{project.url}}"><i class="fa fa-external-link"></i> &nbsp; Project Site</a></li>
-    {% endif %}
-    {% endfor %}
-    {% endif %}
-
-    {% if page.doi %}
-    <li>
-      <a href="http://dx.doi.org/{{ page.doi }}"><i class="fa fa-external-link"></i> &nbsp; Publisher</a><br/>
-    </li>
-    {% elsif page.publisher %}
-    <li>
-      <a href="{{page.publisher}}"><i class="fa fa-external-link"></i> &nbsp; Publisher</a>
-    </li>
-    {% endif %}
-
-    {% if page.pdf %}
-    <li>
-      <a href="{{site.paper_content_url}}{{ page.pdf }}"><i class="fa fa-download"></i> &nbsp; Download Paper (PDF)</a><br/>
-    </li>
-    {% endif %}
-    {% if page.supplement %}
-    <li>
-      <a href="{{site.paper_content_url}}{{ page.supplement }}"><i class="fa fa-download"></i> &nbsp; Download Supplementary Material</a><br/>
-    </li>
-    {% endif %}
-    </ul>
   </article>
 </div>

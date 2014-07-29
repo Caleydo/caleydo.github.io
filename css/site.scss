@@ -477,6 +477,19 @@ ul.post-list {
 
 .publication-content {
   @include page-content();
+  @include span-columns(12);
+  @include omega();
+}
+
+.publication-content-main {
+  @include page-content();
+  @include span-columns(8);
+}
+
+.publication-content-aside {
+  @include page-content();
+  @include span-columns(4);
+  @include omega();
 }
 
 .publications-content {
