@@ -263,8 +263,8 @@ body {
   }
   a:after{
      position: absolute;
-     left: 0px;
-     bottom: 0.2em;
+     left: 0;
+     bottom: 0;
      content: '';
      width: 100%;
      border-bottom-width: 1px;
@@ -316,8 +316,8 @@ body {
     }
     a:after{
        position: absolute;
-       left: 0px;
-       bottom: 0.2em;
+       left: 0;
+       bottom: 0;
        content: '';
        width: 100%;
        border-bottom-width: 1px;
@@ -451,7 +451,7 @@ ul.post-list {
     a.post-list-link:after{
        position: absolute;
        left: 0px;
-       bottom: 0.2em;
+       bottom: 0;
        content: '';
        width: 100%;
        border-bottom-width: 1px;
