@@ -116,6 +116,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
   margin-left: -34px;
 
   @include media($small-display) {
+    padding-top: 5px; 
     margin-left: 0px;    
   }
 }
