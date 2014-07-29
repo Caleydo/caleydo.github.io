@@ -9,7 +9,7 @@ layout: default
 
   <article class="project-content">
 
-    <p> Caleydo consists of several projects that often correspond to <i>views</i> that implement <i>visualization
+    <p>Caleydo consists of several projects that typically correspond to <i>views</i> that implement <i>interactive visualization
       techniques</i>. The projects are typically targeted at specific problems or datasets. For a list of funded
       research projects please look at our <a href="{{ site.baseurl }}/funding">sponsors</a>.
     </p>
@@ -39,10 +39,11 @@ layout: default
             {% endif %}
           </a>
         </div>
-        <div class="card-header">
-          <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+        <div class="card-header-project">
+          <a href="{{ site.baseurl }}{{ project.url }}">{{project.name}}</a>
         </div>
         <div class="card-copy">
+          <p><b>{{ project.title }}</b></p>
           <p>{{ project.standfirst }}</p>
         </div>
       </div>
@@ -77,12 +78,13 @@ layout: default
           {% endif %}
         </a>
       </div>
-      <div class="card-header">
-        <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+      <div class="card-header-project">
+        <a href="{{ site.baseurl }}{{ project.url }}">{{ project.name }}</a>
       </div>
-      <div class="card-copy">
-        <p>{{ project.standfirst }}</p>
-      </div>
+        <div class="card-copy">
+          <p><b>{{ project.title }}</b></p>
+          <p>{{ project.standfirst }}</p>
+        </div>
     </div>
 
     {% endif %}

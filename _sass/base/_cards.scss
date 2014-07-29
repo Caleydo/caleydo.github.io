@@ -66,13 +66,35 @@
     }
   }
 
-  .card-header {
+  @mixin card-header($color) {
     @include transition (all 0.2s ease-in-out);
     background-color: $card-header-background;
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: bold;
     padding: $base-line-height/3 $gutter/2;
+
+    a {
+      display: block;
+      font-family: $sans-serif-font-family;
+      font-weight: 700;
+      color: $color;      
+    }
+
+   &:hover {
+      background-color: tint( $color, 95% );//$card-hover-background;
+    }    
+  }
+
+  .card-header-project {
+    @include card-header($project-color);
+  }
+
+  .card-header-funding {
+    @include card-header($neutral-color);
+  }
+
+  .card-header {
+    @include card-header($neutral-color);
   }
 
   .card-copy {
