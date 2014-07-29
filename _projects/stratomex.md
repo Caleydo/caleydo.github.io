@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Subytpe Visualization
+title: Subtype Visualization
 name: StratomeX
 key: stratomex
 permalink: /projects/stratomex/
