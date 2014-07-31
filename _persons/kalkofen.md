@@ -9,5 +9,5 @@ email: kalkofen@icg.tugraz.at
 image: /assets/images/team/kalkofen.jpg
 organization: Graz University of Technology
 position: PhD Student
-website: http://www.icg.tugraz.at/Members/author/denis
+website: http://www.icg.tugraz.at/Members/author/denis/
 ---
