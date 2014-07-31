@@ -78,7 +78,7 @@ layout: default
     <ul>
     {% if page.doi %}
     <li>
-      <i class="fa fa-external-link"></i>&nbsp;<a href="http://dx.doi.org/{{ page.doi }}">Publisher</a><br/>
+      <i class="fa fa-external-link"></i> &nbsp;<a href="http://dx.doi.org/{{ page.doi }}">Publisher</a>
     </li>
     {% elsif page.publisher %}
     <li>
@@ -88,13 +88,20 @@ layout: default
 
     {% if page.pdf %}
     <li>
-      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ page.pdf }}">Paper (PDF)</a><br/>
+      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ page.pdf }}">Paper (PDF)</a>
     </li>
     {% endif %}
     {% if page.supplement %}
     <li>
-      <i class="fa fa-download"></i>&nbsp;<a href="{{site.paper_content_url}}{{ page.supplement }}">Supplementary Material</a><br/>
+      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ page.supplement }}">Supplementary Material</a>
     </li>
+    {% endif %}
+    {% if page.supplements %}
+	{% for supplement in page.supplements %}
+    <li>
+      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ supplement.link }}">{{supplement.name}}</a>
+    </li>
+	{% endfor %}
     {% endif %}
     </ul>
 
