@@ -60,7 +60,7 @@
       <ul>
         {% for institution in site.institutions %}
           <li>
-            <a href="{{ institution.website }}"><img class="institution-logo" src="{{ institution.logo }}"></a>
+            <a href="{{ institution.website }}"><img class="institution-logo" src="{{ institution.logo }}" alt="{{ institution.website }}"></a>
           </li>
         {% endfor %}
       </ul>
@@ -70,7 +70,7 @@
 
   <div class="footer-content">
     <span class="footer-logo">
-      <embed class="logo-footer-svg" src="{{ site.baseurl }}/assets/images/logos/caleydo_c.svg" type="image/svg+xml"></embed>
+      <embed class="logo-footer-svg" src="{{ site.baseurl }}/assets/images/logos/caleydo_c.svg" type="image/svg+xml">
     </span>
     <div class="footer-disclaimer">
       <p>
