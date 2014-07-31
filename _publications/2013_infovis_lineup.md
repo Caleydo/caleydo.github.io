@@ -37,9 +37,9 @@ supplement: 2013_infovis_lineup_supplement.zip
 supplements:
  - name: LineUp Cheat Sheet (PDF)
    link: 2013_infovis_lineup_cheat_sheet.pdf
- - name: Samuel Gratzl @ InfoVis'13 (PDF)
+ - name: Samuel Gratzl's Talk @ InfoVis'13 (PDF)
    link: 2013_infovis_lineup_talk.pdf
- - name: Samuel Gratzl @ InfoVis'13 (PPTX)
+ - name: Samuel Gratzl's Talk  @ InfoVis'13 (PPTX)
    link: 2013_infovis_lineup_talk.pptx
 
 bibtex: 2013_infovis_lineup.bib

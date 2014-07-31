@@ -33,11 +33,11 @@ preview-video: 2014_infovis_domino_video_preview
 pdf: 2014_infovis_domino.pdf
 supplement:
 supplements:
- - name: Music Dataset Caleydo project (CAL)
+ - name: Music Dataset project (CAL)
    link: 2014_infovis_domino_number_ones.cal
- - name: Music Dataset Source Files including references (ZIP)
+ - name: Music Dataset Source Files + references (ZIP)
    link: 2014_infovis_domino_number_ones.zip
- - name: The Cancer Genome Atlas GBM Caleydo Project (CAL)
+ - name: The Cancer Genome Atlas GBM project (CAL)
    link: 2014_infovis_domino_gbm_cancer.cal
 bibtex: 2014_infovis_domino.bib
 
@@ -86,3 +86,7 @@ Related Work
  * R. G. W. Verhaak, K. A. Hoadley, E. Purdom, V. Wang, Y. Qi, M. D. Wilkerson, C. R. Miller, L. Ding, T. Golub, J. P. Mesirov, G. Alexe, M. Lawrence, M. O’Kelly, P. Tamayo, B. A. Weir, S. Gabriel, W. Winckler, S. Gupta, L. Jakkula, H. S. Feiler, J. G. Hodgson, C. D. James, J. N. Sarkaria, C. Brennan, A. Kahn, P. T. Spellman, R. K. Wilson, T. P. Speed, J. W. Gray, M. Meyerson, G. Getz, C. M. Perou, D. N. Hayes, and TCGA Research Network. Integrated genomic analysis identifies clinically relevant subtypes of glioblastoma characterized by abnormalities in PDGFRA, IDH1, EGFR, and NF1. *Cancer Cell*, 17(1):98–110, 2010.
  * C. Viau and M. J. McGuffin. ConnectedCharts: explicit visualization of relationships between data graphics. *Computer Graphics Forum*, 31(3pt4):1285–1294, 2012.
  * L. Wilkinson. The grammar of graphics. Springer, 2nd edition, 2005. [37] X. Yuan, P. Guo, H. Xiao, H. Zhou, and H. Qu. Scattering points in parallel coordinates. *IEEE Transactions on Visualization and Computer Graphics (Infovis ’09)*, 15(6):1001–1008, 2009.
+
+# Acknowledgements
+
+This work was supported in part by the Austrian Research Promotion Agency (840232), the Austrian Science Fund (J 3437-N15), the Air Force Research Laboratory and DARPA grant FA8750-12-C-0300, and the United States NIH/National Human Genome Research Institute (K99 HG007583).
