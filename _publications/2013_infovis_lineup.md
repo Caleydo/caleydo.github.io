@@ -34,12 +34,23 @@ preview-video: 2013_infovis_lineup_video_preview
 
 pdf: 2013_infovis_lineup.pdf
 supplement: 2013_infovis_lineup_supplement.zip
+supplements:
+ - name: LineUp Cheat Sheet (PDF)
+   link: 2013_infovis_lineup_cheat_sheet.pdf
+
 bibtex: 2013_infovis_lineup.bib
 
 abstract: "
 <p>Rankings are a popular and universal approach to structuring otherwise unorganized collections of items by computing a rank for each item based on the value of one or more of its attributes. This allows us, for example, to prioritize tasks or to evaluate the performance of products relative to each other. While the visualization of a ranking itself is straightforward, its interpretation is not, because the rank of an item represents only a summary of a potentially complicated relationship between its attributes and those of the other items. It is also common that alternative rankings exist which need to be compared and analyzed to gain insight into how multiple heterogeneous attributes affect the rankings. Advanced visual exploration tools are needed to make this process efficient. In this paper we present a comprehensive analysis of requirements for the visualization of multi-attribute rankings. Based on these considerations, we propose LineUp - a novel and scalable visualization technique that uses bar charts. This interactive technique supports the ranking of items based on multiple heterogeneous attributes with different scales and semantics. It enables users to interactively combine attributes and flexibly refine parameters to explore the effect of changes in the attribute combination. This process can be employed to derive actionable insights as to which attributes of an item need to be modified in order for its rank to change. Additionally, through integration of slope graphs, LineUp can also be used to compare multiple alternative rankings on the same set of items, for example, over time or across different attribute combinations. We evaluate the effectiveness of the proposed multi-attribute visualization technique in a qualitative study. The study shows that users are able to successfully solve complex ranking tasks in a short period of time.</p>"
 
 ---
+
+# Demo Data Sets
+
+In the examples and demos we have used three datasets:
+ * <i class="icon-external-link"></i>&nbsp;[Times Higher Education 100 Under 50 University Ranking](http://www.timeshighereducation.co.uk/world-university-rankings/2012/one-hundred-under-fifty)
+ * <i class="icon-external-link"></i>&nbsp;[QS World University Ranking](http://www.iu.qs.com/university-rankings/world-university-rankings/)
+ * <i class="icon-external-link"></i>&nbsp;[USDA National Nutrient Database](http://www.ars.usda.gov/ba/bhnrc/ndl)
 
 # Related Work
 
@@ -65,8 +76,8 @@ abstract: "
 * A. Inselberg. The plane with parallel coordinates. The Visual Computer, 1(4):69-91, 1985.
 * J. Mackinlay. Automating the design of graphical presentations of relational information. ACM Transactions on Graphics, 5(2):110-141, 1986.
 * T. Munzner, F. Guimbretière, S. Tasiran, L. Zhang, and Y. Zhou. TreeJuxtaposer: scalable tree comparison using Focus+Context with guaranteed visibility. In Proceedings of the ACM Conference on Computer Graphics and Interactive Techniques (SIGGRAPH '03), pages 453-462. ACM Press, 2003.
-* C. Park. Edward Tufte's "Slopegraphs", 2011.
-* C. Park. A slopegraph update, 2011.
+* C. Park. Edward Tufte's ["Slopegraphs"](http://charliepark.org/slopegraphs/), 2011.
+* C. Park. A [slopegraph update](http://charliepark.org/a-slopegraph-update/), 2011.
 * R. Rao and S. K. Card. The table lens: merging graphical and symbolic representations in an interactive focus + context visualization for tabular information. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '94), pages 318-322. ACM Press, 1994.
 * N. B. Robbins and R. M. Heiberger. Plotting Likert and other rating scales. In Proceedings of the 2011 Joint Statistical Meeting, 2011.
 * E. Tufte. The Visual Display of Quantitative Information. Graphics Press, 2nd edition, 1983.
