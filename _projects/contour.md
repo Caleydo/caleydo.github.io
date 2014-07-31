@@ -43,3 +43,4 @@ To quickly find the most interesting items, the items of a column can be sorted 
 Finally, ConTour provides a number of detail views tailored to the different item types. For example, the detail view for compounds displays the chemical structure of multiple compounds. The pathway detail view shows one pathway graph with all of its contained genes and also indicates compounds that map to this pathway and associated fingerprint clusters.
 
 ![ConTour Overview]({{site.baseurl}}/assets/images/projects/contour_explained.png)
+
