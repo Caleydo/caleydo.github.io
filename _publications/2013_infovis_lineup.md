@@ -83,3 +83,9 @@ In the examples and demos we have used three datasets:
 * E. Tufte. The Visual Display of Quantitative Information. Graphics Press, 2nd edition, 1983.
 * E. Tufte. Envisioning information. Graphics Press, Cheshire Conn., 5th edition, 1995.
 * M. Ward, G. Grinstein, and D. A. Keim. Interactive Data Visualization: Foundations, Techniques, and Application. A.K. Peters, 2010.
+
+# Acknowledgements
+
+We wish to thank Blake T. Walsh, Günter Öller and the anonymous paper reviewers for their input.
+
+This work was supported in part by the Austrian Research Promotion Agency (840232), the Austrian Science Fund (J3437-N15), the Air Force Research Laboratory and DARPA grant FA8750-12-C-0300, and the United States National Cancer Institute (U24CA143867).
