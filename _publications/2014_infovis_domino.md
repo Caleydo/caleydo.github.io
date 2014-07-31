@@ -32,6 +32,13 @@ preview-video: 2014_infovis_domino_video_preview
 
 pdf: 2014_infovis_domino.pdf
 supplement:
+supplements:
+ - name: Music Dataset Caleydo project (CAL)
+   link: 2014_infovis_domino_number_ones.cal
+ - name: Music Dataset Source Files including references (ZIP)
+   link: 2014_infovis_domino_number_ones.zip
+ - name: The Cancer Genome Atlas GBM Caleydo Project (CAL)
+   link: 2014_infovis_domino_gbm_cancer.cal
 bibtex: 2014_infovis_domino.bib
 
 abstract: "
@@ -40,13 +47,6 @@ abstract: "
 In this paper we present Domino, a novel multiform visualization technique for effectively representing subsets and the relationships between them. By providing comprehensive tools to arrange, combine, and extract subsets, Domino allows users to create both common visualization techniques and advanced visualizations tailored to specific use cases. In addition to the novel technique, we present an implementation that enables analysts to manage the wide range of options that our approach offers. Innovative interactive features such as placeholders and live previews support rapid creation of complex analysis setups. We introduce the technique and the implementation using a simple example and demonstrate scalability and effectiveness in a use case from the field of cancer genomics.</p>"
 
 ---
-
-Demo Data Sets
-===============
-In the examples and demos we have used two datasets:
- * <i class="icon-download"></i>&nbsp;[Music Dataset Caleydo project (CAL)](http://data.icg.tugraz.at/caleydo/download/domino/number_ones.cal)
- * <i class="icon-download"></i>&nbsp;[Music Dataset Source Files including references (ZIP)](http://data.icg.tugraz.at/caleydo/download/domino/number_ones.zip)
- * <i class="icon-download"></i>&nbsp;[The Cancer Genome Atlas GBM Caleydo Project (CAL)](http://data.icg.tugraz.at/caleydo/download/domino/gbm_cancer.cal)
 
 Related Work
 =============
