@@ -37,6 +37,10 @@ supplement: 2013_infovis_lineup_supplement.zip
 supplements:
  - name: LineUp Cheat Sheet (PDF)
    link: 2013_infovis_lineup_cheat_sheet.pdf
+ - name: Samuel Gratzl @ InfoVis'13 (PDF)
+   link: 2013_infovis_lineup_talk.pdf
+ - name: Samuel Gratzl @ InfoVis'13 (PPTX)
+   link: 2013_infovis_lineup_talk.pptx
 
 bibtex: 2013_infovis_lineup.bib
 
@@ -48,9 +52,9 @@ abstract: "
 # Demo Data Sets
 
 In the examples and demos we have used three datasets:
- * <i class="icon-external-link"></i>&nbsp;[Times Higher Education 100 Under 50 University Ranking](http://www.timeshighereducation.co.uk/world-university-rankings/2012/one-hundred-under-fifty)
- * <i class="icon-external-link"></i>&nbsp;[QS World University Ranking](http://www.iu.qs.com/university-rankings/world-university-rankings/)
- * <i class="icon-external-link"></i>&nbsp;[USDA National Nutrient Database](http://www.ars.usda.gov/ba/bhnrc/ndl)
+* [Times Higher Education 100 Under 50 University Ranking](http://www.timeshighereducation.co.uk/world-university-rankings/2012/one-hundred-under-fifty)
+* [QS World University Ranking](http://www.iu.qs.com/university-rankings/world-university-rankings/)
+* [USDA National Nutrient Database](http://www.ars.usda.gov/ba/bhnrc/ndl)
 
 # Related Work
 
