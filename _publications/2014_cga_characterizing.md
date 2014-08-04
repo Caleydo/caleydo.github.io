@@ -26,7 +26,7 @@ publisher:
 
 project: stratomex
 
-video:
+video: 2014_cga_characterizing_video
 preview-video:
 
 
