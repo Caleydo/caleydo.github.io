@@ -34,12 +34,35 @@ preview-video:
 
 pdf: 2014_bmc_furby.pdf
 supplement:
+supplements:
+ - name: Multi Tissue Dataset (CAL)
+   link: 2014_bmc_furby_multi_tissue_fabia20.cal
+ - name: Multi Tissue Dataset (ZIP)
+   link: 2014_bmc_furby_multi_tissue_fabia20.zip
+ - name: Fabia R package export script (R-Script)
+   link: 2014_bmc_furby_export_fabia.R
+ - name: BiClust R package export script (R-Script)
+   link: 2014_bmc_furby_export_biclust.R
 bibtex: 2014_bmc_furby.bib
 
-
+abstract: "
+<p><b>Background:</b> Cluster analysis is widely used to discover patterns in multi-dimensional data. Clustered heatmaps are the standard technique for visualizing one-way and two-way clustering results. In clustered heatmaps, rows and/or columns are reordered, resulting in a representation that shows the clusters as contiguous blocks. However, for biclustering results, where clusters can overlap, it is not possible to reorder the matrix in this way without duplicating rows and/or columns.</p>
+ <p><b>Results:</b> We present Furby, an interactive visualization technique for analyzing biclustering results. Our contribution is twofold. First, the technique provides an overview of a biclustering result, showing the actual data that forms the individual clusters together with the information which rows and columns they share. Second, for fuzzy clustering results, the proposed technique additionally enables analysts to interactively set the thresholds that transform the fuzzy (soft) clustering into hard clusters that can then be investigated using heatmaps or bar charts. Changes in the membership value thresholds are immediately reflected in the visualization. We demonstrate the value of Furby by loading biclustering results applied to a multi-tissue dataset into the visualization.</p>
+<p><b>Conclusions:</b> The proposed tool allows analysts to assess the overall quality of a biclustering result. Based on this high-level overview, analysts can then interactively explore the individual biclusters in detail. This novel way of handling fuzzy clustering results also supports analysts in finding the optimal thresholds that lead to the best clusters.</p>"
+ 
 ---
-Cluster analysis is widely used to discover patterns in multi-dimensional data. Clustered heatmaps are the standard technique for visualizing one-way and two-way clustering results. In clustered heatmaps, rows and/or columns are reordered, resulting in a representation that shows the clusters as contiguous blocks. However, for biclustering results, where clusters can overlap, it is not possible to reorder the matrix in this way without duplicating rows and/or columns.
 
-We present Furby, an interactive visualization technique for analyzing biclustering results. Our contribution is twofold. First, the technique provides an overview of a biclustering result, showing the actual data that forms the individual clusters together with the information which rows and columns they share. Second, for fuzzy clustering results, the proposed technique additionally enables analysts to interactively set the thresholds that transform the fuzzy (soft) clustering into hard clusters that can then be investigated using heatmaps or bar charts. Changes in the membership value thresholds are immediately reflected in the visualization. We demonstrate the value of Furby by loading biclustering results applied to a multi-tissue dataset into the visualization.
+Datasets
+==========
 
-The proposed tool allows analysts to assess the overall quality of a biclustering result. Based on this high-level overview, analysts can then interactively explore the individual biclusters in detail. This novel way of handling fuzzy clustering results also supports analysts in finding the optimal thresholds that lead to the best clusters.
+The following projects contain public demo data, which can be used to test Furby. But everyone is welcome to load his/her own data, via the `Load BiCluster Results` tab within the Caleydo Startup-Wizard.
+
+* <i class="fa fa-download"></i>&nbsp;[Caleydo-Project (CAL)]({{site.paper_content_url}}/2014_bmc_furby_multi_tissue_fabia20.cal) containing Microarray data from Broad Institute "Cancer Program Data Sets" which was produced by [Su et al. 2002](http://www.broadinstitute.org/cgi-bin/cancer/datasets.cgi). It consists of 102 samples and 5565 genes as was clustered using the FABIA algorithm.
+* <i class="fa fa-download"></i>&nbsp;[Zip package (ZIP)]({{site.paper_content_url}}/2014_bmc_furby_multi_tissue_fabia20.zip) containing the exported CSV-files using to create the previous Caleydo-Project
+
+Utilities
+=========
+We provide two helper R-Scripts, which simplify exporting R bicluster results in the correct format.
+
+* <i class="fa fa-download"></i>&nbsp;[R-Script]({{site.paper_content_url}}/2014_bmc_furby_export_fabia.R) for exporting FABIA results, generated via the [fabia](http://www.bioconductor.org/packages/2.12/bioc/html/fabia.html) bioconductor package.
+* <i class="fa fa-download"></i>&nbsp;[R-Script]({{site.paper_content_url}}/2014_bmc_furby_export_biclust.R) for exporting result from the [biclust](http://cran.r-project.org/web/packages/biclust/index.html) CRAN package.

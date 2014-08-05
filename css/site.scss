@@ -5,7 +5,6 @@
 @import 'neat/neat';
 
 @import 'base/cards';
-@import 'base/grid-items';
 
 $small-display-columns: 4;
 $medium-display-columns: 12;
@@ -263,8 +262,8 @@ body {
   }
   a:after{
      position: absolute;
-     left: 0px;
-     bottom: 0.2em;
+     left: 0;
+     bottom: 0;
      content: '';
      width: 100%;
      border-bottom-width: 1px;
@@ -316,8 +315,8 @@ body {
     }
     a:after{
        position: absolute;
-       left: 0px;
-       bottom: 0.2em;
+       left: 0;
+       bottom: 0;
        content: '';
        width: 100%;
        border-bottom-width: 1px;
@@ -451,7 +450,7 @@ ul.post-list {
     a.post-list-link:after{
        position: absolute;
        left: 0px;
-       bottom: 0.2em;
+       bottom: 0;
        content: '';
        width: 100%;
        border-bottom-width: 1px;
@@ -477,6 +476,36 @@ ul.post-list {
 
 .publication-content {
   @include page-content();
+  @include span-columns(12);
+  @include omega();
+}
+
+.publication-content-main {
+  @include page-content();
+  @include span-columns(8);
+}
+
+.publication-content-aside {
+  @include page-content();
+  @include span-columns(4);
+  @include omega();
+
+  ul {
+    @extend %default-ul;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }  
+
+  .video {
+    margin: auto;
+    margin-left: 0;
+
+    @include media($large-display) {
+      width: 100%;
+    }
+  }
+
 }
 
 .publications-content {
@@ -518,6 +547,12 @@ ul.post-list {
           border-radius: $radius;
 }
 
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow: $top $left $blur $color #{$inset};
+  -moz-box-shadow: $top $left $blur $color #{$inset};
+  box-shadow: $top $left $blur $color #{$inset};
+}
+
 .person-image {
     width: 100px;
     height: 100px;
@@ -534,17 +569,38 @@ ul.post-list {
 }
 
 
-.paper-image-small {
-  width: 200px;
-  height: 100px;
-  float: left;
-  padding-right: 10px;
-}
 
 .paper-list-block{
-  height: 120px;
+  min-height: 120px;
   padding-bottom: 10px;
   padding-top: 10px;
+  display: block;
+
+  .paper-image-small {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    @include box-shadow( 1px, 1px, 4px, transparentize( black, 0.75) );
+    @include border-radius( 3px );
+
+    /*
+    @include span-columns(2);
+    @include single-column-content();
+    */
+  }
+
+  p {
+    /*
+    @include span-columns(10);
+    @include omega;
+    @include single-column-content();
+    */
+  }
+}
+
+.paper-author {
+  font-size: $page-content-font-size;
 }
 
 
@@ -718,4 +774,33 @@ iframe {
   height: 100%;
 }
 
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -163px;
+  margin-left: -100px;
+}
+
+.logo-404-svg {
+  width: 200px;
+}
+
+.message-404 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: $page-content-font-family;
+  font-size: $page-content-font-size * 2;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+
+  a {
+    color: black;
+
+    &:hover, &:active, &:visited {
+      color: black;
+    }
+  }
+}
 

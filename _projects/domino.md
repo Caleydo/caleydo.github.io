@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Subset Visualization
+title: Exploring Subsets of Tabular Datasets
 name: Domino
 key: domino
 permalink: /projects/domino/

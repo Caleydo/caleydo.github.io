@@ -42,13 +42,13 @@
   <ul class="post-list">
     {% for post in site.posts limit:4 %}
       <li class="post-list-item">
-        <span class="post-list-title">
+        <div class="post-list-title">
           {{ post.date | date: "%-d %b %Y" }} | {{ post.title }}
-        </span>
-        <span class="post-list-excerpt">
+        </div>
+        <div class="post-list-excerpt">
           {{ post.excerpt }}
           <a class="post-list-link" href="{{ site.baseurl }}{{ post.url }}">More...</a>
-        </span>              
+        </div>              
       </li>
     {% endfor %}
   </ul>

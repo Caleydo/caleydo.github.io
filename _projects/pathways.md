@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Pathway Visualization
+title: Experimental Data in Pathways
 name: Entourage & enRoute
 key: pathways
 permalink: /projects/pathways/

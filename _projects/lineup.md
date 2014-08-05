@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Ranking Visualization
+title: Multi-Attribute Rankings
 name: LineUp
 key: lineup
 permalink: /projects/lineup/
