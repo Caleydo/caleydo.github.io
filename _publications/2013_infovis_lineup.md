@@ -18,7 +18,7 @@ authors:
 
 journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '13), 19(12), pp. 2277–2286
 year: 2013
-award: Best paper award
+award: IEEE InfoVis 2013 Best Paper Award
 
 
 doi: 10.1109/TVCG.2013.173

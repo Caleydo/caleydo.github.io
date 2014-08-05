@@ -19,7 +19,7 @@ authors:
 
 journal: Proceedings of the IEEE Symposium on Biological Data Visualization (BioVis ’12), pp. 107–114.
 year: 2012
-award: best paper award
+award: IEEE BioVis 2012 Best Paper Award
 note: 
 
 doi: 10.1109/BioVis.2012.6378600

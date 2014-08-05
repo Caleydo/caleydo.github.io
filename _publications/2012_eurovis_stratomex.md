@@ -20,7 +20,7 @@ authors:
 
 journal: Computer Graphics Forum (EuroVis '12), pp. 1175-1184, 31(3)
 year: 2012
-award: 3rd best paper award
+award: EuroVis 2012 3rd Best Paper Award
 
 doi: 10.1111/j.1467-8659.2012.03110.x
 # use publisher only if no doi is available
