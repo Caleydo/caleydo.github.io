@@ -17,7 +17,7 @@ authors:
 
 journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '14), to appear
 year: 2014
-award:
+award: IEEE InfoVis 2014 Honorable Mention
 
 doi:
 # use publisher only if no doi is available
