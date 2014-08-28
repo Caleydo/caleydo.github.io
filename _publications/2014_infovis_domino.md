@@ -19,9 +19,9 @@ journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '14),
 year: 2014
 award: IEEE InfoVis 2014 Honorable Mention
 
-doi:
+doi: 10.1109/TVCG.2014.2346260
 # use publisher only if no doi is available
-publisher:
+publisher: 
 
 
 project: domino
