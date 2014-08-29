@@ -22,6 +22,7 @@ publications:
  - 2010_infovis_matchmaker
  
 videos: 
+ - 2014_nmc_stratomex_video
  - 2012_eurovis_stratomex_video
      
 team:
