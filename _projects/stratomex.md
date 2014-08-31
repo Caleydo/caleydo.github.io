@@ -15,16 +15,15 @@ teaser:
     highres: StratomeX_highRes.png
 
 publications:
- - 2014_nmc_stratomex
+ - 2014_nm_stratomex
  - 2014_cga_characterizing
  - 2012_eurovis_stratomex 
  - 2011_infovis_visbricks
  - 2010_infovis_matchmaker
  
 videos: 
- - 2014_nmc_stratomex_video
- - 2012_eurovis_stratomex_video
-     
+ - 2014_nm_stratomex_video
+
 team:
  - streit 
  - lex
@@ -59,6 +58,5 @@ StratomeX supports a rich set of views for different data types that are seamles
 StratomeX also provides an **advanced query and data selection interface**. The query wizard, shown in the above picture, enables analysts to ask specific questions, such as *Which other stratifications are similar to the selected one?*, or *Is there a pathway that is enriched for this patient group?*. A rich set of algorithms calculate rankings of potential matching datasets and stratifications, which are then presented using the [LineUp]({{site.baseurl}}/projects/lineup/) interface. The following example shows a query for a pathway enrichment for an mRNA cluster. LineUp, at the bottom, displays a ranked list of results, of which the fourth is currently selected and displayed.  
 
 ![StartomeX explained]({{site.baseurl}}/assets/images/projects/stratomex_query.png) 
-
 
 For more information about StratomeX visit the [Help Pages](http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md) or watch the instructional videos below. 

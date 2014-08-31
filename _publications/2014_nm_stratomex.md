@@ -1,12 +1,12 @@
 ---
 layout: publication
 title: "Guided Visual Exploration of Genomic Stratifications in Cancer"
-key: 2014_nmc_stratomex
-permalink: /publications/2014_nmc_stratomex/
+key: 2014_nm_stratomex
+permalink: /publications/2014_nm_stratomex/
 type: paper
 
 shortname: GuidedVisualExploration
-image: /assets/images/papers/2014_nmc_stratomex.jpg
+image: /assets/images/papers/2014_nm_stratomex.jpg
 
 authors:
 - streit
@@ -29,27 +29,27 @@ publisher:
 
 project: stratomex
 
-video: 2014_nmc_stratomex
+video: 2014_nm_stratomex_video
 preview-video:
 
 
-pdf: 2014_nmc_stratomex.pdf
-supplement: 2014_nmc_stratomex_supplementary.pdf
+pdf: 2014_nm_stratomex.pdf
+supplement: 2014_nm_stratomex_supplementary.pdf
 supplements:
 - 
   name: Caleydo project (CAL)
-  link: 2014_nmc_stratomex_project.cal
+  link: 2014_nm_stratomex_project.cal
 - 
   name: significantly mutated genes (TXT)
-  link: 2014_nmc_stratomex_mutsig.txt
+  link: 2014_nm_stratomex_mutsig.txt
 - 
   name: gene classification (TXT)
-  link: 2014_nmc_stratomex_gene_classifier.txt
+  link: 2014_nm_stratomex_gene_classifier.txt
 - 
   name: mutation rates (TXT)
-  link: 2014_nmc_stratomex_mutated.txt
+  link: 2014_nm_stratomex_mutated.txt
 
-bibtex: 2014_nmc_stratomex.bib
+bibtex: 2014_nm_stratomex.bib
 
 abstract: "
 <p>Cancer is a heterogeneous disease, and molecular profiling of tumors from large cohorts has enabled characterization of new tumor subtypes. This is a prerequisite for improving personalized treatment and ultimately achieving better patient outcomes. Potential tumor subtypes can be identified with methods such as unsupervised clustering or network-based stratification, which assign patients to sets based on high-dimensional molecular profiles. Detailed characterization of identified sets and their interpretation, however, remain a time-consuming exploratory process.
