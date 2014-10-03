@@ -16,7 +16,7 @@ award:
 institution: Graz University of Technology
 thesis_type: PhD Thesis
 
-pdf: 2012_phd_thesis_lex.pdf
+pdf: 2011_phd_thesis_streit.pdf
 bibtex: 
 
 ---
