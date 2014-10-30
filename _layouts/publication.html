@@ -65,7 +65,6 @@ layout: default
     {% if page.project %}
     <h1>Software</h1>
     <ul class="project-icon-list">
-      {$ if project
     {% for project in site.projects %}
     {% if project.key == page.project) %}
       <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>

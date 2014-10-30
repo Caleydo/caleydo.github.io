@@ -24,8 +24,8 @@ doi: 10.1145/2556288.2557032
 publisher:
 
 
-project:
-external-project: http://hidden-content.caleydo.org
+project: linking
+external-project:
 
 video: 2014_chi_hidden-content_video
 preview-video:
