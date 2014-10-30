@@ -4,7 +4,7 @@ first_name: Thomas
 last_name: Geymayer
 key: geymayer
 permalink: /persons/geymayer/
-role: contributor
+role: core
 email: geymayer@icg.tugray.at
 image: /assets/images/team/geymayer.jpg
 organization: Graz University of Technology
