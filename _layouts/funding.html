@@ -38,6 +38,9 @@ layout: default
         </div>
         <div class="card-copy">
           <p>Agency: {{ grant.agency }}</p>
+          {% if grant.number %}
+          <p>Number: {{grant.number}}</p>
+          {%endif%}
           {% if grant.program %}
           <p>Program: {{grant.program}}</p>
           {%endif%}
