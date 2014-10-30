@@ -6,7 +6,7 @@ permalink: /publications/2014_nm_stratomex/
 type: paper
 
 shortname: GuidedVisualExploration
-image: /assets/images/papers/2014_nm_stratomex.jpg
+image: /assets/images/papers/2014_nm_stratomex.png
 
 authors:
 - streit
