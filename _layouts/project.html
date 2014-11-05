@@ -72,12 +72,20 @@ layout: default
     {% endif %}
     </p>
     {% endif %}
-    {% if page.github.size > 0 %}
+	{% assign repos =  page.github | group_by:"private" %} {% comment %} private and not private {% endcomment %}
+	{% assign repos2 =  repos | where:"name","" %} {% comment %} just not private one {% endcomment %}
+    {% if repos2[0].items.size > 0 %}
     <p>
     <ul class="source-icon-list">
-      {% for repo in page.github %}
-      <li><a href="{{ site.baseurl }}{{ repo }}">{{ repo | remove: "https://github.com/Caleydo/" }}</a><br>Source Code</li>
-      {% endfor %}
+      {% for repo in repos2[0].items %}
+	  <li>
+		{% if repo.url %}
+		<a href="{{ site.baseurl }}{{ repo.url }}">{% if repo.name %} {{ repo.name }} {% else %} {{ repo.url | remove: "https://github.com/Caleydo/" }} {% endif %}</a>
+		{% else %}
+		<a href="{{ site.baseurl }}{{ repo }}">{{ repo | remove: "https://github.com/Caleydo/" }}</a>
+		{% endif %}
+		<br>Source Code</li>
+	  {% endfor %}
     </ul>
     </p>
     {% endif %}

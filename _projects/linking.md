@@ -31,7 +31,10 @@ collaborators:
 
  
 github:
-  - https://github.com/Caleydo/visuallinks
+  - 
+   url: https://github.com/Caleydo/visuallinks
+   name: Visual Links
+   private: true
 
 ---
 

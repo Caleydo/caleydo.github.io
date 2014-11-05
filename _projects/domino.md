@@ -27,7 +27,12 @@ team:
 collaborators:
 
 github:
- - https://github.com/Caleydo/org.caleydo.view.domino
+ - 
+  url: https://github.com/Caleydo/org.caleydo.view.domino
+  name: Domino
+ - 
+  url: https://github.com/Caleydo/caleydo
+  name: Caleydo Core
 ---
 
 Answering questions about complex issues often requires analysts to take into account information contained in multiple interconnected datasets. A common strategy in analyzing and visualizing large and heterogeneous data is to divide the data into meaningful subsets. In a next step, interesting subsets are selected and the associated data as well as the relationships between the subsets are visualized. However, neither the extraction and manipulation, nor the comparison of subsets is well supported by state-of-the-art techniques.

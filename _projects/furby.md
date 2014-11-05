@@ -27,7 +27,12 @@ collaborators:
  - Sepp Hochreiter
 
 github:
- - https://github.com/Caleydo/org.caleydo.view.furby
+ - 
+  url: https://github.com/Caleydo/org.caleydo.view.furby
+  name: Furby View
+ - 
+  url: https://github.com/Caleydo/caleydo
+  name: Caleydo Core
 ---
 
 Cluster analysis is widely used to discover patterns in multi-dimensional data. Clustered heatmaps are the standard technique for visualizing one-way and two-way clustering results. In clustered heatmaps, rows and/or columns are reordered, resulting in a representation that shows the clusters as contiguous blocks. However, for biclustering results, where clusters can overlap, it is not possible to reorder the matrix in this way without duplicating rows and/or columns.

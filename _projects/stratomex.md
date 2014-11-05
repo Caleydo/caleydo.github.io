@@ -39,7 +39,9 @@ collaborators:
 - turkay
 
 github:
- - https://github.com/Caleydo/caleydo
+ - 
+  url: https://github.com/Caleydo/caleydo
+  name: Caleydo Core
 ---
 
 <img align="right" src="{{site.baseurl}}/assets/images/projects/stratomex_basic.png" alt="Basic StratomeX" width="300px">

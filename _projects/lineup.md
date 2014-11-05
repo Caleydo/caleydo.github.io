@@ -29,8 +29,18 @@ team:
 collaborators:
 
 github:
- - https://github.com/Caleydo/org.caleydo.view.lineup
- - https://github.com/Caleydo/lineup.js
+ -
+  url: https://github.com/Caleydo/lineup.js
+  name: LineUp.js
+ - 
+  url: https://github.com/Caleydo/caleydo
+  name: Caleydo Core
+ - 
+  url: https://github.com/Caleydo/org.caleydo.vis.lineup.demos
+  name: LineUp Demos
+ - 
+  url: https://github.com/Caleydo/org.caleydo.view.lineup
+  name: LineUp View
 ---
 
 # About

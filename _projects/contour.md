@@ -29,7 +29,12 @@ collaborators:
  - wassermann 
  
 github:
- - https://github.com/Caleydo/org.caleydo.view.contour
+ - 
+  url: https://github.com/Caleydo/org.caleydo.view.contour
+  name: ConTour View
+ - 
+  url: https://github.com/Caleydo/caleydo
+  name: Caleydo Core
  
 ---
 

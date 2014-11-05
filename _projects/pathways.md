@@ -34,7 +34,9 @@ collaborators:
  - wassermann 
  
 github:
-  - https://github.com/Caleydo/caleydo
+ - 
+  url: https://github.com/Caleydo/caleydo
+  name: Caleydo Core
 
 ---
 
