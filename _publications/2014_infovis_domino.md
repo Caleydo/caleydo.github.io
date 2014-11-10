@@ -39,6 +39,8 @@ supplements:
    link: 2014_infovis_domino_number_ones.zip
  - name: The Cancer Genome Atlas GBM project (CAL)
    link: 2014_infovis_domino_gbm_cancer.cal
+ - name: Samuel Gratzl's Talk at InfoVis'14 (HTML)
+   abslink: https://sgratzl.github.io/domino_vis2014/
 bibtex: 2014_infovis_domino.bib
 
 abstract: "

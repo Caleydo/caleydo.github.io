@@ -106,7 +106,7 @@ layout: default
     {% if page.supplements %}
 	{% for supplement in page.supplements %}
     <li>
-      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ supplement.link }}">{{supplement.name}}</a>
+      <i class="fa fa-download"></i> &nbsp;<a href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{site.paper_content_url}}{{ supplement.link }}{% endif %}">{{supplement.name}}</a>
     </li>
 	{% endfor %}
     {% endif %}
