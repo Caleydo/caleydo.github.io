@@ -17,7 +17,7 @@ authors:
 - Karl Kashofer
 - schmalstieg
 
-journal: Proceedings of the IEEE Symposium on Biological Data Visualization (BioVis ’12), pp. 107–114.
+journal: Proceedings of the IEEE Symposium on Biological Data Visualization (BioVis ’12), pp. 107–114
 year: 2012
 award: IEEE BioVis 2012 Best Paper Award
 note: 

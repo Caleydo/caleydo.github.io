@@ -15,7 +15,7 @@ authors:
 - pfister
 - Helwig Hauser
 
-journal: IEEE Computer Graphics and Applications, 34(2), pp. 38–47, 2014.
+journal: IEEE Computer Graphics and Applications, 34(2), pp. 38–47
 year: 2014
 award:
 
