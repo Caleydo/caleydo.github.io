@@ -18,7 +18,7 @@ authors:
 - park
 - gehlenborg
 
-journal: Nature Methods, 11, pp. 884–885, 2014
+journal: Nature Methods, 11, pp. 884–885
 year: 2014
 award:
 
