@@ -15,7 +15,7 @@ authors:
 - pfister
 - streit
 
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '14), to appear
+journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '14), 20(12), pp. 2023-2032
 year: 2014
 award: IEEE InfoVis 2014 Honorable Mention
 

@@ -17,7 +17,7 @@ authors:
 - pfister
 - schmalstieg
 
-journal: IEEE Transactions on Visualization and Computer Graphics (VAST '14), to appear
+journal: IEEE Transactions on Visualization and Computer Graphics (VAST '14), 20(12), pp. 1883-1892
 year: 2014
 award:
 
