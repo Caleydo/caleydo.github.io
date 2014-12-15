@@ -16,7 +16,7 @@ authors:
 - Karl Kashofer
 - schmalstieg
 
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis'2010), 16(6), pp. 1027-1035
+journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '2010), 16(6), pp. 1027-1035
 year: 2010
 award: 
 

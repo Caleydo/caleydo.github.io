@@ -19,7 +19,7 @@ authors:
 - Bernhard Schlegl
 - schmalstieg
 
-journal: Proceedings of the Symposium on Information Visualization in Biomedical Informatics, 13th International Conference on Information Visualization
+journal: Proceedings of the Conference on Information Visualisation (IV ’2009)
 year: 2009
 award: 
 note: 

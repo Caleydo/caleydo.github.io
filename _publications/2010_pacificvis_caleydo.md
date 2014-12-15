@@ -15,7 +15,7 @@ authors:
 - Ernst Kruijff
 - schmalstieg
 
-journal: Proceedings of 2010 IEEE Pacific Visualization Symposium, pp. 57-64
+journal: Proceedings of IEEE Pacific Visualization Symposium (PacificVis '10), pp. 57-64
 year: 2010
 award: 
 note: Extended version of 2009 Oxford Bioinformatics Applcations Note 

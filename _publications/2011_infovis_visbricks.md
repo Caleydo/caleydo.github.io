@@ -16,7 +16,7 @@ authors:
 - partl
 - schmalstieg
 
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis'11), 17(12), pp. 2291-2300
+journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '11), 17(12), pp. 2291-2300
 year: 2011
 award: 
 

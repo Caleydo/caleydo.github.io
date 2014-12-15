@@ -18,7 +18,7 @@ authors:
 - park
 - gehlenborg
 
-journal: Computer Graphics Forum (EuroVis '12), pp. 1175-1184, 31(3)
+journal: Computer Graphics Forum (EuroVis '12), 31(3), pp. 1175-1184
 year: 2012
 award: EuroVis 2012 3rd Best Paper Award
 

@@ -17,7 +17,7 @@ authors:
 
 journal: Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ’14), pp. 3705-3714
 year: 2014
-award: Honorable Mention Award
+award: ACM CHI 2014 Honorable Mention Award
 
 doi: 10.1145/2556288.2557032
 # use publisher only if no doi is available

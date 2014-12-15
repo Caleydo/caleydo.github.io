@@ -15,7 +15,7 @@ authors:
 - Karl Kashofer
 - schmalstieg
 
-journal: Computer Graphics Forum (EuroVis '08), vol. 27, no. 3, pp. 951-958(8)
+journal: Computer Graphics Forum (EuroVis '08), 27(3), pp. 951-958
 year: 2008
 award: 
 

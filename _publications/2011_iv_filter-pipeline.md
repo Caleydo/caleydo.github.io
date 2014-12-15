@@ -15,7 +15,7 @@ authors:
 - streit
 - schmalstieg
 
-journal: Proceedings of the Conference on Information Visualisation (IV’2011), pp. 47-52
+journal: Proceedings of the Conference on Information Visualisation (IV ’2011), pp. 47-52
 year: 2011
 award: 
 

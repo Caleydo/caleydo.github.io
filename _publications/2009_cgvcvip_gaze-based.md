@@ -15,7 +15,7 @@ authors:
 - Heimo Müller
 - schmalstieg
 
-journal: Proceedings of the Symposium on Information Visualization in Biomedical Informatics, 13th International Conference on Information Visualization
+journal: Proceedings of the Conference on Computer Graphics and Visualization and Image Processing (CGVCVIP '09)
 year: 2009
 award: 
 note: 
