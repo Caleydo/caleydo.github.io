@@ -8,6 +8,6 @@ role: core
 email: nils@gehlenborg.com
 image: /assets/images/team/gehlenborg.png
 organization: Harvard Medical School
-position: Research Associate
+position: Assistant Professor
 website: http://www.gehlenborg.com
 ---
