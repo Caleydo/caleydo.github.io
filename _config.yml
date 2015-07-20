@@ -1,7 +1,7 @@
 # Site settings
 title: Caleydo
 email: contact@caleydo.org
-description: "TODO: Short description of Caleydo Project."
+description: "Caleydo: Visualization for BioMedicine."
 baseurl: ""
 url: "http://caleydo.github.io"
 twitter_username: caleydo_org
