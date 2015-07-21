@@ -25,6 +25,7 @@ team:
  - lex
  - pfister 
  - streit 
+ - strobelt
 
 collaborators:
 
