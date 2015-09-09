@@ -36,14 +36,11 @@ permalink: /web/
 * https://github.com/Caleydo/domino.js
 * https://github.com/Caleydo/entourage
 * https://github.com/Caleydo/particles
-
 * https://github.com/Caleydo/pathfinder
  * https://github.com/Caleydo/pathfinder_graph
  * https://github.com/Caleydo/pathfinder_ccle
-	
 * https://github.com/Caleydo/vials
  * https://github.com/Caleydo/vials_server
-
 * https://github.com/Caleydo/mini_mds
 * https://github.com/Reemh/taco
  * https://github.com/Reemh/taco_server
@@ -51,7 +48,6 @@ permalink: /web/
 ## server
 * https://github.com/Caleydo/caleydo_server
 * https://github.com/Caleydo/caleydo_server_js
-
 
 ## python data provider
 * https://github.com/Caleydo/caleydo_data_hdf
