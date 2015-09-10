@@ -15,6 +15,7 @@ permalink: /web/
 * https://github.com/Caleydo/caleydo_core
 
 ## web utilities
+* https://github.com/Caleydo/caleydo_d3
 * https://github.com/Caleydo/caleydo_vis
 * https://github.com/Caleydo/caleydo_vis_lineup
 * https://github.com/Caleydo/caleydo_vis_proteinviewer
