@@ -27,6 +27,7 @@ permalink: /web/
 * https://github.com/Caleydo/caleydo_links
 * https://github.com/Caleydo/caleydo_window
 * https://github.com/Caleydo/caleydo_tooltip
+* https://github.com/Caleydo/caleydo_screenshot
 
 ## web apps
 * https://github.com/Caleydo/sample_app
