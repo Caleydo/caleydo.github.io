@@ -10,9 +10,15 @@ permalink: /web/
 
 ## The Plugin System
 
+TODO
+
 ## The Registry
 
 Differences registry / directly from repository 
+
+## Asyncronous Module Loading
+
+TODO
  
 # Getting Started
 
@@ -57,8 +63,38 @@ The data structures are contained in the [core plugin](https://github.com/Caleyd
 # Selections
 
 
+# Parsing
 
+Json definition of a file.
 
+Example:
+```
+[
+  {
+    "name": "Anscombe II",
+    "path": "anscombe_II.csv",
+    "type": "matrix",
+    "size": [12, 2],
+    "rowtype": "row",
+    "coltype": "dimension",
+    "separator": ";",
+    "value": {
+      "type": "real",
+      "range": [0, 12]
+    }
+  }
+]
+
+```
+### Required Attributes
+
+`name`: Any string
+`path`: the path to the data, TODO: relative to what? 
+`type`: matrix|table - TODO what else?
+`size`: an array with the rows and columns, TODO: can we do auto?
+
+### Opional Attributes
+`separator`: default:, any legal string
 
 # Plugin List
 
