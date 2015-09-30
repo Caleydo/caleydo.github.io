@@ -21,7 +21,8 @@ layout: default
 
     <div>
 
-      {% sorted_for project in site.projects sort_by:order %}
+      {% assign sorted_projects = site.projects | sort: 'order' %}
+      {% for project in sorted_projects%}
       {% if project.status == "core" %}
 
       <div class="card">
@@ -49,7 +50,7 @@ layout: default
       </div>
 
       {% endif %}
-      {% endsorted_for %}
+      {% endfor %}
 
     </div>
 

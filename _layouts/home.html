@@ -40,7 +40,7 @@
   <h1>News <span class="right-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
 
   <ul class="post-list">
-    {% for post in site.posts limit:4 %}
+    {% for post in site.posts limit:4sorted %}
       <li class="post-list-item">
         <div class="post-list-title">
           {{ post.date | date: "%-d %b %Y" }} | {{ post.title }}
@@ -56,11 +56,12 @@
 
   <h1>Recent Publications</h1>
   <ul class="publication-icon-list">
-  {% sorted_for publication in site.publications reversed sort_by:year  %}
+      {% assign sorted_publications = (site.publications | sort: 'year' %}
+      {% for publication in sorted_publications reversed%}
     {% if publication.year > 2013 %}
     <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.year}}</li>
     {% endif %}
-  {% endsorted_for %}
+  {% endfor %}
   </ul>
 
   </article>
@@ -75,18 +76,19 @@
 
     <h1>Projects</h1>
     <ul class="project-icon-list">
-      {% sorted_for project in site.projects sort_by:order %}
+      {% assign sorted_projects = (site.projects | sort: 'order' %}
+      {%for project in sorted_projects %}
       {% if project.status == 'core' %}
       <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
       {% endif %}
-      {% endsorted_for %}
+      {% endfor %}
     </ul>
     <ul class="project-icon-list">
-      {% sorted_for project in site.projects sort_by:order %}
+      {%for project in sorted_projects %}
       {% if project.status == 'prototype' %}
       <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
       {% endif %}
-      {% endsorted_for %}
+      {% endfor %}
     </ul>
 
     <h1>Latest Release</h1>
@@ -97,14 +99,15 @@
 
     <h1>Funding</h1>
     <ul class="funding-icon-list">
-      {% sorted_for grant in site.funding sort_by:agency %}
+        {% assign sorted_grants = (site.funding | sort: 'agency' %}
+        {% for grant in sorted_grants %}
       {% if grant.active != empty %}
       {% if agency != grant.agency %}
       <li><a href="{{ site.baseurl }}/funding">{{ grant.agency }}</a></li>
       {% endif %}
       {% endif %}
       {% assign agency = grant.agency %}
-      {% endsorted_for %}
+      {% endfor %}
     </ul>
   </article>
 
