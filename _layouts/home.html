@@ -40,7 +40,7 @@
   <h1>News <span class="right-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
 
   <ul class="post-list">
-    {% for post in site.posts limit:4sorted %}
+    {% for post in site.posts limit:4%}
       <li class="post-list-item">
         <div class="post-list-title">
           {{ post.date | date: "%-d %b %Y" }} | {{ post.title }}
