@@ -6,7 +6,7 @@ permalink: /publications/2014_infovis_domino/
 type: paper
 
 shortname: Domino
-image: /assets/images/papers/2014_infovis_domino.png
+image: 2014_infovis_domino.png
 
 authors:
 - gratzl

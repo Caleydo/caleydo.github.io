@@ -7,7 +7,7 @@ type: paper
 
 
 shortname:
-image: /assets/images/papers/2009_bioinformatics_caleydo.png
+image: 2009_bioinformatics_caleydo.png
 
 authors:
 - streit

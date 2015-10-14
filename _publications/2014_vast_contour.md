@@ -6,7 +6,7 @@ permalink: /publications/2014_vast_contour/
 type: paper
 
 shortname: Contour
-image: /assets/images/papers/2014_vast_contour.png
+image: 2014_vast_contour.png
 
 authors:
 - partl

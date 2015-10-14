@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: Jukebox
-image: /assets/images/papers/2008_eurovis_jukebox.png
+image: 2008_eurovis_jukebox.png
 
 authors:
 - streit

@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: VisBricks
-image: /assets/images/papers/2010_pacificvis_caleydo.png
+image: 2010_pacificvis_caleydo.png
 
 authors:
 - lex

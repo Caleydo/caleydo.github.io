@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: Entourage
-image: /assets/images/papers/2013_infovis_entourage.png
+image: 2013_infovis_entourage.png
 
 authors:
 - lex

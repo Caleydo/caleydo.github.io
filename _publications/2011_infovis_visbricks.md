@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: VisBricks
-image: /assets/images/papers/2011_infovis_visbricks.png
+image: 2011_infovis_visbricks.png
 
 authors:
 - lex

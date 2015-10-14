@@ -6,7 +6,7 @@ permalink: /publications/2014_cga_characterizing/
 type: paper
 
 shortname: DualMeetsCaleydo
-image: /assets/images/papers/2014_cga_characterizing.png
+image: 2014_cga_characterizing.png
 
 authors:
 - turkay

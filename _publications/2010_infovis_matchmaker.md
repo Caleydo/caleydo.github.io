@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: Matchmaker
-image: /assets/images/papers/2010_infovis_matchmaker.png
+image: 2010_infovis_matchmaker.png
 
 authors:
 - lex

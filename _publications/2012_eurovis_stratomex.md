@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: StratomeX
-image: /assets/images/papers/2012_eurovis_stratomex.png
+image: 2012_eurovis_stratomex.png
 
 authors: 
 - lex

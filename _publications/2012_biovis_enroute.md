@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: enRoute
-image: /assets/images/papers/2012_biovis_enroute.png
+image: 2012_biovis_enroute.png
 
 authors:
 - partl

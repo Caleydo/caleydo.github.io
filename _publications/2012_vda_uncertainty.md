@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: enRoute
-image: /assets/images/papers/2012_vda_uncertainty.png
+image: 2012_vda_uncertainty.png
 
 authors:
 - Clemens Holzhüter

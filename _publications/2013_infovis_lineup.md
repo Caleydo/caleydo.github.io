@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: LineUp
-image: /assets/images/papers/2013_infovis_lineup.png
+image: 2013_infovis_lineup.png
 
 authors:
 - gratzl

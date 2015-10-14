@@ -7,7 +7,7 @@ type: paper
 
 
 shortname: enRoute
-image: /assets/images/papers/2013_bmc_enroute.png
+image: 2013_bmc_enroute.png
 
 authors:
 - partl

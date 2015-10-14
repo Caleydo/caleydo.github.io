@@ -6,7 +6,7 @@ permalink: /publications/2014_chi_hidden-content/
 type: paper
 
 shortname: Hidden-Content
-image: /assets/images/papers/2014_chi_hidden-content.png
+image: 2014_chi_hidden-content.png
 
 authors:
 - geymayer
