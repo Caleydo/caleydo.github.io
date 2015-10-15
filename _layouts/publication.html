@@ -110,9 +110,17 @@ layout: default
     </li>
 	{% endfor %}
     {% endif %}
+
+    {% if page.code %}
+    <li>
+      <i class="fa  fa-github"></i> &nbsp;<a href="{{ page.code }}">Source Code</a>
+    </li>
+    {% endif %}
     </ul>
 
+    {% if page.video or page.preview-video %}
     <h1>Videos</h1>
+    {% endif %}
     {% for video in site.videos %}
     {% if video.key == page.video or video.key == page.preview-video %}
     <div class="video">
