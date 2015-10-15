@@ -105,9 +105,14 @@ layout: default
     {% endif %}
     {% if page.supplements %}
 	{% for supplement in page.supplements %}
-    <li>
-      <i class="fa fa-download"></i> &nbsp;<a href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{site.paper_content_url}}{{ supplement.link }}{% endif %}">{{supplement.name}}</a>
-    </li>
+      <li>
+        {% if supplement.linksym %}
+        <i class="fa fa-external-link"></i>
+        {% else %}
+        <i class="fa fa-download"></i>
+        {% endif %}
+        &nbsp;<a href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{site.paper_content_url}}{{ supplement.link }}{% endif %}">{{supplement.name}}</a>
+      </li>
 	{% endfor %}
     {% endif %}
 
