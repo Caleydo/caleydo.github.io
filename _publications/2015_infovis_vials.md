@@ -50,7 +50,7 @@ supplement: 2015_infovis_vials_supplement.pdf
 supplements:
 - name: Vials Conference Talk Slides
   # use link instead of abslink if you want to link to the master directory
-  abslink: http://vials.io/vis2015/
+  abslink: http://vials.io/talk/
   # defaults to a download icon, use this if you want a link-out icon
   linksym: true
 
