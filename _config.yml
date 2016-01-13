@@ -56,3 +56,6 @@ collections:
   funding:
     output: false
     permalink: /funding/:path/
+  documentation:
+    output: true
+    permalink: /documentation/:path/

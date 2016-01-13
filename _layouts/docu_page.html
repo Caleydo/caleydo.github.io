@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<header class="project-title">
+    <h1>{{page.name}}: {{ page.title | remove: "| Caleydo" }}</h1>
+</header>
+
+<article class="docu-content-main">
+    <h2>{{ page.standfirst }}</h2>
+    {{ content }}
+
+    <!--{% if page.teaser.highres %}-->
+    <!--<img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">-->
+    <!--{% endif %}-->
+</article>
+
+<article class="docu-content-aside">
+    teeest
+    </article>
