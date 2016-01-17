@@ -61,9 +61,13 @@ layout: default
       <li><a class="release-icon-list" href="{{ site.baseurl }}{{ release.url }}">{{ release.software }} {{ release.version }}</a><br>{{ release.date | date: "%-d %b %Y" }}
       </li>
     </ul>
+
     {% assign is_core_caleydo = false %}
     {% endif %}
     {% endfor %}
+
+
+
 
     {% if is_core_caleydo %}
     <ul class="release-icon-list">
@@ -72,6 +76,16 @@ layout: default
     {% endif %}
     </p>
     {% endif %}
+
+
+
+    {% if page.web-url and page.web-name %}
+    <ul class="web-release-icon-list">
+      <li><a href="{{ page.web-url}}">{{page.web-name}}</a></li>
+    </ul>
+    {%endif%}
+
+
 	{% assign repos =  page.github | group_by:"private" %} {% comment %} private and not private {% endcomment %}
 	{% assign repos2 =  repos | where:"name","" %} {% comment %} just not private one {% endcomment %}
     {% if repos2[0].items.size > 0 %}
