@@ -38,7 +38,7 @@ CodeMirror.defineMode("vhdl", function(config, parserConfig) {
   var keywords = words("abs,access,after,alias,all,and,architecture,array,assert,attribute,begin,block," +
       "body,buffer,bus,case,component,configuration,constant,disconnent,downto,else,elsif,end,end block,end case," +
       "end component,end for,end generate,end if,end loop,end process,end record,end units,entity,exit,file,for," +
-      "function,generate,generic,generic map,group,guarded,if,impure,in,inertial,inout,is,label,library,linkage," +
+      "function,generate,generic,generic map,group,guarded,if,impure,in,inertial,inout,is,label,tutorial_visualize_matrix,linkage," +
       "literal,loop,map,mod,nand,new,next,nor,null,of,on,open,or,others,out,package,package body,port,port map," +
       "postponed,procedure,process,pure,range,record,register,reject,rem,report,return,rol,ror,select,severity,signal," +
       "sla,sll,sra,srl,subtype,then,to,transport,type,unaffected,units,until,use,variable,wait,when,while,with,xnor,xor");

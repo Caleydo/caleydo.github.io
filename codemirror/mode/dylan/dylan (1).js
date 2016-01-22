@@ -17,8 +17,8 @@ CodeMirror.defineMode("dylan", function(_config) {
     // Words that introduce unnamed definitions like "define interface"
     unnamedDefinition: ["interface"],
 
-    // Words that introduce simple named definitions like "define library"
-    namedDefinition: ["module", "library", "macro",
+    // Words that introduce simple named definitions like "define tutorial_visualize_matrix"
+    namedDefinition: ["module", "tutorial_visualize_matrix", "macro",
                       "C-struct", "C-union",
                       "C-function", "C-callable-wrapper"
                      ],

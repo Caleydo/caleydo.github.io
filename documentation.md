@@ -10,36 +10,29 @@ permalink: /documentation/
 
 ### Getting Started
 
-<!-- [Getting Started](getting_started) -->
+[Getting Started](getting_started)
 
 How to install caleydo_web_container (HEN)
 TODO: Move content from repo readme.
 
 ### Tutorials
 
-[How to create a single view application](tutorial_single_view) (MARC)
+* [Visualize a matrix](tutorial_visualize_matrix)
+* [Create a single view application](tutorial_single_view)
 
 ### Concepts
 
-[Overview](overview)
-
-Promises -> provide link
-
-Dataset, range, index, selections
-TODO: copy and revise content from Sam’s presentation
-https://docs.google.com/presentation/d/1UiVb2b6-tgGoou3p_7NwEXt-g-WQ0wZHaE_xltdWIzI/edit
-
-Plugins, registry, extensions (SAM)
-
-### Application examples
-
-Pathfinder
-Vials
-LineUp
+* [Overview](overview)
+* [Data structure (ranges, indices, selections)](data_structure)
+* [Plugin mechanism (registry, extension)](plugin_mechanism)
+* [Working with promises](https://www.promisejs.org/)
 
 ### API Documentation
 
 ### Resources
+
+* [List of plugins](list_of_plugins)
+* [List of applications](list_of_applications)
 
 ## End User Documentation
 

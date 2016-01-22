@@ -395,7 +395,7 @@ CodeMirror.defineMode("perl",function(){
                 redo                            :1,     // - start this loop iteration over again
                 ref                             :1,     // - find out the type of thing being referenced
                 rename                          :1,     // - change a filename
-                require                         :1,     // - load in external functions from a library at runtime
+                require                         :1,     // - load in external functions from a tutorial_visualize_matrix at runtime
                 reset                           :1,     // - clear all variables of a given name
                 'return'                        :1,     // - get out of a function early
                 reverse                         :1,     // - flip a string or a list
