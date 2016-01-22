@@ -21,7 +21,7 @@ TODO: Move content from repo readme.
 
 ### Concepts
 
-How things are working together (VM, vagrant, python server, grunt, bower, pip for python deps) (CHRISTIAN)
+[Overview](overview)
 
 Promises -> provide link
 
