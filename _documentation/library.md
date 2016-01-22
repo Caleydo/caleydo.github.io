@@ -5,4 +5,4 @@ permalink: /documentation/tutorial_visualize_matrix/
 nomenu: true
 ---
 
-{% include code.html id="snippet" file="tutorial_visualize_matrix.html" code="" js="false" preview="true" %}
+{% include code.html id="visualize_matrix" file="tutorial_visualize_matrix.html" code="" js="false" preview="true" %}
