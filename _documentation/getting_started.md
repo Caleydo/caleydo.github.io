@@ -6,9 +6,6 @@ nomenu: true
 ---
 
 
-
-
-
 ## Transitions
 
 Cool, but we're missing the enter again: 
