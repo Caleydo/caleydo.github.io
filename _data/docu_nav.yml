@@ -1,0 +1,36 @@
+
+- title: "Documentation Home"
+  href: ""
+
+- title: "Installation"
+  href: "installation/"
+
+- title: "Tutorials"
+  href: "tutorial/"
+  subcategories:
+    - subtitle: "Visualize a Matrix"
+      subhref: "tutorial_visualize_matrix/"
+    - subtitle: "Getting Started"
+      subhref: "getting_started/"
+    - subtitle: "Create a single view application"
+      subhref: "tutorial_single_view"
+
+
+- title: "Reference"
+  href: "reference/"
+  subcategories:
+    - subtitle: "Overview"
+      subhref: "overview/"
+    - subtitle: "Plugin Mechanism"
+      subhref: "plugin_mechanism/"
+    - subtitle: "Working with promises"
+      subhref: "TODO"
+
+- title: "Rsources"
+  href: "resources/"
+  subcategories:
+    - subtitle: "List of plugins"
+      subhref: "list_of_plugins/"
+    - subtitle: "List of applications"
+      subhref: "list_of_applications/"
+

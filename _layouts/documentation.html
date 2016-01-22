@@ -1,6 +1,44 @@
 ---
 layout: default
 ---
+
+
+<nav class="navbar" role="navigation">
+    <div class="container">
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul >
+
+                {% for navitem in site.data.docu_nav %}
+
+                <!-- check to see if the data file has a submenu, and if so display it -->
+                {% if navitem.subcategories != null %}
+                <li>
+                    <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}<i
+                            class="fa fa-angle-down"></i></a>
+                    <ul>
+                        {% for subcategory in navitem.subcategories %}
+                        <li><a href="{{ site.baseurl }}/documentation/{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+
+                    <!—- display the top level navigation for items that don’t have a submenu -->
+                <li>
+                    <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
 <div class="documentation">
 
     <header class="docs-title">
@@ -8,7 +46,7 @@ layout: default
     </header>
 
     <article class="documentation-content">
-    {{ content }}
+        {{ content }}
     </article>
 
 </div>
