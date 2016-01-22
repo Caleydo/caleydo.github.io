@@ -110,6 +110,14 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
   }  
 }
 
+.submenu {
+  float: left;
+  width: 200px;
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+
 .logo {
   float: left;
   margin-left: -34px;

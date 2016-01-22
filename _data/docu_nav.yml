@@ -26,7 +26,7 @@
     - subtitle: "Working with promises"
       subhref: "TODO"
 
-- title: "Rsources"
+- title: "Resources"
   href: "resources/"
   subcategories:
     - subtitle: "List of plugins"
