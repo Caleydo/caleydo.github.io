@@ -13,6 +13,6 @@ nomenu: true
 
 Cool, but we're missing the enter again: 
 
-{% include code.html id="d3_transition2" file="d3_transition2.html" code="" js="false" preview="true" %}
+{% include code.html file="d3_transition2.html" js="false" preview="true" %}
 
 

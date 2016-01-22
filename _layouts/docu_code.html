@@ -2,16 +2,12 @@
 layout: default
 ---
 
-<header class="project-title">
+<header class="docu-title">
     <h1>Documentation: {{ page.title | remove: "| Caleydo" }}</h1>
 </header>
 
 <article class="docu-content-main">
 
-
-    <!--{% if page.teaser.highres %}-->
-    <!--<img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">-->
-    <!--{% endif %}-->
 </article>
 
 
@@ -42,16 +38,16 @@ layout: default
 
 
     /**
-     * Renders
-     * @param id
-     * @param file
-     * @param code
-     * @param js
-     * @param renderPreview
+     * Renders a code-editor with a box displaying the content of file. Optionally renders a preview of the file.
+     * @param file the path to the file to be displayed / executed.
+     * @param js - true if the code to render is javascript only, false if html. defaults to false.
+     * @param renderPreview - set to true if you want to render a preview of your html below the code editor. Defaults to true.
      */
-    function renderCode(id, file, code, js, renderPreview) {
+    function renderCode(file, js, renderPreview) {
+        js = typeof js !== 'undefined' ? js : false;
+        renderPreview = typeof renderPreview !== 'undefined' ? renderPreview : true;
         var delay;
-
+        var id = file;
         var boilerplateHTML = "<!DOCTYPE html><html lang='en'><head> <meta charset='UTF-8'><title><\/title><\/head><body><script src='{{site.baseurl}}/lectures/logger.js'\/>\n";
         var endHTML = "\n<\/script><div id='log'></div><\/body><\/html>";
 
@@ -175,7 +171,7 @@ layout: default
 </header>
 
 <!--<header class="post-header">-->
-    <!--<h1>{{ page.title }}</h1>-->
+<!--<h1>{{ page.title }}</h1>-->
 
 <!--</header>-->
 
