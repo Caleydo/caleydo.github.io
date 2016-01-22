@@ -12,3 +12,6 @@ TODO
 ### Bleh
 
 TODO
+
+Single view heatmap: create app,  create plugin, load data, view heatmap
+state prerequisites at the beginning (MARC)
