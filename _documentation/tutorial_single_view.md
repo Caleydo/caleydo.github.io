@@ -1,5 +1,5 @@
 ---
-layout: docu_code
+layout: docs_code
 title:  How to create a single view application
 permalink: /documentation/tutorial_single_view/
 ---

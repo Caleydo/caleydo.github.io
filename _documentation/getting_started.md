@@ -1,5 +1,5 @@
 ---
-layout: docu_code
+layout: docs_code
 title:  Getting Started
 permalink: /documentation/getting_started/
 nomenu: true

@@ -1,5 +1,5 @@
 ---
-layout: docu_code
+layout: docs_code
 title:  Visualize a matrix
 permalink: /documentation/tutorial_visualize_matrix/
 nomenu: true

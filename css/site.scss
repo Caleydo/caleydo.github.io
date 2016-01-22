@@ -171,7 +171,9 @@ body {
   @include navigation-button($help-color);
 }
 
-
+.docs-button {
+  @include navigation-button($docs-color);
+}
 
 
 @mixin page-title($color) {
@@ -247,6 +249,10 @@ body {
 
 .release-title {
   @include subpage-title($download-color);
+}
+
+.docs-title {
+  @include page-title($docs-color);
 }
 
 @mixin single-column-content() {
