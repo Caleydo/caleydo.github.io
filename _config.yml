@@ -2,7 +2,7 @@
 title: Caleydo
 email: contact@caleydo.org
 description: "Caleydo: Visualization for BioMedicine."
-baseurl: ""
+baseurl: "/Caleydo"
 url: "http://caleydo.github.io"
 twitter_username: caleydo_org
 github_username:  caleydo
