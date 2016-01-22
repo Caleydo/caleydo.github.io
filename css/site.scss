@@ -620,6 +620,53 @@ ul.post-list {
 }
 
 
+@mixin nav-content() {
+
+  @include page-content();
+
+  ul {
+    @extend %default-ul;
+    @include dotted-link-underline;
+    list-style-type: none;
+    padding:0; margin:0px;
+  }
+
+  ul  ul {
+    padding-left: 10px; margin:0px;
+  }
+
+}
+
+
+.docs-content {
+  @include page-content();
+  @include span-columns(12);
+  @include omega();
+}
+
+.docs-content-main {
+  @include page-content();
+  @include span-columns(9);
+}
+
+.docs-content-aside {
+  @include nav-content();
+  @include span-columns(3);
+  @include omega();
+}
+
+
+.docs-meta {
+  @include page-meta();
+  @include span-columns(9);
+  @include omega();
+}
+
+
+
+
+
+
 // Uncomment this for a sticky footer.
 //
 /*
