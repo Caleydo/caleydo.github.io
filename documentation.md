@@ -6,5 +6,5 @@ tag: documentation
 permalink: /documentation/
 ---
 
-[Getting Started](getting_started) 
+[Getting Started](getting_started)
 
