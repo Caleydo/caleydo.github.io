@@ -1,82 +1,82 @@
 ---
 layout: default
 ---
-  <header class="publications-title">
-    <h1>{{ page.title | remove: "| Caleydo" }}</h1>
-  </header>
+<header class="publications-title">
+  <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+</header>
 
-  <article class="publications-content">
+<article class="publications-content">
 
-    <h1>Peer-Reviewed Journal and Conference Papers </h1>
-    
-    {% for publication in site.publications reversed %}
+  <h1>Peer-Reviewed Journal and Conference Papers </h1>
 
-    <div class="paper-list-block">
+  {% for publication in site.publications reversed %}
 
-      <a href="{{ site.baseurl }}{{ publication.url }}"><img alt="{{ publication.shortname }} screenshot"
-                                                             class="paper-image-small"
-                                                             src="/assets/images/papers/{{ publication.image }}"></a>
+  <div class="paper-list-block">
 
-      <p>
-        {% for author in publication.authors %}
+    <a href="{{ site.baseurl }}{{ publication.url }}"><img alt="{{ publication.shortname }} screenshot"
+                                                           class="paper-image-small"
+                                                           src="{{ site.baseurl }}/assets/images/papers/{{ publication.image }}"></a>
 
-        {% assign known = false %}
-        {% for person in site.persons %}
-        {% if author == person.key %}
+    <p>
+      {% for author in publication.authors %}
+
+      {% assign known = false %}
+      {% for person in site.persons %}
+      {% if author == person.key %}
         <span class="paper-author">
           <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
         </span>
-        {% assign known = true %}
-        {% endif %}
-        {% endfor %}
+      {% assign known = true %}
+      {% endif %}
+      {% endfor %}
 
-        {% if known == false %}
+      {% if known == false %}
         <span class="paper-author">        
           {{ author }}{% if author != publication.authors.last %}, {% endif %}
         </span>
-        {% endif %}
+      {% endif %}
 
-        {% endfor %}
-        <br/>
-        <b> <a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b><br/>
-        {{ publication.journal }}, {{publication.year}}
-      </p>
+      {% endfor %}
+      <br/>
+      <b> <a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b><br/>
+      {{ publication.journal }}, {{publication.year}}
+    </p>
 
-    </div>
+  </div>
 
-    {% endfor %}
+  {% endfor %}
 
-    <h1>Theses </h1>
-
-
-    {% for thesis in site.thesis reversed %}
-
-    <div class="paper-list-block">
-
-      <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ thesis.image }}">
-
-      <p>
-        {% assign known = false %}
-        {% for person in site.persons %}
-        {% if person.key == thesis.author %}
-        <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>
-
-        {% assign known = true %}
-
-        {% if known == false %}
-        {{ author }}
-        {% endif %}
-        {% endif %}
-        {% endfor %} <br/>
-        <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
-        {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
-      </p>
-
-    </div>
-
-    {% endfor %}
-
-    <!-- <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>-->
+  <h1>Theses </h1>
 
 
-  </article>
+  {% for thesis in site.thesis reversed %}
+
+  <div class="paper-list-block">
+
+    <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+
+    <p>
+      {% assign known = false %}
+      {% for person in site.persons %}
+      {% if person.key == thesis.author %}
+      <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>
+
+      {% assign known = true %}
+
+      {% if known == false %}
+      {{ author }}
+      {% endif %}
+      {% endif %}
+      {% endfor %} <br/>
+      <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+      {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
+    </p>
+
+  </div>
+
+  {% endfor %}
+
+  <!-- <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>-->
+
+
+</article>
