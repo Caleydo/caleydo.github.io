@@ -31,13 +31,15 @@
   .card-image {
     overflow: hidden;
     max-height: 200px;
-
+    background: $card-image-background;
     img {
+
       width: 100%;
       @include transition (all 0.2s ease-in-out);
       background: $card-image-background;
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
+      
     }
   }
 
@@ -138,7 +140,7 @@
     background-color: $card-hover-background;
     
     .card-image img {
-      background: $card-image-hover-background;
+      background: $card-image-background;
     }
   
     .card-header {
