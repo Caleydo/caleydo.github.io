@@ -6,7 +6,8 @@ permalink: /funding/2007-styria-genview/
 website: http://www.zukunftsfonds.steiermark.at/
 logo: steiermark.gif
 title: Analyse von genetischen und klinischen Daten mit Methoden der Informationsvisualisierung und multimodaler Benutzerschnittstellen
-recipient: tug
+recipients: 
+- tug
 pi: schmalstieg
 copi:
 partners: 

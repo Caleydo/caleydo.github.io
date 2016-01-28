@@ -46,18 +46,33 @@ layout: default
           {%endif%}
           <p>Period: {{grant.time}}</p>
 
-          {% for person in site.persons %}
-          {% if grant.recipient == person.key) %}
-          <p>Recipient: <a href="{{person.website}}">{{person.first_name}} {{person.last_name}}</a></p>
+
+
+          <p>Recipient(s):
+          {% assign count = 0 %}
+          {% for recipient in grant.recipients %}
+            {% if count == 1 %} , {% endif %}
+            {% assign known = false %}
+            {% for institution in site.institutions %}
+              {% if recipient == institution.key) %}
+              <a href="{{institution.website}}">{{institution.name}}</a>
+              {% assign known = true %}
+              {% endif %}
+            {% endfor %}
+            {% for person in site.persons %}
+              {% if recipient == person.key) %}
+                 <a href="{{person.website}}">{{person.first_name}} {{person.last_name}}</a>
+                 {% assign known = true %}
+              {% endif %}
+            {% endfor %}
+
+          {% if known == false %}
+          {{recipient}}
           {% endif %}
+          {% assign count = 1 %}
           {% endfor %}
 
-          {% for institution in site.institutions %}
-          {% if grant.recipient == institution.key) %}
-          <p>Recipient: <a href="{{institution.website}}">{{institution.name}}</a></p>
-          {% endif %}
-          {% endfor %}
-
+          </p>
           {% if grant.partners %}
           <p>Partners: {{grant.partners}}</p>
           {%endif%}

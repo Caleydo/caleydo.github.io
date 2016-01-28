@@ -6,7 +6,8 @@ permalink: /funding/2009-ffg-ingeneious/
 website: https://www.ffg.at/en
 logo: ffg.png
 title: inGeneious - Holistic Visualization of Biomolecular and Clinical Data
-recipient: tug
+recipients: 
+- tug
 pi: schmalstieg
 copi: 
 partners: SimVis

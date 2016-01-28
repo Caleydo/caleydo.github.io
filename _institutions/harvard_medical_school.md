@@ -1,6 +1,6 @@
 ---
 layout: institution
-key: harvard_medical_school
+key: hms
 name: Harvard Medical School
 location: Boston, MA, USA
 website: http://compbio.med.harvard.edu
