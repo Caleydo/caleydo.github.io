@@ -6,7 +6,8 @@ permalink: /funding/2007-ffg-genoptikum/
 website: https://www.ffg.at/en
 logo: ffg.png
 title: Genoptikum - Visual Data Mining for Genetic Data
-recipient: tug
+recipients: 
+- tug
 pi: schmalstieg
 copi: 
 partners: 

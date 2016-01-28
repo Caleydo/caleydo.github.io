@@ -6,7 +6,8 @@ permalink: /funding/2007-fwf-caleydoplex/
 website: http://www.fwf.ac.at/
 logo: fwf.png
 title: VIPEM - Visual Analytics for Personalized Medicine
-recipient: tug
+recipients:
+- tug
 pi: schmalstieg
 copi:
 partners:

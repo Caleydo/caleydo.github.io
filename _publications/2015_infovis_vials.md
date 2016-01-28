@@ -21,8 +21,8 @@ authors:
 - pfister
 - lex
 
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis ’15), to appear
-year: 2015
+journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis ’15), vol. 22, no. 1, pp. 399-408
+year: 2016
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions" 
 award:
 

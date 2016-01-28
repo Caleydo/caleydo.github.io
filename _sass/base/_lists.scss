@@ -69,6 +69,10 @@ ul.web-release-icon-list {
   @include icon-list($download-color,"\f08e");
 }
 
+ul.help-icon-list {
+  @include icon-list($help-color, "\f059");
+}
+
 ul.publication-icon-list {
   @include icon-list($publication-color,"\f02d");
 }

@@ -6,7 +6,8 @@ permalink: /funding/2014-nibr-integrative/
 website: http://nibr.com/
 logo: nibr.jpg
 title: Integrative visualization of heterogeneous molecular data sources
-recipient: harvard_seas
+recipients:
+- harvard_seas
 pi: pfister
 copi:
 partners:

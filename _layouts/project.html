@@ -106,9 +106,10 @@ layout: default
 
     {% if page.help %}
     <h1>Help</h1>
-     <p>
-       Go to <a href="{{ page.help}}">{{page.name}} Help Pages</a>
-     </p>
+
+    <ul class="help-icon-list">
+      <li><a href="{{ page.help}}">{{page.name}} Help</a></li>
+    </ul>
     {%endif%}
   </article>
 
