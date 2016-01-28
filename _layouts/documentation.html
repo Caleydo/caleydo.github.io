@@ -13,13 +13,13 @@ layout: default
 
         <ul>
             {% for navitem in site.data.docu_nav %}
-            {% if navitem.subcategories != null %}
+            {% if navitem.categories != null %}
             <li>
                 <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}<i
                         class="fa fa-angle-down"></i></a>
                 <ul>
-                    {% for subcategory in navitem.subcategories %}
-                    <li><a href="{{ site.baseurl }}/documentation/{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+                    {% for category in navitem.categories %}
+                    <li><a href="{{ site.baseurl }}/documentation/{{ category.href }}">{{ category.title }}</a></li>
                     {% endfor %}
                 </ul>
             </li>

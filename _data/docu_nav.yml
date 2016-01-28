@@ -7,31 +7,31 @@
 
 - title: "Tutorials"
   href: "tutorial/"
-  subcategories:
-    - subtitle: "Getting Started"
-      subhref: "getting_started/"
-    - subtitle: "Visualize a Matrix"
-      subhref: "tutorial_visualize_matrix/"
+  categories:
+    - title: "Getting Started"
+      href: "getting_started/"
+    - title: "Visualize a Matrix"
+      href: "tutorial_visualize_matrix/"
 
-    - subtitle: "Create a single view application"
-      subhref: "tutorial_single_view"
+    - title: "Create a single view application"
+      href: "tutorial_single_view"
 
 
 - title: "Reference"
   href: "reference/"
-  subcategories:
-    - subtitle: "Overview"
-      subhref: "overview/"
-    - subtitle: "Plugin Mechanism"
-      subhref: "plugin_mechanism/"
-    - subtitle: "Working with promises"
-      subhref: "TODO"
+  categories:
+    - title: "Overview"
+      href: "overview/"
+    - title: "Plugin Mechanism"
+      href: "plugin_mechanism/"
+    - title: "Working with promises"
+      href: "TODO"
 
 - title: "Resources"
   href: "resources/"
-  subcategories:
-    - subtitle: "List of plugins"
-      subhref: "list_of_plugins/"
-    - subtitle: "List of applications"
-      subhref: "list_of_applications/"
+  categories:
+    - title: "List of plugins"
+      href: "list_of_plugins/"
+    - title: "List of applications"
+      href: "list_of_applications/"
 
