@@ -3,6 +3,7 @@ layout: docs_code
 title:  Getting Started
 permalink: /documentation/getting_started/
 nomenu: true
+description: A simple D3 example
 ---
 
 

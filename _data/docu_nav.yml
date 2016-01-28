@@ -8,10 +8,11 @@
 - title: "Tutorials"
   href: "tutorial/"
   subcategories:
-    - subtitle: "Visualize a Matrix"
-      subhref: "tutorial_visualize_matrix/"
     - subtitle: "Getting Started"
       subhref: "getting_started/"
+    - subtitle: "Visualize a Matrix"
+      subhref: "tutorial_visualize_matrix/"
+
     - subtitle: "Create a single view application"
       subhref: "tutorial_single_view"
 

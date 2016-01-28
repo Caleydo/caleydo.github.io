@@ -1,0 +1,34 @@
+---
+layout: documentation
+---
+
+
+
+
+
+
+<article class="docs-content-main">
+    {{ content }}
+
+
+            {% for navitem in site.data.docu_nav %}
+            {% if navitem.href == page.type %}
+            {% if navitem.subcategories != null %}
+
+                {% for subcategory in navitem.subcategories %}
+                   <h3><a href="{{ site.baseurl }}/documentation/{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></h3>
+
+                    {% for docupage in site.documentation %}
+                    {% if docupage.permalink contains subcategory.subhref %}
+                    <p>{{docupage.description}}</p>
+                    {% endif %}
+                    {% endfor %}
+                {% endfor %}
+
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+    </article>
+
+
