@@ -49,7 +49,7 @@ layout: documentation
         renderPreview = typeof renderPreview !== 'undefined' ? renderPreview : true;
         var delay;
         var id = file;
-        var boilerplateHTML = "<!DOCTYPE html><html lang='en'><head> <meta charset='UTF-8'><title><\/title><\/head><body><script src='{{site.baseurl}}/lectures/logger.js'\/>\n";
+        var boilerplateHTML = "<!DOCTYPE html><html lang='en'><head> <meta charset='UTF-8'><title><\/title><\/head><body>\n";
         var endHTML = "\n<\/script><div id='log'></div><\/body><\/html>";
 
         var highlightLanguage = "text/html";
@@ -57,19 +57,32 @@ layout: documentation
             highlightLanguage = "text/javascript"
         }
 
-        // Initialize CodeMirror editor
-        window.editor = CodeMirror.fromTextArea(document.getElementById(id), {
-            mode: highlightLanguage,
-            tabMode: 'indent',
-            lineNumbers: true,
-            lineWrapping: true,
-            autoCloseTags: true,
-            extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
-            foldGutter: true,
-            gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
-        });
+        // init with file or code
+        $.get(file, function (data) {
 
-        //editor.foldCode(CodeMirror.Pos(0, 0));
+            // Initialize CodeMirror editor
+            editor = CodeMirror.fromTextArea(document.getElementById(id), {
+                mode: highlightLanguage,
+                tabMode: 'indent',
+                lineNumbers: true,
+                lineWrapping: true,
+                autoCloseTags: true,
+                extraKeys: {
+                    "Ctrl-Q": function (cm) {
+                        cm.foldCode(cm.getCursor());
+                    }
+                },
+                foldGutter: true,
+                gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
+            });
+
+
+            editor.setValue(data);
+            editor.refresh();
+
+            editor.foldCode(CodeMirror.Pos(5, 0));
+
+            updatePreview();
 
         // Live preview
         editor.on("change", function () {
@@ -78,7 +91,6 @@ layout: documentation
         });
 
         function updatePreview() {
-
 
             if (renderPreview == "false" && js == "true") {
                 // if we don't want to see a preview we just evaluate the javascript code
@@ -107,71 +119,60 @@ layout: documentation
 
         }
 
-        setTimeout(updatePreview, 300);
+        });
+//        function saveTextAsFile() {
+//            var textToWrite = document.getElementById(id).value;
+//            var textFileAsBlob = new Blob([textToWrite], {
+//                type: 'text/plain'
+//            });
+//            var fileNameToSaveAs = "myfile.html";
+//
+//            var downloadLink = document.createElement("a");
+//            downloadLink.download = fileNameToSaveAs;
+//            downloadLink.innerHTML = "Download File";
+//            if (window.webkitURL != null) {
+//                // Chrome allows the link to be clicked
+//                // without actually adding it to the DOM.
+//                downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+//            } else {
+//                // Firefox requires the link to be added to the DOM
+//                // before it can be clicked.
+//                downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+//                downloadLink.onclick = destroyClickedElement;
+//                downloadLink.style.display = "none";
+//                document.body.appendChild(downloadLink);
+//            }
+//
+//            downloadLink.click();
+//        }
+//
+//        function destroyClickedElement(event) {
+//            document.body.removeChild(event.target);
+//        }
 
-        function saveTextAsFile() {
-            var textToWrite = document.getElementById(id).value;
-            var textFileAsBlob = new Blob([textToWrite], {
-                type: 'text/plain'
-            });
-            var fileNameToSaveAs = "myfile.html";
+//        function loadfile(input) {
+//            var reader = new FileReader();
+//            reader.onload = function (e) {
+//                editor.setValue(e.target.result);
+//            }
+//            reader.readAsText(input.files[0]);
+//        }
 
-            var downloadLink = document.createElement("a");
-            downloadLink.download = fileNameToSaveAs;
-            downloadLink.innerHTML = "Download File";
-            if (window.webkitURL != null) {
-                // Chrome allows the link to be clicked
-                // without actually adding it to the DOM.
-                downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
-            } else {
-                // Firefox requires the link to be added to the DOM
-                // before it can be clicked.
-                downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-                downloadLink.onclick = destroyClickedElement;
-                downloadLink.style.display = "none";
-                document.body.appendChild(downloadLink);
-            }
-
-            downloadLink.click();
-        }
-
-        function destroyClickedElement(event) {
-            document.body.removeChild(event.target);
-        }
-
-        function loadfile(input) {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                editor.setValue(e.target.result);
-            }
-            reader.readAsText(input.files[0]);
-        }
-
-        var input = document.getElementById("select");
-
-        function selectTheme() {
-            var theme = input.options[input.selectedIndex].innerHTML;
-            editor.setOption("theme", theme);
-        }
-
-        var choice = document.location.search && decodeURIComponent(document.location.search.slice(1));
-        if (choice) {
-            input.value = choice;
-            editor.setOption("theme", choice);
-        }
+//        var input = document.getElementById("select");
+//
+//        function selectTheme() {
+//            var theme = input.options[input.selectedIndex].innerHTML;
+//            editor.setOption("theme", theme);
+//        }
+//
+//        var choice = document.location.search && decodeURIComponent(document.location.search.slice(1));
+//        if (choice) {
+//            input.value = choice;
+//            editor.setOption("theme", choice);
+//        }
 
 
-        // init with file or code
-        if (file != "") {
-            $.get(file, function (data) {
-                editor.setValue(data);
 
-            });
-        } else if (code != "") {
-
-            editor.setValue(code);
-
-        }
     }
 
 </script>
