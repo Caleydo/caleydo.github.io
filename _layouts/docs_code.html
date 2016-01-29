@@ -11,7 +11,16 @@ layout: documentation
 <script src='http://codemirror.net/mode/javascript/javascript.js'></script>
 <script src='http://codemirror.net/mode/css/css.js'></script>
 <script src='http://codemirror.net/mode/htmlmixed/htmlmixed.js'></script>
+
+<script src='http://codemirror.net/addon/fold/foldcode.js'></script>
+<script src="http://codemirror.net/addon/fold/foldgutter.js"></script>
+<script src="http://codemirror.net/addon/fold/brace-fold.js"></script>
+<script src="http://codemirror.net/addon/fold/xml-fold.js"></script>
+<script src="http://codemirror.net/addon/fold/markdown-fold.js"></script>
+
+
 <link rel='stylesheet' href='http://codemirror.net/lib/codemirror.css'>
+<link rel="stylesheet" href="http://codemirror.net/addon/fold/foldgutter.css" />
 <style type='text/css'>
     .CodeMirror {
         float: left;
@@ -49,13 +58,18 @@ layout: documentation
         }
 
         // Initialize CodeMirror editor
-        var editor = CodeMirror.fromTextArea(document.getElementById(id), {
+        window.editor = CodeMirror.fromTextArea(document.getElementById(id), {
             mode: highlightLanguage,
             tabMode: 'indent',
             lineNumbers: true,
             lineWrapping: true,
-            autoCloseTags: true
+            autoCloseTags: true,
+            extraKeys: {"Ctrl-Q": function(cm){ cm.foldCode(cm.getCursor()); }},
+            foldGutter: true,
+            gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
         });
+
+        //editor.foldCode(CodeMirror.Pos(0, 0));
 
         // Live preview
         editor.on("change", function () {
@@ -64,6 +78,7 @@ layout: documentation
         });
 
         function updatePreview() {
+
 
             if (renderPreview == "false" && js == "true") {
                 // if we don't want to see a preview we just evaluate the javascript code
