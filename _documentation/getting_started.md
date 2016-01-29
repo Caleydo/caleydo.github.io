@@ -8,7 +8,7 @@ description: A simple D3 example
 
 ## SVG
 
-{% include code.html file="pure.html" js="false" preview="true" %}
+{% include code.html foldAt="2,14" file="pure.html" js="false" preview="true" %}
 
 
 

@@ -20,7 +20,7 @@ layout: documentation
 
 
 <link rel='stylesheet' href='http://codemirror.net/lib/codemirror.css'>
-<link rel="stylesheet" href="http://codemirror.net/addon/fold/foldgutter.css" />
+<link rel="stylesheet" href="http://codemirror.net/addon/fold/foldgutter.css"/>
 <style type='text/css'>
     .CodeMirror {
         float: left;
@@ -41,10 +41,11 @@ layout: documentation
     /**
      * Renders a code-editor with a box displaying the content of file. Optionally renders a preview of the file.
      * @param file the path to the file to be displayed / executed.
+     * @param foldAt a comma-separated string of list of line numbers to fold. Example: "2,14,18". This will fold the code at those lines.
      * @param js - true if the code to render is javascript only, false if html. defaults to false.
      * @param renderPreview - set to true if you want to render a preview of your html below the code editor. Defaults to true.
      */
-    function renderCode(file, js, renderPreview) {
+    function renderCode(file, foldAt, js, renderPreview) {
         js = typeof js !== 'undefined' ? js : false;
         renderPreview = typeof renderPreview !== 'undefined' ? renderPreview : true;
         var delay;
@@ -52,6 +53,10 @@ layout: documentation
         var boilerplateHTML = "<!DOCTYPE html><html lang='en'><head> <meta charset='UTF-8'><title><\/title><\/head><body>\n";
         var endHTML = "\n<\/script><div id='log'></div><\/body><\/html>";
 
+        var foldPositions = [];
+        if (foldAt !== 'undefined') {
+            foldPositions = foldAt.split(",");
+        }
         var highlightLanguage = "text/html";
         if (js == "true") {
             highlightLanguage = "text/javascript"
@@ -80,44 +85,47 @@ layout: documentation
             editor.setValue(data);
             editor.refresh();
 
-            editor.foldCode(CodeMirror.Pos(5, 0));
+            foldPositions.forEach(function (d) {
+                editor.foldCode(CodeMirror.Pos(d, 0));
+            });
+
 
             updatePreview();
 
-        // Live preview
-        editor.on("change", function () {
-            clearTimeout(delay);
-            delay = setTimeout(updatePreview, 1000);
-        });
+            // Live preview
+            editor.on("change", function () {
+                clearTimeout(delay);
+                delay = setTimeout(updatePreview, 1000);
+            });
 
-        function updatePreview() {
+            function updatePreview() {
 
-            if (renderPreview == "false" && js == "true") {
-                // if we don't want to see a preview we just evaluate the javascript code
-                eval(editor.getValue());
-            }
-            if (renderPreview != "false" && js != "true") {
+                if (renderPreview == "false" && js == "true") {
+                    // if we don't want to see a preview we just evaluate the javascript code
+                    eval(editor.getValue());
+                }
+                if (renderPreview != "false" && js != "true") {
 
-                var previewFrame = document.getElementById('preview-' + id);
-                if (previewFrame) {
-                    // here you can set the height, I delete it first, then I make it again
-                    //    previewFrame.height = "";
-                    //  previewFrame.height = previewFrame.contentWindow.document.body.scrollHeight + "px";
+                    var previewFrame = document.getElementById('preview-' + id);
+                    if (previewFrame) {
+                        // here you can set the height, I delete it first, then I make it again
+                        //    previewFrame.height = "";
+                        //  previewFrame.height = previewFrame.contentWindow.document.body.scrollHeight + "px";
 
 
-                    var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+                        var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
 
-                    preview.open();
-                    preview.write(editor.getValue());
-                    preview.close();
-                    var body = previewFrame.contentWindow.document.body;
-                    if (body) {
-                        previewFrame.height = body.scrollHeight + "px";
+                        preview.open();
+                        preview.write(editor.getValue());
+                        preview.close();
+                        var body = previewFrame.contentWindow.document.body;
+                        if (body) {
+                            previewFrame.height = body.scrollHeight + "px";
+                        }
                     }
                 }
-            }
 
-        }
+            }
 
         });
 //        function saveTextAsFile() {
@@ -170,7 +178,6 @@ layout: documentation
 //            input.value = choice;
 //            editor.setOption("theme", choice);
 //        }
-
 
 
     }
