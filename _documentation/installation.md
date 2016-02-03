@@ -4,13 +4,13 @@ title:  Installation
 permalink: /documentation/installation/
 ---
 
-#Installation
+# Installation
 
 To install Caleydo Web easily, you can use a container repository that includes a Vagrant VM.
 It is used for creating, combining, and managing individual plugins Caleydo Web consists of.
 
 
-##Minimal Steps for Launching the Demo Application
+## Minimal Steps for Launching the Demo Application
 
 Note: Please ignore this part if you want to set up a dev environment.
 
@@ -40,9 +40,9 @@ vagrant ssh
 
 access: http://localhost:9000 or http://192.168.50.52:9000 and have fun :)
 
-##Dev Environment
+## Dev Environment
 
-This
+Note: Setting up a dev environment requires a working installation of Git!
 
 0. *Windows Only*: Install [Git](http://git-scm.com/download/win)
 
@@ -86,7 +86,7 @@ This
  vagrant halt
  ~~~
 
-##Management Utility
+## Management Utility
 
 `manage.py` is a management utility for installling plugins, pulling repositories, and resolving external dependencies.
 
@@ -173,17 +173,17 @@ The `dev` command first compiles Caleydo Web and then watches for changes. No se
 all other commands are redirected to a configured [npm](http://npmjs.org/) instance. The configuration includes using the caleydo repository.
 If you wanna install plugins outside of the virtual machine, ensure that you installed npm.
 
-##Building Caleydo Web
+## Building Caleydo Web
 
 TODO
 
-##Running Caleydo Web
+## Running Caleydo Web
 
 Depending whether you installed the python server `caleydo_server` or the Javascript server `caleydo_server_js` call the corresponing grunt task: `server` and `server_js`.
 This will compile and watches all files and launch the server at port 9000 by default.
 
 
-##Setup PyCharm environment
+## Setup PyCharm environment
 
 Install [PyCharm](https://www.jetbrains.com/pycharm/).
 
@@ -226,7 +226,7 @@ If PyCharm complains that it can't find some python source, then select 'Downloa
 * Below, in the 'Remote URLs for local files' file tree, set the remote URL column of the `plugins` folder to `http://localhost:9000/`
 
 
-##Static Deployment
+## Static Deployment
 
 grunt task: `grunt build [--application=<application>] [--context=<context>]`
 
@@ -242,7 +242,7 @@ folder structure:
 /<plugins> ... compile css and ts and exclude them from making them public
 ```
 
-##Server Deployment
+## Server Deployment
 http://requirejs.org/docs/optimization.html could be used for creating bundles for each plugin
 
 
