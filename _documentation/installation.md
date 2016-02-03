@@ -1,5 +1,5 @@
 ---
-layout: docu_code
+layout: documentation
 title:  Installation
 permalink: /documentation/installation/
 ---
