@@ -14,15 +14,15 @@ It is used for creating, combining, and managing individual plugins Caleydo Web 
 
 Note: Please ignore this part if you want to set up a dev environment.
 
-~~~bash
+```bash
 git clone https://github.com/Caleydo/caleydo_web_container.git
 cd caleydo_web_container
 vagrant up
 #wait and get some coffee this will take a while
 vagrant ssh
-~~~
+```
 
-~~~bash
+```bash
 # 1a clone the repositories and their dependencies
 ./manage.sh clone demo_app
 ./manage.sh clone caleydo_server
@@ -36,7 +36,7 @@ vagrant ssh
 
 # 3 start caleydo web
 ./manage.sh server
-~~~
+```
 
 access: http://localhost:9000 or http://192.168.50.52:9000 and have fun :)
 
@@ -51,42 +51,42 @@ Note: Setting up a dev environment requires a working installation of Git!
 
 * Clone this repository
 
- ~~~bash
+ ```bash
  git clone https://github.com/Caleydo/caleydo_web_container.git
- ~~~
+ ```
 
 * Launch a (bash) shell
    *Windows Only*: Ensure that you start the `Git Bash` with administrative rights
 
 * switch to the new directory
 
- ~~~bash
+ ```bash
  cd caleydo_web_container
- ~~~
+ ```
 
 * let Vagrant create the environment for you
- ~~~bash
+ ```bash
  # start vagrant
  vagrant up
- ~~~
+ ```
 
 * Connect to VM:
- ~~~bash
+ ```bash
  # connect to vm
  vagrant ssh
- ~~~
+ ```
 
 * Navigate to caleydo directory
- ~~~bash
+ ```bash
  cd /vagrant
- ~~~
+ ```
  the `/vagrant` folder is shared with your cloned repository. So, all changes are reflected in your local filesystem
 
 * Exit and stop the virtual machine
- ~~~bash
+ ```bash
  exit
  vagrant halt
- ~~~
+ ```
 
 ## Management Utility
 
@@ -94,9 +94,9 @@ Note: Setting up a dev environment requires a working installation of Git!
 
 usage:
 
-~~~bash
+```bash
 ./manage.sh <command> <args>
-~~~
+```
 
 ### "clone"/"clone_ssh" command
 
@@ -156,16 +156,16 @@ the `publish` command publishes a plugin to the caleydo registry
 
 usage:
 
-~~~bash
+```bash
 ./manage.sh publish <plugin name>
-~~~
+```
 
 Before the first usage you have to enter the credentials for the caleydo registry, i.e. the nexus registry
 
-~~~bash
+```bash
 npm adduser
 # follow instructions
-~~~
+```
 
 ### compile, build, server, server_js, dev commands
 
@@ -210,17 +210,17 @@ Install [PyCharm](https://www.jetbrains.com/pycharm/).
   **If you use PyCharm 5 you can skip this step** Since PyCharm currently only supports 1.4, we need to use our own compiler from the node_modules folder.
 You can open a console within your virtual machine via 'Tools->Start SSH Session...' and select 'Vagrant'.
 
- ~~~bash
+ ```
   #within virtual machine!
   mkdir -p ./_compiler
   cp -r ./node_modules/grunt-ts/node_modules/typescript ./_compiler/
- ~~~
+ ```
 
 * Create your own application plugin, or use the `sample_app` plugin as a starting point
- ~~~bash
+ ```
   ./manage.sh install sample_app
   ./manage.sh install caleydo_server
- ~~~
+ ```
 
 You can then find `sample_app` in the `plugins` folder.
 
