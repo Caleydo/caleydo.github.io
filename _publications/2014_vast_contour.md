@@ -7,13 +7,13 @@ type: paper
 
 shortname: Contour
 image: 2014_vast_contour.png
+image_large: 2014_vast_contour_teaser.png
 
 authors:
 - partl
 - lex
-- streit
 - strobelt
-- wassermann
+- Anne Mai Wassermann
 - pfister
 - schmalstieg
 

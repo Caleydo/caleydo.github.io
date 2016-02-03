@@ -7,6 +7,7 @@ type: paper
 
 shortname: UpSet
 image: 2014_infovis_upset.png
+image_large: 2014_infovis_upset_teaser.png
 
 authors:
 - lex
