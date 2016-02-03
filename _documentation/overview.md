@@ -5,7 +5,7 @@ permalink: /documentation/overview/
 ---
 
 ## Architecture
-Caleydo Web is a platform for developing web-based visual analysis applications. It is based on a client-server architecture where both sides, client and server, consist of several [plugins](../plugin_mechanism). The client is realized in TypeScript and JavaScript using HTML5, while the server is implemented in Python and uses the [Flask](http://flask.pocoo.org/) framework.Client and server communicate via REST and Websocket interfaces. 
+Caleydo Web is a platform for developing web-based visual analysis applications. It is based on a client-server architecture where both sides, client and server, consist of several [plugins](../plugin_mechanism). The client is realized in TypeScript and JavaScript using HTML5, while the server is implemented in Python and uses the [Flask](http://flask.pocoo.org/) framework. Client and server communicate via REST and Websocket interfaces. 
 
 ## Virtual Development Environment
 Caleydo Web components are found on [GitHub](https://github.com/Caleydo). To facilitate installation of Caleydo Web, a [container repository](https://github.com/Caleydo/caleydo_web_container) is provided. This repository is used to setup a controlled environment in a virtual machine that runs Ubuntu using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/). 

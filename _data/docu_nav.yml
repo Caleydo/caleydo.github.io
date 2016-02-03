@@ -26,6 +26,9 @@
       href: "plugin_mechanism/"
     - title: "Working with promises"
       href: "TODO"
+    - title: "Data Structures"
+      href: "data_structure"
+
 
 - title: "Resources"
   href: "resources/"
