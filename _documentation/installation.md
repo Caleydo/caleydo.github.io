@@ -44,43 +44,45 @@ access: http://localhost:9000 or http://192.168.50.52:9000 and have fun :)
 
 Note: Setting up a dev environment requires a working installation of Git!
 
-0. *Windows Only*: Install [Git](http://git-scm.com/download/win)
+* *Windows Only*: Install [Git](http://git-scm.com/download/win)
 
-1. Install [Vagrant](http://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/)
+* Install [Vagrant](http://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/)
   Vagrant is used for creating a controlled environment using a virtual machine provided by VirtualBox
 
-2. Clone this repository
+* Clone this repository
+
  ~~~bash
  git clone https://github.com/Caleydo/caleydo_web_container.git
  ~~~
 
-3. Launch a (bash) shell
+* Launch a (bash) shell
    *Windows Only*: Ensure that you start the `Git Bash` with administrative rights
 
-4. switch to the new directory
+* switch to the new directory
+
  ~~~bash
  cd caleydo_web_container
  ~~~
 
-5. let Vagrant create the environment for you
+* let Vagrant create the environment for you
  ~~~bash
  # start vagrant
  vagrant up
  ~~~
 
-6. Connect to VM:
+* Connect to VM:
  ~~~bash
  # connect to vm
  vagrant ssh
  ~~~
 
-7. Navigate to caleydo directory
+* Navigate to caleydo directory
  ~~~bash
  cd /vagrant
  ~~~
  the `/vagrant` folder is shared with your cloned repository. So, all changes are reflected in your local filesystem
 
-8. Exit and stop the virtual machine
+* Exit and stop the virtual machine
  ~~~bash
  exit
  vagrant halt
@@ -91,6 +93,7 @@ Note: Setting up a dev environment requires a working installation of Git!
 `manage.py` is a management utility for installling plugins, pulling repositories, and resolving external dependencies.
 
 usage:
+
 ~~~bash
 ./manage.sh <command> <args>
 ~~~
@@ -100,6 +103,7 @@ usage:
 the `clone` command is a utility for cloning a repository and also cloning all of its dependencies (using `clone_deps`). the `clone_ssh` uses the git ssh url version instead of http.
 
 e.g.
+
 ```bash
 ./manage.sh clone caleydo_core
 ./manage.sh clone Caleydo/caleydo_vis
@@ -110,18 +114,19 @@ e.g.
 
 the `clone_deps` command resolves and clones the dependencies of the given plugin.
 
-usage
+usage:
+
 ```bash
 ./manage.sh clone_deps demo_app
 ```
 
 ### pull command
 
-the `pull` command is a utility for pulling all git repositories within the project, i.e. the container and all the plugins
+The `pull` command is a utility for pulling all git repositories within the project, i.e. the container and all the plugins
 
 ### resolve command
 
-the `resolve` command is used to resolve external dependencies of the plugins.
+The `resolve` command is used to resolve external dependencies of the plugins.
 
 **Attention**: this command can only be invoked within the virtual machine, to avoid that your system is cluttered.
 
@@ -149,13 +154,14 @@ The init command currently asks you to specify the following settings:
 
 the `publish` command publishes a plugin to the caleydo registry
 
-usage
+usage:
 
 ~~~bash
 ./manage.sh publish <plugin name>
 ~~~
 
 Before the first usage you have to enter the credentials for the caleydo registry, i.e. the nexus registry
+
 ~~~bash
 npm adduser
 # follow instructions
@@ -187,19 +193,19 @@ This will compile and watches all files and launch the server at port 9000 by de
 
 Install [PyCharm](https://www.jetbrains.com/pycharm/).
 
-1. Launch PyCharm
-2. Open project from existing sources and select `caleydo_web_container`
-3. Copy all template project settings files in the `_idea_template` folder to the hidden `.idea` folder and launch PyCharm
-4. Configure project interpreter
+* Launch PyCharm
+* Open project from existing sources and select `caleydo_web_container`
+* Copy all template project settings files in the `_idea_template` folder to the hidden `.idea` folder and launch PyCharm
+* Configure project interpreter
   * Go to 'File->Preferences...->Project:caleydo_web_container->Project Interpreter'
   * Click on the gears icon
   * Select 'Add Remote'
   * Choose the Vagrant option. PyCharm will then try to launch the virtual machine
-6. Configure run/debug configuration
+* Configure run/debug configuration
   * Create a new Python Run/Debug configuration running the file  'plugins/caleydo_server/\__main__.py'
   * Change working directory to `/vagrant`
   * Change python interpreter to 'Remote Python'
-7. Prepare the typescript compiler
+* Prepare the typescript compiler
 
   **If you use PyCharm 5 you can skip this step** Since PyCharm currently only supports 1.4, we need to use our own compiler from the node_modules folder.
 You can open a console within your virtual machine via 'Tools->Start SSH Session...' and select 'Vagrant'.
@@ -210,7 +216,7 @@ You can open a console within your virtual machine via 'Tools->Start SSH Session
   cp -r ./node_modules/grunt-ts/node_modules/typescript ./_compiler/
  ~~~
 
-8. Create your own application plugin, or use the `sample_app` plugin as a starting point
+* Create your own application plugin, or use the `sample_app` plugin as a starting point
  ~~~bash
   ./manage.sh install sample_app
   ./manage.sh install caleydo_server
@@ -218,12 +224,12 @@ You can open a console within your virtual machine via 'Tools->Start SSH Session
 
 You can then find `sample_app` in the `plugins` folder.
 
-9. Start python debug session.
+* Start python debug session.
 If PyCharm complains that it can't find some python source, then select 'Download source from remote host'
 
-10. For debugging JavaScript client-side code, right click the index.html file of your app and select 'Debug'. For making it work, you need to edit the newly created run/debug configuration.
-* Replace the __first part__ of URL `http://localhost:63342/caleydo_web_container/plugins` by `http://localhost:9000/`, which for the `sample_app` plugin is `http://localhost:9000/sample_app/index.html`
-* Below, in the 'Remote URLs for local files' file tree, set the remote URL column of the `plugins` folder to `http://localhost:9000/`
+* For debugging JavaScript client-side code, right click the index.html file of your app and select 'Debug'. For making it work, you need to edit the newly created run/debug configuration.
+  * Replace the __first part__ of URL `http://localhost:63342/caleydo_web_container/plugins` by `http://localhost:9000/`, which for the `sample_app` plugin is `http://localhost:9000/sample_app/index.html`
+  * Below, in the 'Remote URLs for local files' file tree, set the remote URL column of the `plugins` folder to `http://localhost:9000/`
 
 
 ## Static Deployment
