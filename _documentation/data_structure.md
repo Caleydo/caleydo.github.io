@@ -15,7 +15,7 @@ The way data is accessed in Caleydo Web can vary. For example, data could be loa
 
 Tabular datasets in a form of .csv files can be loaded by providing the dataset file itself and a definition of the dataset. The definition is provided in an `index.json` file and could look like this:
 
-```
+```json
 [
   {
     "id": "anscombe_II",
@@ -55,7 +55,20 @@ Another way to access datasets is to use the **list** method from `caleydo_core/
 
 ## Data Structures
 
+
+
 ### Matrix
+
+We consider a matrix as a two-dimensional data structure with rows and columns. Both rows and columns specify ids for different entities, for example, the rows are patients and the columns are genes. As a result, all values in the matrix have the same meaning, such as "gene expression".
+
+|         | Gene 1           | Gene 2  |  Gene 3 |
+| ------------- |:-------------:| :-----:|:-----:|
+| **Patient 1**     | 5.4 | 4.1 | 8.3 |
+| **Patient 2**     | 0.8      |   2.0 |0.0 |
+| **Patient 3** | 3.2   |    7.7 |10.0 |
+
+
+The definition for a matrix datafile could look like this:
 
 ```
 [
@@ -76,8 +89,19 @@ Another way to access datasets is to use the **list** method from `caleydo_core/
 ]
 
 ```
+Consider the following properties for a matrix:
+
+* `rowtype` Id type for the rows.
+* `coltype` Id type for the columns.
+* `value` Description of the values in the matrix. The `type` property specifies the data type. Valid values `real`, `int`, `categorical`, and `string`. `range` specifies minimum and maximum values for numerical data types.
 
 ### Table
+
+| Patient        | Gender        | Age  |  Value |
+| ------------- |:-------------:| :-----:|:-----:|
+| Patient 1     | male | 20 | 0.3 |
+| Patient 2     | female      |   55 |0.1 |
+| Patient 3 | male   |    32 |1.0 |
 
 ```
   {
@@ -123,6 +147,14 @@ Another way to access datasets is to use the **list** method from `caleydo_core/
 
 ### Vector
 
+| ID        | Value        |
+| ------------- |:-------------:| 
+| 1     | 0.3 |
+| 2     | 1.0      | 
+| 3 | 0.8   |
+| 4 | 0.4   |
+| 5 | 0.6   |
+
 ```
 {
   "name": "Test 10",
@@ -138,6 +170,14 @@ Another way to access datasets is to use the **list** method from `caleydo_core/
 ```
 
 ### Stratification
+
+| ID        | Group        |
+| ------------- |:-------------:| 
+| 1     | one |
+| 2     | two      | 
+| 3 | one   |
+| 4 | two   |
+| 5 | two   |
 
 ```
 {
