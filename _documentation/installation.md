@@ -44,45 +44,46 @@ access: http://localhost:9000 or http://192.168.50.52:9000 and have fun :)
 
 Note: Setting up a dev environment requires a working installation of Git!
 
-* *Windows Only*: Install [Git](http://git-scm.com/download/win)
 
-* Install [Vagrant](http://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/)
+1. *Windows Only*: Install [Git](http://git-scm.com/download/win)
+
+2. Install [Vagrant](http://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/)
   Vagrant is used for creating a controlled environment using a virtual machine provided by VirtualBox
 
-* Clone this repository
+3. Clone this repository
 
  ```bash
  git clone https://github.com/Caleydo/caleydo_web_container.git
  ```
 
-* Launch a (bash) shell
+4. Launch a (bash) shell
    *Windows Only*: Ensure that you start the `Git Bash` with administrative rights
 
-* switch to the new directory
+5. switch to the new directory
 
  ```bash
  cd caleydo_web_container
  ```
 
-* let Vagrant create the environment for you
+6. let Vagrant create the environment for you
  ```bash
  # start vagrant
  vagrant up
  ```
 
-* Connect to VM:
+7. Connect to VM:
  ```bash
  # connect to vm
  vagrant ssh
  ```
 
-* Navigate to caleydo directory
+8. Navigate to caleydo directory
  ```bash
  cd /vagrant
  ```
  the `/vagrant` folder is shared with your cloned repository. So, all changes are reflected in your local filesystem
 
-* Exit and stop the virtual machine
+ 9. Exit and stop the virtual machine
  ```bash
  exit
  vagrant halt
