@@ -14,7 +14,7 @@ It is used for creating, combining, and managing individual plugins Caleydo Web 
 
 Note: Please ignore this part if you want to set up a dev environment.
 
-{% highlight bash linenos %}
+{% highlight bash  %}
 git clone https://github.com/Caleydo/caleydo_web_container.git
 cd caleydo_web_container
 vagrant up
@@ -24,7 +24,7 @@ vagrant ssh
 
 
 
-{% highlight bash linenos %}
+{% highlight bash  %}
 #1a clone the repositories and their dependencies
 ./manage.sh clone demo_app
 ./manage.sh clone caleydo_server
@@ -55,7 +55,7 @@ Note: Setting up a dev environment requires a working installation of Git!
 3. Clone this repository
 
 
-{% highlight bash linenos %}
+{% highlight bash  %}
  git clone https://github.com/Caleydo/caleydo_web_container.git
 {% endhighlight %}
 
@@ -65,34 +65,34 @@ Note: Setting up a dev environment requires a working installation of Git!
 5. switch to the new directory
 
 
-{% highlight bash linenos %}
+{% highlight bash  %}
  cd caleydo_web_container
 {% endhighlight %}
 
 6. let Vagrant create the environment for you
 
-{% highlight bash linenos %}
+{% highlight bash  %}
  # start vagrant
  vagrant up
 {% endhighlight %}
 
 7. Connect to VM:
 
-{% highlight bash linenos %}
+{% highlight bash  %}
  # connect to vm
  vagrant ssh
 {% endhighlight %}
 
 8. Navigate to caleydo directory
 
-{% highlight bash linenos %}
+{% highlight bash  %}
  cd /vagrant
 {% endhighlight %}
  the `/vagrant` folder is shared with your cloned repository. So, all changes are reflected in your local filesystem
 
  9. Exit and stop the virtual machine
 
-{% highlight bash linenos %}
+{% highlight bash  %}
  exit
  vagrant halt
 {% endhighlight %}
@@ -104,7 +104,7 @@ Note: Setting up a dev environment requires a working installation of Git!
 usage:
 
 
-{% highlight bash linenos %}
+{% highlight bash  %}
 ./manage.sh <command> <args>
 {% endhighlight %}
 
@@ -115,7 +115,7 @@ the `clone` command is a utility for cloning a repository and also cloning all o
 e.g.
 
 
-{% highlight bash linenos %}
+{% highlight bash  %}
 ./manage.sh clone caleydo_core
 ./manage.sh clone Caleydo/caleydo_vis
 ./manage.sh clone https://github.com/Caleydo/demo.app.git
@@ -128,7 +128,7 @@ the `clone_deps` command resolves and clones the dependencies of the given plugi
 usage:
 
 
-{% highlight bash linenos %}
+{% highlight bash  %}
 ./manage.sh clone_deps demo_app
 {% endhighlight %}
 
@@ -169,14 +169,14 @@ the `publish` command publishes a plugin to the caleydo registry
 usage:
 
 
-{% highlight bash linenos %}
+{% highlight bash  %}
 ./manage.sh publish <plugin name>
 {% endhighlight %}
 
 Before the first usage you have to enter the credentials for the caleydo registry, i.e. the nexus registry
 
 
-{% highlight bash linenos %}
+{% highlight bash  %}
 npm adduser
 # follow instructions
 {% endhighlight %}
@@ -225,7 +225,7 @@ Install [PyCharm](https://www.jetbrains.com/pycharm/).
 You can open a console within your virtual machine via 'Tools->Start SSH Session...' and select 'Vagrant'.
 
 
-{% highlight bash linenos %}
+{% highlight bash  %}
   #within virtual machine!
   mkdir -p ./_compiler
   cp -r ./node_modules/grunt-ts/node_modules/typescript ./_compiler/
@@ -233,7 +233,7 @@ You can open a console within your virtual machine via 'Tools->Start SSH Session
 
 * Create your own application plugin, or use the `sample_app` plugin as a starting point
 
-{% highlight bash linenos %}
+{% highlight bash  %}
   ./manage.sh install sample_app
   ./manage.sh install caleydo_server
 {% endhighlight %}
@@ -257,7 +257,7 @@ grunt task: `grunt build [--application=<application>] [--context=<context>]`
 
 folder structure:
 
-{% highlight bash linenos %}
+{% highlight bash  %}
 /config-gen.js ... generated
 /caleydo_web.js ... generated
 /index.html ... generated

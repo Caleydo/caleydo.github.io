@@ -11,16 +11,13 @@ facebook_page: Caleydo/110550618994500
 license_url: https://raw.githubusercontent.com/Caleydo/caleydo/develop/LICENSE
 safe: false
 lsi: false
-plugins: ./_plugins
 google_analytics: "'UA-45998043-1'"
 use_analytics: true
 
 paper_content_url: http://data.caleydo.org/papers/
 
 # Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
+
 permalink: pretty
 sass:
   sass_dir: _sass
@@ -28,7 +25,7 @@ sass:
 exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock", "rvm.env"]
 
 # code highlighter
-highlighter: pygments
+#highlighter: rouge
 
 # Collections
 collections:

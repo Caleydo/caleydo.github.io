@@ -15,7 +15,8 @@ The way data is accessed in Caleydo Web can vary. For example, data could be loa
 
 Tabular datasets in a form of .csv files can be loaded by providing the dataset file itself and a definition of the dataset. The definition is provided in an `index.json` file and could look like this:
 
-```json
+{% highlight json %}
+
 [
   {
     "id": "anscombe_II",
@@ -32,7 +33,8 @@ Tabular datasets in a form of .csv files can be loaded by providing the dataset 
     }
   }
 ]
-```
+
+{% endhighlight %}
 
 The following properties are common to all supported dataset types:
 
@@ -70,6 +72,8 @@ We consider a matrix as a two-dimensional data structure with rows and columns. 
 
 The definition for a matrix datafile could look like this:
 
+
+
 ```
 [
   {
@@ -89,6 +93,8 @@ The definition for a matrix datafile could look like this:
 ]
 
 ```
+
+
 Consider the following properties for a matrix:
 
 * `rowtype` Id type for the rows.
