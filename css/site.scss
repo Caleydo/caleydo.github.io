@@ -5,6 +5,7 @@
 @import 'neat/neat';
 
 @import 'base/cards';
+@import 'code';
 
 $small-display-columns: 4;
 $medium-display-columns: 12;
@@ -636,6 +637,7 @@ ul.post-list {
   }
 
 }
+
 
 
 .docs-content {

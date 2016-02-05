@@ -27,6 +27,9 @@ sass:
 # exclude from build
 exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock", "rvm.env"]
 
+# code highlighter
+highlighter: pygments
+
 # Collections
 collections:
   projects:

@@ -14,16 +14,18 @@ It is used for creating, combining, and managing individual plugins Caleydo Web 
 
 Note: Please ignore this part if you want to set up a dev environment.
 
-```bash
+{% highlight bash linenos %}
 git clone https://github.com/Caleydo/caleydo_web_container.git
 cd caleydo_web_container
 vagrant up
 #wait and get some coffee this will take a while
 vagrant ssh
-```
+{% endhighlight %}
 
-```bash
-# 1a clone the repositories and their dependencies
+
+
+{% highlight bash linenos %}
+#1a clone the repositories and their dependencies
 ./manage.sh clone demo_app
 ./manage.sh clone caleydo_server
 
@@ -36,7 +38,7 @@ vagrant ssh
 
 # 3 start caleydo web
 ./manage.sh server
-```
+{% endhighlight %}
 
 access: http://localhost:9000 or http://192.168.50.52:9000 and have fun :)
 
@@ -52,42 +54,48 @@ Note: Setting up a dev environment requires a working installation of Git!
 
 3. Clone this repository
 
- ```bash
+
+{% highlight bash linenos %}
  git clone https://github.com/Caleydo/caleydo_web_container.git
- ```
+{% endhighlight %}
 
 4. Launch a (bash) shell
    *Windows Only*: Ensure that you start the `Git Bash` with administrative rights
 
 5. switch to the new directory
 
- ```bash
+
+{% highlight bash linenos %}
  cd caleydo_web_container
- ```
+{% endhighlight %}
 
 6. let Vagrant create the environment for you
- ```bash
+
+{% highlight bash linenos %}
  # start vagrant
  vagrant up
- ```
+{% endhighlight %}
 
 7. Connect to VM:
- ```bash
+
+{% highlight bash linenos %}
  # connect to vm
  vagrant ssh
- ```
+{% endhighlight %}
 
 8. Navigate to caleydo directory
- ```bash
+
+{% highlight bash linenos %}
  cd /vagrant
- ```
+{% endhighlight %}
  the `/vagrant` folder is shared with your cloned repository. So, all changes are reflected in your local filesystem
 
  9. Exit and stop the virtual machine
- ```bash
+
+{% highlight bash linenos %}
  exit
  vagrant halt
- ```
+{% endhighlight %}
 
 ## Management Utility
 
@@ -95,9 +103,10 @@ Note: Setting up a dev environment requires a working installation of Git!
 
 usage:
 
-```bash
+
+{% highlight bash linenos %}
 ./manage.sh <command> <args>
-```
+{% endhighlight %}
 
 ### "clone"/"clone_ssh" command
 
@@ -105,11 +114,12 @@ the `clone` command is a utility for cloning a repository and also cloning all o
 
 e.g.
 
-```bash
+
+{% highlight bash linenos %}
 ./manage.sh clone caleydo_core
 ./manage.sh clone Caleydo/caleydo_vis
 ./manage.sh clone https://github.com/Caleydo/demo.app.git
-```
+{% endhighlight %}
 
 ### clone_deps/clone_ssh_deps command
 
@@ -117,9 +127,10 @@ the `clone_deps` command resolves and clones the dependencies of the given plugi
 
 usage:
 
-```bash
+
+{% highlight bash linenos %}
 ./manage.sh clone_deps demo_app
-```
+{% endhighlight %}
 
 ### pull command
 
@@ -157,16 +168,18 @@ the `publish` command publishes a plugin to the caleydo registry
 
 usage:
 
-```bash
+
+{% highlight bash linenos %}
 ./manage.sh publish <plugin name>
-```
+{% endhighlight %}
 
 Before the first usage you have to enter the credentials for the caleydo registry, i.e. the nexus registry
 
-```bash
+
+{% highlight bash linenos %}
 npm adduser
 # follow instructions
-```
+{% endhighlight %}
 
 ### compile, build, server, server_js, dev commands
 
@@ -211,17 +224,19 @@ Install [PyCharm](https://www.jetbrains.com/pycharm/).
   **If you use PyCharm 5 you can skip this step** Since PyCharm currently only supports 1.4, we need to use our own compiler from the node_modules folder.
 You can open a console within your virtual machine via 'Tools->Start SSH Session...' and select 'Vagrant'.
 
- ```
+
+{% highlight bash linenos %}
   #within virtual machine!
   mkdir -p ./_compiler
   cp -r ./node_modules/grunt-ts/node_modules/typescript ./_compiler/
- ```
+{% endhighlight %}
 
 * Create your own application plugin, or use the `sample_app` plugin as a starting point
- ```
+
+{% highlight bash linenos %}
   ./manage.sh install sample_app
   ./manage.sh install caleydo_server
- ```
+{% endhighlight %}
 
 You can then find `sample_app` in the `plugins` folder.
 
@@ -241,13 +256,14 @@ grunt task: `grunt build [--application=<application>] [--context=<context>]`
 * context: since absolute links are used, this may specify a context path, e.g. `/test` where the website is located
 
 folder structure:
-```
+
+{% highlight bash linenos %}
 /config-gen.js ... generated
 /caleydo_web.js ... generated
 /index.html ... generated
 /bower_components/<libs>
 /<plugins> ... compile css and ts and exclude them from making them public
-```
+{% endhighlight %}
 
 ## Server Deployment
 http://requirejs.org/docs/optimization.html could be used for creating bundles for each plugin
