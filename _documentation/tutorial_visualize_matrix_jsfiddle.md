@@ -1,7 +1,7 @@
 ---
 layout: docs_code
 title:  Visualize a matrix (JSFiddle)
-permalink: /documentation/tutorial_visualize_matrix/
+permalink: /documentation/tutorial_visualize_matrix_jsfiddle/
 nomenu: true
 description: Learn how to visualize a matrix from a sample dataset.
 ---
