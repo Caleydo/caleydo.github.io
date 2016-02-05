@@ -109,7 +109,9 @@ Consider the following properties for a matrix:
 | Patient 2     | female      |   55 |0.1 |
 | Patient 3 | male   |    32 |1.0 |
 
-```
+
+
+```json
   {
     "name": "Test Heterogeneous 10x4",
     "path": "test_h10x4.csv",
@@ -150,6 +152,7 @@ Consider the following properties for a matrix:
   ]
 }
 ```
+
 
 ### Vector
 
