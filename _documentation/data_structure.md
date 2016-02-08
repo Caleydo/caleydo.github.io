@@ -9,7 +9,7 @@ Caleydo Web supports simple loading and handling of various data. It provides da
 
 ## Loading Datasets
 
-The way data is accessed in Caleydo Web can vary. For example, data could be loaded from a .csv file or retrieved from an SQL database. In the end, it up to different [plugins](../plugin_mechanism) how the data is accessed.
+The way data is accessed in Caleydo Web can vary. For example, data could be loaded from a .csv file or retrieved from an SQL database. In the end, it up to different [plugins](../plugin_mechanism) and concrete implementations of data structure interfaces how the data is accessed.
 
 ### Dataset Parsing
 
@@ -57,7 +57,7 @@ Another way to access datasets is to use the **list** method from `caleydo_core/
 
 ## Data Structures
 
-
+All data structures are part of the [core plugin](https://github.com/Caleydo/caleydo_core). Currently, the following data structures are supported: *Matrix*, *Table*, *Vector*, *Stratification*. 
 
 ### Matrix
 
@@ -67,54 +67,94 @@ We consider a matrix as a two-dimensional data structure with rows and columns. 
 | ------------- |:-------------:| :-----:|:-----:|
 | **Patient 1**     | 5.4 | 4.1 | 8.3 |
 | **Patient 2**     | 0.8      |   2.0 |0.0 |
-| **Patient 3** | 3.2   |    7.7 |10.0 |
+| **Patient 3** | 3.2   |    7.7 |10.0 |  
 
+#### Data File Definition
 
 The definition for a matrix datafile could look like this:
 
-
-
-```
+{% highlight json %}
 [
   {
-    "name": "Anscombe II",
-    "id": "anscombe_II",
-    "path": "anscombe_II.csv",
+    "name": "Expression Data",
+    "id": "expression_data",
+    "path": "expression.csv",
     "type": "matrix",
-    "size": [12, 2],
-    "rowtype": "row",
-    "coltype": "dimension",
+    "size": [3, 3],
+    "rowtype": "patient",
+    "coltype": "gene",
     "separator": ";",
     "value": {
       "type": "real",
-      "range": [0, 12]
+      "range": [0, 10]
     }
   }
 ]
 
-```
+{% endhighlight %}
 
-
-Consider the following properties for a matrix:
+Consider the following properties for a matrix definition:
 
 * `rowtype` Id type for the rows.
 * `coltype` Id type for the columns.
 * `value` Description of the values in the matrix. The `type` property specifies the data type. Valid values `real`, `int`, `categorical`, and `string`. `range` specifies minimum and maximum values for numerical data types.
 
+#### Usage
+
+Caleydo Web matrices implement the [IMatrix](Link to api doc) interface, which can be extended to provide custom matrix implementations. Important attributes include:
+
+* `rowtype` [IDType](todo) for the matrix rows.
+* `coltype` [IDType](todo) for the matrix columns.
+* `valuetype` Description of the values in the matrix, i.e., type, range etc. as specified in the definition file.
+* `t` Transposed version of the matrix.
+
+Methods to access the data make use of [range](todo) parameters to specify a subset on the data. If no parameter is provided, the maximum range, i.e., all data is considered. Most methods also return [promises](todo) instead of directly returning resulting values. Here are some important methods of a matrix:
+
+* `data(range)` Returns a promise to the data of the matrix. If a 1D range is provided instead of a 2D range, only the rows are subsetted and all columns are returned.
+* `rows(range)` Returns a promise to the row names of the matrix.
+* `rowIds(range)` Returns a promise to the row ids specified as range.
+* `cols(range)` Returns a promise to the column names of the matrix.
+* `colIds(range)` Returns a promise to the column ids specified as range.
+* `view(range)` Returns a view on the matrix, which can be used like a matrix object, but only consists of the subset specified by the range parameter.
+
+Example: 
+
+{% highlight javascript %}
+
+parser.parseRemoteMatrix('./data/anscombe_2.csv').then(function (matrix) {
+
+  var v = matrix.view(ranges.parse("0:5", "0:-1"));
+
+  Promise.all([v.data(), v.rows()]).then(function (promise) {
+
+    console.log("Matrix data: " + promise[0].toString());
+    console.log("Row names: " + promise[1].toString());
+  }
+}
+
+{% endhighlight %}
+
+
+
 ### Table
 
+Like the matrix, a table is a two dimensional data structure with rows and columns. In contrast to the matrix, only the rows specify entities using ids, whereas the columns represent different attributes of an entity. For example, if rows represent patients, the columns could represent attributes like gender or age.
+
 | Patient        | Gender        | Age  |  Value |
-| ------------- |:-------------:| :-----:|:-----:|
+| :-------------: |:-------------:| :-----:|:-----:|
 | Patient 1     | male | 20 | 0.3 |
 | Patient 2     | female      |   55 |0.1 |
 | Patient 3 | male   |    32 |1.0 |
 
+#### Data File Definition
 
+This is how the definition of a table file could look like:
 
-```json
+{% highlight json %}
   {
     "name": "Test Heterogeneous 10x4",
     "path": "test_h10x4.csv",
+    "id": "test_h10x4"
     "size": [10, 4],
     "type": "table",
     "idtype": "patient",
@@ -151,23 +191,55 @@ Consider the following properties for a matrix:
     }
   ]
 }
-```
+{% endhighlight %}
 
+
+Have a look at the following properties of a table definition:
+
+* `idtype` Specifies the id type of the rows.
+* `columns` As all columns refer to different attributes, their meaning has to be specified. The `name` property refers to the column name. The `value` property is to be interpreted the same way as for matrices, but here one it only valid for the corresponding column instead of the whole dataset.
+
+#### Usage
+
+Tables in Caleydo Web are implementations of the [ITable](link to api) interface. An attribute worth mentioning is the `rowtype`, which specifies the id type of the rows. Many methods of the table such as `data(range)`´, `rows(range)`, or `view(range)` work similar to the matrix methods, using ranges as parameters and promises for return values. The main difference is how columns are handled: `cols(range)` returns a promise to an array of [vector](#vector) objects, one vector for each column. Here is a usage example:
+
+{% highlight javascript %}
+
+data.get('test_h10x4').then(function (table) {
+
+  Promise.all([table.data(), table.cols()).then(function (promise) {
+
+    console.log("All table data: " + promise[0].toString());
+    var firstColumnVector = promise[1][0];
+    
+    firstColumnVector.data().then(function(vectorData){
+      console.log("Data of first Column: " + promise[0].toString());
+    });
+});
+
+{% endhighlight %}
 
 ### Vector
 
-| ID        | Value        |
-| ------------- |:-------------:| 
-| 1     | 0.3 |
-| 2     | 1.0      | 
-| 3 | 0.8   |
-| 4 | 0.4   |
-| 5 | 0.6   |
+A vector is a data structure that associates an id with a single attribute value. Thus, a vector can be thought of one column of a [table](#table), or as a table with a single attribute column.
 
-```
+
+| ID        | Value        |
+| :-------------: |:-------------:| 
+| Patient 1     | 0.3 |
+| Patient 2     | 1.0      | 
+| Patient 3 | 0.8   |
+| Patient 4 | 0.4   |
+| Patient 5 | 0.6   |
+
+#### Data File Definition
+
+This is how the definition of a vector looks like when it is loaded from a file:
+
+{% highlight json %}
 {
-  "name": "Test 10",
-  "path": "test_10.csv",
+  "name": "Patient Vector",
+  "path": "vector.csv",
   "size": 10,
   "type": "vector",
   "idtype": "patient",
@@ -176,44 +248,46 @@ Consider the following properties for a matrix:
     "range": [0, 1]
   }
 }
-```
+{% endhighlight %}
+
+Here, the `idtype` refers to the id type of the columns, whereas the `value` describes the values of the vector, just like in the matrix definition or the definition of table columns.
+
+#### Usage
+
+Vectors implement the [IVector](link to api) interface.
 
 ### Stratification
 
 | ID        | Group        |
-| ------------- |:-------------:| 
-| 1     | one |
-| 2     | two      | 
-| 3 | one   |
-| 4 | two   |
-| 5 | two   |
+| :-------------: |:-------------:| 
+| Patient 1     | one |
+| Patient 2     | two      | 
+| Patient 3 | one   |
+| Patient 4 | two   |
+| Patient 5 | two   |
 
-```
+{% highlight json %}
 {
   "name": "D2 Column KMeans 3",
   "origin": "demo_app/D2",
   "path": "d2t.3.csv",
   "separator": "\t",
-  "size": [
-    20
-  ],
+  "type": "stratification",
+  "idtype": "patient",
+  "size": 5,
+
   "ngroups": 3,
   "groups": [
     {
-      "name": "1",
-      "size": 4
+      "name": "one",
+      "size": 2
     },
     {
-      "name": "2",
-      "size": 11
-    },
-    {
-      "name": "3",
-      "size": 5
+      "name": "two",
+      "size": 3
     }
   ],
-  "type": "stratification",
-  "idtype": "b",
+  
   "ws": "random"
 }
-```
+{% endhighlight %}
