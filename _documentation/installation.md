@@ -267,7 +267,7 @@ folder structure:
 {% endhighlight %}
 
 ## Server Deployment
-http://requirejs.org/docs/optimization.html could be used for creating bundles for each plugin
+[require.js](http://requirejs.org/docs/optimization.html) could be used for creating bundles for each plugin
 
 
 
