@@ -118,7 +118,7 @@ e.g.
 {% highlight bash  %}
 ./manage.sh clone caleydo_core
 ./manage.sh clone Caleydo/caleydo_vis
-./manage.sh clone https://github.com/Caleydo/demo.app.git
+./manage.sh clone https://github.com/Caleydo/demo_app.git
 {% endhighlight %}
 
 ### clone_deps/clone_ssh_deps command
