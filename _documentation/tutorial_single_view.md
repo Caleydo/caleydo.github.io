@@ -10,7 +10,7 @@ state prerequisites at the beginning (MARC)
 
 # How to create a new Caleydo app 
 
-We use the [`./manage.sh init` command](documentation/installation/#init-command) to add a new plugin.
+We use the [`./manage.sh init` command](installation#init-command) to add a new plugin.
 
 * `Enter the plugin name:` **my_first_app**
 * `name: (sample_web)` **my_first_app**
