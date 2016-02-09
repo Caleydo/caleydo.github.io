@@ -108,7 +108,7 @@ usage:
 ./manage.sh <command> <args>
 {% endhighlight %}
 
-### "clone"/"clone_ssh" command
+### `clone` / `clone_ssh` command
 
 the `clone` command is a utility for cloning a repository and also cloning all of its dependencies (using `clone_deps`). the `clone_ssh` uses the git ssh url version instead of http.
 
@@ -121,9 +121,9 @@ e.g.
 ./manage.sh clone https://github.com/Caleydo/demo_app.git
 {% endhighlight %}
 
-### clone_deps/clone_ssh_deps command
+### `clone_deps` / `clone_ssh_deps` command
 
-the `clone_deps` command resolves and clones the dependencies of the given plugin.
+The `clone_deps` command resolves and clones the dependencies of the given plugin.
 
 usage:
 
@@ -132,11 +132,11 @@ usage:
 ./manage.sh clone_deps demo_app
 {% endhighlight %}
 
-### pull command
+### `pull` command
 
 The `pull` command is a utility for pulling all git repositories within the project, i.e. the container and all the plugins
 
-### resolve command
+### `resolve` command
 
 The `resolve` command is used to resolve external dependencies of the plugins.
 
@@ -150,7 +150,7 @@ Currently, following external dependency types are supported:
  * *node*: installs node dependencies via [npm](http://npmjs.org/)
  * *web*: installs web dependencies via [Bower](http://bower.io)
 
-### init command
+### `init` command
 
 Using `./manage.sh init`, one can simply add a new plugin as a starting point for development to the web container.
 The command clones a sample app into a new directoy within the /plugin-folder
@@ -162,9 +162,9 @@ The init command currently asks you to specify the following settings:
 "keywords" - as specified in package.json
 "author" - as specified in package.json
 
-### publish command
+### `publish` command
 
-the `publish` command publishes a plugin to the caleydo registry
+The `publish` command publishes a plugin to the caleydo registry
 
 usage:
 
@@ -181,14 +181,14 @@ npm adduser
 # follow instructions
 {% endhighlight %}
 
-### compile, build, server, server_js, dev commands
+### `compile`, `build`, `server`, `server_js`, `dev` commands
 
 builds or build and runs Caleydo Web. [Grunt](http://gruntjs.com) is used as build tool and this command redirects to it.
 
 The `dev` command first compiles Caleydo Web and then watches for changes. No server will be started
 
 
-### install, list, explore, search, ... commands
+### `install`, `list`, `explore`, `search`, ... commands
 
 all other commands are redirected to a configured [npm](http://npmjs.org/) instance. The configuration includes using the caleydo repository.
 If you wanna install plugins outside of the virtual machine, ensure that you installed npm.
