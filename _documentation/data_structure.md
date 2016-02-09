@@ -130,7 +130,7 @@ parser.parseRemoteMatrix('./data/anscombe_2.csv').then(function (matrix) {
     console.log("Matrix data: " + promise[0].toString());
     console.log("Row names: " + promise[1].toString());
   }
-}
+});
 
 {% endhighlight %}
 
