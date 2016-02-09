@@ -19,7 +19,7 @@ We use the [`./manage.sh init` command](/website/documentation/installation/#ini
 * `author` *your username*
 * `license: (SEE LICENSE IN LICENSE)` **MIT** *(or any other [name of the license](http://choosealicense.com/))*
  
-After completing the wizzard you should have the new *./plugins/my_first_app* directory.
+After completing the wizard you should have the new *./plugins/my_first_app* directory.
 
 
 
