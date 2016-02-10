@@ -101,7 +101,7 @@ Consider the following properties for a matrix definition:
 
 #### Usage
 
-Caleydo Web matrices implement the [IMatrix](Link to api doc) interface, which can be extended to provide custom matrix implementations. Important attributes include:
+Caleydo Web matrices implement the [IMatrix](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_matrix_.imatrix.html) interface, which can be extended to provide custom matrix implementations. Important attributes include:
 
 * `rowtype` [IDType](todo) for the matrix rows.
 * `coltype` [IDType](todo) for the matrix columns.
@@ -201,7 +201,7 @@ Have a look at the following properties of a table definition:
 
 #### Usage
 
-Tables in Caleydo Web are implementations of the [ITable](link to api) interface. An attribute worth mentioning is the `rowtype`, which specifies the id type of the rows. Many methods of the table such as `data(range)`´, `rows(range)`, or `view(range)` work similar to the matrix methods, using ranges as parameters and promises for return values. The main difference is how columns are handled: `cols(range)` returns a promise to an array of [vector](#vector) objects, one vector for each column. Here is a usage example:
+Tables in Caleydo Web are implementations of the [ITable](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_table_.itable.html) interface. An attribute worth mentioning is the `rowtype`, which specifies the id type of the rows. Many methods of the table such as `data(range)`´, `rows(range)`, or `view(range)` work similar to the matrix methods, using ranges as parameters and promises for return values. The main difference is how columns are handled: `cols(range)` returns a promise to an array of [vector](#vector) objects, one vector for each column. Here is a usage example:
 
 {% highlight javascript %}
 
@@ -254,7 +254,7 @@ Here, the `idtype` refers to the id type of the columns, whereas the `value` des
 
 #### Usage
 
-Vectors implement the [IVector](link to api) interface.
+Vectors implement the [IVector](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_vector_.ivector.html) interface.
 
 ### Stratification
 
@@ -291,3 +291,7 @@ Vectors implement the [IVector](link to api) interface.
   "ws": "random"
 }
 {% endhighlight %}
+
+#### Usage
+
+Stratifications implement the [IStratification](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_stratification_.istratification.html) interface.
