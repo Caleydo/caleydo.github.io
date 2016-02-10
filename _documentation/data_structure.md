@@ -130,7 +130,7 @@ parser.parseRemoteMatrix('./data/anscombe_2.csv').then(function (matrix) {
     console.log("Matrix data: " + promise[0].toString());
     console.log("Row names: " + promise[1].toString());
   }
-}
+});
 
 {% endhighlight %}
 
@@ -295,3 +295,4 @@ Vectors implement the [IVector](http://caleydo.gehlenborg.com/builds/lib/docs/in
 #### Usage
 
 Stratifications implement the [IStratification](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_stratification_.istratification.html) interface.
+
