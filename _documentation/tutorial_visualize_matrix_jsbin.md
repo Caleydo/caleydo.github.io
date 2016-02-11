@@ -11,8 +11,8 @@ This example demonstrates to visualize a matrix based on a sample data set. This
 <a class="jsbin-embed" href="http://jsbin.com/dutufoteno/embed?html">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 ### ... add the visualization code ...
-<a class="jsbin-embed" href="http://jsbin.com/dutufoteno/embed?html,js">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+<a class="jsbin-embed" href="http://jsbin.com/dutufoteno/embed?js">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
 ### ... and we are done!
-<a class="jsbin-embed" href="http://jsbin.com/dutufoteno/embed?html,js,output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
+<a class="jsbin-embed" href="http://jsbin.com/dutufoteno/embed?output">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.9"></script>
 
