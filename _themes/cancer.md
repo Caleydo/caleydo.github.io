@@ -1,13 +1,10 @@
 ---
-layout: project
-title: Genomic Stratification of Diseases
-name: StratomeX
+layout: theme
+title: Cancer Analysis and Visualization
 key: stratomex
-permalink: /projects/stratomex/
-status: core
+permalink: /cancer/
 order: 1
-standfirst: Integrative visualization of stratified heterogeneous data for disease subtype analysis.
-help: http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md
+standfirst: 
 
 teaser: 
     lowres: 2012_eurovis_stratomex.png
@@ -22,32 +19,17 @@ publications:
  
 videos: 
  - 2014_nm_stratomex_video
-
-team:
- - streit 
- - lex
- - gehlenborg
- - partl
- - gratzl
- - pfister
- - schmalstieg
- - park
-
-collaborators:
-- schulz
-- turkay
-
-github:
- - 
-  url: https://github.com/Caleydo/caleydo
-  name: Caleydo Core
-  
+ 
 web-url: http://demo.caleydo.org/stratomex.js/
 web-name: StratomeX Web Version
 
 ---
 
 <img align="right" src="{{site.baseurl}}/assets/images/projects/stratomex_basic.png" alt="Basic StratomeX" width="300px">
+
+Caleydo provides a suite of tools for the analysis of Cancer data. We maintain and develop tools for analyzing cancer subtypes (StratomeX), biological networks in the context of cancer data (Entourage, Pathfinder), and alternative splicing based on mRNA-seq data (Vials). 
+
+## StratomeX 
 
 Identification and characterization of subtypes in diseases such as cancer can lead to refined therapeutic targeting, which is an important step towards improved patient outcomes. Integrated analysis of different molecular data types can be used to discover subtypes and suggest molecular differences relevant for therapeutic approaches.
 
@@ -64,4 +46,10 @@ StratomeX also provides an **advanced query and data selection interface**. The 
 
 ![StartomeX explained]({{site.baseurl}}/assets/images/projects/stratomex_query.png) 
 
-For more information about StratomeX visit the [Help Pages](http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md) or watch the instructional videos below. 
+For more information about StratomeX visit the [Help Pages](http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md) or watch the instructional videos below.
+ 
+## Biological Networks 
+
+## Visualizing Alternative Splicing
+
+

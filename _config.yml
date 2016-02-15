@@ -32,6 +32,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  themes:
+    output: true
+    permalink: /:path/
   persons:
     output: false
     permalink: /persons/:path/
