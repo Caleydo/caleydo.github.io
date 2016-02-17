@@ -1,9 +1,10 @@
 ---
-layout: project
+layout: tool
 title: Genomic Stratification of Diseases
 name: StratomeX
 key: stratomex
-permalink: /projects/stratomex/
+permalink: /tools/stratomex/
+redirect_from: /projects/stratomex.html
 status: core
 order: 1
 standfirst: Integrative visualization of stratified heterogeneous data for disease subtype analysis.

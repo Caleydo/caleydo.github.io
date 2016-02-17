@@ -150,15 +150,6 @@ layout: default
     </p>
 
 
-      {% for key in page.publications %}
-      {% for pub in site.publications %}
-      {% if key == pub.key %}
-      {% include paper.html pub=pub %}
-
-      {% endif %}
-      {% endfor %}
-      {% endfor %}
-
     {% endif %}
 
   </article>

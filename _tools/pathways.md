@@ -1,9 +1,10 @@
 ---
-layout: project
+layout: tool
 title: Experimental Data in Pathways
 name: Entourage & enRoute
 key: pathways
-permalink: /projects/pathways/
+permalink: /tools/pathways/
+redirect_from: /projects/pathways.html
 status: core
 order: 2
 standfirst: Visualizing large & heterogeneous experimental data with <b>enRoute</b> and pathway interdependencies with <b>Entourage</b>.

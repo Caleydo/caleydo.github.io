@@ -1,9 +1,10 @@
 ---
-layout: project
+layout: tool
 title: Exploring Subsets of Tabular Datasets
 name: Domino
 key: domino
-permalink: /projects/domino/
+permalink: /tools/domino/
+redirect_from: /projects/domino.html
 status: prototype
 badge: New
 standfirst: "Extracting, Comparing, and Manipulating Subsets across Multiple Tabular Datasets"

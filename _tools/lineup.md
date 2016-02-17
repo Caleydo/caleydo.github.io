@@ -1,9 +1,10 @@
 ---
-layout: project
+layout: tool
 title: Multi-Attribute Rankings
 name: LineUp
 key: lineup
-permalink: /projects/lineup/
+permalink: /tools/lineup/
+redirect_from: /projects/lineup.html
 status: core
 order: 3
 standfirst: LineUp is an interactive technique designed to create, visualize and explore rankings of items based on a set of heterogeneous attributes.

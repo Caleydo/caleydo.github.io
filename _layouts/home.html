@@ -112,9 +112,9 @@
             {% endfor %}
         </ul>
 
-        <h1>Projects</h1>
+        <h1>Tools</h1>
         <ul class="project-icon-list">
-            {% assign sorted_projects = (site.projects | sort: 'order' %}
+            {% assign sorted_projects = (site.tools | sort: 'order' %}
             {%for project in sorted_projects %}
             {% if project.status == 'core' %}
             <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>

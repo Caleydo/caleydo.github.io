@@ -4,6 +4,7 @@ title: "Furby: Fuzzy Force-Directed Bicluster Visualization"
 key: 2014_bmc_furby
 permalink: /publications/2014_bmc_furby/
 type: paper
+redirect_from: /projects/furby.html
 
 
 shortname: furby
