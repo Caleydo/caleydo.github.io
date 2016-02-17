@@ -1,0 +1,153 @@
+
+
+
+<div class="publication">
+
+    <article class="publication-content-main">
+        <h2 id="{{pub.key}}">{{ pub.title }}</h2>
+        {{ pub.abstract }}
+
+        <h2>Citation</h2>
+        <div class="citation">
+            <p>
+
+                {% for author in pub.authors %}
+
+                {% assign known = false %}
+                {% for person in site.persons %}
+                {% if author == person.key %}
+                <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != pub.authors.last%}, {% endif %}
+
+                {% assign known = true %}
+                {% endif %}
+                {% endfor %}
+
+                {% if known == false %}
+                {{ author }}{% if author != pub.authors.last%}, {% endif %}
+                {% endif %}
+
+                {% endfor %}
+
+
+                <br/>
+                <b>{{pub.title}}</b><br/>
+                {{ pub.journal }}, {% if pub.doi %} <a href="http://dx.doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>, {%endif%}
+                {{ pub.year }}.
+            </p>
+
+            {%if pub.award %}
+            <p class="award" style="font-style:italic;">
+                <i class="fa fa-trophy"></i>&nbsp;{{pub.award}}
+            </p>
+            {% endif %}
+            {%if pub.note %}
+            <p class="note" style="font-style:italic;">
+                <b>Note:</b> {{pub.note}}
+            </p>
+            {% endif %}
+
+            {%if pub.bibtex %}
+            <p>
+                <i class="fa fa-download"></i>&nbsp; <a href="{{site.paper_content_url}}{{ pub.bibtex }}">BibTeX</a>
+            </p>
+            {% endif %}
+            <br />
+            <br />
+
+            <br />
+                     <br />
+        </div>
+
+        <!-- main markdown content -->
+        {{ pub.content }}
+    </article>
+
+    <article class="publication-content-aside">
+        {% if pub.project %}
+        <h1>Software</h1>
+        <ul class="project-icon-list">
+            {% for project in site.projects %}
+            {% if project.key == pub.project) %}
+            <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if pub.external-project %}
+        <h1>Project Website</h1>
+        <ul class="project-icon-list">
+            <li><a href="{{pub.external-project}}">{{ pub.shortname }} Website</a></li>
+        </ul>
+        {% endif %}
+
+
+        <h1>Resources</h1>
+        <ul>
+            {% if pub.doi %}
+            <li>
+                <i class="fa fa-external-link"></i> &nbsp;<a href="http://dx.doi.org/{{ pub.doi }}">Publisher</a>
+            </li>
+            {% elsif pub.publisher %}
+            <li>
+                <i class="fa fa-external-link"></i> &nbsp;<a href="{{pub.publisher}}">Publisher</a>
+            </li>
+            {% endif %}
+
+            {% if pub.pdf %}
+            <li>
+                <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ pub.pdf }}">Paper (PDF)</a>
+            </li>
+            {% endif %}
+            {% if pub.supplement %}
+            <li>
+                <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ pub.supplement }}">Supplementary Material</a>
+            </li>
+            {% endif %}
+            {% if pub.supplements %}
+            {% for supplement in pub.supplements %}
+            <li>
+                {% if supplement.linksym %}
+                <i class="fa fa-external-link"></i>
+                {% else %}
+                <i class="fa fa-download"></i>
+                {% endif %}
+                &nbsp;<a href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{site.paper_content_url}}{{ supplement.link }}{% endif %}">{{supplement.name}}</a>
+            </li>
+            {% endfor %}
+            {% endif %}
+
+            {% if pub.code %}
+            <li>
+                <i class="fa  fa-github"></i> &nbsp;<a href="{{ pub.code }}">Source Code</a>
+            </li>
+            {% endif %}
+        </ul>
+
+        {% if pub.video or pub.preview-video %}
+        <h1>Videos</h1>
+        {% endif %}
+        {% for video in site.videos %}
+        {% if video.key == pub.video or video.key == pub.preview-video %}
+        <div class="video">
+            <p><b>{{video.name}}</b></p>
+            <div class="video-wrapper">
+                <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}?controls=2&showinfo=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+            </div>
+            {% if video.file %}
+            <p><i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{video.file}}">Download Video</a><p/>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% endfor %}
+
+    </article>
+
+
+    <article class="publication-meta">
+
+    </article>
+
+    <article class="publication-resources">
+    </article>
+</div>
