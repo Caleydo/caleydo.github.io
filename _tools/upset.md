@@ -57,7 +57,7 @@ Sorting according to various measures enables a task-driven analysis of relevant
 
 ## Why UpSet?
 
-Venn diagrams are a horrible way to visualize intersections of more than three or four sets. Here is an example published in Nature to show the relationship between the banana genome and other species. 
+Venn diagrams are a horrible way to visualize intersections of more than three or four sets. Here is an example [published in Nature](http://www.nature.com/nature/journal/v488/n7410/full/nature11241.html) to show the relationship between the banana genome and other species. 
 
 ![UpSet Screenshot]({{path}}/banana.png)
 
@@ -81,7 +81,7 @@ This figure was created with the UpSet R version. Notice how it's easy to see tr
 
 ## UpSet concept
 
-<img style="float: right;" src="{{path}}/matrix.png">
+<img style="float: right; padding-left: 5px;" src="{{path}}/matrix.png">
 
 UpSet plots the intersections of a set as a matrix, as shown in the figure on the right. Each column corresponds to a set, and each row corresponds to one segment in a venn diagram, as indicated in the figure. Cells are either empty (light-gray), indicating that this set is not part of that intersection, or filled, showing that the set is participating in the intersection. The first row in the figure is completely empty - it corresponds to all the elements that are in none of the sets, the second row corresponds to the elements that are only in the set A, etc. 
 
@@ -91,9 +91,38 @@ This layout is great, because we can plot the size of the intersections as bar c
 
 ### Aggregation
 
+<img style="float: right; padding-left: 5px;" src="{{path}}/matrix_aggregation.png">
+In many cases, analysts are interested in understanding more complex set relationships than just individual intersections. UpSet addresses this by making use of aggregations. Aggregation summarize multiple intersection according to a specific pattern. The figure on the right shows an aggregation by sets. Note the extra row labeled A - it summarizes all of the intersections where A participate, as shown in the corresponding Venn diagram. These aggregations can show data just the same way as individual intersections can, but they can be collapsed to show only the aggregate, as is the case for B and C in the figure. 
+
+<img style="float: left; width: 300px; padding-right: 5px;" src="{{path}}/aggregate.png">
+UpSet supports various types of aggregation. The figure on the left, for example, aggregates the Simpsons dataset by degree, but aggregation by sets, pairwise aggregation, and nested aggregation is also possible. 
+
+
 ### Queries
 
-### Plotting Attributes
+A concept closely related to aggregation is querying: UpSet allows users to define a group of intersections that **must**, **may**, or **must not** include a specific set. The query in the following picture defines a subset of Simpsons Characters that are either exclusively male or that have blue hair and aren't male. The first part of the query (first row) is indicated by two empty circles in the evil and blue hair cells. This part is combined as an "or" with the second part, that is set to "must" for blue hair, "may" for evil and "must not" for male. 
+
+![Query Screenshot]({{path}}/query.png)
+
+UpSet can also query based on attributes. For example, you could define a query that only includes all characters that are older than 18 years. 
+
+
+
+### Visualizing Attributes
+
+
+UpSet visualizes numerical attributes of the intersections and aggregates as boxplots in line with the matrix rows (see image below). Additional attributes can be visualized for selections in the Element View, for example, in scatterplots or histograms. The figure below shows two queries, a violet and a green one. The green query is active (see the green overlays on the bars, the green table header and the green dots in the scatterplot). The violet query is evident in the scatterplot and is indicated with triangles on the bars. 
+
+
+
+
+![UpSet Screenshot]({{path}}/upset_overview.png)
+
+The elements of the active selection are shown in a scrollable table.
+
+### More Information
+
+For more details on the concept please refer to the [paper on UpSet]({{site.baseurl}}/publications/2014_infovis_upset/) or [watch the video](#video). 
 
 
 ## UpSetR - Creating UpSet plots in R

@@ -115,7 +115,7 @@ layout: default
   <article class="project-meta">
 
     {% if video != empty %}
-    <h1>Video</h1>
+    <h1 id="video">Video</h1>
     {% for video in site.videos %}
     {% for video_key in page.videos %}
     {% if video_key == video.key %}
@@ -133,7 +133,7 @@ layout: default
 
 
     {% if page.publications.size > 0 %}
-    <h1>Publications</h1>
+    <h1 id="publications">Publications</h1>
 
     <p>
     <ul class="publication-icon-list">
