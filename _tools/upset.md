@@ -44,6 +44,8 @@ web:
 
 ---
 
+{% capture path %}{{ site.baseurl }}/assets/images/projects/upset/{% endcapture %}
+
 Understanding relationships between sets is an important analysis task that has received widespread attention in the visualization community. The major challenge in this context is the combinatorial explosion of the number of set intersections if the number of sets exceeds a trivial threshold. To address this, we introduce UpSet, a novel visualization technique for the quantitative analysis of sets, their intersections, and aggregates of intersections.
 
 ![UpSet Screenshot]({{site.baseurl}}/assets/images/papers/2014_infovis_upset_teaser.png)
@@ -55,19 +57,52 @@ Sorting according to various measures enables a task-driven analysis of relevant
 
 ## Why UpSet?
 
+Venn diagrams are a horrible way to visualize intersections of more than three or four sets. Here is an example published in Nature to show the relationship between the banana genome and other species. 
+
+![UpSet Screenshot]({{path}}/banana.png)
+
+This thing looks fun and [generated quite a bit of hype](http://blog.openhelix.eu/?p=20201) but is just a **terrible, terrible visualization**. Try to extract any information from it (we dare you!). It's really hard to trace which intersection involves which sets. It's not obvious which is the biggest intersection as long as you don't read the labels. This particular Venn diagram triggered the development of UpSet. 
+
+UpSet has three guiding principles:
+
+ * Use **perceptually efficient visual encodings**, i.e., make it easy to read the data accurately.
+ * Make it possible to not just visualize intersections, but to **visualize combinations of intersections** (e.g., all the intersections involving two particular sets). 
+ * **Visualize attributes about the intersections**. Not just the magnitude of an intersection is interesting, but we also want to know, is associated data different between these intersections?
+ 
+You might ask, how does the banana venn diagram look in UpSet? Here you go: 
+ ![UpSet Screenshot]({{{path}}/upsetr-banana.png)
+
+Granted, that's a little hard to read because the figure is rather small. But we can simply remove the small intersections, and we get a nice plot which shows us the main features: 
+
+ ![UpSet Screenshot]({{path}}upsetr-banana_clipped.png)
 
 
-## UpSet key features
+This figure was created with the UpSet R version. Notice how it's easy to see trends: the vast majority of genes is shared between all plants, the first three species seem to be also highly related, while the fifth species (Phoenix dactylifera) is most different from the others. 
 
+## UpSet concept
+
+<img style="float: right;" src="{{path}}/matrix.png">
+
+UpSet plots the intersections of a set as a matrix, as shown in the figure on the right. Each column corresponds to a set, and each row corresponds to one segment in a venn diagram, as indicated in the figure. Cells are either empty (light-gray), indicating that this set is not part of that intersection, or filled, showing that the set is participating in the intersection. The first row in the figure is completely empty - it corresponds to all the elements that are in none of the sets, the second row corresponds to the elements that are only in the set A, etc. 
+
+
+<img style="float: left; width: 350px; padding-right: 5px;" src="{{path}}/upset_explained.svg">
+This layout is great, because we can plot the size of the intersections as bar charts right next ot the matrix, as you can see in the simple example on the left. This figure shows a simple Simpsons dataset in UpSet and in a corresponding venn diagram. We can also sort in many different ways. Here we sort by the degree, i.e., by the number of sets that contribute to an intersection, but we can also dynamically sort by intersection size and other attributes. 
+
+### Aggregation
+
+### Queries
+
+### Plotting Attributes
 
 
 ## UpSetR - Creating UpSet plots in R
 
 Many scientists use R as part of their analysis workflow. To allow those analysts to easily produce high-resolution figures of set intersections within their workflow that can be used in publications, we have developed an R version of UpSet. 
 
-![UpSet Screenshot]({{site.baseurl}}/assets/images/projects/upset/upsetr.png)
+![UpSet Screenshot]({{path}}/upsetr.png)
 
-UpSetR has many of the features of our interactive UpSet plots, specifically it comes with various ways to sort and filter intersections and can plot attributes about the elements in the various sets. The layout is slightly adapted - intersectiosn are plotted horizontally instead of vertically, which is beneficial for the typical aspect ratios found in papers. UpSetR does not include the aggregation features of UpSet, does not provide summary statistics about the intersections in line with the set cardinality, and does not provide access to the indivdual items. 
+UpSetR has many of the features of our interactive UpSet plots, specifically it comes with various ways to sort and filter intersections and can plot attributes about the elements in the various sets. The layout is slightly adapted - intersectiosn are plotted horizontally instead of vertically, which is beneficial for the typical aspect ratios found in papers. UpSetR does not include the aggregation features of UpSet, does not provide summary statistics about the intersections in line with the set cardinality, and does not provide access to the individual items. 
 
 To learn more about UpSetR visit the [source code repository](https://github.com/hms-dbmi/UpSetR) which includes documentation on usage, or check out the released versions on [CRAN](https://cran.r-project.org/web/packages/UpSetR/), or try the [UpSetR shiny app](https://upsetr.shinyapps.io/UpSetR-shiny/). 
 

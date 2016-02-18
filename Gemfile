@@ -12,6 +12,7 @@ group :development do
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
   gem 'link-checker', '~> 0.7.2'
+  gem 'jekyll-redirect-from', '~> 0.9.1'
 
   require 'rbconfig'
   if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
