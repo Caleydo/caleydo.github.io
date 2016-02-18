@@ -6,7 +6,7 @@ key: domino
 permalink: /tools/domino/
 redirect_from: /projects/domino.html
 status: prototype
-badge: New
+badge: 
 standfirst: "Extracting, Comparing, and Manipulating Subsets across Multiple Tabular Datasets"
 
 teaser: 

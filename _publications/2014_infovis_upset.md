@@ -25,7 +25,7 @@ doi: 10.1109/TVCG.2014.2346248
 publisher: 
 
 
-project:
+project: upset
 
 external-project: http://vcg.github.io/upset/
 code: https://github.com/vcg/upset
@@ -52,11 +52,7 @@ abstract: "
 
 ---
 
-# UpSet R Version
 
-We have created a static version of UpSet for R called [UpSetR](https://github.com/hms-dbmi/UpSetR/releases). This can be used to create high-resolution UpSet plots for a paper or other publication.
-
-UpSetR offers much of the same functionality as the interactive version but is adapted to the needs of a static representation. The R package is available on [GitHub](https://github.com/hms-dbmi/UpSetR/releases) and released versions are hosted also on [CRAN](https://cran.r-project.org/web/packages/UpSetR/).
 
 # Acknowledgements
 

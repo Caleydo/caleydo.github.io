@@ -43,7 +43,7 @@ github:
   url: https://github.com/Caleydo/caleydo
   name: Caleydo Core
   
-web-url: http://demo.caleydo.org/stratomex.js/
+web-url: http://demo.caleydo.org/stratomex_js/
 web-name: StratomeX Web Version
 
 ---

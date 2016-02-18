@@ -17,7 +17,7 @@ layout: default
 
       {% assign sorted_projects = site.tools | sort: 'order' %}
       {% for project in sorted_projects%}
-      {% if project.status == "core" %}
+
 
       <div class="card">
         {% if project.badge != null %}
@@ -28,7 +28,7 @@ layout: default
         <div class="card-image">
           <a href="{{ site.baseurl }}{{ project.url }}">
             {% if project.teaser.lowres %}
-            <img src="../assets/images/projects/{{ project.teaser.lowres }}" alt="">
+            <img src="../assets/images/papers/{{ project.teaser.lowres }}" alt="">
             {% else %}
             <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
             {% endif %}
@@ -43,7 +43,7 @@ layout: default
         </div>
       </div>
 
-      {% endif %}
+
       {% endfor %}
 
     </div>
