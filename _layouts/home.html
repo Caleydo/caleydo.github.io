@@ -58,16 +58,21 @@
             or enhance the current tools are invited to contribute. See our <a href="https://github.com/Caleydo/">Github
                 page</a> for further details.</p>
 
+        <h2>Web and Standalone Version</h2>
 
+        <p>Until recently, Caleydo was a downloadable piece of software, but <b>all of our new tools are web-based</b>. We will soon release the framework used to developed our web-based tools, but you can already enjoy our visualization tools. We are also committed to porting our tools from the standalone application to the web browser. We are at different levels of progress. <a href="{{site.baseurl}}/tools/stratomex">StartomeX</a> and <a href="{{site.baseurl}}/tools/lineup">LineUp</a>, for example, have reasonably feature-complete web-ports. Our <a href="{{site.baseurl}}/tools/pathways">pathway tools</a>, on the other hand, still have a way to go.
+        </p>
+
+        <p>For real-life data analysis, we recommend you stick to the standalone software for now, but be prepared to transition to the web soon!</p>
         <h1 id="featured-tool">Featured Paper: </h1>
 
         <div id="main-banner-image"><a class="banner-image" href="">
+
+
+            <img alt="" class="left-banner-image" src="{{ site.baseurl }}/assets/images/papers/"/>
             <ul class="publication-icon-list">
                 <li><a href=""></a></li>
             </ul>
-
-            <img alt="" class="left-banner-image" src="{{ site.baseurl }}/assets/images/papers/"/>
-
         </a>
         </div>
 
@@ -116,18 +121,12 @@
         <ul class="project-icon-list">
             {% assign sorted_projects = (site.tools | sort: 'order' %}
             {%for project in sorted_projects %}
-            {% if project.status == 'core' %}
+            {% if project.status != 'beta' %}
             <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
             {% endif %}
             {% endfor %}
         </ul>
-        <ul class="project-icon-list">
-            {%for project in sorted_projects %}
-            {% if project.status == 'prototype' %}
-            <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+
 
         <h1>Latest Release</h1>
         <ul class="release-icon-list">
