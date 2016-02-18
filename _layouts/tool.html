@@ -76,11 +76,13 @@ layout: default
 
 
 
-    {% if page.web-url and page.web-name %}
+{% for web in page.web %}
+    {% if web.url and web.name %}
     <ul class="web-release-icon-list">
-      <li><a href="{{ page.web-url}}">{{page.web-name}}</a></li>
+      <li><a href="{{ web.url}}">{{web.name}}</a></li>
     </ul>
     {%endif%}
+    {% endfor %}
 
 
 	{% assign repos =  page.github | group_by:"private" %} {% comment %} private and not private {% endcomment %}
