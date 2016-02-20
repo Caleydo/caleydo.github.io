@@ -8,7 +8,6 @@ public_dir      = "_site"    # compiled site directory
 deploy_dir      = "_deploy"
 server_port     = "4000"      # port for preview server eg. localhost:4000
 target_repo     = "git@github.com:Caleydo/caleydo.github.io.git"
-target_dev_repo = "git@github.com:Caleydo/website-dev.git"
 
 if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
   puts '## Set the codepage to 65001 for Windows machines'
@@ -73,7 +72,7 @@ end
 ##############
 desc "patch the config file with the right url setting"
 task :patch_config do
-  repo_url = selectRepo(target_repo, target_dev_repo)
+  repo_url = target_repo
   branch = (repo_url.match(/\/[\w-]+\.github\.(?:io|com)/).nil?) ? 'gh-pages' : 'master'
   project = (branch == 'gh-pages') ? repo_url.match(/\/([^\.]+)/)[1] : ''
   
@@ -121,7 +120,7 @@ end
 
 desc "deploy public directory to github pages"
 task :deployImpl do
-  repo_url = selectRepo(target_repo, target_dev_repo)
+  repo_url = target_repo
   branch = (repo_url.match(/\/[\w-]+\.github\.(?:io|com)/).nil?) ? 'gh-pages' : 'master'
   
   puts "## Deploying branch to Github Pages "
@@ -194,16 +193,6 @@ def ask(message, valid_options)
   answer
 end
 
-def selectRepo(master, develop) 
-  localbranch = `git rev-parse --abbrev-ref HEAD`.strip
-  #jenkins doesn't have a local branch, so use the GIT_BRANCH env variable provided by the jenkins build	
-  if localbranch == 'HEAD'
-    puts "using env variable #{ENV['GIT_BRANCH']}"
-    localbranch = (ENV['GIT_BRANCH'] == 'origin/master') ? "master" : "develop"
-  end
-  puts "current branch: '#{localbranch}'"
-  (localbranch == 'master') ? master : develop
-end
 
 def blog_url(project)
   if (project == '')
