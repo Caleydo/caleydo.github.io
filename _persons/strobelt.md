@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Hendrik
 last_name: Strobelt
 key: strobelt

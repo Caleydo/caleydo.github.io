@@ -1,5 +1,5 @@
 ---
-layout: video
+layout: default
 key: 2013_infovis_entourage_video_preview
 name: Entourage InfoVis Preview Video
 year: 2013

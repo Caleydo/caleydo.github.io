@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: default
 key: 2015_infovis_vials_video_preview
 name: Vials Preview Video
 year: 2015

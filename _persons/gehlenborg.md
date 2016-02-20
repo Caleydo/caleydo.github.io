@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Nils
 last_name: Gehlenborg
 key: gehlenborg

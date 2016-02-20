@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Samuel
 last_name: Gratzl
 key: gratzl

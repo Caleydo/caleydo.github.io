@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Anne-Mai
 last_name: Wassermann
 key: wassermann

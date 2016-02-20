@@ -1,5 +1,5 @@
 ---
-layout: supporter
+layout: default
 agency: State of Styria
 key: 2011-styria-tumor
 permalink: /funding/2007-styria-tumor/

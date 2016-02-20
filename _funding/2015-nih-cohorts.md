@@ -1,5 +1,5 @@
 ---
-layout: supporter
+layout: default
 agency: National Institutes of Health
 key: 2015-nih-cohorts
 permalink: /funding/2015-nih-cohorts/

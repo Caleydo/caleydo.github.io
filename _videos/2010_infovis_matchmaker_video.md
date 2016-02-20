@@ -1,5 +1,5 @@
 ---
-layout: video
+layout: default
 key: 2010_infovis_matchmaker_video
 name: Matchmaker InfoVis Demonstration Video
 year: 2010

@@ -1,5 +1,5 @@
 ---
-layout: supporter
+layout: default
 agency: Austrian Science Fund (FWF)
 key: 2013-fwf-semanticsubsets
 permalink: /funding/2013-fwf-semanticsubsets/

@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Karl
 last_name: Kashofer
 key: kashofer

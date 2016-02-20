@@ -1,5 +1,5 @@
 ---
-layout: video
+layout: default
 key: 2008_eurovis_jukebox_video
 name: EuroVis Jukebox Demonstration Video
 year: 2008

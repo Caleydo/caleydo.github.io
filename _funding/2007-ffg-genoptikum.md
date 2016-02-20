@@ -1,5 +1,5 @@
 ---
-layout: supporter
+layout: default
 agency: Austrian Research Promotion Agency (FFG)
 key: 2007-ffg-genoptikum
 permalink: /funding/2007-ffg-genoptikum/

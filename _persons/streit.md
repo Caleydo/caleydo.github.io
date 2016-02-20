@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Marc
 last_name: Streit
 key: streit
