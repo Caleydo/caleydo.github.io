@@ -5,8 +5,9 @@ key: 2014_nm_stratomex
 permalink: /publications/2014_nm_stratomex/
 type: paper
 
-shortname: GuidedVisualExploration
+shortname: StratomeX
 image: 2014_nm_stratomex.png
+image_large: 2014_nm_stratomex_teaser.png
 
 authors:
 - streit
@@ -15,7 +16,7 @@ authors:
 - partl
 - schmalstieg
 - pfister
-- park
+- Peter Park
 - gehlenborg
 
 journal: Nature Methods, 11, pp. 884–885

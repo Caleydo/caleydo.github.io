@@ -1,16 +1,17 @@
 ---
-layout: project
+layout: tool
 title: Experimental Data in Pathways
 name: Entourage & enRoute
 key: pathways
-permalink: /projects/pathways/
+permalink: /tools/pathways/
+redirect_from: /projects/pathways.html
 status: core
-order: 2
+order: 3
 standfirst: Visualizing large & heterogeneous experimental data with <b>enRoute</b> and pathway interdependencies with <b>Entourage</b>.
 help: http://help.caleydo.org/3.1/index.html#!views/pathway/pathway.md
 
 teaser: 
-    lowres: 2013_infovis_entourage.png
+    lowres: papers/2013_infovis_entourage.png
     highres: entourage_hires.png
 
 publications:

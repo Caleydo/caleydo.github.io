@@ -1,17 +1,17 @@
 ---
-layout: project
-#title: Subtype Visualization
+layout: tool
 title: Genomic Stratification of Diseases
 name: StratomeX
 key: stratomex
-permalink: /projects/stratomex/
+permalink: /tools/stratomex/
+redirect_from: /projects/stratomex.html
 status: core
 order: 1
 standfirst: Integrative visualization of stratified heterogeneous data for disease subtype analysis.
 help: http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md
 
 teaser: 
-    lowres: 2012_eurovis_stratomex.png
+    lowres: papers/2012_eurovis_stratomex.png
     highres: StratomeX_highRes.png
 
 publications:
@@ -42,9 +42,11 @@ github:
  - 
   url: https://github.com/Caleydo/caleydo
   name: Caleydo Core
-  
-web-url: http://demo.caleydo.org/stratomex.js/
-web-name: StratomeX Web Version
+
+web:
+ - 
+  url: http://demo.caleydo.org/stratomex_js/
+  name: StratomeX Web Version
 
 ---
 

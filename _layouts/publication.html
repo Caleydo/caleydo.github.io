@@ -63,9 +63,9 @@ layout: default
 
   <article class="publication-content-aside">
     {% if page.project %}
-    <h1>Software</h1>
+    <h1>Tool Info</h1>
     <ul class="project-icon-list">
-    {% for project in site.projects %}
+    {% for project in site.tools %}
     {% if project.key == page.project) %}
       <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
     {% endif %}
@@ -74,7 +74,7 @@ layout: default
     {% endif %}
 
     {% if page.external-project %}
-    <h1>Project Website</h1>
+    <h1>Tool Website</h1>
     <ul class="project-icon-list">
             <li><a href="{{page.external-project}}">{{ page.shortname }} Website</a></li>
     </ul>

@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<div class="project">
+
+  <header class="projects-title">
+    <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+  </header>
+
+  <article class="project-content">
+
+    <p>We develop tools for interactive data visualization. Here is a list of tools that you can use either by downloading a piece of software, or by going to a website.
+    </p>
+
+
+    <div>
+
+      {% assign sorted_projects = site.tools | sort: 'order' %}
+      {% for project in sorted_projects%}
+
+
+      <div class="card">
+        {% if project.badge != null %}
+        <div class="ribbon-wrapper">
+          <div class="ribbon">{{project.badge}}</div>
+        </div>
+        {% endif %}
+        <div class="card-image">
+          <a href="{{ site.baseurl }}{{ project.url }}">
+            {% if project.teaser.lowres %}
+            <img src="../assets/images/{{ project.teaser.lowres }}" alt="">
+            {% else %}
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+            {% endif %}
+          </a>
+        </div>
+        <div class="card-header-project">
+          <a href="{{ site.baseurl }}{{ project.url }}">{{project.name}}</a>
+        </div>
+        <div class="card-copy">
+          <p><b>{{ project.title }}</b></p>
+          <p>{{ project.standfirst }}</p>
+        </div>
+      </div>
+
+
+      {% endfor %}
+
+    </div>
+
+
+
+  </article>
+
+</div>

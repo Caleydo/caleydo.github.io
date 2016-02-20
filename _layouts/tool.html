@@ -66,10 +66,7 @@ layout: default
     {% endif %}
     {% endfor %}
 
-
-
-
-    {% if is_core_caleydo %}
+    {% if page.status != "web" and is_core_caleydo %}
     <ul class="release-icon-list">
       <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a><br>{{ site.releases.last.date | date: "%-d %b %Y" }}</li>
     </ul>
@@ -79,11 +76,13 @@ layout: default
 
 
 
-    {% if page.web-url and page.web-name %}
+{% for web in page.web %}
+    {% if web.url and web.name %}
     <ul class="web-release-icon-list">
-      <li><a href="{{ page.web-url}}">{{page.web-name}}</a></li>
+      <li><a href="{{ web.url}}">{{web.name}}</a></li>
     </ul>
     {%endif%}
+    {% endfor %}
 
 
 	{% assign repos =  page.github | group_by:"private" %} {% comment %} private and not private {% endcomment %}
@@ -116,7 +115,7 @@ layout: default
   <article class="project-meta">
 
     {% if video != empty %}
-    <h1>Video</h1>
+    <h1 id="video">Video</h1>
     {% for video in site.videos %}
     {% for video_key in page.videos %}
     {% if video_key == video.key %}
@@ -134,19 +133,22 @@ layout: default
 
 
     {% if page.publications.size > 0 %}
-    <h1>Publications</h1>
+    <h1 id="publications">Publications</h1>
 
     <p>
     <ul class="publication-icon-list">
       {% for key in page.publications %}
       {% for pub in site.publications %}
       {% if key == pub.key %}
+
       <li><a href="{{ site.baseurl }}{{ pub.url }}">{{ pub.title }}</a></li>
       {% endif %}
       {% endfor %}
       {% endfor %}
     </ul>
     </p>
+
+
     {% endif %}
 
   </article>

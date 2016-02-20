@@ -1,16 +1,17 @@
 ---
-layout: project
+layout: tool
 title: Multi-Attribute Rankings
 name: LineUp
 key: lineup
-permalink: /projects/lineup/
+permalink: /tools/lineup/
+redirect_from: /projects/lineup.html
 status: core
-order: 3
+order: 4
 standfirst: LineUp is an interactive technique designed to create, visualize and explore rankings of items based on a set of heterogeneous attributes.
 help: http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md#LineUp
 
 teaser: 
-    lowres: 2013_infovis_lineup.png
+    lowres: papers/2013_infovis_lineup.png
 #     highres: StratomeX_highRes.png
 
 publications:
@@ -43,9 +44,10 @@ github:
   url: https://github.com/Caleydo/org.caleydo.view.lineup
   name: LineUp View
   
-  
-web-url: http://caleydo.github.io/lineup.js/
-web-name: LineUp Web Version
+web:  
+ - 
+  url: http://caleydo.github.io/lineup.js/
+  name: LineUp Web Version
 ---
 
 # About

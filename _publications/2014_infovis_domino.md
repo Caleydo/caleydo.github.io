@@ -8,6 +8,10 @@ type: paper
 shortname: Domino
 image: 2014_infovis_domino.png
 
+# add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
+image_large: 2014_infovis_domino_teaser.png
+
+
 authors:
 - gratzl
 - gehlenborg

@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<header class="project-title">
+  <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+</header>
+
+<article class="project-content-main">
+  <h2>{{ page.standfirst }}</h2>
+  {{ content }}
+
+  <!--{% if page.teaser.highres %}-->
+  <!--<img src="../../assets/images/projects/{{ page.teaser.highres }}" alt="">-->
+  <!--{% endif %}-->
+</article>
+
+<article class="project-content-aside">
+
+
+   <h1>Tools</h1>
+
+  <ul class="project-icon-list">
+    {% assign selected_tools = (page.tools | sort: 'order' %}
+    {% for tool_key in selected_tools %}
+    {% for tool in site.tools %}
+    {% if tool.key == tool_key %}
+    {% if tool.status != 'beta' %}
+    <li><a href="{{ site.baseurl }}{{ tool.url}}">{{ tool.name }}</a><br>{{ tool.title }}</li>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {%endfor %}
+  </ul>
+
+
+  {% if page.publications.size > 0 %}
+  <h1>Publications</h1>
+
+  <p>
+  <ul class="publication-icon-list">
+    {% for key in page.publications %}
+    {% for pub in site.publications %}
+    {% if key == pub.key %}
+    <li><a href="{{ site.baseurl }}{{ pub.url }}">{{ pub.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+  </ul>
+  </p>
+  {% endif %}
+
+
+
+</article>
+
+<article class="project-meta">
+
+
+
+
+
+</article>

@@ -16,6 +16,9 @@ use_analytics: true
 
 paper_content_url: http://data.caleydo.org/papers/
 
+gems:
+  - jekyll-redirect-from
+
 # Build settings
 
 permalink: pretty
@@ -29,9 +32,12 @@ exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile
 
 # Collections
 collections:
-  projects:
+  tools:
     output: true
-    permalink: /projects/:path/
+    permalink: /tools/:path/
+  themes:
+    output: true
+    permalink: /:path/
   persons:
     output: false
     permalink: /persons/:path/
