@@ -3,38 +3,46 @@
   href: ""
 
 - title: "Installation"
-  href: "installation/"
+  href: "installation"
 
 - title: "Tutorials"
-  href: "tutorial/"
+  href: "tutorial"
   categories:
     - title: "Getting Started"
-      href: "getting_started/"
+      href: "getting_started"
     - title: "Visualize a Matrix"
-      href: "tutorial_visualize_matrix/"
-
+      href: "tutorial_visualize_matrix"
+    - title: "Visualize a Matrix (CodePen)"
+      href: "tutorial_visualize_matrix_codepen"
+    - title: "Visualize a Matrix (GIST)"
+      href: "tutorial_visualize_matrix_gist"
+    - title: "Visualize a Matrix (JSBin)"
+      href: "tutorial_visualize_matrix_jsbin"
+    - title: "Visualize a Matrix (jsFiddle)"
+      href: "tutorial_visualize_matrix_jsfiddle"
+    - title: "Visualize a Matrix (Plnkr)"
+      href: "tutorial_visualize_matrix_plnkr"
+    - title: "Integration in AngularJS"
+      href: "tutorial_angular_heatmap_integration"
     - title: "Create a single view application"
       href: "tutorial_single_view"
-
 
 - title: "Reference"
   href: "reference/"
   categories:
     - title: "Overview"
-      href: "overview/"
+      href: "overview"
     - title: "Plugin Mechanism"
-      href: "plugin_mechanism/"
+      href: "plugin_mechanism"
     - title: "Working with promises"
       href: "TODO"
     - title: "Data Structures"
       href: "data_structure"
 
-
 - title: "Resources"
   href: "resources/"
   categories:
     - title: "List of plugins"
-      href: "list_of_plugins/"
+      href: "list_of_plugins"
     - title: "List of applications"
-      href: "list_of_applications/"
-
+      href: "list_of_applications"
