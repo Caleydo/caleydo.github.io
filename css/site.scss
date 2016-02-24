@@ -483,10 +483,11 @@ ul.post-list {
     .post-list-title {
       color: $home-color;
       font-family: $sans-serif-font-family;
-      font-weight: 700;
+      font-weight: 400;
+      font-size: $base-font-size * 1.2;
       font-style: normal;
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -810,7 +811,7 @@ footer {
 
       font-family: $sans-serif-font-family;
       font-size: $footer-content-font-size * 1.2;
-      font-weight: 700;
+      font-weight: 400;
     }
   }
 }

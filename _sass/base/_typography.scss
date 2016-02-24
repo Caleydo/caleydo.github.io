@@ -1,14 +1,17 @@
-$sans-serif-font-family: Lato, Helvetica, sans-serif;
-$serif-font-family: Lato, Helvetica, sans-serif; //Vollkorn, Times, serif;
-$slab-font-family: Patua One, Helvetica, sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Yantramanav:400,100,300,500);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+
+$sans-serif-font-family: Yantramanav, Helvetica, sans-serif;
+$serif-font-family: Lora, Helvetica, sans-serif; //Vollkorn, Times, serif;
+$slab-font-family: Yantramanav, Helvetica, sans-serif;
 
 $page-title-font-family: $sans-serif-font-family;
-$page-title-font-weight: 900;
+$page-title-font-weight: 300;
 $page-title-font-style: normal;
 $page-title-font-size: $base-font-size * 3;
 
 $content-title-font-family: $slab-font-family;
-$content-title-font-weight: 700;
+$content-title-font-weight: 300;
 $content-title-font-style: normal;
 
 $page-content-font-family: $serif-font-family;
@@ -17,12 +20,12 @@ $page-content-font-style: normal;
 $page-content-font-size: 1em;
 
 $footer-content-font-family: $sans-serif-font-family;
-$footer-content-font-weight: 400;
+$footer-content-font-weight: 100;
 $footer-content-font-style: normal;
 $footer-content-font-size: .7em;
 
 $navigation-button-font-family: $sans-serif-font-family;
-$navigation-button-font-weight: 700;
+$navigation-button-font-weight: 400;
 $navigation-button-font-style: normal;
 $navigation-button-font-size: $base-font-size * 0.9;
 
