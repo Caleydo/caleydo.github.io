@@ -5,9 +5,19 @@ permalink: /documentation/tutorial_angular_heatmap_integration/
 nomenu: true
 description: Learn how to integrate Caleydo into an Angular application.
 ---
+
+> **WARNING**: This tutorial is still in beta. The following doesn't work yet:
+>
+> - Single cell selections are not linked due to ambiguous selection. (See [#141](https://github.com/Caleydo/caleydo_web_container/issues/141#issuecomment-187878355))
+> - Caleydo's single cell selection API `.selectProduct()` does not work as intended. (See [#141](https://github.com/Caleydo/caleydo_web_container/issues/141#issuecomment-187409616))
+> - Cells selected in the heat-map visualizations can't be completely deselected by the user.
+> - Lodash shouldn't be needed. (See issue [#144](https://github.com/Caleydo/caleydo_web_container/issues/144))
+
 This example demonstrates how to integrate the matrix-based heat-map visualization into an Angular application. This tutorial illustrates the integration through an Angular-based table representation of the matrix' data and Caleydo's heat-map visualization.
 
-For the impatient reader, this is how it will finally look like:
+### The final app and usage
+
+For the impatient reader, below is the final app. You can click on a cell in the table to highlight and edit it. Another click will deselect the cell again. A click on a column or row header will select the whole column or row respectively. Another click will deselect it. The heatmap currently supports single selections via a single mouse click. Clicking on a second cell will deselect the the previously selected cell. Holding _SHIFT_ allows multi-cell selections.
 <iframe
     width='100%'
     height='450'
