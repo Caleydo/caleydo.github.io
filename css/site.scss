@@ -190,7 +190,7 @@ body {
     @include omega();
     color: $color;
     background-color: tint($color,95%);
-    padding: 30px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
     border-bottom: 4px $color solid;
     margin-bottom: 20px;
 
@@ -198,7 +198,7 @@ body {
       font-family: $page-title-font-family;
       font-weight: $page-title-font-weight;
       font-style: $page-title-font-style;
-      font-size: $page-title-font-size;
+      font-size: $page-title-font-size  * 0.75;
       border-bottom: none;
       margin-bottom: 0px;
     }
@@ -306,6 +306,7 @@ body {
   font-style: $page-content-font-style;
   font-size: $page-content-font-size;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  text-align: justify;
 
   .right-icon {
     a {
