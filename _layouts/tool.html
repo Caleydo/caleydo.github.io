@@ -19,11 +19,19 @@ layout: default
     <p>
     <ul class="person-icon-list">
       {% for key in page.team %}
+      {% assign known = false %}
+
       {% for person in site.persons %}
       {% if key == person.key %}
       <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}</li>
+      {% assign known = true %}
       {% endif %}
       {% endfor %}
+
+    {% if known == false %}
+    <li>{{ key }}</li>
+    {% endif %}
+
       {% endfor %}
     </ul>
     </p>
@@ -33,7 +41,6 @@ layout: default
     <p>
     <ul class="person-icon-list">
       {% for collaborator in page.collaborators %}
-
       {% assign known = false %}
       {% for person in site.persons %}
       {% if collaborator == person.key %}
@@ -43,7 +50,7 @@ layout: default
       {% endfor %}
 
       {% if known == false %}
-      <li>{{ collaborator }}</a></li>
+      <li>{{ collaborator }}</li>
       {% endif %}
 
       {% endfor %}

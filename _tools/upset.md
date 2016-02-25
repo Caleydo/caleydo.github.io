@@ -163,3 +163,16 @@ To learn more about UpSetR visit the [source code repository](https://github.com
   * *Which Browsers are supported?*  
     We currently test only on the latest version of Google Chrome. Other recent browsers might work too.
 
+
+## Contact
+
+If you have any questions, please [e-mail us](mailto:alex@sci.utah.edu;nils@hms.harvard.edu). If you found a bug, you can directly report it at the [GitHub project site](https://github.com/vcg/upset).
+
+## Acknowledgements
+We wish to thank our collaborators, Anne Mai Wassermann, Soohyun Lee, Michele Coscia and Frank Neffke for their time and expertise. We also thank Bilal Alsallakh, Silvia Miksch and the whole Radial Sets team for providing feedback and datasets.
+
+Explore other set visualization techniques at [http://setviz.net/](http://setviz.net/)
+
+UpSet is supported in part by the Austrian Science Fund (J 3437-N15), the Air Force Research Laboratory and DARPA grant FA8750-12-C-0300 and the United States NIH/National Human Genome Research Institute (K99 HG007583).
+
+UpSet uses the D3 library for visualization. The music in the preview video is by Roulet, "I Can Make This", licensed under creative commons.
