@@ -1,0 +1,18 @@
+
+
+<!-- # Inculde a video using this code: include video.html key="2014_infovis_upset_video" -->
+
+{% if include.key != empty %}
+{% for video in site.videos %}
+{% if include.key == video.key %}
+<div class="video">
+    <div class="video-wrapper">
+<iframe width="700" height="394" src="//www.youtube.com/embed/{{video.youtube-id}}" frameborder="0" allowfullscreen> </iframe>
+        </div>
+</div>
+
+<a href="{{site.paper_content_url}}{{video.file}}"><i class="fa fa-download"></i> &nbsp; Download video</a>
+
+{% endif %}
+{% endfor %}
+{% endif %}

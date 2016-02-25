@@ -15,8 +15,7 @@ teaser:
 publications:
  - 2014_infovis_upset
  
-videos: 
- - 2014_infovis_upset_video
+
 
 team:
  - lex
@@ -53,6 +52,10 @@ Understanding relationships between sets is an important analysis task. The majo
 UpSet is focused on creating task-driven aggregates, communicating the size and properties of aggregates and intersections, and a duality between the visualization of the elements in a dataset and their set membership. UpSet visualizes set intersections in a matrix layout. The matrix layout enables the effective representation of associated data, such as the number of elements in the aggregates and intersections, as well as additional summary statistics.
 
 Sorting according to various measures enables a task-driven analysis of relevant intersections and aggregates. The elements represented in the sets and their associated attributes are visualized in a separate view. Queries based on containment in specific intersections, aggregates, or driven by attribute filters are propagated between both views. UpSet also introduces several advanced visual encodings and interaction methods to overcome the problems of varying scales and to address scalability.
+
+To get an idea of what UpSet is about, you can watch this 30-second video:
+
+{% include video.html key="2014_infovis_upset_video_preview" %}
 
 
 ## Why UpSet?
@@ -122,7 +125,10 @@ The elements of the active selection are shown in a scrollable table.
 
 ### More Information
 
-For more details on the concept please refer to the [paper on UpSet]({{site.baseurl}}/publications/2014_infovis_upset/) or [watch the video](#video). 
+For more details on the concept please refer to the [paper on UpSet]({{site.baseurl}}/publications/2014_infovis_upset/) or watch this video introducing the user interface: 
+
+{% include video.html key="2014_infovis_upset_video" %}
+
 
 In summary, if you want to visualize intersections of two or three sets - use a Venn diagram, everyone knows them. 
 **For anything above three (and below ~40) sets - use UpSet!**
