@@ -60,6 +60,8 @@ To get an idea of what UpSet is about, you can watch this 30-second video:
 
 ## Why UpSet?
 
+**See this related commentary:** [Points of view: Sets and intersections](http://dx.doi.org/10.1038/nmeth.3033). Alexander Lex, Nils Gehlenborg. Nature Methods, vol. 11, no. 8, pp. 779, 2014.
+
 Venn diagrams are a horrible way to visualize intersections of more than three or four sets. The figure below shows an example of a six-set venn diagram [published in Nature](http://www.nature.com/nature/journal/v488/n7410/full/nature11241.html) that shows the relationship between the banana's genome and the genome of five other species. 
 
 ![UpSet Screenshot]({{path}}/banana.png)
@@ -81,6 +83,8 @@ You might ask, how does the banana venn diagram look in UpSet? Here you go:
 
 
 Notice how easy it is to see trends: the vast majority of genes is shared between all plants, the first three species seem to be highly related, while the fifth species (Phoenix dactylifera) is most different from the others. 
+
+
 
 ## UpSet concept
 
