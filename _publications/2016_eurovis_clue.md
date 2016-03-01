@@ -18,6 +18,7 @@ authors:
 - gratzl
 - lex
 - gehlenborg
+- Nicola Cosgrove
 - streit
 
 journal: Computer Graphics Forum (EuroVis '16) (to appear)
@@ -69,7 +70,7 @@ abstract: "
 <div style="display: flex;align-items: baseline;">
 <div style="width: 48%">
     <a href="//vistories.org/gapminder.html" target="_blank">
-    <img src="{{ site.baseurl }}/assets/images/papers/{{ page.key }}_gapminder.png" alt="GapMinder usage scenario">
+    <img src="{{site.baseurl}}/assets/images/papers/{{ page.key }}_gapminder.png" alt="GapMinder usage scenario">
     </a>
     <div class="caption">
       <a href="//vistories.org/gapminder.html" target="_blank">
@@ -81,7 +82,7 @@ abstract: "
   </div>
 <div style="width: 48%">
     <a href="//vistories.org/stratomex.html" target="_blank">
-    <img src="{{ site.baseurl }}/assets/images/papers/{{ page.key }}.png" alt="StratomeX usage scenario">
+    <img src="{{site.baseurl}}/assets/images/papers/{{ page.key }}.png" alt="StratomeX usage scenario">
     </a>
     <div class="caption">
       <a href="//vistories.org/stratomex.html" target="_blank">
