@@ -64,6 +64,34 @@ abstract: "
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
 
+# Vistories
+
+<div style="display: flex;align-items: baseline;">
+<div style="margin: 0 1em">
+    <a href="//vistories.org/gapminder.html" target="_blank">
+    <img src="{{ site.baseurl }}/assets/images/papers/{{ page.key }}_gapminder.png" alt="GapMinder usage scenario">
+    </a>
+    <div class="caption">
+      <a href="//vistories.org/gapminder.html" target="_blank">
+        <h3>GapMinder</h3>
+      </a>
+      <p>Comparing Wealth vs. Life Excepectancy over time, illustrating the basic concepts of Vistories.</p>
+      <p></p>
+    </div>
+  </div>
+<div style="margin: 0 1em">
+    <a href="//vistories.org/stratomex.html" target="_blank">
+    <img src="{{ site.baseurl }}/assets/images/papers/{{ page.key }}_stratomex.png" alt="StratomeX usage scenario">
+    </a>
+    <div class="caption">
+      <a href="//vistories.org/stratomex.html" target="_blank">
+        <h3>StratomeX</h3>
+      </a>
+      <p>Reproducing previously published Use Cases of the StratomeX visualization technique, highlighting reproducibility and storytelling aspects of Vistories.</p>
+    </div>
+  </div>
+</div>
+
 # Acknowledgements
 
 This work was supported in part by the Austrian Research Promotion Agency (840232) and the US National Institutes of Health (R00 HG007583 and U01 CA198935).
