@@ -1,5 +1,5 @@
 ---
-layout: supporter
+layout: default
 agency: Austrian Science Fund (FWF)
 key: 2011-fwf-caleydoplex
 permalink: /funding/2011-fwf-caleydoplex/

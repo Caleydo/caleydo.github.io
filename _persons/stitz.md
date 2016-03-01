@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Holger
 last_name: Stitz
 key: stitz

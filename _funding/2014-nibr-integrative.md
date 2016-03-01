@@ -1,5 +1,5 @@
 ---
-layout: supporter
+layout: default
 agency: Novartis Institutes for BioMedical Research
 key: 2014-nibr-integrative
 permalink: /funding/2014-nibr-integrative/

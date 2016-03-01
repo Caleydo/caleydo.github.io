@@ -1,5 +1,5 @@
 ---
-layout: institution
+layout: default
 key: hms
 name: Harvard Medical School
 location: Boston, MA, USA

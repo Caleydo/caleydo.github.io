@@ -1,5 +1,5 @@
 ---
-layout: video
+layout: default
 key: 2014_vast_contour_video
 name: ConTour VAST Demonstration Video
 year: 2014

@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Mark
 last_name: Borowsky
 key: borowsky 

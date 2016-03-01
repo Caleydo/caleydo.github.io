@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Dieter
 last_name: Schmalstieg
 key: schmalstieg

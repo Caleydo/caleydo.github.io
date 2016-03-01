@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+
+<div class="documentation">
+
+    <header class="docs-title">
+        <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+    </header>
+
+    <article class="docs-content-aside">
+
+        <ul>
+            {% for navitem in site.data.docu_nav %}
+            {% if navitem.categories != null %}
+            <li>
+                <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}<i
+                        class="fa fa-angle-down"></i></a>
+                <ul>
+                    {% for category in navitem.categories %}
+                    <li><a href="{{ site.baseurl }}/documentation/{{ category.href }}">{{ category.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% else %}
+
+            <li>
+                <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}</a>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </article>
+
+
+    <article class="docs-content-main">
+        {{ content }}
+    </article>
+
+</div>

@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Kurt
 last_name: Zatloukal
 key: zatloukal

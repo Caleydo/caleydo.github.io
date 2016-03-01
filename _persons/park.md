@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Peter J. 
 last_name: Park
 key: park

@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Cagatay
 last_name: Turkay
 key: turkay

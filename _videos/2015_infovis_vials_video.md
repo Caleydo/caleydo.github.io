@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: default
 key: 2015_infovis_vials_video
 name: Vials Demonstration Video
 year: 2015

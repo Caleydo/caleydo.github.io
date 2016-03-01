@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix visualization</title>
+
+    <link href="../caleydo/bundle.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        .select-selected {
+            fill: orange;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+<div id="toolbar"></div>
+<div id="item"></div>
+
+<div id="toolbar2"></div>
+<div id="item2"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" charset="utf-8"></script>
+<script src="../caleydo/bundle.js"></script>
+
+<script>
+    var C = window.Caleydo;
+    var matrix = C.d3.parser.parseRemoteMatrix('./anscombe_II.csv');
+
+    matrix.then(function (matrixImpl) {
+        var multi = C.core.multiform.create(matrixImpl, document.getElementById('item'), {initialVis: 'caleydo-vis-heatmap'});
+        C.core.multiform.addSelectVisChooser(document.getElementById('toolbar'), multi);
+
+        var multi2 = C.core.multiform.create(matrixImpl.t, document.getElementById('item2'));
+        C.core.multiform.addSelectVisChooser(document.getElementById('toolbar2'), multi2);
+    });
+</script>
+
+</body>
+</html>
