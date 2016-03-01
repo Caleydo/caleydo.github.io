@@ -69,11 +69,11 @@ abstract: "
 
 <div style="display: flex;align-items: baseline;">
 <div style="width: 48%">
-    <a href="//vistories.org/gapminder.html" target="_blank">
+    <a href="//vistories.org/v/gapminder" target="_blank">
     <img src="{{site.baseurl}}/assets/images/papers/{{ page.key }}_gapminder.png" alt="GapMinder usage scenario">
     </a>
     <div class="caption">
-      <a href="//vistories.org/gapminder.html" target="_blank">
+      <a href="//vistories.org/v/gapminder" target="_blank">
         <h3>GapMinder</h3>
       </a>
       <p>Comparing Wealth vs. Life Excepectancy over time, illustrating the basic concepts of Vistories.</p>
@@ -81,11 +81,11 @@ abstract: "
     </div>
   </div>
 <div style="width: 48%">
-    <a href="//vistories.org/stratomex.html" target="_blank">
+    <a href="//vistories.org/v/stratomex" target="_blank">
     <img src="{{site.baseurl}}/assets/images/papers/{{ page.key }}.png" alt="StratomeX usage scenario">
     </a>
     <div class="caption">
-      <a href="//vistories.org/stratomex.html" target="_blank">
+      <a href="//vistories.org/v/stratomex" target="_blank">
         <h3>StratomeX</h3>
       </a>
       <p>Reproducing previously published Use Cases of the StratomeX visualization technique, highlighting reproducibility and storytelling aspects of Vistories.</p>
