@@ -38,9 +38,6 @@ pdf: 2014_infovis_upset.pdf
 supplement:  2014_infovis_upset_supplement.pdf
 
 supplements:
-- name: UpSet About Page
-  abslink: http://vcg.github.io/upset/about/
-  linksym: true
 - name: UpSet Documentation
   abslink: https://github.com/VCG/upset/wiki
   linksym: true

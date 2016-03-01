@@ -15,8 +15,7 @@ teaser:
 publications:
  - 2014_infovis_upset
  
-videos: 
- - 2014_infovis_upset_video
+
 
 team:
  - lex
@@ -54,8 +53,14 @@ UpSet is focused on creating task-driven aggregates, communicating the size and 
 
 Sorting according to various measures enables a task-driven analysis of relevant intersections and aggregates. The elements represented in the sets and their associated attributes are visualized in a separate view. Queries based on containment in specific intersections, aggregates, or driven by attribute filters are propagated between both views. UpSet also introduces several advanced visual encodings and interaction methods to overcome the problems of varying scales and to address scalability.
 
+To get an idea of what UpSet is about, you can watch this 30-second video:
+
+{% include video.html key="2014_infovis_upset_video_preview" %}
+
 
 ## Why UpSet?
+
+**See this related commentary:** [Points of view: Sets and intersections](http://dx.doi.org/10.1038/nmeth.3033). Alexander Lex, Nils Gehlenborg. Nature Methods, vol. 11, no. 8, pp. 779, 2014.
 
 Venn diagrams are a horrible way to visualize intersections of more than three or four sets. The figure below shows an example of a six-set venn diagram [published in Nature](http://www.nature.com/nature/journal/v488/n7410/full/nature11241.html) that shows the relationship between the banana's genome and the genome of five other species. 
 
@@ -78,6 +83,8 @@ You might ask, how does the banana venn diagram look in UpSet? Here you go:
 
 
 Notice how easy it is to see trends: the vast majority of genes is shared between all plants, the first three species seem to be highly related, while the fifth species (Phoenix dactylifera) is most different from the others. 
+
+
 
 ## UpSet concept
 
@@ -122,7 +129,10 @@ The elements of the active selection are shown in a scrollable table.
 
 ### More Information
 
-For more details on the concept please refer to the [paper on UpSet]({{site.baseurl}}/publications/2014_infovis_upset/) or [watch the video](#video). 
+For more details on the concept please refer to the [paper on UpSet]({{site.baseurl}}/publications/2014_infovis_upset/) or watch this video introducing the user interface: 
+
+{% include video.html key="2014_infovis_upset_video" %}
+
 
 In summary, if you want to visualize intersections of two or three sets - use a Venn diagram, everyone knows them. 
 **For anything above three (and below ~40) sets - use UpSet!**
@@ -157,3 +167,16 @@ To learn more about UpSetR visit the [source code repository](https://github.com
   * *Which Browsers are supported?*  
     We currently test only on the latest version of Google Chrome. Other recent browsers might work too.
 
+
+## Contact
+
+If you have any questions, please [e-mail us](mailto:alex@sci.utah.edu;nils@hms.harvard.edu). If you found a bug, you can directly report it at the [GitHub project site](https://github.com/vcg/upset).
+
+## Acknowledgements
+We wish to thank our collaborators, Anne Mai Wassermann, Soohyun Lee, Michele Coscia and Frank Neffke for their time and expertise. We also thank Bilal Alsallakh, Silvia Miksch and the whole Radial Sets team for providing feedback and datasets.
+
+Explore other set visualization techniques at [http://setviz.net/](http://setviz.net/)
+
+UpSet is supported in part by the Austrian Science Fund (J 3437-N15), the Air Force Research Laboratory and DARPA grant FA8750-12-C-0300 and the United States NIH/National Human Genome Research Institute (K99 HG007583).
+
+UpSet uses the D3 library for visualization. The music in the preview video is by Roulet, "I Can Make This", licensed under creative commons.
