@@ -13,7 +13,7 @@ layout: default
       {% for person in site.persons %}
       {% if person.role == "core") %}
       <p>
-      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}/{{ person.image }}">
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}{{ person.image }}">
       <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
       </p>
       {% endif %}
@@ -24,7 +24,7 @@ layout: default
       {% for person in site.persons %}
       {% if person.role == "contributor") %}
       <p>
-      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}/{{ person.image }}">
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}{{ person.image }}">
       <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
       </p>
       {% endif %}
@@ -37,7 +37,7 @@ layout: default
       {% for person in site.persons %}
       {% if person.role == "advisor") %}
       <p>
-      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}/{{ person.image }}">
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}{{ person.image }}">
       <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
       </p>
       {% endif %}
@@ -48,7 +48,7 @@ layout: default
       {% for person in site.persons %}
       {% if person.role == "collaborator") %}
       <p>
-      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}/{{ person.image }}">
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}{{ person.image }}">
       <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
       </p>
       {% endif %}
@@ -59,7 +59,7 @@ layout: default
       {% for person in site.persons %}
       {% if person.role == "alumni") %}
       <p>
-      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}/{{ person.image }}">
+      <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}{{ person.image }}">
       <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}
       </p>
       {% endif %}
