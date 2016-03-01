@@ -1,5 +1,5 @@
 ---
-layout: video
+layout: default
 key: 2010_pacificvis_caleydo_video
 name: Caleydo Bucket Pacificvis Demonstration Video
 year: 2010

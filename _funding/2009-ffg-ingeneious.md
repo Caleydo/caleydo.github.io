@@ -1,5 +1,5 @@
 ---
-layout: supporter
+layout: default
 agency: Austrian Research Promotion Agency (FFG)
 key: 2009-ffg-ingeneious
 permalink: /funding/2009-ffg-ingeneious/

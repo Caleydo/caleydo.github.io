@@ -1,5 +1,5 @@
 ---
-layout: video
+layout: default
 key: 2014_infovis_upset_video_preview
 name: UpSet Preview Video
 year: 2014

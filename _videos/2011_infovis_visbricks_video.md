@@ -1,5 +1,5 @@
 ---
-layout: video
+layout: default
 key: 2011_infovis_visbricks_video
 name: VisBricks InfoVis Demonstration Video
 year: 2011

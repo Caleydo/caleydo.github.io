@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Denis
 last_name: Kalkofen
 key: kalkofen

@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Hanspeter
 last_name: Pfister
 key: pfister

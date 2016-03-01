@@ -1,5 +1,5 @@
 ---
-layout: institution
+layout: default
 key: utah
 name: The University of Utah
 location: Salt Lake City, UT, USA

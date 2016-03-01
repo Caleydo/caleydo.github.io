@@ -2,7 +2,7 @@
 title: Caleydo
 email: contact@caleydo.org
 description: "Caleydo: Visualization for BioMedicine."
-baseurl: ""
+baseurl: "/website"
 url: "http://caleydo.github.io"
 twitter_username: caleydo_org
 github_username:  caleydo
@@ -11,7 +11,6 @@ facebook_page: Caleydo/110550618994500
 license_url: https://raw.githubusercontent.com/Caleydo/caleydo/develop/LICENSE
 safe: false
 lsi: false
-plugins: ./_plugins
 google_analytics: "'UA-45998043-1'"
 use_analytics: true
 
@@ -21,14 +20,15 @@ gems:
   - jekyll-redirect-from
 
 # Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
+
 permalink: pretty
 sass:
   sass_dir: _sass
 # exclude from build
 exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock", "rvm.env"]
+
+# code highlighter
+#highlighter: rouge
 
 # Collections
 collections:
@@ -62,5 +62,6 @@ collections:
   funding:
     output: false
     permalink: /funding/:path/
-
-
+  documentation:
+    output: true
+    permalink: /documentation/:path/

@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Kasper
 last_name: Dinkla
 key: dinkla

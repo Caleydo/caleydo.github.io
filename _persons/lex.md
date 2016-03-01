@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Alexander
 last_name: Lex
 key: lex

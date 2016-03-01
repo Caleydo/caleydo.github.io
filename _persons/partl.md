@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Christian
 last_name: Partl
 key: partl

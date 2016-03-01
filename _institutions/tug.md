@@ -1,5 +1,5 @@
 ---
-layout: institution
+layout: default
 key: tug
 name: Graz University of Technology
 location: Graz, Austria

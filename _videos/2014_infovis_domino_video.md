@@ -1,5 +1,5 @@
 ---
-layout: video
+layout: default
 key: 2014_infovis_domino_video
 name: Domino InfoVis Demonstration Video
 year: 2014

@@ -1,5 +1,5 @@
 ---
-layout: person
+layout: default
 first_name: Hans-Jörg
 last_name: Schulz
 key: schulz

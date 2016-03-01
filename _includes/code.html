@@ -1,0 +1,27 @@
+<!-- Include file that renders code and a preview, using the function defined in _layouts/docu_code
+For details see the repositories Readme.
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<textarea id="{{include.file}}" name="{{include.file}}"></textarea>
+
+{% if include.preview != "false" %}
+
+<div>&nbsp;</div>
+
+<iframe id="preview-{{include.file}}" class="CodePreview"></iframe>
+<!--<input type="file" onchange="loadfile(this)"> <a href="#my-header" onclick='saveTextAsFile()'>Save/Download</a>-->
+{% endif %}
+<script>
+    renderCode("{{ include.file }}", "{{include.foldAt}}", "{{include.js}}", "{{include.preview}}");
+</script>
+<i><a href="{{ include.file }}">See output in new page.</a></i>
+
+</body>
+
+</html>

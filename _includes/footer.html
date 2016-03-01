@@ -60,7 +60,7 @@
       <ul>
         {% for institution in site.institutions %}
           <li>
-            <a href="{{ institution.website }}"><img class="institution-logo" src="{{ institution.logo }}" alt="{{ institution.website }}"></a>
+            <a href="{{ institution.website }}"><img class="institution-logo" src="{{ site.baseurl }}{{ institution.logo }}" alt="{{ institution.website }}"></a>
           </li>
         {% endfor %}
       </ul>
