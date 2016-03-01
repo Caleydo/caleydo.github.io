@@ -1,5 +1,5 @@
 ---
-layout: publication
+layout: default
 # The quotes make the : possible, otherwise you can do it without quotes
 title: "From Visual Exploration to Storytelling and Back Again"
 key: 2016_eurovis_clue
