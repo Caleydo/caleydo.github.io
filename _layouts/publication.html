@@ -8,7 +8,7 @@ layout: default
   </header>
 
   <article class="publication-content-main">
-    <h1>Abstract</h1> 
+    <h1>Abstract</h1>
     {{ page.abstract }}
 
     <h1>Citation</h1>
@@ -130,13 +130,15 @@ layout: default
     {% if video.key == page.video or video.key == page.preview-video %}
     <div class="video">
       <p><b>{{video.name}}</b></p>
+      {% if video.youtube-id %}
       <div class="video-wrapper">
         <iframe width="853" height="480" src="//www.youtube.com/embed/{{video.youtube-id}}?controls=2&showinfo=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
       </div>
+      {% endif %}
       {% if video.file %}
       <p><i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{video.file}}">Download Video</a><p/>
       {% endif %}
-    </div>    
+    </div>
     {% endif %}
     {% endfor %}
 
