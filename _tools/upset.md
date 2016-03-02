@@ -32,6 +32,9 @@ github:
  - 
   url: https://github.com/hms-dbmi/UpSetR
   name: UpSetR, R version
+ -
+  url: https://github.com/ImSoErgodic/py-upset
+  name: pyUpSet, Python version
   
 web:
  - 
@@ -147,6 +150,10 @@ Many scientists use R as part of their analysis workflow. To allow those analyst
 UpSetR has many of the features of our interactive UpSet plots, specifically it comes with various ways to sort and filter intersections and can plot attributes about the elements in the various sets. The layout is slightly adapted - intersections are plotted horizontally instead of vertically, which is beneficial for the typical aspect ratios found in papers. UpSetR does not include the aggregation features of UpSet, does not provide summary statistics about the intersections in line with the set cardinality, and does not provide access to the individual items. 
 
 To learn more about UpSetR visit the [source code repository](https://github.com/hms-dbmi/UpSetR) which includes documentation on usage, or check out the released versions on [CRAN](https://cran.r-project.org/web/packages/UpSetR/), or try the [UpSetR shiny app](https://upsetr.shinyapps.io/UpSetR-shiny/). 
+
+## pyUpSet - Creating UpSet plots in Python
+
+pyUpSet has a similar use case to UpSetR but is developed for Python. While UpSetR is directly influenced by Caleydo team members, pyUpSet is developed independently, yet we appreciate the port. pyUpSet is [available on github](https://github.com/ImSoErgodic/py-upset). 
 
 ## Frequently Asked Questions
   
