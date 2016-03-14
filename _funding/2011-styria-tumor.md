@@ -11,7 +11,7 @@ recipients:
 pi: Gerald Hoefler
 copi: schmalstieg 
 partners: Medical University of Graz,  IFZ – Interuniversitäres Forschungszentrum für Technik, Arbeit und Kultur
-time: 2011-2014
+time: 2012-2014
 program:
 project-link: 
 number: 'GZ:A3-22.M-5/2012-21'
