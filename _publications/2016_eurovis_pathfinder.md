@@ -36,10 +36,10 @@ publisher:
 project:
 
 # Use this if you have an external project website
-#external-project: 
+external-project: http://demo.caleydo.org/pathfinder/
 
 # The reference to the video entry
-#video: 2016_eurovis_clue_video
+video: 2016_eurovis_pathfinder_video
 # The reference to the preview viedo entry
 #preview-video: 2016_eurovis_clue_video_preview
 
