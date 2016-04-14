@@ -2,19 +2,19 @@
 layout: default
 agency: Boehringer Ingelheim Regional Center Vienna 
 key: 2015-bi-genomicdatavis
-permalink: /funding/2015-ffg-tourguide/
-website: https://www.ffg.at/en
-logo: oberoesterreich.jpg
-title: TourGuide - Navigation System for Capturing and Analyzing Complex Clinical Data
+permalink: /funding/2015-bi-genomicdatavis/
+website: https://www.boehringer-ingelheim.at/
+logo: boehringer.png
+title: Development of Multi-Dimensional Genomic Data Visualization and Data Mining Techniques
 recipients: 
-- streit
+- jku
 pi: Marc Streit
 copi: 
-partners: Boehringer Ingelheim
+partners: 
 time: 2015-2018
 program: Industrial Project
 project-link: 
-number: -
+number: 
 active: true
-------------
+---
 TODO
