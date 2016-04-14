@@ -1,6 +1,6 @@
 ---
 layout: default
-agency: Boehringer Ingelheim Regional Center Vienna 
+agency: Boehringer Ingelheim RCV
 key: 2015-bi-genomicdatavis
 permalink: /funding/2015-bi-genomicdatavis/
 website: https://www.boehringer-ingelheim.at/
