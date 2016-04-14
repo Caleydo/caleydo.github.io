@@ -76,12 +76,4 @@ demonstrate its effectiveness by means of a biomedical usage scenario.</p>"
 
 # Acknowledgements
 
-We are grateful to Sam Gratzl for input on the early design and
-the implementation of AVOCADO and the Refinery Platform team
-(Peter J Park, Shannan Ho Sui, Win Hide, Ilya Sytchev, Jennifer
-Marx, Scott Ouellette, Fritz Lekschas) for their help with
-the task definitions and the integration of AVOCADO. This work
-was funded by the Austrian Research Promotion Agency (FFG
-840232), the Austrian Science Fund (FWF P27975-NBL), the State
-of Upper Austria (FFG 851460), US National Institutes of Health
-(R00 HG007583), and the Harvard Stem Cell Institute.
+We are grateful to Samuel Gratzl for input on the early design and the implementation of AVOCADO, and to the Refinery Platform team (Peter J Park, Shannan Ho Sui, Win Hide, Ilya Sytchev, Jennifer Marx, Scott Ouellette, Fritz Lekschas) for their help with the task definitions and the integration of AVOCADO. This work was funded by the Austrian Research Promotion Agency (FFG 840232), the Austrian Science Fund (FWF P27975-NBL), the US National Institutes of Health (R00 HG007583), and the Harvard Stem Cell Institute.
