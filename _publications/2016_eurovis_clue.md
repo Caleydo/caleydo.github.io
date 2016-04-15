@@ -37,14 +37,14 @@ project:
 external-project: http://vistories.org
 
 # The reference to the video entry
-#video: 2016_eurovis_clue_video
+video: 2016_eurovis_clue_video
 # The reference to the preview viedo entry
 #preview-video: 2016_eurovis_clue_video_preview
 
 # the prerint
-#pdf: 2016_eurovis_clue.pdf
+pdf: 2016_eurovis_clue.pdf
 # A supplement PDF
-#supplement: 2015_infovis_vials_supplement.pdf
+supplement: 2016_eurovis_clue_supplement.pdf
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
@@ -60,7 +60,7 @@ code: https://github.com/Caleydo/caleydo_clue/
 bibtex: 2016_eurovis_clue.bib
 
 abstract: "
-<p>The primary goal of visual data exploration tools is to enable discovery of new insights. To justify such insights, the discovery process needs to be documented and communicated. A common approach to document and present such findings is to capture visualizations as images or videos. Images, however, are insufficient for telling the story of visual discovery, as they lack full provenance information and context. Videos are difficult to produce and edit, in particular due to the non-linear nature of the exploratory process. Most importantly, however, neither approach provides the opportunity to return to any point inthe exploration in order to review the state of the visualization in detail or to conduct additional analyses. In this paper we present <strong>CLUE</strong> (capture, label, understand, explain), a framework that tightly integrates data exploration and presentation of discoveries. Based on provenance data captured during the exploratory process, users can extract the key steps of the exploration, add annotations, and author “vistories” that can be shared for consumption, but that can also serve as the foundation for new discoveries. We discuss the integration of the CLUE approach in visualization tools and provide a prototypical implementation. Finally, we demonstrate the general applicability of the framework in two usage scenarios. The first one employs a Gapminder-inspired visualization to explore global public health data. The second usage scenario illustrate show CLUE can be used to create vistories for the publication of exploratory findings in scientific journals.</p>"
+<p>The primary goal of visual data exploration tools is to enable the discovery of new insights. To justify and reproduce insights, the discovery process needs to be documented and communicated. A common approach to documenting and presenting findings is to capture visualizations as images or videos. Images, however, are insufficient for telling the story of a visual discovery, as they lack full provenance information and context. Videos are difficult to produce and edit, particularly due to the non-linear nature of the exploratory process. Most importantly, however, neither approach provides the opportunity to return to any point in the exploration in order to review the state of the visualization in detail or to conduct additional analyses. In this paper we present <strong>CLUE</strong> (Capture, Label, Understand, Explain), a model that tightly integrates data exploration and presentation of discoveries. Based on provenance data captured during the exploration process, users can extract key steps, add annotations, and author "Vistories", visual stories based on the history of the exploration. These Vistories can be shared for others to view, but also to retrace and extend the original analysis. We discuss how the CLUE approach can be integrated into visualization tools and provide a prototype implementation. Finally, we demonstrate the general applicability of the model in two usage scenarios: a Gapminder-inspired visualization to explore public health data and an example from molecular biology that illustrates how Vistories could be used in scientific journals.</p>"
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
