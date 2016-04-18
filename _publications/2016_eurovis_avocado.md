@@ -36,7 +36,7 @@ project:
 #external-project: 
 
 # The reference to the video entry
-#video: 2016_eurovis_avocado_video
+video: 2016_eurovis_avocado_video
 # The reference to the preview viedo entry
 #preview-video: 2016_eurovis_avocado_video_preview
 
