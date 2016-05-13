@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: List of plugins
+title: List of Plugins
 permalink: /documentation/list_of_plugins/
 ---
 
@@ -57,7 +57,6 @@ permalink: /documentation/list_of_plugins/
 ## Python utilities
 * [https://github.com/Caleydo/sample_server_plugin](https://github.com/Caleydo/sample_server_plugin)
 * [https://github.com/Caleydo/caleydo_graph_dot](https://github.com/Caleydo/caleydo_graph_dot)
-* [https://github.com/Caleydo/caleydo_graph](https://github.com/Caleydo/caleydo_graph)
 * [https://github.com/Caleydo/caleydo_mapping](https://github.com/Caleydo/caleydo_mapping)
 
 ## Bundles

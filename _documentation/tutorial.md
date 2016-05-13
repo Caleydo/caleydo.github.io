@@ -5,4 +5,4 @@ permalink: /documentation/tutorial/
 type: tutorial/
 ---
 
-In these tutorials, we give increasingly complex examples of how you can build a visualization application with Caleydo Web. 
+In these tutorials, we give increasingly complex examples of how you can use Caleydo Web and how you can build your own visualization application with Caleydo Web. 

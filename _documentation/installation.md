@@ -4,8 +4,6 @@ title:  Installation
 permalink: /documentation/installation/
 ---
 
-# Installation
-
 To install Caleydo Web easily, you can use a container repository that includes a Vagrant VM.
 It is used for creating, combining, and managing individual plugins Caleydo Web consists of.
 
@@ -18,8 +16,8 @@ Note: Please ignore this part if you want to set up a dev environment.
 git clone https://github.com/Caleydo/caleydo_web_container.git
 cd caleydo_web_container
 vagrant up
-#wait and get some coffee this will take a while
-vagrant ssh
+# wait and get some coffee. this will take a while
+vagrant sshinstallation.mdinstallation.md
 {% endhighlight %}
 
 

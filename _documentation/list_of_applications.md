@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: List of applications
+title: List of Applications
 permalink: /documentation/list_of_applications/
 ---
 
