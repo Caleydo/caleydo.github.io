@@ -11,11 +11,7 @@ layout: documentation
 
     {% for category in navitem.categories %}
 
-    {% if category.href contains 'http://' %}
-    <h3><a href="{{ category.href }}">{{ category.title }}</a></h3>
-    {% else %}
     <h3><a href="{{ site.baseurl }}/documentation/{{ category.href }}">{{ category.title }}</a></h3>
-    {% endif %}
 
     {% for docupage in site.documentation %}
     {% if docupage.permalink contains category.href %}
