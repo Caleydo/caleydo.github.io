@@ -11,7 +11,7 @@
       href: "tutorial_angular_heatmap_integration"
 
 - title: "API Docs"
-  href: "../builds/lib/docs/"
+  href: "builds/lib/docs/"
 
 - title: "Development Environment"
   href: "dev_env"

@@ -11,7 +11,11 @@ layout: documentation
 
     {% for category in navitem.categories %}
 
-    <h3><a href="{{ site.baseurl }}/documentation/{{ category.href }}">{{ category.title }}</a></h3>
+    {% if category.title contains "API" %}
+    <h3><a href="{{ site.data_url }}{{ category.href }}">{{ category.title }}</a></h3>
+    {% else %}
+    <h3><a href="{{ site.baseurl }}documentation/{{ category.href }}">{{ category.title }}</a></h3>
+    {% endif %}
 
     {% for docupage in site.documentation %}
     {% if docupage.permalink contains category.href %}
