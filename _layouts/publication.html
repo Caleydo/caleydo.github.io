@@ -8,8 +8,15 @@ layout: default
   </header>
 
   <article class="publication-content-main">
+
+    {% if page.image_large %}
+    <img src="/assets/images/papers/{{page.image_large}}" alt="{{page.shortname}} Teaser">
+    {% endif %}
+
     <h1>Abstract</h1>
     {{ page.abstract }}
+
+
 
     <h1>Citation</h1>
     <div class="citation">

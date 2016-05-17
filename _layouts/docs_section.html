@@ -2,33 +2,8 @@
 layout: documentation
 ---
 
-
-
-
-
-
 <article class="docs-content-main">
     {{ content }}
-
-
-            {% for navitem in site.data.docu_nav %}
-            {% if navitem.href == page.type %}
-            {% if navitem.categories != null %}
-
-                {% for category in navitem.categories %}
-                   <h3><a href="{{ site.baseurl }}/documentation/{{ category.href }}">{{ category.title }}</a></h3>
-
-                    {% for docupage in site.documentation %}
-                    {% if docupage.permalink contains category.href %}
-                    <p>{{docupage.description}}</p>
-                    {% endif %}
-                    {% endfor %}
-                {% endfor %}
-
-            {% endif %}
-            {% endif %}
-            {% endfor %}
-
-    </article>
+</article>
 
 

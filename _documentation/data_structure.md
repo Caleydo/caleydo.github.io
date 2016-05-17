@@ -3,7 +3,6 @@ layout: documentation
 title: Data Structure
 permalink: /documentation/data_structure/
 ---
-## Introduction
 
 Caleydo Web supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using [promises](TODO). These data structures are implemented in the [core plugin](https://github.com/Caleydo/caleydo_core).
 
@@ -101,7 +100,7 @@ Consider the following properties for a matrix definition:
 
 #### Usage
 
-Caleydo Web matrices implement the [IMatrix](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_matrix_.imatrix.html) interface, which can be extended to provide custom matrix implementations. Important attributes include:
+Caleydo Web matrices implement the [IMatrix](http://data.caleydo.org/builds/lib/docs/interfaces/_caleydo_core_matrix_.imatrix.html) interface, which can be extended to provide custom matrix implementations. Important attributes include:
 
 * `rowtype` [IDType](todo) for the matrix rows.
 * `coltype` [IDType](todo) for the matrix columns.
@@ -254,7 +253,7 @@ Here, the `idtype` refers to the id type of the columns, whereas the `value` des
 
 #### Usage
 
-Vectors implement the [IVector](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_vector_.ivector.html) interface.
+Vectors implement the [IVector](http://data.caleydo.org/builds/lib/docs/interfaces/_caleydo_core_vector_.ivector.html) interface.
 
 ### Stratification
 
@@ -294,5 +293,5 @@ Vectors implement the [IVector](http://caleydo.gehlenborg.com/builds/lib/docs/in
 
 #### Usage
 
-Stratifications implement the [IStratification](http://caleydo.gehlenborg.com/builds/lib/docs/interfaces/_caleydo_core_stratification_.istratification.html) interface.
+Stratifications implement the [IStratification](http://data.caleydo.org/builds/lib/docs/interfaces/_caleydo_core_stratification_.istratification.html) interface.
 
