@@ -16,18 +16,25 @@ layout: default
             <li>
                 <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}<i
                         class="fa fa-angle-down"></i></a>
+
                 <ul>
                     {% for category in navitem.categories %}
+
                     <li><a href="{{ site.baseurl }}/documentation/{{ category.href }}">{{ category.title }}</a></li>
+
                     {% endfor %}
                 </ul>
             </li>
             {% else %}
 
             <li>
+                {% if navitem.title == 'API Docs' %}
+                 <a href="{{ site.data_url }}{{ navitem.href }}">{{ navitem.title }}</a>
+                 {% else %}
                 <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}</a>
                 {% endif %}
             </li>
+            {% endif %}
             {% endfor %}
         </ul>
     </article>
