@@ -32,21 +32,18 @@ permalink: /documentation/list_of_plugins/
 * [https://github.com/Caleydo/caleydo_server_js](https://github.com/Caleydo/caleydo_server_js)
 
 ## Python data provider
-* [https://github.com/Caleydo/caleydo_data_hdf](https://github.com/Caleydo/caleydo_data_hdf)
 
-   Data provider plugin for loading data stored in the [hierarchical data format (HDF)](https://www.hdfgroup.org/).
+* [https://github.com/Caleydo/caleydo_data_hdf](https://github.com/Caleydo/caleydo_data_hdf)
+<br />Data provider plugin for loading data stored in the [hierarchical data format (HDF)](https://www.hdfgroup.org/).
 
 * [https://github.com/Caleydo/caleydo_data_mongo](https://github.com/Caleydo/caleydo_data_mongo)
-
-   Data provider plugin for loading graph data stored in a [MongoDB](https://www.mongodb.com/).
+<br />Data provider plugin for loading graph data stored in a [MongoDB](https://www.mongodb.com/).
    
 * [https://github.com/Caleydo/caleydo_data_sql](https://github.com/Caleydo/caleydo_data_sql)
-
-   Data provider plugin for loading tabular data stored in an [SQLite database](https://www.sqlite.org/).
+<br />Data provider plugin for loading tabular data stored in an [SQLite database](https://www.sqlite.org/).
 
 * [https://github.com/Caleydo/caleydo_data_redis](https://github.com/Caleydo/caleydo_data_redis)
-
-   Data provider plugin for loading data stored in a [Redis in-memory database](http://redis.io/).
+<br />Data provider plugin for loading data stored in a [Redis in-memory database](http://redis.io/).
 
 ## Python security
 * [https://github.com/Caleydo/caleydo_security_flask](https://github.com/Caleydo/caleydo_security_flask)

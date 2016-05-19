@@ -295,3 +295,64 @@ Vectors implement the [IVector](http://data.caleydo.org/builds/lib/docs/interfac
 
 Stratifications implement the [IStratification](http://data.caleydo.org/builds/lib/docs/interfaces/_caleydo_core_stratification_.istratification.html) interface.
 
+## OLD CONTENT
+
+Range
+-----
+
+source files: range.ts, range.py
+
+caledyo_core
+------------
+ * main.ts ... mainly utilities, e.g. for accessing get parameters
+ * event.ts ... event mechanism using global events class inheritance
+ * math.ts ... simple stats helper
+ * ajax.ts ... wrapper around different ajax provider (JQuery, D3) using a promisified interface
+ * geom.ts, 2d.ts ... 2d plane operations and utilities, e.g. bounding boxes
+ * range.ts ... range implementation
+ * datatype.ts ... datatype definition file
+ * (vector|matrix|table|stratification)[_impl].ts, definition and implementation of standard data types
+ * data.ts ... data query/filter and convert manager
+ * idtype.ts ... id type and selection manager
+ * plugin.ts ... unified access to plugins defined in the registry
+ * vis.ts ... custom wrapper around plugin.tx for vis plugins
+ * multiform.ts ... implementation of the multiform approach, e.g a proxy around different vis types
+
+Datatypes
+---------
+Datatypes are just a specific plugin type implementing a minimal interface `datatypes.IDataType`
+
+basic principles: 
+ * *metadata* 
+
+   the description contains the most important meta data (types, dimensions, value types, ranges,...)
+
+ * *subsetting/views* 
+
+   subsetting a matrix/vector results in another matrix/vector. e.g. a taking just the first half of vector is just another vector, the visualization doesn't have to even know that. A subset is just a special view on the raw data no data is copied unless needed
+
+ * *ids and annotations*
+
+   every annotation (e.g. gene symbol EGFR) is assigned a unique integer id on the sever side (e.g. 5). ids are used for selection since they are more efficient to handle than strings. Actually the ids of a dataset are accessible as a multi-dimensional `range`. 
+
+ * *selection work in the dataset domain* 
+   a visualization just selects data within its dataset. e.g. the first row/column is selected nothing more. Similarly the (global) selections are converted to the dataset domain. e.g. the vis will be notified that rows 1 to 3 are selected. Internally the row indices are converted to their corresponding unique id numbers and these are selected within the idtype. 
+
+server side principles
+
+ * datastores
+
+   datastores are plugins that support different types of storage. current ones https://github.com/Caleydo/?utf8=%E2%9C%93&query=caleydo_data + a default one for [CSV files](https://github.com/Caleydo/caleydo_server/blob/master/dataset_csv.py). A datastore is a unified way to list, upload, delete, and modify a datsets. 
+
+ * numpy
+   
+   matrixes and vectors are accessible as numpy arrays. ranges support conversions to numpy selectors
+
+ * TODO: filter, selection, query
+
+
+
+vis.ts
+------
+
+visualization `vis.IVisIntance`, factory pattern: `create(data: datatypes.IDataType, parent: DOMElement, options)`

@@ -1,6 +1,14 @@
 
-- title: "Documentation Home"
+- title: "Documentation"
   href: ""
+
+- title: "Project Description"
+  href: "project_description"
+  categories:
+    - title: "Plugin Mechanism"
+      href: "plugin_mechanism"
+    - title: "Data Structures"
+      href: "data_structure"
 
 - title: "Tutorials"
   href: "tutorial"
@@ -10,31 +18,41 @@
     - title: "Integrate with Angular"
       href: "tutorial_angular_heatmap_integration"
 
-- title: "API Docs"
-  href: "builds/lib/docs/"
-
 - title: "Development Environment"
   href: "dev_env"
   categories:
-    - title: "Plugin Mechanism"
-      href: "plugin_mechanism"
-    - title: "Installation"
-      href: "installation"
+    - title: "Setting up Vagrant"
+      href: "vagrant"
+    - title: "Management Utility"
+      href: "management_utility"
+    - title: "Setting up PyCharm"
+      href: "pycharm"
     - title: "Directory Structure"
       href: "directory_structure"
-    - title: "Data Structures"
-      href: "data_structure"
-    - title: "Working with Promises"
-      href: "promises"
 
-- title: "Build Environment"
-  href: "build_env/"
+- title: "Applications and Plugins"
+  href: "apps_and_plugins"
   categories:
-
-- title: "Resources"
-  href: "resources/"
-  categories:
+    - title: "Frameworks"
+      href: "frameworks"
     - title: "List of Plugins"
       href: "list_of_plugins"
     - title: "List of Applications"
       href: "list_of_applications"
+    - title: "Installing Applications"
+      href: "installing_apps"
+    - title: "Creating Plugins"
+      href: "creating_plugin"
+    - title: "Creating Applications"
+      href: "creating_application"
+
+- title: "API Docs"
+  href: "builds/lib/docs/"
+
+- title: "Deployment"
+  href: "deployment"
+  categories:
+   - title: "Static Deployment"
+     href: "static_deployment"
+   - title: "Docker"
+     href: "docker"

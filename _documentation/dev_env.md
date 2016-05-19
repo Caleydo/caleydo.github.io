@@ -4,7 +4,14 @@ title:  Development Environment
 permalink: /documentation/dev_env/
 ---
 
-Caleydo Web components are found on [GitHub](https://github.com/Caleydo). To facilitate installation of Caleydo Web, a [container repository](https://github.com/Caleydo/caleydo_web_container) is provided. This repository is used to setup a controlled environment in a virtual machine that runs Ubuntu using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/). 
+To develop Caleydo Web applications, you can use a container repository that includes a Vagrant VM.
+It is used for creating, combining, and managing individual plugins Caleydo Web consists of.
+
+Creating, managing and enforcing a unified development environment is challenging. Individual tools, such as python virtual environments provide ways to do that. However, creating a unified heterogeneous environment with external dependencies and tools (databases, multiple languages, ...) remains difficult. [Vagrant](http://vagrantup.com/) provides a central management by isolating the dev environment into a virtual machine. This allows that all members use a similar environment and also reduces the tackles handling different operating systems, versions, ... 
+
+Caleydo Web is a collection of individual plugins. The Caleydo Web Container project acts as a management and unified container for the collection. This repository contains just of management utilities along with the Vagrantfile for creating the virtual machine. 
+
+
 
 ## TODO
 
@@ -16,3 +23,6 @@ Caleydo Web components are found on [GitHub](https://github.com/Caleydo). To fac
 * Who is maintaining this?
 * How do I get involved?
 * Where to report bugs
+
+
+
