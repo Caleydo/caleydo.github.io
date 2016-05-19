@@ -1,14 +1,14 @@
 
-- title: "Documentation"
+- title: "Documentation Home"
   href: ""
 
 - title: "Project Description"
   href: "project_description"
   categories:
+    - title: "Architecture"
+      href: "architecture"
     - title: "Plugin Mechanism"
       href: "plugin_mechanism"
-    - title: "Data Structures"
-      href: "data_structure"
 
 - title: "Tutorials"
   href: "tutorial"
@@ -48,6 +48,9 @@
 
 - title: "API Docs"
   href: "builds/lib/docs/"
+  categories:
+   - title: "Data Structures"
+     href: "data_structure"
 
 - title: "Deployment"
   href: "deployment"
