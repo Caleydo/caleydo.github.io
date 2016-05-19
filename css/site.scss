@@ -296,6 +296,11 @@ body {
     @extend %default-ul;
     @include dotted-link-underline;
   }
+  
+  ol {
+    @extend %default-ol;
+    @include dotted-link-underline;
+  }
 
   p {
     @include dotted-link-underline;
