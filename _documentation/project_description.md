@@ -4,6 +4,14 @@ title:  Project Description
 permalink: /documentation/project_description
 ---
 
+## What Caleydo Web can do for you
+
+ * Synchronize your views with linking and brushing.
+ * Provides NumPy like data structures.
+ * Provides plugin management for larger projects.
+ * Handles client-server communication for you.
+
+
 {% include todo.html %}
 
 * Add summary
