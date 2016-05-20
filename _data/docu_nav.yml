@@ -29,8 +29,6 @@
       href: "management_utility"
     - title: "Setting up PyCharm"
       href: "pycharm"
-    - title: "Installing Applications"
-      href: "installing_apps"
 
 - title: "Applications"
   href: "applications"
@@ -53,8 +51,10 @@
 - title: "Deployment"
   href: "deployment"
   categories:
-   - title: "Static Deployment"
-     href: "static_deployment"
+   - title: "Building Applications"
+     href: "building_apps"
+   - title: "Installing Applications"
+     href: "installing_apps"
    - title: "Docker"
      href: "docker"
 

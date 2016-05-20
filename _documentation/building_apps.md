@@ -1,7 +1,7 @@
 ---
 layout: documentation
-title:  Static Deployment
-permalink: /documentation/static_deployment
+title:  Building Applications
+permalink: /documentation/building_apps
 ---
 
 grunt task: `grunt build [--application=<application>] [--context=<context>]`
