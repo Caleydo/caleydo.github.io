@@ -1,6 +1,10 @@
 
-- title: "Documentation Home"
+## Getting Started
+- title: "Welcome"
   href: ""
+
+- title: "Quickstart Guide"
+  href: "quickstart_guide"
 
 - title: "Project Description"
   href: "project_description"
@@ -10,13 +14,7 @@
     - title: "Plugin Mechanism"
       href: "plugin_mechanism"
 
-- title: "Tutorials"
-  href: "tutorial"
-  categories:
-    - title: "Visualize a Matrix"
-      href: "tutorial_visualize_matrix"
-    - title: "Integrate with Angular"
-      href: "tutorial_angular_heatmap_integration"
+## Setup
 
 - title: "Installation"
   href: "installation"
@@ -29,6 +27,14 @@
       href: "management_utility"
     - title: "Setting up PyCharm"
       href: "pycharm"
+
+- title: "Tutorials"
+  href: "tutorial"
+  categories:
+    - title: "Visualize a Matrix"
+      href: "tutorial_visualize_matrix"
+    - title: "Integrate with Angular"
+      href: "tutorial_angular_heatmap_integration"
 
 - title: "Applications"
   href: "applications"
@@ -58,7 +64,7 @@
    - title: "Docker"
      href: "docker"
 
-- title: "API Docs"
+- title: "API Reference"
   href: "http://data.caleydo.org/builds/lib/docs/"
   categories:
    - title: "Data Structures"
