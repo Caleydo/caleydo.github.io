@@ -644,8 +644,16 @@ ul.post-list {
     padding:0; margin:0px;
   }
 
+  ul li {
+    margin-bottom: 15px;
+  }
+
   ul  ul {
-    padding-left: 10px; margin:0px;
+    padding-left: 10px; margin:0;
+
+    li {
+      margin-bottom: 0;
+    }
   }
 
 }
