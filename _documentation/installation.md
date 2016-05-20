@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title:  Development Environment
+title:  Installation
 permalink: /documentation/installation/
 ---
 

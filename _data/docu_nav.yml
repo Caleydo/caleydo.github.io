@@ -33,8 +33,6 @@
   categories:
     - title: "Visualize a Matrix"
       href: "tutorial_visualize_matrix"
-    - title: "Integrate with Angular"
-      href: "tutorial_angular_heatmap_integration"
 
 - title: "Applications"
   href: "applications"
@@ -64,7 +62,12 @@
    - title: "Docker"
      href: "docker"
 
-- title: "API Reference"
+- title: "Cookbook"
+  categories:
+    - title: "Integrate with Angular"
+      href: "tutorial_angular_heatmap_integration"
+
+- title: "API Documentation"
   href: "http://data.caleydo.org/builds/lib/docs/"
   categories:
    - title: "Data Structures"
