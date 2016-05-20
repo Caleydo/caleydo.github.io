@@ -4,6 +4,13 @@ title:  Installing Applications
 permalink: /documentation/installing_apps
 ---
 
+{% include todo.html %}
+
+* Replace content with how to install a binary description
+
+
+## OLD CONTENT
+
 Note: Please ignore this part if you want to set up a dev environment.
 
 {% highlight bash  %}
@@ -38,5 +45,4 @@ Depending whether you installed the python server `caleydo_server` or the Javasc
 
 TODO: add list of applications (dynamically generated?)
 
-Sample applications:
-https://github.com/Caleydo/?utf8=%E2%9C%93&query=sample
+[List of Sample Applications](https://github.com/Caleydo/?utf8=%E2%9C%93&query=sample)
