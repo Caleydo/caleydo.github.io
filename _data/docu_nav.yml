@@ -59,7 +59,7 @@
      href: "docker"
 
 - title: "API Docs"
-  href: "builds/lib/docs/"
+  href: "http://data.caleydo.org/builds/lib/docs/"
   categories:
    - title: "Data Structures"
      href: "data_structure"

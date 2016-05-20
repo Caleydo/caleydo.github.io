@@ -13,9 +13,14 @@ layout: default
         <ul>
             {% for navitem in site.data.docu_nav %}
             {% if navitem.categories != null %}
+
             <li>
-                <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }} <i
-                        class="fa fa-angle-down"></i></a>
+                {% if navitem.title == "API Docs" %}
+                    <a href="{{ navitem.href }}">{{ navitem.title }} <i class="fa fa-external-link" aria-hidden="true"></i>
+ <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                {% else %}
+                    <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }} <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                {% endif %}
 
                 <ul>
                     {% for category in navitem.categories %}
@@ -25,15 +30,17 @@ layout: default
                     {% endfor %}
                 </ul>
             </li>
+
             {% else %}
 
             <li>
-                {% if navitem.title == 'API Docs' %}
-                 <a href="{{ site.data_url }}{{ navitem.href }}">{{ navitem.title }}</a>
-                 {% else %}
-                <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}</a>
+                {% if navitem.title == "API Docs" %}
+                    <a href="{{ navitem.href }}">{{ navitem.title }} <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                {% else %}
+                    <a href="{{ site.baseurl }}/documentation/{{ navitem.href }}">{{ navitem.title }}</a>
                 {% endif %}
             </li>
+
             {% endif %}
             {% endfor %}
         </ul>
