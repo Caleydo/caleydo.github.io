@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Development Environment
-permalink: /documentation/dev_env/
+permalink: /documentation/installation/
 ---
 
 To develop Caleydo Web applications, you can use a container repository that includes a Vagrant VM.
@@ -13,7 +13,7 @@ Caleydo Web is a collection of individual plugins. The Caleydo Web Container pro
 
 
 
-## TODO
+{% include todo.html %}
 
 * What is it about?
 * Why should I use it?

@@ -18,39 +18,37 @@
     - title: "Integrate with Angular"
       href: "tutorial_angular_heatmap_integration"
 
-- title: "Development Environment"
-  href: "dev_env"
+- title: "Installation"
+  href: "installation"
   categories:
+    - title: "Directory Structure"
+      href: "directory_structure"
     - title: "Setting up Vagrant"
       href: "vagrant"
     - title: "Management Utility"
       href: "management_utility"
     - title: "Setting up PyCharm"
       href: "pycharm"
-    - title: "Directory Structure"
-      href: "directory_structure"
+    - title: "Installing Applications"
+      href: "installing_apps"
 
-- title: "Applications and Plugins"
-  href: "apps_and_plugins"
+- title: "Applications"
+  href: "applications"
+  categories:
+    - title: "List of Applications"
+      href: "list_of_applications"
+    - title: "Creating Applications"
+      href: "creating_application"
+
+- title: "Plugins"
+  href: "plugins"
   categories:
     - title: "Frameworks"
       href: "frameworks"
     - title: "List of Plugins"
       href: "list_of_plugins"
-    - title: "List of Applications"
-      href: "list_of_applications"
-    - title: "Installing Applications"
-      href: "installing_apps"
     - title: "Creating Plugins"
       href: "creating_plugin"
-    - title: "Creating Applications"
-      href: "creating_application"
-
-- title: "API Docs"
-  href: "builds/lib/docs/"
-  categories:
-   - title: "Data Structures"
-     href: "data_structure"
 
 - title: "Deployment"
   href: "deployment"
@@ -59,3 +57,9 @@
      href: "static_deployment"
    - title: "Docker"
      href: "docker"
+
+- title: "API Docs"
+  href: "builds/lib/docs/"
+  categories:
+   - title: "Data Structures"
+     href: "data_structure"

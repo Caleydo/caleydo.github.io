@@ -9,7 +9,8 @@ Plug-ins are [require.js](http://requirejs.org/) modules with an additional meta
 The [package.json](https://www.npmjs.org/doc/files/package.json.html) is the one from node-js.
 
 `package.json`:
-```JSON
+
+{% highlight javascript %}
 {
   "name" : "...",
   "peerDependencies" : {
@@ -40,9 +41,10 @@ The [package.json](https://www.npmjs.org/doc/files/package.json.html) is the one
     "registry": "http://registry.caleydo.org/"
   }
 }
-```
+{% endhighlight %}
 
 There are several sections in package.json:
+
 * **peerDependencies:** All dependencies within caleydo web, i.e., caleydo-web modules.
 * **caleydo:** Several caleydo-web specific declarations.
 * **caleydo.plugins:** Plugins specified for this module. Separated into "web" and "python" plugins.
@@ -59,7 +61,7 @@ Note that the dependencies are specified in a way that is compatible with [bower
 
 Every plug-in is described by the following entries:
 
-```typescript
+{% highlight typescript %}
 export interface IPluginDesc {
   /**
    * type of plug-in, a name by convention for identifying different plug-in types
@@ -94,7 +96,7 @@ export interface IPluginDesc {
    */
   description: string;
 }
-```
+{% endhighlight %}
 
 Different plugin types may also define additional entries.
 Every plug-in has to have an entry method for creating the plug-in related content. Multiple plug-ins are possible per file by specifying different factory methods.
@@ -106,18 +108,20 @@ Multiple plugin types are available in Caleydo web and user-defined types may be
 Defines a client-side application plugin. Use this to setup a web application that uses caleydo-web.
 
 _Plugin Definition:_
-```JSON
+
+{% highlight javascript %}
 {
   "type": "app",
   "name": "Sample App"
 }
-```
+{% endhighlight %}
 
 
 An index.html file must exist.
 
 _index.html_
-```html
+
+{% highlight html %}
 <!doctype html>
 <html>
 <head>
@@ -128,16 +132,17 @@ _index.html_
 ...
 </body>
 </html>
-```
+{% endhighlight %}
 
 By default main.js is assumed to be the primary script file and is attempted to be loaded.
 
 _main.js_
-```javascript
+
+{% highlight javascript %}
 define(['d3', '../caleydo_core/main'], function (d3, C) {
   //Your application code
 });
-```
+{% endhighlight %}
 
 If your application script has a different name, e.g., "app.js", just change the script definition to
 `"<script src="/caleydo_web.js?app=./app"></script>"`.
@@ -151,7 +156,8 @@ For an example application plugin, see [sample_app](https://github.com/Caleydo/s
 Defines a client-side visualization plugin. Visualization plugins are intended for general visualizations that are used by web applications.
 
 _Plugin Definition:_
-```JSON
+
+{% highlight javascript %}
 {
   "type": "vis",
   "name": "Sample Vis",
@@ -162,13 +168,14 @@ _Plugin Definition:_
     true
   ]
 }
-```
+{% endhighlight %}
 
 You can specify a range of additional attributes for visualituation plugins:
-* **filter:** Specifies the data types the visualization plugin supports. You can specify supported dataset types as simple string, e.g., ``"vector"``, or as regular expression, e.g.,  ``"(vector|matrix|stratification)``. You may additionally define supported data types in a similar way by using an array: ``["(vector|matrix|stratification)", "(categorical|real|int)"]``.
+
+* **filter**: Specifies the data types the visualization plugin supports. You can specify supported dataset types as simple string, e.g., ``"vector"``, or as regular expression, e.g.,  ``"(vector|matrix|stratification)``. You may additionally define supported data types in a similar way by using an array: ``["(vector|matrix|stratification)", "(categorical|real|int)"]``.
 * **icon**: Icon associated with the visualization.
-* **sizeDependsOnDataDimension":** Indicates, whether the size of this visulization depends on the dimensions of the data, e.g., the rows and columns of a table. Values may be set for width and height using an array: ``[true, false]`` A single value may be specified to set both.
-* **scaling:** Specifies the scaling behavior. The following values are supported: *free* (no restrictions, default), *aspect* (the initial aspect ratio must be kept, i.e. same scaling values in both dimensions), *width-only* (only width can be scaled), *height-only* (only height can be scaled)
+* **sizeDependsOnDataDimension**: Indicates, whether the size of this visulization depends on the dimensions of the data, e.g., the rows and columns of a table. Values may be set for width and height using an array: ``[true, false]`` A single value may be specified to set both.
+* **scaling**: Specifies the scaling behavior. The following values are supported: *free* (no restrictions, default), *aspect* (the initial aspect ratio must be kept, i.e. same scaling values in both dimensions), *width-only* (only width can be scaled), *height-only* (only height can be scaled)
 
 For an example plugin, see [sample_vis](https://github.com/Caleydo/sample_vis).
 
