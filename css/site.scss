@@ -65,7 +65,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 }
 
 .nav-icon {
-  margin-right: 0.2em;
+  margin-right: 0.3em;
   display: inline-block;
 
   @include media($medium-display) {
@@ -154,6 +154,11 @@ body {
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+
+
+p {
+  padding-left: 5px;
 }
 
 .home-button {
