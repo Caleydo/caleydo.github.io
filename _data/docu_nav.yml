@@ -45,12 +45,12 @@
 - title: "Plugins"
   href: "plugins"
   categories:
-    - title: "Frameworks"
-      href: "frameworks"
     - title: "List of Plugins"
       href: "list_of_plugins"
     - title: "Creating Plugins"
       href: "creating_plugin"
+    - title: "Frameworks"
+      href: "frameworks"
 
 - title: "Deployment"
   href: "deployment"
