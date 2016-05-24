@@ -4,7 +4,9 @@ title:  Deployment
 permalink: /documentation/deployment
 ---
 
-TODO: Summarize the different ways to deploy Caleydo web applications (Docker, static, server only, etc.)
+{% include todo.html %}
+
+* Summarize the different ways to deploy Caleydo web applications (Docker, static, server only, etc.)
 
 ## Server Deployment
 

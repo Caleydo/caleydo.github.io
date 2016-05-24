@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Mangement Utility
-permalink: /documentation/mangement_utility/
+permalink: /documentation/management_utility/
 ---
 
 `manage.py` is a management utility for installling plugins, pulling repositories, and resolving external dependencies.

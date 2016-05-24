@@ -1,6 +1,10 @@
 
-- title: "Documentation Home"
+## Getting Started
+- title: "Welcome"
   href: ""
+
+- title: "Quickstart Guide"
+  href: "quickstart_guide"
 
 - title: "Project Description"
   href: "project_description"
@@ -10,52 +14,61 @@
     - title: "Plugin Mechanism"
       href: "plugin_mechanism"
 
-- title: "Tutorials"
-  href: "tutorial"
-  categories:
-    - title: "Visualize a Matrix"
-      href: "tutorial_visualize_matrix"
-    - title: "Integrate with Angular"
-      href: "tutorial_angular_heatmap_integration"
+## Setup
 
-- title: "Development Environment"
-  href: "dev_env"
+- title: "Installation"
+  href: "installation"
   categories:
+    - title: "Directory Structure"
+      href: "directory_structure"
     - title: "Setting up Vagrant"
       href: "vagrant"
     - title: "Management Utility"
       href: "management_utility"
     - title: "Setting up PyCharm"
       href: "pycharm"
-    - title: "Directory Structure"
-      href: "directory_structure"
 
-- title: "Applications and Plugins"
-  href: "apps_and_plugins"
+- title: "Tutorials"
+  href: "tutorial"
   categories:
-    - title: "Frameworks"
-      href: "frameworks"
-    - title: "List of Plugins"
-      href: "list_of_plugins"
+    - title: "Visualize a Matrix"
+      href: "tutorial_visualize_matrix"
+
+- title: "Applications"
+  href: "applications"
+  categories:
     - title: "List of Applications"
       href: "list_of_applications"
-    - title: "Installing Applications"
-      href: "installing_apps"
-    - title: "Creating Plugins"
-      href: "creating_plugin"
     - title: "Creating Applications"
       href: "creating_application"
 
-- title: "API Docs"
-  href: "builds/lib/docs/"
+- title: "Plugins"
+  href: "plugins"
   categories:
-   - title: "Data Structures"
-     href: "data_structure"
+    - title: "List of Plugins"
+      href: "list_of_plugins"
+    - title: "Creating Plugins"
+      href: "creating_plugin"
+    - title: "Frameworks"
+      href: "frameworks"
 
 - title: "Deployment"
   href: "deployment"
   categories:
-   - title: "Static Deployment"
-     href: "static_deployment"
+   - title: "Building Applications"
+     href: "building_apps"
+   - title: "Installing Applications"
+     href: "installing_apps"
    - title: "Docker"
      href: "docker"
+
+- title: "Cookbook"
+  categories:
+    - title: "Integrate with Angular"
+      href: "tutorial_angular_heatmap_integration"
+
+- title: "API Documentation"
+  href: "http://data.caleydo.org/builds/lib/docs/"
+  categories:
+   - title: "Data Structures"
+     href: "data_structure"

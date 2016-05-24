@@ -1,0 +1,81 @@
+# parse https://api.github.com/users/Caleydo/repos and categorize them
+
+- name: "sample_app"
+  description: "A simple sample application as a starting point for your own one"
+  html_url: "https://github.com/Caleydo/sample_app"
+  category: "app"
+
+- name: "demo_app"
+  description: "Demo application for playing with vis types and multiform"
+  html_url: "https://github.com/Caleydo/demo_app"
+  category: "app"
+
+- name: "clue_demo"
+  description: "The foundation for Vistories: CLUE playground for provenance storage and visualization"
+  html_url: "https://github.com/Caleydo/clue_demo"
+  category: "app"
+
+- name: "stratomex.js"
+  description: "StratomeX app in Caleydo Web with rudimentary Provenance support"
+  html_url: "https://github.com/Caleydo/stratomex.js"
+  category: "app"
+
+- name: "sample_local_app"
+  description: "A simple sample application as a starting point for your own one without any server part"
+  html_url: "https://github.com/Caleydo/sample_local_app"
+  category: "app"
+
+- name: "domino.js"
+  description: "Domino Caleydo Web application"
+  html_url: "https://github.com/Caleydo/domino.js"
+  category: "app"
+
+- name: "entourage"
+  description: ""
+  html_url: "https://github.com/Caleydo/entourage"
+  category: "app"
+
+- name: "particles"
+  description: "Particles Playground App"
+  html_url: "https://github.com/Caleydo/particles"
+  category: "app"
+
+- name: "pathfinder"
+  description: "Pathfinder Caleydo Web Application"
+  html_url: "https://github.com/Caleydo/pathfinder"
+  category: "app"
+
+- name: "pathfinder_graph"
+  description: "Pathfinder Python Server plugin for communicating with Neo4j"
+  html_url: "https://github.com/Caleydo/pathfinder_graph"
+  category: "app"
+
+- name: "pathfinder_ccle"
+  description: "Pathfinder Python Server plugin for providing ccle data"
+  html_url: "https://github.com/Caleydo/pathfinder_ccle"
+  category: "app"
+
+- name: "vials"
+  description: ""
+  html_url: "https://github.com/Caleydo/vials"
+  category: "app"
+
+- name: "vials_server"
+  description: "Reading Genomic Files and provide data as API"
+  html_url: "https://github.com/Caleydo/vials_server"
+  category: "app"
+
+- name: "mini_mds"
+  description: "A Mini Example Template for creating a server and client plugin"
+  html_url: "https://github.com/Caleydo/mini_mds"
+  category: "app"
+
+- name: "taco"
+  description: "This should be my master's thesis about table comparison."
+  html_url: "https://github.com/Reemh/taco"
+  category: "app"
+
+- name: "taco_server"
+  description: "Python table generator and modifier"
+  html_url: "https://github.com/Reemh/taco_server"
+  category: "app"

@@ -7,3 +7,4 @@ _deploy/
 /Gemfile.lock
 *.sublime-*
 css/site.css
+*.un~

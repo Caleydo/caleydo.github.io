@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Documentation | Caleydo
+title: Welcome
 weight: 2
 tag: documentation
 permalink: /documentation/
