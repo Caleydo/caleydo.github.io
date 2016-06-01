@@ -71,11 +71,11 @@
   category: "app"
 
 - name: "taco"
-  description: "This should be my master's thesis about table comparison."
-  html_url: "https://github.com/Reemh/taco"
+  description: "Comparative visualization of large tabular data using Caleydo Web"
+  html_url: "https://github.com/Caleydo/taco"
   category: "app"
 
 - name: "taco_server"
-  description: "Python table generator and modifier"
-  html_url: "https://github.com/Reemh/taco_server"
+  description: "The server part for comparing large tabular data using Caleydo Web"
+  html_url: "https://github.com/Caleydo/taco_server"
   category: "app"
