@@ -48,11 +48,10 @@ supplement: 2016_eurovis_clue_supplement.pdf
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
-#- name: Vials Conference Talk Slides
-#  # use link instead of abslink if you want to link to the master directory
-#  abslink: http://vials.io/talk/
-#  # defaults to a download icon, use this if you want a link-out icon
-#  linksym: true
+ - name: Samuel Gratzl's Talk @ EuroVis'16 (PDF)
+   link: 2016_eurovis_clue_talk.pdf
+ - name: Samuel Gratzl's Talk  @ EuroVis'16 (PPTX)
+   link: 2016_eurovis_clue_talk.pptx
 
 # Link to the repository where the code is hostet
 code: https://github.com/Caleydo/caleydo_clue/
