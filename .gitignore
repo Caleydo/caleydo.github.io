@@ -4,7 +4,6 @@ _site/
 caleydo.github.io.sublime-project
 caleydo.github.io.sublime-workspace
 _deploy/
-/Gemfile.lock
 *.sublime-*
 css/site.css
 *.un~
