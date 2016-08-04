@@ -29,10 +29,6 @@ The only supported plugins are those that come with the [github-pages gem](https
 
 https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 
-### Windows Installation Instructions
-
-http://jekyll-windows.juthilo.com/1-ruby-and-devkit/
-
 ### Writing interactive documentation 
 
 When contributing documentation, put each individual page in the `_documentation` collection as a markdown file.
