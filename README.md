@@ -23,7 +23,7 @@ bundle update
 
 ### Jekyll Plugins
 
-- YouTube: https://gist.github.com/joelverhagen/1805814
+The only supported plugins are those that come with the [github-pages gem](https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/).
 
 ### Liquid Syntax
 
