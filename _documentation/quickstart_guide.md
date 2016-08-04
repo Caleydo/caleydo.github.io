@@ -19,9 +19,10 @@ git clone https://github.com/Caleydo/caleydo_web_container.git
 cd caleydo_web_container
 vagrant up
 # wait and get some coffee. this will take a while
-vagrant sshinstallation.mdinstallation.md
+vagrant ssh
 {% endhighlight %}
 
+Then, from within the VM:
 
 {% highlight bash  %}
 # 1a clone the repositories and their dependencies
