@@ -4,7 +4,7 @@ first_name: Kasper
 last_name: Dinkla
 key: dinkla
 permalink: /persons/dinkla/
-role: core
+role: alumni
 email: kasper.dinkla@gmail.com
 image: /assets/images/team/dinkla.png
 organization: Harvard University
