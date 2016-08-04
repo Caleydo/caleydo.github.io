@@ -8,6 +8,6 @@ role: alumni
 email: contact@hjschulz.net
 image: /assets/images/team/schulz.png
 organization: University of Rostock
-position: Postdoctoral Associate
+position:
 website: http://www.informatik.uni-rostock.de/~hs162/
 ---

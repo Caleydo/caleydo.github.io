@@ -8,6 +8,6 @@ role: alumni
 email: kasper.dinkla@gmail.com
 image: /assets/images/team/dinkla.png
 organization: Harvard University
-position: Postdoctoral Research Associate
+position:
 website: http://vcg.seas.harvard.edu/people/kasper-dinkla
 ---

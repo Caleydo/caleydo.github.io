@@ -8,6 +8,6 @@ role: collaborator
 email: anne_mai.wassermann@novartis.com
 image: /assets/images/team/wassermann.jpg
 organization: Novartis Institutes for BioMedical Research
-position: Postdoctoral Research Associate
+position:
 website: 
 ---
