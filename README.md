@@ -13,7 +13,8 @@ $ sudo apt-get install ruby-dev
 Requires Jekyll 2.1.0 or later.
 
 ```ShellSession
-$ gem install jekyll
+$ gem install bundler
+$ bundle install
 ```
 
 #### Generate and/or Serve Site
@@ -25,7 +26,7 @@ $ jekyll serve --watch
 #### View Site
 
 ```ShellSession
-$ open http://0.0.0.0:4000/
+$ open http://0.0.0.0:4000/website/
 ```
 
 ### Updating Bourbon Dependencies
@@ -55,7 +56,7 @@ http://jekyll-windows.juthilo.com/1-ruby-and-devkit/
 
 When contributing documentation, put each individual page in the `_documentation` collection as a markdown file.
  
-If your documentation contains code, you should write the code in a separate file, which you put into a sub-folder of the `_documentation` folder. y convention, this folder should have the same name as your markdown file. 
+If your documentation contains code, you should write the code in a separate file, which you put into a sub-folder of the `_documentation` folder. By convention, this folder should have the same name as your markdown file. 
 
 To include code on the page, you can use the following jekyll code: 
 

@@ -1,6 +1,10 @@
 
-- title: "Documentation Home"
+## Getting Started
+- title: "Welcome"
   href: ""
+
+- title: "Quickstart Guide"
+  href: "quickstart_guide"
 
 - title: "Project Description"
   href: "project_description"
@@ -10,13 +14,7 @@
     - title: "Plugin Mechanism"
       href: "plugin_mechanism"
 
-- title: "Tutorials"
-  href: "tutorial"
-  categories:
-    - title: "Visualize a Matrix"
-      href: "tutorial_visualize_matrix"
-    - title: "Integrate with Angular"
-      href: "tutorial_angular_heatmap_integration"
+## Setup
 
 - title: "Installation"
   href: "installation"
@@ -32,6 +30,15 @@
     - title: "Installing Applications"
       href: "installing_apps"
 
+
+
+- title: "Tutorials"
+  href: "tutorial"
+  categories:
+    - title: "Visualize a Matrix"
+      href: "tutorial_visualize_matrix"
+
+
 - title: "Applications"
   href: "applications"
   categories:
@@ -43,23 +50,33 @@
 - title: "Plugins"
   href: "plugins"
   categories:
-    - title: "Frameworks"
-      href: "frameworks"
+
     - title: "List of Plugins"
       href: "list_of_plugins"
     - title: "Creating Plugins"
       href: "creating_plugin"
+    - title: "Frameworks"
+      href: "frameworks"
+
 
 - title: "Deployment"
   href: "deployment"
   categories:
-   - title: "Static Deployment"
-     href: "static_deployment"
+   - title: "Building Applications"
+     href: "building_apps"
+   - title: "Installing Applications"
+     href: "installing_apps"
    - title: "Docker"
      href: "docker"
 
-- title: "API Docs"
-  href: "builds/lib/docs/"
+
+- title: "Cookbook"
+  categories:
+    - title: "Integrate with Angular"
+      href: "tutorial_angular_heatmap_integration"
+
+- title: "API Documentation"
+  href: "http://data.caleydo.org/builds/lib/docs/"
   categories:
    - title: "Data Structures"
      href: "data_structure"

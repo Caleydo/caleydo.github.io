@@ -15,7 +15,7 @@ Install [PyCharm](https://www.jetbrains.com/pycharm/).
   * Select 'Add Remote'
   * Choose the Vagrant option. PyCharm will then try to launch the virtual machine
 * Configure run/debug configuration
-  * Create a new Python Run/Debug configuration running the file  'plugins/caleydo_server/\__main__.py'
+  * Create a new Python Run/Debug configuration running the file `plugins/caleydo_server/\__main__.py`
   * Change working directory to `/vagrant`
   * Change python interpreter to 'Remote Python'
 * Prepare the typescript compiler

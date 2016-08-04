@@ -22,6 +22,7 @@ authors:
 - streit
 
 journal: Computer Graphics Forum (EuroVis '16) (to appear)
+journal-short: CGF (EuroVis '16)
 year: 2016
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
