@@ -8,7 +8,6 @@ Install [PyCharm](https://www.jetbrains.com/pycharm/).
 
 * Launch PyCharm
 * Open project from existing sources and select `caleydo_web_container`
-* Copy all template project settings files in the `_idea_template` folder to the hidden `.idea` folder and launch PyCharm
 * Configure project interpreter
   * Go to 'File->Preferences...->Project:caleydo_web_container->Project Interpreter'
   * Click on the gears icon
