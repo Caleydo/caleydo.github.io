@@ -50,7 +50,7 @@ Entourage helps to find answers to this question by enabling analysts to analyze
 
 ![Pathway Visualizations Overview]({{site.baseurl}}/assets/images/projects/entourage_basic.png)
 
-In addition to the visualization of relationships between selected pathways, Entourage allows analysts to dynamically define their focus and supports them in finding relevant and related  pathways in the context of an analysis. Pathway exploration in Entourage can also be triggered out of the [StratomeX view]({{site.baseurl}}/projects/stratomex/)
+In addition to the visualization of relationships between selected pathways, Entourage allows analysts to dynamically define their focus and supports them in finding relevant and related  pathways in the context of an analysis. Pathway exploration in Entourage can also be triggered out of the [StratomeX view]({{site.baseurl}}/tools/stratomex/)
 
 ### enRoute
 

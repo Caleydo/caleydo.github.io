@@ -49,7 +49,7 @@ StratomeX also enables the analysis of clinical data in this context: it is made
 ![StratomeX explained]({{site.baseurl}}/assets/images/projects/stratomex_explained.png) 
 
 
-StratomeX also provides an **advanced query and data selection interface**. It enables analysts to ask specific questions, such as *Which other stratifications are similar to the selected one?*, or *Is there a pathway that is enriched for this patient group?*. A rich set of algorithms calculate rankings of potential matching datasets and stratifications, which are then presented using the [LineUp]({{site.baseurl}}/projects/lineup/) interface. T
+StratomeX also provides an **advanced query and data selection interface**. It enables analysts to ask specific questions, such as *Which other stratifications are similar to the selected one?*, or *Is there a pathway that is enriched for this patient group?*. A rich set of algorithms calculate rankings of potential matching datasets and stratifications, which are then presented using the [LineUp]({{site.baseurl}}/tools/lineup/) interface.
 
 StratomeX is currently available as a standalone tool and as a web-based tool. For more information about StratomeX visit the [tool page]({{site.baseurl}}/tools/stratomex/), visit the [Help Pages](http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md) or watch the instructional videos below.
  
