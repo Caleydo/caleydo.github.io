@@ -9,12 +9,11 @@ install: bundle install
 
 script: 
 - jekyll build
+- htmlproofer ./_site --disable-external  --alt-ignore '/.*/' --url-swap '/assets/images/papers/$:/assets/images/papers/2016_eurovis_pathfinder_teaser.png'
+# JS add the last part of the URL, which is missing in the static file
 
-# There are errors right now: https://github.com/Caleydo/caleydo.github.io/issues/83
-#
-# - htmlproofer ./_site --disable-external
-# env:
-#   global:
-#   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 sudo: false # route your build to the container-based infrastructure for a faster build

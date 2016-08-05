@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Quickstart Guide
-permalink: /documentation/quickstart_guide
+permalink: /documentation/quickstart_guide/
 ---
 
 {% include todo.html %}
