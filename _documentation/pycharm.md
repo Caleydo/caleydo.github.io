@@ -4,6 +4,25 @@ title:  Setting up PyCharm
 permalink: /documentation/pycharm/
 ---
 
+## For PyCharm 2016.2
+ 
+* Install [PyCharm](https://www.jetbrains.com/pycharm/)
+* Click "Open" and select `caledo_web_container`
+* Configure interpreter ([PyCharm docs](https://www.jetbrains.com/help/pycharm/2016.2/configuring-remote-interpreters-via-vagrant.html))
+  * File -> Default Settings... -> Project Interpreter
+  * To the right of the "Project Interpreter" selector, click the `...` buttons. (The official docs describe a gear button, but don't let that confuse you.)
+  * Select "Add Remote"
+  * Click the "Vagrant" radio button
+  * For "Vagrant Instance Folder", navigate to your checkout of `caleydo_web_container`
+  * Wait a moment and "Vagrant Host URL" should be filled in
+  * Click "OK": It will take another moment to connect. You will be prompted to accept the insecure connection to localhost.
+* Remote debugging ([PyCharm docs](https://www.jetbrains.com/help/pycharm/2016.2/remote-debugging.html))
+
+TODO
+
+
+## For older versions
+
 Install [PyCharm](https://www.jetbrains.com/pycharm/).
 
 * Launch PyCharm
