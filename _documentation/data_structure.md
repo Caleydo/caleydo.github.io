@@ -4,7 +4,7 @@ title: Data Structure
 permalink: /documentation/data_structure/
 ---
 
-Caleydo Web supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using [promises](TODO). These data structures are implemented in the [core plugin](https://github.com/Caleydo/caleydo_core).
+Caleydo Web supports simple loading and handling of various data. It provides data structures for lazy loading and accessing data using promises (TODO). These data structures are implemented in the [core plugin](https://github.com/Caleydo/caleydo_core).
 
 ## Loading Datasets
 
@@ -102,12 +102,12 @@ Consider the following properties for a matrix definition:
 
 Caleydo Web matrices implement the [IMatrix](http://data.caleydo.org/builds/lib/docs/interfaces/_caleydo_core_matrix_.imatrix.html) interface, which can be extended to provide custom matrix implementations. Important attributes include:
 
-* `rowtype` [IDType](todo) for the matrix rows.
-* `coltype` [IDType](todo) for the matrix columns.
+* `rowtype` IDType (todo) for the matrix rows.
+* `coltype` IDType (todo) for the matrix columns.
 * `valuetype` Description of the values in the matrix, i.e., type, range etc. as specified in the definition file.
 * `t` Transposed version of the matrix.
 
-Methods to access the data make use of [range](todo) parameters to specify a subset on the data. If no parameter is provided, the maximum range, i.e., all data is considered. Most methods also return [promises](todo) instead of directly returning resulting values. Here are some important methods of a matrix:
+Methods to access the data make use of range (todo) parameters to specify a subset on the data. If no parameter is provided, the maximum range, i.e., all data is considered. Most methods also return promises (todo) instead of directly returning resulting values. Here are some important methods of a matrix:
 
 * `data(range)` Returns a promise to the data of the matrix. If a 1D range is provided instead of a 2D range, only the rows are subsetted and all columns are returned.
 * `rows(range)` Returns a promise to the row names of the matrix.
