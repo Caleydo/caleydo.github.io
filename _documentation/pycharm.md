@@ -47,7 +47,7 @@ Make sure a Node interpreter is selected, and that the path corresponds to your 
 - Fold down "TypeScript" and select "TSLint"
 - Check "Enable"
 - Confirm the Node interpreter
-- On the command line, `npm install tslint`
+- On the command line, `npm install -g typescript; npm install -g tslint`
 - Select the "Configuration file" radio button, and choose tslint.json from the top level of the project.
 
 ## Run and Debug in PyCharm
