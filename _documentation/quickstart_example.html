@@ -28,11 +28,11 @@
   var matrix = C.d3.parser.parseRemoteMatrix('/documentation/quickstart_data.csv');
 
   matrix.then(function (matrixImpl) {
-  var multi = C.core.multiform.create(matrixImpl, document.getElementById('item'), {initialVis: 'caleydo-vis-heatmap'});
-  C.core.multiform.addSelectVisChooser(document.getElementById('toolbar'), multi);
+  var multi = C.core.multiform.create(matrixImpl, $('#item')[0], {initialVis: 'caleydo-vis-heatmap'});
+  C.core.multiform.addSelectVisChooser($('#toolbar')[0], multi);
 
-  var multi2 = C.core.multiform.create(matrixImpl.t, document.getElementById('item2'));
-  C.core.multiform.addSelectVisChooser(document.getElementById('toolbar2'), multi2);
+  var multi2 = C.core.multiform.create(matrixImpl.t, $('#item2')[0]);
+  C.core.multiform.addSelectVisChooser($('#toolbar2')[0], multi2);
 });
   </script>
 </body>
