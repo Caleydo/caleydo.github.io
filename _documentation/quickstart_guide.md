@@ -4,15 +4,16 @@ title:  Quickstart Guide
 permalink: /documentation/quickstart_guide/
 ---
 
-{% include todo.html %}
+Caleydo can be used:
 
-* Two versions:
-  1. Use the library version for client-side visualization only
-  2. Install Caleydo Web on your machine for client and server
+- as a JS library for client-side visualization
+- or as a full client-server application
 
-----
+## Caleydo JS library
 
-## Caleydo Web on your machine
+
+
+## Caleydo Web client-server
 
 {% highlight bash  %}
 git clone https://github.com/Caleydo/caleydo_web_container.git
@@ -25,13 +26,9 @@ vagrant ssh
 Then, from within the VM:
 
 {% highlight bash  %}
-# 1a clone the repositories and their dependencies
+# 1 clone the repositories and their dependencies
 ./manage.sh clone demo_app
 ./manage.sh clone caleydo_server
-
-# OR 1b install the latest published plugin
-./manage.sh install demo_app
-./manage.sh install caleydo_server
 
 # 2 resolve dependencies of plugins
 ./manage.sh resolve
