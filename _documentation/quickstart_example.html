@@ -23,17 +23,27 @@
   
   <!-- Your application code -->
   <script>
-  var C = window.Caleydo;
-  // Note that CORS must be enabled on the site serving the CSV.
-  var matrix = C.d3.parser.parseRemoteMatrix('/documentation/quickstart_data.csv');
+  (function(){
+    // Note that CORS must be enabled on the site serving the CSV.
+    var matrix = Caleydo.d3.parser.parseRemoteMatrix('/documentation/quickstart_data.csv');
 
-  matrix.then(function (matrixImpl) {
-  var multi = C.core.multiform.create(matrixImpl, $('#item')[0], {initialVis: 'caleydo-vis-heatmap'});
-  C.core.multiform.addSelectVisChooser($('#toolbar')[0], multi);
+    matrix.then(function (matrixImpl) {
+      var multiform = Caleydo.core.multiform;
+      
+      var multi = multiform.create(
+        matrixImpl, // TODO: Should this global be namespaced under Caleydo?
+        $('#item')[0], 
+        {initialVis: 'caleydo-vis-heatmap'}
+      );
+      multiform.addSelectVisChooser($('#toolbar')[0], multi);
 
-  var multi2 = C.core.multiform.create(matrixImpl.t, $('#item2')[0]);
-  C.core.multiform.addSelectVisChooser($('#toolbar2')[0], multi2);
-});
+      var multi2 = multiform.create(
+        matrixImpl.t, 
+        $('#item2')[0]
+      );
+      multiform.addSelectVisChooser($('#toolbar2')[0], multi2);
+    });
+  })();
   </script>
 </body>
 </html>
