@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Use the Caleydo Bundle to visualize a matrix.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Matrix visualization</title>
+  <link rel="stylesheet" href="http://caleydo.github.io/documentation/caleydo/bundle.css" />
+</head>
+<body>
+  <!-- View -->
+  <div id="toolbar"></div>
+  <div id="item"></div>
+  <div id="toolbar2"></div>
+  <div id="item2"></div>
+  
+  <!-- Outside dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" charset="utf-8"></script>
+  
+  <!-- Caleydo JS -->
+  <script src="http://www.caleydo.org/documentation/caleydo/bundle.js"></script>
+  
+  <!-- Your application code -->
+  <script>
+  var C = window.Caleydo;
+  // Note that CORS must be enabled on the site serving the CSV.
+  var matrix = C.d3.parser.parseRemoteMatrix('/documentation/quickstart_data.csv');
+
+  matrix.then(function (matrixImpl) {
+  var multi = C.core.multiform.create(matrixImpl, document.getElementById('item'), {initialVis: 'caleydo-vis-heatmap'});
+  C.core.multiform.addSelectVisChooser(document.getElementById('toolbar'), multi);
+
+  var multi2 = C.core.multiform.create(matrixImpl.t, document.getElementById('item2'));
+  C.core.multiform.addSelectVisChooser(document.getElementById('toolbar2'), multi2);
+});
+  </script>
+</body>
+</html>

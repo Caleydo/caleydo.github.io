@@ -11,33 +11,36 @@ Caleydo can be used:
 
 ## Caleydo JS library
 
+This [self-contained example](/documentation/quickstart_example.html) demonstrates how to visualize a matrix based on a sample data set. It provides a selection of multi-form visualizations for tabular data, including heatmap, scatter plot, and histogram.
 
+View source and you can see
 
-## Caleydo Web client-server
+- HTML which defines the View
+- JS dependencies
+- your application code
+
+## Caleydo client-server
 
 {% highlight bash  %}
 git clone https://github.com/Caleydo/caleydo_web_container.git
 cd caleydo_web_container
 vagrant up
-# wait and get some coffee. this will take a while
+# Wait and get some coffee. This will take a while.
 vagrant ssh
 {% endhighlight %}
 
 Then, from within the VM:
 
 {% highlight bash  %}
-# 1 clone the repositories and their dependencies
+# 1. Clone the repositories and their dependencies
 ./manage.sh clone demo_app
 ./manage.sh clone caleydo_server
 
-# 2 resolve dependencies of plugins
+# 2. Resolve dependencies of plugins
 ./manage.sh resolve
 
-# 3 start caleydo web
+# 3. Start caleydo web
 ./manage.sh server
 {% endhighlight %}
 
-Access: http://localhost:9000 or http://192.168.50.52:9000 and have fun :)
-
-Note:
-Depending whether you installed the python server `caleydo_server` or the Javascript server `caleydo_server_js`, call the corresponing grunt task: `server` and `server_js`.
+Go to [http://localhost:9000](http://localhost:9000).
