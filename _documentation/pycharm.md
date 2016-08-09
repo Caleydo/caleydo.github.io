@@ -4,64 +4,66 @@ title:  Setting up PyCharm
 permalink: /documentation/pycharm/
 ---
 
-## For PyCharm 2016.2
- 
-* Install [PyCharm](https://www.jetbrains.com/pycharm/)
-* Click "Open" and select `caledo_web_container`
-* Configure interpreter ([PyCharm docs](https://www.jetbrains.com/help/pycharm/2016.2/configuring-remote-interpreters-via-vagrant.html))
-  * File -> Default Settings... -> Project Interpreter
-  * To the right of the "Project Interpreter" selector, click the `...` buttons. (The official docs describe a gear button, but don't let that confuse you.)
-  * Select "Add Remote"
-  * Click the "Vagrant" radio button
-  * For "Vagrant Instance Folder", navigate to your checkout of `caleydo_web_container`
-  * Wait a moment and "Vagrant Host URL" should be filled in
-  * Click "OK": It will take another moment to connect. You will be prompted to accept the insecure connection to localhost.
-* Remote debugging ([PyCharm docs](https://www.jetbrains.com/help/pycharm/2016.2/remote-debugging.html))
+There are three approaches to developing Caleydo in PyCharm:
 
-TODO
+- Let the Vagrant instance manage Typescript and SCSS recompilation
+- Have PyCharm manage recompilation
+- In addition to recompilation, configure PyCharm to run and debug Caleydo
 
+A tighter connection with the IDE is useful, but can also be harder to set up.
 
-## For older versions
+## For any approach
 
-Install [PyCharm](https://www.jetbrains.com/pycharm/).
+- Install [PyCharm](https://www.jetbrains.com/pycharm/)
+- Ask your team for a link for to the license key
+- If you haven't already, [`git clone https://github.com/Caleydo/caleydo_web_container.git`](https://github.com/Caleydo/caleydo_web_container)
+- File -> Open... and select the `caleydo_web_container` directory.
+- Download [settings.jar](/assets/settings.jar)
+- In PyCharm, File -> Import Settings... and select "settings.jar"
 
-* Launch PyCharm
-* Open project from existing sources and select `caleydo_web_container`
-* Configure project interpreter
-  * Go to 'File->Preferences...->Project:caleydo_web_container->Project Interpreter'
-  * Click on the gears icon
-  * Select 'Add Remote'
-  * Choose the Vagrant option. PyCharm will then try to launch the virtual machine
-* Configure run/debug configuration
-  * Create a new Python Run/Debug configuration running the file `plugins/caleydo_server/\__main__.py`
-  * Change working directory to `/vagrant`
-  * Change python interpreter to 'Remote Python'
-* Prepare the typescript compiler
+## Recompilation in Vagrant
 
-  **If you use PyCharm 5 you can skip this step** Since PyCharm currently only supports 1.4, we need to use our own compiler from the node_modules folder.
-You can open a console within your virtual machine via 'Tools->Start SSH Session...' and select 'Vagrant'.
+- Download and install Vagrant, if you haven't already
+- `cd caledo_web_container`
+- `vagrant up` (Will be slow the first time)
+- `vagrant ssh`
+- In the VM: `./manage.sh server`
 
+This will watch for an modifications to files on disk and recompile as needed.
 
-{% highlight bash  %}
-  #within virtual machine!
-  mkdir -p ./_compiler
-  cp -r ./node_modules/grunt-ts/node_modules/typescript ./_compiler/
-{% endhighlight %}
+(**TODO**: For Chuck, this is still stalling on `Running "ts:dev" (ts) task`. Trying `grunt server --verbose` didn't give any more information.)
 
-* Create your own application plugin, or use the `sample_app` plugin as a starting point
+## Recompilation in PyCharm
 
-{% highlight bash  %}
-  ./manage.sh install sample_app
-  ./manage.sh install caleydo_server
-{% endhighlight %}
+We want to turn off recompilation inside the VM, because that would be redundant.
 
-You can then find `sample_app` in the `plugins` folder.
+(**TODO**: Chuck never figured out compilation on the VM, so I don't know how to turn it off, either.)
 
-* Start python debug session.
-If PyCharm complains that it can't find some python source, then select 'Download source from remote host'
+- "Preferences..." menu
+- "Languages & Frameworks" -> "TypeScript"
 
-* For debugging JavaScript client-side code, right click the index.html file of your app and select 'Debug'. For making it work, you need to edit the newly created run/debug configuration.
-  * Replace the __first part__ of URL `http://localhost:63342/caleydo_web_container/plugins` by `http://localhost:9000/`, which for the `sample_app` plugin is `http://localhost:9000/sample_app/index.html`
-  * Below, in the 'Remote URLs for local files' file tree, set the remote URL column of the `plugins` folder to `http://localhost:9000/`
+Make sure a Node interpreter is selected, and that the path corresponds to your installation.
 
+- Fold down "TypeScript" and select "TSLint"
+- Check "Enable"
+- Confirm the Node interpreter
+- On the command line, `npm install tslint`
+- Select the "Configuration file" radio button, and choose tslint.json from the top level of the project.
 
+## Run and Debug in PyCharm
+
+### First configure a remote Python interpreter:
+
+- "Preferences..." menu
+- "Project: caleydo_web_container" -> "Project Interpreter"
+- Select the "ssh://vagrant..." option for "Project Interpreter"
+
+### Then add a Run/Debug configuration:
+
+![Run/Debug Configuration screenshot](/assets/images/doc_screenshots/run_debug_configuration.png)
+
+In particular:
+
+- "Script" will be relative to "/vagrant" inside the VM. Remember the final slash (or backslash on Windows)
+- Select the remote Python interpreter you configured above.
+- Specify necessary path mapping between local `caleydo_web_container`, and directory in the VM.
