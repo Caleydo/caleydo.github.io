@@ -9,7 +9,7 @@ shortname: Hidden-Content
 image: 2014_chi_hidden-content.png
 
 authors:
-- geymayer
+- Thomas Geymayer
 - Markus Steinberger
 - lex
 - streit
