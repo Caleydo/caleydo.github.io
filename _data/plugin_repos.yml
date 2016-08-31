@@ -55,11 +55,6 @@
   html_url: "https://github.com/Caleydo/caleydo_links"
   category: "utility"
 
-- name: "caleydo_window"
-  description: ""
-  html_url: "https://github.com/Caleydo/caleydo_window"
-  category: "utility"
-
 - name: "caleydo_screenshot"
   description: ""
   html_url: "https://github.com/Caleydo/caleydo_screenshot"
