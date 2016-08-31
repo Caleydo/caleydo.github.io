@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Installing Applications
-permalink: /documentation/installing_apps
+permalink: /documentation/installing_apps/
 ---
 
 {% include todo.html %}

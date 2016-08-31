@@ -1,56 +1,35 @@
 ### Caleydo Website
 
+[![Build Status](https://travis-ci.org/Caleydo/caleydo.github.io.svg?branch=master)](https://travis-ci.org/Caleydo/caleydo.github.io)
+
 The new Caleydo website built with [Jekyll](http://jekyllrb.com), [SASS](http://www.sass-lang.com), [Bourbon](http://bourbon.io), [Neat](http://neat.bourbon.io), and [Bitters](http://bitters.bourbon.io).
 
-#### Ubuntu Prerequisites
+#### Emulating github-pages
 
-```ShellSession
-$ sudo apt-get install ruby-dev
+The site is built by Github using Jekyll.
+To preview locally, use the `github-pages` gem. Briefly:
+```
+# Ruby version must be >= 2.0.0.
+ruby --version
+# Install bundler for dependency management:
+gem install bundler
+# Fetch dependencies:
+bundle install
+# Start server:
+bundle exec jekyll serve
+# Get the most recent version of 'github-pages' gem:
+bundle update
 ```
 
-#### Setup
-
-Requires Jekyll 2.1.0 or later.
-
-```ShellSession
-$ gem install bundler
-$ bundle install
-```
-
-#### Generate and/or Serve Site
-
-```ShellSession
-$ jekyll serve --watch
-```
-
-#### View Site
-
-```ShellSession
-$ open http://0.0.0.0:4000/website/
-```
-
-### Updating Bourbon Dependencies
-
-To update the dependencies on Bourbon, Neat or Bitters additional gems are required.
-
-```ShellSession
-$ gem install bourbon
-$ gem install neat
-$ gem install bitters
-```
-Depending on your system your might have to run those as superuser using ```sudo```.
+[More information](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-2-install-jekyll-using-bundler)
 
 ### Jekyll Plugins
 
-- YouTube: https://gist.github.com/joelverhagen/1805814
+The only supported plugins are those that come with the [github-pages gem](https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/).
 
 ### Liquid Syntax
 
 https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
-
-### Windows Installation Instructions
-
-http://jekyll-windows.juthilo.com/1-ruby-and-devkit/
 
 ### Writing interactive documentation 
 

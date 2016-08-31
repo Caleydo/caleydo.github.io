@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Deployment
-permalink: /documentation/deployment
+permalink: /documentation/deployment/
 ---
 
 {% include todo.html %}

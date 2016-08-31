@@ -63,7 +63,7 @@ StratomeX supports a rich set of views for different data types that are seamles
 ![StartomeX explained]({{site.baseurl}}/assets/images/projects/stratomex_explained.png) 
 
 
-StratomeX also provides an **advanced query and data selection interface**. The query wizard, shown in the above picture, enables analysts to ask specific questions, such as *Which other stratifications are similar to the selected one?*, or *Is there a pathway that is enriched for this patient group?*. A rich set of algorithms calculate rankings of potential matching datasets and stratifications, which are then presented using the [LineUp]({{site.baseurl}}/projects/lineup/) interface. The following example shows a query for a pathway enrichment for an mRNA cluster. LineUp, at the bottom, displays a ranked list of results, of which the fourth is currently selected and displayed.  
+StratomeX also provides an **advanced query and data selection interface**. The query wizard, shown in the above picture, enables analysts to ask specific questions, such as *Which other stratifications are similar to the selected one?*, or *Is there a pathway that is enriched for this patient group?*. A rich set of algorithms calculate rankings of potential matching datasets and stratifications, which are then presented using the [LineUp]({{site.baseurl}}/tools/lineup/) interface. The following example shows a query for a pathway enrichment for an mRNA cluster. LineUp, at the bottom, displays a ranked list of results, of which the fourth is currently selected and displayed.  
 
 ![StartomeX explained]({{site.baseurl}}/assets/images/projects/stratomex_query.png) 
 

@@ -4,7 +4,11 @@ _site/
 caleydo.github.io.sublime-project
 caleydo.github.io.sublime-workspace
 _deploy/
-/Gemfile.lock
 *.sublime-*
 css/site.css
 *.un~
+
+/Gemfile.lock
+# Ignoring Gemfile.lock is generally a mistake, but here the deployment that matters
+# is at Github. This ignore means that a new checkout will get the latest gems with
+# 'bundle install', rather than matching the state of the last guy who touched it.

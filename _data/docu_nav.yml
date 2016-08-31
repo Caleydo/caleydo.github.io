@@ -35,8 +35,6 @@
 - title: "Tutorials"
   href: "tutorial"
   categories:
-    - title: "Visualize a Matrix"
-      href: "tutorial_visualize_matrix"
 
 
 - title: "Applications"
