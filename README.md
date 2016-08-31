@@ -1,10 +1,10 @@
-### Caleydo Website
+# Caleydo Website
 
 [![Build Status](https://travis-ci.org/Caleydo/caleydo.github.io.svg?branch=master)](https://travis-ci.org/Caleydo/caleydo.github.io)
 
 The new Caleydo website built with [Jekyll](http://jekyllrb.com), [SASS](http://www.sass-lang.com), [Bourbon](http://bourbon.io), [Neat](http://neat.bourbon.io), and [Bitters](http://bitters.bourbon.io).
 
-#### Emulating github-pages
+## Emulating github-pages
 
 The site is built by Github using Jekyll.
 To preview locally, use the `github-pages` gem. Briefly:
@@ -23,15 +23,15 @@ bundle update
 
 [More information](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-2-install-jekyll-using-bundler)
 
-### Jekyll Plugins
+## Jekyll Plugins
 
 The only supported plugins are those that come with the [github-pages gem](https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/).
 
-### Liquid Syntax
+## Liquid Syntax
 
 https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 
-### Writing interactive documentation 
+## Writing interactive documentation 
 
 When contributing documentation, put each individual page in the `_documentation` collection as a markdown file.
  
