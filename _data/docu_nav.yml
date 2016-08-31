@@ -3,9 +3,6 @@
 - title: "Welcome"
   href: ""
 
-- title: "Quickstart Guide"
-  href: "quickstart_guide"
-
 - title: "Project Description"
   href: "project_description"
   categories:
@@ -31,10 +28,13 @@
       href: "installing_apps"
 
 
-
 - title: "Tutorials"
   href: "tutorial"
   categories:
+    - title: "Quickstart Guide"
+      href: "quickstart_guide"
+    - title: "Integrate with Angular"
+      href: "tutorial_angular_heatmap_integration"
 
 
 - title: "Applications"
@@ -67,11 +67,6 @@
    - title: "Docker"
      href: "docker"
 
-
-- title: "Cookbook"
-  categories:
-    - title: "Integrate with Angular"
-      href: "tutorial_angular_heatmap_integration"
 
 - title: "API Documentation"
   href: "http://data.caleydo.org/builds/lib/docs/"
