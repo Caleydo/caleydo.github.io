@@ -11,7 +11,7 @@ script:
 - bundle exec jekyll build
 - bundle exec htmlproofer ./_site --disable-external  --alt-ignore '/.*/' --url-swap '/assets/images/papers/$:/assets/images/papers/2016_eurovis_pathfinder_teaser.png'
 # JS add the last part of the URL, which is missing in the static file
-- ruby .build-tools/read_github.rb > _data/repos-expected.yml
+- bundle exec ruby .build-tools/read_github.rb > _data/repos-expected.yml
 - diff _data/repos.yml _data/repos-expected.yml || echo 'Regenerate repos.yml' && exit 1
 
 env:
