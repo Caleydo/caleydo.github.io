@@ -10,6 +10,8 @@
       href: "architecture"
     - title: "Plugin Mechanism"
       href: "plugin_mechanism"
+    - title: "Plugins, Bundles, and Applications"
+      href: "list"
 
 ## Setup
 
@@ -40,17 +42,12 @@
 - title: "Applications"
   href: "applications"
   categories:
-    - title: "List of Applications"
-      href: "list_of_applications"
     - title: "Creating Applications"
       href: "creating_application"
 
 - title: "Plugins"
   href: "plugins"
   categories:
-
-    - title: "List of Plugins"
-      href: "list_of_plugins"
     - title: "Creating Plugins"
       href: "creating_plugin"
     - title: "Frameworks"
