@@ -134,3 +134,13 @@
   description: ""
   html_url: "https://github.com/Caleydo/bundle_python"
   category: "bundle"
+
+- name: "pathfinder_graph"
+  description: "Pathfinder Python Server plugin for communicating with Neo4j"
+  html_url: "https://github.com/Caleydo/pathfinder_graph"
+  category: "python_data"
+
+- name: "pathfinder_ccle"
+  description: "Pathfinder python server plugin for providing ccle data"
+  html_url: "https://github.com/Caleydo/pathfinder_ccle"
+  category: "python_data"
