@@ -45,16 +45,6 @@
   html_url: "https://github.com/Caleydo/pathfinder"
   category: "app"
 
-- name: "pathfinder_graph"
-  description: "Pathfinder Python Server plugin for communicating with Neo4j"
-  html_url: "https://github.com/Caleydo/pathfinder_graph"
-  category: "app"
-
-- name: "pathfinder_ccle"
-  description: "Pathfinder Python Server plugin for providing ccle data"
-  html_url: "https://github.com/Caleydo/pathfinder_ccle"
-  category: "app"
-
 - name: "vials"
   description: ""
   html_url: "https://github.com/Caleydo/vials"
