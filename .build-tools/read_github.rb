@@ -1,5 +1,6 @@
 require 'JSON'
 require 'open-uri'
+require 'YAML'
 
 def repos_by_type
     repos = (1..4).map{ |page| # I am more concerned about infinite loops than about generality.
@@ -43,7 +44,18 @@ def repos_by_type
     }]
 end
 
-# repos = repos_by_type
-repos = {"Caleydo Web Application"=>{"domino_js"=>{:badge=>"Caleydo Web Application", :blurb=>"Caleydo Domino is a novel multiform visualization technique for effectively representing subsets and the relationships between them. By providing comprehensive tools to arrange, combine, and extract subsets, Domino allows users to create both common visualization techniques and advanced visualizations tailored to specific use cases."}, "particles"=>{:badge=>"Caleydo Web Application", :blurb=>"This is application visualizes the distribution of items as particles using [PhysicsJS](http://wellcaffeinated.net/PhysicsJS/). The underlying particle system ensures a smooth and interactive visualization."}, "stratomex_js"=>{:badge=>"Caleydo Web Application", :blurb=>"StratomeX.js is a port for Caleydo Web using the Caleydo CLUE framework for provenance tracking and story telling."}, "pathfinder"=>{:badge=>"Caleydo Web Application", :blurb=>"Pathfinder is a tool for the visual exploration of paths in large graphs."}}, "Caleydo Web Client Plugin"=>{"caleydo_vis_proteinviewer"=>{:badge=>"Caleydo Web Client Plugin", :blurb=>"A visualization plugin for molecules using [Bio-PV](https://github.com/biasmv/pv)."}}, "Caleydo Web Server Plugin"=>{"pathfinder_ccle"=>{:badge=>"Caleydo Web Server Plugin", :blurb=>"Pathfinder python server plugin for providing [CCLE data](https://portals.broadinstitute.org/ccle/)."}, "pathfinder_graph"=>{:badge=>"Caleydo Web Server Plugin", :blurb=>"Pathfinder python server plugin for communicating with [Neo4j](https://neo4j.com/)."}}, "Caleydo Web Bundle"=>{}}
+def repos_hash_to_yaml(repos_hash)
+    repos_hash.map { |type, hash|
+        hash.map { |repo, data| {
+            'name' => repo,
+            'description' => data[:blurb],
+            'html_url' => "https://github.com/Caleydo/#{repo}",
+            'category' => type
+        }}
+    }.flatten.sort_by{ |h| h['name'] }.to_yaml
+end
 
-puts repos
+repos_hash = repos_by_type
+# repos_hash = {"Caleydo Web Application"=>{"domino_js"=>{:badge=>"Caleydo Web Application", :blurb=>"Caleydo Domino is a novel multiform visualization technique for effectively representing subsets and the relationships between them. By providing comprehensive tools to arrange, combine, and extract subsets, Domino allows users to create both common visualization techniques and advanced visualizations tailored to specific use cases."}, "particles"=>{:badge=>"Caleydo Web Application", :blurb=>"This is application visualizes the distribution of items as particles using [PhysicsJS](http://wellcaffeinated.net/PhysicsJS/). The underlying particle system ensures a smooth and interactive visualization."}, "stratomex_js"=>{:badge=>"Caleydo Web Application", :blurb=>"StratomeX.js is a port for Caleydo Web using the Caleydo CLUE framework for provenance tracking and story telling."}, "pathfinder"=>{:badge=>"Caleydo Web Application", :blurb=>"Pathfinder is a tool for the visual exploration of paths in large graphs."}}, "Caleydo Web Client Plugin"=>{"caleydo_vis_proteinviewer"=>{:badge=>"Caleydo Web Client Plugin", :blurb=>"A visualization plugin for molecules using [Bio-PV](https://github.com/biasmv/pv)."}}, "Caleydo Web Server Plugin"=>{"pathfinder_ccle"=>{:badge=>"Caleydo Web Server Plugin", :blurb=>"Pathfinder python server plugin for providing [CCLE data](https://portals.broadinstitute.org/ccle/)."}, "pathfinder_graph"=>{:badge=>"Caleydo Web Server Plugin", :blurb=>"Pathfinder python server plugin for communicating with [Neo4j](https://neo4j.com/)."}}, "Caleydo Web Bundle"=>{}}
+
+puts repos_hash_to_yaml(repos_hash)
