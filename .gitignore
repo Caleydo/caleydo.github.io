@@ -1,6 +1,7 @@
 _site/
 .sass-cache/
 .idea/
+.DS_Store
 caleydo.github.io.sublime-project
 caleydo.github.io.sublime-workspace
 _deploy/
