@@ -19,6 +19,7 @@ data_url: http://data.caleydo.org/
 
 gems:
   - jekyll-redirect-from
+  - kramdown # In particular, MD rendering within the repo list
 
 # Build settings
 
