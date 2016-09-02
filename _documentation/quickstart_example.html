@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Matrix visualization</title>
-  <link rel="stylesheet" href="http://caleydo.github.io/documentation/caleydo/bundle.css" />
+  <link rel="stylesheet" href="https://caleydo.github.io/documentation/caleydo/bundle.css" />
 </head>
 <body>
   <!-- View -->
@@ -25,23 +25,27 @@
   <script>
   (function(){
     // Note that CORS must be enabled on the site serving the CSV.
-    var matrix = Caleydo.d3.parser.parseRemoteMatrix('http://www.caleydo.org/documentation/quickstart_data.csv');
-
-    matrix.then(function (matrixImpl) {
+    Caleydo.d3.parser.parseRemoteMatrix(
+      'http://www.caleydo.org/documentation/quickstart_data.csv'
+    ).then(function (matrix) {
       var multiform = Caleydo.core.multiform;
-      
-      var multi = multiform.create(
-        matrixImpl, // TODO: Should this global be namespaced under Caleydo?
-        $('#item')[0], 
-        {initialVis: 'caleydo-vis-heatmap'}
-      );
-      multiform.addSelectVisChooser($('#toolbar')[0], multi);
 
-      var multi2 = multiform.create(
-        matrixImpl.t, 
-        $('#item2')[0]
+      multiform.addSelectVisChooser(
+        $('#toolbar')[0],
+        multiform.create(
+          matrix,
+          $('#item')[0],
+          {initialVis: 'caleydo-vis-heatmap'}
+        )
       );
-      multiform.addSelectVisChooser($('#toolbar2')[0], multi2);
+
+      multiform.addSelectVisChooser(
+        $('#toolbar2')[0],
+        multiform.create(
+          matrix.t,
+          $('#item2')[0]
+        )
+      );
     });
   })();
   </script>
