@@ -25,7 +25,7 @@
   <script>
   (function(){
     // Note that CORS must be enabled on the site serving the CSV.
-    var matrix = Caleydo.d3.parser.parseRemoteMatrix('/documentation/quickstart_data.csv');
+    var matrix = Caleydo.d3.parser.parseRemoteMatrix('http://www.caleydo.org/documentation/quickstart_data.csv');
 
     matrix.then(function (matrixImpl) {
       var multiform = Caleydo.core.multiform;
