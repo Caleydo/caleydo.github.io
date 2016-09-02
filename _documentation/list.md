@@ -8,10 +8,10 @@ permalink: /documentation/list/
 {% include repo_list.html repos=site.data.repos category="Caleydo Web Client Plugin" %}
 
 ## Server Plugins
-{% include repo_list.html repos=site.data.repos category="Caleydo Web Client Plugin" %}
+{% include repo_list.html repos=site.data.repos category="Caleydo Web Server Plugin" %}
 
 ## Bundles
-{% include repo_list.html repos=site.data.repos category="Caleydo Web Client Plugin" %}
+{% include repo_list.html repos=site.data.repos category="Caleydo Web Bundle" %}
 
 ## Applications
-{% include repo_list.html repos=site.data.repos category="Caleydo Web Client Plugin" %}
+{% include repo_list.html repos=site.data.repos category="Caleydo Web Application" %}
