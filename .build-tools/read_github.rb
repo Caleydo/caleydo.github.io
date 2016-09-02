@@ -1,6 +1,6 @@
-require 'JSON'
+require 'json'
 require 'open-uri'
-require 'YAML'
+require 'yaml'
 
 def repos_by_type
     repos = (1..4).map{ |page| # I am more concerned about infinite loops than about generality.
