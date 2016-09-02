@@ -1,13 +1,15 @@
 _site/
 .sass-cache/
 .idea/
-.jekyll-metadata
+.DS_Store
 caleydo.github.io.sublime-project
 caleydo.github.io.sublime-workspace
 _deploy/
 *.sublime-*
 css/site.css
 *.un~
+.jekyll-metadata
+_data/repos-expected.yml
 
 /Gemfile.lock
 # Ignoring Gemfile.lock is generally a mistake, but here the deployment that matters

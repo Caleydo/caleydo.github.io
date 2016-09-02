@@ -1,5 +1,5 @@
 
-<!-- # Inculde a repo list using this code: include repo_list.html repos=site.data.plugin_repos category="utility" -->
+<!-- # Include a repo list using this code: include repo_list.html repos=site.data.plugin_repos category="utility" -->
 
 {% if include.category != empty %}
 <ul class="repo_list">
@@ -8,7 +8,7 @@
     <li>
         <a href="{{ repo.html_url }}">{{ repo.name }}</a>
         {% if repo.description != empty %}
-        <br><span>{{ repo.description }}</span>
+        <br><span markdown="span">{{ repo.description }}</span>
         {% endif %}
     </li>
 {% endif %}

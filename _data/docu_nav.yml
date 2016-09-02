@@ -3,9 +3,6 @@
 - title: "Welcome"
   href: ""
 
-- title: "Quickstart Guide"
-  href: "quickstart_guide"
-
 - title: "Project Description"
   href: "project_description"
   categories:
@@ -13,6 +10,8 @@
       href: "architecture"
     - title: "Plugin Mechanism"
       href: "plugin_mechanism"
+    - title: "Plugins, Bundles, and Applications"
+      href: "list"
 
 ## Setup
 
@@ -31,26 +30,24 @@
       href: "installing_apps"
 
 
-
 - title: "Tutorials"
   href: "tutorial"
   categories:
+    - title: "Quickstart Guide"
+      href: "quickstart_guide"
+    - title: "Integrate with Angular"
+      href: "tutorial_angular_heatmap_integration"
 
 
 - title: "Applications"
   href: "applications"
   categories:
-    - title: "List of Applications"
-      href: "list_of_applications"
     - title: "Creating Applications"
       href: "creating_application"
 
 - title: "Plugins"
   href: "plugins"
   categories:
-
-    - title: "List of Plugins"
-      href: "list_of_plugins"
     - title: "Creating Plugins"
       href: "creating_plugin"
     - title: "Frameworks"
@@ -67,11 +64,6 @@
    - title: "Docker"
      href: "docker"
 
-
-- title: "Cookbook"
-  categories:
-    - title: "Integrate with Angular"
-      href: "tutorial_angular_heatmap_integration"
 
 - title: "API Documentation"
   href: "http://data.caleydo.org/builds/lib/docs/"
