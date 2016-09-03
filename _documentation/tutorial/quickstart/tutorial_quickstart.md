@@ -9,21 +9,21 @@ permalink: /documentation/tutorial/quickstart/
 Let's start with something simple:
 
 ```javascript
-{% include_relative tutorial/quickstart/tutorial-0.js %}
+{% include_relative tutorial-0.js %}
 ```
 <iframe src="/documentation/tutorial/quickstart/tutorial.html?0"></iframe>
 
 Using a heatmap makes it easier to see patterns in the data. :)
 
 ```javascript
-{% include_relative tutorial/quickstart/tutorial-1.js %}
+{% include_relative tutorial-1.js %}
 ```
 <iframe src="/documentation/tutorial/quickstart/tutorial.html?1"></iframe>
 
 We can let the user pick the visualization.
 
 ```javascript
-{% include_relative tutorial/quickstart/tutorial-2.js %}
+{% include_relative tutorial-2.js %}
 ```
 <iframe src="/documentation/tutorial/quickstart/tutorial.html?2"></iframe>
 
@@ -34,7 +34,7 @@ The other options aren't that useful with this dataset,
 but we can download a more realistic one.
 
 ```javascript
-{% include_relative tutorial/quickstart/tutorial-3.js %}
+{% include_relative tutorial-3.js %}
 ```
 <iframe src="/documentation/tutorial/quickstart/tutorial.html?3"></iframe>
 
@@ -51,6 +51,6 @@ and when the response comes, execution can continue where it left off.
 We can also have multiple visualizations of the data open at once.
 
 ```javascript
-{% include_relative tutorial/quickstart/tutorial-4.js %}
+{% include_relative tutorial-4.js %}
 ```
 <iframe src="/documentation/tutorial/quickstart/tutorial.html?4"></iframe>
