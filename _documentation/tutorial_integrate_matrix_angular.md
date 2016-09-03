@@ -1,5 +1,5 @@
 ---
-layout: docs_code
+layout: documentation
 title:  Integrate Caleydo's Matrix Visualization with Angular
 permalink: /documentation/tutorial_angular_heatmap_integration/
 nomenu: true
