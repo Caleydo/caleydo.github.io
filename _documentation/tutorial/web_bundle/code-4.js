@@ -4,7 +4,7 @@ $('body').append('<div class="visual">');
 $('body').append('<div class="toolbar">');
 
 Caleydo.d3.parser.parseRemoteMatrix( // Download data
-    'http://www.caleydo.org/documentation/quickstart_data.csv'
+    'http://www.caleydo.org/documentation/tutorial/web_bundle/data.csv'
   ).then(function (matrix) {
     var multiform = Caleydo.core.multiform;
 
