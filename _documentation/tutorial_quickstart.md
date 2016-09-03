@@ -4,6 +4,8 @@ title:  Tutorial - Quickstart
 permalink: /documentation/tutorial/quickstart/
 ---
 
+(To get a local copy of the tutorial files: `svn export https://github.com/caleydo/caleydo.github.io/trunk/_documentation/tutorial`)
+
 Let's start with something simple:
 
 ```javascript
