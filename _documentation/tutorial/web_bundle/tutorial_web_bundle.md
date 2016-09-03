@@ -1,7 +1,7 @@
 ---
 layout: documentation
-title:  Tutorial - Quickstart
-permalink: /documentation/tutorial/quickstart/
+title:  Web Bundle Tutorial
+permalink: /documentation/tutorial/web_bundle/
 ---
 
 (To get a local copy of the tutorial files: `svn export https://github.com/caleydo/caleydo.github.io/trunk/_documentation/tutorial`)
@@ -9,23 +9,23 @@ permalink: /documentation/tutorial/quickstart/
 Let's start with something simple:
 
 ```javascript
-{% include_relative tutorial-0.js %}
+{% include_relative code-0.js %}
 ```
-<iframe src="/documentation/tutorial/quickstart/tutorial.html?0"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame.html?0"></iframe>
 
 Using a heatmap makes it easier to see patterns in the data. :)
 
 ```javascript
-{% include_relative tutorial-1.js %}
+{% include_relative code-1.js %}
 ```
-<iframe src="/documentation/tutorial/quickstart/tutorial.html?1"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame.html?1"></iframe>
 
 We can let the user pick the visualization.
 
 ```javascript
-{% include_relative tutorial-2.js %}
+{% include_relative code-2.js %}
 ```
-<iframe src="/documentation/tutorial/quickstart/tutorial.html?2"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame.html?2"></iframe>
 
 **TODO** VisChooser isn't recognizing the configured default: It always comes up as "Table".
 Is that a bug or am I doing something wrong?
@@ -34,9 +34,9 @@ The other options aren't that useful with this dataset,
 but we can download a more realistic one.
 
 ```javascript
-{% include_relative tutorial-3.js %}
+{% include_relative code-3.js %}
 ```
-<iframe src="/documentation/tutorial/quickstart/tutorial.html?3"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame.html?3"></iframe>
 
 The scatter plot demonstrates a correlation in the data which wasn't
 obvious from the heat map.
@@ -51,6 +51,6 @@ and when the response comes, execution can continue where it left off.
 We can also have multiple visualizations of the data open at once.
 
 ```javascript
-{% include_relative tutorial-4.js %}
+{% include_relative code-4.js %}
 ```
-<iframe src="/documentation/tutorial/quickstart/tutorial.html?4"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame.html?4"></iframe>
