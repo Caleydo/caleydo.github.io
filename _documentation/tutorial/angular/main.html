@@ -1,0 +1,56 @@
+<div id="app" ng-app="matrixApp" ng-controller="matrixAppCtrl as app">
+  <table id="table" ng-mouseleave="app.leaveTableBody()">
+    <thead>
+      <tr>
+        <th
+          ng-if="app.matrix.columnIds || app.matrix.rowIds"
+          ng-mouseenter="app.leaveTableBody()"></th>
+        <th
+          ng-class="{ 'soft-highlight': app.hoveringColumn === $index, 'selected': app.columnSelected($index) }"
+          ng-click="app.selectColumn($index)"
+          ng-mouseenter="app.enterColumn($index)"
+          ng-repeat="id in app.matrix.columnIds track by $index" class="ids">{{ app.matrix.columnHeader($index) }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="row in app.matrix.rowIds track by $index">
+        <td
+          class="ids"
+          ng-class="{ 'soft-highlight': app.hoveringRow === $parent.$index, 'selected': app.rowSelected($parent.$index) }"
+          ng-if="app.matrix.rowIds.length"
+          ng-mouseenter="app.enterRow($index)"
+          ng-click="app.selectRow($index)">{{ app.matrix.rowHeader($index) }}</td>
+        <td
+          class="cell"
+          ng-class="{
+            'soft-highlight-horizontally': app.hoveringRow === $parent.$index,
+            'soft-highlight-vertically': app.hoveringColumn === $index,
+            'selected': app.cellSelected($index, $parent.$index)
+          }"
+          ng-repeat="cell in app.matrix.columnIds track by $index"
+          ng-mouseenter="app.enterCell($parent.$index, $index)"
+          ng-click="app.selectCell($index, $parent.$index)">
+          <input
+            type="number"
+            min="0"
+            step="0.01"
+            ng-model="app.matrix.cell($index, $parent.$index)"
+            ng-model-options="{ getterSetter: true }" />
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td ng-mouseenter="app.leaveTableBody()">Sum</td>
+        <td
+          ng-class="{
+            'soft-highlight-vertically': app.hoveringColumn === $index,
+            'soft-select-vertically': app.columnSelected($index)
+          }"
+          ng-mouseenter="app.enterColumn($index)"
+          ng-repeat="sum in app.matrix.columnSums track by $index">{{ sum }}</td>
+      </tr>
+    </tfoot>
+  </table>
+  <heat-map matrix-promise="app.matrixPromise"></heat-map>
+</div>

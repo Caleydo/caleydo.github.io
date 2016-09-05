@@ -35,21 +35,30 @@ The basic idea of integrating any library into Angular is to make Angular aware 
 The model itself is nothing else but nested Array representing a matrix.
 
 **Model:**
-<script src="https://gist.github.com/flekschas/d52c5be411bfe2e66e65.js?file=data.js"></script>
+
+```javascript
+{% include_relative data.js %}
+```
 
 ### Some HTML
 
 First we need to set up some HTML to display the matrix data in a table.
 
 **HTML:**
-<script src="https://gist.github.com/flekschas/d52c5be411bfe2e66e65.js?file=fiddle.html"></script>
+
+```html
+{% include_relative main.html %}
+```
 
 ### JavaScript
 
 In order to make Angular's table visualization a bit more interesting, a StampIt-based matrix and matrix selection factory functions are provided. If you're not comfortable with StampIt don't panic, it's basically just a helper library for creating custom objects.
 
 **Stamps:**
-<script src="https://gist.github.com/flekschas/d52c5be411bfe2e66e65.js?file=stamps.js"></script>
+
+```javascript
+{% include_relative stamps.js %}
+```
 
 Using Angular's build-in two-way data binding we can make the table editable and automatically updateable by binding an _input_ field to the appropriate matrix cell.
 
@@ -58,7 +67,10 @@ Caleydo's heat-map is linked to the Angular app via custom events emitted by Ang
 Finally we have to make our JavaScript code available to Angular by registering all components; e.g. third-party libraries, services, factories, controllers and directives.
 
 **Set-Up JavaScript:**
-<script src="https://gist.github.com/flekschas/d52c5be411bfe2e66e65.js?file=fiddle.js"></script>
+
+```javascript
+{% include_relative setup.js %}
+```
 
 Et voilà, we're done:
 
@@ -74,5 +86,8 @@ Et voilà, we're done:
 
 Surely we also need some styling to make our example look pleasantly:
 
-**SASS:**
-<script src="https://gist.github.com/flekschas/d52c5be411bfe2e66e65.js?file=fiddle.css"></script>
+**SCSS:**
+
+```scss
+{% include_relative style.scss %}
+```
