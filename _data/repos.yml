@@ -80,6 +80,10 @@
   description: Python plugin for simple mapping resolution using [Neo4j](https://neo4j.com/).
   html_url: https://github.com/Caleydo/caleydo_mapping
   category: Caleydo Web Server Plugin
+- name: caleydo_processing_queue
+  description: Define long-running tasks that should be processed in the background using [Celery](http://www.celeryproject.org/).
+  html_url: https://github.com/Caleydo/caleydo_processing_queue
+  category: Caleydo Web Server Plugin
 - name: caleydo_sample_app
   description: 
   html_url: https://github.com/Caleydo/caleydo_sample_app
