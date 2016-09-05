@@ -34,11 +34,11 @@
   href: "tutorial"
   categories:
     - title: "Web Bundle"
-      href: "tutorial/web_bundle/"
+      href: "tutorial/web_bundle"
     - title: "Integrate with Angular"
-      href: "tutorial_angular_heatmap_integration"
+      href: "tutorial/angular"
     - title: "Server"
-      href: "tutorial/server/"
+      href: "tutorial/server"
 
 
 - title: "Applications"
