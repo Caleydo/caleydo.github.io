@@ -72,10 +72,6 @@
   description: Parser for graph files in [DOT format](https://en.wikipedia.org/wiki/DOT_(graph_description_language)).
   html_url: https://github.com/Caleydo/caleydo_graph_dot
   category: Caleydo Web Server Plugin
-- name: caleydo_i18n
-  description: Internationalization (i18n) support for Caleydo Web using [i18next](http://i18next.com/).
-  html_url: https://github.com/Caleydo/caleydo_i18n
-  category: Caleydo Web Client Plugin
 - name: caleydo_mapping
   description: Python plugin for simple mapping resolution using [Neo4j](https://neo4j.com/).
   html_url: https://github.com/Caleydo/caleydo_mapping
