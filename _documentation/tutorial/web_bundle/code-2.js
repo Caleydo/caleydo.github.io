@@ -1,16 +1,20 @@
 $('body').append('<div class="visual">');
 $('body').append('<div class="toolbar">');
 
-var matrix = Caleydo.d3.parser.parseMatrix([
-  [null,'A','B','C','D','E','F','G','H'],
-  [1,0,0,1,1,1,1,0,0],
-  [2,0,1,1,1,1,1,1,0],
-  [3,1,1,0,1,1,0,1,1],
-  [4,1,1,1,1,1,1,1,1],
-  [5,1,1,1,1,1,1,1,1],
-  [6,1,1,0,1,1,0,1,1],
-  [7,0,1,1,0,0,1,1,0],
-  [8,0,0,1,1,1,1,0,0]]);
+var matrix = Caleydo.d3.parser.parseMatrix(
+  [ // raw data as 2D array
+    [0, 0, 1, 1, 1, 1, 0, 0],
+    [0, 1, 1, 1, 1, 1, 1, 0],
+    [1, 1, 0, 1, 1, 0, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 0, 1, 1],
+    [0, 1, 1, 0, 0, 1, 1, 0],
+    [0, 0, 1, 1, 1, 1, 0, 0]
+  ],
+  [1, 2, 3, 4, 5, 6, 7, 8], // row_ids
+  ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] // col_ids
+);
 var multiform = Caleydo.core.multiform;
 
 var visual = multiform.create(
