@@ -39,7 +39,7 @@ github:
   
 web: 
  -
-  url: http://demo.caleydo.org/domino_js/
+  url: http://playground.caleydo.org/domino_js/
   name: Domino web prototype
   
 ---
