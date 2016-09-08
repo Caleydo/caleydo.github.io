@@ -9,6 +9,7 @@ Note: Setting up a dev environment requires a working installation of Git!
 - *Windows Only*: Install [Git](http://git-scm.com/download/win)
 
 - Install [Vagrant](http://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/)
+    - OS X:  `brew cask install vagrant virtualbox`
 
   Vagrant is used for creating a controlled environment using a virtual machine provided by VirtualBox.
 
