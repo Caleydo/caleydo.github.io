@@ -13,7 +13,7 @@ script:
 # JS add the last part of the URL, which is missing in the static file
 - bash .build-tools/cron_job.sh
 
-- ruby -run -e httpd . -p 5000 # Jekyll seems like overkill here, but might be making the wrong call.
+- ruby -run -e httpd . -p 5000 & # Jekyll seems like overkill here, but might be making the wrong call.
 - phantomjs run-qunit.js http://localhost:5000/_documentation/tutorial/web_bundle/qunit.html?0
 
 env:
