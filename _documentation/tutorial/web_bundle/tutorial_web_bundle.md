@@ -27,9 +27,6 @@ We can let the user pick the visualization.
 ```
 <iframe src="/documentation/tutorial/web_bundle/frame.html?2"></iframe>
 
-**TODO** VisChooser isn't recognizing the configured default: It always comes up as "Table".
-Is that a bug or am I doing something wrong?
-
 The other options aren't that useful with this dataset,
 but we can download a more realistic one.
 
