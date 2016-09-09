@@ -20,5 +20,12 @@ QUnit.test( "debug", function( assert ) {
   assert.equal(typeof Caleydo, 'object');
   assert.equal(typeof Caleydo.d3, 'object');
   assert.equal(typeof Caleydo.d3.parser, 'object');
+  assert.deepEqual(Object.keys(Caleydo.d3.parser).sort(), [
+    "parseMatrix",
+    "parseObjects",
+    "parseRemoteMatrix",
+    "parseRemoteTable",
+    "parseTable"
+  ]);
   assert.equal(typeof Caleydo.d3.parser.parseMatrix, 'function');
 });
