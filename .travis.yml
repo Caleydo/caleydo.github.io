@@ -9,7 +9,9 @@ cache:
   directories:
     - "travis_phantomjs"
 
-# copy and paste from https://github.com/testdouble/present/blob/master/.travis.yml
+# Travis only has PhantomJS 1.9.8. https://github.com/travis-ci/travis-ci/issues/3225
+# We download and cache a more recent version.
+# Copy and paste from https://github.com/testdouble/present/blob/master/.travis.yml
 before_install:
   - "export PHANTOMJS_VERSION=2.1.1"
   - "phantomjs --version"
