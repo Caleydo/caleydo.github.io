@@ -3,22 +3,37 @@
 language: ruby
 
 rvm:
-- 2.1
+  - 2.1
+
+cache:
+  directories:
+    - "travis_phantomjs"
+
+# copy and paste from https://github.com/testdouble/present/blob/master/.travis.yml
+before_install:
+  - "export PHANTOMJS_VERSION=2.1.1"
+  - "phantomjs --version"
+  - "export PATH=$PWD/travis_phantomjs/phantomjs-$PHANTOMJS_VERSION-linux-x86_64/bin:$PATH"
+  - "phantomjs --version"
+  - "if [ $(phantomjs --version) != $PHANTOMJS_VERSION ]; then rm -rf $PWD/travis_phantomjs; mkdir -p $PWD/travis_phantomjs; fi"
+  - "if [ $(phantomjs --version) != $PHANTOMJS_VERSION ]; then wget https://github.com/Medium/phantomjs/releases/download/v$PHANTOMJS_VERSION/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -O $PWD/travis_phantomjs/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2; fi"
+  - "if [ $(phantomjs --version) != $PHANTOMJS_VERSION ]; then tar -xvf $PWD/travis_phantomjs/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -C $PWD/travis_phantomjs; fi"
+  - "phantomjs --version"
 
 install: bundle install
 
 script: 
-- bundle exec jekyll build
-- bundle exec htmlproofer ./_site --disable-external  --alt-ignore '/.*/' --url-swap '/assets/images/papers/$:/assets/images/papers/2016_eurovis_pathfinder_teaser.png'
-# JS add the last part of the URL, which is missing in the static file
-- bash .build-tools/cron_job.sh
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --disable-external  --alt-ignore '/.*/' --url-swap '/assets/images/papers/$:/assets/images/papers/2016_eurovis_pathfinder_teaser.png'
+  # JS adds the last part of the URL, which is missing in the static file
+  - bash .build-tools/cron_job.sh
 
-- ruby -run -e httpd . -p 5000 & # Jekyll seems like overkill here, but might be making the wrong call.
-- phantomjs --version # Locally I have 2.1.1
-- phantomjs node_modules/qunit-phantomjs-runner/runner.js http://localhost:5000/_documentation/tutorial/web_bundle/qunit.html?0
+  - ruby -run -e httpd . -p 5000 & # Jekyll seems like overkill here, but might be making the wrong call.
+  - phantomjs --version # Locally I have 2.1.1
+  - phantomjs node_modules/qunit-phantomjs-runner/runner.js http://localhost:5000/_documentation/tutorial/web_bundle/qunit.html?0
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 sudo: false # route your build to the container-based infrastructure for a faster build
