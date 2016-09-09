@@ -13,10 +13,5 @@ function main($target) {
       [1, 2, 3, 4, 5, 6, 7, 8], // row_ids
       ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] // col_ids
   );
-  var multiform = Caleydo.core.multiform;
-
-  multiform.create(
-      matrix,
-      $target[0]
-  );
+  Caleydo.core.multiform.create(matrix, $target[0]);
 }

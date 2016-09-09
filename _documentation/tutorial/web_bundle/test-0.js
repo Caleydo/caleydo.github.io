@@ -15,3 +15,10 @@ QUnit.test( "table row?", function( assert ) {
     done();
   }, 0);
 });
+
+QUnit.test( "debug", function( assert ) {
+  assert.equal(typeof Caleydo, 'object');
+  assert.equal(typeof Caleydo.d3, 'object');
+  assert.equal(typeof Caleydo.d3.parser, 'object');
+  assert.equal(typeof Caleydo.d3.parser.parseMatrix, 'function');
+});
