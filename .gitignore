@@ -11,6 +11,7 @@ css/site.css
 .jekyll-metadata
 _data/repos-expected.yml
 *.swp
+node_modules/
 
 /Gemfile.lock
 # Ignoring Gemfile.lock is generally a mistake, but here the deployment that matters

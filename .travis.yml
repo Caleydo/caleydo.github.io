@@ -8,6 +8,7 @@ rvm:
 cache:
   directories:
     - "travis_phantomjs"
+    - "node_modules"
 
 # Travis only has PhantomJS 1.9.8. https://github.com/travis-ci/travis-ci/issues/3225
 # We download and cache a more recent version.
@@ -22,7 +23,10 @@ before_install:
   - "if [ $(phantomjs --version) != $PHANTOMJS_VERSION ]; then tar -xvf $PWD/travis_phantomjs/phantomjs-$PHANTOMJS_VERSION-linux-x86_64.tar.bz2 -C $PWD/travis_phantomjs; fi"
   - "phantomjs --version"
 
-install: bundle install
+install:
+  - bundle install
+  - npm install promise-polyfill --save-exact
+  - npm install qunit-phantomjs-runner
 
 script: 
   - bundle exec jekyll build
