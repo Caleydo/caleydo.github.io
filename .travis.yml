@@ -17,6 +17,7 @@ script:
 - bundle exec htmlproofer ./_site --disable-external  --alt-ignore '/.*/' --url-swap '/assets/images/papers/$:/assets/images/papers/2016_eurovis_pathfinder_teaser.png'
 # JS add the last part of the URL, which is missing in the static file
 - bundle exec ruby -run -e httpd . -p 5000 &
+- until ( curl -I http://localhost:5000 | grep '200 OK' ); do sleep 1; done
 - bundle exec ruby test.rb http://localhost:5000/_documentation/tutorial/web_bundle/qunit.html?0
 # To just access HTML files, we don't need all of Jekyll.
 
