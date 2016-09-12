@@ -14,9 +14,9 @@ function assert_includes(assert, needle) {
 }
 
 function qunit_module(name) {
-  QUnit.module('demo_0',{
+  QUnit.module(name,{
     beforeEach: function() {
-      demo_0($('#qunit-fixture'));
+      window[name]($('#qunit-fixture'));
     }
   });
 }

@@ -21,10 +21,13 @@ script:
 # Client JS adds the last part of the URL, which is missing in the static file.
 - PORT=5000
 - bundle exec ruby -run -e httpd . -p $PORT &
-# Slight overkill: For just static files, we don't need all of Jekyll.
-- TEST_URL=http://localhost:$PORT/_documentation/tutorial/web_bundle/qunit.html?0
+# For static files, we don't need all of Jekyll. Note the leading underscore in the path:
+- TEST_URL=http://localhost:$PORT/_documentation/tutorial/web_bundle/qunit.html?0&1
+# TODO: ls test_* to get URL params
 - until ( curl -I $TEST_URL | grep '200 OK' ); do sleep 1; done
-# Takes a moment for server to start.
+# TODO: QUnit tests are actually being run twice:
+# Even if the root page is up, that doesn't guarantee that the test page is available,
+# so this is safer. For the moment, the tests are fast, so not a worry.
 - bundle exec ruby test.rb $TEST_URL
 
 - bash .build-tools/cron_job.sh
