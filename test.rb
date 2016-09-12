@@ -1,9 +1,9 @@
 require 'selenium-webdriver'
 
-# TODO: Use a real testing library?
-
 driver = Selenium::WebDriver.for(:firefox)
-driver.navigate.to('http://localhost:4000/documentation/tutorial/web_bundle/qunit.html?0')
+url = ARGV[1]
+puts "Navigating to #{url}"
+driver.navigate.to(url)
 
 begin
   wait = Selenium::WebDriver::Wait.new(timeout: 10)
