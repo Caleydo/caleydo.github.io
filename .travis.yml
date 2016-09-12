@@ -19,7 +19,6 @@ script:
 # Client JS adds the last part of the URL, which is missing in the static file.
 - PORT=5000
 - bundle exec ruby -run -e httpd . -p $PORT &
-- bundle exec jekyll serve
 # Slight overkill: For just static files, we don't need all of Jekyll.
 - TEST_URL=http://localhost:$PORT/_documentation/tutorial/web_bundle/qunit.html?0
 - until ( curl -I $TEST_URL | grep '200 OK' ); do sleep 1; done
