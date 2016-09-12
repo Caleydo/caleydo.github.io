@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+$colorBlindBlue: #50b4e9;
+$colorBlindYellow: #f0e442;
+
+$colorDirectHoverBg: rgba(0, 0, 0, 0.2);
+$colorIndirectHoverBg: rgba(0, 0, 0, 0.1);
+$colorSelectedBg: $colorBlindYellow;
+
+#app {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+#table {
+  .ids {
+    font-weight: bold;
+    color: #000;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.soft-highlight {
+      background: $colorIndirectHoverBg;
+    }
+
+    &.selected {
+      background: lighten($colorSelectedBg, 15%);
+    }
+  }
+
+  .cell {
+    color: #333;
+
+    &:hover {
+      color: #000;
+      background: $colorDirectHoverBg;
+      box-shadow: none !important;
+    }
+
+    &.soft-highlight-horizontally {
+      box-shadow: inset 0 2px 0 0 $colorIndirectHoverBg, inset 0 -2px 0 0 $colorIndirectHoverBg;
+    }
+
+    &.soft-select-horizontally {
+      box-shadow: inset 0 2px 0 0 $colorSelectedBg, inset 0 -2px 0 0 $colorSelectedBg;
+    }
+
+    &.soft-highlight-vertically {
+      box-shadow: inset 2px 0 0 0 $colorIndirectHoverBg, inset -2px 0 0 0 $colorIndirectHoverBg;
+    }
+
+    &.soft-select-vertically {
+      box-shadow: inset 2px 0 0 0 $colorSelectedBg, inset -2px 0 0 0 $colorSelectedBg;
+    }
+
+    &.soft-select-horizontally.soft-select-vertically {
+      box-shadow: inset 0 0 0 2px $colorSelectedBg;
+    }
+
+    &:last-child {
+      &.soft-highlight-horizontally {
+        box-shadow: inset 0 2px 0 0 $colorIndirectHoverBg, inset 0 -2px 0 0 $colorIndirectHoverBg, inset -2px 0 0 0 $colorIndirectHoverBg;
+      }
+      &.soft-select-horizontally {
+        box-shadow: inset 0 2px 0 0 $colorSelectedBg, inset 0 -2px 0 0 $colorSelectedBg, inset -2px 0 0 0 $colorSelectedBg;
+      }
+    }
+
+    &.selected {
+      background: $colorSelectedBg;
+    }
+  }
+
+  td, th {
+    min-width: 2rem;
+    padding: 0.25rem;
+    text-align: center;
+  }
+
+  input {
+    width: 2rem;
+    text-align: center;
+    border: none;
+    background: none;
+  }
+
+  tfoot {
+    color: #808080;
+
+    td.soft-highlight-vertically {
+      color: #333;
+      box-shadow: inset 2px 0 0 0 $colorIndirectHoverBg, inset -2px 0 0 0 $colorIndirectHoverBg, inset 0 2px 0 0 $colorIndirectHoverBg, inset 0 -2px 0 0 $colorIndirectHoverBg;
+    }
+
+    td.soft-select-vertically {
+      color: #333;
+      box-shadow: inset 2px 0 0 0 $colorSelectedBg, inset -2px 0 0 0 $colorSelectedBg, inset 0 2px 0 0 $colorSelectedBg, inset 0 -2px 0 0 $colorSelectedBg;
+    }
+  }
+}
+
+#table,
+#caleydo-heat-map {
+  display: block;
+  float: left;
+  margin: 1rem;
+  border: 1px solid $colorIndirectHoverBg;
+}
+
+#caleydo-heat-map {
+  margin-left: 0;
+  padding: 0.25rem;
+
+  svg {
+    vertical-align: top;
+  }
+
+  .select-selected {
+    fill: $colorSelectedBg;
+  }
+}
+
+// Remove useless arrows
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}

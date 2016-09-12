@@ -1,5 +1,5 @@
 ---
-layout: docs_section
+layout: documentation
 title: Tutorials
 permalink: /documentation/tutorial/
 type: tutorial/
