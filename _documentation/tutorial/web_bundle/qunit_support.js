@@ -4,13 +4,19 @@ function includes(haystack, needle) {
   return haystack.indexOf(needle) !== -1
 }
 
-function assert_includes(assert, needle) {
+function timeout_0(assert, assertion) {
   var done = assert.async();
   window.setTimeout(function(){
-    var haystack = $('#qunit-fixture').html();
-    assert.ok(includes(haystack, needle), needle + ' not in ' + haystack);
+    assertion(assert);
     done();
   }, 0);
+}
+
+function assert_includes(assert, needle) {
+  timeout_0(assert, function() {
+    var haystack = $('#qunit-fixture').html();
+    assert.ok(includes(haystack, needle), needle + ' not in ' + haystack);
+  });
 }
 
 function qunit_module(name) {
