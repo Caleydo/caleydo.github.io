@@ -13,11 +13,13 @@
   <script src="https://s3.amazonaws.com/caleydo-releases/v0.0.1/caleydo.js"></script>
   <script src="https://code.jquery.com/qunit/qunit-2.0.1.js"></script>
   <script>
-      (function() {
-          var index = window.location.search.substring(1);
-          document.write('\x3Cscript type="text/javascript" src="demo_' + index + '.js">\x3C/script>');
-          document.write('\x3Cscript type="text/javascript" src="test_' + index + '.js">\x3C/script>');
-      })();
+    (function() {
+      var indexes = window.location.search.substring(1).split('&');
+      for (index of indexes) {
+        document.write('\x3Cscript type="text/javascript" src="demo_' + index + '.js">\x3C/script>');
+        document.write('\x3Cscript type="text/javascript" src="test_' + index + '.js">\x3C/script>');
+      }
+    })();
   </script>
 </body>
 </html>
