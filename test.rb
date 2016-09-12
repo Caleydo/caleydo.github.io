@@ -1,7 +1,7 @@
 require 'selenium-webdriver'
 
 driver = Selenium::WebDriver.for(:firefox)
-url = ARGV[1]
+url = ARGV[0]
 puts "Navigating to #{url}"
 driver.navigate.to(url)
 
