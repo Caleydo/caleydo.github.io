@@ -9,7 +9,7 @@ begin
   wait = Selenium::WebDriver::Wait.new(timeout: 10)
   wait.until { driver.find_element(css: '#qunit-testresult .failed') }
 rescue Selenium::WebDriver::Error::TimeOutError
-  puts driver.page_source
+  #puts driver.page_source
   puts driver.find_element(css: 'body').text
   puts 'FAIL'
   exit 1
