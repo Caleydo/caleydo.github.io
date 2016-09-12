@@ -21,6 +21,7 @@ script:
 # For just static files, we don't need all of Jekyll.
 - TEST_URL=http://localhost:5000/_documentation/tutorial/web_bundle/qunit.html?0
 - until ( curl -I $TEST_URL | grep '200 OK' ); do sleep 1; done
+- curl $TEST_URL # TODO: Why curl work, but Selenium gets the FF error page?
 # Takes a moment for server to start.
 - bundle exec ruby test.rb $TEST_URL
 
