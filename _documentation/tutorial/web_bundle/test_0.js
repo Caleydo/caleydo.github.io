@@ -1,6 +1,5 @@
-function includes(needle) {
-  var html = $('#qunit-fixture').html();
-  return html.indexOf(needle) !== -1
+function includes(haystack, needle) {
+  return haystack.indexOf(needle) !== -1
 }
 
 QUnit.module('demo_0',{
@@ -12,7 +11,9 @@ QUnit.module('demo_0',{
 QUnit.test( "table head?", function( assert ) {
   var done = assert.async();
   window.setTimeout(function(){
-    assert.ok(includes('<th>ID</th><th>A</th>'));
+    var haystack = $('#qunit-fixture').html();
+    var needle = '<th>ID</th><th>A</th>';
+    assert.ok(includes(haystack, needle), needle + ' not in ' + haystack);
     done();
   }, 0);
 });
@@ -20,7 +21,9 @@ QUnit.test( "table head?", function( assert ) {
 QUnit.test( "table row?", function( assert ) {
   var done = assert.async();
   window.setTimeout(function(){
-    assert.ok(includes('<th>1</th><td>0</td>'));
+    var haystack = $('#qunit-fixture').html();
+    var needle = '<th>1</th><td>0</td>';
+    assert.ok(includes(haystack, needle), needle + ' not in ' + haystack);
     done();
   }, 0);
 });
