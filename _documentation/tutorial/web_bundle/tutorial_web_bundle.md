@@ -9,21 +9,21 @@ permalink: /documentation/tutorial/web_bundle/
 Let's start with something simple:
 
 ```javascript
-{% include_relative code-0.js %}
+{% include_relative demo_0.js %}
 ```
 <iframe src="/documentation/tutorial/web_bundle/frame.html?0"></iframe>
 
 Using a heatmap makes it easier to see patterns in the data. :)
 
 ```javascript
-{% include_relative code-1.js %}
+{% include_relative demo_1.js %}
 ```
 <iframe src="/documentation/tutorial/web_bundle/frame.html?1"></iframe>
 
 We can let the user pick the visualization.
 
 ```javascript
-{% include_relative code-2.js %}
+{% include_relative demo_2.js %}
 ```
 <iframe src="/documentation/tutorial/web_bundle/frame.html?2"></iframe>
 
@@ -31,7 +31,7 @@ The other options aren't that useful with this dataset,
 but we can download a more realistic one.
 
 ```javascript
-{% include_relative code-3.js %}
+{% include_relative demo_3.js %}
 ```
 <iframe src="/documentation/tutorial/web_bundle/frame.html?3"></iframe>
 
@@ -48,6 +48,6 @@ and when the response comes, execution can continue where it left off.
 We can also have multiple visualizations of the data open at once.
 
 ```javascript
-{% include_relative code-4.js %}
+{% include_relative demo_4.js %}
 ```
 <iframe src="/documentation/tutorial/web_bundle/frame.html?4"></iframe>

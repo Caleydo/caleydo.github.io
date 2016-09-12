@@ -43,3 +43,12 @@ To include code on the page, you can use the following jekyll code:
     {% include_relative path/to/your/code.js %}
     ```
 
+## Testing the tutorial examples
+
+The tutorial examples are tested by Travis. If there are failures...:
+1. Make sure the output in the iframes looks right.
+2. If that doesn't help, run the qunit.html locally.
+3. If that doesn't help, run selenium to run qunit locally.
+
+(Conversely, if the iframe doesn't look right, but tests are passing,
+strengthen the tests.)

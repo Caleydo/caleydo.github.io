@@ -1,20 +1,33 @@
 # Based on https://jekyllrb.com/docs/continuous-integration/
 
 language: ruby
+cache: bundler
+addons:
+  firefox: "47.0.1"
 
 rvm:
 - 2.1
 
 install: bundle install
 
+before_script:
+- "export DISPLAY=:99.0"
+- "sh -e /etc/init.d/xvfb start"  # From https://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-a-GUI
+
+
 script: 
 - bundle exec jekyll build
 - bundle exec htmlproofer ./_site --disable-external  --alt-ignore '/.*/' --url-swap '/assets/images/papers/$:/assets/images/papers/2016_eurovis_pathfinder_teaser.png'
-# JS add the last part of the URL, which is missing in the static file
-- bundle exec ruby .build-tools/read_github.rb > _data/repos-expected.yml
-# YAML serialization is not consistent between platforms.
-# We strip single and double quotes before diff, but I am sure there is a better way.
-- if [[ $TRAVIS_EVENT_TYPE == 'cron' ]]; then diff <(sed 's/['"'"'"]//g' _data/repos.yml) <(sed 's/['"'"'"]//g' _data/repos-expected.yml) || ( echo 'Regenerate repos.yml' && exit 1 ); fi
+# Client JS adds the last part of the URL, which is missing in the static file.
+- PORT=5000
+- bundle exec ruby -run -e httpd . -p $PORT &
+# Slight overkill: For just static files, we don't need all of Jekyll.
+- TEST_URL=http://localhost:$PORT/_documentation/tutorial/web_bundle/qunit.html?0
+- until ( curl -I $TEST_URL | grep '200 OK' ); do sleep 1; done
+# Takes a moment for server to start.
+- bundle exec ruby test.rb $TEST_URL
+
+- bash .build-tools/cron_job.sh
 
 env:
   global:
