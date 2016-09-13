@@ -3,7 +3,7 @@ layout: default
 agency: Austrian Science Fund (FWF)
 key: 2015-fwf-visonfire
 permalink: /funding/2015-fwf-visonfire/
-website: http://www.fwf.ac.at/
+website: http://visonfire.caleydo.org/
 logo: fwf.png
 title: VisOnFire - Visual Analysis of Large and Heterogeneous Scientific Workflows for Analytical Provenance
 recipients: 
