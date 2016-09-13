@@ -33,8 +33,10 @@
 - title: "Tutorials"
   href: "tutorial"
   categories:
-    - title: "Web Bundle"
+    - title: "Getting Started"
       href: "tutorial/web_bundle/"
+    - title: "Data Structures"
+      href: "tutorial/data_structures/"
     - title: "Integrate with Angular"
       href: "tutorial_angular_heatmap_integration"
     - title: "Server"
