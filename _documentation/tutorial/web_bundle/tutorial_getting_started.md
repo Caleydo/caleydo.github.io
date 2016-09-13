@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Web Bundle Tutorial
-permalink: /documentation/tutorial/web_bundle/
+permalink: /documentation/tutorial/web_bundle/getting_started
 ---
 
 (To get a local copy of the tutorial files: `svn export https://github.com/caleydo/caleydo.github.io/trunk/_documentation/tutorial`)
