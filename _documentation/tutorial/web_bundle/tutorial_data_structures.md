@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title:  Data Structures Tutorial
-permalink: /documentation/tutorial/web_bundle/data_structures
+permalink: /documentation/tutorial/data_structures/
 ---
 
 (To get a local copy of the tutorial files: `svn export https://github.com/caleydo/caleydo.github.io/trunk/_documentation/tutorial`)
