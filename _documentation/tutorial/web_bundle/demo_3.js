@@ -3,7 +3,7 @@ function demo_3($target) {
   $target.append('<div class="toolbar">');
 
   Caleydo.d3.parser.parseRemoteMatrix( // Download data
-      '/documentation/tutorial/web_bundle/data.csv'
+      'data.csv'
   ).then(function (matrix) {
     var multiform = Caleydo.core.multiform;
 
