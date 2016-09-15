@@ -3,7 +3,7 @@ function demo_3($target) {
   $target.append('<div class="toolbar">');
 
   Caleydo.d3.parser.parseRemoteMatrix( // Download data
-      'boston-weather-2010-2015.csv'
+      'boston-weather.csv'
   ).then(function (matrix) {
     var multiform = Caleydo.core.multiform;
 
