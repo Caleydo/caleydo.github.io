@@ -10,7 +10,7 @@ function demo_3($target) {
     var visual = multiform.create(
         matrix,
         $('.visual')[0],
-        {initialVis: 'caleydo-vis-heatmap'} // Specify visualization
+        {initialVis: 'scatterplot'} // Specify visualization
     );
     multiform.addSelectVisChooser( // Let user pick visualization
         $('.toolbar')[0],
