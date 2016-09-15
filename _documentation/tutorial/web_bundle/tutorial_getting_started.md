@@ -33,7 +33,7 @@ but we can download a more realistic one.
 ```javascript
 {% include_relative demo_3.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame.html?3" height="370" width="390"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame.html?3" height="370" width="380"></iframe>
 
 The scatter plot demonstrates a correlation in the data which wasn't
 obvious from the heat map.
@@ -50,4 +50,4 @@ We can also have multiple visualizations of the data open at once.
 ```javascript
 {% include_relative demo_4.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame.html?4" height="800" width="390"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame.html?4" height="800" width="380"></iframe>
