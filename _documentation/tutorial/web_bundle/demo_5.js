@@ -1,63 +1,48 @@
 function demo_5($target) {
-
   function print(string) {
     $target.append(string + '<br>');
   }
+  var sequence = Array.from(Array(2000).keys()).map(function(x){return (x-1000)/500;});
+  var matrix = Caleydo.d3.parser.parseMatrix(
+      // times table
+      sequence.map(function (m) {
+        return sequence.map(function (n) {
+          // Gentle gradient across the whole thing..
+          // with ripples in the middle.
+          return m*n + Math.sin(1/(m*m+n*n));
+        })
+      }),
+      sequence, // row_ids
+      sequence // col_ids
+  );
 
-  var evens = Caleydo.core.range.parse('0:10:2');
-  var odds = Caleydo.core.range.parse('1:10:2');
-  var union = evens.union(odds);
-  var intersection = evens.intersect(odds);
-  var ten = Caleydo.core.range.parse('0:10');
-
-  print('Evens: ' + evens);
-  print('Odds: ' + odds);
-  print('Union: ' + union);
-  print('Intersection: ' + intersection);
-  print('Equal?: ' + union.eq(ten));
-
-  // print('Union is all?: ' + union.isAll); // TODO: False?
-  print('Intersection is none?: ' + intersection.isNone);
-
-  var by_4 = evens.preMultiply(evens);
-  var by_8 = by_4.preMultiply(evens);
-
-  print('By 4: ' + by_4);
-  print('By 8: ' + by_8);
-
-  var without_by_4 = union.without(by_4);
-
-  print('Without by 4: ' + without_by_4);
-
-  // print('First: ' + union.first); // TODO: What do these mean?
-  // print('Last: ' + union.last); // TODO: 0?
-
-  var gt_5 = Caleydo.core.range.parse('5:');
-  var lt_5 = Caleydo.core.range.parse(':5');
-
-  print('> 5: ' + gt_5);
-  print('< 5: ' + lt_5);
-
-  var all_integers = gt_5.union(lt_5);
-
-  print('All Integers: ' + all_integers);
-  print('Unbound?: ' + all_integers.isUnbound); // TODO: False?
-
-  // var product = ten.product(ten);
-  // TODO: Why does this take a callback instead of just producing the Cartesian product?
-  // print('10 x 10: ' + product);
-
-  /* TODO:
-ndim
-clone
-swap
-filter
-dim
-invert
-indexRangeOf
-indexOf
-size
-split
-product
+  // way too big:
+  /*
+  Caleydo.core.multiform.create(
+      matrix.view(Caleydo.core.range.parse('(0:2000),(0:2000)')),
+      $target[0],
+      {initialVis: 'caleydo-vis-heatmap'}
+  );
   */
+
+  print('Big picture');
+  Caleydo.core.multiform.create(
+      matrix.view(Caleydo.core.range.parse('(0:2000:50),(0:2000:50)')),
+      $target[0],
+      {initialVis: 'caleydo-vis-heatmap'}
+  );
+
+  print('Zoom in');
+  Caleydo.core.multiform.create(
+      matrix.view(Caleydo.core.range.parse('(1040:1080),(1040:1080)')),
+      $target[0],
+      {initialVis: 'caleydo-vis-heatmap'}
+  );
+
+  print('Best of both worlds');
+  Caleydo.core.multiform.create(
+      matrix.view(Caleydo.core.range.parse('(0:2000:100,1040:1080:2),(0:2000:100,1040:1080:2)')),
+      $target[0],
+      {initialVis: 'caleydo-vis-heatmap'}
+  );
 }

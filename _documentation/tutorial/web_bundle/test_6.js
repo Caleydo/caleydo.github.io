@@ -1,4 +1,4 @@
-qunit_module('demo_5');
+qunit_module('demo_6');
 qunit_test_includes('evens?', 'Evens: (0:10:2)');
 qunit_test_includes('odds?', 'Odds: (1:10:2)');
 qunit_test_includes('union?', 'Union: (0:10)');
