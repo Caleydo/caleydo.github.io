@@ -41,7 +41,6 @@
         </p>
 
         <p>For real-life data analysis, we recommend you stick to the standalone software for now, but be prepared to transition to the web soon!</p>
-        <h1 id="featured-tool">Featured Paper: </h1>
 
 {% capture publications %}
 [
@@ -60,40 +59,19 @@
 {% endcapture %}
 
         <script>
-            var publications = {{ publications | strip_newlines }}
-        </script>
-        <div id="main-banner-image"><a class="banner-image" href="">
-
-            <img alt="" class="left-banner-image" src="{{ site.baseurl }}/assets/images/papers/"/>
-            <ul class="publication-icon-list">
-                <li><a href=""></a></li>
-            </ul>
-        </a>
-        </div>
-
-        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-        <script>
-            function random_from_array(array) {
-                return array[Math.floor(Math.random() * array.length)];
-            }
-            var pub = random_from_array(publications);
-
-            text = $("#featured-tool").text($("#featured-tool").text() + pub.shortname);
-
-            var id = "#main-banner-image";
-
-
-            var bannerImg = $(id + " img");
-            bannerImg.attr("alt", pub.shortname);
-
-            var src = bannerImg.attr("src");
-            bannerImg.attr("src", src + pub.image_large);
-
-            var bannerLink = $(id + "  a");
-            bannerLink.attr("href", pub.url);
-
-            var bannerText = $(id + " li > a");
-            bannerText.text(pub.title);
+            (function(){
+                var publications = {{ publications | strip_newlines }};
+                function random_from_array(array) {
+                    return array[Math.floor(Math.random() * array.length)];
+                }
+                var pub = random_from_array(publications);
+                // TODO: html encode.
+                document.write('<h1 id="featured-tool">Featured Paper: '+pub.shortname+'</h1>');
+                document.write('<div id="main-banner-image"><a class="banner-image" href="'+pub.url+'">');
+                document.write('<img alt="screenshot" class="left-banner-image" src="{{ site.baseurl }}/assets/images/papers/' + pub.image_large + '"/>');
+                document.write('<ul class="publication-icon-list"><li>'+pub.title+'</li></ul>');
+                document.write('</a></div>');
+            })();
         </script>
 
 
