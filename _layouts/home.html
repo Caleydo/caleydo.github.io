@@ -64,12 +64,20 @@
                 function random_from_array(array) {
                     return array[Math.floor(Math.random() * array.length)];
                 }
+                function html_escape(str) {
+                    return str
+                        .replace(/&/g, '&amp;')
+                        .replace(/"/g, '&quot;')
+                        .replace(/'/g, '&#39;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;');
+                }
                 var pub = random_from_array(publications);
                 // TODO: html encode.
-                document.write('<h1 id="featured-tool">Featured Paper: '+pub.shortname+'</h1>');
-                document.write('<div id="main-banner-image"><a class="banner-image" href="'+pub.url+'">');
-                document.write('<img alt="screenshot" class="left-banner-image" src="{{ site.baseurl }}/assets/images/papers/' + pub.image_large + '"/>');
-                document.write('<ul class="publication-icon-list"><li>'+pub.title+'</li></ul>');
+                document.write('<h1 id="featured-tool">Featured Paper: '+html_escape(pub.shortname)+'</h1>');
+                document.write('<div id="main-banner-image"><a class="banner-image" href="'+html_escape(pub.url)+'">');
+                document.write('<img alt="screenshot" class="left-banner-image" src="{{ site.baseurl }}/assets/images/papers/' + html_escape(pub.image_large) + '"/>');
+                document.write('<ul class="publication-icon-list"><li>'+html_escape(pub.title)+'</li></ul>');
                 document.write('</a></div>');
             })();
         </script>
