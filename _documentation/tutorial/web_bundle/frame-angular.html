@@ -3,9 +3,17 @@
 <head>
   <title>Tutorial</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-  <script src="demo_7.js"></script>
 </head>
 <body ng-controller="DemoController">
+  <script>
+    document.write(
+            '\x3Cscript type="text/javascript" src="demo_'
+            + window.location.search.substring(1)
+            + '.js">\x3C/script>');
+  </script>
+  <script>
+    window['demo_'+window.location.search.substring(1)]();
+  </script>
 
   <table>
     <tr ng-repeat="row in table">
