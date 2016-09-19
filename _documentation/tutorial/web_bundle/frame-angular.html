@@ -4,7 +4,7 @@
   <title>Tutorial</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 </head>
-<body ng-controller="DemoController">
+<body>
   <script>
     document.write(
             '\x3Cscript type="text/javascript" src="demo_'
@@ -15,13 +15,7 @@
     window['demo_'+window.location.search.substring(1)]();
   </script>
 
-  <table>
-    <tr ng-repeat="row in table track by $index">
-      <td ng-repeat="data in row track by $index">
-        {{data}}
-      </td>
-    </tr>
-  </table>
+  <demo-component></demo-component>
 
 </body>
 </html>
