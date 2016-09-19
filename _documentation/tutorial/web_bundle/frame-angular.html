@@ -16,43 +16,12 @@
   </script>
 
   <table>
-    <tr ng-repeat="row in table">
-      <td ng-repeat="data in row">
+    <tr ng-repeat="row in table track by $index">
+      <td ng-repeat="data in row track by $index">
         {{data}}
       </td>
     </tr>
   </table>
-
-<!--<html ng-app="demoApp">-->
-<!--<head>-->
-  <!--<title>Tutorial</title>-->
-  <!--<link rel="stylesheet" href="https://s3.amazonaws.com/caleydo-releases/latest/caleydo.css" />-->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>-->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>-->
-  <!--<script src="https://s3.amazonaws.com/caleydo-releases/latest/caleydo.js"></script>-->
-  <!--&lt;!&ndash; This should be the only difference from plain frame.html: &ndash;&gt;-->
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>-->
-  <!--<script>-->
-    <!--var index = window.location.search.substring(1);-->
-    <!--document.write(-->
-            <!--'\x3Cscript type="text/javascript" src="demo_'-->
-            <!--+ index-->
-            <!--+ '.js">\x3C/script>');-->
-    <!--$(function(){window['demo_'+index]($('body'))});-->
-  <!--</script>-->
-<!--</head>-->
-<!--<body ng-controller="CaleydoTableController">-->
-  <!--<table>-->
-    <!--<tr ng-repeat="row in [0,1,2,3]">-->
-      <!--<td ng-repeat="col in [0,1,2,3]">-->
-        <!--{{row}}, {{col}}-->
-      <!--</td>-->
-    <!--</tr>-->
-  <!--</table>-->
-
-<!--</body>-->
-<!--</html>-->
-
 
 </body>
 </html>
