@@ -77,6 +77,13 @@ ul.help-icon-list {
 ul.publication-icon-list {
   @include icon-list($publication-color,"\f02d");
 }
+a ul.publication-icon-list li {
+  // Ad hoc: Homepage list depended on a tag inside a tag;
+  // Just hacking it to get the right style
+  font-size: $base-font-size * 1.2;
+  font-weight: 400;
+  color: darken($publication-color, 20% );
+}
 
 ul.institution-icon-list {
   @include icon-list($team-color,"\f19c");
