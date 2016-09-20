@@ -25,14 +25,14 @@ function demo_7() {
             '<td ng-repeat="item in row track by $index">'+
               '<input type="text" size="2" '+
                      'ng-model="table[$parent.$index][$index]" '+
-                     'ng-change="on_change($parent.$index, $index)">'+
+                     'ng-change="on_change()">'+
             '</td>'+
           '</tr>'+
         '</table>'+
         '<code>{{table | json}}</code>',
       controller: function DemoController($scope) {
         $scope.table = table;
-        $scope.on_change = function(x, y) {
+        $scope.on_change = function() {
           heatmap.destroy();
           heatmap = draw_heatmap(table);
         }
