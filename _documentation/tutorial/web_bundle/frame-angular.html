@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 </head>
 <body>
+  <div id="caleydo"></div>
+  <demo-component></demo-component>
   <script>
     document.write(
             '\x3Cscript type="text/javascript" src="demo_'
@@ -15,8 +17,7 @@
             + '.js">\x3C/script>');
   </script>
   <script>
-    window['demo_'+window.location.search.substring(1)]($('body'));
+    window['demo_'+window.location.search.substring(1)]();
   </script>
-  <demo-component></demo-component>
 </body>
 </html>
