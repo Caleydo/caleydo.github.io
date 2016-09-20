@@ -1,4 +1,17 @@
-function demo_7() {
+function demo_7($target) {
+  var table = [
+          ['1', '2', '3', '4'],
+          ['2', '3', '4', '3'],
+          ['3', '4', '3', '2'],
+          ['4', '3', '2', '1']
+        ];
+  // var matrix = Caleydo.d3.parser.parseMatrix(
+  //   table, [1, 2, 3, 4], ['A', 'B', 'C', 'D']
+  // );
+  // Caleydo.core.multiform.create(
+  //   matrix, $target, {initialVis: 'caleydo-vis-heatmap'}
+  // );
+
   angular.module('demoApp', []);
   angular.
     module('demoApp').
@@ -13,12 +26,7 @@ function demo_7() {
         '</table>'+
         '<code>{{table | json}}</code>',
       controller: function DemoController($scope) {
-        $scope.table = [
-          ['1', '2', '3', '4'],
-          ['2', '3', '4', '3'],
-          ['3', '4', '3', '2'],
-          ['4', '3', '2', '1']
-        ];
+        $scope.table = table;
       }
     });
 }
