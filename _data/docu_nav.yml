@@ -38,7 +38,7 @@
     - title: "Data Structures"
       href: "tutorial/data_structures/"
     - title: "Integrate with Angular"
-      href: "tutorial_angular_heatmap_integration"
+      href: "tutorial/angular/"
     - title: "Server"
       href: "tutorial/server/"
 
