@@ -5,12 +5,12 @@ function demo_7($target) {
           ['3', '4', '3', '2'],
           ['4', '3', '2', '1']
         ];
-  // var matrix = Caleydo.d3.parser.parseMatrix(
-  //   table, [1, 2, 3, 4], ['A', 'B', 'C', 'D']
-  // );
-  // Caleydo.core.multiform.create(
-  //   matrix, $target, {initialVis: 'caleydo-vis-heatmap'}
-  // );
+  var matrix = Caleydo.d3.parser.parseMatrix(
+    table, [1, 2, 3, 4], ['A', 'B', 'C', 'D']
+  );
+  Caleydo.core.multiform.create(
+    matrix, $target[0], {initialVis: 'caleydo-vis-heatmap'}
+  );
 
   angular.module('demoApp', []);
   angular.
