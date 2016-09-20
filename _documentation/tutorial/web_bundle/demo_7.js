@@ -19,7 +19,8 @@ function demo_7() {
             '</td>'+
           '</tr>'+
         '</table>'+
-        '<code>{{table | json}}</code>',
+        '<code>{'+'{table | json}}</code>',
+        // Adjacent curly braces confuse our documentation renderer.
       controller: function DemoController($scope) {
         $scope.table = table;
       }
