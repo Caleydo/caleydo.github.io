@@ -19,14 +19,19 @@ function demo_7($target) {
       template:
         '<table>'+
           '<tr ng-repeat="row in table track by $index">'+
-            '<td ng-repeat="data in row track by $index">'+
-              '<input type="text" ng-model="table[$parent.$index][$index]" size="2">'+
+            '<td ng-repeat="item in row track by $index">'+
+              '<input type="text" size="2" '+
+                     'ng-model="table[$parent.$index][$index]" '+
+                     'ng-change="on_change()">'+
             '</td>'+
           '</tr>'+
         '</table>'+
         '<code>{{table | json}}</code>',
       controller: function DemoController($scope) {
         $scope.table = table;
+        $scope.on_change = function() {
+          console.log('change!')
+        }
       }
     });
 }
