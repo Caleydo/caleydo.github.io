@@ -5,7 +5,7 @@ function demo_7() {
     ['3', '4', '3', '2'],
     ['4', '3', '2', '1']
   ];
-  function draw_caleydo(table) {
+  function draw_heatmap(table) {
     var matrix = Caleydo.d3.parser.parseMatrix(
       table, [1, 2, 3, 4], ['A', 'B', 'C', 'D']
     );
@@ -13,7 +13,7 @@ function demo_7() {
       matrix, $('#caleydo')[0], {initialVis: 'caleydo-vis-heatmap'}
     );
   }
-  var vis = draw_caleydo(table);
+  var heatmap = draw_heatmap(table);
 
   angular.module('demoApp', []);
   angular.
@@ -33,8 +33,8 @@ function demo_7() {
       controller: function DemoController($scope) {
         $scope.table = table;
         $scope.on_change = function(x, y) {
-          vis.destroy();
-          vis = draw_caleydo(table);
+          heatmap.destroy();
+          heatmap = draw_heatmap(table);
         }
       }
     });
