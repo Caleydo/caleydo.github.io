@@ -10,15 +10,15 @@ function demo_8() {
       table, [1, 2, 3, 4], ['A', 'B', 'C', 'D']
     );
     return Caleydo.core.multiform.create(
-      matrix, $('[caledo-heatmap]')[0], {initialVis: 'caleydo-vis-heatmap'}
+      matrix, $('#caleydo')[0], {initialVis: 'caleydo-vis-heatmap'}
     );
   }
   var heatmap = draw_heatmap(table); // Use it on page load
 
   angular.module('demoApp', []);
-  angular.
-    module('demoApp').
-    component('demoComponent', {
+  angular
+    .module('demoApp')
+    .component('demoComponent', {
       template:
         '<table>'+
           '<tr ng-repeat="row in table track by $index">'+

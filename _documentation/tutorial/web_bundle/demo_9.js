@@ -15,11 +15,10 @@ function demo_9() {
           function redraw() {
             if (scope.heatmap) {
               scope.heatmap.destroy();
+              // Cleaup UI, and avoid memory leaks
             }
             var matrix = Caleydo.d3.parser.parseMatrix(
-              scope.table,
-              Array(scope.table.length), // Blank arrays as placeholders
-              Array(scope.table[0].length) // for rows and columns
+              scope.table, [1, 2, 3, 4], ['A', 'B', 'C', 'D']
             );
             scope.heatmap = Caleydo.core.multiform.create(
               matrix, element[0], {initialVis: 'caleydo-vis-heatmap'}
@@ -27,10 +26,7 @@ function demo_9() {
           }
           redraw();
           scope.$watch(
-              'table',
-              function(table) {
-                redraw();
-              },
+              'table', redraw,
               true // change detection based on value rather than reference
           );
         }
