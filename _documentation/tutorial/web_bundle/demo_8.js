@@ -16,9 +16,9 @@ function demo_8() {
   var heatmap = draw_heatmap(table); // Use it on page load
 
   angular.module('demoApp', []);
-  angular.
-    module('demoApp').
-    component('demoComponent', {
+  angular
+    .module('demoApp')
+    .component('demoComponent', {
       template:
         '<table>'+
           '<tr ng-repeat="row in table track by $index">'+

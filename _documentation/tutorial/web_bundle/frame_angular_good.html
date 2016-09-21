@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+<head>
+  <title>Tutorial</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://s3.amazonaws.com/caleydo-releases/latest/caleydo.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+<body ng-controller="DemoController">
+  <div caleydo-heatmap></div>
+  <div caleydo-editor></div>
+  <script>
+    document.write(
+            '\x3Cscript type="text/javascript" src="demo_'
+            + window.location.search.substring(1)
+            + '.js">\x3C/script>');
+  </script>
+  <script>
+    window['demo_'+window.location.search.substring(1)]();
+  </script>
+</body>
+</html>
