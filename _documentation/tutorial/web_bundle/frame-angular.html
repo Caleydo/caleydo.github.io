@@ -7,9 +7,9 @@
   <script src="https://s3.amazonaws.com/caleydo-releases/latest/caleydo.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 </head>
-<body>
-  <div caledo-heatmap="table"></div>
-  <demo-component></demo-component>
+<body ng-controller="DemoController">
+  <div caleydo-heatmap></div>
+  <div caleydo-editor></div>
   <script>
     document.write(
             '\x3Cscript type="text/javascript" src="demo_'
