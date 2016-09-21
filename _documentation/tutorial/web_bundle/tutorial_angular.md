@@ -38,9 +38,10 @@ shared in the scope of the controller.
 ```
 <iframe src="/documentation/tutorial/web_bundle/frame_angular_good.html?9" height="250" width="300"></iframe>
 
-The heatmap controller is a little more complicated, because instead of
-simply supplying a template, we provide a `link` function which creates the DOM
-we need, and we `$watch` the `table` for modifications.
+The heatmap directive is a little more complicated than the editor, 
+because instead of simply supplying a template, we provide a `link` 
+function which creates the DOM we need, and we `$watch` the `table`
+for modifications.
 
 The behavior here is the same as the example above, but it will be more
 maintainable over time.
