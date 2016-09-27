@@ -16,7 +16,7 @@ Then, from within the VM:
 
 {% highlight bash  %}
 # 1. Clone the repositories and their dependencies
-./manage.sh clone demo_app
+./manage.sh clone caleydo_sample_app
 ./manage.sh clone caleydo_server
 
 # 2. Resolve dependencies of plugins
