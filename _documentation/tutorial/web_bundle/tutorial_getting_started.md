@@ -9,7 +9,7 @@ Let's start with something simple:
 ```javascript
 {% include_relative demo_0/demo.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame.html#demo_0"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/demo_frame.html#demo_0"></iframe>
 
 Using a heatmap makes it easier to see patterns in the data. :)
 
