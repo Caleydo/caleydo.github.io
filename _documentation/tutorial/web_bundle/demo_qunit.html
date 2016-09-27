@@ -17,7 +17,7 @@
     (function() {
       var dirs = window.location.search.substring(1).split('&');
       for (dir of dirs) {
-        document.write('\x3Cscript type="text/javascript" src="'+dir+'/demo_function.js">\x3C/script>');
+        document.write('\x3Cscript type="text/javascript" src="'+dir+'/demo_function">\x3C/script>');
         document.write('\x3Cscript type="text/javascript" src="'+dir+'/test.js">\x3C/script>');
       }
     })();
