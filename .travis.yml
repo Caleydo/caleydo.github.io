@@ -23,7 +23,7 @@ script:
 - bundle exec jekyll serve --port $PORT &
 - TESTS=`cd _documentation/tutorial/web_bundle; for TEST in $(ls **/test.js); do dirname $TEST; done | xargs | tr ' ' '&'`
 # For static files, we don't need all of Jekyll. Note the leading underscore in the path:
-- TEST_URL=http://localhost:$PORT/_documentation/tutorial/web_bundle/qunit.html?$TESTS
+- TEST_URL=http://localhost:$PORT/documentation/tutorial/web_bundle/qunit.html?$TESTS
 - until ( curl -I $TEST_URL | grep '200 OK' ); do sleep 1; done
 - bundle exec ruby test.rb $TEST_URL
 
