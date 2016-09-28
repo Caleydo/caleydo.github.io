@@ -37,6 +37,8 @@
       href: "tutorial/web_bundle/"
     - title: "Data Structures"
       href: "tutorial/data_structures/"
+    - title: "Visualization Plugins"
+      href: "tutorial/visualization/"
     - title: "Integrate with Angular"
       href: "tutorial/angular/"
     - title: "Server"
