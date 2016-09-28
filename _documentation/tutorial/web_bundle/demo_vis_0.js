@@ -1,4 +1,15 @@
-function demo_vis() {
+function demo_vis_0() {
+  function render(matrix, parent) {
+    var $table = $('<table>').appendTo(parent);
+    for (matrix_row of matrix) {
+      var $row = $('<tr>').appendTo($table);
+      for (matrix_cell of matrix_row) {
+        var $td = $('<td>').appendTo($row);
+        $td.text(matrix_cell);
+      }
+    }
+  }
+
   Caleydo.core.plugin.push({
     id: 'demo-vis',
     type: 'vis', // The larger Caleydo ecosystem also includes apps and server-side components.
@@ -9,13 +20,10 @@ function demo_vis() {
         data.loader.data({}, Caleydo.core.range.parse('0:-1,0:-1'))
             .then(
               function(value) {
-                console.log('data:', data);
-                console.log('parent:', parent);
-                console.log('options:', options);
-                console.log('matrix:',value);
+                render(value, parent);
               },
               function(reason) {
-                console.log('error:',reason);
+                console.log('error:', reason);
               }
             );
       }
@@ -34,6 +42,6 @@ function demo_vis() {
   Caleydo.core.multiform.create(
     matrix,
     $('body')[0],
-    {initialVis: 'demo-vis'} // Specify visualization
+    {initialVis: 'demo-vis'}
   );
 }
