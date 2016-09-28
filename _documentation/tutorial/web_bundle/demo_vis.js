@@ -2,8 +2,6 @@ function demo_vis() {
   // Use the AMD; This would usually be at the top level and include other dependencies.
   require(['demo_vis_amd', "require", "exports"], function (demo_vis, require, exports) {
     Caleydo.core.plugin.push(demo_vis);
-    var n = Caleydo.core.plugin.list().length;
-    console.log(Caleydo.core.plugin.list()[n-1]);
 
     $('body').append('<div class="visual">');
     $('body').append('<div class="toolbar">');
