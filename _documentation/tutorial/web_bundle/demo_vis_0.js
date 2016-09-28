@@ -1,4 +1,4 @@
-function demo_vis_0() {
+function demo_vis_0($target) {
   function render(matrix, parent) {
     var $table = $('<table>').appendTo(parent);
     for (matrix_row of matrix) {
@@ -41,7 +41,7 @@ function demo_vis_0() {
   );
   Caleydo.core.multiform.create(
     matrix,
-    $('body')[0],
+    $target[0],
     {initialVis: 'demo-vis'}
   );
 }
