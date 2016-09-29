@@ -8,17 +8,17 @@ Here's a very simple Angular app: As you edit numbers in the grid,
 the backing data is updated, which we render as JSON.
 
 ```javascript
-{% include_relative demo_7.js %}
+{% include_relative demo_angular/demo_7.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame_angular_bad.html?7" height="200" width="300"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame_angular_bad.html?demo_angular/demo_7" height="200"></iframe>
 
 What would it take to integrate this with Caleydo, so that we'd have a
 heatmap visualization update as you make edits?
 
 ```javascript
-{% include_relative demo_8.js %}
+{% include_relative demo_angular/demo_8.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame_angular_bad.html?8" height="250" width="300"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame_angular_bad.html?demo_angular/demo_8" height="250"></iframe>
 
 We could just paste in the Caleydo code and watch for changes, but there
 are a number of problems here:
@@ -34,9 +34,9 @@ be better to use Angular directives, and keep the data that needs to be
 shared in the scope of the controller.
 
 ```javascript
-{% include_relative demo_9.js %}
+{% include_relative demo_angular/demo_9.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame_angular_good.html?9" height="250" width="300"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/frame_angular_good.html?demo_angular/demo_9" height="250"></iframe>
 
 The heatmap directive is a little more complicated than the editor, 
 because instead of simply supplying a template, we provide a `link` 
