@@ -15,10 +15,10 @@
   <script src="qunit_support.js"></script>
   <script>
     (function() {
-      var indexes = window.location.search.substring(1).split('&');
-      for (index of indexes) {
-        document.write('\x3Cscript type="text/javascript" src="demo_' + index + '.js">\x3C/script>');
-        document.write('\x3Cscript type="text/javascript" src="test_' + index + '.js">\x3C/script>');
+      var dirs = window.location.search.substring(1).split('&');
+      for (dir of dirs) {
+        document.write('\x3Cscript type="text/javascript" src="'+dir+'/demo_function">\x3C/script>');
+        document.write('\x3Cscript type="text/javascript" src="'+dir+'/test.js">\x3C/script>');
       }
     })();
   </script>

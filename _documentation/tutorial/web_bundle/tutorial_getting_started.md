@@ -4,14 +4,12 @@ title:  Web Bundle Tutorial
 permalink: /documentation/tutorial/web_bundle/
 ---
 
-(To get a local copy of the tutorial files: `svn export https://github.com/caleydo/caleydo.github.io/trunk/_documentation/tutorial`)
-
 Let's start with something simple:
 
 ```javascript
-{% include_relative demo_0.js %}
+{% include_relative demo_0/demo.js %}
 ```
-<iframe src="/documentation/tutorial/web_bundle/frame.html?0"></iframe>
+<iframe src="/documentation/tutorial/web_bundle/demo_frame.html#demo_0"></iframe>
 
 The `parseMatrix()` function expects the data as 2D array and the column and row ids as additional parameter.
 
