@@ -11,13 +11,17 @@
   <div caleydo-heatmap></div>
   <div caleydo-editor></div>
   <script>
-    document.write(
-            '\x3Cscript type="text/javascript" src="demo_'
-            + window.location.search.substring(1)
-            + '.js">\x3C/script>');
+    var path = window.location.search.substring(1);
+    if (path.match(/^[a-z0-9_\/]+$/)) { // Prevent arbitrary script injection
+      document.write(
+              '\x3Cscript type="text/javascript" src="'
+              + path
+              + '.js">\x3C/script>');
+      var name = path.replace(/.*\//, '');
+    }
   </script>
   <script>
-    window['demo_'+window.location.search.substring(1)]();
+    window[name]($('body'));
   </script>
 </body>
 </html>
