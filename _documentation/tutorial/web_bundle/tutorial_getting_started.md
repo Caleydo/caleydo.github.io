@@ -4,8 +4,8 @@ title:  Web Bundle Tutorial
 permalink: /documentation/tutorial/web_bundle/
 ---
 
-(To get a local copy of the tutorial files: 
-`svn export https://github.com/caleydo/caleydo.github.io/trunk/_documentation/tutorial/web_bundle`)
+(This example is also available at
+[jsfiddle](http://jsfiddle.net/gh/get/library/pure/caleydo/caleydo.github.io/tree/master/_documentation/tutorial/web_bundle/demo_getting_started/jsfiddle).)
 
 Let's start with something simple:
 
