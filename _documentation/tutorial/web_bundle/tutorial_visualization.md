@@ -4,10 +4,6 @@ title:  Visualization Tutorial
 permalink: /documentation/tutorial/visualization/
 ---
 
-
-(This example is also available at
-[jsfiddle](http://jsfiddle.net/gh/get/library/pure/caleydo/caleydo.github.io/tree/master/_documentation/tutorial/web_bundle/demo_visualization/jsfiddle).)
-
 The Caleydo project emphasizes modularity. This means you can create plugins to add
 a range of capabilities, but it also means it can be hard to know where to begin.
 
