@@ -4,6 +4,9 @@ title:  Integrate with Angular Tutorial
 permalink: /documentation/tutorial/angular/
 ---
 
+(This example is also available at
+[jsfiddle](http://jsfiddle.net/gh/get/library/pure/caleydo/caleydo.github.io/tree/master/_documentation/tutorial/web_bundle/demo_angular/jsfiddle).)
+
 Here's a very simple Angular app: As you edit numbers in the grid,
 the backing data is updated, which we render as JSON.
 
