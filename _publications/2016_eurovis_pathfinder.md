@@ -23,7 +23,7 @@ authors:
 - schmalstieg
 - lex
 
-journal: Computer Graphics Forum (EuroVis '16), vol. 35, no. 3, pp. 491-500
+journal: Computer Graphics Forum (EuroVis '16), vol. 35, no. 3, pp. 71-80
 journal-short: CGF (EuroVis '16)
 year: 2016
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
