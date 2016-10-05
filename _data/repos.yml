@@ -4,32 +4,38 @@
     be deployed to the [Caleydo demo server](http://demo.caleydo.org).
   html_url: https://github.com/Caleydo/bundle_demo
   category: Caleydo Web Bundle
+  modified_at: '2016-10-05T00:00:00Z'
 - name: bundle_lib
   description: 'This bundle defines which plugins should be bundled in the library
     version of Caleydo Web. '
   html_url: https://github.com/Caleydo/bundle_lib
   category: Caleydo Web Bundle
+  modified_at: '2016-10-05T00:00:00Z'
 - name: bundle_playground
   description: This bundle gathers all **unstable apps (e.g., beta, testing)** that
     should be deployed to the [Caleydo playground server](http://playground.caleydo.org).
   html_url: https://github.com/Caleydo/bundle_playground
   category: Caleydo Web Bundle
+  modified_at: '2016-10-05T00:00:00Z'
 - name: bundle_python
   description: This bundle gathers all known python related plugins. This allows to
     easily install/clone most existing Caleydo Web plugins.
   html_url: https://github.com/Caleydo/bundle_python
   category: Caleydo Web Bundle
+  modified_at: '2016-10-05T00:00:00Z'
 - name: bundle_web
   description: This bundle gathers all Caleydo Web applications and client plugins.
     This allows to easily install/clone most existing Caleydo Web plugins.
   html_url: https://github.com/Caleydo/bundle_web
   category: Caleydo Web Bundle
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_bootstrap_fontawesome
   description: 'This plugin is a utility plugin for including [Bootstrap](http://getbootstrap.com/)
     and [Font Awesome](http://fontawesome.io) into an Caleydo Web application. In
     addition this repository includes the following modules:'
   html_url: https://github.com/Caleydo/caleydo_bootstrap_fontawesome
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_clue
   description: CLUE (for **C**apture, **L**abel, **U**nderstand, **E**xplain) is a
     model that tightly integrates data exploration and presentation of discoveries.
@@ -38,106 +44,129 @@
     history of the exploration.
   html_url: https://github.com/Caleydo/caleydo_clue
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_core
   description: Caleydo Web is a framework for developing web-based visualization applications.
     This is the core repository, but you will find the code distributed among [many
     repositories](http://caleydo.org/documentation/list_of_plugins).
   html_url: https://github.com/Caleydo/caleydo_core
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_d3
   description: 'This plugin provides several D3 modules and applications, such as:
     selection info, data browser, visual links between views.'
   html_url: https://github.com/Caleydo/caleydo_d3
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_data_hdf
   description: Data provider plugin for loading data stored as [Hierarchical Data
     Format (HDF)](http://www.hdfgroup.org/).
   html_url: https://github.com/Caleydo/caleydo_data_hdf
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_data_mongo
   description: Data provider plugin for loading (graph) data stored in a [MongoDB](https://www.mongodb.com/).
   html_url: https://github.com/Caleydo/caleydo_data_mongo
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_data_redis
   description: Data provider plugin for loading data stored in a [Redis in-memory
     database](http://redis.io/).
   html_url: https://github.com/Caleydo/caleydo_data_redis
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_data_sql
   description: Data provider plugin for loading tabular data stored in an [SQLite
     database](https://www.sqlite.org/).
   html_url: https://github.com/Caleydo/caleydo_data_sql
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_graph_dot
   description: Parser for graph files in [DOT format](https://en.wikipedia.org/wiki/DOT_(graph_description_language)).
   html_url: https://github.com/Caleydo/caleydo_graph_dot
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_mapping
   description: Python plugin for simple mapping resolution using [Neo4j](https://neo4j.com/).
   html_url: https://github.com/Caleydo/caleydo_mapping
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_sample_app
   description: 
   html_url: https://github.com/Caleydo/caleydo_sample_app
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_screenshot
   description: 'Screenshot utility based on [html2canvas](https://github.com/niklasvh/html2canvas). '
   html_url: https://github.com/Caleydo/caleydo_screenshot
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_security_flask
   description: Security manager implementation based on [Flask-Login](https://flask-login.readthedocs.io/en/latest/).
     Additionally, a login module is provided that can be used at client-side.
   html_url: https://github.com/Caleydo/caleydo_security_flask
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_security_store_ldap
   description: A security store based on LDAP lookups using the [ldap3 library](https://ldap3.readthedocs.io/).
   html_url: https://github.com/Caleydo/caleydo_security_store_ldap
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_security_store_pam
   description: Security store implementation based [UNIX PAM](https://en.wikipedia.org/wiki/Linux_PAM)
     backend.
   html_url: https://github.com/Caleydo/caleydo_security_store_pam
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_security_store_unix
   description: Security store implementation based on [UNIX passwd](https://en.wikipedia.org/wiki/Passwd).
   html_url: https://github.com/Caleydo/caleydo_security_store_unix
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_server
   description: 'Python server implementation of Caleydo Web that provides: '
   html_url: https://github.com/Caleydo/caleydo_server
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_server_js
   description: 'Simple Node.js server implementation of Caleydo Web that provides: '
   html_url: https://github.com/Caleydo/caleydo_server_js
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_template_app
   description: This is a simple client-only application that serves as a template
     for creating new applications that are based on Caleydo Web.
   html_url: https://github.com/Caleydo/caleydo_template_app
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_vis
   description: Caleydo Web client plugin providing standard visualization techniques
     (table, heatmap, scatterplot, axis, pie, distribution, ..).
   html_url: https://github.com/Caleydo/caleydo_vis
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_vis_lineup
   description: Caleydo Web wrapper for [LineUp.js](http://github.com/Caleydo/lineup.js)
     to visualize tables as ranking.
   html_url: https://github.com/Caleydo/caleydo_vis_lineup
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_vis_parco
   description: Caleydo Web client plugin for visualizing tabular data as a parallel
     coordinates plot.
   html_url: https://github.com/Caleydo/caleydo_vis_parco
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_vis_proteinviewer
   description: A visualization plugin for molecules using [Bio-PV](https://github.com/biasmv/pv).
   html_url: https://github.com/Caleydo/caleydo_vis_proteinviewer
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: caleydo_window
   description: '**This repository is DEPRECATED**!'
   html_url: https://github.com/Caleydo/caleydo_window
   category: Caleydo Web Client Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: clue_dummy
   description: 'This is a simple application highlighting the features of the [Caleydo
     CLUE](https://github.com/Caleydo/caleydo_clue) plugin. Users can drag-and-drop
@@ -145,6 +174,7 @@
     provenance graph. '
   html_url: https://github.com/Caleydo/clue_dummy
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: domino_js
   description: Caleydo Domino is a novel multiform visualization technique for effectively
     representing subsets and the relationships between them. By providing comprehensive
@@ -153,49 +183,59 @@
     use cases.
   html_url: https://github.com/Caleydo/domino_js
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: entourage
   description: 'Caleydo Entourage is a visualization technique to efficiently perform
     multi-pathway analysis as it is often important to see relationships that are
     not included in the pathway. '
   html_url: https://github.com/Caleydo/entourage
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: gapminder
   description: '[Gapminder](https://www.gapminder.org/) port for Caleydo Web using
     the Caleydo CLUE framework for provenance tracking and story telling.'
   html_url: https://github.com/Caleydo/gapminder
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: particles
   description: This is application visualizes the distribution of items as particles
     using [PhysicsJS](http://wellcaffeinated.net/PhysicsJS/). The underlying particle
     system ensures a smooth and interactive visualization.
   html_url: https://github.com/Caleydo/particles
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: pathfinder
   description: Pathfinder is a tool for the visual exploration of paths in large graphs.
   html_url: https://github.com/Caleydo/pathfinder
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: pathfinder_ccle
   description: Pathfinder python server plugin for providing [CCLE data](https://portals.broadinstitute.org/ccle/).
   html_url: https://github.com/Caleydo/pathfinder_ccle
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: pathfinder_graph
   description: Pathfinder python server plugin for communicating with [Neo4j](https://neo4j.com/).
   html_url: https://github.com/Caleydo/pathfinder_graph
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
 - name: stratomex_js
   description: StratomeX.js is a port for Caleydo Web using the Caleydo CLUE framework
     for provenance tracking and story telling.
   html_url: https://github.com/Caleydo/stratomex_js
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: taco
   description: TaCo (for **Ta**ble **Co**mparison) is an interactive comparison tool
     that effectively visualizes the differences between multiple tables at various
     levels of granularity.
   html_url: https://github.com/Caleydo/taco
   category: Caleydo Web Application
+  modified_at: '2016-10-05T00:00:00Z'
 - name: taco_server
   description: TaCo (for **Ta**ble **Co**mparison) is an interactive comparison tool
     that effectively visualizes the differences between multiple tables at various
     levels of granularity.
   html_url: https://github.com/Caleydo/taco_server
   category: Caleydo Web Server Plugin
+  modified_at: '2016-10-05T00:00:00Z'
