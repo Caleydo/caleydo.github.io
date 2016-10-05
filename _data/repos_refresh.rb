@@ -10,9 +10,9 @@ class Refresher
 
   def repos_from_github
     (1..4).map{ |page| # I am more concerned about infinite loops than about generality.
-      sleep(1) # Be nice
       url = "https://api.github.com/orgs/Caleydo/repos?page=#{page}"
       warn "Fetching #{url}"
+      sleep(1) # Be nice
       JSON.parse(
         open(url).read
       )
@@ -42,6 +42,7 @@ class Refresher
     url = "https://raw.githubusercontent.com/Caleydo/#{repo}/#{branch}/README.md"
     warn "Fetching #{url}"
     # "Mock ![Caleydo Web Client Plugin](https://url) ===== This is the blurb\nThis is not the blurb"
+    sleep(1) # Be nice
     open(url).read
   rescue => e
     warn "#{url}: #{e}"
@@ -72,7 +73,7 @@ class Refresher
       ].max
       if !local_by_name[name] ||
          !local_by_name[name]['modified_at'] ||
-         !( local_by_name[name]['modified_at'] < github_modified_at )
+         (local_by_name[name]['modified_at'] < github_modified_at)
         warn "Updating #{name}"
         branch = record['default_branch']
         bb = badge_blurb(name, branch)
@@ -81,6 +82,7 @@ class Refresher
           'description' => bb[:blurb],
           'html_url' => record['html_url'],
           'category' => bb[:badge],
+            # Unrecognized categories are preserved, but ignored by list.md
           'modified_at' => github_modified_at
         }
       else
@@ -90,17 +92,8 @@ class Refresher
     end
   end
 
-  def clean
-    types = ['Application', 'Client Plugin', 'Server Plugin', 'Bundle'].map { |suffix|
-      'Caleydo Web ' + suffix
-    }
-    merge
-      .select { |x| x } # Remove nulls
-      .select { |x| types.include?(x['category']) }
-  end
-
   def repos_yml
-    clean.to_yaml
+    merge.to_yaml
   end
 end
 

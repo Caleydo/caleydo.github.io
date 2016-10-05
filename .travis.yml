@@ -27,8 +27,6 @@ script:
 - until ( curl -I $TEST_URL | grep '200 OK' ); do sleep 1; done
 - bundle exec ruby test.rb $TEST_URL
 
-- bash .build-tools/cron_job.sh
-
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer

@@ -1,4 +1,9 @@
 ---
+- name: UpSetR
+  description: 
+  html_url: https://github.com/Caleydo/UpSetR
+  category: Travis-CI Build Status
+  modified_at: '2016-08-30T14:09:21Z'
 - name: bundle_demo
   description: This bundle gathers all **stable apps and show cases** that should
     be deployed to the [Caleydo demo server](http://demo.caleydo.org).
@@ -29,6 +34,27 @@
   html_url: https://github.com/Caleydo/bundle_web
   category: Caleydo Web Bundle
   modified_at: '2016-08-31T13:03:05Z'
+- name: caleydo
+  description: '[![Build Status](http://dev.caleydo.org/jenkins/buildStatus/icon?job=caleydo)](http://dev.caleydo.org/jenkins/job/caleydo/)'
+  html_url: https://github.com/Caleydo/caleydo
+  category: Build Status
+  modified_at: '2016-09-26T08:02:31Z'
+- name: caleydo-doc
+  description: 'User documentation for (Caleydo)[http://caleydo.org], accessible via:
+    http://help.caleydo.org. '
+  html_url: https://github.com/Caleydo/caleydo-doc
+  category: 
+  modified_at: '2014-12-05T11:07:49Z'
+- name: caleydo-web-server
+  description: Checkout this repository parallel to the `caleydo-web` repository.
+  html_url: https://github.com/Caleydo/caleydo-web-server
+  category: 
+  modified_at: '2015-08-19T14:52:10Z'
+- name: caleydo.github.io
+  description: 
+  html_url: https://github.com/Caleydo/caleydo.github.io
+  category: Build Status
+  modified_at: '2016-10-05T20:24:59Z'
 - name: caleydo_bootstrap_fontawesome
   description: 'This plugin is a utility plugin for including [Bootstrap](http://getbootstrap.com/)
     and [Font Awesome](http://fontawesome.io) into an Caleydo Web application. In
@@ -51,7 +77,7 @@
     repositories](http://caleydo.org/documentation/list_of_plugins).
   html_url: https://github.com/Caleydo/caleydo_core
   category: Caleydo Web Client Plugin
-  modified_at: '2016-10-05T00:00:00Z'
+  modified_at: '2016-10-05T21:39:31Z'
 - name: caleydo_d3
   description: 'This plugin provides several D3 modules and applications, such as:
     selection info, data browser, visual links between views.'
@@ -74,13 +100,13 @@
     database](http://redis.io/).
   html_url: https://github.com/Caleydo/caleydo_data_redis
   category: Caleydo Web Server Plugin
-  modified_at: '2016-10-05T00:00:00Z'
+  modified_at: '2016-10-05T11:30:55Z'
 - name: caleydo_data_sql
   description: Data provider plugin for loading tabular data stored in an [SQLite
     database](https://www.sqlite.org/).
   html_url: https://github.com/Caleydo/caleydo_data_sql
   category: Caleydo Web Server Plugin
-  modified_at: '2016-10-05T00:00:00Z'
+  modified_at: '2016-10-05T11:31:06Z'
 - name: caleydo_graph_dot
   description: Parser for graph files in [DOT format](https://en.wikipedia.org/wiki/DOT_(graph_description_language)).
   html_url: https://github.com/Caleydo/caleydo_graph_dot
@@ -108,6 +134,12 @@
   html_url: https://github.com/Caleydo/caleydo_sample_app
   category: Caleydo Web Application
   modified_at: '2016-10-03T14:35:03Z'
+- name: caleydo_sample_vis
+  description: a sample repository showing how to create a new visualization technique
+    for Caleydo Web
+  html_url: https://github.com/Caleydo/caleydo_sample_vis
+  category: 
+  modified_at: '2016-08-31T13:03:56Z'
 - name: caleydo_screenshot
   description: 'Screenshot utility based on [html2canvas](https://github.com/niklasvh/html2canvas). '
   html_url: https://github.com/Caleydo/caleydo_screenshot
@@ -139,7 +171,7 @@
   description: 'Python server implementation of Caleydo Web that provides: '
   html_url: https://github.com/Caleydo/caleydo_server
   category: Caleydo Web Server Plugin
-  modified_at: '2016-10-05T00:00:00Z'
+  modified_at: '2016-10-05T13:31:23Z'
 - name: caleydo_server_js
   description: 'Simple Node.js server implementation of Caleydo Web that provides: '
   html_url: https://github.com/Caleydo/caleydo_server_js
@@ -151,6 +183,21 @@
   html_url: https://github.com/Caleydo/caleydo_template_app
   category: Caleydo Web Application
   modified_at: '2016-09-09T14:51:49Z'
+- name: caleydo_template_client_plugin
+  description: a simple plugin starting point
+  html_url: https://github.com/Caleydo/caleydo_template_client_plugin
+  category: 
+  modified_at: '2016-08-31T12:27:16Z'
+- name: caleydo_template_server_plugin
+  description: a sample plugin showing how to extend and use the python server api
+  html_url: https://github.com/Caleydo/caleydo_template_server_plugin
+  category: 
+  modified_at: '2016-08-31T12:33:47Z'
+- name: caleydo_tool
+  description: 'Node.js module that provides the following features:'
+  html_url: https://github.com/Caleydo/caleydo_tool
+  category: 
+  modified_at: '2016-08-31T11:19:56Z'
 - name: caleydo_vis
   description: Caleydo Web client plugin providing standard visualization techniques
     (table, heatmap, scatterplot, axis, pie, distribution, ..).
@@ -174,19 +221,30 @@
   html_url: https://github.com/Caleydo/caleydo_vis_proteinviewer
   category: Caleydo Web Client Plugin
   modified_at: '2016-10-03T15:31:14Z'
+- name: caleydo_web_builds
+  description: 
+  html_url: https://github.com/Caleydo/caleydo_web_builds
+  category: 
+  modified_at: '2016-08-31T12:31:16Z'
+- name: caleydo_web_container
+  description: This is a container repository for Caleydo Web. It is used for creating,
+    combining, and managing individual plugins Caleydo Web constists of.
+  html_url: https://github.com/Caleydo/caleydo_web_container
+  category: 
+  modified_at: '2016-09-26T15:27:30Z'
 - name: caleydo_window
   description: '**This repository is DEPRECATED**!'
   html_url: https://github.com/Caleydo/caleydo_window
   category: Caleydo Web Client Plugin
   modified_at: '2016-08-31T12:56:43Z'
 - name: clue_dummy
-  description: 'This is a simple application highlighting the features of the [Caleydo
+  description: This is a simple application highlighting the features of the [Caleydo
     CLUE](https://github.com/Caleydo/caleydo_clue) plugin. Users can drag-and-drop
     data items from the databrowser that trigger corresponding actions in the CLUE
-    provenance graph. '
+    provenance graph.
   html_url: https://github.com/Caleydo/clue_dummy
   category: Caleydo Web Application
-  modified_at: '2016-10-05T00:00:00Z'
+  modified_at: '2016-10-05T13:40:35Z'
 - name: domino_js
   description: Caleydo Domino is a novel multiform visualization technique for effectively
     representing subsets and the relationships between them. By providing comprehensive
@@ -209,6 +267,88 @@
   html_url: https://github.com/Caleydo/gapminder
   category: Caleydo Web Application
   modified_at: '2016-10-03T14:43:08Z'
+- name: lineup.js
+  description: 'LineUp is an interactive technique designed to create, visualize and
+    explore rankings of items based on a set of heterogeneous attributes. '
+  html_url: https://github.com/Caleydo/lineup.js
+  category: Build Status
+  modified_at: '2016-10-05T15:31:16Z'
+- name: mini_mds
+  description: 'This is a small project for showing the principles of Caleydo Web. '
+  html_url: https://github.com/Caleydo/mini_mds
+  category: 
+  modified_at: '2016-05-20T14:15:07Z'
+- name: neo4j-kshortestpaths-plugin
+  description: This is a plugin for the [Neo4j graph database](http://neo4j.com/)
+    that calculates the k-shortest paths in a graph.
+  html_url: https://github.com/Caleydo/neo4j-kshortestpaths-plugin
+  category: 
+  modified_at: '2016-09-01T09:20:55Z'
+- name: org.caleydo.datadomain.mock
+  description: Caleydo Crossword View
+  html_url: https://github.com/Caleydo/org.caleydo.datadomain.mock
+  category: 
+  modified_at: '2014-11-27T15:52:00Z'
+- name: org.caleydo.thirdparty
+  description: Third Party Library OSGI builder
+  html_url: https://github.com/Caleydo/org.caleydo.thirdparty
+  category: 
+  modified_at: '2015-05-06T23:49:11Z'
+- name: org.caleydo.view.compounds
+  description: 
+  html_url: https://github.com/Caleydo/org.caleydo.view.compounds
+  category: 
+  modified_at: '2015-08-18T15:00:36Z'
+- name: org.caleydo.view.contour
+  description: 
+  html_url: https://github.com/Caleydo/org.caleydo.view.contour
+  category: 
+  modified_at: '2016-02-01T12:42:23Z'
+- name: org.caleydo.view.crossword
+  description: Caleydo Crossword View
+  html_url: https://github.com/Caleydo/org.caleydo.view.crossword
+  category: 
+  modified_at: '2015-02-27T02:10:06Z'
+- name: org.caleydo.view.domino
+  description: Caleydo Domino View
+  html_url: https://github.com/Caleydo/org.caleydo.view.domino
+  category: 
+  modified_at: '2015-07-29T22:19:35Z'
+- name: org.caleydo.view.dynamicpathway
+  description: 1. create a new repository org.caleydo.view.<name>
+  html_url: https://github.com/Caleydo/org.caleydo.view.dynamicpathway
+  category: 
+  modified_at: '2015-08-20T13:28:43Z'
+- name: org.caleydo.view.furby
+  description: ''
+  html_url: https://github.com/Caleydo/org.caleydo.view.furby
+  category: 
+  modified_at: '2016-06-11T13:10:30Z'
+- name: org.caleydo.view.genesequence
+  description: this is a very basic gene sequence viewer for a specific chromosome.
+  html_url: https://github.com/Caleydo/org.caleydo.view.genesequence
+  category: 
+  modified_at: '2014-11-27T15:22:11Z'
+- name: org.caleydo.view.lineup
+  description: ''
+  html_url: https://github.com/Caleydo/org.caleydo.view.lineup
+  category: 
+  modified_at: '2015-11-12T02:57:02Z'
+- name: org.caleydo.view.template
+  description: 1. fork this repository
+  html_url: https://github.com/Caleydo/org.caleydo.view.template
+  category: 
+  modified_at: '2016-01-29T13:13:40Z'
+- name: org.caleydo.vis.lineup.demos
+  description: LineUp Demos
+  html_url: https://github.com/Caleydo/org.caleydo.vis.lineup.demos
+  category: 
+  modified_at: '2015-11-11T20:06:09Z'
+- name: org.caleydo.vis.lineup.demos.data
+  description: LineUp Demos
+  html_url: https://github.com/Caleydo/org.caleydo.vis.lineup.demos.data
+  category: 
+  modified_at: '2016-09-20T12:29:38Z'
 - name: particles
   description: This is application visualizes the distribution of items as particles
     using [PhysicsJS](http://wellcaffeinated.net/PhysicsJS/). The underlying particle
@@ -231,6 +371,16 @@
   html_url: https://github.com/Caleydo/pathfinder_graph
   category: Caleydo Web Server Plugin
   modified_at: '2016-09-01T10:45:50Z'
+- name: sample_app
+  description: Sample application that lists all datasets stored on Caleydo Web server.
+  html_url: https://github.com/Caleydo/sample_app
+  category: 
+  modified_at: '2016-10-03T15:32:54Z'
+- name: sample_websocket
+  description: a simple example application using websockets as an echo service
+  html_url: https://github.com/Caleydo/sample_websocket
+  category: 
+  modified_at: '2016-10-03T15:49:02Z'
 - name: stratomex_js
   description: StratomeX.js is a port for Caleydo Web using the Caleydo CLUE framework
     for provenance tracking and story telling.
@@ -243,7 +393,7 @@
     levels of granularity.
   html_url: https://github.com/Caleydo/taco
   category: Caleydo Web Application
-  modified_at: '2016-10-05T00:00:00Z'
+  modified_at: '2016-10-05T13:37:40Z'
 - name: taco_server
   description: TaCo (for **Ta**ble **Co**mparison) is an interactive comparison tool
     that effectively visualizes the differences between multiple tables at various
@@ -257,9 +407,29 @@
   html_url: https://github.com/Caleydo/vials
   category: Caleydo Web Application
   modified_at: '2016-10-03T15:47:13Z'
+- name: vials_import_miso
+  description: 
+  html_url: https://github.com/Caleydo/vials_import_miso
+  category: 
+  modified_at: '2015-09-19T14:40:03Z'
 - name: vials_server
   description: The vials server reads genomic files and provide data as API. It is
     recommended to use it in conjunction with [vials](https://github.com/Caleydo/vials).
   html_url: https://github.com/Caleydo/vials_server
   category: Caleydo Web Server Plugin
   modified_at: '2016-09-01T13:14:51Z'
+- name: visuallinks
+  description: 
+  html_url: https://github.com/Caleydo/visuallinks
+  category: 
+  modified_at: '2015-07-24T10:33:16Z'
+- name: website_tourguide
+  description: 
+  html_url: https://github.com/Caleydo/website_tourguide
+  category: 
+  modified_at: '2016-09-13T09:45:19Z'
+- name: website_visonfire
+  description: 
+  html_url: https://github.com/Caleydo/website_visonfire
+  category: 
+  modified_at: '2016-09-13T09:28:02Z'
