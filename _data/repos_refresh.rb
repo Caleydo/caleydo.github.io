@@ -38,12 +38,23 @@ class Refresher
   end
 
   def readme(repo)
-    open("https://raw.githubusercontent.com/Caleydo/#{repo}/master/README.md").read
+    # open("https://raw.githubusercontent.com/Caleydo/#{repo}/master/README.md").read
+    <<END
+Caleydo Web Core ![Caleydo Web Clien Plugin](https://img.shields.io/badge/Caleydo%20Web-Client%20Plugin-F47D20.svg)
+=====================
+
+Caleydo Web is a framework for developing web-based visualization applications. This is the core repository, but you will find the code distributed among [many repositories](http://caleydo.org/documentation/list_of_plugins).
+
+If you want to learn how to use Caleydo Web, check out the [documentation](http://caleydo.org/documentation).
+
+Installation
+------------
+END
   end
 
   def badge_blurb(repo)
     readme = readme(repo)
-    badge_match = readme.match(/!\[([^\]]*)\]/)
+    badge_match = readme.match(/!\[([^\]]*)\]/) # Text of first image on page
     blurb_match = readme.match(/===\s+(.*)/)
     {
       badge: badge_match ? badge_match[1] : nil,
@@ -58,6 +69,7 @@ class Refresher
     local_by_name = by_name(repos_from_local)
 
     github_by_name.map do |name,record|
+      puts record
       github_modified_at = [
         record['created_at'],
         record['updated_at'],
@@ -76,12 +88,21 @@ class Refresher
         }
       else
         local_by_name[name]
-      end.select{ |x| x } # Remove nulls
+      end
     end
   end
 
+  def clean
+    types = ['Application', 'Client Plugin', 'Server Plugin', 'Bundle'].map { |suffix|
+      'Caleydo Web ' + suffix
+    }
+    merge
+      .select { |x| x } # Remove nulls
+      .select { |x| types.include?(x['category']) }
+  end
+
   def repos_yml
-    merge.to_yaml
+    clean.to_yaml
   end
 end
 
