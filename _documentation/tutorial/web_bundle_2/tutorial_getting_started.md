@@ -6,7 +6,7 @@ permalink: /documentation/tutorial/web_bundle_2/
 
 
 #### Starting up Vagrant
-Locate to the caleydo web container and fire up the terminal follow steps:
+Locate to the Caleydo web container and fire up the terminal follow steps:
 
 `Vagrant ssh` 
 
@@ -21,7 +21,7 @@ The localhost can be obtained from:
 
 `http://localhost:9000/`
 
-The next step is to pull the demo_app from github.  For this first locate caleydo web container (outside vagrant server) and open the terminal then paste the following command.
+The next step is to pull the demo_app from github.  For this first locate Caleydo web container (outside vagrant server) and open the terminal then paste the following command.
 
 `./manage.sh clone demo_app`
 
@@ -37,7 +37,7 @@ Then open the browser you should see:
 
 
 Inside the demo_app there are already a tons of different data sets for different kind of visualization which you can play around. Depending on the type of data set and meta information provided, calayedo framework can show up the different kind of visualization supported for that data automatically.
-The supported visualizations in caleydo framework `(plugins -> caleydo_vis ->package.json)` are:
+The supported visualizations in Caleydo framework `(plugins -> caleydo_vis ->package.json)` are:
 
 1.	Barplot
 2.	Raw table 
@@ -122,10 +122,10 @@ Now if you want to see the different kind of visualization for your data support
 
 Then try to see how the different data format uses different visualization.
 
-Now you can use the visualization for your data in anywhere. You do not need to worry about preparing the format of data for the caleydo framework. Just put your csv or tsv inside data and update the index.json accordingly. The server should be able to do all necessary operation for you.
+Now you can use the visualization for your data in anywhere. You do not need to worry about preparing the format of data for the Caleydo framework. Just put your csv or tsv inside data and update the index.json accordingly. The server should be able to do all necessary operation for you.
 
 
-#### Using the caleydo framework with test matrix data.
+#### Using the Caleydo framework with test matrix data.
 Now we will demonstrate how we can display the custom data in helloworld plugin.
 Go to 
 
@@ -139,7 +139,7 @@ Copy and paste the following inside the init() method after
 ```javascript
 {% include_relative demo_getting_started/matrix.js %}
 ```
-You will get error saying cannot find name parser and multiform. Now we need to import parser and multiform to represent the matrix in caleydo format in order to use visualization.
+You will get error saying cannot find name parser and multiform. Now we need to import parser and multiform to represent the matrix in Caleydo format in order to use visualization.
 Add these two lines:
 
 `import parser = require('../caleydo_d3/parser');
