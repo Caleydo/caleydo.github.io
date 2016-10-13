@@ -23,7 +23,7 @@ e.g.
 {% highlight bash  %}
 ./manage.sh clone caleydo_core
 ./manage.sh clone Caleydo/caleydo_vis
-./manage.sh clone https://github.com/Caleydo/demo_app.git
+./manage.sh clone https://github.com/Caleydo/caleydo_sample_app.git
 {% endhighlight %}
 
 ### *clone_deps* / *clone_ssh_deps* command
@@ -34,7 +34,7 @@ usage:
 
 
 {% highlight bash  %}
-./manage.sh clone_deps demo_app
+./manage.sh clone_deps caleydo_sample_app
 {% endhighlight %}
 
 ### *pull* command
