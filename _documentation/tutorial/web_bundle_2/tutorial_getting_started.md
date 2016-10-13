@@ -21,11 +21,11 @@ The localhost can be obtained from:
 
 `http://localhost:9000/`
 
-The next step is to pull the demo_app from github.  For this first locate caleydo web container (outside vagrant server) and open the terminal then paste the following command.
+The next step is to pull the caleydo_sample_app from github.  For this first locate caleydo web container (outside vagrant server) and open the terminal then paste the following command.
 
-`./manage.sh clone demo_app`
+`./manage.sh clone caleydo_sample_app`
 
-So everything if you want to clone or pull you need to run the manage script as in step above. The files will be downloaded inside the `“plugins ->demo_app”`. The other helping files for different purpose like loading data, visualization… are inside the plugins folder.
+So everything if you want to clone or pull you need to run the manage script as in step above. The files will be downloaded inside the `“plugins ->caleydo_sample_app”`. The other helping files for different purpose like loading data, visualization… are inside the plugins folder.
 
 Then open the browser you should see: 
 
@@ -36,7 +36,7 @@ Then open the browser you should see:
 
 
 
-Inside the demo_app there are already a tons of different data sets for different kind of visualization which you can play around. Depending on the type of data set and meta information provided, calayedo framework can show up the different kind of visualization supported for that data automatically.
+Inside the caleydo_sample_app there are already a tons of different data sets for different kind of visualization which you can play around. Depending on the type of data set and meta information provided, calayedo framework can show up the different kind of visualization supported for that data automatically.
 The supported visualizations in caleydo framework `(plugins -> caleydo_vis ->package.json)` are:
 
 1.	Barplot
@@ -51,7 +51,7 @@ The supported visualizations in caleydo framework `(plugins -> caleydo_vis ->pac
 10.	Force directed graph.
 
 
-####	Example how to use demo_app:
+####	Example how to use caleydo_sample_app:
 Drag Test 10x10[10,10] to the workspace then you can see as shown in figure.
 
 
@@ -65,7 +65,7 @@ If we try another data set D1 Row Kmeans 2, it supports histogram, mosaic, and p
 
 ![alt text](images/3.png "D1 Row Kmeans 2")
 
-All data are located in data folder of your demo_app.
+All data are located in data folder of your caleydo_sample_app.
 
 
 #### Building your hello world.
@@ -110,7 +110,7 @@ Now reinitialize the server type:
 
 Then you should be able to see your app on 
 
-`http://localhost:9000/demo_app/`  as shown in
+`http://localhost:9000/caleydo_sample_app/`  as shown in
 
 ![alt text](images/5.png "data")
 
@@ -118,7 +118,7 @@ Then you should be able to see your app on
 Then you can drag the data on the workspace and play around.
 Now if you want to see the different kind of visualization for your data supported go to the 
 
-`demo_app > data > index.json`
+`caleydo_sample_app > data > index.json`
 
 Then try to see how the different data format uses different visualization.
 
