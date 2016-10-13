@@ -177,7 +177,7 @@ You can specify a range of additional attributes for visualituation plugins:
 * **sizeDependsOnDataDimension**: Indicates, whether the size of this visulization depends on the dimensions of the data, e.g., the rows and columns of a table. Values may be set for width and height using an array: ``[true, false]`` A single value may be specified to set both.
 * **scaling**: Specifies the scaling behavior. The following values are supported: *free* (no restrictions, default), *aspect* (the initial aspect ratio must be kept, i.e. same scaling values in both dimensions), *width-only* (only width can be scaled), *height-only* (only height can be scaled)
 
-For an example plugin, see [sample_vis](https://github.com/Caleydo/sample_vis).
+For an example plugin, see [caleydo_sample_vis](https://github.com/Caleydo/caleydo_sample_vis).
 
 
 #### Datatype Plugin
