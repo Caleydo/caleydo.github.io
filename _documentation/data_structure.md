@@ -44,7 +44,7 @@ The following properties are common to all supported dataset types:
 * `size` The size of the dataset. In case of a matrix, number of rows and columns.
 * `separator`: String that is used as separator in the data file. Default: ",".
 
-An `index.json` file may contain definitions for multiple datasets. For more definition examples have a look at our [demo application](https://github.com/Caleydo/demo_app).
+An `index.json` file may contain definitions for multiple datasets. For more definition examples have a look at our [caleydo_sample_app](https://github.com/Caleydo/caleydo_sample_app).
 
 ### Dataset Access
 
