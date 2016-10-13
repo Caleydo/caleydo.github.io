@@ -62,7 +62,7 @@ The command clones a [sample app](https://github.com/Caleydo/sample_app) into a 
 The `init` command currently asks you to specify the following settings:
 
 * `Enter the plugin name:` - The name of the directory within the */plugin* directory and should only contain lower-case characters, underscore and dashes
-* `name: (sample_web)` - The name of your new plugin, as specified in package.json; should be the same name as the previous entered plugin name
+* `name: (caleydo_template_client_plugin)` - The name of your new plugin, as specified in package.json; should be the same name as the previous entered plugin name
 * `version (0.0.1)` - The initial version of your plugin, as specified in package.json
 * `keywords` - comma-seperated list of keywords, as specified in package.json
 * `author` - as specified in package.json
