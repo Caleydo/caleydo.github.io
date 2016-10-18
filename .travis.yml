@@ -14,7 +14,7 @@ install:
 - gunzip geckodriver-v0.11.1-linux64.tar.gz
 - tar -xvf geckodriver-v0.11.1-linux64.tar
 - chmod a+x geckodriver
-- export PATH=$PATH:`pwd`/geckodriver
+- export PATH=$PATH:`pwd`
 - which geckodriver # debug
 
 before_script:
