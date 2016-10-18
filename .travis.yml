@@ -19,8 +19,9 @@ install:
 
 # Debug on Travis...
 - PLATFORM_RB=`dirname $(gem which selenium-webdriver)`/selenium/webdriver/common/platform.rb
-- cp $PLATFORM_RB $PLATFORM_RB.back
-- perl -pne '"puts full_path\n" if /next unless exe/'  $PLATFORM_RB.back > $PLATFORM_RB
+- perl -i.orig -pne 'print "puts full_path\n" if /next unless exe/' $PLATFORM_RB
+- perl -i.orig -pne 'print "puts binary_names\n" if /paths = ENV/' $PLATFORM_RB
+- cat $PLATFORM_RB
 
 before_script:
 - "export DISPLAY=:99.0"
