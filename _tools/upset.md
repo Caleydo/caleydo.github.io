@@ -78,7 +78,7 @@ UpSet has three guiding principles:
  * **Visualize attributes about the intersections**. It is not just the magnitude of an intersection that is interesting, but we also want to know whether the data associated with intersection is different or similar.
  
 You might ask, how does the banana venn diagram look in UpSet? Here you go: 
- ![UpSet Screenshot]({{{path}}/upsetr-banana.png)
+ ![UpSet Screenshot]({{path}}/upsetr-banana.png)
 
 (This figure was created with the UpSet R version.) Granted, that's a little hard to read because the figure is rather small. But we can simply remove the small intersections, and we get a nice plot which shows us the main features of the data: 
 
