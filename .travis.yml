@@ -17,6 +17,11 @@ install:
 - export PATH=$PATH:`pwd`
 - which geckodriver # debug
 
+# Debug on Travis...
+- PLATFORM_RB=`dirname $(gem which selenium-webdriver)`/selenium/webdriver/common/platform.rb
+- cp $PLATFORM_RB $PLATFORM_RB.back
+- perl -pne '"puts full_path\n" if /next unless exe/'  $PLATFORM_RB.back > $PLATFORM_RB
+
 before_script:
 - "export DISPLAY=:99.0"
 - "sh -e /etc/init.d/xvfb start"  # From https://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-a-GUI
