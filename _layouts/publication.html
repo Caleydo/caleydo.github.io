@@ -73,7 +73,7 @@ layout: default
     <h1>Tool Info</h1>
     <ul class="project-icon-list">
     {% for project in site.tools %}
-    {% if project.key == page.project) %}
+    {% if project.key == page.project %}
       <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
     {% endif %}
     {% endfor %}
