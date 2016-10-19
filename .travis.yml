@@ -19,7 +19,7 @@ install:
 
 # Debug on Travis...
 - PLATFORM_RB=`dirname $(gem which selenium-webdriver)`/selenium/webdriver/common/platform.rb
-- perl -i.orig -pne 'print "puts [full_path,Dir.glob(full_path).join(':'),exe,(File.executable?(exe) if exe)].join('; ')\n" if /next unless exe/' $PLATFORM_RB
+- perl -i.orig -pne 'print "puts [full_path,Dir.glob(full_path).join(\":\"),exe,(File.executable?(exe) if exe)].join(\"; \")\n" if /next unless exe/' $PLATFORM_RB
 - perl -i.orig -pne 'print "puts binary_names\n" if /paths = ENV/' $PLATFORM_RB
 - cat $PLATFORM_RB
 
