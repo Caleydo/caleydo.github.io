@@ -15,7 +15,9 @@
   <script src="qunit_support.js"></script>
   <script>
     (function() {
-      var tests = window.location.search.substring(1).split('&');
+      var tests = window.location.search.substring(1).split('&')
+              .filter(function(param) {return param.match(/^tests=/)})
+              .map(function(param) {return decodeURIComponent(param.replace('tests=', ''))});
       for (var test of tests) {
         if (test.match(/^[a-z0-9_\/]+$/)) {
           var demo = test.replace('/test_', '/demo_');
