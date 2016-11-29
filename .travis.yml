@@ -10,6 +10,7 @@ install:
 - bundle install
 
 script: 
+- set -e
 - bundle exec jekyll build
 - bundle exec htmlproofer ./_site --disable-external  --alt-ignore '/.*/' --url-swap '/assets/images/papers/$:/assets/images/papers/2016_eurovis_pathfinder_teaser.png'
 
