@@ -34,25 +34,3 @@ The only supported plugins are those that come with the [github-pages gem](https
 ## Liquid Syntax
 
 https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
-
-## Writing interactive documentation 
-
-When contributing documentation, put each individual page in the `_documentation` collection as a markdown file.
- 
-If your documentation contains code, you should write the code in a separate file, which you put into a sub-folder of the `_documentation` folder. By convention, this folder should have the same name as your markdown file. 
-
-To include code on the page, you can use the following jekyll code: 
-
-    ```javascript
-    {% include_relative path/to/your/code.js %}
-    ```
-
-## Testing the tutorial examples
-
-The tutorial examples are tested by Travis. If there are failures...:
-1. Make sure the output in the iframes looks right.
-2. If that doesn't help, run the qunit.html locally.
-3. If that doesn't help, run selenium to run qunit locally.
-
-(Conversely, if the iframe doesn't look right, but tests are passing,
-strengthen the tests.)
