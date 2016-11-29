@@ -17,10 +17,6 @@ use_analytics: true
 paper_content_url: http://data.caleydo.org/papers/
 data_url: http://data.caleydo.org/
 
-gems:
-  - jekyll-redirect-from
-  - kramdown # In particular, MD rendering within the repo list
-
 # Build settings
 
 permalink: pretty
@@ -64,6 +60,3 @@ collections:
   funding:
     output: false
     permalink: /funding/:path/
-  documentation:
-    output: true
-    permalink: /documentation/:path/
