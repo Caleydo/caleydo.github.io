@@ -2,7 +2,7 @@
 layout: downloads
 title: Downloads | Caleydo
 tag: downloads
-permalink: /downloads/
+permalink: /software/
 softwares:
 -  caleydo_3_1_5
 -  lineup_3_1_1
@@ -11,11 +11,21 @@ softwares:
 
 ---
 
+# Phovea web applications
+
+The current focus of development is the Phovea web application framework.
+
+TODO: Downloads link?
+
+# Caleydo java applications
+
+Earlier work by the team produced a number of Java desktop applications.
+
 Caleydo runs on **Windows**, **Mac OS X**, and **Linux**. We regularly test on Windows 7, Ubuntu/Kubuntu of the latest versions and Mac OS X. 
 
 Caleydo requires **Java 7**. Further installation details can be found when following the links below.
 
-# Current Stable Release
+## Last Release
 
 <ul class="release-icon-list">
 {% for sw in page.softwares %}
@@ -27,7 +37,7 @@ Caleydo requires **Java 7**. Further installation details can be found when foll
 {% endfor %}
 </ul>
 
-# Older Releases
+## Older Releases
 
 <ul class="release-icon-list">
 {% for release in site.releases %}
