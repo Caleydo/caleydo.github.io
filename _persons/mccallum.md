@@ -8,6 +8,6 @@ role: core
 email: chuck_mccallum@hms.harvard.edu
 image: /assets/images/team/mccallum.jpg
 organization: Harvard Medical School
-position:
+position: Software Engineer
 website: http://mccalluc.github.io/
 ---
