@@ -46,7 +46,7 @@ github:
   
 web:  
  - 
-  url: http://caleydo.github.io/lineup.js/
+  url: http://lineup.caleydoapp.org
   name: LineUp Web Version
 ---
 
