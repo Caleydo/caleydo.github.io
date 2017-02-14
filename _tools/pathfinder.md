@@ -9,12 +9,12 @@ order: 2
 standfirst: Interactive path visualization in large multivariate graphs.
 
 
-teaser: 
+teaser:
     lowres: papers/2016_eurovis_pathfinder.png
     highres: papers/2016_eurovis_pathfinder_teaser.png
 publications:
  - 2016_eurovis_pathfinder
- 
+
 team:
 - partl
 - gratzl
@@ -24,19 +24,19 @@ team:
 - lex
 
 collaborators:
- - wassermann 
+ - wassermann
 
 videos:
  - 2016_eurovis_pathfinder_video
 
 github:
- - 
+ -
   url:  https://github.com/Caleydo/pathfinder/
   name: Pathfinder
-  
+
 web:
- - 
-  url: http://demo.caleydo.org/pathfinder/
+ -
+  url: http://pathfinder.caleydoapp.org
   name: Pathfinder Web Version
 
 ---
@@ -47,5 +47,4 @@ The analysis of paths in graphs is highly relevant in many domains. Typically, p
 
 With Pathfinder, we present visual analysis solutions dedicated to path-related tasks in large and highly multivariate graphs. We show that by focusing on paths, we can address the scalability problem of multivariate graph visualization, equipping analysts with a powerful tool to explore large graphs. Pathfinder is a technique that provides visual methods to query paths, while considering various constraints. The resulting set of paths is visualized in both a ranked list and as a node-link diagram. For the paths in the list, we display rich attribute data associated with nodes and edges, and the node-link diagram provides topological context. The paths can be ranked based on topological properties, such as path length or average node degree, and scores derived from attribute data.
 
-Pathfinder is designed to scale to graphs with tens of thousands of nodes and edges by employing strategies such as incremental query results. You can [try Pathfinder](http://demo.caleydo.org/pathfinder/) with data from a coauthor network and biological pathways.
-
+Pathfinder is designed to scale to graphs with tens of thousands of nodes and edges by employing strategies such as incremental query results. You can [try Pathfinder](http://pathfinder.caleydoapp.org) with data from a coauthor network and biological pathways.

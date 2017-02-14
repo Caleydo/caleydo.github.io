@@ -7,41 +7,36 @@ permalink: /tools/domino/
 redirect_from: /projects/domino.html
 status: prototype
 order: 5
-badge: 
+badge:
 standfirst: "Extracting, Comparing, and Manipulating Subsets across Multiple Tabular Datasets"
 
 # the path relative to assets/images
-teaser: 
+teaser:
     lowres: papers/2014_infovis_domino.png
 
 publications:
  - 2014_infovis_domino
 
-videos: 
+videos:
  - 2014_infovis_domino_video
-    
+
 team:
  - gratzl
  - gehlenborg
  - lex
- - pfister 
- - streit 
- 
+ - pfister
+ - streit
+
 collaborators:
 
 github:
- - 
+ -
   url: https://github.com/Caleydo/org.caleydo.view.domino
   name: Domino
- - 
+ -
   url: https://github.com/Caleydo/caleydo
   name: Caleydo Core
-  
-web: 
- -
-  url: http://playground.caleydo.org/domino_js/
-  name: Domino web prototype
-  
+
 ---
 
 Answering questions about complex issues often requires analysts to take into account information contained in multiple interconnected datasets. A common strategy in analyzing and visualizing large and heterogeneous data is to divide the data into meaningful subsets. In a next step, interesting subsets are selected and the associated data as well as the relationships between the subsets are visualized. However, neither the extraction and manipulation, nor the comparison of subsets is well supported by state-of-the-art techniques.
