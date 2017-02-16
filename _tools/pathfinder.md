@@ -36,7 +36,7 @@ github:
 
 web:
  -
-  url: http://pathfinder.caleydoapp.org
+  url: https://pathfinder.caleydoapp.org
   name: Pathfinder Web Version
 
 ---
