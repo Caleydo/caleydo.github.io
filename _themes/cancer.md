@@ -21,7 +21,7 @@ tools:
 videos:
  - 2014_nm_stratomex_video
 
-web-url: http://stratomex.caleydoapp.org
+web-url: https://stratomex.caleydoapp.org
 web-name: StratomeX Web Version
 
 ---
