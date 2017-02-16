@@ -37,7 +37,7 @@ publisher:
 project:
 
 # Use this if you have an external project website
-external-project: http://pathfinder.caleydoapp.org
+external-project: https://pathfinder.caleydoapp.org
 
 # The reference to the video entry
 video: 2016_eurovis_pathfinder_video
