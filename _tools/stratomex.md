@@ -45,7 +45,7 @@ github:
 
 web:
  - 
-  url: http://demo.caleydo.org/stratomex_js/
+  url: https://stratomex.caleydoapp.org/
   name: StratomeX Web Version
 
 ---
