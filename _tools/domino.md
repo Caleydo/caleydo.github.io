@@ -38,9 +38,6 @@ github:
   name: Caleydo Core
   
 web: 
- -
-  url: http://playground.caleydo.org/domino_js/
-  name: Domino web prototype
   
 ---
 
