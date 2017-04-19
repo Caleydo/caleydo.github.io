@@ -23,7 +23,7 @@ permalink: pretty
 sass:
   sass_dir: _sass
 # exclude from build
-exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock", "rvm.env"]
+exclude: ["README.md", "Rakefile", "changelog.md", ".idea/", "Gemfile", "Gemfile.lock", "rvm.env", "vendor"]
 
 # code highlighter
 #highlighter: rouge
