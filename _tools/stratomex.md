@@ -44,8 +44,7 @@ github:
   name: Caleydo Core
 
 web:
- -
-  url: https://stratomex.caleydoapp.org
+  url: https://stratomex.caleydoapp.org/
   name: StratomeX Web Version
 
 ---
