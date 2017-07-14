@@ -41,7 +41,7 @@ project:
 #preview-video: 2017_infovis_taco_video_preview
 
 # the prerint
-pdf: 2017_infovis_taco.pdf
+#pdf: 2017_infovis_taco.pdf
 # A supplement PDF
 #supplement: 2017_infovis_taco_supplement.pdf
 
@@ -54,9 +54,9 @@ supplements:
 #  linksym: true
 
 # Link to the repository where the code is hostet
-#code: https://github.com/Caleydo/pathfinder/
+code: https://github.com/Caleydo/taco/
 
-bibtex: 2016_eurovis_avocado.bib
+# bibtex: 2016_eurovis_avocado.bib
 
 abstract: "
 <p>Multivariate, tabular data is one of the most common data structures used in many different domains.</p>
