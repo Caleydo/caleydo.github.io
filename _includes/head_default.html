@@ -21,7 +21,7 @@
   <meta itemprop="name" content="{{page.title}}">
   <meta itemprop="description" content="{{ page.abstract | strip_html }}">
   {% if page.image_large %}
-  <meta itemprop="image" content="{{ site.baseurl }}/assets/images/papers/{{page.image_large}}">
+  <meta itemprop="image" content="{{ site.url }}/assets/images/papers/{{page.image_large}}">
   {% endif %}
 
   <!-- Twitter Card data -->
@@ -31,15 +31,15 @@
   <meta name="twitter:description" content="{{ page.abstract | strip_html }}">
   <meta name="twitter:creator" content="@caleydo_org">
   {% if page.image_large %}
-  <meta name="twitter:image:src" content="{{ site.baseurl }}/assets/images/papers/{{page.image_large}}">
+  <meta name="twitter:image:src" content="{{ site.url }}/assets/images/papers/{{page.image_large}}">
   {% endif %}
 
   <!-- Open Graph data -->
   <meta property="og:title" content="{{page.title}}" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
   <meta property="og:description" content="{{ page.abstract | strip_html }}" />
   {% if page.image_large %}
-  <meta property="og:image" content="{{ site.baseurl }}/assets/images/papers/{{page.image_large}}" />
+  <meta property="og:image" content="{{ site.url }}/assets/images/papers/{{page.image_large}}" />
   {% endif %}
 {% endif %}
