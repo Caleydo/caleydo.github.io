@@ -37,8 +37,8 @@ project:
 # Use this if you have an external project website
 #external-project: 
 
-video: 2017_infovis_taco
-preview-video: 2017_infovis_taco_preview
+video: 2017_infovis_taco_video
+preview-video: 2017_infovis_taco_video_preview
 
 # the prerint
 pdf: 2017_infovis_taco.pdf
