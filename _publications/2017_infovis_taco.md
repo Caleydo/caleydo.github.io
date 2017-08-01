@@ -22,8 +22,8 @@ authors:
 - Wolfgang Aigner
 - streit
 
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '17)
-year: 2017 (to appear)
+journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '17) (to appear)
+year: 2017
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award: 
 
