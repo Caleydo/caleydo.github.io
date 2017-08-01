@@ -19,7 +19,7 @@
 {% if page.layout == "publication" %} <!-- metadata for link preview  -->
   <!-- Schema.org markup for Google+ -->
   <meta itemprop="name" content="{{page.title}}">
-  <meta itemprop="description" content="{{ page.abstract }}">
+  <meta itemprop="description" content="{{ page.abstract | strip_html }}">
   {% if page.image_large %}
   <meta itemprop="image" content="{{ site.baseurl }}/assets/images/papers/{{page.image_large}}">
   {% endif %}
@@ -28,7 +28,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@caleydo_org">
   <meta name="twitter:title" content="{{page.title}}">
-  <meta name="twitter:description" content="{{ page.abstract }}">
+  <meta name="twitter:description" content="{{ page.abstract | strip_html }}">
   <meta name="twitter:creator" content="@caleydo_org">
   {% if page.image_large %}
   <meta name="twitter:image:src" content="{{ site.baseurl }}/assets/images/papers/{{page.image_large}}">
@@ -38,9 +38,8 @@
   <meta property="og:title" content="{{page.title}}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
+  <meta property="og:description" content="{{ page.abstract | strip_html }}" />
   {% if page.image_large %}
   <meta property="og:image" content="{{ site.baseurl }}/assets/images/papers/{{page.image_large}}" />
-  <meta name="twitter:image:src" content="{{ site.baseurl }}/assets/images/papers/{{page.image_large}}">
   {% endif %}
-  <meta property="og:description" content="{{ page.abstract }}" />
 {% endif %}
