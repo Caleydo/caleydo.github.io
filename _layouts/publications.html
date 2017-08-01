@@ -39,7 +39,7 @@ layout: default
       {% endfor %}
       <br/>
       <b> <a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b><br/>
-      {{ publication.journal }}, {{publication.year}}
+      {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
     </p>
 
   </div>
