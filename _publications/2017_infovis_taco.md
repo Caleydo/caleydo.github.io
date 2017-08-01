@@ -37,11 +37,11 @@ project:
 # Use this if you have an external project website
 #external-project: 
 
-#video: 2017_infovis_taco_video
-#preview-video: 2017_infovis_taco_video_preview
+video: 2017_infovis_taco
+preview-video: 2017_infovis_taco_preview
 
 # the prerint
-#pdf: 2017_infovis_taco.pdf
+pdf: 2017_infovis_taco.pdf
 # A supplement PDF
 #supplement: 2017_infovis_taco_supplement.pdf
 
@@ -69,4 +69,5 @@ abstract: "
 
 # Acknowledgements
 
-We want to thank Samuel Gratzl for his contributions made during all phases of the project as well as to the implementation of the prototype system. We would also like to thank Nils Gehlenborg for giving domain specific input on the biomedical usage scenario and for providing feedback on the prototype implementation and its potential value for domain experts. This work was funded by the Austrian Science Fund as part of the _VisOnFire_ project (FWF P27975-NBL) and the Austrian Ministry for Transport, Innovation and Technology (BMVIT) under the ICT of the future program via the VALiD project (FFG 845598)}.
+We want to thank Samuel Gratzl for his contributions made during all phases of the project as well as to the implementation of the prototype system. We would also like to thank Nils Gehlenborg for giving domain specific input on the biomedical usage scenario and for providing feedback on the prototype implementation and its potential value for domain experts. This work was funded by the Austrian Science Fund as part of the _VisOnFire_ project (FWF P27975-NBL), the State of
+Upper Austria (FFG 851460), and the Austrian Ministry for Transport, Innovation and Technology (BMVIT) under the ICT of the future program via the VALiD project (FFG 845598).
