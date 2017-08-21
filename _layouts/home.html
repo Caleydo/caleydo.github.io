@@ -134,14 +134,6 @@
         </ul>
 
 
-        <h1>Latest Release</h1>
-        <ul class="release-icon-list">
-            <li><a href="{{ site.baseurl }}{{ site.releases.last.url}}">Caleydo {{ site.releases.last.version }}</a><br>
-                {{ site.releases.last.date | date: "%-d %b %Y" }}
-            </li>
-        </ul>
-
-
         <h1>Funding</h1>
         <ul class="funding-icon-list">
             {% assign sorted_grants = (site.funding | sort: 'agency' %}

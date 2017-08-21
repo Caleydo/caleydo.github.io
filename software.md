@@ -1,7 +1,7 @@
 ---
-layout: downloads
-title: Downloads | Caleydo
-tag: downloads
+layout: software
+title: Software | Caleydo
+tag: software
 permalink: /software/
 softwares:
 -  caleydo_3_1_5
@@ -11,21 +11,35 @@ softwares:
 
 ---
 
-# Phovea web applications
+# Phovea Web Framework
 
-The current focus of development is the Phovea web application framework.
+The current focus of development is the Phovea web application framework. 
 
-TODO: Downloads link?
+Phovea is made up of multiple plugins. You can find the Phovea plugin repositories at
 
-# Caleydo java applications
+[https://github.com/phovea/](https://github.com/phovea/) 
 
-Earlier work by the team produced a number of Java desktop applications.
+To get started with Phovea, please refer to the [Phovea Documentation](http://phovea.caleydo.org/)
 
-Caleydo runs on **Windows**, **Mac OS X**, and **Linux**. We regularly test on Windows 7, Ubuntu/Kubuntu of the latest versions and Mac OS X. 
+# Caleydo Tools
 
-Caleydo requires **Java 7**. Further installation details can be found when following the links below.
+Our team has built many apps based on Phovea. Demo versions of these prototypes are hosted at
 
-## Last Release
+[https://caleydoapp.org](https://caleydoapp.org)
+
+Some other tools are also accessible via the [Tools page]({{site.baseurl}}/tools/) or via the [Publications page]({{site.baseurl}}/publications/). 
+
+<br ><br >
+
+# Discontinued: Caleydo Java Applications
+
+Earlier work by the team produced a number of Java desktop applications. These are still available for download, but are not actively maintained. 
+
+Caleydo Desktop runs on Windows, Mac OS, and Linux and is tested on Windows 7, Ubuntu/Kubuntu of the latest versions and Mac OS X. 
+
+Caleydo Desktop requires Java 7. Further installation details can be found when following the links below.
+
+## Last Caleydo Desktop Release
 
 <ul class="release-icon-list">
 {% for sw in page.softwares %}
