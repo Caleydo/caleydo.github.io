@@ -31,9 +31,9 @@ Some other tools are also accessible via the [Tools page]({{site.baseurl}}/tools
 
 <br ><br >
 
-# Discontinued: Caleydo Java Applications
+# Discontinued: Caleydo Desktop Applications
 
-Earlier work by the team produced a number of Java desktop applications. These are still available for download, but are not actively maintained. 
+Earlier work by the team produced a number of desktop applications. These are still available for download, but are not actively maintained. 
 
 Caleydo Desktop runs on Windows, Mac OS, and Linux and is tested on Windows 7, Ubuntu/Kubuntu of the latest versions and Mac OS X. 
 
