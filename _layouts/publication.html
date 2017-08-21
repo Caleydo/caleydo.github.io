@@ -7,6 +7,13 @@ layout: default
     <h1>{{ page.title | remove: "| Caleydo" }}</h1>
   </header>
 
+  {% assign paper_content_url = site.paper_content_url %}
+
+  {% if page.paper_content_url %}
+  {% assign paper_content_url = page.paper_content_url %}
+  {% endif %}
+
+
   <article class="publication-content-main">
 
     {% if page.image_large %}
@@ -59,7 +66,7 @@ layout: default
 
       {%if page.bibtex %}
       <p>
-        <i class="fa fa-download"></i>&nbsp; <a href="{{site.paper_content_url}}{{ page.bibtex }}">BibTeX</a>
+        <i class="fa fa-download"></i>&nbsp; <a href="{{paper_content_url}}{{ page.bibtex }}">BibTeX</a>
       </p>
       {% endif %}
     </div>
@@ -102,12 +109,12 @@ layout: default
 
     {% if page.pdf %}
     <li>
-      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ page.pdf }}">Paper (PDF)</a>
+      <i class="fa fa-download"></i> &nbsp;<a href="{{paper_content_url}}{{ page.pdf }}">Paper (PDF)</a>
     </li>
     {% endif %}
     {% if page.supplement %}
     <li>
-      <i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{ page.supplement }}">Supplementary Material</a>
+      <i class="fa fa-download"></i> &nbsp;<a href="{{paper_content_url}}{{ page.supplement }}">Supplementary Material</a>
     </li>
     {% endif %}
     {% if page.supplements %}
@@ -118,7 +125,7 @@ layout: default
         {% else %}
         <i class="fa fa-download"></i>
         {% endif %}
-        &nbsp;<a href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{site.paper_content_url}}{{ supplement.link }}{% endif %}">{{supplement.name}}</a>
+        &nbsp;<a href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{paper_content_url}}{{ supplement.link }}{% endif %}">{{supplement.name}}</a>
       </li>
 	{% endfor %}
     {% endif %}
@@ -143,7 +150,7 @@ layout: default
       </div>
       {% endif %}
       {% if video.file %}
-      <p><i class="fa fa-download"></i> &nbsp;<a href="{{site.paper_content_url}}{{video.file}}">Download Video</a><p/>
+      <p><i class="fa fa-download"></i> &nbsp;<a href="{{paper_content_url}}{{video.file}}">Download Video</a><p/>
       {% endif %}
     </div>
     {% endif %}

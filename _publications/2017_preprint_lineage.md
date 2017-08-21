@@ -5,6 +5,9 @@ title: "Lineage: Visualizing Multivariate Clinical Data in Genealogy Graphs"
 key: 2017_preprint_lineage
 # paper | preprint | poster
 type: preprint
+# optional url for a different site; defaults to data.caleydo.org
+paper_content_url: http://sci.utah.edu/~vdl/papers/
+
 
 # The shortname is used for auto-generated titels
 shortname: Lineage

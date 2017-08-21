@@ -5,6 +5,8 @@ title: "Interactive Visual Exploration And Refinement Of Cluster Assignments"
 key: 2017_bmc_clustering
 redirect_from: /publications/2017_preprint_clustering/
 type: paper
+# optional url for a different site; defaults to data.caleydo.org
+paper_content_url: http://sci.utah.edu/~vdl/papers/
 
 # The shortname is used for auto-generated titels
 shortname: Interactive Clustering
