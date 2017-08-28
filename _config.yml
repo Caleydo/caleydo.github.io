@@ -15,6 +15,7 @@ google_analytics: "'UA-45998043-1'"
 use_analytics: true
 
 paper_content_url: http://data.caleydo.org/papers/
+poster_content_url: http://data.caleydo.org/posters/
 data_url: http://data.caleydo.org/
 
 # Build settings
