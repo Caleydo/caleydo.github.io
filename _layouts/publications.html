@@ -120,7 +120,7 @@ layout: default
   {% if publication.abstract-pdf or publication.poster-pdf %}
 <p class="poster-link">
 
-      <span style="float: left;">
+      <span>
         {% if publication.abstract-pdf %}
           <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.abstract-pdf }}">Abstract</a>
         &nbsp;
@@ -139,7 +139,7 @@ layout: default
       </span>
 
   {% if publication.award %}
-  <span class="award">
+  <span class="award pull-right">
     {{publication.award}}&nbsp;<i class="fa fa-trophy"></i>
   </span>
   {% endif %}
