@@ -24,7 +24,11 @@ layout: default
       {% for person in site.persons %}
       {% if author == person.key %}
         <span class="paper-author">
+		  {% if person.website %}
           <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+          {% else %}
+          {{ person.first_name }}&nbsp;{{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
+          {% endif %}
         </span>
       {% assign known = true %}
       {% endif %}
@@ -58,16 +62,18 @@ layout: default
     <p>
       {% assign known = false %}
       {% for person in site.persons %}
-      {% if person.key == thesis.author %}
-      <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>
-
-      {% assign known = true %}
-
-      {% if known == false %}
-      {{ author }}
-      {% endif %}
-      {% endif %}
-      {% endfor %} <br/>
+		  {% if person.key == thesis.author %}
+			  {% if person.website %}
+			  <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
+			  {% else %}
+			  {{ person.first_name }}&nbsp;{{ person.last_name }}
+			  {% endif %}
+			  {% assign known = true %}
+		  {% endif %}
+      {% endfor %}
+	  {% if known == false %}
+	  {{ author }}
+	  {% endif %} <br/>
       <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
       {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
     </p>
