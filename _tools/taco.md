@@ -8,7 +8,7 @@ redirect_from: /projects/taco.html
 status: web
 order: 6
 badge:
-standfirst: "Visualizing Changes in Tables Over Time"
+standfirst: "Visualize the differences between multiple tables at various levels of detail."
 
 # the path relative to assets/images
 teaser:
