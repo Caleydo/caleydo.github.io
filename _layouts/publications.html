@@ -7,11 +7,11 @@ layout: default
 
 <article class="publications-content">
 
-  <h1>Peer-Reviewed Journal and Conference Papers </h1>
+  <h1 id="papers">Peer-Reviewed Journal and Conference Papers </h1>
 
   {% for publication in site.publications reversed %}
 
-  <div class="paper-list-block">
+  <div class="paper-list-block" id="publication.url">
 
     <a href="{{ site.baseurl }}{{ publication.url }}"><img alt="{{ publication.shortname }} screenshot"
                                                            class="paper-image-small"
@@ -51,7 +51,7 @@ layout: default
   {% endfor %}
 <br>
 	
-  <h1>Theses </h1>
+  <h1 id="theses">Theses </h1>
 
 
   {% for thesis in site.thesis reversed %}
@@ -86,7 +86,7 @@ layout: default
   <!-- <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>-->
 <br>
 	
-<h1>Extended Abstracts and Posters</h1>
+<h1 id="posters">Extended Abstracts and Posters</h1>
 
 {% for publication in site.data.posters %}
 
