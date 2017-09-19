@@ -34,7 +34,7 @@ award:
 publisher: 
 
 # Use if this paper is linked to an internal project. This will link to the project site
-project:
+project: taco
 
 # Use this if you have an external project website
 #external-project: 
