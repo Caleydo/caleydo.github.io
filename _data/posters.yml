@@ -7,7 +7,7 @@
   journal: IEEE Conference on Visual Analytics Science and Technology (VAST ’17), Phoenix, AZ, USA
   year: 2017
   abstract-pdf: 2017_vast_provenance-retrieval_abstract.pdf
-  #poster-pdf: 2015_infovis_prov-graph-vis_poster.pdf
+  poster-pdf: 2017_vast_provenance-retrieval_poster.pdf
   video: https://youtu.be/z8SSqQfrbG8
   award: IEEE VAST 2017 Best Poster Award
   
@@ -24,7 +24,7 @@
   journal: IEEE Conference on Information Visualization (InfoVis ’17), Phoenix, AZ, USA
   year: 2017
   abstract-pdf: 2017_infovis_taggle_abstract.pdf
-  #poster-pdf: 2015_infovis_prov-graph-vis_poster.pdf
+  poster-pdf: 2017_infovis_taggle_poster.pdf
   video: https://youtu.be/Okdfmxzab-M
   award:
 
