@@ -4,10 +4,10 @@ first_name: Samuel
 last_name: Gratzl
 key: gratzl
 permalink: /persons/gratzl/
-role: core
-email: samuel.gratzl@jku.at
+role: alumni
+email: samuel.gratzl@datavisyn.io
 image: /assets/images/team/gratzl.jpg
-organization: Johannes Kepler University Linz
-position: Postdoctoral Fellow
-website: http://sgratzl.github.io
+organization: Datavisyn GmbH
+position: 
+website: 
 ---
