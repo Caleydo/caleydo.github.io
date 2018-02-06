@@ -22,14 +22,16 @@ authors:
 - Wolfgang Aigner
 - streit
 
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '17)
-year: 2017
+journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '17), 24(1), pp. 677-686
+year: 2018
+
 # Set `to_appear: 1` if no DOI and pages are available
-to_appear: 1
+#to_appear: 1
+
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award: 
 
-#doi: 10.1109/TVCG.2017.xxxxxxx
+doi: 10.1109/TVCG.2017.2745298
 # use publisher only if no doi is available
 publisher: 
 
