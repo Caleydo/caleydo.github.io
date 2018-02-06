@@ -57,7 +57,7 @@ external-project: https://taggle.caleydoapp.org
 
 # The reference to the video entry
 video: 2017_preprint_taggle_video
-# The reference to the preview viedo entry
+# The reference to the preview video entry
 #preview-video:
 
 # the prerint
