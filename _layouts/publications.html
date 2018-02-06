@@ -7,52 +7,27 @@ layout: default
 
 <article class="publications-content">
 
-  <h1 id="papers">Peer-Reviewed Journal and Conference Papers </h1>
+  <h1 id="preprint">Preprint</h1>
 
   {% for publication in site.publications reversed %}
-
-  <div class="paper-list-block" id="publication.url">
-
-    <a href="{{ site.baseurl }}{{ publication.url }}"><img alt="{{ publication.shortname }} screenshot"
-                                                           class="paper-image-small"
-                                                           src="{{ site.baseurl }}/assets/images/papers/{{ publication.image }}"></a>
-
-    <p>
-      {% for author in publication.authors %}
-
-      {% assign known = false %}
-      {% for person in site.persons %}
-      {% if author == person.key %}
-        <span class="paper-author">
-		  {% if person.website %}
-          <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
-          {% else %}
-          {{ person.first_name }}&nbsp;{{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
-          {% endif %}
-        </span>
-      {% assign known = true %}
-      {% endif %}
-      {% endfor %}
-
-      {% if known == false %}
-        <span class="paper-author">        
-          {{ author }}{% if author != publication.authors.last %}, {% endif %}
-        </span>
-      {% endif %}
-
-      {% endfor %}
-      <br/>
-      <b> <a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b><br/>
-      {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
-    </p>
-
-  </div>
-
+    {% if publication.personal %}
+    {% elsif publication.type == "preprint" %}
+      {% include publication_list_entry.html %}
+    {% endif %}
   {% endfor %}
-<br>
-	
-  <h1 id="theses">Theses </h1>
 
+  <h1 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h1>
+
+  {% for publication in site.publications reversed %}
+    {% if publication.personal %}
+    {% elsif publication.type == "paper" %}
+      {% include publication_list_entry.html %}
+    {% endif %}
+  {% endfor %}
+
+  <br>
+	
+  <h1 id="theses">Theses</h1>
 
   {% for thesis in site.thesis reversed %}
 
@@ -84,72 +59,72 @@ layout: default
   {% endfor %}
 
   <!-- <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>-->
-<br>
-	
-<h1 id="posters">Extended Abstracts and Posters</h1>
+  <br>
+    
+  <h1 id="posters">Extended Abstracts and Posters</h1>
 
-{% for publication in site.data.posters %}
+  {% for publication in site.data.posters %}
 
-<p class="poster-item">
-  {% for author in publication.authors %}
+  <p class="poster-item">
+    {% for author in publication.authors %}
 
-  {% assign known = false %}
-  {% for person in site.persons %}
-  {% if author == person.key %}
-        <span class="paper-author">
-          {% if person.website %}
-          <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
-          {% else %}
-          {{ person.first_name }}&nbsp;{{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
+    {% assign known = false %}
+    {% for person in site.persons %}
+    {% if author == person.key %}
+          <span class="paper-author">
+            {% if person.website %}
+            <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+            {% else %}
+            {{ person.first_name }}&nbsp;{{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
+            {% endif %}
+          </span>
+    {% assign known = true %}
+    {% endif %}
+    {% endfor %}
+
+    {% if known == false %}
+          <span class="paper-author">
+            {{ author }}{% if author != publication.authors.last %}, {% endif %}
+          </span>
+    {% endif %}
+
+    {% endfor %}
+    <br/>
+
+    <b>{{ publication.title }}</b><br/>
+    {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+
+    {% if publication.abstract-pdf or publication.poster-pdf %}
+  <p class="poster-link">
+
+        <span>
+          {% if publication.abstract-pdf %}
+            <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.abstract-pdf }}">Abstract</a>
+          &nbsp;
           {% endif %}
-        </span>
-  {% assign known = true %}
-  {% endif %}
-  {% endfor %}
 
-  {% if known == false %}
-        <span class="paper-author">
-          {{ author }}{% if author != publication.authors.last %}, {% endif %}
-        </span>
-  {% endif %}
+          {% if publication.poster-pdf %}
+            <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.poster-pdf }}">Poster</a>
+          &nbsp;
+          {% endif %}
 
-  {% endfor %}
+          {% if publication.video %}
+            <i class="fa fa-file-video-o"></i>&nbsp; <a href="{{ publication.video }}">Video</a>
+          &nbsp;
+          {% endif %}
+
+        </span>
+
+    {% if publication.award %}
+    <span class="award pull-right">
+      {{publication.award}}&nbsp;<i class="fa fa-trophy"></i>
+    </span>
+    {% endif %}
+
+  </p>
+  {% endif %}
   <br/>
 
-  <b>{{ publication.title }}</b><br/>
-  {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
-
-  {% if publication.abstract-pdf or publication.poster-pdf %}
-<p class="poster-link">
-
-      <span>
-        {% if publication.abstract-pdf %}
-          <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.abstract-pdf }}">Abstract</a>
-        &nbsp;
-        {% endif %}
-
-        {% if publication.poster-pdf %}
-          <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.poster-pdf }}">Poster</a>
-        &nbsp;
-        {% endif %}
-
-        {% if publication.video %}
-          <i class="fa fa-file-video-o"></i>&nbsp; <a href="{{ publication.video }}">Video</a>
-        &nbsp;
-        {% endif %}
-
-      </span>
-
-  {% if publication.award %}
-  <span class="award pull-right">
-    {{publication.award}}&nbsp;<i class="fa fa-trophy"></i>
-  </span>
-  {% endif %}
-
-</p>
-{% endif %}
-<br/>
-
-{% endfor %}
+  {% endfor %}
 
 </article>

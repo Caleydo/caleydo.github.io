@@ -1,0 +1,36 @@
+<div class="paper-list-block" id="publication.url">
+
+    <a href="{{ site.baseurl }}{{ publication.url }}"><img alt="{{ publication.shortname }} screenshot"
+                                                            class="paper-image-small"
+                                                            src="{{ site.baseurl }}/assets/images/papers/{{ publication.image }}"></a>
+
+    <p>
+        {% for author in publication.authors %}
+
+        {% assign known = false %}
+        {% for person in site.persons %}
+        {% if author == person.key %}
+        <span class="paper-author">
+            {% if person.website %}
+            <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+            {% else %}
+            {{ person.first_name }}&nbsp;{{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
+            {% endif %}
+        </span>
+        {% assign known = true %}
+        {% endif %}
+        {% endfor %}
+
+        {% if known == false %}
+        <span class="paper-author">        
+            {{ author }}{% if author != publication.authors.last %}, {% endif %}
+        </span>
+        {% endif %}
+
+        {% endfor %}
+        <br/>
+        <b> <a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b><br/>
+        {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+    </p>
+
+</div>
