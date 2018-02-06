@@ -50,7 +50,7 @@ bib:
 award:
 
 # Use if this paper is linked to an internal project. This will link to the project site
-# project: taggle
+project: taggle
 
 # Use this if you have an external project website
 external-project: https://taggle.caleydoapp.org
