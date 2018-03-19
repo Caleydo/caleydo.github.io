@@ -61,7 +61,7 @@ video: 2018_preprint_ordino_video
 # the prerint
 pdf: 2018_preprint_ordino.pdf
 # A supplement PDF
-#supplement: 2018_preprint_ordino_supplement.pdf
+supplement: 2018_preprint_ordino_supplement.pdf
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
