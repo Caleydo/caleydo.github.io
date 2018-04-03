@@ -85,7 +85,7 @@ You might ask, how does the banana venn diagram look in UpSet? Here you go:
  ![UpSet Screenshot]({{path}}upsetr-banana_clipped.png)
 
 
-Notice how easy it is to see trends: the vast majority of genes is shared between all plants, the first three species seem to be highly related, while the fifth species (Phoenix dactylifera) is most different from the others. 
+Notice how easy it is to see trends: the vast majority of genes is shared between all plants, the first three species (Oryza_sativa, Sorghum_bicolor, and Brachypodium_distachyon) seem to be highly related, while the sixth species (Phoenix dactylifera) is most different from the others. 
 
 
 
