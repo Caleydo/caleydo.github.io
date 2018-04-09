@@ -27,6 +27,10 @@ journal-short: bioRxiv
 year: 2017
 journal: bioRxiv preprint
 
+doi: 10.1101/128579
+# use publisher only if no doi is available
+publisher: 
+
 bibentry: article
 bib:
   journal: bioRxiv preprint
