@@ -25,6 +25,7 @@ authors:
 # Include a shortened name for the journal or conference/proceedings
 journal-short: arXiv 
 year: 2018
+journal: arXiv preprint
 
 # Create BibTeX info, using one of the entry choices
 # Articles have a "journal", and inproceedings have a "booktitle"
