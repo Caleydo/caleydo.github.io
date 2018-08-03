@@ -28,7 +28,6 @@ authors:
 
 journal-short: bioRxiv
 year: 2018
-journal: bioRxiv preprint
 
 doi: 10.1101/277848
 # use publisher only if no doi is available

@@ -1,12 +1,12 @@
 ---
+# a custom URL for the content of this paper
+paper_content_url: http://sci.utah.edu/~vdl/papers/
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
 title: "Interactive Visual Exploration And Refinement Of Cluster Assignments"
 key: 2017_bmc_clustering
 redirect_from: /publications/2017_preprint_clustering/
 type: paper
-# optional url for a different site; defaults to data.caleydo.org
-paper_content_url: http://sci.utah.edu/~vdl/papers/
 
 # The shortname is used for auto-generated titels
 shortname: Interactive Clustering
@@ -23,21 +23,20 @@ authors:
 - Chris R. Johnson
 
 journal-short: BMC Bioinformatics 
-journal: BMC Bioinformatics, to appear
 year: 2017
 
 bibentry: article
 bib:
-  journal: BMC Bioinformatics, to appear
+  journal: BMC Bioinformatics
   booktitle: 
   editor: 
   publisher: 
   address: 
-  doi: 10.1101/123844
+  doi: 10.1186/s12859-017-1813-7
   url: http://biorxiv.org/content/early/2017/04/04/123844 
-  volume: 
-  number: 
-  pages: 
+  volume: 18
+  number: 1
+  pages: 406
   month: apr
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"

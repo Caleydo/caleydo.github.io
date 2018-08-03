@@ -49,7 +49,7 @@ layout: default
 
         <br/>
         <b>{{page.title}}</b><br/>
-        {{ page.journal }}, {% if page.doi %} <a href="http://dx.doi.org/{{ page.doi }}">doi:{{ page.doi }}</a>, {%endif%}
+        {{ page.journal }}{{ page.bib.journal }} {% if page.bib.volume %} {{ page.bib.volume }} ({{ page.bib.number }}), pp. {{ page.bib.pages }}{%endif%}, {% if page.doi %} <a href="http://dx.doi.org/{{ page.doi }}">doi:{{ page.doi }}</a>, {%endif%}
         {{ page.year }}{% if page.to_appear %} (to appear){%endif%}.
       </p>
 

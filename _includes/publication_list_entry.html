@@ -30,7 +30,7 @@
         {% endfor %}
         <br/>
         <b> <a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b><br/>
-        {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+        {{ publication.bib.journal }}{{ publication.journal }}{% if publication.bib.volume %}, {{ publication.bib.volume }} ({{ publication.bib.number }}), pp. {{ publication.bib.pages }}{%endif%}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
     </p>
 
 </div>

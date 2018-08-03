@@ -27,7 +27,6 @@ authors:
 # Include a shortened name for the journal or conference/proceedings
 journal-short: VAST 
 year: 2018
-journal: IEEE Transactions on Visualization and Computer Graphics (VAST '18)
 
 to_appear: 1
 

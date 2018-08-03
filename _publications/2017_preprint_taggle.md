@@ -29,7 +29,6 @@ authors:
 
 journal-short: arXiv
 year: 2017
-journal: arXiv preprint
 
 doi:
 # use publisher only if no doi is available
