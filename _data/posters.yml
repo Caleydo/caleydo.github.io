@@ -4,7 +4,7 @@
   - stitz
   - strobelt
   - streit
-  title: ConfusionFlow: Visualizing Neural Network Confusion Across Epochs
+  title: "ConfusionFlow: Visualizing Neural Network Confusion Across Epochs"
   journal: IEEE Conference on Visual Analytics Science and Technology (VAST ’18), Berlin, Germany
   year: 2018
   abstract-pdf: 2018_vast_confusionflow_abstract.pdf
