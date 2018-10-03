@@ -2,7 +2,6 @@
 layout: publication
 title: "Visualizing Uncertainty in Biological Expression Data"
 key: 2012_vda_uncertainty
-permalink: /publications/2012_vda_uncertainty/
 type: paper
 
 
@@ -13,18 +12,21 @@ authors:
 - Clemens Holzhüter
 - lex
 - schmalstieg
-- schulz
+- Hans-Jörg Schulz
 - Heidrun Schumann
 - streit
 
-journal: Proceedings of the SPIE Conference on Visualization and Data Analysis (VDA '12), pp. 82940O
 year: 2012
+
+bibentry: inproceedings
+bib:
+  booktitle: Proceedings of the SPIE Conference on Visualization and Data Analysis (VDA '12)
+  doi: 10.1117/12.908516
+  volume: 8294
+  pages: 82940O-82940O-11
+
 award:
 note: 
-
-doi: 10.1117/12.908516
-# use publisher only if no doi is available
-publisher: 
 
 project:
 
@@ -34,7 +36,6 @@ preview-video:
 
 pdf: 2012_vda_uncertainty.pdf
 supplement:
-bibtex: 2012_vda_uncertainty.bib
 
 
 abstract: "

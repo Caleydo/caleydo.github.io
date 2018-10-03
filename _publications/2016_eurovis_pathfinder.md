@@ -3,7 +3,6 @@ layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
 title: "Pathfinder: Visual Analysis of Paths in Graphs"
 key: 2016_eurovis_pathfinder
-permalink: /publications/2016_eurovis_pathfinder/
 type: paper
 
 # The shortname is used for auto-generated titels
@@ -23,21 +22,26 @@ authors:
 - schmalstieg
 - lex
 
-journal: Computer Graphics Forum (EuroVis '16), vol. 35, no. 3, pp. 71-80
 journal-short: CGF (EuroVis '16)
 year: 2016
-# Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
-award: Honorable Mention Award
 
-doi: 10.1111/cgf.12883
-# The publisher URL - use only if no doi is available
-publisher:
+bibentry: article
+bib:
+  journal: Computer Graphics Forum (EuroVis '16)
+  doi: 10.1111/cgf.12883
+  volume: 35
+  number: 3
+  pages: 71--80
+  month: jun
+
+# Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
+award: EuroVis 2016 Honorable Mention Award
 
 # Use if this paper is linked to an internal project. This will link to the project site
 project:
 
 # Use this if you have an external project website
-external-project: https://pathfinder.caleydoapp.org
+external-project: https://pathfinder.caleydoapp.org/
 
 # The reference to the video entry
 video: 2016_eurovis_pathfinder_video
@@ -59,8 +63,6 @@ supplements:
 
 # Link to the repository where the code is hostet
 code: https://github.com/Caleydo/pathfinder/
-
-bibtex: 2016_eurovis_pathfinder.bib
 
 abstract: "
 <p>The analysis of paths in graphs is highly relevant in many domains. Typically, path-related tasks are performed in node-link layouts. Unfortunately, graph layouts often do not scale to the size of many real world networks. Also, many networks are multivariate, i.e., contain rich attribute sets associated with the nodes and edges. These attributes are often critical in judging paths, but directly visualizing attributes in a graph layout exacerbates the scalability problem. In this paper, we present visual analysis solutions dedicated to path-related tasks in large and highly multivariate graphs. We show that by focusing on paths, we can address the scalability problem of multivariate graph visualization, equipping analysts with a powerful tool to explore large graphs. We introduce Pathfinder, a technique that provides visual methods to query paths, while considering various constraints. The resulting set of paths is visualized in both a ranked list and as a node-link diagram. For the paths in the list, we display rich attribute data associated with nodes and edges, and the node-link diagram provides topological context. The paths can be ranked based on topological properties, such as path length or average node degree, and scores derived from attribute data. Pathfinder is designed to scale to graphs with tens of thousands of nodes and edges by employing strategies such as incremental query results. We demonstrate Pathfinder's fitness for use in scenarios with data from a coauthor network and biological pathways.</p>"

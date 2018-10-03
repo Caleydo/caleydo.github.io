@@ -1,36 +1,52 @@
-<div class="paper-list-block" id="{{publication.key}}">
+<div class="paper-list-block">
+
 
     <a href="{{ site.baseurl }}{{ publication.url }}"><img alt="{{ publication.shortname }} screenshot"
-                                                            class="paper-image-small"
-                                                            src="{{ site.baseurl }}/assets/images/papers/{{ publication.image }}"></a>
-
-    <p>
+                                                           class="paper-image-small"
+                                                           src="{{ site.baseurl }}/assets/images/papers/{{ publication.image }}"></a>
+    <p class="pubs">
         {% for author in publication.authors %}
-
         {% assign known = false %}
         {% for person in site.persons %}
         {% if author == person.key %}
         <span class="paper-author">
-            {% if person.website %}
-            <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
-            {% else %}
-            {{ person.first_name }}&nbsp;{{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
-            {% endif %}
+          <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
         </span>
         {% assign known = true %}
         {% endif %}
         {% endfor %}
 
         {% if known == false %}
-        <span class="paper-author">        
-            {{ author }}{% if author != publication.authors.last %}, {% endif %}
+        <span class="paper-author">
+          {{ author }}{% if author != publication.authors.last %}, {% endif %}
         </span>
         {% endif %}
 
         {% endfor %}
         <br/>
-        <b> <a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b><br/>
-        {{ publication.bib.journal }}{{ publication.journal }}{% if publication.bib.volume %}, {{ publication.bib.volume }} ({{ publication.bib.number }}), pp. {{ publication.bib.pages }}{%endif%}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
-    </p>
+        <span class="paper-title"><a
+                href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></span><br/>
+        {% if publication.type == "thesis" %}
+        {{ publication.institution }}, {{ publication.thesis_type }}, {{ publication.month }} {{ publication.year }}
 
+        {% else %}
+        {% assign published-where = '' %}
+        {% if publication.bib.journal %}
+        {% assign published-where = publication.bib.journal %}
+        {% elsif publication.bib.booktitle %}
+        {% assign published-where = publication.bib.booktitle %}
+        {% elsif publication.bib.publisher %}
+        {% assign published-where = publication.bib.publisher %}
+        {% endif %}
+
+        {{ published-where }}, {{ publication.year }}
+        {% endif %}
+
+        {%if publication.award %}
+        <br>
+        <span class="award">
+        <i class="fa fa-trophy"></i>&nbsp;{{publication.award}}
+        </span>
+        {% endif %}
+    </p>
 </div>

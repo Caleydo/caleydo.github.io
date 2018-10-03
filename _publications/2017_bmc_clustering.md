@@ -1,6 +1,4 @@
 ---
-# a custom URL for the content of this paper
-paper_content_url: http://sci.utah.edu/~vdl/papers/
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
 title: "Interactive Visual Exploration And Refinement Of Cluster Assignments"
@@ -17,7 +15,7 @@ image_large: 2017_bmc_clustering_teaser.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
-- Michael Kern
+- kern
 - lex
 - gehlenborg
 - Chris R. Johnson

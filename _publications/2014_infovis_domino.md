@@ -2,7 +2,6 @@
 layout: publication
 title: "Domino: Extracting, Comparing, and Manipulating Subsets across Multiple Tabular Datasets "
 key: 2014_infovis_domino
-permalink: /publications/2014_infovis_domino/
 type: paper
 
 shortname: Domino
@@ -19,16 +18,23 @@ authors:
 - pfister
 - streit
 
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '14), 20(12), pp. 2023-2032
 year: 2014
-award: IEEE InfoVis 2014 Honorable Mention
 
-doi: 10.1109/TVCG.2014.2346260
+bibentry: article
+bib:
+  journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '14)
+  doi: 10.1109/TVCG.2014.2346260
+  volume: 20
+  number: 12
+  pages: 2023--2032
+
+award: IEEE InfoVis 2014 Honorable Mention Award
+
 # use publisher only if no doi is available
 publisher: 
 
 
-project: domino
+external-project: http://caleydo.org/tools/domino/
 
 video: 2014_infovis_domino_video
 preview-video: 2014_infovis_domino_video_preview
@@ -45,7 +51,6 @@ supplements:
    link: 2014_infovis_domino_gbm_cancer.cal
  - name: Samuel Gratzl's Talk at InfoVis'14 (HTML)
    abslink: https://sgratzl.github.io/domino_vis2014/
-bibtex: 2014_infovis_domino.bib
 
 abstract: "
 <p>Answering questions about complex issues often requires analysts to take into account information contained in multiple interconnected datasets. A common strategy in analyzing and visualizing large and heterogeneous data is dividing it into meaningful subsets. Interesting subsets can then be selected and the associated data and the relationships between the subsets visualized. However, neither the extraction and manipulation nor the comparison of subsets is well supported by state-of-the-art techniques. </p>
