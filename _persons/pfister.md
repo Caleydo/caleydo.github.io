@@ -4,7 +4,7 @@ first_name: Hanspeter
 last_name: Pfister
 key: pfister
 permalink: /persons/pfister/
-role: advisor
+role: alumni
 email: pfister@seas.harvard.edu
 image: /assets/images/team/pfister.jpg
 organization: Harvard University
