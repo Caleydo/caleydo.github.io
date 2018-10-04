@@ -1,4 +1,4 @@
---- --- @import 'bourbon/bourbon';
+@import 'bourbon/bourbon';
 @import 'base/base';
 @import 'neat/neat';
 
@@ -837,14 +837,14 @@ footer {
 }
 
 
-.video {
-  //margin: auto;
-  //margin-left: 0;
+//.video {
+//margin: auto;
+//margin-left: 0;
 
-  //@include media($large-display) {
-  //  width: 75%;
-  //}
-}
+//@include media($large-display) {
+//  width: 75%;
+//}
+//}
 
 .video-wrapper {
   position: relative;
