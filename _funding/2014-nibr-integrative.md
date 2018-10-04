@@ -3,7 +3,7 @@ layout: default
 agency: Novartis Institutes for BioMedical Research
 key: 2014-nibr-integrative
 permalink: /funding/2014-nibr-integrative/
-website: http://nibr.com/
+website: https://nibr.com/
 logo: nibr.jpg
 title: Integrative visualization of heterogeneous molecular data sources
 recipients:

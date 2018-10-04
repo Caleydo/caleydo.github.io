@@ -33,7 +33,7 @@ bib:
 
 award:
 
-external-project: http://caleydo.org/tools/pathways/
+external-project: https://caleydo.org/tools/pathways/
 
 video: 2013_infovis_entourage_video
 preview-video: 2013_infovis_entourage_video_preview

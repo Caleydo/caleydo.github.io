@@ -5,4 +5,4 @@ date:   2014-01-31 20:00:00
 categories: release
 ---
 
-The Harvard SEAS press office has written [a story about our LineUp technique](http://goo.gl/TZsBIq).
+The Harvard SEAS press office has written [a story about our LineUp technique](https://goo.gl/TZsBIq).

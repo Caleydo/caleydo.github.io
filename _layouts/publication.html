@@ -83,7 +83,7 @@ layout: default
 
 
 
-          {{ published-where }}, {% if page.bib.volume %} {{ page.bib.volume }}{% endif %}{% if page.bib.number %}({{ page.bib.number }}){% endif %}{% if page.bib.volume or page.bib.issue %}:{% endif %}{% if page.bib.pages %} {{ page.bib.pages }}, {% endif %} {% if page.bib.doi %} <a href="http://dx.doi.org/{{ page.bib.doi }}">doi:{{ page.bib.doi }}</a>, {%endif%}{{ page.year }}.
+          {{ published-where }}, {% if page.bib.volume %} {{ page.bib.volume }}{% endif %}{% if page.bib.number %}({{ page.bib.number }}){% endif %}{% if page.bib.volume or page.bib.issue %}:{% endif %}{% if page.bib.pages %} {{ page.bib.pages }}, {% endif %} {% if page.bib.doi %} <a href="https://dx.doi.org/{{ page.bib.doi }}">doi:{{ page.bib.doi }}</a>, {%endif%}{{ page.year }}.
         {% endif %}
 
       {%if page.award %}
@@ -142,7 +142,7 @@ layout: default
     <ul>
     {% if page.doi %}
     <li>
-      <i class="fa fa-external-link"></i> &nbsp;<a href="http://dx.doi.org/{{ page.doi }}">Publisher</a>
+      <i class="fa fa-external-link"></i> &nbsp;<a href="https://dx.doi.org/{{ page.doi }}">Publisher</a>
     </li>
     {% elsif page.publisher %}
     <li>

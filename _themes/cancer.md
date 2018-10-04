@@ -33,7 +33,7 @@ web-name: StratomeX Web Version
 Caleydo provides a suite of tools for the analysis of Cancer data. We maintain and develop tools for analyzing cancer subtypes (StratomeX), visualizing genomic data in matrices (Domino), biological networks in the context of cancer data (Entourage, Pathfinder), and alternative splicing based on mRNA-seq data (Vials).
 
 <img style="float: right; padding-left: 5px; width: 400px" src="{{path}}/tcga_import.png">
-Caleydo is currently transitioning from a standalone software tool that you had to download and install, to a web-based visualization platform. At the end of the transition period, we envision an **integrated visual analysis paltform** that also **provides access to all major public cancer datasets** including [TCGA](http://cancergenome.nih.gov/).
+Caleydo is currently transitioning from a standalone software tool that you had to download and install, to a web-based visualization platform. At the end of the transition period, we envision an **integrated visual analysis paltform** that also **provides access to all major public cancer datasets** including [TCGA](https://cancergenome.nih.gov/).
 
 At the moment, our standalone software provides access to all TCGA datasets published through the [BROAD Firehose Analysis pipeline](https://gdac.broadinstitute.org/) (see Figure on the right). Some of our web-based tools also already provide access to selected TCGA datasets.
 

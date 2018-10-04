@@ -14,7 +14,7 @@ We are happy to receive your feedback!
 
 Graz University of Technology
 Institute for Computer Graphics and Vision
-http://www.icg.tugraz.at/
+https://www.icg.tugraz.at/
 Inffeldgasse 16
 A-8010 Graz
 Austria
@@ -23,7 +23,7 @@ Fax: +43 316 873 5050
 
 Johannes Kepler University Linz
 Institute of Computer Graphics
-http://www.cg.jku.at/
+https://www.cg.jku.at/
 Altenberger Straße 69 
 A-4040 Linz
 Austria
@@ -32,7 +32,7 @@ Fax: +43 732 2468 6632
 
 Harvard School of Engineering and Applied Sciences
 Visual Computing Group
-http://vcg.seas.harvard.edu
+https://vcg.seas.harvard.edu
 33 Oxford Street
 MA-02139, Cambridge
 USA

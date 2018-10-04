@@ -23,7 +23,7 @@ bibentry: article
 bib:
   journal: BMC Bioinformatics
   doi: 10.1186/1471-2105-14-S19-S3
-  url: http://www.biomedcentral.com/1471-2105/14/S19/S3/abstract
+  url: https://www.biomedcentral.com/1471-2105/14/S19/S3/abstract
   volume: 14
   number: Suppl 19
   pages: S3
@@ -32,7 +32,7 @@ bib:
 award:
 note: extended journal version of 2012 BioVis article
 
-external-project: http://caleydo.org/tools/pathways/
+external-project: https://caleydo.org/tools/pathways/
 
 video: 2012_biovis_enroute_video
 preview-video:
