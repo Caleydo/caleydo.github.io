@@ -9,5 +9,5 @@ email: peter_park@harvard.edu
 image: /assets/images/team/park.jpg
 organization: Harvard Medical School
 position: Professor
-website: http://compbio.med.harvard.edu/principal_investigator.html
+website: https://compbio.med.harvard.edu/principal_investigator.html
 ---

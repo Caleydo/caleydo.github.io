@@ -44,7 +44,8 @@ award:
 project:
 
 # Use this if you have an external project website
-external-project: http://ec2-52-58-105-31.eu-central-1.compute.amazonaws.com/stratomex_clustering/
+#external-project: http://ec2-52-58-105-31.eu-central-1.compute.amazonaws.com/stratomex_clustering/
+external-project:
 
 # The reference to the video entry
 video: 2017_bmc_clustering_video

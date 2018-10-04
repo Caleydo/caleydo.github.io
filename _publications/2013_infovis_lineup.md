@@ -31,7 +31,7 @@ bib:
 
 award: IEEE InfoVis 2013 Best Paper Award
 
-external-project: http://caleydo.org/tools/lineup/
+external-project: https://caleydo.org/tools/lineup/
 
 video: 2013_infovis_lineup_video
 preview-video: 2013_infovis_lineup_video_preview
@@ -56,9 +56,9 @@ abstract: "
 
 In the examples and demos we have used three datasets:
 
-* [Times Higher Education 100 Under 50 University Ranking](http://www.timeshighereducation.co.uk/world-university-rankings/2012/one-hundred-under-fifty)
-* [QS World University Ranking](http://www.iu.qs.com/university-rankings/world-university-rankings/)
-* [USDA National Nutrient Database](http://www.ars.usda.gov/ba/bhnrc/ndl)
+* [Times Higher Education 100 Under 50 University Ranking](https://www.timeshighereducation.co.uk/world-university-rankings/2012/one-hundred-under-fifty)
+* [QS World University Ranking](https://www.iu.qs.com/university-rankings/world-university-rankings/)
+* [USDA National Nutrient Database](https://www.ars.usda.gov/ba/bhnrc/ndl)
 
 # Related Work
 
@@ -84,8 +84,8 @@ In the examples and demos we have used three datasets:
 * A. Inselberg. The plane with parallel coordinates. The Visual Computer, 1(4):69-91, 1985.
 * J. Mackinlay. Automating the design of graphical presentations of relational information. ACM Transactions on Graphics, 5(2):110-141, 1986.
 * T. Munzner, F. Guimbretière, S. Tasiran, L. Zhang, and Y. Zhou. TreeJuxtaposer: scalable tree comparison using Focus+Context with guaranteed visibility. In Proceedings of the ACM Conference on Computer Graphics and Interactive Techniques (SIGGRAPH '03), pages 453-462. ACM Press, 2003.
-* C. Park. Edward Tufte's ["Slopegraphs"](http://charliepark.org/slopegraphs/), 2011.
-* C. Park. A [slopegraph update](http://charliepark.org/a-slopegraph-update/), 2011.
+* C. Park. Edward Tufte's ["Slopegraphs"](https://charliepark.org/slopegraphs/), 2011.
+* C. Park. A [slopegraph update](https://charliepark.org/a-slopegraph-update/), 2011.
 * R. Rao and S. K. Card. The table lens: merging graphical and symbolic representations in an interactive focus + context visualization for tabular information. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '94), pages 318-322. ACM Press, 1994.
 * N. B. Robbins and R. M. Heiberger. Plotting Likert and other rating scales. In Proceedings of the 2011 Joint Statistical Meeting, 2011.
 * E. Tufte. The Visual Display of Quantitative Information. Graphics Press, 2nd edition, 1983.

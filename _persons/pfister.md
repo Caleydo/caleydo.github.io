@@ -9,5 +9,5 @@ email: pfister@seas.harvard.edu
 image: /assets/images/team/pfister.jpg
 organization: Harvard University
 position: Professor
-website: http://vcg.seas.harvard.edu/people/hanspeter-pfister
+website: https://vcg.seas.harvard.edu/people/hanspeter-pfister
 ---

@@ -31,7 +31,7 @@ bib:
   publisher: 
   address: 
   doi: 10.1111/cgf.12925
-  url: http://onlinelibrary.wiley.com/doi/10.1111/cgf.12925/abstract
+  url: https://onlinelibrary.wiley.com/doi/10.1111/cgf.12925/abstract
   volume: 35
   number: 3
   pages: 491--500

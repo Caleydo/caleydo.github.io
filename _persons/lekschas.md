@@ -9,5 +9,5 @@ email: fritz@lekschas.de
 image: /assets/images/team/lekschas.jpg
 organization: Harvard University
 position: PhD Student
-website: http://lekschas.de/
+website: https://lekschas.de/
 ---

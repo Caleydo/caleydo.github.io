@@ -26,7 +26,7 @@ bibentry: article
 bib:
   journal: Nature Methods
   doi: 10.1038/nmeth.3088
-  url: http://www.nature.com/nmeth/journal/v11/n9/full/nmeth.3088.html
+  url: https://www.nature.com/nmeth/journal/v11/n9/full/nmeth.3088.html
   volume: 11
   number: 9
   pages: 884--885
@@ -34,7 +34,7 @@ bib:
 
 award:
 
-external-project: http://caleydo.org/tools/stratomex/
+external-project: https://caleydo.org/tools/stratomex/
 
 video: 2014_nm_stratomex_video
 preview-video:
@@ -59,7 +59,7 @@ supplements:
 abstract: "
 <p>Cancer is a heterogeneous disease, and molecular profiling of tumors from large cohorts has enabled characterization of new tumor subtypes. This is a prerequisite for improving personalized treatment and ultimately achieving better patient outcomes. Potential tumor subtypes can be identified with methods such as unsupervised clustering or network-based stratification, which assign patients to sets based on high-dimensional molecular profiles. Detailed characterization of identified sets and their interpretation, however, remain a time-consuming exploratory process.
 </p><p>
-To address these challenges, we combined 'StratomeX', an interactive visualization tool that is freely available at <a href='http://www.caleydo.org/'>http://www.caleydo.org/</a>, with exploration tools to efficiently compare multiple patient stratifications, to correlate patient sets with clinical information or genomic alterations and to view the differences between molecular profiles across patient sets. Although we focus on cancer genomics here, StratomeX can also be applied in other disease cohorts.</p>"
+To address these challenges, we combined 'StratomeX', an interactive visualization tool that is freely available at <a href='https://caleydo.org/'>https://caleydo.org/</a>, with exploration tools to efficiently compare multiple patient stratifications, to correlate patient sets with clinical information or genomic alterations and to view the differences between molecular profiles across patient sets. Although we focus on cancer genomics here, StratomeX can also be applied in other disease cohorts.</p>"
 
 ---
 

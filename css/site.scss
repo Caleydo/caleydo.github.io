@@ -284,7 +284,7 @@ p {
     color: #444;
     position: relative;
     border-bottom-width: 1px; // text-decoration would be easier, but not supported by Chrome:
-    border-bottom-style: dotted; // http://caniuse.com/#feat=text-decoration
+    border-bottom-style: dotted; // https://caniuse.com/#feat=text-decoration
     -webkit-box-decoration-break: clone;
     -o-box-decoration-break: clone;
     box-decoration-break: clone;

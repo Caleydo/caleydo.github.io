@@ -28,7 +28,7 @@ bib:
 
 award:
 
-external-project: http://vcg.github.io/upset/
+external-project: https://vcg.github.io/upset/
 code: https://github.com/vcg/upset
 
 video: 2014_infovis_upset_video
@@ -40,7 +40,7 @@ supplement:  2014_infovis_upset_supplement.pdf
 
 supplements:
 - name: UpSet Concept Info
-  abslink: http://caleydo.org/tools/upset/
+  abslink: https://caleydo.org/tools/upset/
   linksym: true
 - name: UpSet Documentation
   abslink: https://github.com/VCG/upset/wiki

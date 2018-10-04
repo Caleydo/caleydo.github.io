@@ -9,5 +9,5 @@ email: chuck_mccallum@hms.harvard.edu
 image: /assets/images/team/mccallum.jpg
 organization: Harvard Medical School
 position: Software Engineer
-website: http://mccalluc.github.io/
+website: https://mccalluc.github.io/
 ---

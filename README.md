@@ -2,11 +2,11 @@
 
 [![Build Status](https://travis-ci.org/Caleydo/caleydo.github.io.svg?branch=master)](https://travis-ci.org/Caleydo/caleydo.github.io)
 
-The new Caleydo website built with [Jekyll](http://jekyllrb.com),
-[SASS](http://www.sass-lang.com),
-[Bourbon](http://bourbon.io),
-[Neat](http://neat.bourbon.io),
-and [Bitters](http://bitters.bourbon.io).
+The new Caleydo website built with [Jekyll](https://jekyllrb.com),
+[SASS](https://www.sass-lang.com),
+[Bourbon](https://bourbon.io),
+[Neat](https://neat.bourbon.io),
+and [Bitters](https://bitters.bourbon.io).
 
 ## Emulating github-pages
 

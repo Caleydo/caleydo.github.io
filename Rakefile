@@ -197,12 +197,12 @@ end
 def blog_url(project)
   if (project == '')
     url = if File.exists?('CNAME')
-      "http://#{IO.read('CNAME').strip}"
+      "https://#{IO.read('CNAME').strip}"
     else
-      "http://caleydo.github.io"
+      "https://caleydo.github.io"
     end
   else
-    url = "http://caleydo.github.io/#{project}"
+    url = "https://caleydo.github.io/#{project}"
   end
   url
 end

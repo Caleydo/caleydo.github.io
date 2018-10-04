@@ -38,7 +38,7 @@ github:
   
 web:
  - 
-  url: http://vcg.github.io/upset/
+  url: https://vcg.github.io/upset/
   name: UpSet Web Version
  -
   url: https://upsetr.shinyapps.io/UpSetR-shiny/
@@ -63,9 +63,9 @@ To get an idea of what UpSet is about, you can watch this 30-second video:
 
 ## Why UpSet?
 
-**See this related commentary:** [Points of view: Sets and intersections](http://dx.doi.org/10.1038/nmeth.3033). Alexander Lex, Nils Gehlenborg. Nature Methods, vol. 11, no. 8, pp. 779, 2014.
+**See this related commentary:** [Points of view: Sets and intersections](https://dx.doi.org/10.1038/nmeth.3033). Alexander Lex, Nils Gehlenborg. Nature Methods, vol. 11, no. 8, pp. 779, 2014.
 
-Venn diagrams are a horrible way to visualize intersections of more than three or four sets. The figure below shows an example of a six-set venn diagram [published in Nature](http://www.nature.com/nature/journal/v488/n7410/full/nature11241.html) that shows the relationship between the banana's genome and the genome of five other species. 
+Venn diagrams are a horrible way to visualize intersections of more than three or four sets. The figure below shows an example of a six-set venn diagram [published in Nature](https://www.nature.com/nature/journal/v488/n7410/full/nature11241.html) that shows the relationship between the banana's genome and the genome of five other species. 
 
 ![UpSet Screenshot]({{path}}/banana.png)
 
