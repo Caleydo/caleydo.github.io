@@ -3,7 +3,7 @@
 
 <head>
     {% include head_default.html %}
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.6/slick.css" />
     <style type="text/css">
         /*.Caleydosel-image{*/
         /*height: 180px;*/
@@ -13,25 +13,32 @@
 
 <body>
 
-<div class="wrap">
-    {% include header.html %}
+    <div class="wrap">
+        {% include header.html %}
 
-    <header class="home-title">
-        <h1>{{ page.title | remove: "| Caleydo" }}</h1>
-    </header>
+        <header class="home-title">
+            <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+        </header>
 
-    <article class="home-content-main">
+        <article class="home-content-main">
 
-        <h1>About</h1>
+            <h1>About</h1>
 
-        <p>Caleydo is a community of researchers at JKU Linz, the University of Utah, and Harvard Medical School that focuses on biological data visualization. Caleydo used to be a monolithic visual analysis framework originally developed at TU Graz, targeted at biomolecular data, but has since evolved into a more distributed collection of people, tools, software, and research projects. Some of the tools developed as part of the Caleydo framework are now maintained and extended by our spin-off company, <a href="http://datavisyn.io">datavisyn</a>.</p>
-<p>
-This page collects the output of our work on biological data visualization in the form of software and publications. All of our software is available as open source. Developers and researchers that want to use or enhance the current tools are invited to contribute.  See our <a href="https://github.com/Caleydo/">Github
-                page</a> for further details.</p>
+            <p>Caleydo is a community of researchers at JKU Linz, the University of Utah, and Harvard Medical School
+                that focuses on biological data visualization. Caleydo used to be a monolithic visual analysis
+                framework originally developed at TU Graz, targeted at biomolecular data, but has since evolved into a
+                more distributed collection of people, tools, software, and research projects. Some of the tools
+                developed as part of the Caleydo framework are now maintained and extended by our spin-off company, <a
+                    href="http://datavisyn.io">datavisyn</a>.</p>
+            <p>
+                This page collects the output of our work on biological data visualization in the form of software and
+                publications. All of our software is available as open source. Developers and researchers that want to
+                use or enhance the current tools are invited to contribute. See our <a href="https://github.com/Caleydo/">Github
+                    page</a> for further details.</p>
 
 
 
-      <!--      Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of
+            <!--      Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of
             Caleydo is the visualization of interdependencies between multiple datasets. Caleydo can load tabular data
             and groupings/clusterings. You can explore relationships between multiple groupings, between different
             datasets and see how your data maps onto pathways.
@@ -49,47 +56,57 @@ This page collects the output of our work on biological data visualization in th
 
         <p>For real-life data analysis, we recommend you stick to the standalone software for now, but be prepared to transition to the web soon!</p> -->
 
-{% capture publications %}
-[
-{% for publication in site.publications %}
-{% if publication.image_large %}
-{
-  "title" : "{{ publication.title }}",
-  "shortname" : "{{ publication.shortname }}",
-  "url" : "{{ publication.permalink }}",
-  "image_large" : "{{ publication.image_large }}",
-}
-{% if forloop.last %}{% else %},{% endif %}
-{% endif %}
-{% endfor %}
-]
-{% endcapture %}
+            {% capture publications %}
+            [
+            {% for publication in site.publications %}
+            {% if publication.image_large %}
+            {
+            "title" : "{{ publication.title }}",
+            "shortname" : "{{ publication.shortname }}",
+            "url" : "{{ publication.permalink }}",
+            "image_large" : "{{ publication.image_large }}",
+            }
+            {% if forloop.last %}{% else %},{% endif %}
+            {% endif %}
+            {% endfor %}
+            ]
+            {% endcapture %}
 
-        <script>
-            (function(){
-                var publications = {{ publications | strip_newlines }};
-                function random_from_array(array) {
-                    return array[Math.floor(Math.random() * array.length)];
-                }
-                function html_escape(str) {
-                    return str
-                        .replace(/&/g, '&amp;')
-                        .replace(/"/g, '&quot;')
-                        .replace(/'/g, '&#39;')
-                        .replace(/</g, '&lt;')
-                        .replace(/>/g, '&gt;');
-                }
-                var pub = random_from_array(publications);
-                // TODO: html encode.
-                document.write('<h1 id="featured-tool">Featured Paper: '+html_escape(pub.shortname)+'</h1>');
-                document.write('<div id="main-banner-image"><a class="banner-image" href="'+html_escape(pub.url)+'">');
-                document.write('<img alt="screenshot" class="left-banner-image" src="{{ site.baseurl }}/assets/images/papers/' + html_escape(pub.image_large) + '"/>');
-                document.write('<ul class="publication-icon-list"><li>'+html_escape(pub.title)+'</li></ul>');
-                document.write('</a></div>');
-            })();
-        </script>
+            <script>
+                (function () {
+                    var publications = {
+                        {
+                            publications | strip_newlines
+                        }
+                    };
+
+                    function random_from_array(array) {
+                        return array[Math.floor(Math.random() * array.length)];
+                    }
+
+                    function html_escape(str) {
+                        return str
+                            .replace(/&/g, '&amp;')
+                            .replace(/"/g, '&quot;')
+                            .replace(/'/g, '&#39;')
+                            .replace(/</g, '&lt;')
+                            .replace(/>/g, '&gt;');
+                    }
+                    var pub = random_from_array(publications);
+                    // TODO: html encode.
+                    document.write('<h1 id="featured-tool">Featured Paper: ' + html_escape(pub.shortname) + '</h1>');
+                    document.write('<div id="main-banner-image"><a class="banner-image" href="' + html_escape(pub.url) +
+                        '">');
+                    document.write(
+                        '<img alt="screenshot" class="left-banner-image" src="{{ site.baseurl }}/assets/images/papers/' +
+                        html_escape(pub.image_large) + '"/>');
+                    document.write('<ul class="publication-icon-list"><li>' + html_escape(pub.title) + '</li></ul>');
+                    document.write('</a></div>');
+                })();
+            </script>
 
 
+            <!--
         <h1>News <span class="right-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span>
         </h1>
 
@@ -107,41 +124,42 @@ This page collects the output of our work on biological data visualization in th
             {% endfor %}
         </ul>
         <p><a href="news">Earlier news ...</a></p>
+    -->
 
-        <h1>Recent Publications</h1>
-        <ul class="publication-icon-list">
-            {% assign sorted_publications = (site.publications | sort: 'year' %}
-            {% for publication in sorted_publications reversed%}
-            {% if publication.year > 2013 %}
-            <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.journal}}{{publication.bib.journal}},
-                {{publication.year}}
-            </li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+            <h1>Recent Publications</h1>
+            <ul class="publication-icon-list">
+                {% assign sorted_publications = (site.publications | sort: 'year' %}
+                {% for publication in sorted_publications reversed%}
+                {% if publication.year > 2013 %}
+                <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.journal}}{{publication.bib.journal}},
+                    {{publication.year}}
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
 
-    </article>
+        </article>
 
-    <article class="home-content-aside">
-        <h1>Partners</h1>
-        <ul class="institution-icon-list">
-            {% for institution in site.institutions reversed %}
-            <li><a href="{{ institution.website }}">{{ institution.name }}</a><br>{{ institution.location }}</li>
-            {% endfor %}
-        </ul>
+        <article class="home-content-aside">
+            <h1>Partners</h1>
+            <ul class="institution-icon-list">
+                {% for institution in site.institutions reversed %}
+                <li><a href="{{ institution.website }}">{{ institution.name }}</a><br>{{ institution.location }}</li>
+                {% endfor %}
+            </ul>
 
-        <h1>Tools</h1>
-        <ul class="project-icon-list">
-            {% assign sorted_projects = (site.tools | sort: 'order' %}
-            {%for project in sorted_projects %}
-            {% if project.status != 'beta' %}
-            <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+            <h1>Tools</h1>
+            <ul class="project-icon-list">
+                {% assign sorted_projects = (site.tools | sort: 'order' %}
+                {%for project in sorted_projects %}
+                {% if project.status != 'beta' %}
+                <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
+                {% endif %}
+                {% endfor %}
+            </ul>
 
 
-      <!--  <h1>Funding</h1>
+            <!--  <h1>Funding</h1>
         <ul class="funding-icon-list">
             {% assign sorted_grants = (site.funding | sort: 'agency' %}
             {% for grant in sorted_grants %}
@@ -153,15 +171,16 @@ This page collects the output of our work on biological data visualization in th
             {% assign agency = grant.agency %}
             {% endfor %}
         </ul> -->
-    </article>
+        </article>
 
 
-    {% include footer.html %}
-</div>
+        {% include footer.html %}
+    </div>
 
-{% if site.use_analytics == true %}
-{% include google_analytics.html %}
-{% endif %}
+    {% if site.use_analytics == true %}
+    {% include google_analytics.html %}
+    {% endif %}
 
 </body>
+
 </html>
