@@ -22,17 +22,35 @@ authors:
 - Wolfgang Aigner
 - streit
 
-journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '17), 24(1), pp. 677-686
+# Include a shortened name for the journal or conference/proceedings
+journal-short: TVCG (InfoVis '17)
 year: 2018
 
-# Set `to_appear: 1` if no DOI and pages are available
-#to_appear: 1
+# Create BibTeX info, using one of the entry choices
+# Articles have a "journal", and inproceedings have a "booktitle"
+# Preprints are articles with the location of preprint mentioned in "journal"
+# You can remove fields you don't need, or else leave them blank
+# Try to include a DOI, or use the publisher URL below
+# Specify new BibTeX fields by adding a new key and value inside "bib:"
+bibentry: article
+bib:
+  journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '17)
+  booktitle: 
+  editor: 
+  doi: 10.1109/TVCG.2017.2745298
+  publisher:
+  address: 
+  url: 
+  volume: 24
+  number: 1
+  pages: 677-686
+  month:
+
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award: 
 
-doi: 10.1109/TVCG.2017.2745298
-# use publisher only if no doi is available
+
 publisher: 
 
 # Use if this paper is linked to an internal project. This will link to the project site

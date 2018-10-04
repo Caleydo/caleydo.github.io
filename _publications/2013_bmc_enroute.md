@@ -15,6 +15,8 @@ authors:
 - Karl Kashofer
 - schmalstieg
 
+# Include a shortened name for the journal or conference/proceedings
+journal-short: BMC
 year: 2013
 
 bibentry: article

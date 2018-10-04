@@ -16,11 +16,13 @@ authors:
 - Karl Kashofer
 - schmalstieg
 
+# Include a shortened name for the journal or conference/proceedings
+journal-short: BioVis
 year: 2012
 
 bibentry: inproceedings
 bib:
-  booktitle: Proceedings of the IEEE Symposium on Biological Data Visualization (BioVis ’12)
+  booktitle: Proceedings of the IEEE Symposium on Biological Data Visualization (BioVis '12)
   doi: 10.1109/BioVis.2012.6378600
   pages: 107--114
 

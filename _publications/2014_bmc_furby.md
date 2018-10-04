@@ -18,14 +18,32 @@ authors:
 - Andreas Mitterecker
 - Sepp Hochreiter
 
-journal: BMC Bioinformatics, 15(Suppl 6), p. S4
+# Include a shortened name for the journal or conference/proceedings
+journal-short: BMC
 year: 2014
+
+# Create BibTeX info, using one of the entry choices
+# Articles have a "journal", and inproceedings have a "booktitle"
+# Preprints are articles with the location of preprint mentioned in "journal"
+# You can remove fields you don't need, or else leave them blank
+# Try to include a DOI, or use the publisher URL below
+# Specify new BibTeX fields by adding a new key and value inside "bib:"
+bibentry: article
+bib:
+  journal: BMC Bioinformatics, 15(Suppl 6), p. S4
+  booktitle: 
+  editor: 
+  doi: 10.1186/1471-2105-15-S6-S4
+  publisher:
+  address: 
+  url: 
+  volume: 15
+  number: Suppl 6
+  pages: S4
+  month:
+
 award:
 note: 
-
-doi: 10.1186/1471-2105-15-S6-S4
-# use publisher only if no doi is available
-publisher: 
 
 project: furby
 

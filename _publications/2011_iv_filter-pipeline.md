@@ -14,11 +14,13 @@ authors:
 - streit
 - schmalstieg
 
+# Include a shortened name for the journal or conference/proceedings
+journal-short: IV (IV '11)
 year: 2011
 
 bibentry: inproceedings
 bib:
-  booktitle: Proceedings of the Conference on Information Visualisation (IV ’2011)
+  booktitle: Proceedings of the Conference on Information Visualisation (IV '11)
   publisher: IEEE Computer Society Press
   doi: 10.1109/IV.2011.52
   pages: 47--52

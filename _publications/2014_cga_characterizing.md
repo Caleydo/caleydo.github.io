@@ -14,6 +14,7 @@ authors:
 - pfister
 - Helwig Hauser
 
+journal-short: CGA
 year: 2014
 
 bibentry: article

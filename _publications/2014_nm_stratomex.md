@@ -19,6 +19,7 @@ authors:
 - Peter Park
 - gehlenborg
 
+journal-short: NM
 year: 2014
 
 bibentry: article

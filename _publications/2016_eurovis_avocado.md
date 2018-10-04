@@ -20,15 +20,25 @@ authors:
 - streit
 - gehlenborg
 
-journal: Computer Graphics Forum (EuroVis '16), vol. 35, no. 3, pp. 481-490
 journal-short: CGF (EuroVis '16)
 year: 2016
+
+bibentry: article
+bib:
+  journal: Computer Graphics Forum (EuroVis '16)
+  booktitle: 
+  editor: 
+  publisher: 
+  address: 
+  doi: 10.1111/cgf.12924
+  url: http://onlinelibrary.wiley.com/doi/10.1111/cgf.12924/abstract
+  volume: 35
+  number: 3
+  pages: 481-490
+  month: jun
+
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
-
-doi: 10.1111/cgf.12924
-# The publisher URL - use only if no doi is available
-publisher:
 
 # Use if this paper is linked to an internal project. This will link to the project site
 project:

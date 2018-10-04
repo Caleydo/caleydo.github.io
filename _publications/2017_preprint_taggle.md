@@ -30,10 +30,6 @@ authors:
 journal-short: arXiv
 year: 2017
 
-doi:
-# use publisher only if no doi is available
-publisher: https://arxiv.org/abs/1712.05944
-
 bibentry: article
 bib:
   journal: arXiv preprint

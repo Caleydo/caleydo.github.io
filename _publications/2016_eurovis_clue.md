@@ -20,7 +20,6 @@ authors:
 - Nicola Cosgrove
 - streit
 
-journal: Computer Graphics Forum (EuroVis '16), vol. 35, no. 3, pp. 491-500
 journal-short: CGF (EuroVis '16)
 year: 2016
 

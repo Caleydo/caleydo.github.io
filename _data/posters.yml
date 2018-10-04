@@ -5,7 +5,7 @@
   - strobelt
   - streit
   title: "ConfusionFlow: Visualizing Neural Network Confusion Across Epochs"
-  journal: IEEE Conference on Visual Analytics Science and Technology (VAST ’18), Berlin, Germany
+  journal: IEEE Conference on Visual Analytics Science and Technology (VAST '18), Berlin, Germany
   year: 2018
   abstract-pdf: 2018_vast_confusionflow_abstract.pdf
   poster-pdf:
@@ -18,7 +18,7 @@
   - Harald Piringer
   - streit
   title: Provenance-Based Visualization Retrieval
-  journal: IEEE Conference on Visual Analytics Science and Technology (VAST ’17), Phoenix, AZ, USA
+  journal: IEEE Conference on Visual Analytics Science and Technology (VAST '17), Phoenix, AZ, USA
   year: 2017
   abstract-pdf: 2017_vast_provenance-retrieval_abstract.pdf
   poster-pdf: 2017_vast_provenance-retrieval_poster.pdf
@@ -35,7 +35,7 @@
   - lex
   - streit
   title: "Taggle: Scaling Table Visualization through Aggregation"
-  journal: IEEE Conference on Information Visualization (InfoVis ’17), Phoenix, AZ, USA
+  journal: IEEE Conference on Information Visualization (InfoVis '17), Phoenix, AZ, USA
   year: 2017
   abstract-pdf: 2017_infovis_taggle_abstract.pdf
   poster-pdf: 2017_infovis_taggle_poster.pdf
@@ -48,7 +48,7 @@
   - Nils Gehlenborg
   - streit
   title: "TaCo: Comparative Visualization of Large Tabular Data"
-  journal: Poster Compendium of the Eurographics/IEEE Symposium on Visualization (EuroVis ’16), Groningen, Netherlands
+  journal: Poster Compendium of the Eurographics/IEEE Symposium on Visualization (EuroVis '16), Groningen, Netherlands
   year: 2016
   abstract-pdf: 2016_eurovis_taco_abstract.pdf
   poster-pdf: 2016_eurovis_taco_poster.pdf
@@ -61,7 +61,7 @@
   - Harald Rogner
   - streit
   title: Visual Evaluation of Cloud Infrastructure Performance Predictions
-  journal: IEEE Conference on Information Visualization (InfoVis ’16), Baltimore, MD, USA
+  journal: IEEE Conference on Information Visualization (InfoVis '16), Baltimore, MD, USA
   year: 2016
   abstract-pdf: 2016_infovis_cloud-infrastructure-performance-predictions_abstract.pdf
   poster-pdf: 2016_infovis_cloud-infrastructure-performance-predictions_poster.pdf
@@ -75,7 +75,7 @@
   - gehlenborg
   - streit
   title: Interactive Visualization of Provenance Graphs for Reproducible Biomedical Research
-  journal: IEEE Conference on Information Visualization (InfoVis ’15), Chicago, IL, USA
+  journal: IEEE Conference on Information Visualization (InfoVis '15), Chicago, IL, USA
   year: 2015
   abstract-pdf: 2015_infovis_prov-graph-vis_abstract.pdf
   poster-pdf: 2015_infovis_prov-graph-vis_poster.pdf
@@ -87,7 +87,7 @@
   - Wolfgang Aigner
   - streit
   title: "ThermalPlot: Visualizing Multi-Attribute Time-Series Data Using a Thermal Metaphor"
-  journal: IEEE Conference on Information Visualization (InfoVis ’15), Chicago, IL, USA
+  journal: IEEE Conference on Information Visualization (InfoVis '15), Chicago, IL, USA
   year: 2015
   abstract-pdf: 2015_infovis_thermalplot_abstract.pdf
   poster-pdf: 2015_infovis_thermalplot_poster.pdf
@@ -101,7 +101,7 @@
   - partl
   - streit
   title: "Caleydo Web: An Integrated Visual Analysis Platform for Biomedical Data"
-  journal: IEEE Conference on Information Visualization (InfoVis ’15), Chicago, IL, USA
+  journal: IEEE Conference on Information Visualization (InfoVis '15), Chicago, IL, USA
   year: 2015
   abstract-pdf: 2015_infovis_caleydo-web_abstract.pdf
   poster-pdf: 2015_infovis_caleydo-web_poster.pdf
@@ -113,7 +113,7 @@
   - gehlenborg
   - streit
   title: Transparent Layering for Visualizing Dynamic Graphs Using the Flip Book Metaphor
-  journal: IEEE Conference on Information Visualization (InfoVis ’14), Paris, France
+  journal: IEEE Conference on Information Visualization (InfoVis '14), Paris, France
   year: 2014
   abstract-pdf: 2014_infovis_transparent-layering_abstract.pdf
   poster-pdf: 2014_infovis_transparent-layering_poster.pdf
@@ -155,7 +155,7 @@
   - Thorsten May
   - Christian Tominski
   title: Towards a Characterization of Guidance in Visualization
-  journal: IEEE Conference on Information Visualization (InfoVis ’13), Atlanta, GA, USA
+  journal: IEEE Conference on Information Visualization (InfoVis '13), Atlanta, GA, USA
   year: 2013
   abstract-pdf: 2013_vis_towards-guidance-in-visualization_abstract.pdf
   poster-pdf: 2013_vis_towards-guidance-in-visualization_poster.pdf
