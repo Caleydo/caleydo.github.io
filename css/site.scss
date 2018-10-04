@@ -1,6 +1,4 @@
----
----
-@import 'bourbon/bourbon';
+--- --- @import 'bourbon/bourbon';
 @import 'base/base';
 @import 'neat/neat';
 
@@ -27,7 +25,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
   text-align: center;
   margin-right: 5px;
   width: 110px;
-  
+
   &:last-child {
     margin-right: 0px;
   }
@@ -47,8 +45,10 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
     transition-timing-function: ease;
     transition-delay: 25ms;
 
-    &:focus, &:hover, &:active {
-      background-color: darken( $color, 20% );
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: darken($color, 20%);
       color: white;
     }
   }
@@ -57,11 +57,11 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 
   @include media($small-display) {
     width: 25px;
-  }  
+  }
 
   @include media($medium-display) {
     width: 25px;
-  }  
+  }
 }
 
 .nav-icon {
@@ -70,11 +70,11 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 
   @include media($medium-display) {
     margin-right: 0em;
-  }  
+  }
 
   @include media($small-display) {
     margin-right: 0em;
-  }        
+  }
 }
 
 .nav-text {
@@ -82,11 +82,11 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 
   @include media($medium-display) {
     display: none;
-  }  
+  }
 
   @include media($small-display) {
     display: none;
-  }  
+  }
 }
 
 .navigation {
@@ -97,7 +97,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
   @include media($small-display) {
     margin-right: 0px;
     height: 30px;
-  }    
+  }
 }
 
 .navigation-buttons {
@@ -108,7 +108,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
   @include media($small-display) {
     margin-right: 0px;
     padding-top: 0px;
-  }  
+  }
 }
 
 .submenu {
@@ -124,14 +124,14 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
   margin-left: -34px;
 
   @include media($small-display) {
-    padding-top: 5px; 
-    margin-left: 0px;    
+    padding-top: 5px;
+    margin-left: 0px;
   }
 }
 
 .logo-header-svg {
   height: 40px;
-  
+
   @include media($small-display) {
     height: 20px;
   }
@@ -149,7 +149,7 @@ body {
   margin-left: 60px;
   margin-right: 60px;
 
-  @include media($small-display) {  
+  @include media($small-display) {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -191,22 +191,22 @@ p {
 
 
 @mixin page-title($color) {
-    @include span-columns(12);
-    @include omega();
-    color: $color;
-    background-color: tint($color,95%);
-    padding: 5px 0px 0px 0px;
-    border-bottom: 4px $color solid;
-    margin-bottom: 20px;
+  @include span-columns(12);
+  @include omega();
+  color: $color;
+  background-color: tint($color, 95%);
+  padding: 5px 0px 0px 0px;
+  border-bottom: 4px $color solid;
+  margin-bottom: 20px;
 
-    h1 {
-      font-family: $page-title-font-family;
-      font-weight: $page-title-font-weight;
-      font-style: $page-title-font-style;
-      font-size: $page-title-font-size  * 0.75;
-      border-bottom: none;
-      margin-bottom: 0px;
-    }
+  h1 {
+    font-family: $page-title-font-family;
+    font-weight: $page-title-font-weight;
+    font-style: $page-title-font-style;
+    font-size: $page-title-font-size * 0.75;
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
 }
 
 @mixin subpage-title($color) {
@@ -273,7 +273,7 @@ p {
   @include media($small-display) {
     @include span-columns($small-display-columns);
     @include omega();
-  }    
+  }
 }
 
 @mixin dotted-link-underline() {
@@ -296,7 +296,7 @@ p {
     @extend %default-ul;
     @include dotted-link-underline;
   }
-  
+
   ol {
     @extend %default-ol;
     @include dotted-link-underline;
@@ -304,7 +304,7 @@ p {
 
   p {
     @include dotted-link-underline;
-  }  
+  }
 
   font-family: $page-content-font-family;
   font-weight: $page-content-font-weight;
@@ -317,6 +317,7 @@ p {
       color: inherit;
       font-size: $base-font-size * 0.75;
     }
+
     float: right;
   }
 }
@@ -333,18 +334,19 @@ p {
     a {
       color: #444;
       position: relative;
-      text-decoration: none;    
+      text-decoration: none;
     }
-    a:after{
-       position: absolute;
-       left: 0;
-       bottom: 0;
-       content: '';
-       width: 100%;
-       border-bottom-width: 1px;
-       border-bottom-style: dotted;
-    }    
-  }  
+
+    a:after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+      width: 100%;
+      border-bottom-width: 1px;
+      border-bottom-style: dotted;
+    }
+  }
 
   font-family: $page-content-font-family;
   font-weight: $page-content-font-weight;
@@ -464,27 +466,30 @@ ul.post-list {
   list-style-type: none;
 
   a.post-list-link {
-      font-style: italic;
-      color: #444;
-      position: relative;
-      text-decoration: none;    
-    }
-    a.post-list-link:after{
-       position: absolute;
-       left: 0px;
-       bottom: 0;
-       content: '';
-       width: 100%;
-       border-bottom-width: 1px;
-       border-bottom-style: solid;
-    }    
+    font-style: italic;
+    color: #444;
+    position: relative;
+    text-decoration: none;
+  }
+
+  a.post-list-link:after {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
 
   .post-list-item {
     margin-bottom: 10px;
+
     p {
       margin-bottom: 0px;
       display: inline;
     }
+
     .post-list-title {
       color: $home-color;
       font-family: $sans-serif-font-family;
@@ -518,7 +523,7 @@ ul.post-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }  
+  }
 
   .video {
     margin: auto;
@@ -565,9 +570,9 @@ ul.post-list {
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
@@ -577,23 +582,23 @@ ul.post-list {
 }
 
 .person-image {
-    width: 100px;
-    height: 100px;
-    @include border-radius( 50% );
-    @include desaturation(100%);
+  width: 100px;
+  height: 100px;
+  @include border-radius(50%);
+  @include desaturation(100%);
 }
 
 .person-image-small {
-    @extend .person-image;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    float: left;
+  @extend .person-image;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
 }
 
 
 
-.paper-list-block{
+.paper-list-block {
   min-height: 120px;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -604,8 +609,8 @@ ul.post-list {
     height: 100px;
     float: left;
     margin-right: 20px;
-    @include box-shadow( 1px, 1px, 4px, transparentize( black, 0.75) );
-    @include border-radius( 3px );
+    @include box-shadow(1px, 1px, 4px, transparentize(black, 0.75));
+    @include border-radius(3px);
 
     /*
     @include span-columns(2);
@@ -635,15 +640,17 @@ ul.post-list {
     @extend %default-ul;
     @include dotted-link-underline;
     list-style-type: none;
-    padding:0; margin:0px;
+    padding: 0;
+    margin: 0px;
   }
 
   ul li {
     margin-bottom: 15px;
   }
 
-  ul  ul {
-    padding-left: 10px; margin:0;
+  ul ul {
+    padding-left: 10px;
+    margin: 0;
 
     li {
       margin-bottom: 0;
@@ -767,14 +774,14 @@ footer {
     margin-bottom: 0.5em;
   }
 
-  @mixin footer-list($padding-default,$padding-small) {
+  @mixin footer-list($padding-default, $padding-small) {
     float: right;
     position: relative;
     left: -50%;
 
     ul {
       position: relative;
-      left: 50%;      
+      left: 50%;
 
       li {
         opacity: 0.33;
@@ -785,7 +792,7 @@ footer {
         @include media(small-display) {
           padding-right: $padding-small;
           padding-left: $padding-small;
-        }        
+        }
 
         &:last-child {
           padding-right: 0;
@@ -801,17 +808,17 @@ footer {
 
         a {
           color: $footer-link-color;
-        }      
+        }
       }
     }
   }
 
   .footer-list-social {
-    @include footer-list(0.75em,0.5em);
+    @include footer-list(0.75em, 0.5em);
   }
 
   .footer-list-institutions {
-    @include footer-list(0.5em,0);
+    @include footer-list(0.5em, 0);
   }
 
   .footer-disclaimer {
@@ -841,7 +848,8 @@ footer {
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   padding-top: 25px;
   height: 0;
 
@@ -880,7 +888,9 @@ footer {
   a {
     color: black;
 
-    &:hover, &:active, &:visited {
+    &:hover,
+    &:active,
+    &:visited {
       color: black;
     }
   }
@@ -890,4 +900,9 @@ footer {
   li {
     margin-bottom: 10px;
   }
+}
+
+.award {
+  font-style: italic;
+  color: orange;
 }
