@@ -28,8 +28,6 @@ authors:
 journal-short: TVCG (VAST'18), to appear 
 year: 2018
 
-to_appear: 1
-
 # Create BibTeX info, using one of the entry choices
 # Articles have a "journal", and inproceedings have a "booktitle"
 # Preprints are articles with the location of preprint mentioned in "journal"
@@ -38,15 +36,15 @@ to_appear: 1
 # Specify new BibTeX fields by adding a new key and value inside "bib:"
 bibentry: article
 bib:
-  journal: IEEE Transactions on Visualization and Computer Graphics (VAST '18)
+  journal: IEEE Transactions on Visualization and Computer Graphics (VAST '18), to appear
   booktitle: 
   editor: 
   doi: 10.1109/TVCG.2017.2745298
   publisher:
   address: 
   url: 
-  volume: 25
-  number: 1
+  volume: 
+  number: 
   pages: 
   month:
 

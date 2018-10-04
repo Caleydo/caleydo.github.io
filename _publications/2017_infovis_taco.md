@@ -26,9 +26,6 @@ authors:
 journal-short: TVCG (InfoVis '17)
 year: 2018
 
-# Set `to_appear: 1` if no DOI and pages are available
-#to_appear: 1
-
 # Create BibTeX info, using one of the entry choices
 # Articles have a "journal", and inproceedings have a "booktitle"
 # Preprints are articles with the location of preprint mentioned in "journal"
