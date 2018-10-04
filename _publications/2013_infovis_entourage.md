@@ -19,6 +19,8 @@ authors:
 - schmalstieg
 - pfister
 
+# Include a shortened name for the journal or conference/proceedings
+journal-short: TVCG (InfoVis '13)
 year: 2013
 
 bibentry: article

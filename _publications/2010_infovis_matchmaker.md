@@ -15,6 +15,8 @@ authors:
 - Karl Kashofer
 - schmalstieg
 
+# Include a shortened name for the journal or conference/proceedings
+journal-short: TVCG (InfoVis '10)
 year: 2010
 
 bibentry: article

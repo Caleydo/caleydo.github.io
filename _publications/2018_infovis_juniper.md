@@ -26,7 +26,7 @@ authors:
 - lex
 
 # Include a shortened name for the journal or conference/proceedings
-journal-short: TVCG (InfoVis'18), to appear
+journal-short: TVCG (InfoVis '18), to appear
 year: 2018
 
 # Create BibTeX info, using one of the entry choices
@@ -37,7 +37,7 @@ year: 2018
 # Specify new BibTeX fields by adding a new key and value inside "bib:"
 bibentry: article
 bib:
-  journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis ’18), to appear
+  journal: IEEE Transactions on Visualization and Computer Graphics (InfoVis '18), to appear
   booktitle: 
   editor: 
   publisher:
@@ -51,9 +51,6 @@ bib:
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award: 
-
-# Provide a link to the publisher's webpage if no DOI is available
-publisherURL: 
 
 # Link to an official preprint server
 preprint_server: https://arxiv.org/abs/1804.03261

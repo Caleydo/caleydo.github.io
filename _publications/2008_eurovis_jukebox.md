@@ -15,15 +15,20 @@ authors:
 - Karl Kashofer
 - schmalstieg
 
-journal: Computer Graphics Forum (EuroVis '08), 27(3), pp. 951-958
+
+# Include a shortened name for the journal or conference/proceedings
+journal-short: CG (EuroVis '08)
 year: 2008
+
+bibentry: article
+bib:
+  journal: Computer Graphics Forum (EuroVis '08)
+  doi: 10.1111/j.1467-8659.2008.01229.x
+  volume: 27
+  number: 3
+  pages: 951-958
+
 award: 
-
-
-doi: 10.1111/j.1467-8659.2008.01229.x
-# use publisher only if no doi is available
-publisher: 
-
 
 project:
 

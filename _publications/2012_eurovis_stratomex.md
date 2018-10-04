@@ -17,6 +17,8 @@ authors:
 - Peter Park
 - gehlenborg
 
+# Include a shortened name for the journal or conference/proceedings
+journal-short: CG (EuroVis '12)
 year: 2012
 
 bibentry: article

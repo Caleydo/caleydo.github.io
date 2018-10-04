@@ -18,6 +18,7 @@ authors:
 - pfister
 - streit
 
+journal-short: TVCG (InfoVis '14)
 year: 2014
 
 bibentry: article

@@ -25,7 +25,7 @@ authors:
 - streit
 
 # Include a shortened name for the journal or conference/proceedings
-journal-short: VAST 
+journal-short: TVCG (VAST'18), to appear 
 year: 2018
 
 to_appear: 1
@@ -39,17 +39,20 @@ to_appear: 1
 bibentry: article
 bib:
   journal: IEEE Transactions on Visualization and Computer Graphics (VAST '18)
-  doi: 10.1109/TVCG.2018.2865024 
+  booktitle: 
+  editor: 
+  doi: 10.1109/TVCG.2017.2745298
+  publisher:
+  address: 
+  url: 
   volume: 25
   number: 1
   pages: 
+  month:
 
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award: 
-
-# Provide a link to the publisher's webpage if no DOI is available
-publisherURL: 
 
 # Link to an official preprint server
 preprint_server: 

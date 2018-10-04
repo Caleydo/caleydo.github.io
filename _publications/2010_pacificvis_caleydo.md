@@ -14,6 +14,8 @@ authors:
 - Ernst Kruijff
 - schmalstieg
 
+# Include a shortened name for the journal or conference/proceedings
+journal-short: PacificVis
 year: 2010
 
 bibentry: inproceedings
@@ -23,7 +25,7 @@ bib:
   pages: 57--64
 
 award: 
-note: Extended version of 2009 Oxford Bioinformatics Applcations Note 
+note: Extended version of 2009 Oxford Bioinformatics Applications Note 
 
 project:
 
