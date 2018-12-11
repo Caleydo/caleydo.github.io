@@ -25,7 +25,7 @@ authors:
 - streit
 
 # Include a shortened name for the journal or conference/proceedings
-journal-short: TVCG (VAST'18), to appear 
+journal-short: TVCG (VAST'18) 
 year: 2018
 
 # Create BibTeX info, using one of the entry choices
@@ -36,16 +36,16 @@ year: 2018
 # Specify new BibTeX fields by adding a new key and value inside "bib:"
 bibentry: article
 bib:
-  journal: IEEE Transactions on Visualization and Computer Graphics (VAST '18), to appear
+  journal: IEEE Transactions on Visualization and Computer Graphics (VAST '18)
   booktitle: 
   editor: 
-  doi: 10.1109/TVCG.2017.2745298
+  doi: 10.1109/TVCG.2018.2865024
   publisher:
   address: 
   url: 
-  volume: 
-  number: 
-  pages: 
+  volume: 25
+  number: 1
+  pages: 120--130
   month:
 
 
