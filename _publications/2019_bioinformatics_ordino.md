@@ -2,9 +2,9 @@
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
 title: "Ordino: visual analysis tool for ranking and exploring genes, cell lines, and tissue samples"
-key: 2018_preprint_ordino
+key: 2019_bioinformatics_ordino
 # paper | preprint | poster
-type: preprint
+type: paper
 # optional url for a different site; defaults to data.caleydo.org
 #paper_content_url: https://doi.org/10.1101/277848
 
@@ -12,9 +12,9 @@ type: preprint
 # The shortname is used for auto-generated titels
 shortname: Ordino
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2018_preprint_ordino.png
+image: 2019_bioinformatics_ordino.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
-image_large: 2018_preprint_ordino_teaser.png
+image_large: 2019_bioinformatics_ordino_teaser.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
@@ -26,15 +26,15 @@ authors:
 - Christian Haslinger
 
 
-journal-short: bioRxiv
-year: 2018
+journal-short: Bioinformatics
+year: 2019
 
 bibentry: article
 bib:
-  journal: bioRxiv preprint
+  journal: Bioinformatics
   booktitle: 
   editor: 
-  publisher: 
+  publisher: Oxford University Press
   address: 
   doi: 10.1101/277848
   url: 
@@ -53,14 +53,14 @@ project: ordino
 external-project: https://ordino.caleydoapp.org
 
 # The reference to the video entry
-video: 2018_preprint_ordino_video
+video: 2019_bioinformatics_ordino_video
 # The reference to the preview video entry
 #preview-video:
 
 # the prerint
-pdf: 2018_preprint_ordino.pdf
+pdf: 2019_bioinformatics_ordino.pdf
 # A supplement PDF
-supplement: 2018_preprint_ordino_supplement.pdf
+supplement: 2019_bioinformatics_ordino_supplement.pdf
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
