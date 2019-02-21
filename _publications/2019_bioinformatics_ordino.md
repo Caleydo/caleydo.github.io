@@ -26,17 +26,17 @@ authors:
 - Christian Haslinger
 
 
-journal-short: Bioinformatics, to appear
+journal-short: Bioinformatics
 year: 2019
 
 bibentry: article
 bib:
-  journal: Bioinformatics, to appear
+  journal: Bioinformatics
   booktitle: 
   editor: 
   publisher: Oxford University Press
   address: 
-  doi: 10.1101/277848
+  doi: 10.1093/bioinformatics/btz009
   url: 
   volume: 
   number: 
