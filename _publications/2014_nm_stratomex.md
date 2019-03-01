@@ -40,7 +40,7 @@ video: 2014_nm_stratomex_video
 preview-video:
 
 
-pdf: 
+pdf: 2014_nm_stratomex.pdf
 supplement: 2014_nm_stratomex_supplementary.pdf
 supplements:
 - 
