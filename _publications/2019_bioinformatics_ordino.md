@@ -1,7 +1,7 @@
 ---
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
-title: "Ordino: visual analysis tool for ranking and exploring genes, cell lines, and tissue samples"
+title: "Ordino: a visual cancer analysis tool for ranking and exploring genes, cell lines and tissue samples"
 key: 2019_bioinformatics_ordino
 # paper | preprint | poster
 type: paper
@@ -74,7 +74,7 @@ supplements:
 code: https://github.com/Caleydo/ordino
 
 abstract: "
-<p>A common approach in data-driven knowledge discovery is to prioritize a collection of items, such as genes, cell lines, and tissue samples, based on a rich set of experimental data and metadata. Applications include, for instance, selecting the most appropriate cell line for an experiment or identifying genes that could serve as potential drug targets or biomarkers. This can be challenging due to the heterogeneity and size of the data as well as the fact that multiple attributes need to be considered in combination. Advanced visual exploration tools – going beyond static spreadsheet tools such as Microsoft Excel – are needed to aid this prioritization process. To address this task, we developed Ordino, an open-source, web-based visual analysis tool for flexible ranking, filtering, and exploring of cancer genomics data.</p>"
+<p>Ordino is a web-based analysis tool for cancer genomics that allows users to flexibly rank, filter and explore genes, cell lines and tissue samples based on pre-loaded data, including The Cancer Genome Atlas, the Cancer Cell Line Encyclopedia and manually uploaded information. Interactive tabular data visualization that facilitates the user-driven prioritization process forms a core component of Ordino. Detail views of selected items complement the exploration. Findings can be stored, shared and reproduced via the integrated session management.</p>"
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
@@ -82,4 +82,4 @@ abstract: "
 
 # Acknowledgements
 
-We thank Christian Lehner for contributions to the implementation of the tool as well as Daniel Gerlach, Markus Bauer, and Anita Steiner for their contributions to data preparation and data handling. This work was supported by the Austrian Science Fund (P27975-NBL), the State of Upper Austria (FFG 851460), and Boehringer Ingelheim RCV. 
+We thank Christian Lehner for contributions to the implementation of the tool as well as Daniel Gerlach, Markus Bauer, and Anita Steiner for their contributions to data preparation and data handling. This work was supported by the Austrian Science Fund (P27975-NBL), the State of Upper Austria (FFG 851460), and Boehringer Ingelheim RCV. We thank Christian Lehner for contributions to the implementation of the tool as well as Daniel Gerlach, Markus Bauer and Anita Steiner for their contributions to data preparation and data handling.
