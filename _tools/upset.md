@@ -153,6 +153,19 @@ The features in new version are:
 - Downloading of selections
 - Use UpSet as library
 
+The embed code for the above widget is:
+
+```html
+<iframe
+  height="700"
+  width="700"
+  data='{"NavBar":false,"FilterBox":true,"DataSetInfo":true,"LeftSideBar":true,"RightSideBar":false,"ProvenanceView":false,"DeviationBars":true,"CardinalityBars":true}'
+  style="overflow:scroll"
+  class="upset"
+  src='https://vdl.sci.utah.edu/upset2/embed.html#{"NavBar":false,"FilterBox":false,"DataSetInfo":false,"LeftSideBar":true,"RightSideBar":false,"ProvenanceView":false,"DeviationBars":true,"CardinalityBars":true}'
+></iframe>
+```
+
 ## Frequently Asked Questions
 
 - _How can I create high-resolution UpSet plots for a paper or other publication?_  
