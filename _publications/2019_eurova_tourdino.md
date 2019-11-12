@@ -38,12 +38,12 @@ year: 2019
 # Specify new BibTeX fields by adding a new key and value inside "bib:"
 bibentry: article
 bib:
-  journal: EuroVis Workshop on Visual Analytics (EuroVA '19), to appear
+  journal: EuroVis Workshop on Visual Analytics (EuroVA '19)
   booktitle: 
   editor: 
-  publisher: 
+  publisher: https://diglib.eg.org/handle/10.2312/eurova20191119
   address: 
-  doi: 
+  doi: 10.2312/eurova.20191119
   url:
   volume: 
   number: 
