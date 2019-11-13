@@ -1,7 +1,7 @@
 ---
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
-title: "Taggle: Scalable Visualization of Tabular Data through Aggregation"
+title: "Taggle: Combining Overview and Details in Tabular Data Visualizations"
 key: 2017_preprint_taggle
 # paper | preprint | poster
 type: preprint
@@ -28,11 +28,11 @@ authors:
 - streit
 
 journal-short: arXiv
-year: 2017
+year: 2019
 
 bibentry: article
 bib:
-  journal: arXiv preprint
+  journal: Information Visualization, to appear
   booktitle: 
   editor: 
   publisher: 
@@ -51,7 +51,7 @@ award:
 project: taggle
 
 # Use this if you have an external project website
-external-project: https://taggle.caleydoapp.org
+external-project: https://lineup.js.org
 
 # The reference to the video entry
 video: 2017_preprint_taggle_video
@@ -59,7 +59,7 @@ video: 2017_preprint_taggle_video
 #preview-video:
 
 # the prerint
-pdf: 2017_preprint_taggle.pdf
+pdf: 2019_preprint_taggle.pdf
 # A supplement PDF
 #supplement: 2017_preprint_taggle_supplement.pdf
 
@@ -72,10 +72,11 @@ supplements:
 #  linksym: true
 
 # Link to the repository where the code is hostet
-code: https://github.com/Caleydo/taggle
+code: https://github.com/lineupjs/lineupjs/
 
 abstract: "
-<p>Visualization of tabular data&mdash;for both presentation and exploration purposes&mdash;is a well-researched area. Although effective visual presentations of complex tables are supported by various plotting libraries, creating such tables is a tedious process and requires scripting skills. In contrast, interactive table visualizations that are designed for exploration purposes either operate at the level of individual rows, where large parts of the table are accessible only via scrolling, or provide a high-level overview that often lacks context-preserving drill-down capabilities. In this work we present Taggle, a novel visualization technique for exploring and presenting large and complex tables that are composed of individual columns of categorical or numerical data and homogeneous matrices. The key contribution of Taggle is the hierarchical aggregation of data subsets, for which the user can also choose suitable visual representations.The aggregation strategy is complemented by the ability to sort hierarchically such that groups of items can be flexibly defined by combining categorical stratifications and by rich data selection and filtering capabilities. We demonstrate the usefulness of Taggle for interactive analysis and presentation of complex genomics data for the purpose of drug discovery.</p>"
+<p>Most tabular data visualization techniques focus on overviews, yet many practical analysis tasks are concerned with investigating individual items of interest. At the same time, relating an item to the rest of a potentially large table is important. 
+In this work we present Taggle, a tabular visualization technique for exploring and presenting large and complex tables. Taggle takes an item-centric, spreadsheet-like approach, visualizing each row in the source data individually using visual encodings for the cells. At the same time, Taggle introduces data-driven aggregation of data subsets. The aggregation strategy is complemented by interaction methods tailored to answer specific analysis questions, such as sorting based on multiple columns and rich data selection and filtering capabilities. We demonstrate Taggle using a case study conducted by a domain expert on complex genomics data analysis for the purpose of drug discovery.</p>"
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
@@ -83,4 +84,4 @@ abstract: "
 
 # Acknowledgements
 
-We thank Bikram Kawan for his contributions to the initial prototype implementation as well as Christian Haslinger and Andreas Wernitznig for providing valuable conceptual feedback. This work was supported in part by Boehringer Ingelheim Regional Center Vienna, the State of Upper Austria (FFG #851460), and the US National Institutes of Health (U01 CA198935).
+We thank Bikram Kawan and Martin Ennemoser for their contributions to the initial prototype implementation as well as Christian Haslinger and Andreas Wernitznig for providing valuable conceptual feedback. This work was supported in part by Boehringer Ingelheim Regional Center Vienna; the State of Upper Austria (FFG \#851460); the Austrian Science Fund (FWF P27975-NBL); and the National Science Foundation (NSF IIS 1751238).
