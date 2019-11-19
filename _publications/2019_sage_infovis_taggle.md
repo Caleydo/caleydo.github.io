@@ -2,7 +2,7 @@
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
 title: "Taggle: Combining Overview and Details in Tabular Data Visualizations"
-key: 2017_preprint_taggle
+key: 2019_sage_infovis_taggle
 # paper | preprint | poster
 type: preprint
 # optional url for a different site; defaults to data.caleydo.org
@@ -12,9 +12,9 @@ type: preprint
 # The shortname is used for auto-generated titels
 shortname: Taggle
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2017_preprint_taggle.png
+image: 2019_sage_infovis_taggle.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
-image_large: 2017_preprint_taggle_teaser.png
+image_large: 2019_sage_infovis_taggle.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
