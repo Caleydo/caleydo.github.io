@@ -27,7 +27,7 @@ authors:
 - lex
 - streit
 
-journal-short: arXiv
+journal-short: Information Visualization
 year: 2019
 
 bibentry: article
@@ -37,8 +37,8 @@ bib:
   editor: 
   publisher: 
   address: 
-  doi: 
-  url: https://arxiv.org/abs/1712.05944
+  doi: 10.1177/1473871619878085
+  url:
   volume: 
   number: 
   pages: 
@@ -54,12 +54,12 @@ project: taggle
 external-project: https://lineup.js.org
 
 # The reference to the video entry
-video: 2017_preprint_taggle_video
+video: 2019_taggle_video
 # The reference to the preview video entry
 #preview-video:
 
 # the prerint
-pdf: 2019_preprint_taggle.pdf
+pdf: 2019_sage_infovis_taggle.pdf
 # A supplement PDF
 #supplement: 2017_preprint_taggle_supplement.pdf
 
