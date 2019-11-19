@@ -35,7 +35,7 @@ bib:
   journal: Information Visualization, to appear
   booktitle: 
   editor: 
-  publisher: 
+  publisher: Sage
   address: 
   doi: 10.1177/1473871619878085
   url:
@@ -48,13 +48,13 @@ bib:
 award:
 
 # Use if this paper is linked to an internal project. This will link to the project site
-project: taggle
+project: lineup
 
 # Use this if you have an external project website
 external-project: https://lineup.js.org
 
 # The reference to the video entry
-video: 2019_taggle_video
+video: 2019_sage_infovis_taggle_video
 # The reference to the preview video entry
 #preview-video:
 

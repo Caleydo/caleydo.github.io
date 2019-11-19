@@ -16,9 +16,11 @@ teaser:
 
 publications:
 - 2013_infovis_lineup
+- 2019_sage_infovis_taggle
 
 videos: 
  - 2013_infovis_lineup_video
+ - 2019_sage_infovis_taggle_video
     
 team:
  - gratzl 
@@ -32,17 +34,14 @@ collaborators:
 
 github:
  -
-  url: https://github.com/Caleydo/lineup.js
-  name: LineUp.js
- - 
-  url: https://github.com/Caleydo/caleydo
-  name: Caleydo Core
+  url: https://github.com/lineupjs/lineupjs/
+  name: LineUp.js (recent web version)
  - 
   url: https://github.com/Caleydo/org.caleydo.vis.lineup.demos
-  name: LineUp Demos
+  name: LineUp Demos (original Java version)
  - 
   url: https://github.com/Caleydo/org.caleydo.view.lineup
-  name: LineUp View
+  name: LineUp View (original Java version)
   
 web:  
  - 
