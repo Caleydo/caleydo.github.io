@@ -73,9 +73,9 @@ supplement:
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
-#- name: General UpSet
+- name: EuroVA'19 Presentation
+  link: 2019_eurova_tourdino.pptx
 #  # use link instead of abslink if you want to link to the master directory
-#  abslink: http://vials.io/talk/
 #  # defaults to a download icon, use this if you want a link-out icon
 #  linksym: true
 
