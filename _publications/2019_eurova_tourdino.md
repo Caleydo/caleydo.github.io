@@ -73,7 +73,7 @@ supplement:
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
-- name: EuroVA'19 Presentation
+- name: EuroVA'19 Presentation (PPTX)
   link: 2019_eurova_tourdino.pptx
 #  # use link instead of abslink if you want to link to the master directory
 #  # defaults to a download icon, use this if you want a link-out icon
