@@ -41,9 +41,9 @@ bib:
   journal: EuroVis Workshop on Visual Analytics (EuroVA '19)
   booktitle: 
   editor: 
-  publisher: https://diglib.eg.org/handle/10.2312/eurova20191119
+  publisher: https://diglib.eg.org/handle/10.2312/eurova20191117
   address: 
-  doi: 10.2312/eurova.20191119
+  doi: 10.2312/eurova.20191117
   url:
   volume: 
   number: 
