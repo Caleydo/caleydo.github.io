@@ -41,9 +41,9 @@ bib:
   journal: EuroVis Workshop on Visual Analytics (EuroVA '19)
   booktitle: 
   editor: 
-  publisher: https://diglib.eg.org/handle/10.2312/eurova20191119
+  publisher: https://diglib.eg.org/handle/10.2312/eurova20191117
   address: 
-  doi: 10.2312/eurova.20191119
+  doi: 10.2312/eurova.20191117
   url:
   volume: 
   number: 
@@ -73,9 +73,9 @@ supplement:
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
-#- name: General UpSet
+- name: EuroVA'19 Presentation (PPTX)
+  link: 2019_eurova_tourdino.pptx
 #  # use link instead of abslink if you want to link to the master directory
-#  abslink: http://vials.io/talk/
 #  # defaults to a download icon, use this if you want a link-out icon
 #  linksym: true
 

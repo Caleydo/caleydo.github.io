@@ -6,7 +6,7 @@ key: 2019_bioinformatics_ordino
 # paper | preprint | poster
 type: paper
 # optional url for a different site; defaults to data.caleydo.org
-paper_content_url: https://doi.org/10.1093/bioinformatics/btz009
+# paper_content_url: https://doi.org/10.1093/bioinformatics/btz009
 
 
 # The shortname is used for auto-generated titels
