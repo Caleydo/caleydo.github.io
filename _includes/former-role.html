@@ -1,0 +1,15 @@
+{% for person in site.persons %}
+{% if person.role == include.role %}
+<p>
+    {% if person.website %}
+        <a href="{{ person.website }}"> {{ person.first_name }} {{ person.last_name }},</a>
+    {% else %}
+        {{ person.first_name }} {{ person.last_name }},</a>
+    {% endif %}
+    <!-- {% if person.position %}
+    {{person.position}},
+    {% endif %} -->
+    {{ person.organization }}
+</p>
+{% endif %}
+{% endfor %}

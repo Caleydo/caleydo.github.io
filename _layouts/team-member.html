@@ -1,0 +1,228 @@
+---
+layout: default
+---
+<div class="team-member">
+    <header class="team-member-title">
+        <h1>{{ page.title }}</h1>
+    </header>
+
+    <article class="team-member-content-main">
+
+        <p><img alt="{{ page.first_name }} {{ page.last_name }}" class="portrait-image" src="{{site.baseurl}}{{ page.image }}"></p>
+
+        {{ content }}
+
+
+    </article>
+
+    <article class="team-member-content-aside">
+
+        <h1>Contact</h1>
+        <ul class="contact-list fa-ul">
+
+            <p><b>{{ page.first_name }} {{ page.last_name }}</b><br>{{ page.degrees }} </p>
+
+            {% if page.location %}
+            <li><i class="fa-li fa fa-home"></i>
+                {{ page.location }}
+            </li>
+            {% endif %}
+
+            {% if page.phone %}
+            <li><i class="fa-li fa fa-phone"></i>
+                {{ page.phone }}</b>
+            </li>
+            {% endif %}
+
+            {% if page.fax %}
+            <li><i class="fa-li fa fa-fax"></i>
+                {{ page.fax }}
+            </li>
+            {% endif %}
+
+            {% if page.email %}
+            <li><i class="fa-li fa fa-envelope-o"></i>
+                <a href="mailto:{{ page.email }}">
+                    <i class="mail-icon-item"></i>
+                    {{ page.email }}
+                </a>
+            </li>
+            {% endif %}
+
+            {% if page.twitter %}
+            <li><i class="fa-li fa fa-twitter"></i>
+                <a href="https://twitter.com/{{ page.twitter }}">
+                    {{ page.twitter }}
+                </a>
+            </li>
+            {% endif %}
+
+            {% if page.github %}
+            <li><i class="fa-li fa fa-github"></i>
+                <a href="https://github.com/{{ page.github }}">
+                    {{ page.github }}
+                </a>
+            </li>
+            {% endif %}
+
+            {% if page.google_scholar %}
+            <li><i class="fa-li fa fa-graduation-cap"></i>
+                <a href="http://scholar.google.com/citations?user={{ page.google_scholar }}">
+                    {{ page.google_scholar }}
+                </a>
+            </li>
+            {% endif %}
+
+            {% if page.linkedin %}
+            <li><i class="fa-li fa fa-linkedin-square"></i>
+                <a href="https://www.linkedin.com/in/{{ page.linkedin }}">
+                    {{ page.linkedin }}
+                </a>
+            </li>
+            {% endif %}
+
+            <!-- <li><i class="fa-li fa fa-file-text-o"></i>
+                <a href="http://data.caleydo.org/team/marc/cv_streit.pdf">
+                    Download CV
+                </a>
+            </li> -->
+
+        </ul>
+        <br />
+
+        <!-- <h1>Publications</h1>
+        <ul class="project-icon-list">
+            
+        </ul> -->
+
+
+    </article>
+
+    <article class="team-member-content-below">
+
+        <h1 id="preprint">Preprint</h1>
+      
+        {% for publication in site.publications reversed %}
+          {% if publication.personal %}
+          {% elsif publication.type == "preprint" %}
+            {% include publication_list_entry.html %}
+          {% endif %}
+        {% endfor %}
+      
+        <br>
+        
+        <h1 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h1>
+      
+        {% for publication in site.publications reversed %}
+          {% if publication.personal %}
+          {% elsif publication.type == "paper" %}
+            {% include publication_list_entry.html %}
+          {% endif %}
+        {% endfor %}
+      
+        <br>
+          
+        <h1 id="theses">Theses</h1>
+      
+        {% for thesis in site.thesis reversed %}
+      
+        <div class="paper-list-block">
+      
+          <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+      
+          <p>
+            {% assign known = false %}
+            {% for person in site.persons %}
+                {% if person.key == thesis.author %}
+                    {% if person.website %}
+                    <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
+                    {% else %}
+                    {{ person.first_name }}&nbsp;{{ person.last_name }}
+                    {% endif %}
+                    {% assign known = true %}
+                {% endif %}
+            {% endfor %}
+            {% if known == false %}
+            {{ author }}
+            {% endif %} <br/>
+            <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+            {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
+          </p>
+      
+        </div>
+      
+        {% endfor %}
+      
+        <!-- <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>-->
+        <br>
+          
+        <h1 id="posters">Extended Abstracts and Posters</h1>
+      
+        {% for publication in site.data.posters %}
+      
+        <p class="poster-item">
+          {% for author in publication.authors %}
+      
+          {% assign known = false %}
+          {% for person in site.persons %}
+          {% if author == person.key %}
+                <span class="paper-author">
+                  {% if person.website %}
+                  <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+                  {% else %}
+                  {{ person.first_name }}&nbsp;{{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
+                  {% endif %}
+                </span>
+          {% assign known = true %}
+          {% endif %}
+          {% endfor %}
+      
+          {% if known == false %}
+                <span class="paper-author">
+                  {{ author }}{% if author != publication.authors.last %}, {% endif %}
+                </span>
+          {% endif %}
+      
+          {% endfor %}
+          <br/>
+      
+          <b>{{ publication.title }}</b><br/>
+          {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+      
+          {% if publication.abstract-pdf or publication.poster-pdf %}
+        <p class="poster-link">
+      
+              <span>
+                {% if publication.abstract-pdf %}
+                  <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.abstract-pdf }}">Abstract</a>
+                &nbsp;
+                {% endif %}
+      
+                {% if publication.poster-pdf %}
+                  <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.poster-pdf }}">Poster</a>
+                &nbsp;
+                {% endif %}
+      
+                {% if publication.video %}
+                  <i class="fa fa-file-video-o"></i>&nbsp; <a href="{{ publication.video }}">Video</a>
+                &nbsp;
+                {% endif %}
+      
+              </span>
+      
+          {% if publication.award %}
+          <span class="award pull-right">
+            {{publication.award}}&nbsp;<i class="fa fa-trophy"></i>
+          </span>
+          {% endif %}
+      
+        </p>
+        {% endif %}
+        <br/>
+      
+        {% endfor %}
+      
+      </article>
+      
+
+</div>
