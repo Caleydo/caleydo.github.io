@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Peter
 last_name: Ruch
+title: "Peter Ruch"
 key: ruch
 permalink: /persons/ruch/
 role: core

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Dieter
 last_name: Schmalstieg
+title: "Dieter Schmalstieg"
 key: schmalstieg
 permalink: /persons/schmalstieg/
 role: alumni

@@ -2,11 +2,7 @@
 {% if person.role == include.role %}
 <p>
     <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}{{ person.image }}">
-    {% if person.website %}
-        <a href="{{ person.website }}"> {{ person.first_name }} {{ person.last_name }}</a><br>
-    {% else %}
-        {{ person.first_name }} {{ person.last_name }}</a><br>
-    {% endif %}
+    <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
     {% if person.position %}
     {{person.position}},
     {% endif %}

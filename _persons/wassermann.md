@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Anne-Mai
 last_name: Wassermann
+title: "Anne-Mai Wassermann"
 key: wassermann
 permalink: /persons/wassermann/
 role: collaborator

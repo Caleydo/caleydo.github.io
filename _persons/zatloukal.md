@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Kurt
 last_name: Zatloukal
+title: "Kurt Zatloukal"
 key: zatloukal
 permalink: /persons/zatloukal/
 role: collaborator

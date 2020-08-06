@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Kasper
 last_name: Dinkla
+title: "Kasper Dinkla"
 key: dinkla
 permalink: /persons/dinkla/
 role: alumni

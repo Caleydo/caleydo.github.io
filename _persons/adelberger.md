@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Patrick
 last_name: Adelberger
+title: "Patrick Adelberger"
 key: adelberger
 permalink: /persons/adelberger/
 role: core

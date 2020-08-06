@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Martin
 last_name: Ennemoser
+title: "Martin Ennemoser"
 key: ennemoser
 permalink: /persons/ennemoser/
 role: alumni

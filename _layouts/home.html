@@ -129,8 +129,8 @@
             <h1>Recent Publications</h1>
             <ul class="publication-icon-list">
                 {% assign sorted_publications = (site.publications | sort: 'year' %}
-                {% for publication in sorted_publications reversed%}
-                {% if publication.year > 2015 %}
+                {% for publication in sorted_publications reversed%} <!-- add "limit: 5" does not quite work... -->
+                {% if publication.year > 2018 %}
                 <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.journal}}{{publication.bib.journal}},
                     {{publication.year}}
                 </li>

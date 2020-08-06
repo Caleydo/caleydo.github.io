@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Karl
 last_name: Kashofer
+title: "Karl Kashofer"
 key: kashofer
 permalink: /persons/kashofer/
 role: collaborator

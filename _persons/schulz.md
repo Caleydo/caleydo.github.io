@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Hans-Jörg
 last_name: Schulz
+title: "Hans-Jörg Schulz"
 key: schulz
 permalink: /persons/schulz/
 role: alumni

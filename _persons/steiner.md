@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Anita
 last_name: Steiner
+title: "Anita Steiner"
 key: steiner
 permalink: /persons/steiner/
 role: core

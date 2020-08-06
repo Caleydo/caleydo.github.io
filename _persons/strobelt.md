@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Hendrik
 last_name: Strobelt
+title: "Hendrik Strobelt"
 key: strobelt
 permalink: /persons/strobelt/
 role: alumni

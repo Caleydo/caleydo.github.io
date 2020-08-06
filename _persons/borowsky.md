@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Mark
 last_name: Borowsky
+title: "Mark Borowsky"
 key: borowsky 
 permalink: /persons/borowsky/
 role: collaborator

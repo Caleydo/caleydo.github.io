@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Denis
 last_name: Kalkofen
+title: "Denis Kalkofen"
 key: kalkofen
 permalink: /persons/kalkofen/
 role: alumni

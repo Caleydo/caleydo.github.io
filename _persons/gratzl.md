@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Samuel
 last_name: Gratzl
+title: "Samuel Gratzl"
 key: gratzl
 permalink: /persons/gratzl/
 role: alumni

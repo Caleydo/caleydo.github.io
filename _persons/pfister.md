@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Hanspeter
 last_name: Pfister
+title: "Hanspeter Pfister"
 key: pfister
 permalink: /persons/pfister/
 role: alumni

@@ -95,7 +95,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 .navigation {
   display: block;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 30px; //20 -> 30 //changed by gini
 
   @include media($small-display) {
     margin-right: 0px;
@@ -230,6 +230,10 @@ p {
 
 .person-title {
   @include page-title($team-color);
+}
+
+.team-member-title {
+  @include subpage-title($team-color);
 }
 
 .team-title {
@@ -405,6 +409,11 @@ p {
   @include omega();
 }
 
+.team-content-bottom{     //added by gini
+  @include page-content();
+  @include span-columns(6);
+}
+
 .team-meta {
   @include page-meta();
   @include span-columns(12);
@@ -437,6 +446,24 @@ p {
   @include span-columns(4);
   @include omega();
 }
+
+//--- added by gini ---
+.team-member-content-main {
+  @include page-content();
+  @include span-columns(8);
+}
+
+.team-member-content-aside {
+  @include page-content();
+  @include span-columns(4);
+  @include omega();
+}
+
+.team-member-content-below {
+  @include page-content();
+  @include span-columns(12);
+}
+//------
 
 .home-meta {
   @include page-meta();
@@ -909,3 +936,111 @@ footer {
   font-style: italic;
   color: orange;
 }
+
+
+//--- by gini ---
+
+.logo {
+  float: left;
+  margin-left: 5px;
+  font-family: Lato,Helvetica,sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2em;
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+.logo a {
+  color: #393939;
+}
+
+.logo-subtitle {
+  font-family: Lato,Helvetica,sans-serif;
+  font-size: .7em;
+  line-height: 16px;
+  padding-top: 48px;
+  margin-left: 6px;
+}
+
+
+// --- team members ---
+
+.portrait-image {
+  height: 180px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.25);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.home-content-main {
+  font-family: Lato,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .9em;
+  text-rendering: optimizeLegibility;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+}
+
+.home-content-aside {
+  font-family: Lato,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .9em;
+  text-rendering: optimizeLegibility;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
+  margin-right: 0;
+}
+
+ul.contact-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 1.8em;
+  list-style-type: none;
+}
+
+ul.contact-list li {
+  padding-left: 0em;
+  padding-bottom: 0.5em;
+  line-height: 1.2em;
+  vertical-align: top;
+  color: #333;
+  font-family: Lato,Helvetica,sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  font-style: normal;
+  min-height: 1em;
+}
+
+ul.project-icon-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.project-icon-list li {
+  padding-left: 2em;
+  padding-bottom: 0.5em;
+  line-height: 1.2em;
+  vertical-align: top;
+  color: #333;
+  font-family: Lato,Helvetica,sans-serif;
+  font-weight: 400;
+  font-size: .9em;
+  font-style: normal;
+  min-height: 2.5em;
+}
+

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Holger
 last_name: Stitz
+title: "Holger Stitz"
 key: stitz
 permalink: /persons/stitz/
 role: core

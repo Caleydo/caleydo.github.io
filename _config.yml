@@ -38,7 +38,7 @@ collections:
     output: true
     permalink: /:path/
   persons:
-    output: false
+    output: true
     permalink: /persons/:path/
   publications:
     output: true

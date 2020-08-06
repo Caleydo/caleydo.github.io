@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Christian
 last_name: Partl
+title: "Christian Partl"
 key: partl
 permalink: /persons/partl/
 role: alumni

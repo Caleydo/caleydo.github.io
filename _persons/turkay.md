@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Cagatay
 last_name: Turkay
+title: "Cagatay Turkay"
 key: turkay
 permalink: /persons/turkay/
 role: collaborator

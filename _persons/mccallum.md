@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Chuck
 last_name: McCallum
+title: "Chuck McCallum"
 key: mccallum
 permalink: /persons/mccallum/
 role: collaborator

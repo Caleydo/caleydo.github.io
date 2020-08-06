@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Peter J. 
 last_name: Park
+title: "Peter J. Park"
 key: park
 permalink: /persons/park/
 role: alumni

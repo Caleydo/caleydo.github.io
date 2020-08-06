@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: team-member
 first_name: Fritz  
 last_name: Lekschas
+title: "Fritz Lekschas"
 key: lekschas
 permalink: /persons/lekschas/
 role: collaborator
