@@ -100,65 +100,187 @@ layout: default
 
     <article class="team-member-content-below">
 
-        <h1 id="preprint">Preprint</h1>
-      
-        {% for publication in site.publications reversed %}
-          {% if publication.personal %}
-          {% elsif publication.type == "preprint" %}
-            {% include publication_list_entry.html %}
-          {% endif %}
-        {% endfor %}
+        {% assign member_publications = site.publications | where_exp:"item", 'item.authors contains page.key' %}
+
+        {% assign member_preprints = member_publications | where:"type", "preprint" %}
+        {% if member_preprint %}
+            <h1 id="preprint">Preprint</h1>
+            {% for publication in member_preprint reversed %}
+                {% include publication_list_entry.html %}
+            {% endfor %}
+        {% endif %}
+        
+        <!-- {% for publication in site.publications reversed %}
+            {% if publication.authors contains page.key %}
+                {% if publication.personal %}
+                {% elsif publication.type == "preprint" %}
+                    {% include publication_list_entry.html %}
+                {% endif %}
+            {% endif %}
+        {% endfor %} -->
       
         <br>
         
-        <h1 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h1>
-      
-        {% for publication in site.publications reversed %}
-          {% if publication.personal %}
-          {% elsif publication.type == "paper" %}
-            {% include publication_list_entry.html %}
-          {% endif %}
-        {% endfor %}
+        {% assign member_papers = member_publications | where:"type", "paper" %}
+        {% if member_papers %}
+            <h1 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h1>
+            {% for publication in member_papers reversed %}
+                {% include publication_list_entry.html %}
+            {% endfor %}
+            
+        {% endif %}
+
+        <!-- {% for publication in site.publications reversed %}
+                {% if publication.authors contains page.key %}
+                    {% if publication.personal %}
+                    {% elsif publication.type == "paper" %}
+                            {% include publication_list_entry.html %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %} -->
       
         <br>
           
-        <h1 id="theses">Theses</h1>
-      
-        {% for thesis in site.thesis reversed %}
-      
-        <div class="paper-list-block">
-      
-          <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
-      
-          <p>
-            {% assign known = false %}
-            {% for person in site.persons %}
-                {% if person.key == thesis.author %}
-                    {% if person.website %}
-                    <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
-                    {% else %}
-                    {{ person.first_name }}&nbsp;{{ person.last_name }}
-                    {% endif %}
-                    {% assign known = true %}
-                {% endif %}
+
+        {% assign member_thesis = site.thesis | where_exp:"item", 'item.author == page.key' %}
+        {% if site.thesis.author == page.key %}
+            <h1 id="theses">Theses</h1>
+            {% for thesis in member_thesis reversed %}
+                <div class="paper-list-block">
+                
+                    <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+                
+                    <p>
+                        {% assign known = false %}
+                        {% for person in site.persons %}
+                            {% if person.key == thesis.author %}
+                                {% if person.website %}
+                                <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
+                                {% else %}
+                                {{ person.first_name }}&nbsp;{{ person.last_name }}
+                                {% endif %}
+                                {% assign known = true %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if known == false %}
+                        {{ author }}
+                        {% endif %} <br/>
+                        <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+                        {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
+                    </p>
+            
+                </div>
             {% endfor %}
-            {% if known == false %}
-            {{ author }}
-            {% endif %} <br/>
-            <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
-            {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
-          </p>
-      
-        </div>
-      
-        {% endfor %}
+            
+        {% endif %}
+
+        <!-- {% for thesis in site.thesis reversed %}
+            {% if thesis.author == page.key %}
+        
+                <div class="paper-list-block">
+            
+                <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+            
+                <p>
+                    {% assign known = false %}
+                    {% for person in site.persons %}
+                        {% if person.key == thesis.author %}
+                            {% if person.website %}
+                            <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
+                            {% else %}
+                            {{ person.first_name }}&nbsp;{{ person.last_name }}
+                            {% endif %}
+                            {% assign known = true %}
+                        {% endif %}
+                    {% endfor %}
+                    {% if known == false %}
+                    {{ author }}
+                    {% endif %} <br/>
+                    <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+                    {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
+                </p>
+            
+                </div>
+            {% endif %}
+        {% endfor %} -->
       
         <!-- <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>-->
         <br>
           
-        <h1 id="posters">Extended Abstracts and Posters</h1>
+
+
+        {% assign member_posters = site.data.posters | where_exp:"item", "item.authors contains page.key" %}
+        {% assign psize = member_posters | size %}
+        {% if psize > 0 %}
+            <h1 id="posters">Extended Abstracts and Posters</h1>
+            {% for publication in member_posters reversed %}
+                
+                <p class="poster-item">
+                    {% for author in publication.authors %}
+                
+                    {% assign known = false %}
+                    {% for person in site.persons %}
+                    {% if author == person.key %}
+                        <span class="paper-author">
+                            {% if person.website %}
+                            <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+                            {% else %}
+                            {{ person.first_name }}&nbsp;{{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
+                            {% endif %}
+                        </span>
+                    {% assign known = true %}
+                    {% endif %}
+                    {% endfor %}
+                
+                    {% if known == false %}
+                        <span class="paper-author">
+                            {{ author }}{% if author != publication.authors.last %}, {% endif %}
+                        </span>
+                    {% endif %}
+                
+                    {% endfor %}
+                    <br/>
+                
+                    <b>{{ publication.title }}</b><br/>
+                    {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+                
+                    {% if publication.abstract-pdf or publication.poster-pdf %}
+                <p class="poster-link">
+                
+                        <span>
+                        {% if publication.abstract-pdf %}
+                            <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.abstract-pdf }}">Abstract</a>
+                        &nbsp;
+                        {% endif %}
+                
+                        {% if publication.poster-pdf %}
+                            <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.poster-pdf }}">Poster</a>
+                        &nbsp;
+                        {% endif %}
+                
+                        {% if publication.video %}
+                            <i class="fa fa-file-video-o"></i>&nbsp; <a href="{{ publication.video }}">Video</a>
+                        &nbsp;
+                        {% endif %}
+                
+                        </span>
+                
+                    {% if publication.award %}
+                    <span class="award pull-right">
+                    {{publication.award}}&nbsp;<i class="fa fa-trophy"></i>
+                    </span>
+                    {% endif %}
+                
+                </p>
+                {% endif %}
+                <br/>
+            
+            {% endfor %}
+            
+        {% endif %}
+
       
-        {% for publication in site.data.posters %}
+        <!-- {% for publication in site.data.posters %}
       
         <p class="poster-item">
           {% for author in publication.authors %}
@@ -220,7 +342,7 @@ layout: default
         {% endif %}
         <br/>
       
-        {% endfor %}
+        {% endfor %} -->
       
       </article>
       
