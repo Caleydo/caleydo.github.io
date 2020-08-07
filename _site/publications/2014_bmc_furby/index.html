@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+ <meta charset="utf-8">
+<title>Furby: Fuzzy Force-Directed Bicluster Visualization</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Caleydo: Visualization for BioMedicine.">
+<link rel="canonical" href="http://localhost:4000/publications/2014_bmc_furby/">
+
+<!-- Custom Fonts -->
+<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Patua+One|Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<!-- Custom CSS -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+ <!-- metadata for link preview  -->
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Furby: Fuzzy Force-Directed Bicluster Visualization">
+  <meta itemprop="description" content=" Background: Cluster analysis is widely used to discover patterns in multi-dimensional data. Clustered heatmaps are the standard technique for visualizing one-way and two-way clustering results. In clustered heatmaps, rows and/or columns are reordered, resulting in a representation that shows the clusters as contiguous blocks. However, for biclustering results, where clusters can overlap, it is not possible to reorder the matrix in this way without duplicating rows and/or columns. Results: We present Furby, an interactive visualization technique for analyzing biclustering results. Our contribution is twofold. First, the technique provides an overview of a biclustering result, showing the actual data that forms the individual clusters together with the information which rows and columns they share. Second, for fuzzy clustering results, the proposed technique additionally enables analysts to interactively set the thresholds that transform the fuzzy (soft) clustering into hard clusters that can then be investigated using heatmaps or bar charts. Changes in the membership value thresholds are immediately reflected in the visualization. We demonstrate the value of Furby by loading biclustering results applied to a multi-tissue dataset into the visualization. Conclusions: The proposed tool allows analysts to assess the overall quality of a biclustering result. Based on this high-level overview, analysts can then interactively explore the individual biclusters in detail. This novel way of handling fuzzy clustering results also supports analysts in finding the optimal thresholds that lead to the best clusters.">
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@caleydo_org">
+  <meta name="twitter:title" content="Furby: Fuzzy Force-Directed Bicluster Visualization">
+  <meta name="twitter:description" content=" Background: Cluster analysis is widely used to discover patterns in multi-dimensional data. Clustered heatmaps are the standard technique for visualizing one-way and two-way clustering results. In clustered heatmaps, rows and/or columns are reordered, resulting in a representation that shows the clusters as contiguous blocks. However, for biclustering results, where clusters can overlap, it is not possible to reorder the matrix in this way without duplicating rows and/or columns. Results: We present Furby, an interactive visualization technique for analyzing biclustering results. Our contribution is twofold. First, the technique provides an overview of a biclustering result, showing the actual data that forms the individual clusters together with the information which rows and columns they share. Second, for fuzzy clustering results, the proposed technique additionally enables analysts to interactively set the thresholds that transform the fuzzy (soft) clustering into hard clusters that can then be investigated using heatmaps or bar charts. Changes in the membership value thresholds are immediately reflected in the visualization. We demonstrate the value of Furby by loading biclustering results applied to a multi-tissue dataset into the visualization. Conclusions: The proposed tool allows analysts to assess the overall quality of a biclustering result. Based on this high-level overview, analysts can then interactively explore the individual biclusters in detail. This novel way of handling fuzzy clustering results also supports analysts in finding the optimal thresholds that lead to the best clusters.">
+  <meta name="twitter:creator" content="@caleydo_org">
+  
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Furby: Fuzzy Force-Directed Bicluster Visualization" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://localhost:4000/publications/2014_bmc_furby/" />
+  <meta property="og:description" content=" Background: Cluster analysis is widely used to discover patterns in multi-dimensional data. Clustered heatmaps are the standard technique for visualizing one-way and two-way clustering results. In clustered heatmaps, rows and/or columns are reordered, resulting in a representation that shows the clusters as contiguous blocks. However, for biclustering results, where clusters can overlap, it is not possible to reorder the matrix in this way without duplicating rows and/or columns. Results: We present Furby, an interactive visualization technique for analyzing biclustering results. Our contribution is twofold. First, the technique provides an overview of a biclustering result, showing the actual data that forms the individual clusters together with the information which rows and columns they share. Second, for fuzzy clustering results, the proposed technique additionally enables analysts to interactively set the thresholds that transform the fuzzy (soft) clustering into hard clusters that can then be investigated using heatmaps or bar charts. Changes in the membership value thresholds are immediately reflected in the visualization. We demonstrate the value of Furby by loading biclustering results applied to a multi-tissue dataset into the visualization. Conclusions: The proposed tool allows analysts to assess the overall quality of a biclustering result. Based on this high-level overview, analysts can then interactively explore the individual biclusters in detail. This novel way of handling fuzzy clustering results also supports analysts in finding the optimal thresholds that lead to the best clusters." />
+  
+
+
+</head>
+
+
+    <body>
+    <div class="wrap">
+      <div class="navigation">
+    <div class="logo">
+        <a href="/">
+            JKU Visual Data Science Group
+            <!-- <img class="logo-header-svg" src="/assets/images/logos/caleydo.svg" alt="Caleydo Logo"> -->
+        </a>
+    </div>
+
+    <div class="navigation-buttons">
+        <ul>
+            <li class="home-button">
+                <a href="/"><span class="nav-icon"><i class="fa fa-home"></i></span><span
+                        class="nav-text">Home</span></a>
+            </li>
+            <li class="team-button">
+                <a href="/team/"><span class="nav-icon"><i class="fa fa-user"></i></span><span
+                        class="nav-text">Team</span></a>
+            </li>
+            <li class="publication-button">
+                <a href="/publications/"><span class="nav-icon"><i class="fa fa-book"></i></span><span
+                        class="nav-text">Publications</span></a>
+            </li>
+            
+            <!-- <li class="project-button">
+                <a href="/tools/"><span class="nav-icon"><i class="fa fa-cog"></i></span><span
+                        class="nav-text">Tools</span></a>
+            </li> -->
+            <!--<li class="download-button">
+              <a href="/software/"><span class="nav-icon"><i class="fa fa-download"></i></span><span class="nav-text">Software</span></a>
+            </li> -->
+
+            <!--<li class="help-button">
+              <a href="http://help.caleydo.org"><span class="nav-icon"><i class="fa fa-question-circle"></i></span><span class="nav-text">Help</span></a>
+            </li> -->
+            <!--<li class="help-button">
+                  <a href="/documentation/"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Docs</span></a>
+              </li>-->
+
+        </ul>
+    </div>
+
+    <div class="logo-subtitle">Part of the Institute of Computer Graphics @ JKU Linz, Austria</div>
+</div>
+
+
+      <div class="publication">
+
+  <header class="publication-title">
+    <h1>Furby: Fuzzy Force-Directed Bicluster Visualization</h1>
+  </header>
+
+  
+
+  
+
+
+  <article class="publication-content-main">
+
+    
+
+
+
+    <h1>Abstract</h1>
+     <p><b>Background:</b> Cluster analysis is widely used to discover patterns in multi-dimensional data. Clustered heatmaps are the standard technique for visualizing one-way and two-way clustering results. In clustered heatmaps, rows and/or columns are reordered, resulting in a representation that shows the clusters as contiguous blocks. However, for biclustering results, where clusters can overlap, it is not possible to reorder the matrix in this way without duplicating rows and/or columns.</p> <p><b>Results:</b> We present Furby, an interactive visualization technique for analyzing biclustering results. Our contribution is twofold. First, the technique provides an overview of a biclustering result, showing the actual data that forms the individual clusters together with the information which rows and columns they share. Second, for fuzzy clustering results, the proposed technique additionally enables analysts to interactively set the thresholds that transform the fuzzy (soft) clustering into hard clusters that can then be investigated using heatmaps or bar charts. Changes in the membership value thresholds are immediately reflected in the visualization. We demonstrate the value of Furby by loading biclustering results applied to a multi-tissue dataset into the visualization.</p> <p><b>Conclusions:</b> The proposed tool allows analysts to assess the overall quality of a biclustering result. Based on this high-level overview, analysts can then interactively explore the individual biclusters in detail. This novel way of handling fuzzy clustering results also supports analysts in finding the optimal thresholds that lead to the best clusters.</p>
+
+
+
+      <h1>Citation</h1>
+    <div class="citation">
+      <p>
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              <a href="http://marc-streit.com">Marc&nbsp;Streit</a>, 
+              
+            
+        
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              <a href="">Samuel&nbsp;Gratzl</a>, 
+              
+            
+        
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        Michael Gillhofer, 
+        
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        Andreas Mayr, 
+        
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        Andreas Mitterecker, 
+        
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        Sepp Hochreiter
+        
+        
+        
+
+
+        <br/>
+        <span class="paper-title">
+        
+          <b><a href="http://data.caleydo.org/papers/2014_bmc_furby.pdf">Furby: Fuzzy Force-Directed Bicluster Visualization</a></b>
+          
+          </span><br/>
+        
+
+        <span class="paper-citation">
+        
+          
+          
+
+
+
+          BMC Bioinformatics, 15(Suppl 6), p. S4,  15(Suppl 6): S4,   <a href="https://dx.doi.org/10.1186/1471-2105-15-S6-S4">doi:10.1186/1471-2105-15-S6-S4</a>, 2014.
+        
+
+      
+
+      
+      </span>
+    </div>
+
+      <h1>BibTeX</h1>
+
+      <!-- here replacing the curly brackets with html special characters. { is &#123; ; } is &#125; -->
+<pre class="bibtex">
+@article&#123;2014_bmc_furby,
+  title = &#123;Furby: Fuzzy Force-Directed Bicluster Visualization&#125;,
+  author = &#123;Marc Streit and Samuel Gratzl and Michael Gillhofer and Andreas Mayr and Andreas Mitterecker and Sepp Hochreiter&#125;,
+  journal = &#123;BMC Bioinformatics, 15(Suppl 6), p. S4&#125;,
+  doi = &#123;10.1186/1471-2105-15-S6-S4&#125;,
+  volume = &#123;15&#125;,
+  number = &#123;Suppl 6&#125;,
+  pages = &#123;S4&#125;,
+  year = &#123;2014&#125;
+}
+</pre>
+
+
+    <!-- main markdown content -->
+    <h1 id="datasets">Datasets</h1>
+
+<p>The following projects contain public demo data, which can be used to test Furby. But everyone is welcome to load his/her own data, via the <code class="language-plaintext highlighter-rouge">Load BiCluster Results</code> tab within the Caleydo Startup-Wizard.</p>
+
+<ul>
+  <li><i class="fa fa-download"></i> <a href="http://data.caleydo.org/papers//2014_bmc_furby_multi_tissue_fabia20.cal">Caleydo-Project (CAL)</a> containing Microarray data from Broad Institute “Cancer Program Data Sets” which was produced by <a href="https://www.broadinstitute.org/cgi-bin/cancer/datasets.cgi">Su et al. 2002</a>. It consists of 102 samples and 5565 genes as was clustered using the FABIA algorithm.</li>
+  <li><i class="fa fa-download"></i> <a href="http://data.caleydo.org/papers//2014_bmc_furby_multi_tissue_fabia20.zip">Zip package (ZIP)</a> containing the exported CSV-files using to create the previous Caleydo-Project</li>
+</ul>
+
+<h1 id="utilities">Utilities</h1>
+<p>We provide two helper R-Scripts, which simplify exporting R bicluster results in the correct format.</p>
+
+<ul>
+  <li><i class="fa fa-download"></i> <a href="http://data.caleydo.org/papers//2014_bmc_furby_export_fabia.R">R-Script</a> for exporting FABIA results, generated via the <a href="https://www.bioconductor.org/packages/2.12/bioc/html/fabia.html">fabia</a> bioconductor package.</li>
+  <li><i class="fa fa-download"></i> <a href="http://data.caleydo.org/papers//2014_bmc_furby_export_biclust.R">R-Script</a> for exporting result from the <a href="https://cran.r-project.org/web/packages/biclust/index.html">biclust</a> CRAN package.</li>
+</ul>
+
+  </article>
+
+  <article class="publication-content-aside">
+    
+    <h1>Tool Info and Demo</h1>
+    <ul class="project-icon-list">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </ul>
+    
+
+    
+
+
+    <h1>Resources</h1>
+    <ul>
+    
+
+    
+    <li>
+      <i class="fa fa-download"></i> &nbsp;<a href="http://data.caleydo.org/papers/2014_bmc_furby.pdf">Paper (PDF)</a>
+    </li>
+    
+    
+    
+	
+      <li>
+        
+        <i class="fa fa-download"></i>
+        
+        &nbsp;<a href="http://data.caleydo.org/papers/2014_bmc_furby_multi_tissue_fabia20.cal">Multi Tissue Dataset (CAL)</a>
+      </li>
+	
+      <li>
+        
+        <i class="fa fa-download"></i>
+        
+        &nbsp;<a href="http://data.caleydo.org/papers/2014_bmc_furby_multi_tissue_fabia20.zip">Multi Tissue Dataset (ZIP)</a>
+      </li>
+	
+      <li>
+        
+        <i class="fa fa-download"></i>
+        
+        &nbsp;<a href="http://data.caleydo.org/papers/2014_bmc_furby_export_fabia.R">Fabia R package export script (R-Script)</a>
+      </li>
+	
+      <li>
+        
+        <i class="fa fa-download"></i>
+        
+        &nbsp;<a href="http://data.caleydo.org/papers/2014_bmc_furby_export_biclust.R">BiClust R package export script (R-Script)</a>
+      </li>
+	
+    
+
+    
+    </ul>
+
+    
+    <h1>Videos</h1>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="video">
+      <p><b>Furby BMC Bioinformatics Demonstration Video</b></p>
+      
+      <div class="video-wrapper">
+        <iframe src="//www.youtube.com/embed/yHjpHfo5C4U?controls=2&showinfo=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+      </div>
+      
+      
+      <p><i class="fa fa-download"></i> &nbsp;<a href="http://data.caleydo.org/papers/2014_bmc_furby.mp4">Download Video</a><p/>
+      
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  </article>
+
+
+  <article class="publication-meta">
+
+  </article>
+
+  <article class="publication-resources">
+  </article>
+</div>
+
+
+      <footer>
+  <div class="footer-content">
+    <div class="footer-list-social">
+      <ul>
+          
+          <li>
+            <a href="mailto:contact@caleydo.org">
+              <i class="fa fa-lg fa-envelope-o"></i>
+              <span class="footer-text">Email</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://facebook.com/pages/Caleydo/110550618994500">
+              <i class="fa fa-lg fa-facebook"></i>
+              <span class="footer-text">Facebook</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/caleydo_org">
+              <i class="fa fa-lg fa-twitter"></i>
+              <span class="footer-text">Twitter</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://www.youtube.com/user/caleydotugraz">
+              <i class="fa fa-lg fa-youtube"></i>
+              <span class="footer-text">YouTube</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/caleydo">
+              <i class="fa fa-lg fa-github"></i>
+              <span class="footer-text">GitHub</span>
+            </a>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-disclaimer">
+      <p>
+        Caleydo is a joint project of
+      </p>
+    </div>
+    <div class="footer-list-institutions">
+      <ul>
+        
+          <li>
+            <a href="https://compbio.med.harvard.edu"><img class="institution-logo" src="/assets/images/logos/harvard-medical-school.png" alt="https://compbio.med.harvard.edu"></a>
+          </li>
+        
+          <li>
+            <a href="https://www.cg.jku.at"><img class="institution-logo" src="/assets/images/logos/johannes-kepler-university-linz.png" alt="https://www.cg.jku.at"></a>
+          </li>
+        
+          <li>
+            <a href="https://vdl.sci.utah.edu/"><img class="institution-logo" src="/assets/images/logos/utah.png" alt="https://vdl.sci.utah.edu/"></a>
+          </li>
+        
+      </ul>
+    </div>
+ </div>
+
+
+  <div class="footer-content">
+    <span class="footer-logo">
+      <a href="/">
+        <img class="logo-footer-svg" src="/assets/images/logos/caleydo_c.svg" alt="Caleydo Logo">
+      </a>
+    </span>
+    <div class="footer-disclaimer">
+      <p>
+        Copyright &copy; 2019 The Caleydo Team. All content on this website is licensed under the <br />
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY)</a>. Copyright of the linked papers is with the publishers.
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+    </div>
+
+    
+    <!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45998043-1', 'auto');
+    ga('send', 'pageview');
+
+
+
+    (function (){
+        var links = document.getElementsByTagName('a');
+        var myLink = null;
+        var startWith = null;
+
+        for(var i = 0; i < links.length; ++i) {
+            myLink = links[i];
+
+            startWith = myLink.getAttribute('href').slice(0, 1);
+
+            if (startWith!="/" && startWith!="#"){
+                addListener(myLink,'mousedown',function(){
+
+                    console.log("a:", this.getAttribute('href'))
+                    ga('send', 'event', 'link', 'click', this.getAttribute('href'));
+
+                })
+            }
+
+        }
+    })();
+
+
+
+    /**
+     * Utility to wrap the different behaviors between W3C-compliant browsers
+     * and IE when adding event handlers.
+     *
+     * @param {Object} element Object on which to attach the event listener.
+     * @param {string} type A string representing the event type to listen for
+     *     (e.g. load, click, etc.).
+     * @param {function()} callback The function that receives the notification.
+     */
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+
+
+
+
+</script>
+<!-- End Google Analytics -->
+     
+    </body>
+</html>

@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+ <meta charset="utf-8">
+<title>Multi-Attribute Rankings</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Caleydo: Visualization for BioMedicine.">
+<link rel="canonical" href="http://localhost:4000/tools/lineup/">
+
+<!-- Custom Fonts -->
+<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Patua+One|Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<!-- Custom CSS -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+
+
+</head>
+
+
+    <body>
+    <div class="wrap">
+      <div class="navigation">
+    <div class="logo">
+        <a href="/">
+            JKU Visual Data Science Group
+            <!-- <img class="logo-header-svg" src="/assets/images/logos/caleydo.svg" alt="Caleydo Logo"> -->
+        </a>
+    </div>
+
+    <div class="navigation-buttons">
+        <ul>
+            <li class="home-button">
+                <a href="/"><span class="nav-icon"><i class="fa fa-home"></i></span><span
+                        class="nav-text">Home</span></a>
+            </li>
+            <li class="team-button">
+                <a href="/team/"><span class="nav-icon"><i class="fa fa-user"></i></span><span
+                        class="nav-text">Team</span></a>
+            </li>
+            <li class="publication-button">
+                <a href="/publications/"><span class="nav-icon"><i class="fa fa-book"></i></span><span
+                        class="nav-text">Publications</span></a>
+            </li>
+            
+            <!-- <li class="project-button">
+                <a href="/tools/"><span class="nav-icon"><i class="fa fa-cog"></i></span><span
+                        class="nav-text">Tools</span></a>
+            </li> -->
+            <!--<li class="download-button">
+              <a href="/software/"><span class="nav-icon"><i class="fa fa-download"></i></span><span class="nav-text">Software</span></a>
+            </li> -->
+
+            <!--<li class="help-button">
+              <a href="http://help.caleydo.org"><span class="nav-icon"><i class="fa fa-question-circle"></i></span><span class="nav-text">Help</span></a>
+            </li> -->
+            <!--<li class="help-button">
+                  <a href="/documentation/"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Docs</span></a>
+              </li>-->
+
+        </ul>
+    </div>
+
+    <div class="logo-subtitle">Part of the Institute of Computer Graphics @ JKU Linz, Austria</div>
+</div>
+
+
+        <header class="project-title">
+    <h1>LineUp: Multi-Attribute Rankings</h1>
+  </header>
+
+  <article class="project-content-main">
+    <h2>LineUp is an interactive technique designed to create, visualize and explore rankings of items based on a set of heterogeneous attributes.</h2>
+    <h1 id="about">About</h1>
+
+<p>Rankings are a popular and universal approach to structuring otherwise unorganized collections of items by computing a rank for each item based on the value of one or more of its attributes. This allows us, for example, to prioritize tasks or to evaluate the performance of products relative to each other.</p>
+
+<p>While the visualization of a ranking itself is straightforward, its interpretation is not, because the rank of an item represents only a summary of a potentially complicated relationship between its attributes and those of the other items. It is also common that alternative rankings exist which need to be compared and analyzed to gain insight into how multiple heterogeneous attributes affect the rankings. Advanced visual exploration tools are needed to make this process efficient.</p>
+
+<p>In our paper we present a comprehensive analysis of requirements for the visualization of multi-attribute rankings. Based on these considerations, we propose LineUp - a novel and scalable visualization technique that uses bar charts. This interactive technique supports the ranking of items based on multiple heterogeneous attributes with different scales and semantics. It enables users to interactively combine attributes and flexibly refine parameters to explore the effect of changes in the attribute combination. This process can be employed to derive actionable insights as to which attributes of an item need to be modified in order for its rank to change.</p>
+
+<p>Additionally, through integration of slope graphs, LineUp can also be used to compare multiple alternative rankings on the same set of items, for example, over time or across different attribute combinations. We evaluate the effectiveness of the proposed multi-attribute visualization technique in a qualitative study. The study shows that users are able to successfully solve complex ranking tasks in a short period of time.</p>
+
+
+    <!---->
+  </article>
+
+  <article class="project-content-aside">
+    <h1>Team Members</h1>
+    <p>
+    <ul class="person-icon-list">
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="">Samuel Gratzl</a><br>Datavisyn GmbH</li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="http://www.gehlenborg.com">Nils Gehlenborg</a><br>Harvard Medical School</li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="http://alexander-lex.net">Alexander Lex</a><br>University of Utah</li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="https://vcg.seas.harvard.edu/people/hanspeter-pfister">Hanspeter Pfister</a><br>Harvard University</li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="http://marc-streit.com">Marc Streit</a><br>Johannes Kepler University Linz</li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="http://hendrik.strobelt.com">Hendrik Strobelt</a><br>Harvard University</li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+      
+    </ul>
+    </p>
+
+    
+
+    
+    <h1>Software</h1>
+    <p>
+      
+      
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    <ul class="release-icon-list">
+      <li><a class="release-icon-list" href="/releases/0_lineup_3_1_1/">LineUp 3.1.1</a><br>14 Jul 2014
+      </li>
+    </ul>
+
+    
+    
+    
+      
+    
+      
+    
+      
+    
+
+    
+    </p>
+    
+
+
+
+
+    
+    <ul class="web-release-icon-list">
+      <li><a href="https://lineup.js.org">LineUp Web Version</a></li>
+    </ul>
+    
+    
+
+
+	 
+	 
+    
+    <p>
+    <ul class="source-icon-list">
+      
+	  <li>
+		
+		<a href="https://github.com/lineupjs/lineupjs/"> LineUp.js (recent web version) </a>
+		
+		<br>Source Code</li>
+	  
+	  <li>
+		
+		<a href="https://github.com/Caleydo/org.caleydo.vis.lineup.demos"> LineUp Demos (original Java version) </a>
+		
+		<br>Source Code</li>
+	  
+	  <li>
+		
+		<a href="https://github.com/Caleydo/org.caleydo.view.lineup"> LineUp View (original Java version) </a>
+		
+		<br>Source Code</li>
+	  
+    </ul>
+    </p>
+    
+
+    
+    <h1>Help</h1>
+
+    <ul class="help-icon-list">
+      <li><a href="http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md#LineUp">LineUp Help</a></li>
+    </ul>
+    
+  </article>
+
+  <article class="project-meta">
+
+    
+    <h1 id="video">Video</h1>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h3>LineUp InfoVis Demonstration Video</h3>   
+    <div class="video">
+      <div class="video-wrapper">
+        <iframe src="//www.youtube.com/embed/iFqCBI4T8ks" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p><a href="http://data.caleydo.org/papers/2013_infovis_lineup.mp4"><i class="fa fa-download"></i> &nbsp; Download video</a><p/>
+    </div>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <h3>Taggle Demonstration Video</h3>   
+    <div class="video">
+      <div class="video-wrapper">
+        <iframe src="//www.youtube.com/embed/t50KgQKK8EQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p><a href="http://data.caleydo.org/papers/2019_sage_infovis_taggle.mp4"><i class="fa fa-download"></i> &nbsp; Download video</a><p/>
+    </div>    
+    
+    
+    
+    
+
+
+    
+    <h1 id="publications">Publications</h1>
+
+    <p>
+    <ul class="publication-icon-list">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <li><a href="/publications/2013_infovis_lineup/">LineUp: Visual Analysis of Multi-Attribute Rankings</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <li><a href="/publications/2019_sage_infovis_taggle/">Taggle: Combining Overview and Details in Tabular Data Visualizations</a></li>
+      
+      
+      
+    </ul>
+    </p>
+
+
+    
+
+  </article>
+
+
+      <footer>
+  <div class="footer-content">
+    <div class="footer-list-social">
+      <ul>
+          
+          <li>
+            <a href="mailto:contact@caleydo.org">
+              <i class="fa fa-lg fa-envelope-o"></i>
+              <span class="footer-text">Email</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://facebook.com/pages/Caleydo/110550618994500">
+              <i class="fa fa-lg fa-facebook"></i>
+              <span class="footer-text">Facebook</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/caleydo_org">
+              <i class="fa fa-lg fa-twitter"></i>
+              <span class="footer-text">Twitter</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://www.youtube.com/user/caleydotugraz">
+              <i class="fa fa-lg fa-youtube"></i>
+              <span class="footer-text">YouTube</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/caleydo">
+              <i class="fa fa-lg fa-github"></i>
+              <span class="footer-text">GitHub</span>
+            </a>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-disclaimer">
+      <p>
+        Caleydo is a joint project of
+      </p>
+    </div>
+    <div class="footer-list-institutions">
+      <ul>
+        
+          <li>
+            <a href="https://compbio.med.harvard.edu"><img class="institution-logo" src="/assets/images/logos/harvard-medical-school.png" alt="https://compbio.med.harvard.edu"></a>
+          </li>
+        
+          <li>
+            <a href="https://www.cg.jku.at"><img class="institution-logo" src="/assets/images/logos/johannes-kepler-university-linz.png" alt="https://www.cg.jku.at"></a>
+          </li>
+        
+          <li>
+            <a href="https://vdl.sci.utah.edu/"><img class="institution-logo" src="/assets/images/logos/utah.png" alt="https://vdl.sci.utah.edu/"></a>
+          </li>
+        
+      </ul>
+    </div>
+ </div>
+
+
+  <div class="footer-content">
+    <span class="footer-logo">
+      <a href="/">
+        <img class="logo-footer-svg" src="/assets/images/logos/caleydo_c.svg" alt="Caleydo Logo">
+      </a>
+    </span>
+    <div class="footer-disclaimer">
+      <p>
+        Copyright &copy; 2019 The Caleydo Team. All content on this website is licensed under the <br />
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY)</a>. Copyright of the linked papers is with the publishers.
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+    </div>
+
+    
+    <!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45998043-1', 'auto');
+    ga('send', 'pageview');
+
+
+
+    (function (){
+        var links = document.getElementsByTagName('a');
+        var myLink = null;
+        var startWith = null;
+
+        for(var i = 0; i < links.length; ++i) {
+            myLink = links[i];
+
+            startWith = myLink.getAttribute('href').slice(0, 1);
+
+            if (startWith!="/" && startWith!="#"){
+                addListener(myLink,'mousedown',function(){
+
+                    console.log("a:", this.getAttribute('href'))
+                    ga('send', 'event', 'link', 'click', this.getAttribute('href'));
+
+                })
+            }
+
+        }
+    })();
+
+
+
+    /**
+     * Utility to wrap the different behaviors between W3C-compliant browsers
+     * and IE when adding event handlers.
+     *
+     * @param {Object} element Object on which to attach the event listener.
+     * @param {string} type A string representing the event type to listen for
+     *     (e.g. load, click, etc.).
+     * @param {function()} callback The function that receives the notification.
+     */
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+
+
+
+
+</script>
+<!-- End Google Analytics -->
+     
+    </body>
+</html>

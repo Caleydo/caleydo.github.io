@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+ <meta charset="utf-8">
+<title>Caleydo: Connecting Pathways with Gene Expression </title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Caleydo: Visualization for BioMedicine.">
+<link rel="canonical" href="http://localhost:4000/publications/2009_bioinformatics_caleydo/">
+
+<!-- Custom Fonts -->
+<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Patua+One|Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<!-- Custom CSS -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+ <!-- metadata for link preview  -->
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Caleydo: Connecting Pathways with Gene Expression ">
+  <meta itemprop="description" content=" Summary: Understanding the relationships between pathways and the altered expression of their components in disease conditions can be addressed in a visual data analysis process. Caleydo uses novel visualization techniques to support life science experts in their analysis of gene expression data in the context of pathways and functions of individual genes. Pathways and gene expression visualizations are placed in a 3D scene where selected entities (i.e. genes) are visually connected. This allows Caleydo to seamlessly integrate interactive gene expression visualization with cross-database pathway exploration. Availability: The Caleydo visualization framework is freely available on www.caleydo.org for non-commercial use. It runs on Windows and Linux and requires a 3D capable graphics card.">
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@caleydo_org">
+  <meta name="twitter:title" content="Caleydo: Connecting Pathways with Gene Expression ">
+  <meta name="twitter:description" content=" Summary: Understanding the relationships between pathways and the altered expression of their components in disease conditions can be addressed in a visual data analysis process. Caleydo uses novel visualization techniques to support life science experts in their analysis of gene expression data in the context of pathways and functions of individual genes. Pathways and gene expression visualizations are placed in a 3D scene where selected entities (i.e. genes) are visually connected. This allows Caleydo to seamlessly integrate interactive gene expression visualization with cross-database pathway exploration. Availability: The Caleydo visualization framework is freely available on www.caleydo.org for non-commercial use. It runs on Windows and Linux and requires a 3D capable graphics card.">
+  <meta name="twitter:creator" content="@caleydo_org">
+  
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Caleydo: Connecting Pathways with Gene Expression " />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://localhost:4000/publications/2009_bioinformatics_caleydo/" />
+  <meta property="og:description" content=" Summary: Understanding the relationships between pathways and the altered expression of their components in disease conditions can be addressed in a visual data analysis process. Caleydo uses novel visualization techniques to support life science experts in their analysis of gene expression data in the context of pathways and functions of individual genes. Pathways and gene expression visualizations are placed in a 3D scene where selected entities (i.e. genes) are visually connected. This allows Caleydo to seamlessly integrate interactive gene expression visualization with cross-database pathway exploration. Availability: The Caleydo visualization framework is freely available on www.caleydo.org for non-commercial use. It runs on Windows and Linux and requires a 3D capable graphics card." />
+  
+
+
+</head>
+
+
+    <body>
+    <div class="wrap">
+      <div class="navigation">
+    <div class="logo">
+        <a href="/">
+            JKU Visual Data Science Group
+            <!-- <img class="logo-header-svg" src="/assets/images/logos/caleydo.svg" alt="Caleydo Logo"> -->
+        </a>
+    </div>
+
+    <div class="navigation-buttons">
+        <ul>
+            <li class="home-button">
+                <a href="/"><span class="nav-icon"><i class="fa fa-home"></i></span><span
+                        class="nav-text">Home</span></a>
+            </li>
+            <li class="team-button">
+                <a href="/team/"><span class="nav-icon"><i class="fa fa-user"></i></span><span
+                        class="nav-text">Team</span></a>
+            </li>
+            <li class="publication-button">
+                <a href="/publications/"><span class="nav-icon"><i class="fa fa-book"></i></span><span
+                        class="nav-text">Publications</span></a>
+            </li>
+            
+            <!-- <li class="project-button">
+                <a href="/tools/"><span class="nav-icon"><i class="fa fa-cog"></i></span><span
+                        class="nav-text">Tools</span></a>
+            </li> -->
+            <!--<li class="download-button">
+              <a href="/software/"><span class="nav-icon"><i class="fa fa-download"></i></span><span class="nav-text">Software</span></a>
+            </li> -->
+
+            <!--<li class="help-button">
+              <a href="http://help.caleydo.org"><span class="nav-icon"><i class="fa fa-question-circle"></i></span><span class="nav-text">Help</span></a>
+            </li> -->
+            <!--<li class="help-button">
+                  <a href="/documentation/"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Docs</span></a>
+              </li>-->
+
+        </ul>
+    </div>
+
+    <div class="logo-subtitle">Part of the Institute of Computer Graphics @ JKU Linz, Austria</div>
+</div>
+
+
+      <div class="publication">
+
+  <header class="publication-title">
+    <h1>Caleydo: Connecting Pathways with Gene Expression </h1>
+  </header>
+
+  
+
+  
+
+
+  <article class="publication-content-main">
+
+    
+
+
+
+    <h1>Abstract</h1>
+     <p><b>Summary:</b> Understanding the relationships between pathways and the altered expression of their components in disease conditions can be addressed in a visual data analysis process. Caleydo uses novel visualization techniques to support life science experts in their analysis of gene expression data in the context of pathways and functions of individual genes. Pathways and gene expression visualizations are placed in a 3D scene where selected entities (i.e. genes) are visually connected. This allows Caleydo to seamlessly integrate interactive gene expression visualization with cross-database pathway exploration.</p> <p><b>Availability:</b> The Caleydo visualization framework is freely available on www.caleydo.org for non-commercial use. It runs on Windows and Linux and requires a 3D capable graphics card.</p>
+
+
+
+      <h1>Citation</h1>
+    <div class="citation">
+      <p>
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              <a href="http://marc-streit.com">Marc&nbsp;Streit</a>, 
+              
+            
+        
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              <a href="http://alexander-lex.net">Alexander&nbsp;Lex</a>, 
+              
+            
+        
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        Michael Kalkusch, 
+        
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        Kurt Zatloukal, 
+        
+        
+        
+          
+            
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              <a href="http://www.icg.tu-graz.ac.at/Members/schmalstieg/">Dieter&nbsp;Schmalstieg</a>
+              
+            
+        
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+              
+        
+        
+        
+
+
+        <br/>
+        <span class="paper-title">
+        
+          <b><a href="http://data.caleydo.org/papers/2009_bioinformatics_caleydo.pdf">Caleydo: Connecting Pathways with Gene Expression </a></b>
+          
+          </span><br/>
+        
+
+        <span class="paper-citation">
+        
+          
+          
+
+
+
+          Bioinformatics,  25(20): 2760--2761,   <a href="https://dx.doi.org/10.1093/bioinformatics/btp432">doi:10.1093/bioinformatics/btp432</a>, 2009.
+        
+
+      
+
+      
+      </span>
+    </div>
+
+      <h1>BibTeX</h1>
+
+      <!-- here replacing the curly brackets with html special characters. { is &#123; ; } is &#125; -->
+<pre class="bibtex">
+@article&#123;2009_bioinformatics_caleydo,
+  title = &#123;Caleydo: Connecting Pathways with Gene Expression &#125;,
+  author = &#123;Marc Streit and Alexander Lex and Michael Kalkusch and Kurt Zatloukal and Dieter Schmalstieg&#125;,
+  journal = &#123;Bioinformatics&#125;,
+  doi = &#123;10.1093/bioinformatics/btp432&#125;,
+  volume = &#123;25&#125;,
+  number = &#123;20&#125;,
+  pages = &#123;2760--2761&#125;,
+  year = &#123;2009&#125;
+}
+</pre>
+
+
+    <!-- main markdown content -->
+    
+
+  </article>
+
+  <article class="publication-content-aside">
+    
+
+    
+
+
+    <h1>Resources</h1>
+    <ul>
+    
+
+    
+    <li>
+      <i class="fa fa-download"></i> &nbsp;<a href="http://data.caleydo.org/papers/2009_bioinformatics_caleydo.pdf">Paper (PDF)</a>
+    </li>
+    
+    
+    
+
+    
+    </ul>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  </article>
+
+
+  <article class="publication-meta">
+
+  </article>
+
+  <article class="publication-resources">
+  </article>
+</div>
+
+
+      <footer>
+  <div class="footer-content">
+    <div class="footer-list-social">
+      <ul>
+          
+          <li>
+            <a href="mailto:contact@caleydo.org">
+              <i class="fa fa-lg fa-envelope-o"></i>
+              <span class="footer-text">Email</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://facebook.com/pages/Caleydo/110550618994500">
+              <i class="fa fa-lg fa-facebook"></i>
+              <span class="footer-text">Facebook</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/caleydo_org">
+              <i class="fa fa-lg fa-twitter"></i>
+              <span class="footer-text">Twitter</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://www.youtube.com/user/caleydotugraz">
+              <i class="fa fa-lg fa-youtube"></i>
+              <span class="footer-text">YouTube</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/caleydo">
+              <i class="fa fa-lg fa-github"></i>
+              <span class="footer-text">GitHub</span>
+            </a>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-disclaimer">
+      <p>
+        Caleydo is a joint project of
+      </p>
+    </div>
+    <div class="footer-list-institutions">
+      <ul>
+        
+          <li>
+            <a href="https://compbio.med.harvard.edu"><img class="institution-logo" src="/assets/images/logos/harvard-medical-school.png" alt="https://compbio.med.harvard.edu"></a>
+          </li>
+        
+          <li>
+            <a href="https://www.cg.jku.at"><img class="institution-logo" src="/assets/images/logos/johannes-kepler-university-linz.png" alt="https://www.cg.jku.at"></a>
+          </li>
+        
+          <li>
+            <a href="https://vdl.sci.utah.edu/"><img class="institution-logo" src="/assets/images/logos/utah.png" alt="https://vdl.sci.utah.edu/"></a>
+          </li>
+        
+      </ul>
+    </div>
+ </div>
+
+
+  <div class="footer-content">
+    <span class="footer-logo">
+      <a href="/">
+        <img class="logo-footer-svg" src="/assets/images/logos/caleydo_c.svg" alt="Caleydo Logo">
+      </a>
+    </span>
+    <div class="footer-disclaimer">
+      <p>
+        Copyright &copy; 2019 The Caleydo Team. All content on this website is licensed under the <br />
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY)</a>. Copyright of the linked papers is with the publishers.
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+    </div>
+
+    
+    <!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45998043-1', 'auto');
+    ga('send', 'pageview');
+
+
+
+    (function (){
+        var links = document.getElementsByTagName('a');
+        var myLink = null;
+        var startWith = null;
+
+        for(var i = 0; i < links.length; ++i) {
+            myLink = links[i];
+
+            startWith = myLink.getAttribute('href').slice(0, 1);
+
+            if (startWith!="/" && startWith!="#"){
+                addListener(myLink,'mousedown',function(){
+
+                    console.log("a:", this.getAttribute('href'))
+                    ga('send', 'event', 'link', 'click', this.getAttribute('href'));
+
+                })
+            }
+
+        }
+    })();
+
+
+
+    /**
+     * Utility to wrap the different behaviors between W3C-compliant browsers
+     * and IE when adding event handlers.
+     *
+     * @param {Object} element Object on which to attach the event listener.
+     * @param {string} type A string representing the event type to listen for
+     *     (e.g. load, click, etc.).
+     * @param {function()} callback The function that receives the notification.
+     */
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+
+
+
+
+</script>
+<!-- End Google Analytics -->
+     
+    </body>
+</html>

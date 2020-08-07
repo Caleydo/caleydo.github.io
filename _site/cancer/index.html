@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+ <meta charset="utf-8">
+<title>Cancer Analysis and Visualization</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Caleydo: Visualization for BioMedicine.">
+<link rel="canonical" href="http://localhost:4000/cancer/">
+
+<!-- Custom Fonts -->
+<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Patua+One|Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<!-- Custom CSS -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+
+<!-- Fav and touch icons -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+
+
+</head>
+
+
+    <body>
+    <div class="wrap">
+      <div class="navigation">
+    <div class="logo">
+        <a href="/">
+            JKU Visual Data Science Group
+            <!-- <img class="logo-header-svg" src="/assets/images/logos/caleydo.svg" alt="Caleydo Logo"> -->
+        </a>
+    </div>
+
+    <div class="navigation-buttons">
+        <ul>
+            <li class="home-button">
+                <a href="/"><span class="nav-icon"><i class="fa fa-home"></i></span><span
+                        class="nav-text">Home</span></a>
+            </li>
+            <li class="team-button">
+                <a href="/team/"><span class="nav-icon"><i class="fa fa-user"></i></span><span
+                        class="nav-text">Team</span></a>
+            </li>
+            <li class="publication-button">
+                <a href="/publications/"><span class="nav-icon"><i class="fa fa-book"></i></span><span
+                        class="nav-text">Publications</span></a>
+            </li>
+            
+            <!-- <li class="project-button">
+                <a href="/tools/"><span class="nav-icon"><i class="fa fa-cog"></i></span><span
+                        class="nav-text">Tools</span></a>
+            </li> -->
+            <!--<li class="download-button">
+              <a href="/software/"><span class="nav-icon"><i class="fa fa-download"></i></span><span class="nav-text">Software</span></a>
+            </li> -->
+
+            <!--<li class="help-button">
+              <a href="http://help.caleydo.org"><span class="nav-icon"><i class="fa fa-question-circle"></i></span><span class="nav-text">Help</span></a>
+            </li> -->
+            <!--<li class="help-button">
+                  <a href="/documentation/"><span class="nav-icon"><i class="fa fa-book"></i></span><span class="nav-text">Docs</span></a>
+              </li>-->
+
+        </ul>
+    </div>
+
+    <div class="logo-subtitle">Part of the Institute of Computer Graphics @ JKU Linz, Austria</div>
+</div>
+
+
+      <header class="project-title">
+  <h1>Cancer Analysis and Visualization</h1>
+</header>
+
+<article class="project-content-main">
+  <h2></h2>
+  
+<p>Caleydo provides a suite of tools for the analysis of Cancer data. We maintain and develop tools for analyzing cancer subtypes (StratomeX), visualizing genomic data in matrices (Domino), biological networks in the context of cancer data (Entourage, Pathfinder), and alternative splicing based on mRNA-seq data (Vials).</p>
+
+<p><img style="float: right; padding-left: 5px; width: 400px" src="/assets/images/themes//tcga_import.png" />
+Caleydo is currently transitioning from a standalone software tool that you had to download and install, to a web-based visualization platform. At the end of the transition period, we envision an <strong>integrated visual analysis paltform</strong> that also <strong>provides access to all major public cancer datasets</strong> including <a href="https://cancergenome.nih.gov/">TCGA</a>.</p>
+
+<p>At the moment, our standalone software provides access to all TCGA datasets published through the <a href="https://gdac.broadinstitute.org/">BROAD Firehose Analysis pipeline</a> (see Figure on the right). Some of our web-based tools also already provide access to selected TCGA datasets.</p>
+
+<h2 id="cancer-subtype-analysis">Cancer Subtype Analysis</h2>
+
+<p><img align="right" src="/assets/images/projects/stratomex_basic.png" alt="Basic StratomeX" width="300px" /></p>
+
+<p>Identification and characterization cancer subtypes can lead to refined therapeutic targeting, which is an important step towards improved patient outcomes. StratomeX, our integrated visual analysis tool, can be used to discover subtypes and suggest molecular differences relevant for therapeutic approaches. StratomeX allows analysts to explore various stratifications derived through various means in the context of the source data. The Figure on the right shows the relationship of mRNA clusters in the TCGA GBM dataset to the copy number alterations in EGFR. We can see that cluster three (orange highlight) strongly correlates with a high-level amplification of EGFR.</p>
+
+<p>StratomeX also enables the analysis of clinical data in this context: it is made to identify confounding factors of stratifications based on molecular data, e.g., to ensure that the differences are not only driven by tumor staging. It also allows analysts to judge patient outcomes by comparing, e.g., survival data for each subtype. Finally, StratomeX also visualizes over-representation in pathways.</p>
+
+<p><img src="/assets/images/projects/stratomex_explained.png" alt="StratomeX explained" /></p>
+
+<p>StratomeX also provides an <strong>advanced query and data selection interface</strong>. It enables analysts to ask specific questions, such as <em>Which other stratifications are similar to the selected one?</em>, or <em>Is there a pathway that is enriched for this patient group?</em>. A rich set of algorithms calculate rankings of potential matching datasets and stratifications, which are then presented using the <a href="/tools/lineup/">LineUp</a> interface.</p>
+
+<p>StratomeX is currently available as a standalone tool and as a web-based tool. For more information about StratomeX visit the <a href="/tools/stratomex/">tool page</a>, visit the <a href="http://help.caleydo.org/3.1/index.html#!views/stratomex/stratomex.md">Help Pages</a> or watch the instructional videos below.</p>
+
+<h2 id="biological-networks">Biological Networks</h2>
+
+<h2 id="visualizing-alternative-splicing">Visualizing Alternative Splicing</h2>
+
+<h2 id="visualizing-genomic-matrices">Visualizing Genomic Matrices</h2>
+
+
+  <!---->
+</article>
+
+<article class="project-content-aside">
+
+
+   <h1>Tools</h1>
+
+  <ul class="project-icon-list">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/tools/pathways/">Entourage & enRoute</a><br>Experimental Data in Pathways</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/tools/domino/">Domino</a><br>Exploring Subsets of Tabular Datasets</li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/tools/stratomex/">StratomeX</a><br>Genomic Stratification of Diseases</li>
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+
+
+  
+  <h1>Publications</h1>
+
+  <p>
+  <ul class="publication-icon-list">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/publications/2014_nm_stratomex/">Guided Visual Exploration of Genomic Stratifications in Cancer</a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/publications/2014_cga_characterizing/">Characterizing Cancer Subtypes using the Dual Analysis Approach in Caleydo StratomeX</a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/publications/2012_eurovis_stratomex/">StratomeX: Visual Analysis of Large-Scale Heterogeneous Genomics Data for Cancer Subtype Characterization</a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/publications/2011_infovis_visbricks/">VisBricks: Multiform Visualization of Large, Inhomogeneous Data </a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/publications/2010_infovis_matchmaker/">Comparative Analysis of Multidimensional, Quantitative Data </a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+  </p>
+  
+
+
+
+</article>
+
+<article class="project-meta">
+
+
+
+
+
+</article>
+
+
+      <footer>
+  <div class="footer-content">
+    <div class="footer-list-social">
+      <ul>
+          
+          <li>
+            <a href="mailto:contact@caleydo.org">
+              <i class="fa fa-lg fa-envelope-o"></i>
+              <span class="footer-text">Email</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://facebook.com/pages/Caleydo/110550618994500">
+              <i class="fa fa-lg fa-facebook"></i>
+              <span class="footer-text">Facebook</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/caleydo_org">
+              <i class="fa fa-lg fa-twitter"></i>
+              <span class="footer-text">Twitter</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://www.youtube.com/user/caleydotugraz">
+              <i class="fa fa-lg fa-youtube"></i>
+              <span class="footer-text">YouTube</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://github.com/caleydo">
+              <i class="fa fa-lg fa-github"></i>
+              <span class="footer-text">GitHub</span>
+            </a>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <div class="footer-disclaimer">
+      <p>
+        Caleydo is a joint project of
+      </p>
+    </div>
+    <div class="footer-list-institutions">
+      <ul>
+        
+          <li>
+            <a href="https://compbio.med.harvard.edu"><img class="institution-logo" src="/assets/images/logos/harvard-medical-school.png" alt="https://compbio.med.harvard.edu"></a>
+          </li>
+        
+          <li>
+            <a href="https://www.cg.jku.at"><img class="institution-logo" src="/assets/images/logos/johannes-kepler-university-linz.png" alt="https://www.cg.jku.at"></a>
+          </li>
+        
+          <li>
+            <a href="https://vdl.sci.utah.edu/"><img class="institution-logo" src="/assets/images/logos/utah.png" alt="https://vdl.sci.utah.edu/"></a>
+          </li>
+        
+      </ul>
+    </div>
+ </div>
+
+
+  <div class="footer-content">
+    <span class="footer-logo">
+      <a href="/">
+        <img class="logo-footer-svg" src="/assets/images/logos/caleydo_c.svg" alt="Caleydo Logo">
+      </a>
+    </span>
+    <div class="footer-disclaimer">
+      <p>
+        Copyright &copy; 2019 The Caleydo Team. All content on this website is licensed under the <br />
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY)</a>. Copyright of the linked papers is with the publishers.
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+    </div>
+
+    
+    <!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45998043-1', 'auto');
+    ga('send', 'pageview');
+
+
+
+    (function (){
+        var links = document.getElementsByTagName('a');
+        var myLink = null;
+        var startWith = null;
+
+        for(var i = 0; i < links.length; ++i) {
+            myLink = links[i];
+
+            startWith = myLink.getAttribute('href').slice(0, 1);
+
+            if (startWith!="/" && startWith!="#"){
+                addListener(myLink,'mousedown',function(){
+
+                    console.log("a:", this.getAttribute('href'))
+                    ga('send', 'event', 'link', 'click', this.getAttribute('href'));
+
+                })
+            }
+
+        }
+    })();
+
+
+
+    /**
+     * Utility to wrap the different behaviors between W3C-compliant browsers
+     * and IE when adding event handlers.
+     *
+     * @param {Object} element Object on which to attach the event listener.
+     * @param {string} type A string representing the event type to listen for
+     *     (e.g. load, click, etc.).
+     * @param {function()} callback The function that receives the notification.
+     */
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+
+
+
+
+</script>
+<!-- End Google Analytics -->
+     
+    </body>
+</html>
