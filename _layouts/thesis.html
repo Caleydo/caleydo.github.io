@@ -22,7 +22,8 @@ layout: default
     {% assign known = false %}
     {% for person in site.persons %}
     {% if person.key == page.author %}
-    <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a>
+    <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
+    <!-- <a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a> -->
 
     {% assign known = true %}
 

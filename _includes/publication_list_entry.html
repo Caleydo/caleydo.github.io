@@ -10,7 +10,8 @@
         {% for person in site.persons %}
         {% if author == person.key %}
         <span class="paper-author">
-          <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+          <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+          <!-- <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %} -->
         </span>
         {% assign known = true %}
         {% endif %}

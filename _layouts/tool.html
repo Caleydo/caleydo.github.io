@@ -23,7 +23,8 @@ layout: default
 
       {% for person in site.persons %}
       {% if key == person.key %}
-      <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}</li>
+      <li><a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a><br>{{ person.organization }}</li>     
+      <!-- <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}</li> -->
       {% assign known = true %}
       {% endif %}
       {% endfor %}
@@ -44,7 +45,8 @@ layout: default
       {% assign known = false %}
       {% for person in site.persons %}
       {% if collaborator == person.key %}
-      <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}</li>
+      <li><a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a><br>{{ person.organization }}</li>
+      <!-- <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}</li> -->
       {% assign known = true %}
       {% endif %}
       {% endfor %}

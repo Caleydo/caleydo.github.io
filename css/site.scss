@@ -94,12 +94,12 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 
 .navigation {
   display: block;
-  height: 40px;
-  margin-bottom: 30px; //20 -> 30 //changed by gini
+  // height: 40px; // commented by gini
+  margin-bottom: 20px; 
 
   @include media($small-display) {
     margin-right: 0px;
-    height: 30px;
+    // height: 30px; // commented by gini
   }
 }
 
@@ -124,7 +124,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 
 .logo {
   float: left;
-  margin-left: -34px;
+  // margin-left: -34px; // commented by gini
 
   @include media($small-display) {
     padding-top: 5px;
@@ -133,10 +133,10 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 }
 
 .logo-header-svg {
-  height: 40px;
+  height: 80px; // 40 -> 80 // modified by gini
 
   @include media($small-display) {
-    height: 20px;
+    height: 60px; // 20 -> 60 // modified by gini
   }
 }
 
@@ -199,6 +199,8 @@ p {
   color: $color;
   background-color: tint($color, 95%);
   padding: 5px 0px 0px 0px;
+  display: inline-block; // added by gini
+  // padding-top: 20px; // added by gini
   border-bottom: 4px $color solid;
   margin-bottom: 20px;
 
@@ -940,27 +942,28 @@ footer {
 
 //--- by gini ---
 
-.logo {
-  float: left;
-  margin-left: 5px;
-  font-family: Lato,Helvetica,sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 2em;
-  border-bottom: none;
-  margin-bottom: 0px;
-}
+// .logo {
+//   float: left;
+//   margin-left: 5px;
+//   font-family: Lato,Helvetica,sans-serif;
+//   font-weight: 900;
+//   font-style: normal;
+//   font-size: 2em;
+//   border-bottom: none;
+//   margin-bottom: 0px;
+// }
 
-.logo a {
-  color: #393939;
-}
+// .logo a {
+//   color: #393939;
+// }
 
 .logo-subtitle {
   font-family: Lato,Helvetica,sans-serif;
   font-size: .7em;
   line-height: 16px;
-  padding-top: 48px;
+  // padding-top: 48px;
   margin-left: 6px;
+  clear:both;
 }
 
 

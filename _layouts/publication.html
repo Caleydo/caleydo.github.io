@@ -34,7 +34,9 @@ layout: default
         {% for author in page.authors %}
           {% assign known = false %}
             {% for person in site.persons %}
-              {% if author == person.key %}<a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+              {% if author == person.key %}
+              <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+              <!-- <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %} -->
               {% if author == page.authors.first %} {% assign bibauthors = person.first_name | append: ' ' | append: person.last_name %}
               {% else %}
               {% assign bibauthors = bibauthors | append: ' and ' | append: person.first_name | append: ' ' | append: person.last_name %}

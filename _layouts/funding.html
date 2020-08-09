@@ -61,7 +61,8 @@ layout: default
             {% endfor %}
             {% for person in site.persons %}
               {% if recipient == person.key %}
-                 <a href="{{person.website}}">{{person.first_name}} {{person.last_name}}</a>
+                 <!-- <a href="{{person.website}}">{{person.first_name}} {{person.last_name}}</a> -->
+                 <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
                  {% assign known = true %}
               {% endif %}
             {% endfor %}
