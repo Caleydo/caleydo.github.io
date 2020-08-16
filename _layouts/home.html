@@ -17,7 +17,7 @@
         {% include header.html %}
 
         <header class="home-title">
-            <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+            <h1>{{ page.title | remove: "| Visual Data Science Group" }}</h1>
         </header>
 
         <article class="home-content-main">
@@ -129,12 +129,17 @@
             <h1>Recent Publications</h1>
             <ul class="publication-icon-list">
                 {% assign sorted_publications = (site.publications | sort: 'year' %}
-                {% for publication in sorted_publications reversed%} <!-- add "limit: 5" does not quite work... -->
-                {% if publication.year > 2018 %}
-                <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.journal}}{{publication.bib.journal}},
-                    {{publication.year}}
-                </li>
-                {% endif %}
+                <!-- {% assign max_pubs = 5 %} -->
+                {% for publication in sorted_publications reversed %} <!-- add "limit: 5" does not quite work... -->
+                    {% if publication.year > 2018 %}
+                    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.journal}}{{publication.bib.journal}},
+                        {{publication.year}}
+                    </li>
+                    {% endif %}
+                    <!-- {% if max_pubs <= 0 %}
+                        {% break %}
+                    {% endif %}
+                    {% assign max_pubs = max_pubs - 1 %} -->
                 {% endfor %}
             </ul>
 

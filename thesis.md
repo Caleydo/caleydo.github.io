@@ -1,6 +1,6 @@
 ---
 layout: thesis
-title: Thesis | Caleydo
+title: Thesis | Visual Data Science Group
 tag: thesis
 permalink: /thesis/
 ---

@@ -18,7 +18,7 @@ gem install bundler
 # Fetch dependencies:
 bundle install
 # Start server:
-bundle exec jekyll serve
+bundle exec jekyll serve --baseurl ""
 # Get the most recent version of 'github-pages' gem:
 bundle update
 ```

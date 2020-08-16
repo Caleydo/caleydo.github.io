@@ -4,7 +4,7 @@ layout: default
 <div class="publication">
 
   <header class="publication-title">
-    <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+    <h1>{{ page.title | remove: "| Visual Data Science Group" }}</h1>
   </header>
 
   {% assign paper_content_url = site.paper_content_url %}
@@ -35,7 +35,11 @@ layout: default
           {% assign known = false %}
             {% for person in site.persons %}
               {% if author == person.key %}
-              <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+              {% if person.cg_website %}
+                  <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+              {% else %}
+                  <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %}
+              {% endif %}
               <!-- <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != page.authors.last%}, {% endif %} -->
               {% if author == page.authors.first %} {% assign bibauthors = person.first_name | append: ' ' | append: person.last_name %}
               {% else %}

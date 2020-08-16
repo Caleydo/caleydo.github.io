@@ -2,7 +2,7 @@
 layout: default
 ---
   <header class="project-title">
-    <h1>{{page.name}}: {{ page.title | remove: "| Caleydo" }}</h1>
+    <h1>{{page.name}}: {{ page.title | remove: "| Visual Data Science Group" }}</h1>
   </header>
 
   <article class="project-content-main">
@@ -23,7 +23,14 @@ layout: default
 
       {% for person in site.persons %}
       {% if key == person.key %}
-      <li><a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a><br>{{ person.organization }}</li>     
+      <li>
+        {% if person.cg_website %}
+            <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+        {% else %}
+            <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+        {% endif %}
+        {{ person.organization }}
+      </li>     
       <!-- <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}</li> -->
       {% assign known = true %}
       {% endif %}
@@ -45,7 +52,14 @@ layout: default
       {% assign known = false %}
       {% for person in site.persons %}
       {% if collaborator == person.key %}
-      <li><a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a><br>{{ person.organization }}</li>
+      <li>
+        {% if person.cg_website %}
+            <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+        {% else %}
+            <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+        {% endif %}
+        {{ person.organization }}
+      </li>
       <!-- <li><a href="{{ person.website }}">{{ person.first_name }} {{ person.last_name }}</a><br>{{ person.organization }}</li> -->
       {% assign known = true %}
       {% endif %}

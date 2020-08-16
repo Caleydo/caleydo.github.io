@@ -2,7 +2,7 @@
 layout: default
 ---
 <header class="publications-title">
-  <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+  <h1>{{ page.title | remove: "| Visual Data Science Group" }}</h1>
 </header>
 
 <article class="publications-content">
@@ -41,7 +41,11 @@ layout: default
       {% assign known = false %}
       {% for person in site.persons %}
       {% if person.key == thesis.author %}
-        <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
+      {% if person.cg_website %}
+          <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+      {% else %}
+          <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+      {% endif %}
 			  <!-- {% if person.website %}
 			  <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
 			  {% else %}

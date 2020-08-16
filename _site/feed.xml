@@ -79,8 +79,8 @@
     <description>Caleydo: Visualization for BioMedicine.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 09 Aug 2020 21:49:15 +0200</pubDate>
-    <lastBuildDate>Sun, 09 Aug 2020 21:49:15 +0200</lastBuildDate>
+    <pubDate>Sun, 16 Aug 2020 10:29:51 +0200</pubDate>
+    <lastBuildDate>Sun, 16 Aug 2020 10:29:51 +0200</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -273,24 +273,16 @@
   </div>
 
   <div class="footer-content">
-    <div class="footer-disclaimer">
+    <!-- <div class="footer-disclaimer">
       <p>
         Caleydo is a joint project of
       </p>
-    </div>
+    </div> -->
     <div class="footer-list-institutions">
       <ul>
         
           <li>
-            <a href="https://compbio.med.harvard.edu"><img class="institution-logo" src="/assets/images/logos/harvard-medical-school.png" alt="https://compbio.med.harvard.edu"></a>
-          </li>
-        
-          <li>
             <a href="https://www.cg.jku.at"><img class="institution-logo" src="/assets/images/logos/johannes-kepler-university-linz.png" alt="https://www.cg.jku.at"></a>
-          </li>
-        
-          <li>
-            <a href="https://vdl.sci.utah.edu/"><img class="institution-logo" src="/assets/images/logos/utah.png" alt="https://vdl.sci.utah.edu/"></a>
           </li>
         
       </ul>

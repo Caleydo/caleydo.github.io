@@ -1,6 +1,6 @@
 ---
 layout: acknowledgements
-title: Acknowledgements | Caleydo
+title: Acknowledgements | Visual Data Science Group
 tag: acknowledgements
 permalink: /acknowledgements/
 ---

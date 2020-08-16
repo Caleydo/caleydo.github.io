@@ -4,7 +4,7 @@ layout: default
 <div class="funding">
 
   <header class="funding-title">
-    <h1>{{ page.title | remove: "| Caleydo" }}</h1>
+    <h1>{{ page.title | remove: "| Visual Data Science Group" }}</h1>
   </header>
 
   <article class="funding-content">
@@ -62,7 +62,11 @@ layout: default
             {% for person in site.persons %}
               {% if recipient == person.key %}
                  <!-- <a href="{{person.website}}">{{person.first_name}} {{person.last_name}}</a> -->
-                 <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
+                  {% if person.cg_website %}
+                      <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+                  {% else %}
+                      <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+                  {% endif %}
                  {% assign known = true %}
               {% endif %}
             {% endfor %}

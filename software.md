@@ -1,6 +1,6 @@
 ---
 layout: software
-title: Software | Caleydo
+title: Software | Visual Data Science Group
 tag: software
 permalink: /software/
 softwares:

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact | Caleydo
+title: Contact | Visual Data Science Group
 permalink: /contact/
 ---
 

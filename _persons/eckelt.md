@@ -3,6 +3,7 @@ layout: team-member
 first_name: Klaus
 last_name: Eckelt
 title: "Klaus Eckelt"
+cg_website: "https://www.jku.at/en/institute-of-computer-graphics/about-us/team/klaus-eckelt/" #remove to show person directly on data-vis page
 key: eckelt
 permalink: /persons/eckelt/
 role: core

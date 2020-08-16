@@ -1,6 +1,6 @@
 ---
 layout: web
-title: Web | Caleydo
+title: Web | Visual Data Science Group
 weight: 1
 permalink: /web/
 ---

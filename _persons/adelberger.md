@@ -3,6 +3,7 @@ layout: team-member
 first_name: Patrick
 last_name: Adelberger
 title: "Patrick Adelberger"
+cg_website: "https://www.jku.at/en/institute-of-computer-graphics/about-us/team/di-patrick-adelberger/" #remove to show person directly on data-vis page
 key: adelberger
 permalink: /persons/adelberger/
 role: core

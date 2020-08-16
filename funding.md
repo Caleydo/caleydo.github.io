@@ -1,6 +1,6 @@
 ---
 layout: funding
-title: Funding | Caleydo
+title: Funding | Visual Data Science Group
 tag: funding
 permalink: /funding/
 ---
