@@ -964,6 +964,8 @@ footer {
   // padding-top: 48px;
   margin-left: 6px;
   clear:both;
+  
+  @include dotted-link-underline;
 }
 
 

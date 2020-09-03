@@ -17,7 +17,8 @@
         {% include header.html %}
 
         <header class="home-title">
-            <h1>{{ page.title | remove: "| Visual Data Science Group" }}</h1>
+            <h1>Welcome</h1>
+            <!-- <h1>{{ page.title | remove: "| Visual Data Science Group" }}</h1> -->
         </header>
 
         <article class="home-content-main">
@@ -146,14 +147,14 @@
         </article>
 
         <article class="home-content-aside">
-            <h1>Partners</h1>
+            <h1>Collaborators</h1>
             <ul class="institution-icon-list">
                 {% for institution in site.institutions reversed %}
                 <li><a href="{{ institution.website }}">{{ institution.name }}</a><br>{{ institution.location }}</li>
                 {% endfor %}
             </ul>
 
-            <h1>Tools</h1>
+            <!-- <h1>Tools</h1>
             <ul class="project-icon-list">
                 {% assign sorted_projects = (site.tools | sort: 'order' %}
                 {%for project in sorted_projects %}
@@ -161,7 +162,7 @@
                 <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
                 {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
 
 
             <!--  <h1>Funding</h1>

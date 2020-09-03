@@ -8,7 +8,7 @@ We are happy to receive your feedback!
 
 ### Email
 
-[contact@caleydo.org ](mailto:contact@caleydo.org)
+[marc.streit@jku.at](mailto:marc.streit@jku.at)
 
 ### Street Address
 
