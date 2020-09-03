@@ -5,7 +5,7 @@ last_name: Pfister
 title: "Hanspeter Pfister"
 key: pfister
 permalink: /persons/pfister/
-role: alumni
+role: alumniOld
 email: pfister@seas.harvard.edu
 image: /assets/images/team/pfister.jpg
 organization: Harvard University

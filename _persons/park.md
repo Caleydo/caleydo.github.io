@@ -5,7 +5,7 @@ last_name: Park
 title: "Peter J. Park"
 key: park
 permalink: /persons/park/
-role: alumni
+role: alumniOld
 email: peter_park@harvard.edu
 image: /assets/images/team/park.jpg
 organization: Harvard Medical School

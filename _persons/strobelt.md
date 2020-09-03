@@ -5,7 +5,7 @@ last_name: Strobelt
 title: "Hendrik Strobelt"
 key: strobelt
 permalink: /persons/strobelt/
-role: alumni
+role: alumniOld
 email: hendrik@strobelt.com
 image: /assets/images/team/strobelt.jpg
 organization: Harvard University

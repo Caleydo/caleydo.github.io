@@ -5,7 +5,7 @@ last_name: Partl
 title: "Christian Partl"
 key: partl
 permalink: /persons/partl/
-role: alumni
+role: alumniOld
 email: partl@icg.tugray.at
 image: /assets/images/team/partl.jpg
 organization: Graz University of Technology

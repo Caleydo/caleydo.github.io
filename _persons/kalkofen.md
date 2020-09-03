@@ -5,7 +5,7 @@ last_name: Kalkofen
 title: "Denis Kalkofen"
 key: kalkofen
 permalink: /persons/kalkofen/
-role: alumni
+role: alumniOld
 email: kalkofen@icg.tugraz.at
 image: /assets/images/team/kalkofen.jpg
 organization: Graz University of Technology

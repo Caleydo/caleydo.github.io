@@ -5,7 +5,7 @@ last_name: Schulz
 title: "Hans-Jörg Schulz"
 key: schulz
 permalink: /persons/schulz/
-role: alumni
+role: alumniOld
 email: contact@hjschulz.net
 image: /assets/images/team/schulz.png
 organization: University of Rostock

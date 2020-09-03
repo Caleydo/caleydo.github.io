@@ -5,7 +5,7 @@ last_name: Schmalstieg
 title: "Dieter Schmalstieg"
 key: schmalstieg
 permalink: /persons/schmalstieg/
-role: alumni
+role: alumniOld
 email: schmalstieg@icg.tugraz.at
 image: /assets/images/team/schmalstieg.jpg
 organization: Graz University of Technology
