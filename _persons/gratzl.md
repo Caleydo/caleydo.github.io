@@ -5,10 +5,10 @@ last_name: Gratzl
 title: "Samuel Gratzl"
 key: gratzl
 permalink: /persons/gratzl/
-role: alumni
+role: phdgrad
 email: samuel.gratzl@datavisyn.io
 image: /assets/images/team/gratzl.jpg
 organization: Datavisyn GmbH
-position: 
+position: PhD 2017
 website: 
 ---

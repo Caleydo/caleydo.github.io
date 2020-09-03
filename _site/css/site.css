@@ -384,7 +384,7 @@ pre.terminal code { background-color: #333; }
 @media screen and (min-width: 520px) and (max-width: 1023px) { .nav-text { display: none; } }
 @media screen and (max-width: 519px) { .nav-text { display: none; } }
 
-.navigation { display: block; margin-bottom: 20px; }
+.navigation { display: block; margin-bottom: 5px; }
 @media screen and (max-width: 519px) { .navigation { margin-right: 0px; } }
 
 .navigation-buttons { display: block; float: right; padding-top: 6px; }
@@ -434,6 +434,13 @@ p { padding-left: 5px; }
 .publication-button a:focus, .publication-button a:hover, .publication-button a:active { background-color: #cd8702; color: white; }
 @media screen and (max-width: 519px) { .publication-button { width: 25px; } }
 @media screen and (min-width: 520px) and (max-width: 1023px) { .publication-button { width: 25px; } }
+
+.teaching-button { color: white; font-family: Yantramanav, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; float: left; text-align: center; margin-right: 5px; width: 110px; }
+.teaching-button:last-child { margin-right: 0px; }
+.teaching-button a { display: block; height: 30px; padding-bottom: 5px; padding-top: 3px; color: #eee; border-bottom: 4px #EB0021 solid; background-color: #444; transition-property: background-color, color; transition-duration: 500ms; transition-timing-function: ease; transition-delay: 25ms; }
+.teaching-button a:focus, .teaching-button a:hover, .teaching-button a:active { background-color: #850013; color: white; }
+@media screen and (max-width: 519px) { .teaching-button { width: 25px; } }
+@media screen and (min-width: 520px) and (max-width: 1023px) { .teaching-button { width: 25px; } }
 
 .download-button { color: white; font-family: Yantramanav, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; float: left; text-align: center; margin-right: 5px; width: 110px; }
 .download-button:last-child { margin-right: 0px; }
@@ -505,6 +512,10 @@ p { padding-left: 5px; }
 .publication-title:last-child { margin-right: 0; }
 .publication-title h1 { font-family: Yantramanav, Helvetica, sans-serif; font-weight: 300; font-style: normal; font-size: 2.25em; border-bottom: none; margin-bottom: 0px; }
 .publication-title h1 { font-size: 1.5em; }
+
+.teaching-title { float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; color: #EB0021; background-color: #fef2f4; padding: 5px 0px 0px 0px; display: inline-block; border-bottom: 4px #EB0021 solid; margin-bottom: 20px; }
+.teaching-title:last-child { margin-right: 0; }
+.teaching-title h1 { font-family: Yantramanav, Helvetica, sans-serif; font-weight: 300; font-style: normal; font-size: 2.25em; border-bottom: none; margin-bottom: 0px; }
 
 .download-title { float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; color: #F36229; background-color: #fef7f4; padding: 5px 0px 0px 0px; display: inline-block; border-bottom: 4px #F36229 solid; margin-bottom: 20px; }
 .download-title:last-child { margin-right: 0; }
@@ -959,3 +970,7 @@ ul.contact-list li { padding-left: 0em; padding-bottom: 0.5em; line-height: 1.2e
 ul.project-icon-list { margin: 0; padding: 0; list-style-type: none; }
 
 ul.project-icon-list li { padding-left: 2em; padding-bottom: 0.5em; line-height: 1.2em; vertical-align: top; color: #333; font-family: Lato,Helvetica,sans-serif; font-weight: 400; font-size: .9em; font-style: normal; min-height: 2.5em; }
+
+.linked-members a { color: #444; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
+
+.team-content-right a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }

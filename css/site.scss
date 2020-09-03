@@ -95,7 +95,7 @@ $large-display: new-breakpoint(min-width 1024px $large-display-columns);
 .navigation {
   display: block;
   // height: 40px; // commented by gini
-  margin-bottom: 20px; 
+  margin-bottom: 5px; // 20px; //changed by gini
 
   @include media($small-display) {
     margin-right: 0px;
@@ -178,6 +178,10 @@ p {
 
 .publication-button {
   @include navigation-button($publication-color);
+}
+
+.teaching-button {
+  @include navigation-button($teaching-color);
 }
 
 .download-button {
@@ -264,6 +268,10 @@ p {
 
 .publication-title {
   @include subpage-title($publication-color);
+}
+
+.teaching-title {
+  @include page-title($teaching-color);
 }
 
 .download-title {
@@ -964,7 +972,7 @@ footer {
   // padding-top: 48px;
   margin-left: 6px;
   clear:both;
-  
+
   @include dotted-link-underline;
 }
 
@@ -1049,3 +1057,13 @@ ul.project-icon-list li {
   min-height: 2.5em;
 }
 
+.linked-members a {
+  color: #444;
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.team-content-right{
+  @include dotted-link-underline;
+}

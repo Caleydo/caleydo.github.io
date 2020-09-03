@@ -19,9 +19,9 @@ linkedin: "LinkedIn"
 
 key: streit
 permalink: /persons/streit/
-role: pi
+role: faculty
 email: marc.streit@jku.at
-image: /assets/images/team/streit.jpg
+image: /assets/images/team_colored/streit.jpg
 organization: Johannes Kepler University Linz
 position: Faculty
 website: http://marc-streit.com

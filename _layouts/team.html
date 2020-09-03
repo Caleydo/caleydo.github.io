@@ -8,15 +8,17 @@ layout: default
   </header>
 
   <article class="team-content-left">
-      <h1>Principal Investigators</h1>
+      <h1>Faculty</h1>
 
-      {% include role.html role="pi" %}
+      {% include role.html role="faculty" %}
 
-      <h1>Core Team</h1>
+      <h1>Research Associates & PhD Students</h1>
 
-      {% include role.html role="core" %}
+      {% include role.html role="raPhD" %}
 
 
+      <h1 class="linked-members"><a href="https://www.jku.at/en/institute-of-computer-graphics/about-us/team/" target="_blank">Administration</a></h1>
+      <h1 class="linked-members"><a href="https://www.jku.at/en/institute-of-computer-graphics/about-us/team/" target="_blank">Technical Support</a></h1>
 
      <!-- <h1>Contributors</h1> -->
 
@@ -31,6 +33,14 @@ layout: default
      <h1>Collaborators</h1>
 
       {% include role.html role="collaborator" %} -->
+
+      <h1>Undergraduate Students</h1>
+
+      {% include role.html role="undergrad" %}
+
+      <h1>PhD Graduates</h1>
+
+      {% include role.html role="phdgrad" %}
 
       <h1>Alumni</h1>
 
