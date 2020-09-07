@@ -959,6 +959,8 @@ footer .footer-disclaimer p { text-align: center; font-family: Yantramanav, Helv
 .logo-subtitle { font-family: Lato,Helvetica,sans-serif; font-size: .7em; line-height: 16px; font-weight: 550; margin-left: 6px; clear: both; float: right; margin-top: -35px; margin-bottom: 10px; }
 .logo-subtitle a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
 
+.publications-content { clear: both; }
+
 .portrait-image { height: 180px; float: left; margin-right: 20px; margin-top: 10px; -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; }
 
 .home-content-main { font-family: Lato,Helvetica,sans-serif; font-weight: 400; font-style: normal; font-size: .9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
