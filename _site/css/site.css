@@ -954,7 +954,9 @@ footer .footer-disclaimer p { text-align: center; font-family: Yantramanav, Helv
 
 .award { font-style: italic; color: orange; }
 
-.logo-subtitle { font-family: Lato,Helvetica,sans-serif; font-size: .7em; line-height: 16px; margin-left: 6px; clear: both; }
+.logo { line-height: 0px; }
+
+.logo-subtitle { font-family: Lato,Helvetica,sans-serif; font-size: .7em; line-height: 16px; font-weight: 550; margin-left: 6px; clear: both; float: right; margin-top: -35px; margin-bottom: 10px; }
 .logo-subtitle a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
 
 .portrait-image { height: 180px; float: left; margin-right: 20px; margin-top: 10px; -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; }
@@ -975,4 +977,14 @@ ul.project-icon-list li { padding-left: 2em; padding-bottom: 0.5em; line-height:
 
 .team-content-right a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
 
+.team-member-content-aside ul a { font-weight: 700; }
+
 .institution-icon-list a { line-height: 20px; }
+
+.pub-nav { margin-top: 25px; padding-bottom: 15px; }
+
+.pub-nav ul { list-style-type: none; padding: 0px; }
+
+.pub-nav li { float: left; }
+
+.pub-nav li a { text-align: center; margin-left: 20px; font-weight: 700; font-size: 1.2em; }

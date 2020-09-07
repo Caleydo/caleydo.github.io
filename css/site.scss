@@ -961,6 +961,10 @@ footer {
 //   margin-bottom: 0px;
 // }
 
+.logo {
+  line-height: 0px;
+}
+
 // .logo a {
 //   color: #393939;
 // }
@@ -969,9 +973,14 @@ footer {
   font-family: Lato,Helvetica,sans-serif;
   font-size: .7em;
   line-height: 16px;
+  font-weight: 550;
   // padding-top: 48px;
   margin-left: 6px;
-  clear:both;
+  clear:both; 
+
+  float: right; // remove to have subtitle on left side
+  margin-top: -35px; // remove to have subtitle on left side
+  margin-bottom: 10px; // remove to have subtitle on left side
 
   @include dotted-link-underline;
 }
@@ -1068,6 +1077,32 @@ ul.project-icon-list li {
   @include dotted-link-underline;
 }
 
+.team-member-content-aside ul a{
+  font-weight: 700;
+}
+
 .institution-icon-list a{
   line-height: 20px;
+}
+
+// publication navigation
+.pub-nav{
+  margin-top: 25px;
+  padding-bottom: 15px;
+}
+
+.pub-nav ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+.pub-nav li {
+  float: left;
+}
+
+.pub-nav li a{
+  text-align: center;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 1.2em;
 }

@@ -16,6 +16,9 @@ twitter: "@marc_streit"
 github: "mstreit"
 google_scholar: "Google Scholar"
 linkedin: "LinkedIn"
+cv: "http://data.caleydo.org/team/marc/cv_streit.pdf"
+
+show_pub_nav: true # set this property, if the "team member page" should have a navigation for publications (i.e. if person has many publiations)
 
 key: streit
 permalink: /persons/streit/

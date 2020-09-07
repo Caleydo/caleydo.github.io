@@ -18,9 +18,11 @@ layout: default
     <article class="team-member-content-aside">
 
         <h1>Contact</h1>
+        <p><b>{{ page.first_name }} {{ page.last_name }}</b><br>{{ page.degrees }} </p>
+
         <ul class="contact-list fa-ul">
 
-            <p><b>{{ page.first_name }} {{ page.last_name }}</b><br>{{ page.degrees }} </p>
+            <!-- <p><b>{{ page.first_name }} {{ page.last_name }}</b><br>{{ page.degrees }} </p> -->
 
             {% if page.location %}
             <li><i class="fa-li fa fa-home"></i>
@@ -81,12 +83,36 @@ layout: default
             </li>
             {% endif %}
 
+            {% if page.cv %}
+            <li><i class="fa-li fa fa-file-text-o"></i>
+                <a href="{{ page.cv }}">
+                    Download CV
+                </a>
+            </li>
+            {% endif %}
+
         </ul>
         <br />
 
     </article>
 
     <article class="team-member-content-below">
+
+        {% if page.show_pub_nav %}
+        <div class="pub-nav"> 
+            <ul>
+                <li>
+                    <a href="#journal-papers"><span>Papers</span></a>
+                </li>
+                <li>
+                    <a href="#theses"><span>Theses</span></a>
+                </li>
+                <li>
+                    <a href="#posters"><span>Posters</span></a>
+                </li>
+            </ul>
+        </div>
+        {% endif %}
 
         {% assign member_publications = site.publications | where_exp:"item", 'item.authors contains page.key' %}
 
