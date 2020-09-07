@@ -83,8 +83,8 @@
     <description>Caleydo: Visualization for BioMedicine.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 07 Sep 2020 10:58:51 +0200</pubDate>
-    <lastBuildDate>Mon, 07 Sep 2020 10:58:51 +0200</lastBuildDate>
+    <pubDate>Mon, 07 Sep 2020 11:01:58 +0200</pubDate>
+    <lastBuildDate>Mon, 07 Sep 2020 11:01:58 +0200</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
