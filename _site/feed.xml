@@ -83,8 +83,8 @@
     <description>Caleydo: Visualization for BioMedicine.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 03 Sep 2020 12:26:11 +0200</pubDate>
-    <lastBuildDate>Thu, 03 Sep 2020 12:26:11 +0200</lastBuildDate>
+    <pubDate>Mon, 07 Sep 2020 09:42:57 +0200</pubDate>
+    <lastBuildDate>Mon, 07 Sep 2020 09:42:57 +0200</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -237,18 +237,11 @@
           </li>
           
 
-          <!-- 
-          <li>
-            <a href="https://facebook.com/pages/Caleydo/110550618994500">
-              <i class="fa fa-lg fa-facebook"></i>
-              <span class="footer-text">Facebook</span>
-            </a>
-          </li>
-           -->
+          <!--  -->
 
           
           <li>
-            <a href="https://twitter.com/caleydo_org">
+            <a href="https://twitter.com/marc_streit">
               <i class="fa fa-lg fa-twitter"></i>
               <span class="footer-text">Twitter</span>
             </a>

@@ -2,7 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
 
 $sans-serif-font-family: Yantramanav, Helvetica, sans-serif;
-$serif-font-family: Lora, Helvetica, sans-serif; //Vollkorn, Times, serif;
+// $serif-font-family: Lora, Helvetica, sans-serif; //Vollkorn, Times, serif;
+$serif-font-family: Lato, Helvetica, sans-serif;
 $slab-font-family: Yantramanav, Helvetica, sans-serif;
 
 $page-title-font-family: $sans-serif-font-family;
@@ -17,7 +18,7 @@ $content-title-font-style: normal;
 $page-content-font-family: $serif-font-family;
 $page-content-font-weight: 400;
 $page-content-font-style: normal;
-$page-content-font-size: 1em;
+$page-content-font-size: 0.9em;
 
 $footer-content-font-family: $sans-serif-font-family;
 $footer-content-font-weight: 100;

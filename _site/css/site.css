@@ -530,7 +530,7 @@ p { padding-left: 5px; }
 .docs-title:last-child { margin-right: 0; }
 .docs-title h1 { font-family: Yantramanav, Helvetica, sans-serif; font-weight: 300; font-style: normal; font-size: 2.25em; border-bottom: none; margin-bottom: 0px; }
 
-.project-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; }
+.project-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; }
 @media screen and (max-width: 519px) { .project-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .project-content:last-child { margin-right: 0; } }
 .project-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -540,7 +540,7 @@ p { padding-left: 5px; }
 .project-content .right-icon a { color: inherit; font-size: 0.75em; }
 .project-content:last-child { margin-right: 0; }
 
-.project-content-main { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
+.project-content-main { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
 @media screen and (max-width: 519px) { .project-content-main { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .project-content-main:last-child { margin-right: 0; } }
 .project-content-main ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -550,7 +550,7 @@ p { padding-left: 5px; }
 .project-content-main .right-icon a { color: inherit; font-size: 0.75em; }
 .project-content-main:last-child { margin-right: 0; }
 
-.project-content-aside { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
+.project-content-aside { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
 @media screen and (max-width: 519px) { .project-content-aside { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .project-content-aside:last-child { margin-right: 0; } }
 .project-content-aside ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -560,14 +560,14 @@ p { padding-left: 5px; }
 .project-content-aside .right-icon a { color: inherit; font-size: 0.75em; }
 .project-content-aside:last-child { margin-right: 0; }
 
-.project-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 74.4105871005%; margin-right: 0; }
+.project-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 74.4105871005%; margin-right: 0; }
 @media screen and (max-width: 519px) { .project-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .project-meta:last-child { margin-right: 0; } }
 .project-meta p a { color: #444; position: relative; text-decoration: none; }
 .project-meta p a:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; border-bottom-width: 1px; border-bottom-style: dotted; }
 .project-meta:last-child { margin-right: 0; }
 
-.person-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.person-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .person-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .person-content:last-child { margin-right: 0; } }
 .person-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -576,13 +576,13 @@ p { padding-left: 5px; }
 .person-content .right-icon { float: right; }
 .person-content .right-icon a { color: inherit; font-size: 0.75em; }
 
-.person-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.person-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .person-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .person-meta:last-child { margin-right: 0; } }
 .person-meta p a { color: #444; position: relative; text-decoration: none; }
 .person-meta p a:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; border-bottom-width: 1px; border-bottom-style: dotted; }
 
-.team-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.team-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .team-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .team-content:last-child { margin-right: 0; } }
 .team-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -591,7 +591,7 @@ p { padding-left: 5px; }
 .team-content .right-icon { float: right; }
 .team-content .right-icon a { color: inherit; font-size: 0.75em; }
 
-.team-content-left { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; }
+.team-content-left { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; }
 @media screen and (max-width: 519px) { .team-content-left { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .team-content-left:last-child { margin-right: 0; } }
 .team-content-left ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -601,7 +601,7 @@ p { padding-left: 5px; }
 .team-content-left .right-icon a { color: inherit; font-size: 0.75em; }
 .team-content-left:last-child { margin-right: 0; }
 
-.team-content-right { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; margin-right: 0; }
+.team-content-right { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; margin-right: 0; }
 @media screen and (max-width: 519px) { .team-content-right { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .team-content-right:last-child { margin-right: 0; } }
 .team-content-right ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -611,7 +611,7 @@ p { padding-left: 5px; }
 .team-content-right .right-icon a { color: inherit; font-size: 0.75em; }
 .team-content-right:last-child { margin-right: 0; }
 
-.team-content-bottom { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; }
+.team-content-bottom { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; }
 @media screen and (max-width: 519px) { .team-content-bottom { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .team-content-bottom:last-child { margin-right: 0; } }
 .team-content-bottom ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -621,14 +621,14 @@ p { padding-left: 5px; }
 .team-content-bottom .right-icon a { color: inherit; font-size: 0.75em; }
 .team-content-bottom:last-child { margin-right: 0; }
 
-.team-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; }
+.team-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; }
 @media screen and (max-width: 519px) { .team-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .team-meta:last-child { margin-right: 0; } }
 .team-meta p a { color: #444; position: relative; text-decoration: none; }
 .team-meta p a:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; border-bottom-width: 1px; border-bottom-style: dotted; }
 .team-meta:last-child { margin-right: 0; }
 
-.funding-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.funding-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .funding-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .funding-content:last-child { margin-right: 0; } }
 .funding-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -637,13 +637,13 @@ p { padding-left: 5px; }
 .funding-content .right-icon { float: right; }
 .funding-content .right-icon a { color: inherit; font-size: 0.75em; }
 
-.funding-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.funding-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .funding-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .funding-meta:last-child { margin-right: 0; } }
 .funding-meta p a { color: #444; position: relative; text-decoration: none; }
 .funding-meta p a:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; border-bottom-width: 1px; border-bottom-style: dotted; }
 
-.acknowledgements-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.acknowledgements-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .acknowledgements-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .acknowledgements-content:last-child { margin-right: 0; } }
 .acknowledgements-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -652,13 +652,13 @@ p { padding-left: 5px; }
 .acknowledgements-content .right-icon { float: right; }
 .acknowledgements-content .right-icon a { color: inherit; font-size: 0.75em; }
 
-.acknowledgements-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.acknowledgements-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .acknowledgements-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .acknowledgements-meta:last-child { margin-right: 0; } }
 .acknowledgements-meta p a { color: #444; position: relative; text-decoration: none; }
 .acknowledgements-meta p a:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; border-bottom-width: 1px; border-bottom-style: dotted; }
 
-.home-content-main { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
+.home-content-main { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
 @media screen and (max-width: 519px) { .home-content-main { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .home-content-main:last-child { margin-right: 0; } }
 .home-content-main ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -668,7 +668,7 @@ p { padding-left: 5px; }
 .home-content-main .right-icon a { color: inherit; font-size: 0.75em; }
 .home-content-main:last-child { margin-right: 0; }
 
-.home-content-aside { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
+.home-content-aside { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
 @media screen and (max-width: 519px) { .home-content-aside { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .home-content-aside:last-child { margin-right: 0; } }
 .home-content-aside ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -678,7 +678,7 @@ p { padding-left: 5px; }
 .home-content-aside .right-icon a { color: inherit; font-size: 0.75em; }
 .home-content-aside:last-child { margin-right: 0; }
 
-.team-member-content-main { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
+.team-member-content-main { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
 @media screen and (max-width: 519px) { .team-member-content-main { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .team-member-content-main:last-child { margin-right: 0; } }
 .team-member-content-main ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -688,7 +688,7 @@ p { padding-left: 5px; }
 .team-member-content-main .right-icon a { color: inherit; font-size: 0.75em; }
 .team-member-content-main:last-child { margin-right: 0; }
 
-.team-member-content-aside { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
+.team-member-content-aside { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
 @media screen and (max-width: 519px) { .team-member-content-aside { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .team-member-content-aside:last-child { margin-right: 0; } }
 .team-member-content-aside ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -698,7 +698,7 @@ p { padding-left: 5px; }
 .team-member-content-aside .right-icon a { color: inherit; font-size: 0.75em; }
 .team-member-content-aside:last-child { margin-right: 0; }
 
-.team-member-content-below { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; }
+.team-member-content-below { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; }
 @media screen and (max-width: 519px) { .team-member-content-below { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .team-member-content-below:last-child { margin-right: 0; } }
 .team-member-content-below ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -708,14 +708,14 @@ p { padding-left: 5px; }
 .team-member-content-below .right-icon a { color: inherit; font-size: 0.75em; }
 .team-member-content-below:last-child { margin-right: 0; }
 
-.home-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; }
+.home-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; }
 @media screen and (max-width: 519px) { .home-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .home-meta:last-child { margin-right: 0; } }
 .home-meta p a { color: #444; position: relative; text-decoration: none; }
 .home-meta p a:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; border-bottom-width: 1px; border-bottom-style: dotted; }
 .home-meta:last-child { margin-right: 0; }
 
-.post-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.post-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .post-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .post-content:last-child { margin-right: 0; } }
 .post-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -724,7 +724,7 @@ p { padding-left: 5px; }
 .post-content .right-icon { float: right; }
 .post-content .right-icon a { color: inherit; font-size: 0.75em; }
 
-.post-content-main { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
+.post-content-main { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
 @media screen and (max-width: 519px) { .post-content-main { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .post-content-main:last-child { margin-right: 0; } }
 .post-content-main ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -734,7 +734,7 @@ p { padding-left: 5px; }
 .post-content-main .right-icon a { color: inherit; font-size: 0.75em; }
 .post-content-main:last-child { margin-right: 0; }
 
-.post-content-aside { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
+.post-content-aside { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
 @media screen and (max-width: 519px) { .post-content-aside { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .post-content-aside:last-child { margin-right: 0; } }
 .post-content-aside ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -744,7 +744,7 @@ p { padding-left: 5px; }
 .post-content-aside .right-icon a { color: inherit; font-size: 0.75em; }
 .post-content-aside:last-child { margin-right: 0; }
 
-.post-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.post-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .post-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .post-meta:last-child { margin-right: 0; } }
 .post-meta p a { color: #444; position: relative; text-decoration: none; }
@@ -757,7 +757,7 @@ ul.post-list .post-list-item { margin-bottom: 10px; }
 ul.post-list .post-list-item p { margin-bottom: 0px; display: inline; }
 ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yantramanav, Helvetica, sans-serif; font-weight: 400; font-size: 1.2em; font-style: normal; display: block; margin-bottom: 0px; }
 
-.publication-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; }
+.publication-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; }
 @media screen and (max-width: 519px) { .publication-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .publication-content:last-child { margin-right: 0; } }
 .publication-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -767,7 +767,7 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 .publication-content .right-icon a { color: inherit; font-size: 0.75em; }
 .publication-content:last-child { margin-right: 0; }
 
-.publication-content-main { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
+.publication-content-main { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
 @media screen and (max-width: 519px) { .publication-content-main { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .publication-content-main:last-child { margin-right: 0; } }
 .publication-content-main ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -777,7 +777,7 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 .publication-content-main .right-icon a { color: inherit; font-size: 0.75em; }
 .publication-content-main:last-child { margin-right: 0; }
 
-.publication-content-aside { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
+.publication-content-aside { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; margin-right: 0; }
 @media screen and (max-width: 519px) { .publication-content-aside { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .publication-content-aside:last-child { margin-right: 0; } }
 .publication-content-aside ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -790,7 +790,7 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 .publication-content-aside .video { margin: auto; margin-left: 0; }
 @media screen and (min-width: 1024px) { .publication-content-aside .video { width: 100%; } }
 
-.publications-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.publications-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .publications-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .publications-content:last-child { margin-right: 0; } }
 .publications-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -799,13 +799,13 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 .publications-content .right-icon { float: right; }
 .publications-content .right-icon a { color: inherit; font-size: 0.75em; }
 
-.publication-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.publication-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .publication-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .publication-meta:last-child { margin-right: 0; } }
 .publication-meta p a { color: #444; position: relative; text-decoration: none; }
 .publication-meta p a:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; border-bottom-width: 1px; border-bottom-style: dotted; }
 
-.release-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.release-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .release-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .release-content:last-child { margin-right: 0; } }
 .release-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -814,13 +814,13 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 .release-content .right-icon { float: right; }
 .release-content .right-icon a { color: inherit; font-size: 0.75em; }
 
-.release-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.release-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .release-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .release-meta:last-child { margin-right: 0; } }
 .release-meta p a { color: #444; position: relative; text-decoration: none; }
 .release-meta p a:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; border-bottom-width: 1px; border-bottom-style: dotted; }
 
-.download-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.download-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .download-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .download-content:last-child { margin-right: 0; } }
 .download-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -829,7 +829,7 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 .download-content .right-icon { float: right; }
 .download-content .right-icon a { color: inherit; font-size: 0.75em; }
 
-.download-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; }
+.download-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; }
 @media screen and (max-width: 519px) { .download-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .download-meta:last-child { margin-right: 0; } }
 .download-meta p a { color: #444; position: relative; text-decoration: none; }
@@ -850,9 +850,9 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 @include single-column-content();
 */ }
 
-.paper-author { font-size: 1em; }
+.paper-author { font-size: 0.9em; }
 
-.docs-content { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; }
+.docs-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; }
 @media screen and (max-width: 519px) { .docs-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .docs-content:last-child { margin-right: 0; } }
 .docs-content ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -862,7 +862,7 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 .docs-content .right-icon a { color: inherit; font-size: 0.75em; }
 .docs-content:last-child { margin-right: 0; }
 
-.docs-content-main { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 74.4105871005%; }
+.docs-content-main { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 74.4105871005%; }
 @media screen and (max-width: 519px) { .docs-content-main { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .docs-content-main:last-child { margin-right: 0; } }
 .docs-content-main ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -872,7 +872,7 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 .docs-content-main .right-icon a { color: inherit; font-size: 0.75em; }
 .docs-content-main:last-child { margin-right: 0; }
 
-.docs-content-aside { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 23.2317613015%; margin-right: 0; }
+.docs-content-aside { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 23.2317613015%; margin-right: 0; }
 @media screen and (max-width: 519px) { .docs-content-aside { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .docs-content-aside:last-child { margin-right: 0; } }
 .docs-content-aside ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -887,7 +887,7 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 .docs-content-aside ul ul li { margin-bottom: 0; }
 .docs-content-aside:last-child { margin-right: 0; }
 
-.docs-meta { font-family: Lora, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 1em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 74.4105871005%; margin-right: 0; }
+.docs-meta { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 74.4105871005%; margin-right: 0; }
 @media screen and (max-width: 519px) { .docs-meta { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .docs-meta:last-child { margin-right: 0; } }
 .docs-meta p a { color: #444; position: relative; text-decoration: none; }
@@ -946,7 +946,7 @@ footer .footer-disclaimer p { text-align: center; font-family: Yantramanav, Helv
 
 .logo-404-svg { width: 200px; }
 
-.message-404 { text-align: center; margin-top: 20px; font-family: Lora, Helvetica, sans-serif; font-size: 2em; font-weight: 700; font-style: normal; color: black; }
+.message-404 { text-align: center; margin-top: 20px; font-family: Lato, Helvetica, sans-serif; font-size: 1.8em; font-weight: 700; font-style: normal; color: black; }
 .message-404 a { color: black; }
 .message-404 a:hover, .message-404 a:active, .message-404 a:visited { color: black; }
 
@@ -974,3 +974,5 @@ ul.project-icon-list li { padding-left: 2em; padding-bottom: 0.5em; line-height:
 .linked-members a { color: #444; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
 
 .team-content-right a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
+
+.institution-icon-list a { line-height: 20px; }

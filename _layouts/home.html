@@ -149,8 +149,11 @@
         <article class="home-content-aside">
             <h1>Collaborators</h1>
             <ul class="institution-icon-list">
-                {% for institution in site.institutions reversed %}
-                <li><a href="{{ institution.website }}">{{ institution.name }}</a><br>{{ institution.location }}</li>
+                {% for collaborator in site.collaborators %}
+                    <li>
+                        <a href="{{ collaborator.website }}">{{ collaborator.name }}</a>
+                        <!-- <br>{{ collaborator.location }} -->
+                    </li>
                 {% endfor %}
             </ul>
 

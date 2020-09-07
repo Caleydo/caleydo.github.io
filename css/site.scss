@@ -1067,3 +1067,7 @@ ul.project-icon-list li {
 .team-content-right{
   @include dotted-link-underline;
 }
+
+.institution-icon-list a{
+  line-height: 20px;
+}

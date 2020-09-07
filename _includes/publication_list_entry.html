@@ -47,6 +47,69 @@
 
         {{ published-where }}, {{ publication.year }}
         {% endif %}
+        <br>
+
+        <span class="paper-link">
+
+          {% if publication.url %}
+          {% if publication.non-caleydo-paper != true %}
+          <i class="fa fa-home"></i>&nbsp;
+          <a href="{{ site.caleydo_url }}{{ publication.url }}">Paper Website</a>
+          &nbsp;
+          {% endif %}
+          {% endif %}
+    
+          {% if publication.external-project %}
+          {% if publication.non-caleydo-paper %}
+          <i class="fa fa-home"></i>&nbsp;
+          <a href="{{ publication.external-project }}">Paper Website</a>
+          &nbsp;
+          {% endif %}
+          {% endif %}
+    
+          {% if publication.pdf %}
+          <i class="fa fa-file-pdf-o"></i>&nbsp;
+          <a href="{{ site.paper_content_url }}{{ publication.pdf }}">PDF</a>
+          &nbsp;
+          {% endif %}
+    
+          {% if publication.bib.doi %}
+          <i class="fa fa-external-link"></i>&nbsp;
+          <a href="http://dx.doi.org/{{ publication.bib.doi }}">Publisher</a>
+          &nbsp;
+          {% elsif publication.bib.publisher %}
+          <i class="fa fa-external-link"></i>&nbsp;
+          <a href="{{ publication.bib.publisher }}">Publisher</a>
+          &nbsp;
+          {% endif %}
+    
+          {% for video in site.videos %}
+          {% if video.key == publication.video and video.youtube-id %}
+          <i class="fa fa-youtube"></i>&nbsp;
+          <a href="http://youtube.com/watch?v={{video.youtube-id}}">YouTube</a>
+          &nbsp;
+          {% elsif video.key == publication.video and video.vimeo-id %}
+          <i class="fa fa-vimeo"></i>&nbsp;
+          <a href="http://vimeo.com/{{video.vimeo-id}}">Vimeo</a>
+          &nbsp;
+          {% endif %}
+          {% endfor %}
+    
+          {% for video in site.videos %}
+          {% if video.key == publication.video %}
+          <i class="fa fa-file-video-o"></i> &nbsp;
+          <a href="{{site.paper_content_url}}{{video.file}}">Video</a>
+          &nbsp;
+          {% endif %}
+          {% endfor %}
+    
+          {%if publication.bibtex %}
+          <i class="fa fa-download"></i>&nbsp;
+          <a href="{{site.paper_content_url}}{{ publication.bibtex }}">BibTeX</a>
+          &nbsp;
+          {% endif %}
+    
+        </span>
 
         {%if publication.award %}
         <br>

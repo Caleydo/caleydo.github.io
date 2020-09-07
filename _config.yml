@@ -58,6 +58,9 @@ collections:
   institutions:
     output: false
     permalink: /institutions/:path/
+  collaborators:
+    output: false
+    permalink: /collaborators/:path/
   funding:
     output: false
     permalink: /funding/:path/
