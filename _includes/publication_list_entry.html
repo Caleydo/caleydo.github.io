@@ -51,7 +51,17 @@
 
         <span class="paper-link">
 
-          {% if publication.url %}
+          {% if publication.external-project %}
+          <i class="fa fa-home"></i>&nbsp;
+          <a href="{{ publication.external-project }}">Paper Website</a>
+          &nbsp;
+          {% elsif publication.url%}
+          <i class="fa fa-home"></i>&nbsp;
+          <a href="{{ site.baseurl }}{{ publication.url }}">Paper Website</a>
+          &nbsp;
+          {% endif %}
+
+          <!-- {% if publication.url %}
           {% if publication.non-caleydo-paper != true %}
           <i class="fa fa-home"></i>&nbsp;
           <a href="{{ site.caleydo_url }}{{ publication.url }}">Paper Website</a>
@@ -65,7 +75,7 @@
           <a href="{{ publication.external-project }}">Paper Website</a>
           &nbsp;
           {% endif %}
-          {% endif %}
+          {% endif %} -->
     
           {% if publication.pdf %}
           <i class="fa fa-file-pdf-o"></i>&nbsp;
