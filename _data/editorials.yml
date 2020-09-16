@@ -1,0 +1,40 @@
+- title: "Highlights from the 5th Symposium on Biological Data Visualization: Part 2"
+  journal: BMC Proceedings, 9(Suppl 6):S1
+  year: 2015
+  authors:
+  - Jan Aerts
+  - G. Elisabeta Marai
+  - Kay Nieselt
+  - Cydney Nielsen
+  - streit
+  - Daniel Weiskopf
+  image:
+  doi: 10.1186/1753-6561-9-S6-S1
+  # use publisher only if no doi is available
+  pdf: http://www.biomedcentral.com/content/pdf/1753-6561-9-S6-S1.pdf
+
+- title: "Highlights from the 5th Symposium on Biological Data Visualization: Part 1"
+  journal: BMC Bioinformatics, 16(Suppl 11):S1
+  year: 2015
+  authors:
+  - Jan Aerts
+  - G. Elisabeta Marai
+  - Kay Nieselt
+  - Cydney Nielsen
+  - streit
+  - Daniel Weiskopf
+  image:
+  doi: 10.1186/1471-2105-16-S11-S1
+  # use publisher only if no doi is available
+  pdf: http://www.biomedcentral.com/content/pdf/1471-2105-16-S11-S1.pdf
+
+- title: Special Issue on Visual Analytics
+  journal: IEEE Computer, 46, 7
+  year: 2013
+  authors:
+  - streit
+  - bimber
+  image: /assets/images/covers/2013_ieee-computer_visual-analytics.png
+  doi: 10.1109/MC.2013.255
+  # use publisher only if no doi is available
+  pdf: http://www.computer.org/csdl/mags/co/2013/07/mco2013070020.pdf

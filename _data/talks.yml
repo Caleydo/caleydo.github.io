@@ -1,0 +1,437 @@
+- title: "Visual Data Science & Explainable AI"
+  event: "Bayer Data Science Summit 2020" 
+  date: 2020-02-12
+  location: Leverkusen, Germany
+  type: keynote address
+
+- title: "Explainable AI: Visualizing Complex Algorithms and Machine Learning Models"
+  event: "JKU LIT OIC Breakfast Briefing" 
+  date: 2019-12-10
+  location: Linz, Austria
+  type: invited talk
+
+- title: "Visual Analysis of Heterogeneous Biomolecular Data"
+  event: "Lecture Series: Modern Concepts in Structural Biology, University of Vienna" 
+  date: 2019-11-14
+  location: Vienna, Austria
+  type: invited talk
+
+- title: "Visualization & Explainable AI"
+  event: "Meetup: Art meets Science" 
+  date: 2019-09-17
+  location: Berlin, Germany
+  type: invited talk
+
+- title: "Visual Data Science & Explainable AI"
+  event: Bayer 
+  date: 2019-09-17
+  location: Berlin, Germany
+  type: invited talk
+
+- title: "Trust Me, I am a Visualization"
+  event: EuroVis Workshop on Trustworthy Visualization (TrustVis)
+  date: 2019-06-03
+  location: Porto, Portugal
+  type: keynote address
+
+- title: "Visual Data Science: Daten sehen, Daten verstehen"
+  event: Johannes Kepler University Linz
+  date: 2019-01-08
+  location: Linz, Austria
+  type:	inaugural lecture
+
+- title: "Leveraging Provenance for Storytelling, Reproducibility, and Recall"
+  event: SCI Seminar, University of Utah
+  date: 2018-07-12
+  location: Salt Lake City, UT, USA
+  type: invited talk
+
+- title: "Multi-Dimensional Data Vis in Drug Discovery: From Target Identification to Validation"
+  event: "EMBL EBI Industry Programme Workshop: Innovations in Data Visualisation for Drug Discovery"
+  date: 2018-06-13
+  location: Cambridge, UK
+  type: invited talk  
+
+- title: "Human-Interpretable AI"
+  event: Collaboration Kick-off JKU Linz and Imperial College London funded by State of Upper Austria
+  date: 2018-05-03
+  location: London, UK
+  type: invited talk
+
+- title: "Collaborations between VIS / Bioinformatics / BIO Communities"
+  event: "Dagstuhl Seminar on Visualization of Biological Data - Crossroads"
+  date: 2018-04-16
+  location: Dagstuhl, Germany
+  type: invited talk  
+
+- title: "Leveraging Provenance for Storytelling, Reproducibility, and Recall"
+  event: GRIS Kolloquium, TU Darmstadt
+  date: 2018-03-16
+  location: Darmstadt, Germany
+  type: invited talk
+
+- title: "Leveraging Provenance for Storytelling, Reproducibility, and Recall"
+  event: University of Groningen
+  date: 2018-03-14
+  location: Groningen, Netherlands
+  type: invited talk
+
+- title: "Injecting Life into Visualizations for Biomedical Research"
+  event: Open Insights Seminar Series, Harvard Medical School
+  date: 2018-03-07
+  location: Cambridge, MA, USA
+  type: invited talk
+
+- title: "Interactive Exploration of Structured Data, Large (Biomedical) Graphs, and Black Box Models"
+  event: Visual AI Lab, IBM Research
+  date: 2018-03-06
+  location: Cambridge, MA, USA
+  type: invited talk
+
+- title: "Collaborating with Domain Experts"
+  event: Dagstuhl Seminar on Foundations of Data Visualization
+  date: 2018-01-23
+  location: Dagstuhl, Germany
+  type: invited talk
+
+- title: "Leveraging Provenance for Storytelling, Reproducibility, and Recall"
+  event: VRVis Forum
+  date: 2017-11-27
+  location: Vienna, Austria
+  type: invited talk
+
+- title: "Visualization for Decision Making: Going (Far) Beyond Static Plots"
+  event: GSK Visualisation Day
+  date: 2017-08-23
+  location: Stevenage, UK
+  type: keynote address
+
+- title: "From Visual Exploration of Biomedical Data to Storytelling and Back Again"
+  event: 3rd BiVi (Biological Visualisation Community) Annual Meeting
+  date: 2017-04-20
+  location: Edinburgh, UK
+  type: keynote address
+
+- title: "From Visual Exploration to Storytelling and Back Again"
+  event: Visual Computing Center, King Abdullah University of Science & Technology (KAUST)
+  date: 2017-02-27
+  location: Thuwal, Saudi Arabia
+  type: invited talk
+
+- title: "Daten sehen - Krebs verstehen. Mit Big Data-Analyse und Visualisierung dem Krebs auf der Spur"
+  event: JKU Next Generation Talk Series, Ars Electronica Center
+  date: 2017-02-23
+  location: Linz, Austria
+  type: keynote address
+
+- title: "Searching for a Needle in a Data Stack: How Visualization Helps to Understand Biomedical Data"
+  event: Austrian Computer Science Day
+  date: 2016-10-20
+  location: Linz, Austria
+  type: keynote address
+
+- title: "Interactive Data Exploration: Going (Far) Beyond Static Plots"
+  event: Boehringer Ingelheim, Regional Center Vienna
+  date: 2016-10-17
+  location: Vienna, Austria
+  type: invited talk
+
+- title: "TourGuide - Navigation System for Capturing and Analyzing Complex Clinical Data"
+  event: DIGITAL MEDTECH
+  date: 2016-10-13
+  location: Linz, Austria
+  type: invited talk
+
+- title: "From Visual Exploration to Storytelling and Back Again"
+  event: Institute of Computer Graphics and Algorithms, TU Wien
+  date: 2016-10-07
+  location: Vienna, Austria
+  type: invited talk
+
+- title: "Integrated Visual Analysis for Data­Driven Sciences"
+  event: Habilitation Colloquium
+  date: 2016-10-04
+  location: Linz, Austria
+  type: habilitation defense
+
+- title: "How Visualization Helps to Understand Biomedical Data"
+  event: "Boehringer Ingelheim Global Computational Biology Retreat"
+  date: 2016-06-14
+  location: Mainz, Germany
+  type: keynote address
+
+- title: "Leveraging Provenance for Storytelling and Reproducibility"
+  event: "EuroRV3 Workshop"
+  date: 2016-06-07
+  location: Groningen, Netherlands
+  type: invited talk
+
+- title: "Searching for a Needle in a Data Stack: How Visualization Helps to Understand Biomedical Data"
+  event: "Meetup: Vitamin D3 (.js) – Injecting Life into Visualizations for Biomedical Research"
+  date: 2016-03-24
+  location: Berlin, Germany
+  type: invited talk
+
+- title: "Integrated Visual Analysis for Data‐Driven Sciences"
+  event: IST Austria
+  date: 2016-03-10
+  location: Klosterneuburg, Austria
+  type: invited talk
+
+- title: "TourGuide - Navigation System for Capturing and Analyzing Complex Clinical Data"
+  event: Kepler University Clinic Tumor Center Conference
+  date: 2016-02-03
+  location: Linz, Austria
+  type: invited talk
+
+- title: "Visual Analysis of Large and Heterogeneous Biological Data"
+  event: Data Visualization for Biology Workshop
+  date: 2015-11-24
+  location: Leuven, Belgium
+  type: invited talk
+
+- title: "Extracting, Comparing, and Manipulating Subsets Across Tabular Data"
+  event: Virtual Reality and Visualization Research Group, Bauhaus University Weimar
+  date: 2015-07-07
+  location: Weimar, Germany
+  type: invited talk
+
+- title: "Visual Analysis of Heterogeneous Biomolecular Data"
+  event: Medical University of Vienna, Dept. of Vascular Biology and Thrombosis Research
+  date: 2015-06-19
+  location: Vienna, Austria
+  type: invited talk
+
+- title: "Searching for a Needle in a Data Stack: How Visualization Helps to Understand Data"
+  event: 40th Anniversary Celebration of the Austrian Computer Society
+  date: 2015-06-10
+  location: Vienna, Austria
+  type: invited talk
+
+- title: "Extracting, Comparing, and Manipulating Subsets Across Tabular Data"
+  event: giCentre, City University London
+  date: 2015-05-13
+  location: London, UK
+  type: invited talk
+
+- title: "Visual Analysis of Heterogeneous Biomolecular Data"
+  event: Biomedical Image Analysis Group, Imperial College London
+  date: 2015-05-12
+  location: London, UK
+  type: invited talk
+
+- title: "Extracting, Comparing, and Manipulating Subsets Across Tabular Data"
+  event: VDA Colloquium, University of Vienna
+  date: 2015-02-12
+  location: Vienna, Austria
+  type: invited talk
+
+- title: Visual Analysis of Heterogeneous Molecular Data with Caleydo
+  event: VIB Training Course on Biological Data Visualization - the art of presenting data
+  date: 2014-11-25
+  location: Ghent, Belgium
+  type: keynote address
+
+- title: Visual Data Science
+  event: "Pro2Future Workshop: Towards a Competence Center on Products and Production of the Future in Upper Austria"
+  date: 2014-11-18
+  location: Linz, Austria
+  type: invited talk
+
+- title: Visualizing Heterogeneous, Multi-Dimensional Data
+  event: Computer Science and Artificial Intelligence Laboratory (CSAIL), MIT
+  date: 2014-09-24
+  location: Cambridge, MA, USA
+  type: invited talk
+
+- title: Fundamentals of Visualizing Biological Data
+  event: Symposium on Biological Data Visualization (BioVis)
+  date: 2014-07-12
+  location: Boston, MA, USA
+  type: primer talk
+
+- title: Visual Analysis of Tabular Data Subsets
+  event: School of Engineering and Applied Sciences (SEAS), Harvard University
+  date: 2014-07-08
+  location: Cambridge, MA, USA
+  type: invited talk
+
+- title: Visual Analysis of Heterogeneous Data for Molecular Biology
+  event: MedViz Seminar
+  date: 2014-05-23
+  location: Bergen, Norway
+  type: invited talk
+
+- title: "Suche nach der Nadel im Genhaufen: Wie Visualisierung hilft, Krebs zu verstehen"
+  event: JKU Zukunft der Forschung
+  date: 2014-02-18
+  location: Linz, Austria
+  type: invited talk
+
+- title: What comes first? Visual Analysis of Multi-Attribute Rankings
+  event: VRVis Forum
+  date: 2014-03-09
+  location: Vienna, Austria
+  type: invited talk
+
+- title: Visualizing Biomolecular Data
+  event: Summer School on Bioinformatics, Biomedicine, and Cloud Computing
+  date: 2013-09-11
+  location: Malaga, Spain
+  type: invited talk
+
+- title: Visual Cancer Subtype Analysis
+  event: Symposium on Understanding Cancer Genomics through Information Visualization at Tokyo University
+  date: 2013-03-22
+  location: Tokyo ,Japan
+  type: keynote address
+
+- title: Visual Cancer Subtype Analysis
+  event: Center for Biomedical Informatics (CBMI), Harvard Medical School
+  date: 2012-09-14
+  location: Boston, MA
+  type: invited talk
+
+- title: Caleydo - Visualization for Molecular Biology
+  event: Media Interaction Lab, University of Applied Sciences Upper Austria
+  date: 2012-06-25
+  location: Hagenberg, Austria
+  type: invited talk
+
+- title: Caleydo - Visualization for Molecular Biology
+  event: CHIPS Network organized by Johnson & Johnson
+  date: 2012-04-08
+  location: remote
+  type: invited talk
+
+- title: Visual Analysis of Heterogeneous Data
+  event: Image and Signal Processing Group, University of Leipzig
+  date: 2012-01-24
+  location: Leipzig, Germany
+  type: invited talk
+
+- title: Visual Analysis of Heterogeneous Data
+  event: Institute of Computer Graphics and Algorithms, Vienna University of Technology
+  date: 2012-01-13
+  location: Vienna, Austria
+  type: invited talk
+
+- title: Visualization of Biomolecular Data
+  event: Institute of Bioinformatics, Johannes Kepler University Linz
+  date: 2011-11-24
+  location: Linz, Austria
+  type: invited talk
+
+- title: Model-Driven Design for the Visual Analysis of Heterogeneous Data
+  event: IEEE VisWeek, Special TVCG Session
+  date: 2011-27-10
+  location: Providence, RI, USA
+  type: Paper Presentation
+
+- title: Visual Support for Heterogeneous Analysis Scenarios
+  event: Workshop on Trends in Visual Computing and Visual Analysis
+  date: 2011-05-19
+  location: Kühlungsborn, Germany
+  type: Panelist
+
+- title: Guided Visual Analysis of Heterogeneous Data
+  event: PhD Defense
+  date: 2011-04-13
+  location: Graz, Austria
+  type:
+
+- title: "Collaborative Information Linking: Bridging Knowledge Gaps between Users by Linking across Applications"
+  event: IEEE Pacific Visualization Symposium (PacificVis 2011)
+  date: 2011-03-03
+  location: Hong Kong, China
+  type: paper presentation
+
+- title: "Caleydo: Visual Analysis of Biomolecular Data"
+  event: MRC Laboratory of Molecular Biology (LMB)
+  date: 2010-09-21
+  location: Cambridge, UK
+  type: invited talk
+
+- title: "Caleydo: Visual Analysis of Biomolecular Data"
+  event: European BioInformatics Institute (EBI)
+  date: 2010-09-20
+  location: Cambridge, UK
+  type: invited talk
+
+- title: "Caleydo: Visual Analysis of Biomolecular Data"
+  event: Eurographics Workshop on Visual Computing for Biology and Medicine (VCBM)
+  date: 2010-07-01
+  location: Leipzig, Germany
+  type: invited talk
+
+- title: Caleydo and Visual Links
+  event: VRVis Research Company
+  date: 2010-03-11
+  location: Vienna, Austria
+  type: invited talk
+
+- title: Towards Multi-User Multi-Level Interaction
+  event: CoVIS Workshop on Collaborative Visualization on Interactive Surfaces (IEEE VisWeek)
+  date: 2009-10-11
+  location: Atlantic City, NJ, USA
+  type: paper presentation
+
+- title: Connecting Genes With Diseases - A Holistic Approach
+  event: Research Training Group dIEM oSiRiS
+  date: 2009-07-08
+  location: Rostock, Germany
+  type: invited talk
+
+- title: Caleydo Project Overview
+  event: Visual Computing and Computer Graphics Department, University of Rostock
+  date: 2009-07-07
+  location: Rostock, Germany
+  type: invited talk
+
+- title: Gaze-Based Focus Adaption in an Information Visualization System
+  event: Computer Graphics and Visualization and Image Processing 2009 Conference (CGVCVIP)
+  date: 2009-06-20
+  location: Algarve, Portugal
+  type: paper presentation
+
+- title: "Caleydo: Visualization of Gene Expression Data in the Context of Biological Processes"
+  event: AUVA Research Center for Traumatology
+  date: 2009-02-26
+  location: Graz, Austria
+  type: invited talk
+
+- title: Experiences of a Graduate
+  event: Welcome Day at the Graz University of Technology
+  date: 2008-10-01
+  location: Graz, Austria
+  type: invited talk
+
+- title: Novel InfoVis Techniques Applied to Pathways and Gene Expression Data
+  event: Institute for Genomics and Bioinformatics, Graz University of Technology
+  date: 2008-07-10
+  location: Graz, Austria
+  type: invited talk
+
+- title: Navigation and Exploration of Interconnected Pathways
+  event: EuroVis Conference
+  date: 2008-05-27
+  location: Eindhoven, Netherlands
+  type: paper presentation
+
+- title: Experiences of a Graduate
+  event: Open House at the Graz University of Technology
+  date: 2008-03-27
+  location: Graz, Austria
+  type: invited talk
+
+- title: Experiences of a Graduate
+  event: Open House at the Graz University of Technology
+  date: 2008-10-11
+  location: Graz, Austria
+  type: invited talk
+
+- title: Interactive Visualization of Complex Graphs
+  event: Central European Seminar on Computer Graphics (CESCG)
+  date: 2007-04-23
+  location: Budmerice, Slovakia
+  type: paper presentation

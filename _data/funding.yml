@@ -1,0 +1,179 @@
+- agency: Linz Institute of Technology (LIT) / State of Upper Austria
+  website:
+  logo:
+  title: "HOXAI: Hands-on Explainable AI"
+  recipient: jku
+  pi:
+  copi:
+  partners:
+  time: 2020 - 2022
+  program:
+  project-link:
+  number: LIT715101001
+  active: true
+  amount: 196k EUR
+
+- agency: State of Upper Austria
+  website:
+  logo:
+  title: "Human-Interpretable AI"
+  recipient: jku
+  pi:
+  copi:
+  partners:
+  time: 2019 - 2021
+  program:
+  project-link:
+  number:
+  active: true
+  amount: 288k EUR
+
+- agency: Boehringer Ingelheim Regional Center Vienna
+  website:
+  logo:
+  title: "Development of Multi-Dimensional Genomic Data Visualization and Data Mining Techniques"
+  recipient: jku
+  pi:
+  copi:
+  partners:
+  time: 2018 - 2021
+  program:
+  project-link:
+  number:
+  active: true
+  amount: 252k EUR
+
+- agency: Austrian Research Promotion Agency (FFG)
+  website:
+  logo:
+  title: "Pro2Future – Products and Production Systems of the Future"
+  recipient: jku
+  pi:
+  copi:
+  partners: Graz University of Technology
+  time: 2017 - 2024
+  program: COMET K1-Centre program
+  project-link:
+  number: 854184
+  active: true
+  amount: 19 M EUR
+
+- agency: Austrian Science Fund (FWF), State of Upper Austria, Nationalstiftung
+  website:
+  logo:
+  title: "VisOnFire - Visual Analysis of Large and Heterogeneous Scientific Workflows for Analytical Provenance"
+  recipient: jku
+  pi:
+  copi:
+  partners:
+  time: 2015 - 2018
+  program: Stand-Alone Project
+  project-link:
+  number: P27975-NBL
+  active: true
+  amount: 352k EUR
+
+- agency: Boehringer Ingelheim Regional Center Vienna
+  website:
+  logo:
+  title: "Development of Multi-Dimensional Genomic Data Visualization and Data Mining Techniques"
+  recipient: jku
+  pi:
+  copi:
+  partners:
+  time: 2015 - 2018
+  program:
+  project-link:
+  number:
+  active: true
+  amount: 210k EUR
+
+- agency: State of Upper Austria
+  website:
+  logo:
+  title: "TourGuide - Navigation System for Capturing and Analyzing Complex Clinical Data"
+  recipient: jku
+  pi:
+  copi:
+  partners: AKh Linz, RISC Software GmbH
+  time: 2015 - 2018
+  program: Innovatives OÖ2020
+  project-link:
+  number: 851460
+  active: true
+  amount: 400k EUR
+
+- agency: Austrian Research Promotion Agency (FFG)
+  website: https://www.ffg.at/en
+  logo: ffg.png
+  title: "PIPES-VS-DAMS - Privacy Preserving Visual Dynamic Network Analysis for Advanced System Monitoring on Multiple Scales"
+  recipient: jku
+  pi: streit
+  copi:
+  partners: RISC Software GmbH, MOWIS GmbH, KT-Net GmbH
+  time: 2013 - 2016
+  program: IKT der Zukunft program
+  project-link: http://www.pipes-vs-dams.at/
+  number: 840232
+  active: true
+  amount: 410k EUR
+
+- agency: Federal Ministry of Science, Research and Economy
+  website:
+  logo: bmwfw.png
+  title: "Austrian Teaching Cooperation in Visual Computing"
+  recipient: jku
+  pi: streit
+  copi:
+  partners: Graz University of Technology
+  time: 2013 - 2016
+  program:
+  project-link:
+  number:
+  active: true
+  amount: 96k EUR
+
+- agency: Graz University of Technology
+  website:
+  logo:
+  title: "Future Lab Grant"
+  recipient: tug
+  pi:
+  copi:
+  partners:
+  time: 2011
+  program:
+  project-link:
+  number:
+  active: false
+  amount: 38k EUR
+
+- agency: Austrian Science Fund (FWF)
+  website:
+  logo:
+  title: "Caleydoplex - Information Exploration in Teams"
+  recipient: tug
+  pi:
+  copi:
+  partners:
+  time: 2010 - 2013
+  program: Stand-alone projects program
+  project-link:
+  number: P22902
+  active: false
+  amount: 225k  EUR
+
+- agency: Austrian Research Promotion Agency (FFG)
+  website:
+  logo:
+  title: "InGeneious - Visualization of Biomolecular and Clinical Data"
+  recipient: tug
+  pi:
+  copi:
+  partners:
+  time: 2009 - 2012
+  program: BRIDGE program
+  project-link:
+  number: 385567
+  active: false
+  amount: 180k EUR

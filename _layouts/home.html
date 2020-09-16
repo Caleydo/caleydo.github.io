@@ -151,7 +151,7 @@
             <ul class="institution-icon-list">
                 {% for collaborator in site.collaborators %}
                     <li>
-                        <a href="{{ collaborator.website }}">{{ collaborator.name }}</a>
+                        <a href="{{ collaborator.website }}">{{ collaborator.name-short }}</a>
                         <!-- <br>{{ collaborator.location }} -->
                     </li>
                 {% endfor %}

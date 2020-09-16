@@ -102,29 +102,29 @@ layout: default
         <div class="pub-nav"> 
             <ul>
                 <li>
-                    <a href="#journal-papers"><span>Papers</span></a>
+                    <a href="#preprint"><span>Preprint</span></a>
                 </li>
                 <li>
-                    <a href="#theses"><span>Theses</span></a>
+                    <a href="#journal-papers"><span>Papers</span></a>
                 </li>
                 <li>
                     <a href="#posters"><span>Posters</span></a>
                 </li>
             </ul>
         </div>
+        <br>
         {% endif %}
 
         {% assign member_publications = site.publications | where_exp:"item", 'item.authors contains page.key' %}
 
         {% assign member_preprints = member_publications | where:"type", "preprint" %}
-        {% if member_preprint %}
+        {% if member_preprints %}
             <h1 id="preprint">Preprint</h1>
-            {% for publication in member_preprint reversed %}
+            {% for publication in member_preprints reversed %}
                 {% include publication_list_entry.html %}
             {% endfor %}
         {% endif %}
         
-      
         <br>
         
         {% assign member_papers = member_publications | where:"type", "paper" %}
@@ -139,7 +139,7 @@ layout: default
         <br>
           
         
-        {% assign member_thesis = site.thesis | where_exp:"item", 'item.author == page.key' %}
+        <!-- {% assign member_thesis = site.thesis | where_exp:"item", 'item.author == page.key' %}
         {% assign psize = member_thesis | size %}
         {% if psize > 0 %}
             <h1 id="theses">Theses</h1>
@@ -169,7 +169,7 @@ layout: default
         {% endif %}
 
       
-        <br>
+        <br> -->
           
 
 

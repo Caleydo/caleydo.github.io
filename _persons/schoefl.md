@@ -8,7 +8,7 @@ key: schoefl
 permalink: /persons/schoefl/
 role: undergrad
 email: moritz.schoefl@jku.at
-# image: /assets/images/team_colored/schoefl.jpg
+image: /assets/images/team_colored/schoefl.jpg
 organization: Johannes Kepler University Linz
 position: Technical Support
 website: 

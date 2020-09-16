@@ -20,7 +20,7 @@ image_large:
 authors:
 - Kai Xu
 - Alvitta Ottley
-- Conny Walchshofer
+- walchshofer
 - streit
 - Remco Chang
 - John Wenskovitch 

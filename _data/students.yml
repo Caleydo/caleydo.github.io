@@ -1,0 +1,179 @@
+- date: Since 2020-03
+  title: LineUp + Time (working title)
+  name: Vanessa Stoiber
+  type: BSc Thesis
+
+- date: Since 2019-10
+  title: Provenance Intent (working title)
+  name: Conny Walchshofer
+  type: PhD Thesis  
+
+- date: Since 2019-10
+  title: Fuzzy Spreadsheets (working title)
+  name: Vaishali Dhanoa
+  type: PhD Thesis
+
+- date: Since 2019-02
+  title: Visual Cohort Analysis (working title)
+  name: Patrick Adelberger
+  type: PhD Thesis
+
+- date: Since 2019-01
+  title: Human-Interpretable AI (working title)
+  name: Andreas Hinterreiter
+  type: PhD Thesis
+
+- date: Since 2018-11
+  title: Visual Cohort Analysis (working title)
+  name: Klaus Eckelt
+  type: PhD Thesis  
+
+- date: 2018-02 - 2019-12
+  title: Fusing Data Analysis with Data Wrangling
+  name: Dominik Dirmeier
+  type: Bachelor's Thesis
+
+- date: 2019-03 - 2019-10
+  title: "InstanceFlow: Visualizing the Evolution of Instance Classification in Deep Learning"
+  name: Michael Pühringer
+  type: Bachelor's Thesis
+
+- date: 2019-03 - 2019-09
+  title: Rubik’s Cube Solution Algorithm Demonstrator
+  name: Moritz Schöfl
+  type: Bachelor's Thesis
+
+- date: 2018-02 - 2019/02
+  title: Visualization of Fundamental Computer Graphics Concepts
+  name: Vaishali Dhanoa
+  type: Master's Project
+
+- date: 2018-01 - 2019/01
+  title: Rubik’s Cube Solver Visualization
+  name: Christian Steinparz
+  type: Bachelor's Thesis
+
+- date: 2013-11 - 2018-04
+  title: Interactive Focus+Context Analysis of Time-Series and Provenance Data
+  name: Holger Stitz
+  type: PhD Thesis
+
+- date: 2012-06 - 2018-12
+  title: Visual Integration of Heterogeneous Data and Its Representations
+  name: Christian Partl
+  type: PhD Thesis
+
+- date: 2017-03 - 2018-08
+  title: "Data-Driven User Guidance in Multi-Attribute Data Exploration"
+  name: Klaus Eckelt
+  type: Master's Thesis  
+
+- date: 2012-11 - 2017-04
+  title: Visually Guiding Users in Selection, Exploration, and Presentation Tasks
+  name: Samuel Gratzl
+  type: PhD Thesis
+
+- date: 2015-10 - 2016-10
+  title: Provenance Graph-Based Steering
+  name: Michael Gillhofer
+  type: Master's Thesis
+
+- date: 2015-03 - 2016-05
+  title: Comparative Visualization of Large Tabular Data
+  name: Reem Hourieh
+  type: Master's Thesis
+
+- date: 2014-01 - 2016-02
+  title: Interactive Visualization of Provenance Graphs for Reproducible Biomedical Research
+  name: Stefan Luger
+  type: Master's Thesis
+
+- date: 2014-03 - 2015-02
+  title: Enhanced Edge Bundling
+  name: Reem Hourieh
+  type: Master's Project
+
+- date: 2013-07 - 2014-01
+  title: Workflow Visualization for the Refinery Platform
+  name: Stefan Luger
+  type: Master's Project
+
+- date: 2012-11 - 2013-11
+  title: Bi-Cluster Visualization
+  name: Michael Gillhofer
+  type: Bachelor's Thesis
+
+- date: 2011-10 - 2013-03
+  title: Context Preserving Visual Links Across Applications
+  name: Thomas Geymayer
+  type: Masters' Thesis
+
+- date: 2011-03 - 2012-07
+  title: Multiform Visualization of Heterogeneous Data
+  name: Christian Partl
+  type: Master's Thesis
+
+- date: 2010-10 - 2011-09
+  title: Filter Pipeline Visualization
+  name: Thomas Geymayer
+  type: Bachelor's Thesis
+
+- date: 2010-02 - 2011-01
+  title: Eye-Controlled Game
+  name: Michael Kerber
+  type: Bachelor's Thesis
+
+- date: 2010-02 - 2010-12
+  title: Eye-Controlled View Management
+  name: Hannes Plank
+  type: Bachelor's Thesis
+
+- date: 2010-04 - 2010-10
+  title: Cluster Visualization using Treemaps
+  name: Michael Lafer
+  type: Bachelor's Thesis
+
+- date: 2009-10 - 2010-09
+  title: "Caleydo: Integrating a Scatter Plot Visualization"
+  name: Jürgen Pillhofer
+  type: Master's Thesis
+
+- date: 2009-04 - 2009-09
+  title: Visual Links in a 2D/3D Information Visualization System
+  name: Oliver Pimas
+  type: Bachelor's Thesis
+
+- date: 2009-10 - 2010-10
+  title: Comparative Analysis
+  name: Christian Partl
+  type: Master's Practicum
+
+- date: 2009-03 - 2010-01
+  title: Visualizing Dependencies between Pathway Graphs
+  name: Helmut Pichlhöfer
+  type: Bachelor's Thesis
+
+- date: 2009-06 - 2010-02
+  title: Visualization of Patient Data using Glyphs
+  name: Stefan Sauer
+  type: Bachelor's Thesis
+
+- date: 2009-02 - 2010-01
+  title: Visual Analytics for Gene Expression Data
+  name: Bernhard Schlegl
+  type: Master's Thesis
+
+- date: 2009-02 - 2009-12
+  title: Collaborative Information Visualization in a Multi-Desktop Environments
+  name: Werner Puff
+  type: Master's Thesis
+
+- date: 2009-03 - 2009-11
+  title: Visualizing a Cluster Hierarchy using a Radial Layout
+  name: Christian Partl
+  type: Bachelor's Thesis
+
+- date: 2008-10 - 2009-02
+  title: Multi-Level Information Visualization for Large Data Sets with Heat Maps
+  name: Bernhard Schlegl
+  type: Master's Project

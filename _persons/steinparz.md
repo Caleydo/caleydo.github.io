@@ -1,6 +1,6 @@
 ---
 layout: team-member
-first_name: Christian
+first_name: Christian A.
 last_name: Steinparz
 title: "Christian Steinparz"
 cg_website: "https://www.jku.at/en/institute-of-computer-graphics/about-us/vcc/christian-steinparz/" #remove to show person directly on data-vis page

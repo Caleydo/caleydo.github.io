@@ -4,7 +4,7 @@
     {% if person.image %}
         <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}{{ person.image }}">
     {% else %}
-        <div class="person-image-small"></div>
+        <img alt="{{ person.first_name }} {{ person.last_name }}" class="person-image-small" src="{{site.baseurl}}/assets/images/team_colored/placeholder.png">
     {% endif %}
     {% if person.cg_website %}
         <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>

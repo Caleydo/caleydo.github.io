@@ -19,8 +19,8 @@ image: 2019_eurova_rubik.png
 
 # Authors in the "database" can be used with just their person "key"
 authors:
-- Christian A. Steinparz 
-- Andreas P. Hinterreiter
+- steinparz 
+- hinterreiter
 - stitz
 - streit
 

@@ -7,7 +7,7 @@ key: kawan
 permalink: /persons/kawan/
 role: alumni
 # email: bikram.kawan@jku.at
-# image: /assets/images/team/kawan.jpg
+# image: /assets/images/team_colored/placeholder.png
 organization: Johannes Kepler University Linz
 position: 
 website:

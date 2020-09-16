@@ -7,6 +7,22 @@ layout: default
 
 <article class="publications-content">
 
+  <div class="pub-nav"> 
+    <ul>
+      <li>
+        <a href="#preprint"><span>Preprint</span></a>
+      </li>
+      <li>
+          <a href="#journal-papers"><span>Papers</span></a>
+      </li>
+      <li>
+          <a href="#posters"><span>Posters</span></a>
+      </li>
+    </ul>
+  </div>
+
+  <br>
+
   <h1 id="preprint">Preprint</h1>
 
   {% for publication in site.publications reversed %}
@@ -29,7 +45,7 @@ layout: default
 
   <br>
 	
-  <h1 id="theses">Theses</h1>
+  <!-- <h1 id="theses">Theses</h1>
 
   {% for thesis in site.thesis reversed %}
 
@@ -46,11 +62,6 @@ layout: default
       {% else %}
           <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
       {% endif %}
-			  <!-- {% if person.website %}
-			  <a href="{{ person.website }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
-			  {% else %}
-			  {{ person.first_name }}&nbsp;{{ person.last_name }}
-			  {% endif %} -->
 			  {% assign known = true %}
 		  {% endif %}
       {% endfor %}
@@ -63,7 +74,7 @@ layout: default
 
   </div>
 
-  {% endfor %}
+  {% endfor %} -->
 
   <!-- <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>-->
   <br>

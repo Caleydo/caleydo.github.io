@@ -668,7 +668,7 @@ ul.post-list {
 }
 
 .paper-author {
-  font-size: $page-content-font-size;
+  // font-size: $page-content-font-size; // commented by gini
 }
 
 
@@ -976,11 +976,16 @@ footer {
   font-weight: 550;
   // padding-top: 48px;
   margin-left: 6px;
-  clear:both; 
+  // clear:both; 
 
-  float: right; // remove to have subtitle on left side
-  margin-top: -35px; // remove to have subtitle on left side
-  margin-bottom: 10px; // remove to have subtitle on left side
+  // float: right; // remove to have subtitle on left side
+  // margin-top: -35px; // remove to have subtitle on left side
+  // margin-bottom: 10px; // remove to have subtitle on left side
+
+  padding-top: 12px;
+  float: left;
+  width: 200px;
+  height: 80px;
 
   @include dotted-link-underline;
 }
@@ -1070,11 +1075,19 @@ ul.project-icon-list li {
   min-height: 2.5em;
 }
 
-.linked-members a {
-  color: #444;
-  -webkit-box-decoration-break: clone;
-  -o-box-decoration-break: clone;
-  box-decoration-break: clone;
+// .linked-members a {
+//   color: #444;
+//   -webkit-box-decoration-break: clone;
+//   -o-box-decoration-break: clone;
+//   box-decoration-break: clone;
+// }
+
+.linked-members{
+  @include dotted-link-underline;
+}
+
+.linked-members a{
+  font-size: small;
 }
 
 .team-content-right{
@@ -1109,4 +1122,9 @@ ul.project-icon-list li {
   margin-left: 20px;
   font-weight: 700;
   font-size: 1.2em;
+}
+
+.publications-content .pub-nav{ // remove this, if the navigation on the "Publications" page should be left
+  float: right;
+  margin-top: 0px;
 }

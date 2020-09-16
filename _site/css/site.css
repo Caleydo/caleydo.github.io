@@ -850,8 +850,6 @@ ul.post-list .post-list-item .post-list-title { color: #149747; font-family: Yan
 @include single-column-content();
 */ }
 
-.paper-author { font-size: 0.9em; }
-
 .docs-content { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 100%; margin-right: 0; }
 @media screen and (max-width: 519px) { .docs-content { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .docs-content:last-child { margin-right: 0; } }
@@ -956,7 +954,7 @@ footer .footer-disclaimer p { text-align: center; font-family: Yantramanav, Helv
 
 .logo { line-height: 0px; }
 
-.logo-subtitle { font-family: Lato,Helvetica,sans-serif; font-size: .7em; line-height: 16px; font-weight: 550; margin-left: 6px; clear: both; float: right; margin-top: -35px; margin-bottom: 10px; }
+.logo-subtitle { font-family: Lato,Helvetica,sans-serif; font-size: .7em; line-height: 16px; font-weight: 550; margin-left: 6px; padding-top: 12px; float: left; width: 200px; height: 80px; }
 .logo-subtitle a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
 
 .publications-content { clear: both; }
@@ -975,7 +973,9 @@ ul.project-icon-list { margin: 0; padding: 0; list-style-type: none; }
 
 ul.project-icon-list li { padding-left: 2em; padding-bottom: 0.5em; line-height: 1.2em; vertical-align: top; color: #333; font-family: Lato,Helvetica,sans-serif; font-weight: 400; font-size: .9em; font-style: normal; min-height: 2.5em; }
 
-.linked-members a { color: #444; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
+.linked-members a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
+
+.linked-members a { font-size: small; }
 
 .team-content-right a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
 
@@ -990,3 +990,5 @@ ul.project-icon-list li { padding-left: 2em; padding-bottom: 0.5em; line-height:
 .pub-nav li { float: left; }
 
 .pub-nav li a { text-align: center; margin-left: 20px; font-weight: 700; font-size: 1.2em; }
+
+.publications-content .pub-nav { float: right; margin-top: 0px; }

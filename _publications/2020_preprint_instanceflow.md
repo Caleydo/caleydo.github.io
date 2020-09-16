@@ -19,7 +19,7 @@ image_large:
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
 - Michael Pühringer
-- Andreas Hinterreiter
+- hinterreiter
 - streit 
 
 journal-short: Preprint

@@ -18,9 +18,9 @@ image_large:
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
-- Andreas Hinterreiter
+- hinterreiter
 - Peter Ruch
-- Holger Stitz
+- stitz
 - Martin Ennemoser
 - Jürgen Bernard
 - Hendrik Strobelt
