@@ -1,84 +1,101 @@
-- title: Information Visualization
+- author: streit 
+  title: Information Visualization
   institution: jku
   contribution: Lecture and lab
   years: since 2012
 
-- title: Visual Analytics
+- author: streit 
+  title: Visual Analytics
   institution: jku
   contribution: Lecture and lab
   years: since 2012
 
-- title: Computer Graphics
+- author: streit 
+  title: Computer Graphics
   institution: jku
   contribution: Lab
   years: since 2012
 
-- title: Accompanying Courses for PhD, Master and Bachelor Students
+- author: streit 
+  title: Accompanying Courses for PhD, Master and Bachelor Students
   institution: jku
   contribution: Seminar
   years: since 2012
 
-- title: Visual Computing for Virtual Anatomy
+- author: streit 
+  title: Visual Computing for Virtual Anatomy
   institution: jku
   contribution: Lecture (together with Oliver Bimber and Franz Fellner)
   years: 2013
 
-- title: Data Science (CS 109)
+- author: streit 
+  title: Data Science (CS 109)
   institution: harvard
   contribution: Lecture (visualization part)
   years: 2014
 
-- title: Visualisation (BS1807)
+- author: streit 
+  title: Visualisation (BS1807)
   institution: imperial
   contribution: Lecture and lab (together with Andy Kirk, Ryo Sarkai)
   years: since 2016
 
-- title: Visualisation (bs2307)
+- author: streit 
+  title: Visualisation (bs2307)
   institution: imperial
   contribution: Lecture and lab (online module)
   years: since 2019
 
-- title: Visual Analytics
+- author: streit 
+  title: Visual Analytics
   institution: fhs
   contribution: Lecture and lab (bi-yearly)
   years: 2013 - 2018
 
-- title: Computer Graphics
+- author: streit 
+  title: Computer Graphics
   institution: fhs
   contribution: Lecture and lab
   years: 2012 - 2014
 
-- title: "Selected Topics Computer Graphics: Visualization"
+- author: streit 
+  title: "Selected Topics Computer Graphics: Visualization"
   institution: tug
   contribution: Lecture and lab
   years: 2009 - 2011
 
-- title: Computer Graphics 1
+- author: streit 
+  title: Computer Graphics 1
   institution: tug
   contribution: Lab
   years: 2009 - 2011
 
-- title: Computer Graphics 2
+- author: streit 
+  title: Computer Graphics 2
   institution: tug
   contribution: Lab
   years: 2009 - 2011
 
-- title: Distributed Systems
+- author: streit 
+  title: Distributed Systems
   institution: tug
   contribution: Lab
   years: 2009 - 2011
 
-- title: "Accompanying Courses for Project Students: Introduction to Scientific Work, Presentation Techniques"
+- author: streit 
+  title: "Accompanying Courses for Project Students: Introduction to Scientific Work, Presentation Techniques"
   institution: tug
   contribution: Lecture and lab
   years: 2009 - 2011
 
-- title: Real-Time Graphics
+- author: streit 
+  title: Real-Time Graphics
   institution: tug
   contribution: Lab
   years: 2008 - 2010
 
-- title: Virtual Reality
+- author: streit 
+  title: Virtual Reality
   institution: tug
   contribution: Lab
   years: 2007 - 2010

@@ -1128,3 +1128,42 @@ ul.project-icon-list li {
   float: right;
   margin-top: 0px;
 }
+
+
+// publication list
+
+.cover-image-small {
+  height: 150px;
+  width: 120px;
+  float: left;
+  margin-right: 20px;
+  @include box-shadow( 1px, 1px, 4px, transparentize( black, 0.75) );
+  @include border-radius( 3px );
+}
+
+.cover-image-small + div {
+  min-height: 170px;
+}
+
+
+// team-member various lists
+
+.team-member-pub-table td.team-member-pub-date, .courses-table td.courses-date {
+  // text-align: right;
+  padding-right: 15px;
+}
+
+.courses-table td.courses-fields {
+  border-bottom: 0px;
+  padding: 2px;
+  width: 45%;
+}
+
+.service-table td.service-date {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.service-table td.service-field {
+  width: 83%;
+}

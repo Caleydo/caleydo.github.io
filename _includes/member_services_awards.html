@@ -1,0 +1,12 @@
+<table class="service-table">
+<tr>
+    <th></th>
+    <th></th>
+</tr>
+{% for service in member_services %}
+<tr>
+    {% if service.date %}<td class="service-date">{{ service.date }}</td>{% endif %}
+    <td class="service-field">{% if service.role %}{{ service.role }},{% endif %} {{ service.title }}</td>
+</tr>
+{% endfor %}
+</table>

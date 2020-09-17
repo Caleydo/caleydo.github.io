@@ -1,4 +1,5 @@
-- agency: Linz Institute of Technology (LIT) / State of Upper Austria
+- author: streit 
+  agency: Linz Institute of Technology (LIT) / State of Upper Austria
   website:
   logo:
   title: "HOXAI: Hands-on Explainable AI"
@@ -13,7 +14,8 @@
   active: true
   amount: 196k EUR
 
-- agency: State of Upper Austria
+- author: streit 
+  agency: State of Upper Austria
   website:
   logo:
   title: "Human-Interpretable AI"
@@ -28,7 +30,8 @@
   active: true
   amount: 288k EUR
 
-- agency: Boehringer Ingelheim Regional Center Vienna
+- author: streit 
+  agency: Boehringer Ingelheim Regional Center Vienna
   website:
   logo:
   title: "Development of Multi-Dimensional Genomic Data Visualization and Data Mining Techniques"
@@ -43,7 +46,8 @@
   active: true
   amount: 252k EUR
 
-- agency: Austrian Research Promotion Agency (FFG)
+- author: streit 
+  agency: Austrian Research Promotion agency (FFG)
   website:
   logo:
   title: "Pro2Future – Products and Production Systems of the Future"
@@ -58,7 +62,8 @@
   active: true
   amount: 19 M EUR
 
-- agency: Austrian Science Fund (FWF), State of Upper Austria, Nationalstiftung
+- author: streit 
+  agency: Austrian Science Fund (FWF), State of Upper Austria, Nationalstiftung
   website:
   logo:
   title: "VisOnFire - Visual Analysis of Large and Heterogeneous Scientific Workflows for Analytical Provenance"
@@ -73,7 +78,8 @@
   active: true
   amount: 352k EUR
 
-- agency: Boehringer Ingelheim Regional Center Vienna
+- author: streit 
+  agency: Boehringer Ingelheim Regional Center Vienna
   website:
   logo:
   title: "Development of Multi-Dimensional Genomic Data Visualization and Data Mining Techniques"
@@ -88,7 +94,8 @@
   active: true
   amount: 210k EUR
 
-- agency: State of Upper Austria
+- author: streit 
+  agency: State of Upper Austria
   website:
   logo:
   title: "TourGuide - Navigation System for Capturing and Analyzing Complex Clinical Data"
@@ -103,7 +110,8 @@
   active: true
   amount: 400k EUR
 
-- agency: Austrian Research Promotion Agency (FFG)
+- author: streit 
+  agency: Austrian Research Promotion agency (FFG)
   website: https://www.ffg.at/en
   logo: ffg.png
   title: "PIPES-VS-DAMS - Privacy Preserving Visual Dynamic Network Analysis for Advanced System Monitoring on Multiple Scales"
@@ -118,7 +126,8 @@
   active: true
   amount: 410k EUR
 
-- agency: Federal Ministry of Science, Research and Economy
+- author: streit 
+  agency: Federal Ministry of Science, Research and Economy
   website:
   logo: bmwfw.png
   title: "Austrian Teaching Cooperation in Visual Computing"
@@ -133,7 +142,8 @@
   active: true
   amount: 96k EUR
 
-- agency: Graz University of Technology
+- author: streit 
+  agency: Graz University of Technology
   website:
   logo:
   title: "Future Lab Grant"
@@ -148,7 +158,8 @@
   active: false
   amount: 38k EUR
 
-- agency: Austrian Science Fund (FWF)
+- author: streit 
+  agency: Austrian Science Fund (FWF)
   website:
   logo:
   title: "Caleydoplex - Information Exploration in Teams"
@@ -163,7 +174,8 @@
   active: false
   amount: 225k  EUR
 
-- agency: Austrian Research Promotion Agency (FFG)
+- author: streit 
+  agency: Austrian Research Promotion agency (FFG)
   website:
   logo:
   title: "InGeneious - Visualization of Biomolecular and Clinical Data"

@@ -1,149 +1,186 @@
-- role: Guest Editor
-  for: BMC Bioinformatics, Special Issue on Highlights from the Symposium on Biological Data Visualization
-  years: 2015 - 2017
+- author: streit 
+  role: Guest Editor
+  title: BMC Bioinformatics, Special Issue on Highlights from the Symposium on Biological Data Visualization
+  date: 2015 - 2017
 
-- role: Guest Editor
-  for: IEEE Computer, Special Issue on Visual Analytics
-  years: 2013  
+- author: streit 
+  role: Guest Editor
+  title: IEEE Computer, Special Issue on Visual Analytics
+  date: 2013  
   
-- role: "Steering Committee"
-  for: Symposium on Biological Data Visualization (BioVis)
-  years: 2019
+- author: streit 
+  role: "Steering Committee"
+  title: Symposium on Biological Data Visualization (BioVis)
+  date: 2019
 
-- role: "Steering Committee"
-  for: Visualization in Data Science (VDS)
-  years: 2017 - 2019
+- author: streit 
+  role: "Steering Committee"
+  title: Visualization in Data Science (VDS)
+  date: 2017 - 2019
 
-- role: "Organizing Committee: General Chair"
-  for: Symposium on Biological Data Visualization (BioVis)
-  years: 2017 - 2018
+- author: streit 
+  role: "Organizing Committee: General Chair"
+  title: Symposium on Biological Data Visualization (BioVis)
+  date: 2017 - 2018
 
-- role: "Organizing Committee: Doctoral Colloquium"
-  for: IEEE Conference on Information Visualization (InfoVis)
-  years: 2017 - 2018
+- author: streit 
+  role: "Organizing Committee: Doctoral Colloquium"
+  title: IEEE Conference on Information Visualization (InfoVis)
+  date: 2017 - 2018
 
-- role: "Organizing Committee: Workshop Chair"
-  for: BioVis Challenges Workshop @ IEEE VIS
-  years: 2017
+- author: streit 
+  role: "Organizing Committee: Workshop Chair"
+  title: BioVis Challenges Workshop @ IEEE VIS
+  date: 2017
 
-- role: "Organizing Committee: General Chair"
-  for: Visualization in Data Science (VDS)
-  years: 2016
+- author: streit 
+  role: "Organizing Committee: General Chair"
+  title: Visualization in Data Science (VDS)
+  date: 2016
 
-- role: "Organizing Committee: Paper Chair"
-  for: IEEE Symposium on Biological Data Visualization (BioVis)
-  years: 2016
+- author: streit 
+  role: "Organizing Committee: Paper Chair"
+  title: IEEE Symposium on Biological Data Visualization (BioVis)
+  date: 2016
 
-- role: "Organizing Committee: Meetups Chair"
-  for: IEEE Conference on Information Visualization (InfoVis)
-  years: 2016
+- author: streit 
+  role: "Organizing Committee: Meetups Chair"
+  title: IEEE Conference on Information Visualization (InfoVis)
+  date: 2016
 
-- role: "Organizing Committee: Program Chair"
-  for: Visualization in Data Science (VDS)
-  years: 2015    
+- author: streit 
+  role: "Organizing Committee: Program Chair"
+  title: Visualization in Data Science (VDS)
+  date: 2015    
 
-- role: "Organizing Committee: Publication Chair"
-  for: Symposium on Biological Data Visualization (BioVis)
-  years: 2015
+- author: streit 
+  role: "Organizing Committee: Publication Chair"
+  title: Symposium on Biological Data Visualization (BioVis)
+  date: 2015
 
-- role: "Organizing Committee: Poster Chair"
-  for: IEEE Symposium on Biological Data Visualization (BioVis)
-  years: 2014
+- author: streit 
+  role: "Organizing Committee: Poster Chair"
+  title: IEEE Symposium on Biological Data Visualization (BioVis)
+  date: 2014
 
-- role: "Organizing Committee: Website Chair"
-  for: IEEE Symposium on Biological Data Visualization (BioVis)
-  years: 2012 - 2013
+- author: streit 
+  role: "Organizing Committee: Website Chair"
+  title: IEEE Symposium on Biological Data Visualization (BioVis)
+  date: 2012 - 2013
 
-- role: Program Committee
-  for: IEEE Conference on Information Visualization (InfoVis)
-  years: 2017, 2013 - 2015
+- author: streit 
+  role: Program Committee
+  title: IEEE Conference on Information Visualization (InfoVis)
+  date: 2017, 2013 - 2015
 
-- role: Program Committee
-  for: IEEE Conference on Visual Analytics Science and Technology (VAST)
-  years: 2019  
+- author: streit 
+  role: Program Committee
+  title: IEEE Conference on Visual Analytics Science and Technology (VAST)
+  date: 2019  
 
-- role: Program Committee
-  for: EuroVis Workshop on Visual Analytics (EuroVA)
-  years: 2017 - 2019, 2013 - 2015 
+- author: streit 
+  role: Program Committee
+  title: EuroVis Workshop on Visual Analytics (EuroVA)
+  date: 2017 - 2019, 2013 - 2015 
 
-- role: Program Committee
-  for: Eurographics Conference on Visualization Short Papers (EuroVis Short Papers)
-  years: 2014 - 2018
+- author: streit 
+  role: Program Committee
+  title: Eurographics Conference on Visualization Short Papers (EuroVis Short Papers)
+  date: 2014 - 2018
 
-- role: Program Committee
-  for: Eurographics Conference on Visualization (EuroVis)
-  years: 2019, 2014 - 2016
+- author: streit 
+  role: Program Committee
+  title: Eurographics Conference on Visualization (EuroVis)
+  date: 2019, 2014 - 2016
 
-- role: Program Committee
-  for: Workshop on Molecular Graphics and Visual Analysis of Molecular Data (MolVA)
-  years: 2019
+- author: streit 
+  role: Program Committee
+  title: Workshop on Molecular Graphics and Visual Analysis of Molecular Data (MolVA)
+  date: 2019
 
-- role: Program Committee
-  for: Process Management in Digital Production (DiPro)
-  years: 2019
+- author: streit 
+  role: Program Committee
+  title: Process Management in Digital Production (DiPro)
+  date: 2019
 
-- role: Program Committee
-  for: Conference on Cognitive Computing and Data-driven Business (i-KNOW)
-  years: 2014 - 2015
+- author: streit 
+  role: Program Committee
+  title: Conference on Cognitive Computing and Data-driven Business (i-KNOW)
+  date: 2014 - 2015
 
-- role: Program Committee
-  for: Conference on Information Visualization Theory and Applications (IVAPP)
-  years: 2017 - 2018, 2014 - 2015
+- author: streit 
+  role: Program Committee
+  title: Conference on Information Visualization Theory and Applications (IVAPP)
+  date: 2017 - 2018, 2014 - 2015
 
-- role: Program Committee
-  for: IEEE Symposium on Biological Data Visualization (BioVis)
-  years: 2012 - 2014
+- author: streit 
+  role: Program Committee
+  title: IEEE Symposium on Biological Data Visualization (BioVis)
+  date: 2012 - 2014
 
-- role: Program Committee
-  for: Eurographics Workshop on Visual Computing for Biology and Medicine (VCBM)
-  years: 2017, 2015, 2014, 2012
+- author: streit 
+  role: Program Committee
+  title: Eurographics Workshop on Visual Computing for Biology and Medicine (VCBM)
+  date: 2017, 2015, 2014, 2012
 
-- role: Program Committee
-  for: Central European Seminar on Computer Graphics (CESCG)
-  years: 2010 - 2015
+- author: streit 
+  role: Program Committee
+  title: Central European Seminar on Computer Graphics (CESCG)
+  date: 2010 - 2015
 
-- role: Program Committee
-  for: DATA 2012 ICETE, Special Session HCI-KDD in Computational Sciences
-  years: 2012 - 2013
+- author: streit 
+  role: Program Committee
+  title: DATA 2012 ICETE, Special Session HCI-KDD in Computational Sciences
+  date: 2012 - 2013
 
-- role: Program Committee
-  for: Conference on Intelligent Systems for Molecular Biology (ISMB)
-  years: 2013
+- author: streit 
+  role: Program Committee
+  title: Conference on Intelligent Systems for Molecular Biology (ISMB)
+  date: 2013
 
-- role: Program Committee
-  for: Conference on Information Visualisation (IV)
-  years: 2010 - 2012
+- author: streit 
+  role: Program Committee
+  title: Conference on Information Visualisation (IV)
+  date: 2010 - 2012
 
-- role: Program Committee
-  for: Workshop on Molecular Graphics and Visual Analysis of Molecular Data (MolVA)
-  years: 2020  
+- author: streit 
+  role: Program Committee
+  title: Workshop on Molecular Graphics and Visual Analysis of Molecular Data (MolVA)
+  date: 2020  
 
-- role: "Strategy & Programme Board"
-  for: FFG Pro2Future COMET K1-Centre
-  years: 2017 - 2018
+- author: streit 
+  role: "Strategy & Programme Board"
+  title: FFG Pro2Future COMET K1-Centre
+  date: 2017 - 2018
 
-- role: Expert Team
-  for: JKU Linz Institute of Technology
-  years: 2017
+- author: streit 
+  role: Expert Team
+  title: JKU Linz Institute of Technology
+  date: 2017
 
-- role: Best Paper Committee
-  for: IEEE Cofnference on Information Visualization (InfoVis)
-  years: 2018
+- author: streit 
+  role: Best Paper Committee
+  title: IEEE Cofnference on Information Visualization (InfoVis)
+  date: 2018
 
-- role: Best Poster Committee
-  for: IEEE Conference on Information Visualization (InfoVis)
-  years: 2016
+- author: streit 
+  role: Best Poster Committee
+  title: IEEE Conference on Information Visualization (InfoVis)
+  date: 2016
 
-- role: External Thesis Reviewer
-  for: Bauhaus University Weimar
-  years: 2015
+- author: streit 
+  role: External Thesis Reviewer
+  title: Bauhaus University Weimar
+  date: 2015
 
-- role: Habilitation Committee
-  for: Johannes Kepler University Linz
-  years: 2014
+- author: streit 
+  role: Habilitation Committee
+  title: Johannes Kepler University Linz
+  date: 2014
 
-- role: Best Poster Judge
-  for: Biological Data Visualization (BioVis)
-  years: 2017 - 2018, 2013
+- author: streit 
+  role: Best Poster Judge
+  title: Biological Data Visualization (BioVis)
+  date: 2017 - 2018, 2013
 
 

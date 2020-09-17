@@ -1,43 +1,51 @@
-- title: Visualizing Multivariate Networks
+- author: streit 
+  title: Visualizing Multivariate Networks
   event: Half-day Tutorial at IEEE VIS'19
   date: 2019-10-20
   location: Vancouver, Canada
   colleagues: Carolina Norbre and Alexander Lex
 
-- title: Creating Data Visualisations
+- author: streit 
+  title: Creating Data Visualisations
   event: 3rd BiVi (Biological Visualisation Community) Annual Meeting
   date: 2015-10-09
   location: Edinburgh, UK
   colleagues: Jan Aerts
 
-- title: Data Visualization and Analysis
+- author: streit 
+  title: Data Visualization and Analysis
   event: Smart Production Qualification Network funded by the Austrian Research Promotion Agency (FFG)
   date: 2015-10-09
   location: Hagenberg, Austria
 
-- title: Visualization & Visual Analytics
+- author: streit 
+  title: Visualization & Visual Analytics
   event: International Summer School on Visual Computing organized by Fraunhofer IGD
   date: 2015-08-21
   location: Rostock, Germany
 
-- title: Biological Data Visualization
+- author: streit 
+  title: Biological Data Visualization
   event: Guest Lecture at Visualization Course, University of Vienna
   date: 2015-05-19
   location: Vienna, Austria
 
-- title: Cancer Data Analysis with Caleydo StratomeX and enRoute
+- author: streit 
+  title: Cancer Data Analysis with Caleydo StratomeX and enRoute
   event: Symposium on Understanding Cancer Genomics through Information Visualization at Tokyo University
   date: 2013-02-21
   location: Tokyo, Japan
   colleagues: Alexander Lex
 
-- title: Connecting the Dots - Showing Relationships in Data and Beyond
+- author: streit 
+  title: Connecting the Dots - Showing Relationships in Data and Beyond
   event: Half-day Tutorial at IEEE VisWeek'12
   date: 2012-10-15
   location: Seattle, WA, USA
   colleagues: Hans-Jörg Schulz and Alexander Lex
 
-- title: Visual Linking in Information Visualization and Beyond
+- author: streit 
+  title: Visual Linking in Information Visualization and Beyond
   event: Guest Lecture at Visualization Course, Rostock University
   date: 2012-01-23
   location: Rostock, Germany

@@ -1,0 +1,85 @@
+
+<div class="paper-list-block">
+    
+  {% if publication.image %}
+  <img class="cover-image-small" src="{{ site.baseurl }}{{ publication.image }}">
+  {% endif %}
+  
+  <div>
+    <p>
+      {% for author in publication.authors %}
+
+      {% assign known = false %}
+      {% for person in site.persons %}
+      {% if author == person.key %}
+    <span class="paper-author">
+      {% if person.cg_website %}
+          <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+      {% else %}
+          <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+      {% endif %}
+    </span>
+      {% assign known = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% if known == false %}
+    <span class="paper-author">
+      {{ author }}{% if author != publication.authors.last %}, {% endif %}
+    </span>
+      {% endif %}
+
+      {% endfor %}
+
+      {% if publication.editors %}
+        <br/>Editors: 
+        {% for editor in publication.editors %}
+
+        {% assign known = false %}
+        {% for person in site.persons %}
+        {% if editor == person.key %}
+      <span class="paper-author">
+        {% if person.cg_website %}
+            <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+        {% else %}
+            <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+        {% endif %}
+      </span>
+        {% assign known = true %}
+        {% endif %}
+        {% endfor %}
+        {% if known == false %}
+      <span class="paper-author">
+        {{ editor }}{% if editor != publication.editors.last %}, {% endif %}
+      </span>
+        {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      <br>
+      <b>{{ publication.title }}</b><br/>
+
+      {% if publication.chapter %}
+        Chapter: <b>{{ publication.chapter }}</b><br/>
+      {% endif %}
+
+      {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+    </p>
+
+    <p class="paper-link">
+      <span style="float: left;">
+        <i class="fa fa-external-link"></i>&nbsp;
+        {% if publication.doi %}
+          <a href="http://dx.doi.org/{{ publication.doi }}">Publisher</a>&nbsp;
+        {% else %}
+          <a href="{{ publication.publisher }}">Publisher</a>&nbsp;
+        {% endif %}
+
+        {% if publication.pdf %}
+          <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{ publication.pdf }}">PDF</a>
+        {% endif %}
+        &nbsp;
+      </span>
+    </p>
+  </div>
+</div> 

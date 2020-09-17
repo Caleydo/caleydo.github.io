@@ -1,0 +1,14 @@
+<table class="courses-table">
+  <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+  </tr>
+  {% for course in member_courses_institute %}
+  <tr>
+      <td class="courses-date">{{ course.years }}</td>
+      <td class="courses-fields"><i>{{ course.title }}</i></td>
+      <td class="courses-fields">{{ course.contribution }}</td>
+  </tr>
+  {% endfor %}
+  </table>

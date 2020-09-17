@@ -18,6 +18,15 @@ layout: default
       <li>
           <a href="#posters"><span>Posters</span></a>
       </li>
+      <li>
+          <a href="#editorials"><span>Editorials, Commentaries and Book Chapters</span></a>
+      </li>
+      <!-- <li>
+          <a href="#commentaries"><span>Commentaries</span></a>
+      </li>
+      <li>
+          <a href="#book-chapters"><span>Book Chapters</span></a>
+      </li> -->
     </ul>
   </div>
 
@@ -144,6 +153,41 @@ layout: default
   {% endif %}
   <br/>
 
+  {% endfor %}
+
+
+  <br>
+
+  <h1 id="editorials">Editorials</h1>
+
+  {% for publication in site.edits_comments_books reversed %}
+    {% if publication.personal %}
+    {% elsif publication.type == "editorial" %}
+      {% include publication_list_entry_book.html %}
+    {% endif %}
+  {% endfor %}
+
+  <br>
+
+  <h1 id="commentaries">Commentaries</h1>
+
+  {% for publication in site.edits_comments_books reversed %}
+    {% if publication.personal %}
+    {% elsif publication.type == "commentaries" %}
+      {% include publication_list_entry_book.html %}
+    {% endif %}
+  {% endfor %}
+      
+
+  <br>
+
+  <h1 id="book-chapters">Book Chapters</h1>
+
+  {% for publication in site.edits_comments_books reversed %}
+    {% if publication.personal %}
+    {% elsif publication.type == "book_chapter" %}
+      {% include publication_list_entry_book.html %}
+    {% endif %}
   {% endfor %}
 
 </article>

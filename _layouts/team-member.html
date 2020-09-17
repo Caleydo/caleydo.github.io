@@ -110,33 +110,54 @@ layout: default
                 <li>
                     <a href="#posters"><span>Posters</span></a>
                 </li>
+                <li>
+                    <a href="#editorials"><span>Editorials</span></a>
+                </li>
+                <li>
+                    <a href="#commentaries"><span>Commentaries</span></a>
+                </li>
+                <li>
+                    <a href="#book-chapters"><span>Book Chapters</span></a>
+                </li>
+                <li>
+                    <a href="#projects"><span>Projects</span></a>
+                </li>
+                <li>
+                    <a href="#talks"><span>Talks</span></a>
+                </li>
+                <li>
+                    <a href="#teaching"><span>Teaching</span></a>
+                </li>
+                <li>
+                    <a href="#awards"><span>Services & Awards</span></a>
+                </li>
             </ul>
         </div>
-        <br>
         {% endif %}
 
         {% assign member_publications = site.publications | where_exp:"item", 'item.authors contains page.key' %}
 
+        <!-- Preprint -->
         {% assign member_preprints = member_publications | where:"type", "preprint" %}
         {% if member_preprints %}
+            <br>
             <h1 id="preprint">Preprint</h1>
             {% for publication in member_preprints reversed %}
                 {% include publication_list_entry.html %}
             {% endfor %}
         {% endif %}
         
-        <br>
         
+        <!-- Papers -->
         {% assign member_papers = member_publications | where:"type", "paper" %}
         {% if member_papers %}
+            <br>
             <h1 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h1>
             {% for publication in member_papers reversed %}
                 {% include publication_list_entry.html %}
             {% endfor %}
-            
         {% endif %}
 
-        <br>
           
         
         <!-- {% assign member_thesis = site.thesis | where_exp:"item", 'item.author == page.key' %}
@@ -173,9 +194,11 @@ layout: default
           
 
 
+        <!-- Posters -->
         {% assign member_posters = site.data.posters | where_exp:"item", "item.authors contains page.key" %}
         {% assign psize = member_posters | size %}
         {% if psize > 0 %}
+            <br>
             <h1 id="posters">Extended Abstracts and Posters</h1>
             {% for publication in member_posters reversed %}
                 
@@ -239,8 +262,255 @@ layout: default
             
         {% endif %}
 
+
+        {% assign member_edits_comments_books = site.edits_comments_books | where_exp:"item", 'item.authors contains page.key' %}
+
+        <!-- Editorials -->
+        {% assign member_edits = member_edits_comments_books | where:"type", "editorial" %}
+        {% assign psize = member_edits | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1 id="editorials">Editorials</h1>
+            {% for publication in member_edits reversed %}
+                {% if publication.personal %}
+                {% else %}
+                    {% include publication_list_entry_book.html %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+
+        <!-- Commentaries -->
+        {% assign member_comments = member_edits_comments_books | where:"type", "commentaries" %}
+        {% assign psize = member_comments | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1 id="commentaries">Commentaries</h1>
+            {% for publication in member_comments %}
+                {% if publication.personal %}
+                {% else %}
+                    {% include publication_list_entry_book.html %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+            
+        {% assign member_book_chapters = member_edits_comments_books | where:"type", "book_chapter" %}
+        {% assign psize = member_book_chapters | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1 id="book-chapters">Book Chapters</h1>
+            {% for publication in member_book_chapters reversed %}
+                {% if publication.personal %}
+                {% else %}
+                    {% include publication_list_entry_book.html %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+
+        <!-- Projects -->
+        {% assign member_projects = site.data.projects | where:"author", page.key %}
+        {% assign psize = member_projects | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1 id="projects">Projects</h1>
+            <table class="team-member-pub-table">
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                {% for grant in member_projects %}
+                <tr>
+                    <td class="team-member-pub-date">{{ grant.time }}</td>
+                    <td><i>{{ grant.title }},</i><br>Funded by {{ grant.agency }},
+            
+                    {% if grant.program %}
+                        {{ grant.program }},
+                    {% endif %}
+            
+                    {% if grant.number %}
+                    Grant no. {{ grant.number }},
+                    {% endif %}
+            
+                    {{ grant.amount }}.</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+
+
+        <!-- Talks -->
+        {% assign member_talks = site.data.talks | where:"author", page.key %}
+        {% assign psize = member_talks | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1 id="talks">Talks</h1>
+            <table class="team-member-pub-table">
+                <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                </tr>
+                {% for talk in member_talks %}
+                <tr>
+                <td class="team-member-pub-date">{{ talk.date }}</td>
+                <td><i>{{ talk.title }}</i><br />{{ talk.event }} ({{ talk.type }})</td>
+                <td>{{ talk.location }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+
+
+          
+        <!-- Teaching -->
+        <h1 id="teaching" style="visibility: hidden;">Teaching</h1>
+        
+        {% assign member_courses = site.data.courses | where:"author", page.key %}
+        {% assign psize = member_courses | size %}
+        {% if psize > 0 %}
+            <h1>Courses</h1>
+
+            <!-- JKU -->
+            {% assign member_courses_institute = member_courses | where:"institution", "jku" %}
+            {% assign psize = member_courses_institute | size %}
+            {% if psize > 0 %}
+                <br>
+                <h2>Courses at Johannes Kepler University Linz</h2>
+                {% include member_courses.html %}
+            {% endif %}
+
+            <!-- harvard -->
+            {% assign member_courses_institute = member_courses | where:"institution", "harvard" %}
+            {% assign psize = member_courses_institute | size %}
+            {% if psize > 0 %}
+                <br>
+                <h2>Courses at Harvard University</h2>
+                {% include member_courses.html %}
+            {% endif %}
+
+            <!-- imperial -->
+            {% assign member_courses_institute = member_courses | where:"institution", "imperial" %}
+            {% assign psize = member_courses_institute | size %}
+            {% if psize > 0 %}
+                <br>
+                <h2>Courses at Imperial College London</h2>
+                {% include member_courses.html %}
+            {% endif %}
+
+            <!-- fhs -->
+            {% assign member_courses_institute = member_courses | where:"institution", "fhs" %}
+            {% assign psize = member_courses_institute | size %}
+            {% if psize > 0 %}
+                <br>
+                <h2>Courses at Salzburg University of Applied Sciences</h2>
+                {% include member_courses.html %}
+            {% endif %}
+
+            <!-- tug -->
+            {% assign member_courses_institute = member_courses | where:"institution", "tug" %}
+            {% assign psize = member_courses_institute | size %}
+            {% if psize > 0 %}
+                <br>
+                <h2>Courses at Graz University of Technology</h2>
+                {% include member_courses.html %}
+            {% endif %}
+
+        {% endif %}
+
+
+        <!-- Tutorials -->
+
+        {% assign member_tutorials = site.data.tutorials | where:"author", page.key %}
+        {% assign psize = member_tutorials | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1>Tutorials and Guest Lectures</h1>
+            <table class="team-member-pub-table">
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                {% for tut in member_tutorials %}
+                <tr>
+                  <td class="team-member-pub-date">{{ tut.date }}</td>
+                  <td><i>{{ tut.title }}</i><br />{{ tut.event }}
+                    {% if tut.colleagues %}
+                    , held together with {{ tut.colleagues }}
+                    {% endif %}
+                    <br /><a href="{{ tut.website }}">{{ tut.website }}</a></td>
+                  <td>{{ tut.location }}</td>
+                </tr>
+                {% endfor %}
+              </table>
+        {% endif %}
+
+
+        <!-- Student Supervision -->
+
+        {% assign member_students = site.data.students | where:"author", page.key %}
+        {% assign psize = member_students | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1>Student Supervision</h1>
+            <table class="team-member-pub-table">
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                {% for student in member_students %}
+                <tr>
+                  <td class="team-member-pub-date">{{ student.date }}</td>
+                  <td>{{ student.type }}</td>
+                  <td>{{ student.name }}</td>
+                  <td><i>{{ student.title }}</i></td>
+                </tr>
+                {% endfor %}
+              </table>
+            
+        {% endif %}
+
+
+        <!-- Sevices & Awards -->
+        <h1 id="awards" style="visibility: hidden;">Sevices & Awards</h1>
+
+        <!-- Awards and Scholarships -->
+        {% assign member_services = site.data.awards | where:"author", page.key %}
+        {% assign psize = member_services | size %}
+        {% if psize > 0 %}
+            <h1>Awards and Scholarships</h1>
+            {% include member_services_awards.html %}
+        {% endif %}
+
+        <!-- Editorial and Committee Functions -->
+        {% assign member_services = site.data.functions | where:"author", page.key %}
+        {% assign psize = member_services | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1>Editorial and Committee Functions</h1>
+            {% include member_services_awards.html %}
+        {% endif %}
+
+        <!-- Reviewing -->
+        {% assign member_services = site.data.reviewing | where:"author", page.key %}
+        {% assign psize = member_services | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1>Reviewing</h1>
+            {% include member_services_awards.html %}
+        {% endif %}
+
+        <!-- Memberships in Professional Societies and Interest Groups -->
+        {% assign member_services = site.data.memberships | where:"author", page.key %}
+        {% assign psize = member_services | size %}
+        {% if psize > 0 %}
+            <br>
+            <h1>Memberships in Professional Societies and Interest Groups</h1>
+            {% include member_services_awards.html %}
+        {% endif %}
       
       </article>
-      
-
 </div>

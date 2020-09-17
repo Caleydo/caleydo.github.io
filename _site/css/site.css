@@ -992,3 +992,15 @@ ul.project-icon-list li { padding-left: 2em; padding-bottom: 0.5em; line-height:
 .pub-nav li a { text-align: center; margin-left: 20px; font-weight: 700; font-size: 1.2em; }
 
 .publications-content .pub-nav { float: right; margin-top: 0px; }
+
+.cover-image-small { height: 150px; width: 120px; float: left; margin-right: 20px; -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25) ; -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25) ; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25) ; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; }
+
+.cover-image-small + div { min-height: 170px; }
+
+.team-member-pub-table td.team-member-pub-date, .courses-table td.courses-date { padding-right: 15px; }
+
+.courses-table td.courses-fields { border-bottom: 0px; padding: 2px; width: 45%; }
+
+.service-table td.service-date { text-align: right; padding-right: 15px; }
+
+.service-table td.service-field { width: 83%; }
