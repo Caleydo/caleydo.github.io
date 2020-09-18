@@ -2,7 +2,7 @@
 layout: default
 ---
 <header class="publications-title">
-  <h1>{{ page.title | remove: "| Visual Data Science Group" }}</h1>
+  <h1>{{ page.title | remove: "JKU Visual Data Science Group |" }}</h1>
 </header>
 
 <article class="publications-content">
@@ -35,7 +35,7 @@ layout: default
   <h1 id="preprint">Preprint</h1>
 
   {% for publication in site.publications reversed %}
-    {% if publication.personal %}
+    {% if publication.hide or publication.non_group_project %}
     {% elsif publication.type == "preprint" %}
       {% include publication_list_entry.html %}
     {% endif %}
@@ -46,7 +46,7 @@ layout: default
   <h1 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h1>
 
   {% for publication in site.publications reversed %}
-    {% if publication.personal %}
+    {% if publication.hide or publication.non_group_project %}
     {% elsif publication.type == "paper" %}
       {% include publication_list_entry.html %}
     {% endif %}
@@ -54,36 +54,38 @@ layout: default
 
   <br>
 	
-  <!-- <h1 id="theses">Theses</h1>
+  <h1 id="theses">Theses</h1>
 
   {% for thesis in site.thesis reversed %}
+  {% if thesis.hide or thesis.non_group_project %}
+  {% else %}
+    <div class="paper-list-block">
 
-  <div class="paper-list-block">
+      <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
 
-    <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+      <p>
+        {% assign known = false %}
+        {% for person in site.persons %}
+        {% if person.key == thesis.author %}
+        {% if person.cg_website %}
+            <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+        {% else %}
+            <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+        {% endif %}
+          {% assign known = true %}
+        {% endif %}
+        {% endfor %}
+      {% if known == false %}
+      {{ author }}
+      {% endif %} <br/>
+        <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
+        {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
+      </p>
 
-    <p>
-      {% assign known = false %}
-      {% for person in site.persons %}
-      {% if person.key == thesis.author %}
-      {% if person.cg_website %}
-          <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>
-      {% else %}
-          <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
-      {% endif %}
-			  {% assign known = true %}
-		  {% endif %}
-      {% endfor %}
-	  {% if known == false %}
-	  {{ author }}
-	  {% endif %} <br/>
-      <b> <a href="{{ site.baseurl }}{{ thesis.url }}">{{ thesis.title }}</a></b><br/>
-      {{ thesis.institution }}, {{thesis.thesis_type}}, {{thesis.year}}
-    </p>
+    </div>
+  {% endif %}
 
-  </div>
-
-  {% endfor %} -->
+  {% endfor %}
 
   <!-- <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>-->
   <br>

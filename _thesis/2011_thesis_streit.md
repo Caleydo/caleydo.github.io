@@ -5,6 +5,7 @@ key: 2011-thesis-streit
 permalink: /thesis/2011_thesis_streit/
 type: thesis
 
+non_group_project: True
 
 shortname: Thesis-Streit
 image: /assets/images/papers/2012_tvcg_model-driven.png

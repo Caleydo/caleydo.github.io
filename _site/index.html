@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-<title>Home | Visual Data Science Group</title>
+<title>JKU Visual Data Science Group | Home</title>
 <meta name="viewport" content="width=device-width">
 <meta name="description" content="Caleydo: Visualization for BioMedicine.">
 <link rel="canonical" href="http://localhost:4000/">
@@ -87,19 +87,20 @@
 
         <header class="home-title">
             <h1>Welcome</h1>
-            <!-- <h1>Home </h1> -->
+            <!-- <h1> Home</h1> -->
         </header>
 
         <article class="home-content-main">
 
             <h1>About</h1>
-
             <p>Caleydo is a community of researchers at JKU Linz, the University of Utah, and Harvard Medical School
                 that focuses on biological data visualization. Caleydo used to be a monolithic visual analysis
                 framework originally developed at TU Graz, targeted at biomolecular data, but has since evolved into a
                 more distributed collection of people, tools, software, and research projects. Some of the tools
                 developed as part of the Caleydo framework are now maintained and extended by our spin-off company, <a
                     href="http://datavisyn.io">datavisyn</a>.</p>
+                    
+            <h1>Caleydo</h1>
             <p>
                 This page collects the output of our work on biological data visualization in the form of software and
                 publications. All of our software is available as open source. Developers and researchers that want to
@@ -108,379 +109,386 @@
 
 
 
-            <!--      Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of
-            Caleydo is the visualization of interdependencies between multiple datasets. Caleydo can load tabular data
-            and groupings/clusterings. You can explore relationships between multiple groupings, between different
-            datasets and see how your data maps onto pathways.
-            Caleydo has been successfully used to analyze mRNA, miRNA, methylation, copy number variation, mutation
-            status and clinical data as well as other datset types.</p>
-
-        <p>All published parts of the software are available as open source. Developers and researchers that want to use
-            or enhance the current tools are invited to contribute. See our <a href="https://github.com/Caleydo/">Github
-                page</a> for further details.</p>
-
-        <h2>Web and Standalone Version</h2>
-
-        <p>Until 2014, Caleydo was a downloadable piece of software. <b>Since then and going forward, however, all of our new tools are/will be web-based</b>. We will soon release a visualization framework aimed at developers, but you can already enjoy our visualization tools. We are also committed to porting our older standalone tools to the web browser, yet, as of early 2016 not all tools are web-ready. <a href="/tools/stratomex">StratomeX</a> and <a href="/tools/lineup">LineUp</a>, for example, have reasonably feature-complete web-ports. Our <a href="/tools/pathways">pathway tools</a>, on the other hand, still have a way to go.
-        </p>
-
-        <p>For real-life data analysis, we recommend you stick to the standalone software for now, but be prepared to transition to the web soon!</p> -->
-
-            
-
-            <script>
-                (function () {
-                    var publications = {
-                        {
-                            publications | strip_newlines
-                        }
-                    };
-
-                    function random_from_array(array) {
-                        return array[Math.floor(Math.random() * array.length)];
-                    }
-
-                    function html_escape(str) {
-                        return str
-                            .replace(/&/g, '&amp;')
-                            .replace(/"/g, '&quot;')
-                            .replace(/'/g, '&#39;')
-                            .replace(/</g, '&lt;')
-                            .replace(/>/g, '&gt;');
-                    }
-                    var pub = random_from_array(publications);
-                    // TODO: html encode.
-                    document.write('<h1 id="featured-tool">Featured Paper: ' + html_escape(pub.shortname) + '</h1>');
-                    document.write('<div id="main-banner-image"><a class="banner-image" href="' + html_escape(pub.url) +
-                        '">');
-                    document.write(
-                        '<img alt="screenshot" class="left-banner-image" src="/assets/images/papers/' +
-                        html_escape(pub.image_large) + '"/>');
-                    document.write('<ul class="publication-icon-list"><li>' + html_escape(pub.title) + '</li></ul>');
-                    document.write('</a></div>');
-                })();
-            </script>
-
-
-            <!--
-        <h1>News <span class="right-icon"><a href="/feed.xml"><i class="fa fa-rss"></i></a></span>
-        </h1>
-
-        <ul class="post-list">
-            
-            <li class="post-list-item">
-                <div class="post-list-title">
-                    12 Apr 2016 | LineUp integrated in Microsoft PowerBI
-                </div>
-                <div class="post-list-excerpt">
-                    <p>Microsoft’s PowerBI platform makes data visualization accessible to a broad audience. We’re happy to see our LineUp tool <a href="https://app.powerbi.com/visuals/show/TableSorter1450434005853">integrated into PowerBI</a> as “Table Sorter”. It is exciting that one of our research prototypes has become part of a popular commercial product. See the <a href="/tools/lineup/">tools page</a> for details about LineUp.</p>
-
-                    <a class="post-list-link" href="/event/2016/04/12/lineup_integrated_in_microsoft_powerbi/">More...</a>
-                </div>
-            </li>
-            
-            <li class="post-list-item">
-                <div class="post-list-title">
-                    1 Mar 2016 | Postdoc and software developer postions at Harvard Medical School
-                </div>
-                <div class="post-list-excerpt">
-                    <p>The <a href="http://gehlenborglab.org">Gehlenborg Lab</a> in the <a href="https://dbmi.hms.harvard.edu">Department of Biomedical Informatics at Harvard Medical School</a> is seeking <a href="https://dbmi.hms.harvard.edu/careers/postdoctoral-fellows/gehlenborg-lab">postdoctoral fellows</a> and <a href="https://dbmi.hms.harvard.edu/careers/software-engineers/visualization-software-developer">software developers</a> to work on exciting problems in data science, visualization of biomedical data, and reproducible research. Please apply directly or get in touch with <a href="mailto:nils@hms.harvard.edu">Nils Gehlenborg</a> if you are interested.</p>
-
-                    <a class="post-list-link" href="/event/2016/03/01/open_positions_harvard/">More...</a>
-                </div>
-            </li>
-            
-            <li class="post-list-item">
-                <div class="post-list-title">
-                    19 Jun 2015 | Open PostDoc and PhD Student Position @ University of Utah
-                </div>
-                <div class="post-list-excerpt">
-                    <p>We are seeking a <strong>postdoctoral fellow</strong> and <strong>multiple PhD students</strong> to join the Caleydo team at the University of Utah. For the postdoctoral position, please refer to <a href="http://www.sci.utah.edu/75-sci-opportunities/post-doc/536-post-doc-lex.html">this announcement</a>. If you are interested in the University of Utah PhD program, please get in touch with Alexander Lex at <a href="mailto:alex@sci.utah.edu">alex@sci.utah.edu</a>.</p>
-
-                    <a class="post-list-link" href="/event/2015/06/19/open_positions_utah/">More...</a>
-                </div>
-            </li>
-            
-            <li class="post-list-item">
-                <div class="post-list-title">
-                    18 Jun 2015 | Team Updates
-                </div>
-                <div class="post-list-excerpt">
-                    <p>The University of Utah joins the Caleydo Partners as <a href="http://alexander-lex.net">Alexander Lex</a> will join the <a href="https://sci.utah.edu">Scientific Computing and Imaging Institute</a> and the <a href="https://www.cs.utah.edu/">School of Computing</a> in the fall of 2015.</p>
-
-                    <a class="post-list-link" href="/event/2015/06/18/team/">More...</a>
-                </div>
-            </li>
-            
-        </ul>
-        <p><a href="news">Earlier news ...</a></p>
-    -->
-
             <h1>Recent Publications</h1>
             <ul class="publication-icon-list">
                 
                 <!--  -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <li><a href="/publications/2020_tvcg_confusionflow/">ConfusionFlow: A Model-Agnostic Visualization for Temporal Analysis of Classifier Confusion</a><br>IEEE Transactions on Visualization and Computer Graphics (to appear),
-                        2020
-                    </li>
+                        
+                        <li><a href="/publications/2020_tvcg_confusionflow/">ConfusionFlow: A Model-Agnostic Visualization for Temporal Analysis of Classifier Confusion</a><br>IEEE TVCG,
+                            2020
+                        </li>
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <li><a href="/publications/2020_tiis_pathexplorer/">Exploring Visual Patterns in Projected Human and Machine Decision-Making Paths</a><br>ACM Transactions on Interactive Intelligent Systems (TiiS), Special Issue on Interactive Visual Analytics for Making Explainable and Accountable Decisions (to appear),
-                        2020
-                    </li>
+                        
+                        <li><a href="/publications/2020_tiis_pathexplorer/">Exploring Visual Patterns in Projected Human and Machine Decision-Making Paths</a><br>ACM TiiS,
+                            2020
+                        </li>
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <li><a href="/publications/2020_projective-latent-space-deculttering/">Projective Latent Space Decluttering</a><br>Preprint,
-                        2020
-                    </li>
+                        
+                        <li><a href="/publications/2020_projective-latent-space-deculttering/">Projective Latent Space Decluttering</a><br>Preprint,
+                            2020
+                        </li>
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <li><a href="/publications/2020_preprint_instanceflow/">InstanceFlow: Visualizing the Evolution of Classifier Confusion on the Instance Level</a><br>Preprint,
-                        2020
-                    </li>
+                        
+                        <li><a href="/publications/2020_preprint_instanceflow/">InstanceFlow: Visualizing the Evolution of Classifier Confusion on the Instance Level</a><br>Preprint,
+                            2020
+                        </li>
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <li><a href="/publications/2020_eurovis_anaprov/">Survey on the Analysis of User Interactions and Visualization Provenance</a><br>Computer Graphics Forum, EuroVis STAR 2020 (to appear),
-                        2020
-                    </li>
+                        
+                        <li><a href="/publications/2020_eurovis_anaprov/">Survey on the Analysis of User Interactions and Visualization Provenance</a><br>Preprint,
+                            2020
+                        </li>
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <li><a href="/publications/2020_cgf_guideme/">Guide Me in Analysis: A Framework for Guidance Designersn</a><br>Computer Graphics Forum (to appear),
-                        2020
-                    </li>
+                        
+                        <li><a href="/publications/2020_cgf_guideme/">Guide Me in Analysis: A Framework for Guidance Designersn</a><br>CGF,
+                            2020
+                        </li>
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <li><a href="/publications/2020_cg_clinical-decision-support/">A Visual Approach to Explainable Computerized Clinical Decision Support</a><br>Computer & Graphics, Special Section on VCBM 2019,
-                        2020
-                    </li>
+                        
+                        <li><a href="/publications/2020_cg_clinical-decision-support/">A Visual Approach to Explainable Computerized Clinical Decision Support</a><br>,
+                            2020
+                        </li>
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
-                    <!-- 
-                     -->
-                 <!-- add "limit: 5" does not quite work... -->
+                        
                     
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
                     
+                        
+                    
                     <!-- 
                      -->
                  <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
+                    
+                    <!-- 
+                     -->
+                 <!-- add "limit: 5" does not quite work... -->
+                    
+                        
                     
                     <!-- 
                      -->
@@ -549,121 +557,6 @@
                     </li>
                 
             </ul>
-
-            <!-- <h1>Tools</h1>
-            <ul class="project-icon-list">
-                
-                
-                
-                <li><a href="/tools/stratomex/">StratomeX</a><br>Genomic Stratification of Diseases</li>
-                
-                
-                
-                <li><a href="/tools/pathfinder/">Pathfinder</a><br>Visualizing Paths</li>
-                
-                
-                
-                <li><a href="/tools/upset/">UpSet</a><br>Visualizing Intersecting Sets</li>
-                
-                
-                
-                <li><a href="/tools/pathways/">Entourage & enRoute</a><br>Experimental Data in Pathways</li>
-                
-                
-                
-                <li><a href="/tools/lineup/">LineUp</a><br>Multi-Attribute Rankings</li>
-                
-                
-                
-                <li><a href="/tools/domino/">Domino</a><br>Exploring Subsets of Tabular Datasets</li>
-                
-                
-                
-                <li><a href="/tools/taco/">TACO</a><br>Visualizing Changes in Tables Over Time</li>
-                
-                
-            </ul> -->
-
-
-            <!--  <h1>Funding</h1>
-        <ul class="funding-icon-list">
-            
-            
-            
-            
-            <li><a href="/funding">Austrian Research Promotion Agency (FFG)</a></li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li><a href="/funding">Austrian Science Fund (FWF)</a></li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li><a href="/funding">Boehringer Ingelheim RCV</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="/funding">National Institutes of Health</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="/funding">Novartis Institutes for BioMedical Research</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="/funding">State of Styria</a></li>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <li><a href="/funding">State of Upper Austria</a></li>
-            
-            
-            
-            
-        </ul> -->
         </article>
 
 
@@ -742,7 +635,7 @@
     </span> -->
     <div class="footer-disclaimer">
       <p>
-        Copyright &copy; 2020 Visual Data Science Group. All content on this website is licensed under the <br />
+        Copyright &copy; 2020 JKU Visual Data Science Group. All content on this website is licensed under the <br />
         <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY)</a>. Copyright of the linked papers is with the publishers.
       </p>
     </div>

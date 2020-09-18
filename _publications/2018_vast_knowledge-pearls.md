@@ -6,8 +6,6 @@ title: "KnowledgePearls: Provenance-Based Visualization Retrieval"
 key: 2018_vast_knowledge-pearls
 # Select one of the options below
 type: paper 
-# Uncomment the line below for publications which should only appear on a personal webpage
-# personal: y
 
 # Auto-generates titles and alt-descriptors
 shortname: KnowledgePearls

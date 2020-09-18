@@ -8,8 +8,6 @@ title: "Juniper: A Tree+Table Approach to Multivariate Graph Visualization"
 key: 2018_infovis_juniper
 # Select one of the options below
 type: paper 
-# Uncomment the line below for publications which should only appear on a personal webpage
-# personal: y
 redirect_from: /publications/2018_preprint_juniper
 
 # Auto-generates titles and alt-descriptors
@@ -52,8 +50,7 @@ bib:
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award: 
 
-# Link to an official preprint server
-preprint_server: https://arxiv.org/abs/1804.03261
+preprint: https://arxiv.org/abs/1804.03261 # here you can put all preprint links (arxiv.org, osf.io,...)
 
 # Links to a project hosted on VDL, or else externally on your own site
 project: 

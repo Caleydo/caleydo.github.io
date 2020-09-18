@@ -39,6 +39,8 @@ bib:
   pages: 
   month: 
 
+preprint: https://arxiv.org/abs/2007.11353 # here you can put all preprint links (arxiv.org, osf.io,...)
+
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
@@ -48,7 +50,7 @@ non-caleydo-paper: true
 project: 
 
 # Use this if you have an external project website
-external-project: https://arxiv.org/abs/2007.11353
+external-project: 
 
 # The reference to the video entry
 video: 

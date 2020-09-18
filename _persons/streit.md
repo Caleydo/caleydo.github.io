@@ -31,7 +31,7 @@ website: http://marc-streit.com
 ---
 
 <p>I am a tenured Full Professor at the <a href="http://www.cg.jku.at">Institute of Computer Graphics</a> at <a
-    href="http://www.jku.at">Johannes Kepler University Linz</a> where I lead the Visual Data Science group.
+    href="http://www.jku.at">Johannes Kepler University Linz</a> where I lead the JKU Visual Data Science Group.
 I finished my PhD at the <a href="http://www.icg.tugraz.at">Institute for Computer Graphics and Vision</a>
 at <a href="http://www.tugraz.at">Graz University of Technology</a> in early 2011 and moved to Linz later
 that year.

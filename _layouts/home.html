@@ -18,19 +18,20 @@
 
         <header class="home-title">
             <h1>Welcome</h1>
-            <!-- <h1>{{ page.title | remove: "| Visual Data Science Group" }}</h1> -->
+            <!-- <h1>{{ page.title | remove: "JKU Visual Data Science Group |" }}</h1> -->
         </header>
 
         <article class="home-content-main">
 
             <h1>About</h1>
-
             <p>Caleydo is a community of researchers at JKU Linz, the University of Utah, and Harvard Medical School
                 that focuses on biological data visualization. Caleydo used to be a monolithic visual analysis
                 framework originally developed at TU Graz, targeted at biomolecular data, but has since evolved into a
                 more distributed collection of people, tools, software, and research projects. Some of the tools
                 developed as part of the Caleydo framework are now maintained and extended by our spin-off company, <a
                     href="http://datavisyn.io">datavisyn</a>.</p>
+                    
+            <h1>Caleydo</h1>
             <p>
                 This page collects the output of our work on biological data visualization in the form of software and
                 publications. All of our software is available as open source. Developers and researchers that want to
@@ -39,103 +40,18 @@
 
 
 
-            <!--      Caleydo is an open source visual analysis framework targeted at biomolecular data. The biggest strength of
-            Caleydo is the visualization of interdependencies between multiple datasets. Caleydo can load tabular data
-            and groupings/clusterings. You can explore relationships between multiple groupings, between different
-            datasets and see how your data maps onto pathways.
-            Caleydo has been successfully used to analyze mRNA, miRNA, methylation, copy number variation, mutation
-            status and clinical data as well as other datset types.</p>
-
-        <p>All published parts of the software are available as open source. Developers and researchers that want to use
-            or enhance the current tools are invited to contribute. See our <a href="https://github.com/Caleydo/">Github
-                page</a> for further details.</p>
-
-        <h2>Web and Standalone Version</h2>
-
-        <p>Until 2014, Caleydo was a downloadable piece of software. <b>Since then and going forward, however, all of our new tools are/will be web-based</b>. We will soon release a visualization framework aimed at developers, but you can already enjoy our visualization tools. We are also committed to porting our older standalone tools to the web browser, yet, as of early 2016 not all tools are web-ready. <a href="{{site.baseurl}}/tools/stratomex">StratomeX</a> and <a href="{{site.baseurl}}/tools/lineup">LineUp</a>, for example, have reasonably feature-complete web-ports. Our <a href="{{site.baseurl}}/tools/pathways">pathway tools</a>, on the other hand, still have a way to go.
-        </p>
-
-        <p>For real-life data analysis, we recommend you stick to the standalone software for now, but be prepared to transition to the web soon!</p> -->
-
-            {% capture publications %}
-            [
-            {% for publication in site.publications %}
-            {% if publication.image_large %}
-            {
-            "title" : "{{ publication.title }}",
-            "shortname" : "{{ publication.shortname }}",
-            "url" : "{{ publication.permalink }}",
-            "image_large" : "{{ publication.image_large }}",
-            }
-            {% if forloop.last %}{% else %},{% endif %}
-            {% endif %}
-            {% endfor %}
-            ]
-            {% endcapture %}
-
-            <script>
-                (function () {
-                    var publications = {
-                        {
-                            publications | strip_newlines
-                        }
-                    };
-
-                    function random_from_array(array) {
-                        return array[Math.floor(Math.random() * array.length)];
-                    }
-
-                    function html_escape(str) {
-                        return str
-                            .replace(/&/g, '&amp;')
-                            .replace(/"/g, '&quot;')
-                            .replace(/'/g, '&#39;')
-                            .replace(/</g, '&lt;')
-                            .replace(/>/g, '&gt;');
-                    }
-                    var pub = random_from_array(publications);
-                    // TODO: html encode.
-                    document.write('<h1 id="featured-tool">Featured Paper: ' + html_escape(pub.shortname) + '</h1>');
-                    document.write('<div id="main-banner-image"><a class="banner-image" href="' + html_escape(pub.url) +
-                        '">');
-                    document.write(
-                        '<img alt="screenshot" class="left-banner-image" src="{{ site.baseurl }}/assets/images/papers/' +
-                        html_escape(pub.image_large) + '"/>');
-                    document.write('<ul class="publication-icon-list"><li>' + html_escape(pub.title) + '</li></ul>');
-                    document.write('</a></div>');
-                })();
-            </script>
-
-
-            <!--
-        <h1>News <span class="right-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span>
-        </h1>
-
-        <ul class="post-list">
-            {% for post in site.posts limit:4%}
-            <li class="post-list-item">
-                <div class="post-list-title">
-                    {{ post.date | date: "%-d %b %Y" }} | {{ post.title }}
-                </div>
-                <div class="post-list-excerpt">
-                    {{ post.excerpt }}
-                    <a class="post-list-link" href="{{ site.baseurl }}{{ post.url }}">More...</a>
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
-        <p><a href="news">Earlier news ...</a></p>
-    -->
-
             <h1>Recent Publications</h1>
             <ul class="publication-icon-list">
                 {% assign sorted_publications = (site.publications | sort: 'year' %}
                 <!-- {% assign max_pubs = 5 %} -->
                 {% for publication in sorted_publications reversed %} <!-- add "limit: 5" does not quite work... -->
-                    {% if publication.year > 2019 %}
-                    <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.journal}}{{publication.bib.journal}},
-                        {{publication.year}}
-                    </li>
+                    {% if publication.hide or publication.non_group_project %}
+                    {% else %}
+                        {% if publication.year > 2019 %}
+                        <li><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a><br>{{publication.journal-short}},
+                            {{publication.year}}
+                        </li>
+                        {% endif %}
                     {% endif %}
                     <!-- {% if max_pubs <= 0 %}
                         {% break %}
@@ -156,30 +72,6 @@
                     </li>
                 {% endfor %}
             </ul>
-
-            <!-- <h1>Tools</h1>
-            <ul class="project-icon-list">
-                {% assign sorted_projects = (site.tools | sort: 'order' %}
-                {%for project in sorted_projects %}
-                {% if project.status != 'beta' %}
-                <li><a href="{{ site.baseurl }}{{ project.url}}">{{ project.name }}</a><br>{{ project.title }}</li>
-                {% endif %}
-                {% endfor %}
-            </ul> -->
-
-
-            <!--  <h1>Funding</h1>
-        <ul class="funding-icon-list">
-            {% assign sorted_grants = (site.funding | sort: 'agency' %}
-            {% for grant in sorted_grants %}
-            {% if grant.active != empty %}
-            {% if agency != grant.agency %}
-            <li><a href="{{ site.baseurl }}/funding">{{ grant.agency }}</a></li>
-            {% endif %}
-            {% endif %}
-            {% assign agency = grant.agency %}
-            {% endfor %}
-        </ul> -->
         </article>
 
 

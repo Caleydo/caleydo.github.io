@@ -4,6 +4,12 @@ title: "UpSet: Visualization of Intersecting Sets"
 key: 2014_infovis_upset
 type: paper
 
+
+# set this property, if the publication should only be displayed on the team-member page
+non_group_project: False
+# set this property, if the publication should not be displayed on the website
+hide: True
+
 shortname: UpSet
 image: 2014_infovis_upset.png
 image_large: 2014_infovis_upset_teaser.png

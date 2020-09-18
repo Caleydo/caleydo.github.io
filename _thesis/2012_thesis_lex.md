@@ -5,6 +5,7 @@ key: 2012-thesis-lex
 permalink: /thesis/2012_thesis_lex/
 type: thesis
 
+non_group_project: True
 
 shortname: Thesis-Lex
 image: /assets/images/papers/2012_eurovis_stratomex.png

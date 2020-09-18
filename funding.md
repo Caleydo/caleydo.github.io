@@ -1,6 +1,6 @@
 ---
 layout: funding
-title: Funding | Visual Data Science Group
+title: JKU Visual Data Science Group | Funding
 tag: funding
 permalink: /funding/
 ---

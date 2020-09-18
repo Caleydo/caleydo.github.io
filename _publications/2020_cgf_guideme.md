@@ -54,7 +54,7 @@ non-caleydo-paper: true
 project: 
 
 # Use this if you have an external project website
-external-project: https://doi.org/10.1111/cgf.14017
+# external-project: https://doi.org/10.1111/cgf.14017
 
 # The reference to the video entry
 video: 

@@ -5,6 +5,11 @@ title: "Vials: Visualizing Alternative Splicing of Genes"
 key: 2015_infovis_vials
 type: paper
 
+# set this property, if the publication should only be displayed on the team-member page
+non_group_project: False
+# set this property, if the publication should not be displayed on the website
+hide: True
+
 # The shortname is used for auto-generated titels
 shortname: Vials
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/

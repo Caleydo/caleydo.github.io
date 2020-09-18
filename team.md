@@ -1,6 +1,6 @@
 ---
 layout: team
-title: Team | Visual Data Science Group
+title: JKU Visual Data Science Group | Team
 weight: 2
 tag: team
 permalink: /team/

@@ -43,8 +43,6 @@ bib:
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
-# Use if this paper is linked to an internal project. This will link to the project site
-# project: upset
 
 # Use this if you have an external project website
 external-project: https://lineage.caleydoapp.org
@@ -70,8 +68,6 @@ supplements:
 # Link to the repository where the code is hostet
 code: https://github.com/Caleydo/lineage
 
-# Link to an official preprint server
-preprint_server: https://doi.org/10.1101/128579
 
 abstract: "
 The majority of diseases that are a significant challenge for public and individual heath are caused by a combination of hereditary and environmental factors. In this paper we introduce Lineage, a novel visual analysis tool designed to support domain experts who study such multifactorial diseases in the context of genealogies. Incorporating familial relationships between cases with other data can provide insights into shared genomic variants and shared environmental exposures that may be implicated in such diseases. We introduce a data and task abstraction, and argue that the problem of analyzing such diseases based on genealogical, clinical, and genetic data can be mapped to a multivariate graph visualization problem. The main contribution of our design study is a novel visual representation for tree-like, multivariate graphs, which we apply to genealogies and clinical data about the individuals in these families. We introduce data-driven aggregation methods to scale to multiple families. By designing the genealogy graph layout to align with a tabular view, we are able to incorporate extensive, multivariate attributes in the analysis of the genealogy without cluttering the graph. We validate our designs by conducting case studies with our domain collaborators."

@@ -8,6 +8,10 @@ type: preprint
 # optional url for a different site; defaults to data.caleydo.org
 paper_content_url: 
 
+hide: False
+non_group_project: False
+
+
 
 # The shortname is used for auto-generated titels
 shortname: ConfusionFlow
@@ -43,6 +47,8 @@ bib:
   pages: 
   month: 
 
+preprint: https://arxiv.org/abs/1910.00969 # here you can put all preprint links (arxiv.org, osf.io,...)
+
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
@@ -52,7 +58,7 @@ non-caleydo-paper: true
 project: 
 
 # Use this if you have an external project website
-external-project: https://arxiv.org/abs/1910.00969
+external-project: 
 
 # The reference to the video entry
 video: 
