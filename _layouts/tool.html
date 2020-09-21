@@ -116,9 +116,9 @@ layout: default
       {% for repo in repos2[0].items %}
 	  <li>
 		{% if repo.url %}
-		<a href="{{ site.baseurl }}{{ repo.url }}">{% if repo.name %} {{ repo.name }} {% else %} {{ repo.url | remove: "https://github.com/Caleydo/" }} {% endif %}</a>
+		<a href="{{ repo.url }}">{% if repo.name %} {{ repo.name }} {% else %} {{ repo.url | remove: "https://github.com/Caleydo/" }} {% endif %}</a>
 		{% else %}
-		<a href="{{ site.baseurl }}{{ repo }}">{{ repo | remove: "https://github.com/Caleydo/" }}</a>
+		<a href="{{ repo }}">{{ repo | remove: "https://github.com/Caleydo/" }}</a>
 		{% endif %}
 		<br>Source Code</li>
 	  {% endfor %}

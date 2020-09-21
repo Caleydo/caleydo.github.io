@@ -77,7 +77,7 @@ abstract: "
 <div style="display: flex;align-items: baseline;">
 <div style="width: 45%; margin: 0px 1em;">
     <a href="//vistories.org/v/gapminder" target="_blank">
-    <img src="{{site.baseurl}}/assets/images/publications/{{ page.key }}_gapminder.png" alt="GapMinder usage scenario">
+    <img src="{{site.baseurl}}/assets/images/papers/{{ page.key }}_gapminder.png" alt="GapMinder usage scenario">
     </a>
     <div class="caption">
       <a href="//vistories.org/v/gapminder" target="_blank">
@@ -89,7 +89,7 @@ abstract: "
   </div>
 <div style="width: 45%; margin: 0px 1em;">
     <a href="//vistories.org/v/stratomex" target="_blank">
-    <img src="{{site.baseurl}}/assets/images/publications/{{ page.key }}.png" alt="StratomeX usage scenario">
+    <img src="{{site.baseurl}}/assets/images/papers/{{ page.key }}.png" alt="StratomeX usage scenario">
     </a>
     <div class="caption">
       <a href="//vistories.org/v/stratomex" target="_blank">

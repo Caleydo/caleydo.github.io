@@ -448,12 +448,12 @@ p {
 
 .home-content-main {
   @include page-content();
-  @include span-columns(8);
+  @include span-columns(4); // 8 // changed by gini
 }
 
 .home-content-aside {
   @include page-content();
-  @include span-columns(4);
+  @include span-columns(8); // 4 // changed by gini
   @include omega();
 }
 
@@ -1020,7 +1020,7 @@ footer {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 65.8807828007%;
+  // width: 65.8807828007%;
 }
 
 .home-content-aside {
@@ -1032,7 +1032,7 @@ footer {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 31.7615656014%;
+  // width: 31.7615656014%;
   margin-right: 0;
 }
 
@@ -1149,17 +1149,27 @@ ul.project-icon-list li {
   min-height: 0px;
 }
 
-.paper-image-x-small{
-  width: 120px;
-  height: 80px;
-  float: left;
+.paper-image-home-small{
+  width: 100%;
+  height: auto;
+  // float: left;
   margin-right: 10px;
   @include box-shadow(1px, 1px, 4px, transparentize(black, 0.75));
   @include border-radius(3px);
 }
 
 #recent-publications-div .pubs{
-  min-height: 90px;
+  min-height: 220px;
+  width: 31%;
+  float: left;
+  margin-right: 12px;
+
+  @include media($medium-display) {
+    width: 45%;
+  }
+  @include media($small-display) {
+    width: 100%;
+  }
 }
 
 // team-member various lists

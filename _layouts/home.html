@@ -46,23 +46,25 @@
             <div id="recent-publications-div" class="publications-content">
             <!-- <ul class="publication-icon-list"> -->
                 {% assign sorted_publications = site.publications | sort: 'year' %} <!-- | where_exp:"item", 'item.year > 2019'-->
-                {% assign max_pubs = 5 %}
+                {% assign max_pubs = 6 %}
                 {% for publication in sorted_publications reversed %} <!-- "limit: 5" -->
                     {% if publication.hide or publication.non_group_project %}
                     {% else %}
                     <!-- <li> -->
-                        {% if publication.image %}
-                            <a href="{{ site.baseurl }}{{ publication.url }}">
-                                <img alt="{{ publication.shortname }} screenshot"
-                                class="paper-image-x-small"
-                                src="{{ site.baseurl }}/assets/images/papers/{{ publication.image }}">
-                            </a>
-                        {% endif %}
-                        <p class="pubs">
-                            <b><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b>
-                            <br>
-                            {{publication.journal-short}}, {{publication.year}}
-                        </p>
+                        <div class="pubs">
+                            {% if publication.image %}
+                                <a href="{{ site.baseurl }}{{ publication.url }}">
+                                    <img alt="{{ publication.shortname }} screenshot"
+                                    class="paper-image-home-small"
+                                    src="{{ site.baseurl }}/assets/images/papers/{{ publication.image }}">
+                                </a>
+                            {% endif %}
+                            <p>
+                                <b><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b>
+                                <br>
+                                {{publication.journal-short}}, {{publication.year}}
+                            </p>
+                        </div>
                     <!-- </li> -->
                     {% assign max_pubs = max_pubs | minus: 1 %}
                     {% endif %}
