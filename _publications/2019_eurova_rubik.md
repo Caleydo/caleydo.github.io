@@ -59,7 +59,7 @@ project:
 # Use this if you have an external project website
 external-project: 
 
-non-caleydo-paper: true
+non_group_project: False
 
 # The reference to the video entry
 video: 

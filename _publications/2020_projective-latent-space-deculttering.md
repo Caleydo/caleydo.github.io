@@ -45,7 +45,7 @@ preprint: https://arxiv.org/abs/2006.12902 # here you can put all preprint links
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
-non-caleydo-paper: true
+non_group_project: False
 
 # Use if this paper is linked to an internal project. This will link to the project site
 project: 
@@ -74,7 +74,21 @@ supplements:
 # Link to the repository where the code is hostet
 code: 
 
-abstract: 
+abstract: "High-dimensional latent representations learned by neural
+network classifiers are notoriously hard to interpret. Especially in medical applications, model developers and domain experts desire a better
+understanding of how these latent representations relate to the resulting classification performance. We present a framework for retraining
+classifiers by backpropagating manual changes made to low-dimensional
+embeddings of the latent space. This means that our technique allows the
+practitioner to control the latent decision space in an intuitive way. Our
+approach is based on parametric approximations of non-linear embedding
+techniques such as
+t-distributed stochastic neighbourhood embedding.
+Using this approach, it is possible to manually shape and declutter the
+latent space of image classifiers in order to better match the expectations
+of domain experts or to fulfil specific requirements of classification tasks.
+For instance, the performance for specific class pairs can be enhanced by
+manually separating the class clusters in the embedding, without significantly affecting the overall performance of the other classes. We evaluate
+our technique on a real-world scenario in fetal ultrasound imaging."
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---

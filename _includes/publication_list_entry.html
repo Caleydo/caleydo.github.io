@@ -34,8 +34,7 @@
 
         {% endfor %}
         <br/>
-        <span class="paper-title"><a
-                href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></span><br/>
+        <span class="paper-title"><b><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></b></span><br/>
         {% if publication.type == "thesis" %}
         {{ publication.institution }}, {{ publication.thesis_type }}, {{ publication.month }} {{ publication.year }}
 

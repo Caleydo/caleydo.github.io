@@ -1,5 +1,5 @@
 ---
-layout: defauteam-memberlt
+layout: team-member
 first_name: Nils
 last_name: Gehlenborg
 title: "Nils Gehlenborg"

@@ -1,4 +1,7 @@
 ---
+layout: publication
+permalink: /edits_comments_books/2014_pov_bar_charts_box_plots/
+key: 2014_pov_bar_charts_box_plots
 title: "Points of View: Bar Charts and Box Plots"
 # editorial | book_chapter | commentaries
 type: commentaries
@@ -11,8 +14,9 @@ authors:
 - Nils Gehlenborg
 
 year: 2014
-journal: Nature Methods 11, 117
-doi: 10.1038/nmeth.2807
+bib:
+  journal: Nature Methods 11, 117
+  doi: 10.1038/nmeth.2807
 
 pdf: http://www.nature.com/nmeth/journal/v11/n2/pdf/nmeth.2807.pdf
 

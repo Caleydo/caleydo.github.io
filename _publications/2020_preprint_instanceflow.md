@@ -44,7 +44,7 @@ preprint: https://arxiv.org/abs/2007.11353 # here you can put all preprint links
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
-non-caleydo-paper: true
+non_group_project: False
 
 # Use if this paper is linked to an internal project. This will link to the project site
 project: 
@@ -73,7 +73,20 @@ supplements:
 # Link to the repository where the code is hostet
 code: 
 
-abstract: 
+abstract: "Classification is one of the most important supervised machine learning tasks. During the training of a classification model, the training instances are fed to the model multiple times (during multiple
+epochs) in order to iteratively increase the classification performance.
+The increasing complexity of models has led to a growing demand
+for model interpretabilty through visualizations. Existing approaches
+mostly focus on the visual analysis of the final model performance
+after training and are often limited to aggregate performance measures. In this paper we introduce InstanceFlow, a novel dual-view
+visualization tool that allows users to analyze the learning behavior
+of classifiers over time on the instance-level. A Sankey diagram
+visualizes the flow of instances throughout epochs, with on-demand
+detailed glyphs and traces for individual instances. A tabular view
+allows users to locate interesting instances by ranking and filtering. In this way, InstanceFlow bridges the gap between class-level
+and instance-level performance evaluation while enabling users to
+perform a full temporal analysis of the training process.
+"
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---

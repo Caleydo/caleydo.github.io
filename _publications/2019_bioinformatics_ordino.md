@@ -51,6 +51,7 @@ award:
 
 # Use this if you have an external project website
 external-project: https://ordino.caleydoapp.org
+preprint: https://www.biorxiv.org/content/10.1101/277848v2 # here you can put all preprint links (arxiv.org, osf.io,...)
 
 # The reference to the video entry
 video: 2019_bioinformatics_ordino_video

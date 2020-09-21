@@ -2,7 +2,7 @@
 layout: default
 ---
 <header class="project-title">
-  <h1>{{ page.title | remove: "JKU Visual Data Science Group |" }}</h1>
+  <h1>{{ page.title | remove: "| JKU Visual Data Science Group" }}</h1>
 </header>
 
 <article class="project-content-main">
@@ -20,7 +20,7 @@ layout: default
    <h1>Tools</h1>
 
   <ul class="project-icon-list">
-    {% assign selected_tools = (page.tools | sort: 'order' %}
+    {% assign selected_tools = page.tools | sort: 'order' %}
     {% for tool_key in selected_tools %}
     {% for tool in site.tools %}
     {% if tool.key == tool_key %}

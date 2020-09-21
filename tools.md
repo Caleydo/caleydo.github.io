@@ -1,6 +1,6 @@
 ---
 layout: tools
-title: JKU Visual Data Science Group | Tools
+title: Tools | JKU Visual Data Science Group
 weight: 1
 permalink: /tools/
 redirect_from: /projects.html

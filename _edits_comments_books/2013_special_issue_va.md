@@ -1,4 +1,7 @@
 ---
+layout: publication
+permalink: /edits_comments_books/2013_special_issue_va/
+key: 2013_special_issue_va
 title: "Special Issue on Visual Analytics"
 # editorial | book_chapter | commentaries
 type: editorial
@@ -11,8 +14,11 @@ authors:
 - Oliver Bimber
 
 year: 2013
-journal: IEEE Computer, 46, 7
-doi: 10.1109/MC.2013.255
+
+bibentry: article
+bib:
+  journal: IEEE Computer, 46, 7
+  doi: 10.1109/MC.2013.255
 
 pdf: http://www.computer.org/csdl/mags/co/2013/07/mco2013070020.pdf
 

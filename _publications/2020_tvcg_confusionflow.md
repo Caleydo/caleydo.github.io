@@ -49,10 +49,11 @@ bib:
 
 preprint: https://arxiv.org/abs/1910.00969 # here you can put all preprint links (arxiv.org, osf.io,...)
 
+
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
-non-caleydo-paper: true
+non_group_project: False
 
 # Use if this paper is linked to an internal project. This will link to the project site
 project: 
@@ -81,7 +82,18 @@ supplements:
 # Link to the repository where the code is hostet
 code: 
 
-abstract: 
+abstract: "Classifiers are among the most widely used supervised machine learning algorithms. Many classification models exist, and
+choosing the right one for a given task is difficult. During model selection and debugging, data scientists need to assess classifiers’
+performances, evaluate their learning behavior over time, and compare different models. Typically, this analysis is based on
+single-number performance measures such as accuracy. A more detailed evaluation of classifiers is possible by inspecting class errors.
+The confusion matrix is an established way for visualizing these class errors, but it was not designed with temporal or comparative
+analysis in mind. More generally, established performance analysis systems do not allow a combined temporal and comparative analysis
+of class-level information. To address this issue, we propose ConfusionFlow, an interactive, comparative visualization tool that combines
+the benefits of class confusion matrices with the visualization of performance characteristics over time. ConfusionFlow is model-agnostic
+and can be used to compare performances for different model types, model architectures, and/or training and test datasets. We
+demonstrate the usefulness of ConfusionFlow in a case study on instance selection strategies in active learning. We further assess the
+scalability of ConfusionFlow and present a use case in the context of neural network pruning.
+"
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
@@ -89,4 +101,5 @@ abstract:
 
 # Acknowledgements
 
-
+This work was supported in part by the State of Upper Austria (FFG 851460, Human-Interpretable Machine Learning)
+and the Austrian Science Fund (FWF P27975-NBL).

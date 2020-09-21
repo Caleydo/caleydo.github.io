@@ -21,13 +21,13 @@ layout: default
     {% endif %}
 
 
-
+    {% if page.abstract %}
     <h1>Abstract</h1>
     {{ page.abstract }}
+    <br>
+    {% endif %}
 
-
-
-      <h1>Citation</h1>
+    <h1>Citation</h1>
     <div class="citation">
       <p>
         {% assign bibauthors = '' %}
@@ -61,12 +61,14 @@ layout: default
 
         <br/>
         <span class="paper-title">
-        {% if page.pdf %}
-          <b><a href="{{paper_content_url}}{{page.pdf}}">{{page.title}}</a></b>
+          {% if page.pdf_local %}
+            <b><a href="{{site.baseurl}}{{page.pdf_local}}">{{page.title}}</a></b>
+          {% elsif page.pdf %}
+            <b><a href="{{paper_content_url}}{{page.pdf}}">{{page.title}}</a></b>
           {% else %}
-          <b>{{page.title}}</b>
-        {% endif %}
-          </span><br/>
+            <b>{{page.title}}</b>
+          {% endif %}
+        </span><br/>
         {% if page.type == "thesis" %}
           <span class="advisors">
             <em>Advisors:</em> {{ page.advisors }}
@@ -107,18 +109,19 @@ layout: default
       </span>
     </div>
 
+    {% if page.bib %}
       <h1>BibTeX</h1>
-{% capture newLine %}
-{% endcapture %}
-      <!-- here replacing the curly brackets with html special characters. { is &#123; ; } is &#125; -->
-<pre class="bibtex">
-@{{ page.bibentry }}&#123;{{ page.key }},
-  title = &#123;{{ page.title }}&#125;,
-  author = &#123;{{ bibauthors }}&#125;,
-{% for bibItem in page.bib %}{% if bibItem[1] %}  {{ bibItem[0] }} = &#123;{{ bibItem[1] }}&#125;,{{ newLine }}{% endif %}{% endfor %}  year = &#123;{{ page.year }}&#125;
-}
-</pre>
-
+      {% capture newLine %}
+      {% endcapture %}
+            <!-- here replacing the curly brackets with html special characters. { is &#123; ; } is &#125; -->
+      <pre class="bibtex">
+      @{{ page.bibentry }}&#123;{{ page.key }},
+        title = &#123;{{ page.title }}&#125;,
+        author = &#123;{{ bibauthors }}&#125;,
+      {% for bibItem in page.bib %}{% if bibItem[1] %}  {{ bibItem[0] }} = &#123;{{ bibItem[1] }}&#125;,{{ newLine }}{% endif %}{% endfor %}  year = &#123;{{ page.year }}&#125;
+      }
+      </pre>
+    {% endif %}
 
     <!-- main markdown content -->
     {{ content }}
@@ -146,23 +149,27 @@ layout: default
 
     <h1>Resources</h1>
     <ul>
-    {% if page.doi %}
+    {% if page.bib.doi %}
     <li>
-      <i class="fa fa-globe"></i> &nbsp;<a href="https://dx.doi.org/{{ page.doi }}">Publisher</a>
+      <i class="fa fa-globe"></i> &nbsp;<a href="https://dx.doi.org/{{ page.bib.doi }}">Publisher</a>
     </li>
-    {% elsif page.publisher %}
+    {% elsif page.bib.publisher %}
     <li>
-      <i class="fa fa-globe"></i> &nbsp;<a href="{{page.publisher}}">Publisher</a>
+      <i class="fa fa-globe"></i> &nbsp;<a href="{{page.bib.publisher}}">Publisher</a>
     </li>
     {% endif %}
 
     {% if page.preprint %}
     <li>
-      <i class="fa fa-external-link"></i> &nbsp;<a href="{{paper_content_url}}{{ page.preprint }}">Preprint</a>
+      <i class="fa fa-external-link"></i> &nbsp;<a href="{{ page.preprint }}">Preprint</a>
     </li>
     {% endif %}
 
-    {% if page.pdf %}
+    {% if page.pdf_local %}
+    <li>
+      <i class="fa fa-download"></i> &nbsp;<a href="{{site.baseurl}}{{page.pdf_local}}">Paper (PDF)</a></b>
+    </li>
+    {% elsif page.pdf %}
     <li>
       <i class="fa fa-download"></i> &nbsp;<a href="{{paper_content_url}}{{ page.pdf }}">Paper (PDF)</a>
     </li>

@@ -1,4 +1,7 @@
 ---
+layout: publication
+permalink: /edits_comments_books/2020_case_studies_working_with_domain_experts/
+key: 2020_case_studies_working_with_domain_experts
 title: "Foundations of Data Visualization"
 chapter: "Case Studies for Working with Domain Experts"
 # editorial | book_chapter | commentaries
@@ -26,7 +29,8 @@ editors:
 - Gerik Scheuermann 
 
 year: 2020
-journal: Springer
+bib:
+  journal: Springer
 
 publisher: https://www.springer.com/gp/book/9783030344436 
 

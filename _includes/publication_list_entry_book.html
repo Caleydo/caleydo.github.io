@@ -1,8 +1,10 @@
 
-<div class="paper-list-block">
+<div class="paper-list-block paper-list-block-book">
     
   {% if publication.image %}
-  <img class="cover-image-small" src="{{ site.baseurl }}{{ publication.image }}">
+    <a class="cover-image-small-link" href="{{ site.baseurl }}{{ publication.url }}">
+      <img class="cover-image-small" src="{{ site.baseurl }}{{ publication.image }}">
+    </a>
   {% endif %}
   
   <div>
@@ -57,20 +59,21 @@
       {% endif %}
 
       <br>
-      <b>{{ publication.title }}</b><br/>
+      <b><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }} </a></b>
+      <br/>
 
       {% if publication.chapter %}
         Chapter: <b>{{ publication.chapter }}</b><br/>
       {% endif %}
 
-      {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+      {{ publication.bib.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
     </p>
 
-    <p class="paper-link">
+    <!-- <p class="paper-link">
       <span style="float: left;">
         <i class="fa fa-external-link"></i>&nbsp;
-        {% if publication.doi %}
-          <a href="http://dx.doi.org/{{ publication.doi }}">Publisher</a>&nbsp;
+        {% if publication.bib.doi %}
+          <a href="http://dx.doi.org/{{ publication.bib.doi }}">Publisher</a>&nbsp;
         {% else %}
           <a href="{{ publication.publisher }}">Publisher</a>&nbsp;
         {% endif %}
@@ -80,6 +83,6 @@
         {% endif %}
         &nbsp;
       </span>
-    </p>
+    </p> -->
   </div>
 </div> 

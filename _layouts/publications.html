@@ -2,7 +2,7 @@
 layout: default
 ---
 <header class="publications-title">
-  <h1>{{ page.title | remove: "JKU Visual Data Science Group |" }}</h1>
+  <h1>{{ page.title | remove: "| JKU Visual Data Science Group" }}</h1>
 </header>
 
 <article class="publications-content">
@@ -60,9 +60,11 @@ layout: default
   {% if thesis.hide or thesis.non_group_project %}
   {% else %}
     <div class="paper-list-block">
-
-      <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
-
+      {% if thesis.image %}
+        <a href="{{ site.baseurl }}{{ thesis.url }}">
+          <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+        </a>
+      {% endif %}
       <p>
         {% assign known = false %}
         {% for person in site.persons %}
@@ -87,7 +89,6 @@ layout: default
 
   {% endfor %}
 
-  <!-- <h1>Commentaries, Editorials, Book Chapters & Published Abstracts </h1>-->
   <br>
     
   <h1 id="posters">Extended Abstracts and Posters</h1>

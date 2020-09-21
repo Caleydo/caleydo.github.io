@@ -1,4 +1,7 @@
 ---
+layout: publication
+permalink: /edits_comments_books/2015_pov_temporal_data/
+key: 2015_pov_temporal_data
 title: "Points of View: Temporal data"
 # editorial | book_chapter | commentaries
 type: commentaries
@@ -11,8 +14,9 @@ authors:
 - Nils Gehlenborg
 
 year: 2015
-journal: Nature Methods 12, 97
-doi: 10.1038/nmeth.3262
+bib:
+  journal: Nature Methods 12, 97
+  doi: 10.1038/nmeth.3262
 
 pdf: http://www.nature.com/nmeth/journal/v12/n2/pdf/nmeth.3262.pdf
 

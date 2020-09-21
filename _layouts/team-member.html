@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="team-member">
     <header class="team-member-title">
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.first_name }} {{ page.last_name }}</h1>
     </header>
 
     <article class="team-member-content-main">
@@ -18,7 +18,7 @@ layout: default
     <article class="team-member-content-aside">
 
         <h1>Contact</h1>
-        <p><b>{{ page.first_name }} {{ page.last_name }}</b><br>{{ page.degrees }} </p>
+        <p>{{page.degrees_pre}} <b>{{ page.first_name }} {{ page.last_name }}{% if page.degrees_post %}, {{page.degrees_post}}{% endif %}</b><br>{{ page.position }} </p>
 
         <ul class="contact-list fa-ul">
 
@@ -54,7 +54,7 @@ layout: default
             {% if page.twitter %}
             <li><i class="fa-li fa fa-twitter"></i>
                 <a href="https://twitter.com/{{ page.twitter }}">
-                    {{ page.twitter }}
+                    @{{ page.twitter }}
                 </a>
             </li>
             {% endif %}
@@ -70,7 +70,7 @@ layout: default
             {% if page.google_scholar %}
             <li><i class="fa-li fa fa-graduation-cap"></i>
                 <a href="http://scholar.google.com/citations?user={{ page.google_scholar }}">
-                    {{ page.google_scholar }}
+                    Google Scholar
                 </a>
             </li>
             {% endif %}
@@ -78,7 +78,7 @@ layout: default
             {% if page.linkedin %}
             <li><i class="fa-li fa fa-linkedin-square"></i>
                 <a href="https://www.linkedin.com/in/{{ page.linkedin }}">
-                    {{ page.linkedin }}
+                    LinkedIn
                 </a>
             </li>
             {% endif %}
@@ -136,13 +136,14 @@ layout: default
         {% endif %}
 
         <br>
-        <h1 id="publications">Projects</h1>
+        <h1 id="publications">Publications</h1>
 
         {% assign member_publications = site.publications | where_exp:"item", 'item.authors contains page.key' %}
 
         <!-- Preprint -->
         {% assign member_preprints = member_publications | where:"type", "preprint" %}
-        {% if member_preprints %}
+        {% assign psize = member_preprints | size %}
+        {% if psize > 0 %}
             <h2 id="preprint">Preprint</h2>
             {% for publication in member_preprints reversed %}
                 {% if publication.hide %}
@@ -156,7 +157,8 @@ layout: default
         
         <!-- Papers -->
         {% assign member_papers = member_publications | where:"type", "paper" %}
-        {% if member_papers %}
+        {% assign psize = member_papers | size %}
+        {% if psize > 0 %}
             <h2 id="journal-papers">Peer-Reviewed Journal and Conference Papers</h2>
             {% for publication in member_papers reversed %}
                 {% if publication.hide %}
@@ -177,9 +179,11 @@ layout: default
                 {% if thesis.hide %}
                     {% else %}
                         <div class="paper-list-block">
-                        
-                            <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
-                        
+                            {% if thesis.image %}
+                                <a href="{{ site.baseurl }}{{ thesis.url }}">
+                                    <img alt="{{ thesis.shortname }} screenshot" class="paper-image-small" src="{{ site.baseurl }}{{ thesis.image }}">
+                                </a>
+                            {% endif %}
                             <p>
                                 {% assign known = false %}
                                 {% for person in site.persons %}
@@ -372,152 +376,170 @@ layout: default
 
           
         <!-- Teaching -->
-        <h1 id="teaching">Teaching</h1>
-        
+
         {% assign member_courses = site.data.courses | where:"author", page.key %}
-        {% assign psize = member_courses | size %}
-        {% if psize > 0 %}
-            <h2>Courses</h2>
-
-            <!-- JKU -->
-            {% assign member_courses_institute = member_courses | where:"institution", "jku" %}
-            {% assign psize = member_courses_institute | size %}
-            {% if psize > 0 %}
-                <h3>Courses at Johannes Kepler University Linz</h3>
-                {% include member_courses.html %}
-                <br>
-            {% endif %}
-
-            <!-- harvard -->
-            {% assign member_courses_institute = member_courses | where:"institution", "harvard" %}
-            {% assign psize = member_courses_institute | size %}
-            {% if psize > 0 %}
-                <h3>Courses at Harvard University</h3>
-                {% include member_courses.html %}
-                <br>
-            {% endif %}
-
-            <!-- imperial -->
-            {% assign member_courses_institute = member_courses | where:"institution", "imperial" %}
-            {% assign psize = member_courses_institute | size %}
-            {% if psize > 0 %}
-                <h3>Courses at Imperial College London</h3>
-                {% include member_courses.html %}
-                <br>
-            {% endif %}
-
-            <!-- fhs -->
-            {% assign member_courses_institute = member_courses | where:"institution", "fhs" %}
-            {% assign psize = member_courses_institute | size %}
-            {% if psize > 0 %}
-                <h3>Courses at Salzburg University of Applied Sciences</h3>
-                {% include member_courses.html %}
-                <br>
-            {% endif %}
-
-            <!-- tug -->
-            {% assign member_courses_institute = member_courses | where:"institution", "tug" %}
-            {% assign psize = member_courses_institute | size %}
-            {% if psize > 0 %}
-                <h3>Courses at Graz University of Technology</h3>
-                {% include member_courses.html %}
-                <br>
-            {% endif %}
-
-        {% endif %}
-
-
-        <!-- Tutorials -->
-
         {% assign member_tutorials = site.data.tutorials | where:"author", page.key %}
-        {% assign psize = member_tutorials | size %}
-        {% if psize > 0 %}
-            <h2>Tutorials and Guest Lectures</h2>
-            <table class="team-member-pub-table">
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-                {% for tut in member_tutorials %}
-                <tr>
-                  <td class="team-member-pub-date">{{ tut.date }}</td>
-                  <td><i>{{ tut.title }}</i><br />{{ tut.event }}
-                    {% if tut.colleagues %}
-                    , held together with {{ tut.colleagues }}
-                    {% endif %}
-                    <br /><a href="{{ tut.website }}">{{ tut.website }}</a></td>
-                  <td>{{ tut.location }}</td>
-                </tr>
-                {% endfor %}
-              </table>
-              <br>
-        {% endif %}
-
-
-        <!-- Student Supervision -->
-
         {% assign member_students = site.data.students | where:"author", page.key %}
-        {% assign psize = member_students | size %}
-        {% if psize > 0 %}
-            <h2>Student Supervision</h2>
-            <table class="team-member-pub-table">
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-                {% for student in member_students %}
-                <tr>
-                  <td class="team-member-pub-date">{{ student.date }}</td>
-                  <td>{{ student.type }}</td>
-                  <td>{{ student.name }}</td>
-                  <td><i>{{ student.title }}</i></td>
-                </tr>
-                {% endfor %}
-              </table>
+
+        {% assign teaching_size = 0 | plus: member_courses.size | plus: member_tutorials.size | plus: member_students.size %}
+
+        {% if teaching_size > 0 %}
+            <h1 id="teaching">Teaching</h1>
             
-            <br>
+            {% assign psize = member_courses | size %}
+            {% if psize > 0 %}
+                <h2>Courses</h2>
+
+                <!-- JKU -->
+                {% assign member_courses_institute = member_courses | where:"institution", "jku" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Johannes Kepler University Linz</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+                <!-- harvard -->
+                {% assign member_courses_institute = member_courses | where:"institution", "harvard" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Harvard University</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+                <!-- imperial -->
+                {% assign member_courses_institute = member_courses | where:"institution", "imperial" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Imperial College London</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+                <!-- fhs -->
+                {% assign member_courses_institute = member_courses | where:"institution", "fhs" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Salzburg University of Applied Sciences</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+                <!-- tug -->
+                {% assign member_courses_institute = member_courses | where:"institution", "tug" %}
+                {% assign psize = member_courses_institute | size %}
+                {% if psize > 0 %}
+                    <h3>Courses at Graz University of Technology</h3>
+                    {% include member_courses.html %}
+                    <br>
+                {% endif %}
+
+            {% endif %}
+
+
+            <!-- Tutorials -->
+
+            {% assign psize = member_tutorials | size %}
+            {% if psize > 0 %}
+                <h2>Tutorials and Guest Lectures</h2>
+                <table class="team-member-pub-table">
+                    <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    </tr>
+                    {% for tut in member_tutorials %}
+                    <tr>
+                    <td class="team-member-pub-date">{{ tut.date }}</td>
+                    <td><i>{{ tut.title }}</i><br />{{ tut.event }}
+                        {% if tut.colleagues %}
+                        , held together with {{ tut.colleagues }}
+                        {% endif %}
+                        <br /><a href="{{ tut.website }}">{{ tut.website }}</a></td>
+                    <td>{{ tut.location }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <br>
+            {% endif %}
+
+
+            <!-- Student Supervision -->
+
+            {% assign psize = member_students | size %}
+            {% if psize > 0 %}
+                <h2>Student Supervision</h2>
+                <table class="team-member-pub-table">
+                    <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    </tr>
+                    {% for student in member_students %}
+                    <tr>
+                    <td class="team-member-pub-date">{{ student.date }}</td>
+                    <td>{{ student.type }}</td>
+                    <td>{{ student.name }}</td>
+                    <td><i>{{ student.title }}</i></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                
+                <br>
+            {% endif %}
+
         {% endif %}
 
 
         <!-- Sevices & Awards -->
-        <h1 id="awards">Services & Awards</h1>
 
-        <!-- Awards and Scholarships -->
-        {% assign member_services = site.data.awards | where:"author", page.key %}
-        {% assign psize = member_services | size %}
-        {% if psize > 0 %}
-            <h2>Awards and Scholarships</h2>
-            {% include member_services_awards.html %}
-        {% endif %}
+        {% assign member_awards = site.data.awards | where:"author", page.key %}
+        {% assign member_functions = site.data.functions | where:"author", page.key %}
+        {% assign member_reviewing = site.data.reviewing | where:"author", page.key %}
+        {% assign member_memberships = site.data.memberships | where:"author", page.key %}
 
-        <!-- Editorial and Committee Functions -->
-        {% assign member_services = site.data.functions | where:"author", page.key %}
-        {% assign psize = member_services | size %}
-        {% if psize > 0 %}
-            <h2>Editorial and Committee Functions</h2>
-            {% include member_services_awards.html %}
-            <br>
-        {% endif %}
+        {% assign services_size = member_awards.size | plus: member_functions.size | plus: member_reviewing.size | plus: member_memberships.size %}
 
-        <!-- Reviewing -->
-        {% assign member_services = site.data.reviewing | where:"author", page.key %}
-        {% assign psize = member_services | size %}
-        {% if psize > 0 %}
-            <h2>Reviewing</h2>
-            {% include member_services_awards.html %}
-            <br>
-        {% endif %}
+        {% if services_size > 0 %}
 
-        <!-- Memberships in Professional Societies and Interest Groups -->
-        {% assign member_services = site.data.memberships | where:"author", page.key %}
-        {% assign psize = member_services | size %}
-        {% if psize > 0 %}
-            <h2>Memberships in Professional Societies and Interest Groups</h2>
-            {% include member_services_awards.html %}
-            <br>
+            <h1 id="awards">Services & Awards</h1>
+
+            <!-- Awards and Scholarships -->
+            {% assign member_services = member_awards %}
+            {% assign psize = member_services | size %}
+            {% if psize > 0 %}
+                <h2>Awards and Scholarships</h2>
+                {% include member_services_awards.html %}
+            {% endif %}
+
+            <!-- Editorial and Committee Functions -->
+            {% assign member_services = member_functions %}
+            {% assign psize = member_services | size %}
+            {% if psize > 0 %}
+                <h2>Editorial and Committee Functions</h2>
+                {% include member_services_awards.html %}
+                <br>
+            {% endif %}
+
+            <!-- Reviewing -->
+            {% assign member_services = member_reviewing %}
+            {% assign psize = member_services | size %}
+            {% if psize > 0 %}
+                <h2>Reviewing</h2>
+                {% include member_services_awards.html %}
+                <br>
+            {% endif %}
+
+            <!-- Memberships in Professional Societies and Interest Groups -->
+            {% assign member_services = member_memberships %}
+            {% assign psize = member_services | size %}
+            {% if psize > 0 %}
+                <h2>Memberships in Professional Societies and Interest Groups</h2>
+                {% include member_services_awards.html %}
+                <br>
+            {% endif %}
         {% endif %}
       
       </article>

@@ -20,7 +20,7 @@ bib:
 
 award: 
 
-non-caleydo-paper: true
+non_group_project: True
 
 project:
 

@@ -47,7 +47,7 @@ bib:
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
-non-caleydo-paper: true
+non_group_project: False
 
 # Use if this paper is linked to an internal project. This will link to the project site
 project: 
@@ -76,7 +76,20 @@ supplements:
 # Link to the repository where the code is hostet
 code: 
 
-abstract: 
+abstract: "Clinical Decision Support Systems (CDSS) provide assistance to physicians in clinical decision-making.
+Based on patient-specific evidence items triggering the inferencing process, such as examination findings,
+and expert-modeled or machine-learned clinical knowledge, these systems provide recommendations in
+finding the right diagnosis or the optimal therapy. The acceptance of, and the trust in, a CDSS are highly
+dependent on the transparency of the recommendation’s generation. Physicians must know both the key
+influences leading to a specific recommendation and the contradictory facts. They must also be aware of
+the certainty of a recommendation and its potential alternatives.
+We present a glyph-based, interactive multiple views approach to explainable computerized clinical
+decision support. Four linked views (1) provide a visual summary of all evidence items and their relevance for the computation result, (2) present linked textual information, such as clinical guidelines or
+therapy details, (3) show the certainty of the computation result, which includes the recommendation
+and a set of clinical scores, stagings etc., and (4) facilitate a guided investigation of the reasoning behind
+the recommendation generation as well as convey the effect of updated evidence items. We demonstrate
+our approach for a CDSS based on a causal Bayesian network representing the therapy of laryngeal cancer. The approach has been developed in close collaboration with physicians, and was assessed by six
+expert otolaryngologists as being tailored to physicians’ needs in understanding a CDSS."
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
@@ -84,4 +97,6 @@ abstract:
 
 # Acknowledgements
 
-
+The research leading to this work was supported by the German
+Federal Ministry of Education and Research (BMBF) (03Z1LN11)
+and the Federal State of Saxony-Anhalt (FKZ: I 88).

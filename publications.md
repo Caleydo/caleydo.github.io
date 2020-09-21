@@ -1,6 +1,6 @@
 ---
 layout: publications
-title: JKU Visual Data Science Group | Publications
+title: Publications | JKU Visual Data Science Group
 tag: publications
 permalink: /publications/
 ---

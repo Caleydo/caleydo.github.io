@@ -42,7 +42,7 @@ bib:
 
 award:
 
-non-caleydo-paper: true
+non_group_project: True
 
 project: 
 external-project: 
@@ -55,8 +55,19 @@ pdf: 2018_euroVA_guidance-decision-tree.pdf
 supplement:
 bibtex:
 
-abstract: 
+abstract: "Guidance methods have the potential of bringing considerable benefits to Visual Analytics (VA), alleviating the burden on the
+user and allowing a positive analysis outcome. However, the boundary between conventional VA approaches and guidance is not
+sharply defined. As a consequence, framing existing guidance methods is complicated and the development of new approaches
+is also compromised. In this paper, we try to bring these concepts in order, defining clearer boundaries between guidance and
+no-guidance. We summarize our findings in form of a decision tree that allows scientists and designers to easily frame their
+solutions. Finally, we demonstrate the usefulness of our findings by applying our guideline to a set of published approaches.
+"
 
 ---
 
 # Acknowledgements
+
+This work was supported by the Centre for Visual Analytics Science and Technology CVAST, funded by the Austrian Federal Ministry of Science, Research, and Economy in the exceptional Laura
+Bassi Centres of Excellence initiative (#840262). Further support
+has been received from the Austrian Science Fund (FWF P27975-
+NBL), the State of Upper Austria (FFG 851460), and from SoBigData (EU-Grant No. 654024).

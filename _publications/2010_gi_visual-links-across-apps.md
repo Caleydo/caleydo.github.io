@@ -28,7 +28,7 @@ bib:
 
 award: GI 2010 Best Student Paper Award 
 
-non-caleydo-paper: true
+non_group_project: True
 
 project:
 

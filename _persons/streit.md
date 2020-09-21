@@ -4,7 +4,8 @@ first_name: Marc
 last_name: Streit
 title: "Marc Streit"
 
-degrees: "Univ.-Prof. Dipl.-Ing. Dr."
+degrees_pre: "Univ.-Prof. Dr."
+degrees_post:
 location: "Johannes Kepler University Linz<br />
                 Institute of Computer Graphics<br />
                 Altenberger Straße 69<br />
@@ -12,10 +13,10 @@ location: "Johannes Kepler University Linz<br />
                 A-4040 Linz, Austria"
 phone: "+43 732 2468 6635 (secretary: 6630)"
 fax: "+43 732 2468 6632"
-twitter: "@marc_streit"
+twitter: "marc_streit"
 github: "mstreit"
-google_scholar: "Google Scholar"
-linkedin: "LinkedIn"
+google_scholar: "l7TTSP0AAAAJ"
+linkedin: "marcstreit"
 cv: "http://data.caleydo.org/team/marc/cv_streit.pdf"
 
 show_pub_nav: true # set this property, if the "team member page" should have a navigation for publications (i.e. if person has many publiations)
@@ -26,7 +27,7 @@ role: faculty
 email: marc.streit@jku.at
 image: /assets/images/team_colored/streit.jpg
 organization: Johannes Kepler University Linz
-position: Faculty
+position: Full Professor
 website: http://marc-streit.com
 ---
 

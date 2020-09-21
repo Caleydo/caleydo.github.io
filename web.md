@@ -1,6 +1,6 @@
 ---
 layout: web
-title: JKU Visual Data Science Group | Web
+title: Web | JKU Visual Data Science Group
 weight: 1
 permalink: /web/
 ---

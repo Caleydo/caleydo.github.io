@@ -1141,10 +1141,26 @@ ul.project-icon-list li {
   @include border-radius( 3px );
 }
 
-.cover-image-small + div {
-  min-height: 170px;
+.cover-image-small-link + div {
+  min-height: 160px;
 }
 
+.paper-list-block-book{
+  min-height: 0px;
+}
+
+.paper-image-x-small{
+  width: 120px;
+  height: 80px;
+  float: left;
+  margin-right: 10px;
+  @include box-shadow(1px, 1px, 4px, transparentize(black, 0.75));
+  @include border-radius(3px);
+}
+
+#recent-publications-div .pubs{
+  min-height: 90px;
+}
 
 // team-member various lists
 

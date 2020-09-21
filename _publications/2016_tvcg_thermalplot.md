@@ -27,7 +27,7 @@ bib:
 
 award:
 
-non-caleydo-paper: true
+non_group_project: False
 
 project: 
 external-project: https://thinkh.github.io/thermalplot/

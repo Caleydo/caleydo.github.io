@@ -4,7 +4,7 @@ layout: default
 <div class="team">
 
   <header class="team-title">
-    <h1>{{ page.title | remove: "JKU Visual Data Science Group |" }}</h1>
+    <h1>{{ page.title | remove: "| JKU Visual Data Science Group" }}</h1>
   </header>
 
   <article class="team-content-left">
@@ -21,6 +21,9 @@ layout: default
       
       <h1 class="linked-members">Technical Support <a href="https://www.jku.at/en/institute-of-computer-graphics/about-us/team/" target="_blank">Further Details</a></h1>
       
+      <h1>Undergraduate Students</h1>
+
+      {% include role.html role="undergrad" %}
 
      <!-- <h1>Contributors</h1> -->
 
@@ -28,6 +31,11 @@ layout: default
   </article>
 
   <article class="team-content-right">
+    
+    <h1>PhD Graduates</h1>
+
+    {% include role.html role="phdgrad" %}
+
        <!--  <h1>Advisors</h1>
 
       {% include role.html role="advisor" %}
@@ -36,17 +44,16 @@ layout: default
 
       {% include role.html role="collaborator" %} -->
 
-      <h1>Undergraduate Students</h1>
-
-      {% include role.html role="undergrad" %}
-
-      <h1>PhD Graduates</h1>
-
-      {% include role.html role="phdgrad" %}
-
       <h1>Other Alumni</h1>
 
       {% include role.html role="alumni" %}
+
+      <h1>Collaborators</h1>
+      <ul class="institution-icon-list">
+        {% for collaborator in site.collaborators %}
+          <a href="{{ collaborator.website }}">{{ collaborator.name-short }}</a> <br>
+        {% endfor %}
+      </ul>
 
   </article>
 

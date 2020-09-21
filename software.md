@@ -1,6 +1,6 @@
 ---
 layout: software
-title: JKU Visual Data Science Group | Software
+title: Software | JKU Visual Data Science Group
 tag: software
 permalink: /software/
 softwares:
