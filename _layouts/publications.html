@@ -56,9 +56,9 @@ layout: default
 	
   <h1 id="theses">Theses</h1>
 
-  {% for thesis in site.thesis reversed %}
+  {% for thesis in site.publications reversed %}
   {% if thesis.hide or thesis.non_group_project %}
-  {% else %}
+  {% elsif publication.type == "thesis" %}
     <div class="paper-list-block">
       {% if thesis.image %}
         <a href="{{ site.baseurl }}{{ thesis.url }}">

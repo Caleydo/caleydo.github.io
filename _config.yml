@@ -46,9 +46,9 @@ collections:
   edits_comments_books:
     output: true
     permalink: /edits_comments_books/:path/
-  thesis:
-    output: true
-    permalink: /thesis/:path/
+  # thesis:
+  #   output: true
+  #   permalink: /thesis/:path/
   releases:
     output: true
     permalink: /releases/:path/

@@ -169,9 +169,8 @@ layout: default
             <br>
         {% endif %}
 
-          
         
-        {% assign member_thesis = site.thesis | where_exp:"item", 'item.author == page.key' %}
+        {% assign member_thesis = member_publications | where:"type", "thesis" %}
         {% assign psize = member_thesis | size %}
         {% if psize > 0 %}
             <h2 id="theses">Theses</h2>

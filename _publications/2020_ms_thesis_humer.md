@@ -2,7 +2,7 @@
 layout: publication
 title: "Early Detection of Spruce Bark Beetles using Semantic Segmentation and Image Classification"
 key: 2020-ms-thesis-humer
-permalink: /thesis/2020_ms_thesis_humer/
+permalink: /publications/2020_ms_thesis_humer/
 type: thesis 
 
 non_group_project: True
@@ -12,7 +12,8 @@ image:
 
 author: humer
 advisors: Josef Scharinger
-year: June 2020
+year: 2020
+month: June
 award: 
 institution: Johannes Kepler University
 thesis_type: MS Thesis
