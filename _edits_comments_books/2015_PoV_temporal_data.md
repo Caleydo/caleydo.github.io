@@ -1,6 +1,6 @@
 ---
 layout: publication
-permalink: /edits_comments_books/2015_pov_temporal_data/
+# permalink: /edits_comments_books/2015_pov_temporal_data/
 key: 2015_pov_temporal_data
 title: "Points of View: Temporal data"
 # editorial | book_chapter | commentaries

@@ -1,6 +1,6 @@
 ---
 layout: publication
-permalink: /edits_comments_books/2020_collaborating_domain_experts/
+# permalink: /edits_comments_books/2020_collaborating_domain_experts/
 key: 2020_collaborating_domain_experts
 title: "Foundations of Data Visualization"
 chapter: "Collaborating Successfully with Domain Experts"
@@ -26,8 +26,7 @@ editors:
 year: 2020
 bib:
   journal: Springer
-
-publisher: https://www.springer.com/gp/book/9783030344436
+  publisher: https://www.springer.com/gp/book/9783030344436
 
 ---
 

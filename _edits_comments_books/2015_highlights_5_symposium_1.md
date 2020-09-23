@@ -1,6 +1,6 @@
 ---
 layout: publication
-permalink: /edits_comments_books/2015_highlights_5_symposium_1/
+# permalink: /edits_comments_books/2015_highlights_5_symposium_1/
 key: 2015_highlights_5_symposium_1
 title: "Highlights from the 5th Symposium on Biological Data Visualization: Part 1"
 # editorial | book_chapter | commentaries

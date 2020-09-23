@@ -22,7 +22,7 @@ cv: "http://data.caleydo.org/team/marc/cv_streit.pdf"
 show_pub_nav: true # set this property, if the "team member page" should have a navigation for publications (i.e. if person has many publiations)
 
 key: streit
-permalink: /persons/streit/
+# permalink: /persons/streit/
 role: faculty
 email: marc.streit@jku.at
 image: /assets/images/team_colored/streit.jpg

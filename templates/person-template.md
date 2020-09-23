@@ -6,7 +6,6 @@ first_name: John
 last_name: Doe
 title: "John Doe"
 key: doe # this should be your lastname in lower case; the key is important for publications or other listings that need to be linked to your profile. it needs to be unique (should there be someone else with the same lastname, please contact the admin)
-permalink: /persons/doe/ # replace "doe" with your lastname (lowercase)
 
 # choose one of the following: 
 # - "faculty": Faculty

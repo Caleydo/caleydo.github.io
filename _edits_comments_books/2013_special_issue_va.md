@@ -1,6 +1,6 @@
 ---
 layout: publication
-permalink: /edits_comments_books/2013_special_issue_va/
+# permalink: /edits_comments_books/2013_special_issue_va/
 key: 2013_special_issue_va
 title: "Special Issue on Visual Analytics"
 # editorial | book_chapter | commentaries

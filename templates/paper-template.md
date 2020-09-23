@@ -1,75 +1,87 @@
 ---
-layout: publication
-# The quotes make the : possible, otherwise you can do it without quotes
-title: "ConfusionFlow: A Model-Agnostic Visualization
-for Temporal Analysis of Classifier Confusion"
-# paper | preprint | poster
+layout: publication # do not change
+
+#### these fields are mandatory. please fill them out
+title: "ConfusionFlow: A Model-Agnostic Visualization for Temporal Analysis of Classifier Confusion" # title of your publication 
+
+# choose one of the following types:
+# "paper": Peer-Reviewed Journal and Conference Papers
+# "preprint": Preprint
+# "thesis": Thesis (e.g. Master/PhD Thesis)
 type: preprint
-# optional url for a different site; defaults to data.caleydo.org
-paper_content_url: 
+abstract: "" # insert the abstract of your publication between the quotes; you can use html e.g. to make links (<a></a>) or generate bold (<b></b>) etc. text 
 
-hide: False
-non_group_project: False
+####
 
 
+# set this url, if your paper is on another server; defaults to data.caleydo.org
+paper_content_url:
+# uncomment the "hide" property, if you do not want the publication to be displayed on the website (usually you don't need this)
+# hide: True
+# uncomment the "hide" property, if you only want the publication to be displayed on your personal page (i.e. publications where you contributed, but does not have anything to do with the Vis Group e.g. Master Thesis,...)
+# non_group_project: True
 
-# The shortname is used for auto-generated titels
-shortname: ConfusionFlow
-# add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2020_tvcg_confusionflow.png
-# add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
-image_large: 
 
-# Authors in the "database" can be used with just the key (lastname). Others can be written properly.
+#### the following fields are optional, but it is recommended to enter as much information as possible
+# The shortname is used for auto-generated titels. e.g. ConfusionFlow
+shortname:
+# add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow.png
+image:
+# add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/ e.g. 2020_tvcg_confusionflow_teaser.png
+image_large:
+
+# Authors in the "database" can be used with just the key that is specified in the corresponding .md file (usually it is the lastname in lower case e.g. doe). Authors that do not have an individual page here should be stated with their full name (e.g. John Doe)
+# each author is one item in the list. the list is enumerated with dashes ("-")
+# e.g:
+# authors:
+# - doe # .md file exists for this person
+# - streit # .md file exists for this person
+# - Max Mustermann # there is no .md file for this person.
 authors:
-- hinterreiter
-- Peter Ruch
-- stitz
-- Martin Ennemoser
-- Jürgen Bernard
-- Hendrik Strobelt
-- streit
+- 
+- 
 
-journal-short: IEEE TVCG
-year: 2020
+# abreviation of the journal/conference ... e.g. IEEE TVCG
+journal-short:
+# when was this publication written/ when was the publication accepted (e.g. 2020)
+year:
 
+# what is the publication type and other bib specific properties
 bibentry: article
 bib:
-  journal: IEEE Transactions on Visualization and Computer Graphics (to appear)
+  journal: 		# e.g. IEEE Transactions on Visualization and Computer Graphics (to appear)
   booktitle: 
   editor: 
   publisher: 
   address: 
-  doi: 10.1109/TVCG.2020.3012063
+  doi: 		# e.g.10.1109/TVCG.2020.3012063
   url: 
   volume: 
   number: 
   pages: 
   month: 
 
-preprint: https://arxiv.org/abs/1910.00969 # here you can put all preprint links (arxiv.org, osf.io,...)
+preprint:	 # here you can put the preprint link (arxiv.org, osf.io,...) e.g. https://arxiv.org/abs/1910.00969
 
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
-non_group_project: False
-
-# Use if this paper is linked to an internal project. This will link to the project site
+# state key of an internal tool. This will link to the tool site e.g. lineup (usually not needed)
 project: 
 
-# Use this if you have an external project website
+# Use this if you have an external project website e.g. https://ordino.caleydoapp.org/
 external-project: 
 
-# The reference to the video entry
+# The key of the video .md file (in _videos subfolder)
 video: 
-# The reference to the preview video entry
-#preview-video:
+# The key of the preview video .md file (in _videos subfolder)
+preview-video:
 
-# the prerint
-pdf: 2020_tvcg_confusionflow.pdf
-# A supplement PDF
-#supplement: 2017_preprint_taggle_supplement.pdf
+# the name of your publication pdf e.g. 2020_tvcg_confusionflow.pdf; this is usually uploaded to the caleydo aws server
+pdf: 
+# A supplement PDF e.g. 2017_preprint_taggle_supplement.pdf; this is usually uploaded to the caleydo aws server
+supplement: 
 
 # Extra supplements, such as talk slides, data sets, etc.
 supplements:
@@ -82,24 +94,9 @@ supplements:
 # Link to the repository where the code is hostet
 code: 
 
-abstract: "Classifiers are among the most widely used supervised machine learning algorithms. Many classification models exist, and
-choosing the right one for a given task is difficult. During model selection and debugging, data scientists need to assess classifiers’
-performances, evaluate their learning behavior over time, and compare different models. Typically, this analysis is based on
-single-number performance measures such as accuracy. A more detailed evaluation of classifiers is possible by inspecting class errors.
-The confusion matrix is an established way for visualizing these class errors, but it was not designed with temporal or comparative
-analysis in mind. More generally, established performance analysis systems do not allow a combined temporal and comparative analysis
-of class-level information. To address this issue, we propose ConfusionFlow, an interactive, comparative visualization tool that combines
-the benefits of class confusion matrices with the visualization of performance characteristics over time. ConfusionFlow is model-agnostic
-and can be used to compare performances for different model types, model architectures, and/or training and test datasets. We
-demonstrate the usefulness of ConfusionFlow in a case study on instance selection strategies in active learning. We further assess the
-scalability of ConfusionFlow and present a use case in the context of neural network pruning.
-"
-
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
 
-
 # Acknowledgements
 
-This work was supported in part by the State of Upper Austria (FFG 851460, Human-Interpretable Machine Learning)
-and the Austrian Science Fund (FWF P27975-NBL).
+Write acknowledgements for contributors.

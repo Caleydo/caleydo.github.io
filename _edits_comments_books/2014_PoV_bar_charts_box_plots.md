@@ -1,6 +1,6 @@
 ---
 layout: publication
-permalink: /edits_comments_books/2014_pov_bar_charts_box_plots/
+# permalink: /edits_comments_books/2014_pov_bar_charts_box_plots/
 key: 2014_pov_bar_charts_box_plots
 title: "Points of View: Bar Charts and Box Plots"
 # editorial | book_chapter | commentaries
