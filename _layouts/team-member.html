@@ -233,9 +233,9 @@ layout: default
                             {% endif %}
                         {% endfor %}
 
-                        
                         <br>
                         <b>{{ publication.title }}</b>
+
                         {% if publication.abstract-pdf or publication.poster-pdf %}
                         <span style="float:right;">
                             {% if publication.abstract-pdf %}
@@ -254,6 +254,7 @@ layout: default
                             {% endif %}
                         </span>
                         {% endif %}
+                        
                         <br/>
                         {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
                         
