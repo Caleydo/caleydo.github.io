@@ -14,9 +14,9 @@ authors:
 - Stefan Sauer
 - Kurt Zatloukal
 - streit
-- lex
+- Alexander Lex
 - Bernhard Schlegl
-- schmalstieg
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: IV (IV '09)

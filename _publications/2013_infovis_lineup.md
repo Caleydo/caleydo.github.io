@@ -12,9 +12,9 @@ image_large: 2013_infovis_lineup_teaser.png
 
 authors:
 - gratzl
-- lex
-- gehlenborg
-- pfister
+- Alexander Lex
+- Nils Gehlenborg
+- Hanspeter Pfister
 - streit
 
 # Include a shortened name for the journal or conference/proceedings

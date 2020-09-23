@@ -12,7 +12,7 @@ authors:
 - Heimo Müller
 - Kurt Zatloukal
 - streit
-- schmalstieg
+- Dieter Schmalstieg
 
 journal-short: BioMedical Visualisation
 year: 2008

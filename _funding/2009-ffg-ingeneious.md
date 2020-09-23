@@ -8,7 +8,7 @@ logo: ffg.png
 title: inGeneious - Holistic Visualization of Biomolecular and Clinical Data
 recipients: 
 - tug
-pi: schmalstieg
+pi: Dieter Schmalstieg
 copi: 
 partners: SimVis
 time: 2009-2011

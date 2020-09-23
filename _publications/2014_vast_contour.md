@@ -9,12 +9,12 @@ image: 2014_vast_contour.png
 image_large: 2014_vast_contour_teaser.png
 
 authors:
-- partl
-- lex
-- strobelt
+- Christian Partl
+- Alexander Lex
+- Hendrik Strobelt
 - Anne Mai Wassermann
-- pfister
-- schmalstieg
+- Hanspeter Pfister
+- Dieter Schmalstieg
 
 journal-short: TVCG (VAST '14)
 year: 2014

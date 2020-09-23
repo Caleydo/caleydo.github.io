@@ -9,11 +9,11 @@ shortname: VisBricks
 image: 2011_infovis_visbricks.png
 
 authors:
-- lex
+- Alexander Lex
 - Hans-Jörg Schulz
 - streit
-- partl
-- schmalstieg
+- Christian Partl
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: TVCG (InfoVis '11)

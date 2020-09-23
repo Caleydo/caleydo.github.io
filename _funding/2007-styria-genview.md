@@ -8,7 +8,7 @@ logo: steiermark.gif
 title: Analyse von genetischen und klinischen Daten mit Methoden der Informationsvisualisierung und multimodaler Benutzerschnittstellen
 recipients: 
 - tug
-pi: schmalstieg
+pi: Dieter Schmalstieg
 copi:
 partners: 
 time: 2005-2007

@@ -11,13 +11,13 @@ image_large: 2014_nm_stratomex_teaser.png
 
 authors:
 - streit
-- lex
+- Alexander Lex
 - gratzl
-- partl
-- schmalstieg
-- pfister
+- Christian Partl
+- Dieter Schmalstieg
+- Hanspeter Pfister
 - Peter Park
-- gehlenborg
+- Nils Gehlenborg
 
 journal-short: NM
 year: 2014

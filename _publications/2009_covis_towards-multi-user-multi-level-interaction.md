@@ -11,8 +11,8 @@ image: 2009_covis_towards-multi-user-multi-level-interaction.png
 
 authors:
 - streit
-- schulz
-- schmalstieg
+- Hans-Jörg Schulz
+- Dieter Schmalstieg
 - Heidrun Schumann
 
 # Include a shortened name for the journal or conference/proceedings

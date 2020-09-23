@@ -10,8 +10,8 @@ image: 2012_vda_uncertainty.png
 
 authors:
 - Clemens Holzhüter
-- lex
-- schmalstieg
+- Alexander Lex
+- Dieter Schmalstieg
 - Hans-Jörg Schulz
 - Heidrun Schumann
 - streit

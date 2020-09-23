@@ -658,7 +658,7 @@ p { padding-left: 5px; }
 .acknowledgements-meta p a { color: #444; position: relative; text-decoration: none; }
 .acknowledgements-meta p a:after { position: absolute; left: 0; bottom: 0; content: ''; width: 100%; border-bottom-width: 1px; border-bottom-style: dotted; }
 
-.home-content-main { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; }
+.home-content-main { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 40.2913699012%; }
 @media screen and (max-width: 519px) { .home-content-main { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .home-content-main:last-child { margin-right: 0; } }
 .home-content-main ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }
@@ -668,7 +668,7 @@ p { padding-left: 5px; }
 .home-content-main .right-icon a { color: inherit; font-size: 0.75em; }
 .home-content-main:last-child { margin-right: 0; }
 
-.home-content-aside { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; margin-right: 0; }
+.home-content-aside { font-family: Lato, Helvetica, sans-serif; font-weight: 400; font-style: normal; font-size: 0.9em; text-rendering: optimizeLegibility; float: left; display: block; margin-right: 2.3576515979%; width: 57.3509785009%; margin-right: 0; }
 @media screen and (max-width: 519px) { .home-content-aside { float: left; display: block; margin-right: 7.4229703521%; width: 100%; margin-right: 0; }
   .home-content-aside:last-child { margin-right: 0; } }
 .home-content-aside ul a { color: #444; position: relative; border-bottom-width: 1px; border-bottom-style: dotted; -webkit-box-decoration-break: clone; -o-box-decoration-break: clone; box-decoration-break: clone; }

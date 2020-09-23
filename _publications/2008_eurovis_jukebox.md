@@ -13,7 +13,7 @@ authors:
 - streit
 - Michael Kalkusch
 - Karl Kashofer
-- schmalstieg
+- Dieter Schmalstieg
 
 
 # Include a shortened name for the journal or conference/proceedings

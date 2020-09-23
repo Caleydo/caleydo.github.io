@@ -10,14 +10,14 @@ image: 2013_infovis_entourage.png
 image: 2013_infovis_entourage_teaser.png
 
 authors:
-- lex
-- partl
+- Alexander Lex
+- Christian Partl
 - Denis Kalkofen
 - streit
 - Anne Mai Wassermann
 - gratzl
-- schmalstieg
-- pfister
+- Dieter Schmalstieg
+- Hanspeter Pfister
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: TVCG (InfoVis '13)

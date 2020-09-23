@@ -26,17 +26,17 @@ videos:
 
 team:
  - streit
- - lex
- - gehlenborg
- - partl
+ - Alexander Lex
+ - Nils Gehlenborg
+ - Christian Partl
  - gratzl
- - pfister
- - schmalstieg
- - park
+ - Hanspeter Pfister
+ - Dieter Schmalstieg
+ - Peter J. Park
 
 collaborators:
-- schulz
-- turkay
+- Hans-Jörg Schulz
+- Cagatay Turkay
 
 github:
  -

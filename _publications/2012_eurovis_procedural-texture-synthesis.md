@@ -13,7 +13,7 @@ authors:
 - Bernhard Kainz
 - Markus Steinberger
 - streit
-- schmalstieg
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: CG (EuroVis '12)

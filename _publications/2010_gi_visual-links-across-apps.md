@@ -12,9 +12,9 @@ image: 2010_gi_visual-links-across-apps.png
 authors:
 - Manuela Waldner
 - Werner Puff
-- lex
+- Alexander Lex
 - streit
-- schmalstieg
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: GI (GI '10)

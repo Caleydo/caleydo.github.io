@@ -11,9 +11,9 @@ image: 2014_chi_hidden-content.png
 authors:
 - geymayer
 - Markus Steinberger
-- lex
+- Alexander Lex
 - streit
-- schmalstieg
+- Dieter Schmalstieg
 
 journal-short: CHI (CHI '14)
 year: 2014

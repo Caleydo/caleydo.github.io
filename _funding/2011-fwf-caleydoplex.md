@@ -8,7 +8,7 @@ logo: fwf.png
 title: Caleydoplex - Information Exploration in Teams
 recipients: 
 - tug
-pi: schmalstieg
+pi: Dieter Schmalstieg
 copi:
 partners:
 time: 2011-2014

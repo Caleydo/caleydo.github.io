@@ -8,7 +8,7 @@ logo: nibr.jpg
 title: Integrative visualization of heterogeneous molecular data sources
 recipients:
 - harvard_seas
-pi: pfister
+pi: Hanspeter Pfister
 copi:
 partners:
 time: 2014-2016

@@ -23,15 +23,15 @@ videos:
  - 2014_pathway_video
      
 team:
- - lex
- - partl
+ - Alexander Lex
+ - Christian Partl
  - streit
  - gratzl
- - pfister
- - schmalstieg
+ - Hanspeter Pfister
+ - Dieter Schmalstieg
  
 collaborators:
- - wassermann 
+ - Anne-Mai Wassermann 
  
 github:
  - 

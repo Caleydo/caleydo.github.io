@@ -9,13 +9,13 @@ shortname: StratomeX
 image: 2012_eurovis_stratomex.png
 
 authors: 
-- lex
+- Alexander Lex
 - streit
 - Hans-Jörg Schulz
-- partl
-- schmalstieg
+- Christian Partl
+- Dieter Schmalstieg
 - Peter Park
-- gehlenborg
+- Nils Gehlenborg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: CG (EuroVis '12)

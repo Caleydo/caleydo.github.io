@@ -7,7 +7,7 @@ website: https://www.fwf.ac.at/
 logo: fwf.png
 title: Visual Analysis of Heterogeneous Data using Semantic Subsets
 recipients: 
-- lex
+- Alexander Lex
 pi: Alexander Lex
 copi:
 partners:

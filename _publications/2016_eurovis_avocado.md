@@ -18,7 +18,7 @@ authors:
 - stitz
 - Stefan Luger
 - streit
-- gehlenborg
+- Nils Gehlenborg
 
 journal-short: CGF (EuroVis '16)
 year: 2016

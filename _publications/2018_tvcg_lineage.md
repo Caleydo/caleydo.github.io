@@ -18,10 +18,10 @@ image_large: 2018_tvcg_lineage_teaser.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
-- nobre
-- gehlenborg
+- Carolina Nobre
+- Nils Gehlenborg
 - Hilary Coon
-- lex
+- Alexander Lex
 
 journal-short: TVCG
 year: 2018

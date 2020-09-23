@@ -19,13 +19,13 @@ image_large: 2015_infovis_vials_teaser.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
-- strobelt
+- Hendrik Strobelt
 - Bilal Alsallakh
 - Joseph Botors
 - Brant Peterson
 - Mark Borowsky
-- pfister
-- lex
+- Hanspeter Pfister
+- Alexander Lex
 
 journal-short: TVCG (InfoVis '15)
 year: 2016

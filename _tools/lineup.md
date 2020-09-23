@@ -24,11 +24,11 @@ videos:
     
 team:
  - gratzl 
- - gehlenborg
- - lex
- - pfister 
+ - Nils Gehlenborg
+ - Alexander Lex
+ - Hanspeter Pfister 
  - streit 
- - strobelt
+ - Hendrik Strobelt
 
 collaborators:
 

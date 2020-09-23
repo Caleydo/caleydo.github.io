@@ -10,10 +10,10 @@ image: 2009_bioinformatics_caleydo.png
 
 authors:
 - streit
-- lex
+- Alexander Lex
 - Michael Kalkusch
 - Kurt Zatloukal
-- schmalstieg
+- Dieter Schmalstieg
 
 year: 2009
 

@@ -19,9 +19,9 @@ image_large: 2018_infovis_juniper_teaser.png
 
 # Authors in the "database" can be used with just their person "key"
 authors:
-- nobre
+- Carolina Nobre
 - streit
-- lex
+- Alexander Lex
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: TVCG (InfoVis '18)

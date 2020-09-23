@@ -16,15 +16,15 @@ publications:
  - 2016_eurovis_pathfinder
 
 team:
-- partl
+- Christian Partl
 - gratzl
 - streit
-- pfister
-- schmalstieg
-- lex
+- Hanspeter Pfister
+- Dieter Schmalstieg
+- Alexander Lex
 
 collaborators:
- - wassermann
+ - Anne-Mai Wassermann
 
 videos:
  - 2016_eurovis_pathfinder_video

@@ -213,8 +213,59 @@ layout: default
         {% if psize > 0 %}
             <h2 id="posters">Extended Abstracts and Posters</h2>
             {% for publication in member_posters reversed %}
-                
-                <p class="poster-item">
+                <div>
+                    <p>
+                        {% for author in publication.authors %}
+                            {% assign known = false %}
+                            {% for person in site.persons %}
+                            {% if author == person.key %}
+                                <span class="paper-author">
+                                    <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>,
+                                </span>
+                            {% assign known = true %}
+                            {% endif %}
+                            {% endfor %}
+                        
+                            {% if known == false %}
+                                <span class="paper-author">
+                                    {{ author }}{% if author != publication.authors.last %}, {% endif %}
+                                </span>
+                            {% endif %}
+                        {% endfor %}
+
+                        
+                        <br>
+                        <b>{{ publication.title }}</b>
+                        {% if publication.abstract-pdf or publication.poster-pdf %}
+                        <span style="float:right;">
+                            {% if publication.abstract-pdf %}
+                            <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.abstract-pdf }}">Abstract</a>
+                            &nbsp;
+                            {% endif %}
+                    
+                            {% if publication.poster-pdf %}
+                                <i class="fa fa-file-pdf-o"></i>&nbsp; <a href="{{site.poster_content_url}}{{ publication.poster-pdf }}">Poster</a>
+                            &nbsp;
+                            {% endif %}
+                    
+                            {% if publication.video %}
+                                <i class="fa fa-file-video-o"></i>&nbsp; <a href="{{ publication.video }}">Video</a>
+                            &nbsp;
+                            {% endif %}
+                        </span>
+                        {% endif %}
+                        <br/>
+                        {{ publication.journal }}, {{publication.year}}{% if publication.to_appear %} (to appear){%endif%}.
+                        
+                        {% if publication.award %}
+                        <span class="award pull-right">
+                        {{publication.award}}&nbsp;<i class="fa fa-trophy"></i>
+                        </span>
+                        {% endif %}
+                    </p>
+                </div>
+
+                <!-- <p class="poster-item">
                     {% for author in publication.authors %}
                 
                     {% assign known = false %}
@@ -266,7 +317,7 @@ layout: default
                     </span>
                     {% endif %}
                 
-                </p>
+                </p> -->
                 {% endif %}
                 <br/>
             

@@ -11,9 +11,9 @@ image: 2009_covis_caleydoplex-design-considerations.png
 
 authors:
 - Manuela Waldner
-- lex
+- Alexander Lex
 - streit
-- schmalstieg
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: CoVIS (CoVIS '09)

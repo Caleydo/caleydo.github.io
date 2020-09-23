@@ -11,8 +11,8 @@ image: 2012_tvcg_model-driven.png
 authors:
 - streit
 - Hans-Jörg Schulz
-- lex
-- schmalstieg
+- Alexander Lex
+- Dieter Schmalstieg
 - Heidrun Schumann
 
 # Include a shortened name for the journal or conference/proceedings

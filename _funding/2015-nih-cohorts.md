@@ -11,7 +11,7 @@ recipients:
 - hms
 - harvard_seas
 - utah
-pi: park
+pi: Peter J. Park
 copi: 
 partners:
 time: 2015-2018

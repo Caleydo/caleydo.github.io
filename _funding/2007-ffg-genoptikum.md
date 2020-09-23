@@ -8,7 +8,7 @@ logo: ffg.png
 title: Genoptikum - Visual Data Mining for Genetic Data
 recipients: 
 - tug
-pi: schmalstieg
+pi: Dieter Schmalstieg
 copi: 
 partners: 
 time: 2007-2009

@@ -8,12 +8,12 @@ shortname: enRoute
 image: 2013_bmc_enroute.png
 
 authors:
-- partl
-- lex
+- Christian Partl
+- Alexander Lex
 - streit
 - Denis Kalkofen
 - Karl Kashofer
-- schmalstieg
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: BMC

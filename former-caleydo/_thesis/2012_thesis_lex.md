@@ -10,7 +10,7 @@ non_group_project: True
 shortname: Thesis-Lex
 image: /assets/images/papers/2012_eurovis_stratomex.png
 
-author: lex
+author: Alexander Lex
 advisors: Dieter Schmalstieg, Nils Gehlenborg, Robert Kosara
 year: March 2012
 award: Best Dissertation Award, awarded by "Forum Technology and Society", Graz University of Technology,

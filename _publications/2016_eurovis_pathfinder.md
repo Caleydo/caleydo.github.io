@@ -14,13 +14,13 @@ image_large: 2016_eurovis_pathfinder_teaser.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
-- partl
+- Christian Partl
 - gratzl
 - streit
 - Anne Mai Wassermann
-- pfister
-- schmalstieg
-- lex
+- Hanspeter Pfister
+- Dieter Schmalstieg
+- Alexander Lex
 
 journal-short: CGF (EuroVis '16)
 year: 2016

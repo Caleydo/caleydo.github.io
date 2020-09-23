@@ -21,7 +21,7 @@ authors:
 - Carolina Nobre
 - streit
 - Miriah Meyer
-- lex
+- Alexander Lex
 
 journal-short: Computer Graphics Forum (EuroVis '19)
 year: 2019

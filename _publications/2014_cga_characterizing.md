@@ -9,9 +9,9 @@ image: 2014_cga_characterizing.png
 
 authors:
 - Cagatay Turkay
-- lex
+- Alexander Lex
 - streit
-- pfister
+- Hanspeter Pfister
 - Helwig Hauser
 
 journal-short: CGA

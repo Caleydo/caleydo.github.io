@@ -10,9 +10,9 @@ image: 2009_cgvcvip_gaze-based.png
 
 authors:
 - streit
-- lex
+- Alexander Lex
 - Heimo Müller
-- schmalstieg
+- Dieter Schmalstieg
 
 year: 2009
 

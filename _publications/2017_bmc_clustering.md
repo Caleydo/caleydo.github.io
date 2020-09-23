@@ -22,8 +22,8 @@ image_large: 2017_bmc_clustering_teaser.png
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
 - kern
-- lex
-- gehlenborg
+- Alexander Lex
+- Nils Gehlenborg
 - Chris R. Johnson
 
 journal-short: BMC Bioinformatics 

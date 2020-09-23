@@ -9,12 +9,12 @@ shortname: enRoute
 image: 2012_biovis_enroute.png
 
 authors:
-- partl
-- lex
+- Christian Partl
+- Alexander Lex
 - streit
-- kalkofen
+- Denis Kalkofen
 - Karl Kashofer
-- schmalstieg
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: BioVis

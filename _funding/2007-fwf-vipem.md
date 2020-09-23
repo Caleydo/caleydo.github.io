@@ -8,7 +8,7 @@ logo: fwf.png
 title: VIPEM - Visual Analytics for Personalized Medicine
 recipients:
 - tug
-pi: schmalstieg
+pi: Dieter Schmalstieg
 copi:
 partners:
 time: 2007-2010

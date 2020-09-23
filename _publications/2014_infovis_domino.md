@@ -13,9 +13,9 @@ image_large: 2014_infovis_domino_teaser.png
 
 authors:
 - gratzl
-- gehlenborg
-- lex
-- pfister
+- Nils Gehlenborg
+- Alexander Lex
+- Hanspeter Pfister
 - streit
 
 journal-short: TVCG (InfoVis '14)

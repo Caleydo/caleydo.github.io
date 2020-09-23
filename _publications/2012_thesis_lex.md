@@ -11,7 +11,7 @@ shortname: Thesis-Lex
 image: /assets/images/papers/2012_eurovis_stratomex.png
 
 authors: 
-- lex
+- Alexander Lex
 advisors: Dieter Schmalstieg, Nils Gehlenborg, Robert Kosara
 year: 2012
 month: March

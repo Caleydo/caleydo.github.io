@@ -9,7 +9,7 @@ title: Diagnostik der Tumorheterogenität – ein neuer Steuerfaktor für die Th
 recipients: 
 - tug
 pi: Gerald Hoefler
-copi: schmalstieg 
+copi: Dieter Schmalstieg 
 partners: Medical University of Graz,  IFZ – Interuniversitäres Forschungszentrum für Technik, Arbeit und Kultur
 time: 2012-2014
 program:

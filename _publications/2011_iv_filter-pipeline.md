@@ -10,9 +10,9 @@ image: 2011_iv_filter-pipeline.png
 
 authors:
 - Thomas Geymayer
-- lex
+- Alexander Lex
 - streit
-- schmalstieg
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: IV (IV '11)

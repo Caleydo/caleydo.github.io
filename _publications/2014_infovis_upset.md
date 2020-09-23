@@ -15,11 +15,11 @@ image: 2014_infovis_upset.png
 image_large: 2014_infovis_upset_teaser.png
 
 authors:
-- lex
-- gehlenborg
-- strobelt
+- Alexander Lex
+- Nils Gehlenborg
+- Hendrik Strobelt
 - Romain Vuillemot
-- pfister
+- Hanspeter Pfister
 
 journal-short: TVCG (InfoVis '14)
 year: 2014

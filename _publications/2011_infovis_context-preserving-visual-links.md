@@ -13,8 +13,8 @@ authors:
 - Markus Steinberger
 - Manuela Waldner
 - streit
-- lex
-- schmalstieg
+- Alexander Lex
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: TVCG (InfoVis '11)

@@ -9,11 +9,11 @@ shortname: Matchmaker
 image: 2010_infovis_matchmaker.png
 
 authors:
-- lex
+- Alexander Lex
 - streit
-- partl
+- Christian Partl
 - Karl Kashofer
-- schmalstieg
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: TVCG (InfoVis '10)

@@ -16,11 +16,11 @@ publications:
   - 2014_infovis_upset
 
 team:
-  - lex
-  - gehlenborg
-  - strobelt
+  - Alexander Lex
+  - Nils Gehlenborg
+  - Hendrik Strobelt
   - Romain Vuillemot
-  - pfister
+  - Hanspeter Pfister
 
 github:
   - url: https://github.com/VCG/upset/

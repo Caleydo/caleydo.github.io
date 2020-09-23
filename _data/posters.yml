@@ -1,8 +1,8 @@
 - authors:
   - ennemoser
-  - ruch
+  - Peter Ruch
   - stitz
-  - strobelt
+  - Hendrik Strobelt
   - streit
   title: "ConfusionFlow: Visualizing Neural Network Confusion Across Epochs"
   journal: IEEE Conference on Visual Analytics Science and Technology (VAST '18), Berlin, Germany
@@ -32,7 +32,7 @@
   - stitz
   - ennemoser
   - gratzl
-  - lex
+  - Alexander Lex
   - streit
   title: "Taggle: Scaling Table Visualization through Aggregation"
   journal: IEEE Conference on Information Visualization (InfoVis '17), Phoenix, AZ, USA
@@ -72,7 +72,7 @@
   - Stefan Luger
   - stitz
   - gratzl
-  - gehlenborg
+  - Nils Gehlenborg
   - streit
   title: Interactive Visualization of Provenance Graphs for Reproducible Biomedical Research
   journal: IEEE Conference on Information Visualization (InfoVis '15), Chicago, IL, USA
@@ -95,10 +95,10 @@
 
 - authors:
   - gratzl
-  - gehlenborg
-  - lex
-  - strobelt
-  - partl
+  - Nils Gehlenborg
+  - Alexander Lex
+  - Hendrik Strobelt
+  - Christian Partl
   - streit
   title: "Caleydo Web: An Integrated Visual Analysis Platform for Biomedical Data"
   journal: IEEE Conference on Information Visualization (InfoVis '15), Chicago, IL, USA
@@ -110,7 +110,7 @@
   - stitz
   - gratzl
   - Stefan Luger
-  - gehlenborg
+  - Nils Gehlenborg
   - streit
   title: Transparent Layering for Visualizing Dynamic Graphs Using the Flip Book Metaphor
   journal: IEEE Conference on Information Visualization (InfoVis '14), Paris, France
@@ -119,13 +119,13 @@
   poster-pdf: 2014_infovis_transparent-layering_poster.pdf
 
 - authors:
-  - partl
-  - lex
+  - Christian Partl
+  - Alexander Lex
   - streit
-  - strobelt
+  - Hendrik Strobelt
   - wassermann
-  - pfister
-  - schmalstieg
+  - Hanspeter Pfister
+  - Dieter Schmalstieg
   title: "ConTour: Data-Driven Exploration of Multi-Relational Datasets for Drug Discovery"
   journal: Symposium on Biological Data Visualization (BioVis '14), ISMB, Boston, MA, USA
   year: 2014
@@ -133,7 +133,7 @@
   poster-pdf: 2014_biovis_contour_poster.pdf
 
 - authors:
-  - gehlenborg
+  - Nils Gehlenborg
   - Richard Park
   - Ilya Sytchev
   - Psalm Haseley
@@ -142,7 +142,7 @@
   - streit
   - Shannan Ho Sui
   - Winston Hide
-  - park
+  - Peter J. Park
   title: "Refinery Platform: A Foundation for Integrative Data Visualization Tools"
   journal: Symposium on Biological Data Visualization (BioVis '14), ISMB, Boston, MA, USA
   year: 2014
@@ -150,7 +150,7 @@
   poster-pdf: 2014_biovis_refinery_poster.pdf
 
 - authors:
-  - schulz
+  - Hans-Jörg Schulz
   - streit
   - Thorsten May
   - Christian Tominski
@@ -162,11 +162,11 @@
 
 - authors:
   - streit
-  - lex
-  - partl
-  - schmalstieg
-  - park
-  - gehlenborg
+  - Alexander Lex
+  - Christian Partl
+  - Dieter Schmalstieg
+  - Peter J. Park
+  - Nils Gehlenborg
   title: "StratomeX: Guided Visual Exploration for Tumor Subtype Identification in The Cancer Genome Atlas"
   journal: The Cancer Genome Atlas' 2nd Annual Scientific Symposium, Crystal City, VA, USA
   year: 2012
@@ -174,13 +174,13 @@
   poster-pdf:
 
 - authors:
-  - lex
+  - Alexander Lex
   - streit
-  - schulz
-  - partl
-  - schmalstieg
-  - park
-  - gehlenborg
+  - Hans-Jörg Schulz
+  - Christian Partl
+  - Dieter Schmalstieg
+  - Peter J. Park
+  - Nils Gehlenborg
   title: "StratomeX: Enabling Visualization-Driven Cancer Subtype Analysis"
   journal: IEEE Symposium on Biological Data Visualization (BioVis '12), Seattle, WA, USA
   year: 2012
@@ -189,12 +189,12 @@
 
 - authors:
   - streit
-  - lex
-  - schulz
-  - partl
-  - schmalstieg
-  - park
-  - gehlenborg
+  - Alexander Lex
+  - Hans-Jörg Schulz
+  - Christian Partl
+  - Dieter Schmalstieg
+  - Peter J. Park
+  - Nils Gehlenborg
   title: Guided Visual Analysis for the Identification of Cancer Subtypes
   journal: The Cancer Genome Atlas’ Semi-Annual Steering Committee Meeting, Houston, TX, US
   year: 2012
@@ -202,13 +202,13 @@
   poster-pdf:
 
 - authors:
-  - lex
+  - Alexander Lex
   - streit
-  - schulz
-  - partl
-  - schmalstieg
-  - park
-  - gehlenborg
+  - Hans-Jörg Schulz
+  - Christian Partl
+  - Dieter Schmalstieg
+  - Peter J. Park
+  - Nils Gehlenborg
   title: StratomeX - Integrative Visualization of Tumor Subtypes in Cancer Genomics Data Sets
   journal: EMBO Workshop on Visualizing Biological Data (VIZBI '12), Heidelberg, Germany
   year: 2012
@@ -217,9 +217,9 @@
 
 - authors:
   - streit
-  - lex
+  - Alexander Lex
   - Helmut Doleischakea
-  - schmalstieg
+  - Dieter Schmalstieg
   title: Does Software Engineering Pay Off for Research? Lessons Learned from the Caleydo Project
   journal: Eurographics Workshop on Visual Computing for Biomedicine (VCBM '10), Leipzig, Germany
   year: 2010
@@ -232,9 +232,9 @@
   - Monika Uehlein
   - Joachim Struck
   - Andreas Bergmann
-  - schmalstieg
+  - Dieter Schmalstieg
   - streit
-  - lex
+  - Alexander Lex
   - Douw G. van der Nest
   - Martijn van Griensven
   - Heinz Redl
@@ -246,8 +246,8 @@
 
 - authors:
   - streit
-  - lex
-  - schmalstieg
+  - Alexander Lex
+  - Dieter Schmalstieg
   - Heimo Müller
   - Stefan Sauer
   - Wilhelm Steiner
@@ -262,7 +262,7 @@
   - Manuela Waldner
   - Christian Pirchheim
   - streit
-  - schmalstieg
+  - Dieter Schmalstieg
   title: Multiple View Visualization On A Multi Display Setup
   journal: International Workshop on Giga-Pixel Displays & Visual Analytics (GIANT '08), Leeds, UK
   year: 2008
@@ -272,7 +272,7 @@
 - authors:
   - streit
   - Michael Kalkusch
-  - schmalstieg
+  - Dieter Schmalstieg
   title: Interactive Visualization of Metabolic Pathways
   journal: IEEE Conference on Visualization (Vis '07), Sacramento, CA, USA
   year: 2007

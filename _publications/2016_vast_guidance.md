@@ -13,7 +13,7 @@ authors:
 - Theresia Gschwandtner 
 - Thorsten May 
 - Silvia Miksch 
-- schulz
+- Hans-Jörg Schulz
 - streit
 - Christian Tominski
 

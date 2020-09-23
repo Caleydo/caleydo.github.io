@@ -448,12 +448,12 @@ p {
 
 .home-content-main {
   @include page-content();
-  @include span-columns(4); // 8 // changed by gini
+  @include span-columns(5); // 8 // changed by gini
 }
 
 .home-content-aside {
   @include page-content();
-  @include span-columns(8); // 4 // changed by gini
+  @include span-columns(7); // 4 // changed by gini
   @include omega();
 }
 

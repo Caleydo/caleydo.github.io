@@ -24,7 +24,7 @@ authors:
 - Thomas Zichner
 - Miroslava Jaresova
 - ennemoser
-- lex
+- Alexander Lex
 - streit
 
 journal-short: Information Visualization

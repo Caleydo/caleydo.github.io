@@ -9,10 +9,10 @@ shortname: VisBricks
 image: 2010_pacificvis_caleydo.png
 
 authors:
-- lex
+- Alexander Lex
 - streit
 - Ernst Kruijff
-- schmalstieg
+- Dieter Schmalstieg
 
 # Include a shortened name for the journal or conference/proceedings
 journal-short: PacificVis
