@@ -1158,6 +1158,10 @@ ul.project-icon-list li {
   @include border-radius(3px);
 }
 
+#recent-publications-div{
+  margin-top: 20px;
+}
+
 #recent-publications-div .pubs{
   min-height: 220px;
   width: 31%;

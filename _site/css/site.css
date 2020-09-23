@@ -1001,6 +1001,8 @@ ul.project-icon-list li { padding-left: 2em; padding-bottom: 0.5em; line-height:
 
 .paper-image-home-small { width: 100%; height: auto; margin-right: 10px; -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25) ; -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25) ; box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25) ; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; }
 
+#recent-publications-div { margin-top: 20px; }
+
 #recent-publications-div .pubs { min-height: 220px; width: 31%; float: left; margin-right: 12px; }
 @media screen and (min-width: 520px) and (max-width: 1023px) { #recent-publications-div .pubs { width: 45%; } }
 @media screen and (max-width: 519px) { #recent-publications-div .pubs { width: 100%; } }
