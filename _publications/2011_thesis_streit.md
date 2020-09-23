@@ -10,7 +10,8 @@ non_group_project: True
 shortname: Thesis-Streit
 image: /assets/images/papers/2012_tvcg_model-driven.png
 
-author: streit
+authors: 
+- streit
 advisors: Dieter Schmalstieg, Heidrun Schumann
 year: 2011
 month: March

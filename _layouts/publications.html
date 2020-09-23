@@ -68,7 +68,7 @@ layout: default
       <p>
         {% assign known = false %}
         {% for person in site.persons %}
-        {% if person.key == thesis.author %}
+        {% if person.key == thesis.authors.first %}
         {% if person.cg_website %}
             <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>
         {% else %}

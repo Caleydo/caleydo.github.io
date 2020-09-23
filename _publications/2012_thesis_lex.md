@@ -10,7 +10,8 @@ non_group_project: True
 shortname: Thesis-Lex
 image: /assets/images/papers/2012_eurovis_stratomex.png
 
-author: lex
+authors: 
+- lex
 advisors: Dieter Schmalstieg, Nils Gehlenborg, Robert Kosara
 year: 2012
 month: March

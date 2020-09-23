@@ -10,7 +10,8 @@ non_group_project: True
 shortname: Thesis-Humer
 image: 
 
-author: humer
+authors: 
+- humer
 advisors: Josef Scharinger
 year: 2020
 month: June

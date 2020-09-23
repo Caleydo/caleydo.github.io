@@ -186,7 +186,7 @@ layout: default
                             <p>
                                 {% assign known = false %}
                                 {% for person in site.persons %}
-                                    {% if person.key == thesis.author %}
+                                    {% if person.key == thesis.authors.first %}
                                         <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
                                         {% assign known = true %}
                                     {% endif %}
@@ -221,7 +221,7 @@ layout: default
                     {% for person in site.persons %}
                     {% if author == person.key %}
                         <span class="paper-author">
-                            <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>
+                            <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>,
                         </span>
                     {% assign known = true %}
                     {% endif %}
