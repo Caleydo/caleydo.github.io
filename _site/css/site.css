@@ -1013,7 +1013,7 @@ ul.project-icon-list li { padding-left: 2em; padding-bottom: 0.5em; line-height:
 
 .service-table td.service-field { width: 83%; }
 
-.member-publications h1 h2 { font-weight: 400; }
+.member-publications h1, .member-publications h2 { font-weight: 400; }
 
 .member-publications h2 { border-bottom: none; }
 
