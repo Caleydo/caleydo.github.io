@@ -3,7 +3,7 @@ layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
 title: "Guide Me in Analysis: A Framework for Guidance Designersn"
 # paper | preprint | poster
-type: preprint
+type: paper
 # optional url for a different site; defaults to data.caleydo.org
 paper_content_url: 
 
@@ -33,16 +33,16 @@ year: 2020
 
 bibentry: article
 bib:
-  journal: Computer Graphics Forum (to appear)
+  journal: Computer Graphics Forum
   booktitle: 
   editor: 
   publisher: 
   address: 
   doi: 10.1111/cgf.14017
   url: 
-  volume: 
-  number: 
-  pages: 
+  volume: 39
+  number: 6
+  pages: 269-288
   month: 
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
