@@ -9,6 +9,8 @@ key: 2018_tvcg_lineage
 type: paper
 redirect_from: /publications/2017_preprint_lineage
 
+hide: True
+
 # The shortname is used for auto-generated titels
 shortname: Lineage
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
