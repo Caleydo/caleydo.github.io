@@ -36,8 +36,7 @@ website: http://marc-streit.com
 I finished my PhD at the <a href="http://www.icg.tugraz.at">Institute for Computer Graphics and Vision</a>
 at <a href="http://www.tugraz.at">Graz University of Technology</a> in early 2011 and moved to Linz later
 that year.
-In 2012 I was a visiting researcher at the <a href="http://cbmi.med.harvardu.edu">Center for Biomedical
-    Informatics</a> (CBMI) at Harvard Medical School.
+In 2012 I was a visiting researcher at the <a href="https://dbmi.hms.harvard.edu/">Department of Biomedical Informatics</a> (DBMI) at Harvard Medical School.
 As part of a Fulbright scholarship for research and lecturing I was a visiting professor at the <a
     href="http://vcg.seas.harvard.edu">Visual Computing Group</a> at <a
     href="http://www.seas.harvard.edu">Harvard Paulson School</a> in 2014.
