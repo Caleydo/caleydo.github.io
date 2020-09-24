@@ -1,7 +1,7 @@
 # Site settings
 title: JKU Visual Data Science Group
-email: contact@caleydo.org
-description: "Caleydo: Visualization for BioMedicine."
+email: marc.streit@jku.at
+description: "JKU Visual Data Science Group."
 baseurl: "/jku-vds-group-website.github.io"
 url: "https://caleydo.org"
 twitter_username: marc_streit
