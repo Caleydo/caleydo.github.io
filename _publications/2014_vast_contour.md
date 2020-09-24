@@ -11,6 +11,7 @@ image_large: 2014_vast_contour_teaser.png
 authors:
 - Christian Partl
 - Alexander Lex
+- streit
 - Hendrik Strobelt
 - Anne Mai Wassermann
 - Hanspeter Pfister
