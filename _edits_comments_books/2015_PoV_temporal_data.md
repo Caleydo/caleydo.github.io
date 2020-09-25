@@ -18,6 +18,7 @@ bib:
   journal: Nature Methods 12, 97
   doi: 10.1038/nmeth.3262
 
+paper_content_url: "" # you need this to overwrite the default of data.caleydo.org/papers/, if you have an external pdf link.
 pdf: http://www.nature.com/nmeth/journal/v12/n2/pdf/nmeth.3262.pdf
 
 ---

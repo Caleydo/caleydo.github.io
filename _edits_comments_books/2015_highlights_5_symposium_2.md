@@ -22,6 +22,7 @@ bib:
   journal: BMC Proceedings, 9(Suppl 6):S1
   doi: 10.1186/1753-6561-9-S6-S1
 
+paper_content_url: ""
 pdf: http://www.biomedcentral.com/content/pdf/1753-6561-9-S6-S1.pdf
 
 ---

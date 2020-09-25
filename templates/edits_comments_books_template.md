@@ -45,7 +45,9 @@ bib:
   month: 
   publisher: # e.g. https://www.springer.com/gp/book/9783030344436
   
-# link to publication pdf e.g. http://www.nature.com/nmeth/journal/v11/n2/pdf/nmeth.2807.pdf
+# set this url, if your paper is on another server; defaults to data.caleydo.org
+paper_content_url:
+# link to publication pdf e.g. 2020_something.pdf or http://www.nature.com/nmeth/journal/v11/n2/pdf/nmeth.2807.pdf; in the second case, the property "paper_content_url" must be set to "", otherwise it defaults to data.caleydo.org
 pdf: 
 
 ---

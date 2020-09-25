@@ -20,6 +20,7 @@ bib:
   journal: IEEE Computer, 46, 7
   doi: 10.1109/MC.2013.255
 
+paper_content_url: ""
 pdf: http://www.computer.org/csdl/mags/co/2013/07/mco2013070020.pdf
 
 ---
