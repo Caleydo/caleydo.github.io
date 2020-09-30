@@ -246,9 +246,9 @@ p {
   @include page-title($team-color);
 }
 
-.funding-title {
-  @include subpage-title($neutral-color);
-}
+// .funding-title {
+//   @include subpage-title($neutral-color);
+// }
 
 .acknowledgements-title {
   @include subpage-title($neutral-color);
@@ -430,13 +430,13 @@ p {
   @include omega();
 }
 
-.funding-content {
-  @include page-content();
-}
+// .funding-content {
+//   @include page-content();
+// }
 
-.funding-meta {
-  @include page-meta();
-}
+// .funding-meta {
+//   @include page-meta();
+// }
 
 .acknowledgements-content {
   @include page-content();
