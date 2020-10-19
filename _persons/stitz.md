@@ -8,7 +8,7 @@ key: stitz
 permalink: /persons/stitz/
 role: phdgrad
 email: holger.stitz@jku.at
-image: /assets/images/team/stitz.jpg
+image: /assets/images/team_colored/stitz.jpg
 organization: Johannes Kepler University Linz
 position: PhD 2019
 website: http://holgerstitz.de
