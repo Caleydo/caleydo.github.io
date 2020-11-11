@@ -50,6 +50,14 @@ layout: default
                 </a>
             </li>
             {% endif %}
+    
+            {% if page.website %}
+            <li><i class="fa-li fa fas fa-id-badge"></i>
+                <a href="{{ page.website }}">
+                    {{ page.website }}
+                </a>
+            </li>
+            {% endif %}
 
             {% if page.twitter %}
             <li><i class="fa-li fa fa-twitter"></i>
