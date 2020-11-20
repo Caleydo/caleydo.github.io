@@ -69,7 +69,7 @@ My research focuses on time series visualization and dimensionality reduction in
 I am especially interested in non-linear embedding techniques.
 
 My PhD is part of a collaboration with [Imperial College London](http://www.imperial.ac.uk/).
-In 2019 and 2020, I spent a year at the [Biomedical Image Analysis (BioMedIA) group] at Imperial.
+In 2019 and 2020, I spent a year at the [Biomedical Image Analysis (BioMedIA) group](https://biomedia.doc.ic.ac.uk/) at Imperial.
 
 I received my Masters degree in Technical Physics at [Johannes Kepler University Linz](https://www.jku.at/en/), working on the structural and chemical analysis of surfaces.
 As I had grown increasingly interested in machine learning, visualization and graphic design, I decided to transition to visualization research for my PhD.
