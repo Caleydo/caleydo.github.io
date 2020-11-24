@@ -6,7 +6,7 @@ title: "Samuel Gratzl"
 key: gratzl
 permalink: /persons/gratzl/
 role: phdgrad
-email: samuel.gratzl@datavisyn.io
+email: sam@sgratzl.com
 image: /assets/images/team_colored/gratzl.jpg
 organization: datavisyn GmbH
 position: PhD 2017
