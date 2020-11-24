@@ -7,7 +7,7 @@ title: "Holger Stitz"
 key: stitz
 permalink: /persons/stitz/
 role: phdgrad
-email: holger.stitz@jku.at
+email: holger.stitz@datavisyn.io
 image: /assets/images/team_colored/stitz.jpg
 organization: datavisyn GmbH
 position: PhD 2019
