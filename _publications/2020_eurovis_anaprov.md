@@ -10,7 +10,7 @@ paper_content_url:
 
 
 # The shortname is used for auto-generated titels
-shortname: MVNV
+shortname: EuroVis STAR
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
 image: 2020_eurovis_anaprov.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
@@ -25,7 +25,7 @@ authors:
 - Remco Chang
 - John Wenskovitch 
 
-journal-short: Preprint
+journal-short: EuroVis STAR
 year: 2020
 
 bibentry: article
