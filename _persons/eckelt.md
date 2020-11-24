@@ -16,7 +16,7 @@ twitter: "klaus_lml"
 github: "keckelt"
 google_scholar: "_wMz-ewAAAAJ"
 linkedin: "klaus-eckelt"
-website: https://www.eckelt.info
+website: https://eckelt.info
 ---
 
 <p>
