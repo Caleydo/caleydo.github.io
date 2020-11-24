@@ -2,7 +2,7 @@
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
 title: "Projective Latent Space Decluttering"
-key: 2020_projective-latent-space-decluttering
+key: 2020_imimic_projective-latent-space-decluttering
 # paper | preprint | poster
 type: preprint
 # optional url for a different site; defaults to data.caleydo.org
@@ -12,7 +12,7 @@ paper_content_url:
 # The shortname is used for auto-generated titels
 shortname: Projective Latent Space Decluttering
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2020_projective-latent-space-decluttering.png
+image: 2020_imimic_projective-latent-space-decluttering.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
 image_large: 
 
