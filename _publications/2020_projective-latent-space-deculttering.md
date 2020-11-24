@@ -22,12 +22,12 @@ authors:
 - streit 
 - Bernhard Kainz
 
-journal-short: Preprint
+journal-short: iMIMIC’2020
 year: 2020
 
 bibentry: article
 bib:
-  journal: Preprint
+  journal: International Workshop on Interpretability of Machine Intelligence in Medical Image Computing (iMIMIC’2020)
   booktitle: 
   editor: 
   publisher: 
@@ -43,7 +43,7 @@ bib:
 preprint: https://arxiv.org/abs/2006.12902 # here you can put all preprint links (arxiv.org, osf.io,...)
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
-award:
+award: IEEE InfoVis 2013 Best Paper Award
 
 non_group_project: False
 
