@@ -9,6 +9,6 @@ role: alumni
 # email: bikram.kawan@jku.at
 # image: /assets/images/team_colored/placeholder.png
 organization: Johannes Kepler University Linz
-position: 
+position: PhD Student
 website:
 ---
