@@ -1,10 +1,4 @@
 - author: streit 
-  date: Since 2020-03
-  title: LineUp + Time (working title)
-  name: Vanessa Stoiber
-  type: BSc Thesis
-
-- author: streit 
   date: Since 2019-10
   title: Provenance Intent (working title)
   name: Conny Walchshofer
@@ -35,11 +29,17 @@
   type: PhD Thesis  
 
 - author: streit 
+  date: 2020-03 - 2020-08
+  title: LineUp Plus Time
+  name: Vanessa Stoiber
+  type: BSc Thesis  
+
+- author: streit 
   date: 2018-02 - 2019-12
   title: Fusing Data Analysis with Data Wrangling
   name: Dominik Dirmeier
   type: Bachelor's Thesis
-
+  
 - author: streit 
   date: 2019-03 - 2019-10
   title: "InstanceFlow: Visualizing the Evolution of Instance Classification in Deep Learning"

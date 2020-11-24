@@ -17,6 +17,12 @@
   years: since 2012
 
 - author: streit 
+  title: Explainable AI
+  institution: jku
+  contribution: Lecture and lab
+  years: since 2020  
+
+- author: streit 
   title: Accompanying Courses for PhD, Master and Bachelor Students
   institution: jku
   contribution: Seminar
@@ -35,13 +41,13 @@
   years: 2014
 
 - author: streit 
-  title: Visualisation (BS1807)
+  title: Visualisation (BUSI97273)
   institution: imperial
   contribution: Lecture and lab (together with Andy Kirk, Ryo Sarkai)
   years: since 2016
 
 - author: streit 
-  title: Visualisation (bs2307)
+  title: Visualisation (BS2307)
   institution: imperial
   contribution: Lecture and lab (online module)
   years: since 2019

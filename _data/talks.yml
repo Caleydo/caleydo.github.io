@@ -1,4 +1,11 @@
 - author: streit 
+  title: "Telling Stories with Projections"
+  event: "Data Stories Symposium" 
+  date: 2020-11-26
+  location: virtual event
+  type: invited talk
+
+- author: streit 
   title: "Visual Data Science & Explainable AI"
   event: "Bayer Data Science Summit 2020" 
   date: 2020-02-12
