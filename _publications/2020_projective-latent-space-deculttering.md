@@ -22,7 +22,7 @@ authors:
 - streit 
 - Bernhard Kainz
 
-journal-short: iMIMIC’2020
+journal-short: iMIMIC
 year: 2020
 
 bibentry: article
@@ -43,7 +43,7 @@ bib:
 preprint: https://arxiv.org/abs/2006.12902 # here you can put all preprint links (arxiv.org, osf.io,...)
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
-award: IEEE InfoVis 2013 Best Paper Award
+award: iMIMIC 2020 Best Paper Award
 
 non_group_project: False
 
