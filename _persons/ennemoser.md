@@ -4,7 +4,7 @@ first_name: Martin
 last_name: Ennemoser
 title: "Martin Ennemoser"
 key: ennemoser
-permalink: /persons/ennemoser/
+# permalink: /persons/ennemoser/
 role: alumni
 email: martin.ennemoser@jku.at
 image: /assets/images/team_colored/ennemoser.jpg
