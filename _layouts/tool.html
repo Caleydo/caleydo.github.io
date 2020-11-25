@@ -26,6 +26,8 @@ layout: default
       <li>
         {% if person.cg_website %}
             <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+        {% elsif person.hide_personal_page %}
+            {{ person.first_name }} {{ person.last_name }}<br>
         {% else %}
             <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
         {% endif %}
@@ -55,6 +57,8 @@ layout: default
       <li>
         {% if person.cg_website %}
             <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a><br>
+        {% elsif person.hide_personal_page %}
+            {{ person.first_name }} {{ person.last_name }}<br>
         {% else %}
             <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a><br>
         {% endif %}
