@@ -105,13 +105,13 @@ layout: default
               {% if author == person.key %}
                   <span class="paper-author">
                     {% if person.cg_website %}
-                        <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>
+                        <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
                     {% elsif person.hide_personal_page %}
-                        {{ person.first_name }} {{ person.last_name }}
+                        {{ person.first_name }} {{ person.last_name }}{% if author != publication.authors.last %}, {% endif %}
                     {% else %}
-                        <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>
+                        <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
                     {% endif %}
-                    {% if author != publication.authors.last %}, {% endif %}
+                    
                   </span>
               {% assign known = true %}
               {% endif %}
