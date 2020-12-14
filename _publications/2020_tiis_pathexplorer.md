@@ -1,7 +1,7 @@
 ---
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
-title: "Exploring Visual Patterns in Projected Human and Machine Decision-Making Paths"
+title: "ProjectionPathExplorer: Exploring Visual Patterns in Projected Decision-Making Paths"
 key: 2020_tiis_pathexplorer
 # paper | preprint | poster
 type: preprint
@@ -75,25 +75,12 @@ supplements:
 # Link to the repository where the code is hostet
 code: 
 
-abstract: "In problem solving, the paths towards solutions can be viewed as a sequence of decisions. The decisions,
-made by humans or computers, describe a trajectory through a high-dimensional representation space of the
-problem. Using dimensionality reduction, these trajectories can be visualized in lower dimensional space. Such
-embedded trajectories have previously been applied to a wide variety of data, but so far, almost exclusively 
-the self-similarity of single trajectories has been analyzed. In contrast, we describe patterns emerging from
-drawing many trajectories—for different initial conditions, end states, or solution strategies—in the same
-embedding space. We argue that general statements about the problem solving tasks and solving strategies
-can be made by interpreting these patterns. We explore and characterize such patterns in trajectories resulting
-from human and machine-made decisions in a variety of application domains: logic puzzles (Rubik’s cube),
-strategy games (chess), and optimization problems (neural network training). In the context of Rubik’s cube, we
-present a physical interactive demonstrator that uses trajectory visualization to provide immediate feedback
-to users regarding the consequences of their decisions. We also discuss the importance of suitably chosen
-representation spaces and similarity metrics for the embedding."
+abstract: "In problem-solving, a path towards solutions can be viewed as a sequence of decisions. The decisions, made by humans or computers, describe a trajectory through a high-dimensional representation space of the problem. By means of dimensionality reduction, these trajectories can be visualized in lower-dimensional space. Such embedded trajectories have previously been applied to a wide variety of data, but analysis has focused almost exclusively on the self-similarity of single trajectories. In contrast, we describe patterns emerging from drawing many trajectories&mdash;for different initial conditions, end states, and solution strategies&mdash;in the same embedding space. We argue that general statements about the problem-solving tasks and solving strategies can be made by interpreting these patterns. We explore and characterize such patterns in trajectories resulting from human and machine-made decisions in a variety of application domains: logic puzzles (Rubik's cube), strategy games (chess), and optimization problems (neural network training). We also discuss the importance of suitably chosen representation spaces and similarity metrics for the embedding."
 
 # After the --- you can put information that you want to appear on the website using markdown formatting or HTML. A good example are acknowledgements, extra references, an erratum, etc.
 ---
 
 
 # Acknowledgements
-This work was supported in part by the State of Upper Austria (FFG851460, Human-Interpretable
-Machine Learning) and the Austrian Science Fund (FWF P27975-NBL ).
+This work was supported in part by the State of Upper Austria and the Austrian Federal Ministry of Education, Science and Research via the LIT – Linz Institute of Technology (LIT-2019-7-SEE-117), by the State of Upper Austria (Human-Interpretable Machine Learning), by the Austrian Research Promotion Agency (FFG851460), and by the Austrian Science Fund (FWF P27975-NBL).
 
