@@ -1031,6 +1031,6 @@ ul.project-icon-list li { padding-left: 2em; padding-bottom: 0.5em; line-height:
 
 .member-publications h3 { margin-top: 0px; font-size: 1.1em; }
 
-.link-tile { height: 100px; background-size: cover; background-repeat: no-repeat; background-position: center center; opacity: 0.85; }
+.link-tile { height: 100px; background-size: cover; background-repeat: no-repeat; background-position: center center; }
 
 .link-tile p { font-family: Yantramanav, Helvetica, sans-serif; font-weight: 500; font-size: 30px; color: white; text-shadow: 1px 1px 1px black; }
