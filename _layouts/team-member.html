@@ -220,7 +220,7 @@ layout: default
         {% assign psize = member_posters | size %}
         {% if psize > 0 %}
             <h2 id="posters">Extended Abstracts and Posters</h2>
-            {% for publication in member_posters reversed %}
+            {% for publication in member_posters %} <!--reversed-->
                 <div>
                     <p>
                         {% for author in publication.authors %}
@@ -356,7 +356,7 @@ layout: default
         {% assign psize = member_comments | size %}
         {% if psize > 0 %}
             <h2 id="commentaries">Commentaries</h2>
-            {% for publication in member_comments %}
+            {% for publication in member_comments reversed %}
                 {% if publication.personal %}
                 {% else %}
                     {% include publication_list_entry_book.html %}
