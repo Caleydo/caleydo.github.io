@@ -1233,7 +1233,8 @@ ul.project-icon-list li {
 }
 
 .link-tile p{
-  font-weight: 900;
+  font-family: $page-title-font-family;
+  font-weight: 500;
   font-size: 30px;
   color: white;
   text-shadow: 1px 1px 1px black;
