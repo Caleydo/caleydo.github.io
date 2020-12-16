@@ -1,7 +1,7 @@
 ---
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
-title: "Provectories: Embedding-based Analysis ofInteraction Provenance Data"
+title: "Provectories: Embedding-based Analysis of Interaction Provenance Data"
 key: 2020_tvcg_provectories
 # paper | preprint | poster
 type: preprint
