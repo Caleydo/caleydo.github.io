@@ -83,4 +83,5 @@ abstract: "Understanding user behavior patterns and visual analysis strategies i
 
 # Acknowledgements
 
-
+This work was supported in part by the FFG, Contract No. 854184: "Pro2Future" is funded within the Austrian COMET Program Competence Centers for Excellent Technologies under the auspices of the Austrian Federal Ministry of Transport, Innovation and Technology, the Austrian Federal Ministry for Digital and Economic Affairs and of the Provinces of Upper Austria and Styria. COMET is managed by the Austrian Research Promotion Agency FFG.
+Additional support was granted by the State of Upper Austria and the Austrian Federal Ministry of Education, Science and Research via the LIT -- Linz Institute of Technology (LIT-2019-7-SEE-117), and by the State of Upper Austria (Human-Interpretable Machine Learning).
