@@ -1,6 +1,6 @@
-# Caleydo Website
+# Visual Datascience Group Website
 
-The new Caleydo website built with [Jekyll](https://jekyllrb.com),
+The new Visual Datascience Group Website built with [Jekyll](https://jekyllrb.com),
 [SASS](https://www.sass-lang.com),
 [Bourbon](https://bourbon.io),
 [Neat](https://neat.bourbon.io),
