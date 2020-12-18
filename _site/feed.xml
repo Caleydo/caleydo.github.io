@@ -5,7 +5,7 @@
  <meta charset="utf-8">
 <title>JKU Visual Data Science Group</title>
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="Caleydo: Visualization for BioMedicine.">
+<meta name="description" content="JKU Visual Data Science Group.">
 <link rel="canonical" href="http://localhost:4000/feed.xml">
 
 <!-- Custom Fonts -->
@@ -13,7 +13,7 @@
 <link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
 <!-- Custom CSS -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/site.css">
 
 <!-- Fav and touch icons -->
@@ -83,11 +83,11 @@
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>JKU Visual Data Science Group</title>
-    <description>Caleydo: Visualization for BioMedicine.</description>
+    <description>JKU Visual Data Science Group.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 24 Sep 2020 09:47:06 +0200</pubDate>
-    <lastBuildDate>Thu, 24 Sep 2020 09:47:06 +0200</lastBuildDate>
+    <pubDate>Mon, 14 Dec 2020 13:53:31 +0100</pubDate>
+    <lastBuildDate>Mon, 14 Dec 2020 13:53:31 +0100</lastBuildDate>
     <generator>Jekyll v3.8.7</generator>
     
       <item>
@@ -95,9 +95,11 @@
         <description>&lt;p&gt;Microsoft’s PowerBI platform makes data visualization accessible to a broad audience. We’re happy to see our LineUp tool &lt;a href=&quot;https://app.powerbi.com/visuals/show/TableSorter1450434005853&quot;&gt;integrated into PowerBI&lt;/a&gt; as “Table Sorter”. It is exciting that one of our research prototypes has become part of a popular commercial product. See the &lt;a href=&quot;/tools/lineup/&quot;&gt;tools page&lt;/a&gt; for details about LineUp.&lt;/p&gt;
 </description>
         <pubDate>Tue, 12 Apr 2016 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/event/2016/04/12/lineup_integrated_in_microsoft_powerbi/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2016/04/12/lineup_integrated_in_microsoft_powerbi/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2016/04/12/lineup_integrated_in_microsoft_powerbi/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2016/04/12/lineup_integrated_in_microsoft_powerbi/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -108,9 +110,11 @@
         <description>&lt;p&gt;The &lt;a href=&quot;http://gehlenborglab.org&quot;&gt;Gehlenborg Lab&lt;/a&gt; in the &lt;a href=&quot;https://dbmi.hms.harvard.edu&quot;&gt;Department of Biomedical Informatics at Harvard Medical School&lt;/a&gt; is seeking &lt;a href=&quot;https://dbmi.hms.harvard.edu/careers/postdoctoral-fellows/gehlenborg-lab&quot;&gt;postdoctoral fellows&lt;/a&gt; and &lt;a href=&quot;https://dbmi.hms.harvard.edu/careers/software-engineers/visualization-software-developer&quot;&gt;software developers&lt;/a&gt; to work on exciting problems in data science, visualization of biomedical data, and reproducible research. Please apply directly or get in touch with &lt;a href=&quot;mailto:nils@hms.harvard.edu&quot;&gt;Nils Gehlenborg&lt;/a&gt; if you are interested.&lt;/p&gt;
 </description>
         <pubDate>Tue, 01 Mar 2016 11:00:00 +0100</pubDate>
-        <link>http://localhost:4000/event/2016/03/01/open_positions_harvard/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2016/03/01/open_positions_harvard/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2016/03/01/open_positions_harvard/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2016/03/01/open_positions_harvard/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -121,9 +125,11 @@
         <description>&lt;p&gt;We are seeking a &lt;strong&gt;postdoctoral fellow&lt;/strong&gt; and &lt;strong&gt;multiple PhD students&lt;/strong&gt; to join the Caleydo team at the University of Utah. For the postdoctoral position, please refer to &lt;a href=&quot;http://www.sci.utah.edu/75-sci-opportunities/post-doc/536-post-doc-lex.html&quot;&gt;this announcement&lt;/a&gt;. If you are interested in the University of Utah PhD program, please get in touch with Alexander Lex at &lt;a href=&quot;mailto:alex@sci.utah.edu&quot;&gt;alex@sci.utah.edu&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 19 Jun 2015 22:00:00 +0200</pubDate>
-        <link>http://localhost:4000/event/2015/06/19/open_positions_utah/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2015/06/19/open_positions_utah/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2015/06/19/open_positions_utah/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2015/06/19/open_positions_utah/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -134,9 +140,11 @@
         <description>&lt;p&gt;The University of Utah joins the Caleydo Partners as &lt;a href=&quot;http://alexander-lex.net&quot;&gt;Alexander Lex&lt;/a&gt; will join the &lt;a href=&quot;https://sci.utah.edu&quot;&gt;Scientific Computing and Imaging Institute&lt;/a&gt; and the &lt;a href=&quot;https://www.cs.utah.edu/&quot;&gt;School of Computing&lt;/a&gt; in the fall of 2015.&lt;/p&gt;
 </description>
         <pubDate>Thu, 18 Jun 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/event/2015/06/18/team/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2015/06/18/team/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2015/06/18/team/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2015/06/18/team/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -147,9 +155,11 @@
         <description>&lt;p&gt;&lt;a href=&quot;https://vcg.seas.harvard.edu/people/kasper-dinkla&quot;&gt;Kasper Dinkla&lt;/a&gt; joins the Caleydo team as a postdoctoral fellow at Harvard University. Welcome Kasper!&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Jun 2015 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/event/2015/06/01/dinkla/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2015/06/01/dinkla/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2015/06/01/dinkla/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2015/06/01/dinkla/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -160,9 +170,11 @@
         <description>&lt;p&gt;Interested in doing a PhD in the Caleydo project? We have an open Research Assistant position in the field of Information Visualization / Visual Analytics at the Johannes Kepler University Linz, Austria. Find more information in the detailed &lt;a href=&quot;http://data.caleydo.org/jobs/2015-04_JKU_ResearchAssistant.pdf&quot;&gt;job announcement&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 Apr 2015 22:00:00 +0200</pubDate>
-        <link>http://localhost:4000/event/2015/04/22/open_phd_position_JKU/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2015/04/22/open_phd_position_JKU/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2015/04/22/open_phd_position_JKU/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2015/04/22/open_phd_position_JKU/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -173,9 +185,11 @@
         <description>&lt;p&gt;Caleydo 3.1.5 is released. It introduces statistical analysis for experimental data to the pathway analysis tools. Learn more in the &lt;a href=&quot;/releases/caleydo_3_1_5/&quot;&gt;release notes&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Nov 2014 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/event/2014/11/27/release-3-1-5/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2014/11/27/release-3-1-5/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2014/11/27/release-3-1-5/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2014/11/27/release-3-1-5/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -186,9 +200,11 @@
         <description>&lt;p&gt;Harvard Medical School has issued a &lt;a href=&quot;https://hms.harvard.edu/news/pattern-recognition&quot;&gt;press release&lt;/a&gt; about our &lt;a href=&quot;/publications/2014_nm_stratomex/&quot;&gt;Nature Methods StratomeX paper&lt;/a&gt;. StratomeX is also featured as the &lt;a href=&quot;http://blog.openhelix.eu/?p=19822&quot;&gt;OpenHelix Video Tip of the Week&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Oct 2014 00:15:00 +0200</pubDate>
-        <link>http://localhost:4000/event/2014/10/03/hms-oh/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2014/10/03/hms-oh/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2014/10/03/hms-oh/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2014/10/03/hms-oh/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -202,9 +218,11 @@
 
 </description>
         <pubDate>Fri, 26 Sep 2014 12:45:00 +0200</pubDate>
-        <link>http://localhost:4000/event/2014/09/26/release-3-1-4/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2014/09/26/release-3-1-4/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2014/09/26/release-3-1-4/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2014/09/26/release-3-1-4/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -215,9 +233,11 @@
         <description>&lt;p&gt;GenomeWeb BioInform has published an &lt;a href=&quot;https://www.genomeweb.com/informatics/updated-harvard-tcga-data-visualization-software-adds-tools-better-characterize&quot;&gt;article about StratomeX&lt;/a&gt;, our disease subtype analysis tool, which was recently &lt;a href=&quot;/publications/2014_nm_stratomex&quot;&gt;published in Nature Methods&lt;/a&gt;. The article highlights some of the major features of the tool and summarizes some of the findings of our case study.&lt;/p&gt;
 </description>
         <pubDate>Mon, 08 Sep 2014 05:15:00 +0200</pubDate>
-        <link>http://localhost:4000/event/2014/09/08/genome-web/</link>
-        <guid isPermaLink="true">http://localhost:4000/event/2014/09/08/genome-web/</guid>
+        <link>http://localhost:4000/former-caleydo/event/2014/09/08/genome-web/</link>
+        <guid isPermaLink="true">http://localhost:4000/former-caleydo/event/2014/09/08/genome-web/</guid>
         
+        
+        <category>former-caleydo</category>
         
         <category>event</category>
         
@@ -233,7 +253,7 @@
       <ul>
           
           <li>
-            <a href="mailto:contact@caleydo.org">
+            <a href="mailto:marc.streit@jku.at">
               <i class="fa fa-lg fa-envelope-o"></i>
               <span class="footer-text">Email</span>
             </a>

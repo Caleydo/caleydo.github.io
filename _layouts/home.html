@@ -41,7 +41,6 @@
                 and the <a href="http://gehlenborglab.org/">Gehlenborg lab</a> in the Department of Biomedical Informatics at Harvard Medical School. <!-- href="https://dbmi.hms.harvard.edu/" -->
                 Some of the tools developed as part of the Caleydo initiative are now maintained and extended by our spin-off company, <a href="https://www.datavisyn.io/">datavisyn</a>.
             </p>
-
         </article>
 
         <article class="home-content-aside">
@@ -79,18 +78,24 @@
                 {% endfor %}
             <!-- </ul> -->
             </div>
-
-            <!-- <h1>Collaborators</h1>
-            <ul class="institution-icon-list">
-                {% for collaborator in site.collaborators %}
-                    <li>
-                        <a href="{{ collaborator.website }}">{{ collaborator.name-short }}</a>
-                    </li>
-                {% endfor %}
-            </ul> -->
+            
         </article>
-
-
+        <article class="home-content-bottom">
+            <article class="home-content-bottom-left">
+                <a style="font-size: 20px;" href="https://www.jku.at/en/institute-of-computer-graphics/press-events/icg-lab-talk-series/2020/#c98805">
+                    <div class="link-tile" style="background-image: url({{ site.baseurl }}/assets/images/themes/DSC00360_Roberbtba-edit-blur.jpg);">
+                        <p>Invited Lab Talks</p>
+                    </div>
+                </a>
+            </article>
+            <article class="home-content-bottom-right">
+                <a style="font-size: 20px;" href="https://www.jku.at/en/institute-of-computer-graphics/teaching/student-projects/">
+                    <div class="link-tile" style="opacity: 0.85;background-image: url({{ site.baseurl }}/assets/images/themes/csm_Bibliothek_Studi_Lernen_2_0499517e10.jpg);">
+                        <p>Student Projects</p>
+                    </div>
+                </a>
+            </article>
+        </article>
         {% include footer.html %}
     </div>
 

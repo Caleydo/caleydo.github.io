@@ -61,6 +61,8 @@ website:
 # uncomment this property, if your personal page should have a navigation for publications (i.e. if you have many publiations). usually you don't need this.
 # show_pub_nav: true
 
+# hide_personal_page: true # uncomment this property, if you don't want to link to a local personal page. usually you don't need this
+
 ####
 ---
 

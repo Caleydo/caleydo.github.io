@@ -457,6 +457,19 @@ p {
   @include omega();
 }
 
+.home-content-bottom { // added by gini
+  @include page-content();
+  @include span-columns(12);
+}
+.home-content-bottom-left { // added by gini
+  @include page-content();
+  @include span-columns(6);
+}
+.home-content-bottom-right { // added by gini
+  @include page-content();
+  @include span-columns(6);
+}
+
 //--- added by gini ---
 .team-member-content-main {
   @include page-content();
@@ -1207,4 +1220,22 @@ ul.project-icon-list li {
 .member-publications h3{
   margin-top: 0px;
   font-size: 1.1em;
+}
+
+// home
+
+.link-tile{
+  height:100px;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  // opacity: 0.85;
+}
+
+.link-tile p{
+  font-family: $page-title-font-family;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }

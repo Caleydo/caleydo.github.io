@@ -12,7 +12,7 @@ paper_content_url:
 # The shortname is used for auto-generated titels
 shortname: InstanceFlow
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2020_preprint_instanceflow.png
+image: 2020_visshort_instanceflow.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
 image_large: 
 

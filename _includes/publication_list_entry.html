@@ -16,6 +16,8 @@
         <span class="paper-author">
           {% if person.cg_website %}
               <a href="{{ person.cg_website }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
+          {% elsif person.hide_personal_page %}
+              {{ person.first_name }} {{ person.last_name }}<br>
           {% else %}
               <a href="{{ site.baseurl }}{{ person.url }}">{{ person.first_name }} {{ person.last_name }}</a>{% if author != publication.authors.last %}, {% endif %}
           {% endif %}
