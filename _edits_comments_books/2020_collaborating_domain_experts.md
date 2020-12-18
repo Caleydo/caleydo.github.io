@@ -26,7 +26,7 @@ editors:
 year: 2020
 bib:
   journal: Springer
-  publisher: https://www.springer.com/gp/book/9783030344436
+  publisher: https://doi.org/10.1007/978-3-030-34444-3_15
 
 ---
 
