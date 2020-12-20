@@ -25,20 +25,11 @@ authors:
 journal-short: iMIMIC
 year: 2020
 
-bibentry: article
+bibentry: inproceedings
 bib:
-  journal: International Workshop on Interpretability of Machine Intelligence in Medical Image Computing (iMIMIC’2020)
-  booktitle: 
-  editor: 
-  publisher: 
-  address: 
-  doi: 
-  url: https://arxiv.org/abs/2006.12902
-  volume: 
-  number: 
-  pages: 
-  month: 
-
+  booktitle: Proceedings of the Workshop on Interpretability of Machine Intelligence in Medical Image Computing (iMIMIC’2020)
+  publisher: MICCAI Society
+  url: https://arxiv.org/abs/2006.12902 
 
 preprint: https://arxiv.org/abs/2006.12902 # here you can put all preprint links (arxiv.org, osf.io,...)
 

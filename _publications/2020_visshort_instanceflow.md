@@ -22,22 +22,14 @@ authors:
 - hinterreiter
 - streit 
 
-journal-short: Preprint
+journal-short: VIS'20 Short Paper
 year: 2020
 
-bibentry: article
+bibentry: inproceedings
 bib:
-  journal: Preprint
-  booktitle: 
-  editor: 
-  publisher: 
-  address: 
-  doi: 
-  url: https://arxiv.org/abs/2007.11353
-  volume: 
-  number: 
-  pages: 
-  month: 
+  booktitle: Proceedings of the IEEE Visualization Short Papers
+  publisher: IEEE Computer Society Press
+  url: https://arxiv.org/abs/2007.11353 
 
 preprint: https://arxiv.org/abs/2007.11353 # here you can put all preprint links (arxiv.org, osf.io,...)
 
