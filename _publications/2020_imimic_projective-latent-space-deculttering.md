@@ -4,7 +4,7 @@ layout: publication
 title: "Projective Latent Space Decluttering"
 key: 2020_imimic_projective-latent-space-decluttering
 # paper | preprint | poster
-type: preprint
+type: paper
 # optional url for a different site; defaults to data.caleydo.org
 paper_content_url: 
 
@@ -86,5 +86,5 @@ our technique on a real-world scenario in fetal ultrasound imaging."
 
 
 # Acknowledgements
-
+This work was supported by the State of Upper Austria (Human-Interpretable  Machine  Learning)  and  the  Austrian  Federal  Ministry  of  Education,Science and Research via the Linz Institute of Technology (LIT-2019-7-SEE-117), andby the Wellcome Trust (IEH 102431 and EPSRC EP/S013687/1.)
 

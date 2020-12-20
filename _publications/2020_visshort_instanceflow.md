@@ -4,7 +4,7 @@ layout: publication
 title: "InstanceFlow: Visualizing the Evolution of Classifier Confusion on the Instance Level"
 key: 2020_preprint_instanceflow
 # paper | preprint | poster
-type: preprint
+type: paper
 # optional url for a different site; defaults to data.caleydo.org
 paper_content_url: 
 
