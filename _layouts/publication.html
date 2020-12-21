@@ -22,12 +22,12 @@ layout: default
 
 
     {% if page.abstract %}
-    <h1>Abstract</h1>
+    <h2>Abstract</h2>
     {{ page.abstract }}
     <br>
     {% endif %}
 
-    <h1>Citation</h1>
+    <h2>Citation</h2>
     <div class="citation">
       <p>
         {% assign bibauthors = '' %}
@@ -112,7 +112,7 @@ layout: default
     </div>
 
     {% if page.bib %}
-      <h1>BibTeX</h1>
+      <h2>BibTeX</h2>
       {% capture newLine %}
       {% endcapture %}
             <!-- here replacing the curly brackets with html special characters. { is &#123; ; } is &#125; -->
@@ -131,7 +131,7 @@ layout: default
 
   <article class="publication-content-aside">
     {% if page.project %}
-    <h1>Tool Info and Demo</h1>
+    <h2>Tool Info and Demo</h2>
     <ul class="project-icon-list">
     {% for project in site.tools %}
     {% if project.key == page.project %}
@@ -142,14 +142,14 @@ layout: default
     {% endif %}
 
     {% if page.external-project %}
-    <h1>Project Website</h1>
+    <h2>Project Website</h2>
     <ul class="project-icon-list">
             <li><a href="{{page.external-project}}">{{ page.shortname }} Website</a></li>
     </ul>
     {% endif %}
 
 
-    <h1>Resources</h1>
+    <h2>Resources</h2>
     <ul>
     {% if page.bib.doi %}
     <li>
@@ -202,7 +202,7 @@ layout: default
     </ul>
 
     {% if page.video or page.preview-video %}
-    <h1>Video(s)</h1>
+    <h2>Video(s)</h2>
     {% endif %}
     {% for video in site.videos %}
     {% if video.key == page.video or video.key == page.preview-video %}
