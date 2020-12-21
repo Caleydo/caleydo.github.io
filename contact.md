@@ -8,7 +8,7 @@ We are happy to receive your feedback!
 
 ### Email
 
-[marc.streit@jku.at](mailto:marc.streit@jku.at)
+[contact@jku-vds-lab.at](mailto:contact@jku-vds-lab.at)
 
 ### Street Address
 
