@@ -45,7 +45,7 @@ project:
 external-project: 
 
 # The reference to the video entry
-video: 
+video: 2020_visshort_instanceflow_video
 # The reference to the preview video entry
 #preview-video:
 
