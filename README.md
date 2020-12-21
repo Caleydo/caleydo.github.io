@@ -1,4 +1,4 @@
-# Visual Datascience Group Website
+# Visual Datascience Lab Website
 
 The new Visual Datascience Group Website built with [Jekyll](https://jekyllrb.com),
 [SASS](https://www.sass-lang.com),
