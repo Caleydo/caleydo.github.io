@@ -1,6 +1,6 @@
-# Visual Datascience Lab Website
+# JKU Visual Data Science Lab Website
 
-The new Visual Datascience Lab Website built with [Jekyll](https://jekyllrb.com),
+The new Visual Data Science Lab Website built with [Jekyll](https://jekyllrb.com),
 [SASS](https://www.sass-lang.com),
 [Bourbon](https://bourbon.io),
 [Neat](https://neat.bourbon.io),
