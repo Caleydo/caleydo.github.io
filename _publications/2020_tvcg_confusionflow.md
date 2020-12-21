@@ -62,7 +62,7 @@ project:
 external-project: 
 
 # The reference to the video entry
-video: 
+video: Qg_-14NLH2U
 # The reference to the preview video entry
 #preview-video:
 
@@ -80,7 +80,7 @@ supplements:
 #  linksym: true
 
 # Link to the repository where the code is hostet
-code: 
+code: https://github.com/ConfusionFlow/confusionflow
 
 abstract: "Classifiers are among the most widely used supervised machine learning algorithms. Many classification models exist, and
 choosing the right one for a given task is difficult. During model selection and debugging, data scientists need to assess classifiers’
