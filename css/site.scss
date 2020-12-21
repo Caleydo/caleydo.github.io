@@ -202,7 +202,7 @@ p {
   @include omega();
   color: $color;
   background-color: tint($color, 95%);
-  padding: 5px 0px 0px 0px;
+//   padding: 5px 0px 0px 0px;
   display: inline-block; // added by gini
   // padding-top: 20px; // added by gini
   border-bottom: 4px $color solid;
@@ -974,9 +974,9 @@ footer {
 //   margin-bottom: 0px;
 // }
 
-.logo {
-  line-height: 0px;
-}
+// .logo {
+//   line-height: 0px;
+// }
 
 // .logo a {
 //   color: #393939;
