@@ -1,8 +1,8 @@
 # Site settings
-title: JKU Visual Data Science Group
-email: marc.streit@jku.at
-description: "JKU Visual Data Science Group."
-baseurl: "/jku-vds-group-website"
+title: JKU Visual Data Science Lab
+email: contact@jku-vds-lab.at
+description: "JKU Visual Data Science Lab."
+baseurl: "/jku-vds-lab-website"
 url: "https://caleydo.org"
 twitter_username: marc_streit
 github_username:  caleydo
