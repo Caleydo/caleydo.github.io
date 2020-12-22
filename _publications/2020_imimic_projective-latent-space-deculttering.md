@@ -1,8 +1,8 @@
 ---
 layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
-title: "Projective Latent Space Decluttering"
-key: 2020_imimic_projective-latent-space-decluttering
+title: "Projective Latent Interventions for Understanding and Fine-tuning Classifiers"
+key: 2020_imimic_projective-latent-interventions
 # paper | preprint | poster
 type: paper
 # optional url for a different site; defaults to data.caleydo.org
@@ -10,11 +10,11 @@ paper_content_url:
 
 
 # The shortname is used for auto-generated titels
-shortname: Projective Latent Space Decluttering
+shortname: Projective Latent Interventions
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2020_imimic_projective-latent-space-decluttering.png
+image: 2020_imimic_projective-latent-interventions_small.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
-image_large: 
+image_large: 2020_imimic_projective-latent-interventions_large.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
@@ -27,14 +27,21 @@ year: 2020
 
 bibentry: inproceedings
 bib:
-  booktitle: Proceedings of the Workshop on Interpretability of Machine Intelligence in Medical Image Computing (iMIMIC’2020)
-  publisher: MICCAI Society
+  booktitle: Interpretable and Annotation-Efficient Learning for Medical Image Computing. Proceedings of the 3rd Workshop on Interpretability of Machine Intelligence in Medical Image Computing (iMIMIC 2020)
+  publisher: Springer
   url: https://arxiv.org/abs/2006.12902 
-
+  editor: Cardoso, Jaime and others
+  series: Lecture Notes in Computer Science
+  doi: 10.1007/978-3-030-61166-8_2
+  url: 
+  volume: 12446
+  number: 
+  pages: 13--22
+  month: 
 preprint: https://arxiv.org/abs/2006.12902 # here you can put all preprint links (arxiv.org, osf.io,...)
 
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
-award: iMIMIC 2020 Best Paper Award
+award: Best Paper Award at iMIMIC 2020
 
 non_group_project: False
 
@@ -50,7 +57,7 @@ video:
 #preview-video:
 
 # the prerint
-pdf: 2020_projective-latent-space-decluttering.pdf
+pdf_local: assets/papers/2020_imimic_projective_latent_interventions.pdf
 # A supplement PDF
 #supplement: 2017_preprint_taggle_supplement.pdf
 
