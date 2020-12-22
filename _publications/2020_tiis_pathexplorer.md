@@ -12,9 +12,9 @@ paper_content_url:
 # The shortname is used for auto-generated titels
 shortname: ProjectionPathExplorer
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2020_tiis_pathexplorer.png
+image: 2020_tiis_pathexplorer_small.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
-image_large: 
+image_large: 2020_tiis_pathexplorer_large.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
