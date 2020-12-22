@@ -12,8 +12,9 @@ type: paper
 # Auto-generates titles and alt-descriptors
 shortname: Rubik
 # Add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2019_eurova_rubik.png
-
+image: 2019_eurova_rubik_small.png
+# add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
+image_large: 2019_eurova_rubik_large.png
 
 # Authors in the "database" can be used with just their person "key"
 authors:
@@ -32,10 +33,10 @@ year: 2019
 # You can remove fields you don't need, or else leave them blank
 # Try to include a DOI, or use the publisher URL below
 # Specify new BibTeX fields by adding a new key and value inside "bib:"
-bibentry: article
+bibentry: inproceedings
 bib:
-  journal: EuroVis Workshop on Visual Analytics (EuroVA '19)
-  booktitle: 
+  journal: 
+  booktitle: EuroVis Workshop on Visual Analytics (EuroVA '19)
   editor: Landesberger, Tatiana von and Turkay, Cagatay
   publisher: The Eurographics Association
   address: 
