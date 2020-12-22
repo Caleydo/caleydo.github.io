@@ -36,11 +36,11 @@ bibentry: article
 bib:
   journal: EuroVis Workshop on Visual Analytics (EuroVA '19)
   booktitle: 
-  editor: 
-  publisher: https://diglib.eg.org/handle/10.2312/eurova20191119
+  editor: Landesberger, Tatiana von and Turkay, Cagatay
+  publisher: The Eurographics Association
   address: 
   doi: 10.2312/eurova.20191119
-  url:
+  url: 
   volume: 
   number: 
   pages: 
