@@ -1,6 +1,6 @@
 ---
 layout: acknowledgements
-title: Acknowledgements | JKU Visual Data Science Group
+title: Acknowledgements | JKU Visual Data Science Lab
 tag: acknowledgements
 permalink: /acknowledgements/
 ---

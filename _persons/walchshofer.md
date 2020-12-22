@@ -64,7 +64,7 @@ website: https://www.conny-walchshofer.at/
 ####
 ---
 
-I'm a PhD student and Project Assistant in the Visual Data Science Group.
+I'm a PhD student and Project Assistant in the Visual Data Science Lab.
 My research focuses on interaction provenance using dimensionality reduction techniques and onboarding for interactive visualizations.
 
 

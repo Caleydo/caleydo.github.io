@@ -31,7 +31,7 @@ position: Full Professor
 website: http://marc-streit.com
 ---
 
-<p>I am a tenured Full Professor at the <a href="http://www.cg.jku.at">Institute of Computer Graphics</a> at <a href="http://www.jku.at">Johannes Kepler University Linz</a> where I lead the JKU Visual Data Science Group.
+<p>I am a tenured Full Professor at the <a href="http://www.cg.jku.at">Institute of Computer Graphics</a> at <a href="http://www.jku.at">Johannes Kepler University Linz</a> where I lead the JKU Visual Data Science Lab.
 I finished my PhD at the <a href="http://www.icg.tugraz.at">Institute for Computer Graphics and Vision</a>
 at <a href="http://www.tugraz.at">Graz University of Technology</a> in early 2011 and moved to Linz later
 that year. In 2012 I was a visiting researcher at the <a href="https://dbmi.hms.harvard.edu/">Department of Biomedical Informatics</a> (DBMI) at Harvard Medical School. As part of a Fulbright scholarship for research and lecturing I was a visiting professor at the <a href="http://vcg.seas.harvard.edu">Visual Computing Group</a> at <a href="http://www.seas.harvard.edu">Harvard Paulson School</a> in 2014. I am also a guest lecturer at the <a href="https://www.imperial.ac.uk/business-school">Imperial College Business School</a>.</p>

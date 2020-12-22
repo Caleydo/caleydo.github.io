@@ -1,6 +1,6 @@
 ---
 layout: thesis
-title: Thesis | JKU Visual Data Science Group
+title: Thesis | JKU Visual Data Science Lab
 tag: thesis
 permalink: /thesis/
 ---

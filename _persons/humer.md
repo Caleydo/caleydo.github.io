@@ -30,10 +30,10 @@ website:
 ---
 
 <p>
-I am a PhD Student and Project Assistant at the Visual Data Science group. 
+I am a PhD Student and Project Assistant at the Visual Data Science Lab. 
 Before that, I studied Computer Science at Johannes Kepler University and finished the Masters Program with focus on Data Science in August 2020. 
 In my Master Thesis, my research focused on Semantic Image Segmentation and Image Classification in the area of bark beetle detection.
 </p>
 <p>
-My research topics at the Visual Data Science group include <b>Machine Learning Interpretability</b> and - in general - <b>Explainable AI</b>.
+My research topics at the Visual Data Science Lab include <b>Machine Learning Interpretability</b> and - in general - <b>Explainable AI</b>.
 </p>

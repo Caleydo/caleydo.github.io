@@ -64,7 +64,7 @@ website:
 ####
 ---
 
-I'm a PhD student and Project Assistant in the Visual Data Science Group.
+I'm a PhD student and Project Assistant in the Visual Data Science Lab.
 My research focuses on time series visualization and dimensionality reduction in the context of explainable AI.
 I am especially interested in non-linear embedding techniques.
 

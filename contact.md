@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact | JKU Visual Data Science Group
+title: Contact | JKU Visual Data Science Lab
 permalink: /contact/
 ---
 

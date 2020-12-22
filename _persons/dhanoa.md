@@ -20,7 +20,7 @@ website:
 ---
 
 <p>
-  I'm a PhD student and project assistant in the Visual Data Science Group of the <a href="https://www.jku.at/en/">Johannes Kepler University Linz</a>, Austria.
+  I'm a PhD student and project assistant in the Visual Data Science Lab of the <a href="https://www.jku.at/en/">Johannes Kepler University Linz</a>, Austria.
   My research focuses on interactive visualizations in the data visualization field. Together with my colleagues, I design and build data analysis tools to support domain experts.
   Prior to this , I worked as a software developer at Intel, Linz (now owned by Apple) while pursuing my my master's at <a href="https://www.jku.at/en/">Johannes Kepler University Linz</a>, Austria, with a major in Pervasive Computing. My education at JKU and work at Intel inspired me to venture into the field of data sciences.
 </p>
