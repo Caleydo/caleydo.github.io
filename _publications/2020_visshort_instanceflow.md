@@ -12,9 +12,9 @@ paper_content_url:
 # The shortname is used for auto-generated titels
 shortname: InstanceFlow
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2020_visshort_instanceflow.png
+image: 2020_visshort_instanceflow_small.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
-image_large: 
+image_large: 2020_visshort_instanceflow_large.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
@@ -85,5 +85,10 @@ perform a full temporal analysis of the training process.
 
 
 # Acknowledgements
+
+This work was supported in part by the State of Upper Austria and the Austrian Federal Ministry of Education, Science and Research via the Linz Institute of Technology (LIT-2019-7-SEE-117), by the State of Upper Austria (Human-Interpretable ML), and by the Austrian Research Promotion Agency (FFG~854184).
+_Pro2Future_ is funded within the Austrian COMET Program (Competence Centers for Excellent Technologies)
+under the auspices of the Austrian Federal Ministry for Climate Action, Environment, Energy, Mobility, Innovation and Technology, the Austrian Federal Ministry for Digital and Economic Affairs and of the States of Upper Austria and Styria.
+COMET is managed by FFG.
 
 
