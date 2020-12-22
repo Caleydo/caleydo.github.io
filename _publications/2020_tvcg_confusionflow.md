@@ -4,7 +4,7 @@ layout: publication
 title: "ConfusionFlow: A Model-Agnostic Visualization
 for Temporal Analysis of Classifier Confusion"
 # paper | preprint | poster
-type: preprint
+type: paper
 # optional url for a different site; defaults to data.caleydo.org
 paper_content_url: 
 
@@ -16,9 +16,9 @@ non_group_project: False
 # The shortname is used for auto-generated titels
 shortname: ConfusionFlow
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2020_tvcg_confusionflow.png
+image: 2020_tvcg_confusionflow_small.png
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
-image_large: 
+image_large: 2020_tvcg_confusionflow_large.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
@@ -35,7 +35,7 @@ year: 2020
 
 bibentry: article
 bib:
-  journal: IEEE Transactions on Visualization and Computer Graphics (to appear)
+  journal: IEEE Transactions on Visualization and Computer Graphics (Early Access)
   booktitle: 
   editor: 
   publisher: 
@@ -80,7 +80,7 @@ supplements:
 #  linksym: true
 
 # Link to the repository where the code is hostet
-code: 
+code: https://github.com/ConfusionFlow/confusionflow
 
 abstract: "Classifiers are among the most widely used supervised machine learning algorithms. Many classification models exist, and
 choosing the right one for a given task is difficult. During model selection and debugging, data scientists need to assess classifiers’
